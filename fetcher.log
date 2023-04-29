@@ -539,3 +539,56 @@
 [2023-04-30 01:24:18] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
 [2023-04-30 01:24:19] INFO root fetch - main [MainThread]: End processing [netin]: success
 [2023-04-30 01:24:19] INFO root fetch - main [MainThread]: Store serial: [17913125]
+[2023-04-30 01:29:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913125]
+[2023-04-30 01:29:27] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: steamship-langchain
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gxabm
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pathier
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: discovery-transition-ds
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: icpp-pro
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: discovery-transition-ds
+[2023-04-30 01:29:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fastrometry
+[2023-04-30 01:29:27] INFO root fetch - processPackages [steamship-langchain]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 01:29:27] WARNING root fetch - processPackages [icpp-pro]: Skipping, unable to determine old version
+[2023-04-30 01:29:27] INFO root fetch - processPackages [gxabm]: New version: [2.4.0] Old Version: [2.3.1]
+[2023-04-30 01:29:27] INFO root fetch - main [MainThread]: End processing [icpp-pro] error
+[2023-04-30 01:29:27] INFO root fetch - processPackages [pathier]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-30 01:29:27] INFO root fetch - processPackages [fastrometry]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 01:29:27] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682810759] Old Version: [0.1.1682810750]
+[2023-04-30 01:29:27] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682810759] Old Version: [0.1.1682810750]
+[2023-04-30 01:29:27] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-30 01:29:27] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-30 01:29:27] INFO root fetch - processPackages [pathier]: executing diffoscope
+[2023-04-30 01:29:27] INFO root fetch - processPackages [pathier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pathier-0.8.0.tar.gz tmp/pathier-0.9.0.tar.gz --markdown 20230430/p/pathier/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-30 01:29:27] INFO root fetch - processPackages [steamship-langchain]: executing diffoscope
+[2023-04-30 01:29:27] INFO root fetch - processPackages [steamship-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamship-langchain-0.0.8.tar.gz tmp/steamship-langchain-0.0.9.tar.gz --markdown 20230430/s/steamship-langchain/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 01:29:27] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-04-30 01:29:27] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-04-30 01:29:27] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230430/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-30 01:29:27] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230430/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-30 01:29:27] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/dd/76/9150b6d5a95c7bd8cdf3746139466ec1b6d9b1cb7853d54a778b3ac75570/eia-odin-pkg-rioatmadja2018-0.1.1682810750.tar.gz
+[2023-04-30 01:29:27] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/dd/76/9150b6d5a95c7bd8cdf3746139466ec1b6d9b1cb7853d54a778b3ac75570/eia-odin-pkg-rioatmadja2018-0.1.1682810750.tar.gz
+[2023-04-30 01:29:27] INFO root fetch - processPackages [fastrometry]: Downloading https://files.pythonhosted.org/packages/75/f6/bad3430c8705e42081b521b406626e6f3616ad0323b4f3ea6df582c91de6/fastrometry-1.0.8.tar.gz
+[2023-04-30 01:29:27] INFO root fetch - processPackages [gxabm]: Downloading https://files.pythonhosted.org/packages/ac/52/a4ff22c30df9b49a9792be5857464baef2596fbc1857b68f62971e42e107/gxabm-2.4.0.tar.gz
+[2023-04-30 01:29:28] INFO root fetch - main [MainThread]: End processing [steamship-langchain]: success
+[2023-04-30 01:29:29] INFO root fetch - processPackages [gxabm]: executing diffoscope
+[2023-04-30 01:29:29] INFO root fetch - processPackages [gxabm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gxabm-2.3.1.tar.gz tmp/gxabm-2.4.0.tar.gz --markdown 20230430/g/gxabm/2.3.1-2.4.0/diff.md --exclude *.pyd
+[2023-04-30 01:29:29] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/d8/87/47c176162d2c9f1c3772e894612ceced2d4417a0ea2614815402ec0a097b/eia_odin_pkg_rioatmadja2018-0.1.1682810759-py3-none-any.whl
+[2023-04-30 01:29:29] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/d8/87/47c176162d2c9f1c3772e894612ceced2d4417a0ea2614815402ec0a097b/eia_odin_pkg_rioatmadja2018-0.1.1682810759-py3-none-any.whl
+[2023-04-30 01:29:29] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 01:29:29] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682810750.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682810759-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682810750-0.1.1682810759/diff.md --exclude *.pyd
+[2023-04-30 01:29:29] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 01:29:29] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682810750.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682810759-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682810750-0.1.1682810759/diff.md --exclude *.pyd
+[2023-04-30 01:29:29] INFO root fetch - processPackages [fastrometry]: Downloading https://files.pythonhosted.org/packages/de/98/d3310e3ee7c64d218ca2cea6f76012bff1868fca64f29fb3edd96c5613d9/fastrometry-1.0.9.tar.gz
+[2023-04-30 01:29:29] INFO root fetch - main [MainThread]: End processing [pathier]: success
+[2023-04-30 01:29:29] INFO root fetch - processPackages [fastrometry]: executing diffoscope
+[2023-04-30 01:29:29] INFO root fetch - processPackages [fastrometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastrometry-1.0.8.tar.gz tmp/fastrometry-1.0.9.tar.gz --markdown 20230430/f/fastrometry/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 01:29:30] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 01:29:30] INFO root fetch - main [MainThread]: End processing [gxabm]: success
+[2023-04-30 01:29:30] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 01:29:31] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-04-30 01:29:31] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-04-30 01:29:31] INFO root fetch - main [MainThread]: End processing [fastrometry]: success
+[2023-04-30 01:29:31] INFO root fetch - main [MainThread]: Store serial: [17913152]
