@@ -34,3 +34,68 @@
 [2023-04-30 00:04:12] INFO root fetch - main [MainThread]: End processing [grill]: success
 [2023-04-30 00:04:20] INFO root fetch - main [MainThread]: End processing [ApiLogicServer]: success
 [2023-04-30 00:04:20] INFO root fetch - main [MainThread]: Store serial: [17912753]
+[2023-04-30 00:09:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17912753]
+[2023-04-30 00:09:29] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AegosPy
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ytchat
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jsoninja
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: graphscope-client
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphscope
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gs-apps
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gs-coordinator
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gs-engine
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gs-include
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ovos-utils
+[2023-04-30 00:09:29] INFO root fetch - processPackages [jsoninja]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 00:09:29] WARNING root fetch - processPackages [AegosPy]: Skipping, unable to determine old version
+[2023-04-30 00:09:29] INFO root fetch - processPackages [AegosPy]: Start processing: poetry-source-env
+[2023-04-30 00:09:29] INFO root fetch - main [MainThread]: End processing [AegosPy] error
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-apps]: New version: [0.22.0a20230429] Old Version: [0.22.0a20230428]
+[2023-04-30 00:09:29] INFO root fetch - processPackages [graphscope]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-coordinator]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-include]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ytchat]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-engine]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 00:09:29] INFO root fetch - processPackages [graphscope-client]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 00:09:29] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/f7/53/c1ffb245684956bc30883fd2945f3e1677b030e8d69945fbfca28db2b46a/graphscope_client-0.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/bd/b0/b9b1a1a65be3a78a220a726aa90bda0d1e1a17bbc47999c157c784a7320e/gs_engine-0.9.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/14/24/6aa7d96461fb18c825639db76c5c3edc7abfca148e3e55cc010cbf4d9a02/gs_include-0.9.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 00:09:29] INFO root fetch - processPackages [graphscope]: executing diffoscope
+[2023-04-30 00:09:29] INFO root fetch - processPackages [graphscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphscope-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/graphscope-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230430/g/graphscope/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/gs_coordinator-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230430/g/gs-coordinator/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-30 00:09:29] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 48560616>=10485760
+[2023-04-30 00:09:29] INFO root fetch - processPackages [graphscope-client]: Start processing: fatpack
+[2023-04-30 00:09:29] WARNING root fetch - processPackages [gs-engine]: Skipping package: exceeds size limit 88119450>=10485760
+[2023-04-30 00:09:29] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2023-04-30 00:09:29] INFO root fetch - main [MainThread]: End processing [gs-engine] error
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ovos-utils]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-30 00:09:29] WARNING root fetch - processPackages [poetry-source-env]: Skipping, unable to determine old version
+[2023-04-30 00:09:29] INFO root fetch - main [MainThread]: End processing [poetry-source-env] error
+[2023-04-30 00:09:29] INFO root fetch - processPackages [jsoninja]: Downloading https://files.pythonhosted.org/packages/99/53/855d36812b1c7f3c923dc1c1e8acf9478538fb21d0cc7c7555bc5afc3e81/jsoninja-1.0.1.tar.gz
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ytchat]: Downloading https://files.pythonhosted.org/packages/36/86/d2c0568b7f30c5094c52e282e6801e09925d7937c8e72dc445d90249270d/ytchat-0.0.6.tar.gz
+[2023-04-30 00:09:29] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 73794505>=10485760
+[2023-04-30 00:09:29] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-04-30 00:09:29] INFO root fetch - processPackages [fatpack]: New version: [0.7.5] Old Version: [0.7.3]
+[2023-04-30 00:09:29] WARNING root fetch - processPackages [ytchat]: Skipping package: exceeds size limit 12544287>=10485760
+[2023-04-30 00:09:29] INFO root fetch - main [MainThread]: End processing [ytchat] error
+[2023-04-30 00:09:29] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/7c/ac/ec5d736a4c40ccdd305ec0344d426f2b90af799c086cc4ee6fdcb9cab17e/gs_apps-0.22.0a20230428-py2.py3-none-macosx_10_9_x86_64.whl
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ovos-utils]: Downloading https://files.pythonhosted.org/packages/d7/4b/e499972fb3bf80dfa8a9dd2f431fcad633697e759fa8f256a9945e45a75e/ovos_utils-0.0.9.tar.gz
+[2023-04-30 00:09:29] INFO root fetch - processPackages [jsoninja]: Downloading https://files.pythonhosted.org/packages/fb/d5/e3b28a3aafcafeffc45213eecd4515569deaeefecd0db5e4db52881ba8dd/jsoninja-1.0.2.tar.gz
+[2023-04-30 00:09:29] INFO root fetch - processPackages [jsoninja]: executing diffoscope
+[2023-04-30 00:09:29] INFO root fetch - processPackages [jsoninja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsoninja-1.0.1.tar.gz tmp/jsoninja-1.0.2.tar.gz --markdown 20230430/j/jsoninja/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 00:09:29] INFO root fetch - processPackages [fatpack]: Downloading https://files.pythonhosted.org/packages/ab/ea/88d35f261931e8e31a136af5555b906628675ea63f9c44f9096e6beb4f74/fatpack-0.7.3.tar.gz
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ovos-utils]: Downloading https://files.pythonhosted.org/packages/87/ec/09417f2334058aa6de64c90cd4a839ddd15a671ba16f1bed26c98da17d31/ovos_utils-0.0.9a1.tar.gz
+[2023-04-30 00:09:29] INFO root fetch - processPackages [fatpack]: Downloading https://files.pythonhosted.org/packages/fc/f2/6bb645dd92df72de46b208de7d89ad1347fe6d6c9f258c4960bb5dc7bfe8/fatpack-0.7.5.tar.gz
+[2023-04-30 00:09:29] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 42775761>=10485760
+[2023-04-30 00:09:29] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ovos-utils]: executing diffoscope
+[2023-04-30 00:09:29] INFO root fetch - processPackages [ovos-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_utils-0.0.9.tar.gz tmp/ovos_utils-0.0.9a1.tar.gz --markdown 20230430/o/ovos-utils/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-30 00:09:30] INFO root fetch - processPackages [fatpack]: executing diffoscope
+[2023-04-30 00:09:30] INFO root fetch - processPackages [fatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fatpack-0.7.3.tar.gz tmp/fatpack-0.7.5.tar.gz --markdown 20230430/f/fatpack/0.7.3-0.7.5/diff.md --exclude *.pyd
+[2023-04-30 00:09:30] INFO root fetch - main [MainThread]: End processing [graphscope]: success
+[2023-04-30 00:09:30] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2023-04-30 00:09:30] INFO root fetch - main [MainThread]: End processing [jsoninja]: success
+[2023-04-30 00:09:30] INFO root fetch - main [MainThread]: End processing [fatpack]: success
+[2023-04-30 00:09:31] INFO root fetch - main [MainThread]: End processing [ovos-utils]: success
+[2023-04-30 00:09:31] INFO root fetch - main [MainThread]: Store serial: [17912789]
