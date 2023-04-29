@@ -605,3 +605,54 @@
 [2023-04-30 01:34:42] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
 [2023-04-30 01:35:51] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-04-30 01:35:51] INFO root fetch - main [MainThread]: Store serial: [17913158]
+[2023-04-30 01:40:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913158]
+[2023-04-30 01:41:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 01:41:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-04-30 01:41:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alpha-filter
+[2023-04-30 01:41:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prettyqt
+[2023-04-30 01:41:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: denmune
+[2023-04-30 01:41:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysigma
+[2023-04-30 01:41:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alpha-filter
+[2023-04-30 01:41:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mettoolbox
+[2023-04-30 01:41:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: strawberry-graphql
+[2023-04-30 01:41:03] INFO root fetch - processPackages [mettoolbox]: New version: [5.0.1] Old Version: [5.0.0]
+[2023-04-30 01:41:03] INFO root fetch - processPackages [denmune]: New version: [1.14] Old Version: [1.13]
+[2023-04-30 01:41:03] INFO root fetch - processPackages [alpha-filter]: New version: [0.8] Old Version: [0.7]
+[2023-04-30 01:41:03] INFO root fetch - processPackages [alpha-filter]: New version: [0.8] Old Version: [0.7]
+[2023-04-30 01:41:03] INFO root fetch - processPackages [pysigma]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-04-30 01:41:03] INFO root fetch - processPackages [prettyqt]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-30 01:41:03] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2023-04-30 01:41:03] INFO root fetch - processPackages [kcli]: New version: [99.0.202304292334] Old Version: [99.0.202304292214]
+[2023-04-30 01:41:03] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/ef/f3/ac96ee4c8ec41f293b68b29015221e43b7e55cb1df35ba65159e8520d510/alpha-filter-0.7.tar.gz
+[2023-04-30 01:41:03] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/ef/f3/ac96ee4c8ec41f293b68b29015221e43b7e55cb1df35ba65159e8520d510/alpha-filter-0.7.tar.gz
+[2023-04-30 01:41:03] INFO root fetch - processPackages [mettoolbox]: Downloading https://files.pythonhosted.org/packages/99/e2/2d91b396b34624c1f288871f4ac783e930748ab7dbfeaab9949893d7e393/mettoolbox-5.0.0.tar.gz
+[2023-04-30 01:41:03] INFO root fetch - processPackages [pysigma]: Downloading https://files.pythonhosted.org/packages/2d/dc/5f2abd46fc81556850c2233552bde1776941c59a50fb79baa949f795e24b/pysigma-0.9.6.tar.gz
+[2023-04-30 01:41:04] WARNING root fetch - processPackages [mettoolbox]: Skipping package: exceeds size limit 24254691>=10485760
+[2023-04-30 01:41:04] INFO root fetch - main [MainThread]: End processing [mettoolbox] error
+[2023-04-30 01:41:04] INFO root fetch - processPackages [denmune]: Downloading https://files.pythonhosted.org/packages/f7/c6/e78377ec091c1682904943c16c608b14dfbdd0e4861e98ca9a72575bbb82/denmune-1.14.tar.gz
+[2023-04-30 01:41:04] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/9e/11/a51d907d7a4d449475d93a42f64047cf8bbb0714e4ee715f810ca41f15ee/alpha-filter-0.8.tar.gz
+[2023-04-30 01:41:04] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/9e/11/a51d907d7a4d449475d93a42f64047cf8bbb0714e4ee715f810ca41f15ee/alpha-filter-0.8.tar.gz
+[2023-04-30 01:41:04] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/9c/74/2e2562af9c1e1795513e1a566f9e2b464e866154e7f73cfa769f1aafe826/kcli-99.0.202304292334-py3-none-any.whl
+[2023-04-30 01:41:04] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-30 01:41:04] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.9.1.tar.gz tmp/prettyqt-1.9.2.tar.gz --markdown 20230430/p/prettyqt/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-30 01:41:04] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2023-04-30 01:41:04] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20230430/s/strawberry-graphql/0.99.2-0.99.3/diff.md --exclude *.pyd
+[2023-04-30 01:41:04] INFO root fetch - processPackages [denmune]: executing diffoscope
+[2023-04-30 01:41:04] INFO root fetch - processPackages [denmune]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denmune-1.13.tar.gz tmp/denmune-1.14.tar.gz --markdown 20230430/d/denmune/1.13-1.14/diff.md --exclude *.pyd
+[2023-04-30 01:41:04] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-30 01:41:04] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304292214-py3-none-any.whl.zip tmp/kcli-99.0.202304292334-py3-none-any.whl.zip --markdown 20230430/k/kcli/99.0.202304292214-99.0.202304292334/diff.md --exclude *.pyd
+[2023-04-30 01:41:04] INFO root fetch - processPackages [pysigma]: Downloading https://files.pythonhosted.org/packages/c8/5c/5c9d0d9abf6ec08f27de0cc853e1e46490024a8c01bc9c654a52e557c7c3/pysigma-0.9.7.tar.gz
+[2023-04-30 01:41:04] INFO root fetch - processPackages [alpha-filter]: executing diffoscope
+[2023-04-30 01:41:04] INFO root fetch - processPackages [alpha-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha-filter-0.7.tar.gz tmp/alpha-filter-0.8.tar.gz --markdown 20230430/a/alpha-filter/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-30 01:41:04] INFO root fetch - processPackages [alpha-filter]: executing diffoscope
+[2023-04-30 01:41:04] INFO root fetch - processPackages [alpha-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha-filter-0.7.tar.gz tmp/alpha-filter-0.8.tar.gz --markdown 20230430/a/alpha-filter/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-30 01:41:04] INFO root fetch - processPackages [pysigma]: executing diffoscope
+[2023-04-30 01:41:04] INFO root fetch - processPackages [pysigma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysigma-0.9.6.tar.gz tmp/pysigma-0.9.7.tar.gz --markdown 20230430/p/pysigma/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-04-30 01:41:05] INFO root fetch - main [MainThread]: End processing [denmune]: success
+[2023-04-30 01:41:05] INFO root fetch - main [MainThread]: End processing [alpha-filter]: success
+[2023-04-30 01:41:05] INFO root fetch - main [MainThread]: End processing [alpha-filter]: success
+[2023-04-30 01:41:06] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2023-04-30 01:41:06] INFO root fetch - main [MainThread]: End processing [pysigma]: success
+[2023-04-30 01:41:11] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-04-30 01:41:12] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-30 01:41:12] INFO root fetch - main [MainThread]: Store serial: [17913180]
