@@ -125,3 +125,41 @@
 [2023-04-30 00:14:41] INFO root fetch - main [MainThread]: End processing [pibble]: success
 [2023-04-30 00:14:41] INFO root fetch - main [MainThread]: End processing [luau]: success
 [2023-04-30 00:14:41] INFO root fetch - main [MainThread]: Store serial: [17912798]
+[2023-04-30 00:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17912798]
+[2023-04-30 00:19:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 00:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-04-30 00:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scoop-template-engine
+[2023-04-30 00:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-engine
+[2023-04-30 00:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mindspore-dev
+[2023-04-30 00:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: msgraphlib
+[2023-04-30 00:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: otdrparser
+[2023-04-30 00:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: icpp
+[2023-04-30 00:19:50] WARNING root fetch - processPackages [otdrparser]: Skipping, unable to determine old version
+[2023-04-30 00:19:50] INFO root fetch - main [MainThread]: End processing [otdrparser] error
+[2023-04-30 00:19:50] INFO root fetch - processPackages [mindspore-dev]: New version: [2.0.0rc1.dev20230430] Old Version: [2.0.0rc1.dev20230416]
+[2023-04-30 00:19:50] INFO root fetch - processPackages [scoop-template-engine]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-30 00:19:50] INFO root fetch - processPackages [msgraphlib]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 00:19:50] INFO root fetch - processPackages [kcli]: New version: [99.0.202304292214] Old Version: [99.0.202304291812]
+[2023-04-30 00:19:50] WARNING root fetch - processPackages [icpp]: Skipping, unable to determine old version
+[2023-04-30 00:19:50] INFO root fetch - main [MainThread]: End processing [icpp] error
+[2023-04-30 00:19:50] INFO root fetch - processPackages [msgraphlib]: executing diffoscope
+[2023-04-30 00:19:50] INFO root fetch - processPackages [msgraphlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msgraphlib-0.1.1.tar.gz tmp/msgraphlib-0.1.2.tar.gz --markdown 20230430/m/msgraphlib/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 00:19:50] INFO root fetch - processPackages [xia-engine]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-04-30 00:19:50] INFO root fetch - processPackages [mindspore-dev]: Downloading https://files.pythonhosted.org/packages/f4/89/e577862017f078bbdf05fe6bb7f0dcdaa76db1786e4b00fed1a8b6994d3f/mindspore_dev-2.0.0rc1.dev20230416-cp39-none-any.whl
+[2023-04-30 00:19:50] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/52/3c/e75e47e5058cc4b8bc9d8d4af143014034d5851feb901edf4026ab9e4f23/kcli-99.0.202304292214-py3-none-any.whl
+[2023-04-30 00:19:50] INFO root fetch - processPackages [scoop-template-engine]: Downloading https://files.pythonhosted.org/packages/7c/b6/ea99b840f26df7f139d5cdd34680ada27acbe3912da602ae1c5ddf75e889/scoop-template-engine-1.1.1.tar.gz
+[2023-04-30 00:19:50] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-30 00:19:50] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304291812-py3-none-any.whl.zip tmp/kcli-99.0.202304292214-py3-none-any.whl.zip --markdown 20230430/k/kcli/99.0.202304291812-99.0.202304292214/diff.md --exclude *.pyd
+[2023-04-30 00:19:50] WARNING root fetch - processPackages [mindspore-dev]: Skipping package: exceeds size limit 247864746>=10485760
+[2023-04-30 00:19:50] INFO root fetch - main [MainThread]: End processing [mindspore-dev] error
+[2023-04-30 00:19:50] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/e2/05/82cec5a824d802b3922881d178b1c2811be4cf4b93a74399e775bca50c2c/xia_engine-0.8.6-cp39-none-win_amd64.whl
+[2023-04-30 00:19:50] INFO root fetch - processPackages [scoop-template-engine]: executing diffoscope
+[2023-04-30 00:19:50] INFO root fetch - processPackages [scoop-template-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scoop-template-engine-1.1.0.tar.gz tmp/scoop-template-engine-1.1.1.tar.gz --markdown 20230430/s/scoop-template-engine/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-30 00:19:50] INFO root fetch - processPackages [xia-engine]: Downloading https://files.pythonhosted.org/packages/de/c5/54b929c8c03c025ce29d0a2b0255dc2dcb50561c61c00de00f9bc26f31c3/xia_engine-0.8.7-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-30 00:19:50] INFO root fetch - processPackages [xia-engine]: executing diffoscope
+[2023-04-30 00:19:50] INFO root fetch - processPackages [xia-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine-0.8.6-cp39-none-win_amd64.whl.zip tmp/xia_engine-0.8.7-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230430/x/xia-engine/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-04-30 00:19:51] INFO root fetch - main [MainThread]: End processing [msgraphlib]: success
+[2023-04-30 00:19:51] INFO root fetch - main [MainThread]: End processing [xia-engine]: success
+[2023-04-30 00:19:59] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-30 00:20:10] INFO root fetch - main [MainThread]: End processing [scoop-template-engine]: success
+[2023-04-30 00:20:10] INFO root fetch - main [MainThread]: Store serial: [17912820]
