@@ -277,3 +277,46 @@
 [2023-04-30 00:35:49] INFO root fetch - processPackages [ykenan-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_file-0.1.2.tar.gz tmp/ykenan_file-0.1.3.tar.gz --markdown 20230430/y/ykenan-file/0.1.2-0.1.3/diff.md --exclude *.pyd
 [2023-04-30 00:35:50] INFO root fetch - main [MainThread]: End processing [ykenan-file]: success
 [2023-04-30 00:35:50] INFO root fetch - main [MainThread]: Store serial: [17912983]
+[2023-04-30 00:40:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17912983]
+[2023-04-30 00:41:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-core
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-object-safety
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metallurgy
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: luau
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: toml-tools
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xyxABC785
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: noteyXMLParser
+[2023-04-30 00:41:00] INFO root fetch - processPackages [django-object-safety]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-30 00:41:00] WARNING root fetch - processPackages [xyxABC785]: Skipping, unable to determine old version
+[2023-04-30 00:41:00] INFO root fetch - main [MainThread]: End processing [xyxABC785] error
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ovos-core]: New version: [0.0.8a9] Old Version: [0.0.8a8]
+[2023-04-30 00:41:00] INFO root fetch - processPackages [toml-tools]: New version: [1.0.0] Old Version: [0.10.6]
+[2023-04-30 00:41:00] INFO root fetch - processPackages [luau]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-30 00:41:00] INFO root fetch - processPackages [metallurgy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 00:41:00] INFO root fetch - processPackages [noteyXMLParser]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-30 00:41:00] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/61/14/5602dc6bde2c030eb1be51fe1a78e5ec420ca82229fb23e5838314898dc2/django_object_safety-1.2.2.tar.gz
+[2023-04-30 00:41:00] INFO root fetch - processPackages [toml-tools]: Downloading https://files.pythonhosted.org/packages/40/e8/1e8a50b1233f38c5ca26a43af71a6e6d995c59af942c444e7e9cccd6a7ba/toml_tools-0.10.6-py2.py3-none-any.whl
+[2023-04-30 00:41:00] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/e7/7f/a6a77484a04e362870e404cd0e7935080b0f5963881e3cf97f5d3560ae89/luau-0.4.1.tar.gz
+[2023-04-30 00:41:00] INFO root fetch - processPackages [noteyXMLParser]: Downloading https://files.pythonhosted.org/packages/46/18/2b9b15ebc14daaeb0341951ef31653694931f3f20888fcb541964185d8b4/noteyXMLParser-0.2.7.tar.gz
+[2023-04-30 00:41:00] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-30 00:41:00] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.0.tar.gz tmp/luau-0.4.1.tar.gz --markdown 20230430/l/luau/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ovos-core]: executing diffoscope
+[2023-04-30 00:41:00] INFO root fetch - processPackages [ovos-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_core-0.0.8a8-py3-none-any.whl.zip tmp/ovos_core-0.0.8a9-py3-none-any.whl.zip --markdown 20230430/o/ovos-core/0.0.8a8-0.0.8a9/diff.md --exclude *.pyd
+[2023-04-30 00:41:00] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/34/66/c6ec2a4dadb79a29e9cc78c67853de63e9b55fcc8988bc29fbf5eadf7ea0/django_object_safety-1.2.3.tar.gz
+[2023-04-30 00:41:00] INFO root fetch - processPackages [metallurgy]: executing diffoscope
+[2023-04-30 00:41:00] INFO root fetch - processPackages [metallurgy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metallurgy-0.0.8.tar.gz tmp/metallurgy-0.0.9.tar.gz --markdown 20230430/m/metallurgy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 00:41:00] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-30 00:41:00] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-1.2.2.tar.gz tmp/django_object_safety-1.2.3.tar.gz --markdown 20230430/d/django-object-safety/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-30 00:41:01] INFO root fetch - processPackages [toml-tools]: Downloading https://files.pythonhosted.org/packages/59/9f/56c30fc4d01597726d2dba62411218f80be34ffc1c2964d2dbfbb647e528/toml_tools-1.0.0.tar.gz
+[2023-04-30 00:41:01] INFO root fetch - processPackages [toml-tools]: executing diffoscope
+[2023-04-30 00:41:01] INFO root fetch - processPackages [toml-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toml_tools-0.10.6-py2.py3-none-any.whl.zip tmp/toml_tools-1.0.0.tar.gz --markdown 20230430/t/toml-tools/0.10.6-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 00:41:01] INFO root fetch - processPackages [noteyXMLParser]: Downloading https://files.pythonhosted.org/packages/b7/16/56833a3f4fec13d09a2924841bd334c3d86d95139ac6c32df6ef31666f60/noteyXMLParser-0.2.8.tar.gz
+[2023-04-30 00:41:01] INFO root fetch - processPackages [noteyXMLParser]: executing diffoscope
+[2023-04-30 00:41:01] INFO root fetch - processPackages [noteyXMLParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteyXMLParser-0.2.7.tar.gz tmp/noteyXMLParser-0.2.8.tar.gz --markdown 20230430/n/noteyXMLParser/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-30 00:41:02] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-30 00:41:02] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-30 00:41:02] INFO root fetch - main [MainThread]: End processing [metallurgy]: success
+[2023-04-30 00:41:02] INFO root fetch - main [MainThread]: End processing [toml-tools]: success
+[2023-04-30 00:41:02] INFO root fetch - main [MainThread]: End processing [noteyXMLParser]: success
+[2023-04-30 00:41:11] INFO root fetch - main [MainThread]: End processing [ovos-core]: success
+[2023-04-30 00:41:11] INFO root fetch - main [MainThread]: Store serial: [17913005]
