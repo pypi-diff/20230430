@@ -1,0 +1,36 @@
+[2023-04-30 00:04:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17912732]
+[2023-04-30 00:04:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 00:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grill
+[2023-04-30 00:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 00:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 00:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: icpp-pro
+[2023-04-30 00:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ApiLogicServer
+[2023-04-30 00:04:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arcangelai
+[2023-04-30 00:04:09] INFO root fetch - processPackages [grill]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-30 00:04:09] WARNING root fetch - processPackages [arcangelai]: Skipping, unable to determine old version
+[2023-04-30 00:04:09] INFO root fetch - main [MainThread]: End processing [arcangelai] error
+[2023-04-30 00:04:09] WARNING root fetch - processPackages [icpp-pro]: Skipping, unable to determine old version
+[2023-04-30 00:04:09] INFO root fetch - main [MainThread]: End processing [icpp-pro] error
+[2023-04-30 00:04:09] INFO root fetch - processPackages [ApiLogicServer]: New version: [8.3.3] Old Version: [8.3.0]
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682805597] Old Version: [0.1.1682805588]
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682805597] Old Version: [0.1.1682805588]
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/ea/d4/cfb45d6ad3f09c7ce546605d123f18b8a9c5c15ba3d68ae4f47a5a7f3920/eia-odin-pkg-rioatmadja2018-0.1.1682805588.tar.gz
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/ea/d4/cfb45d6ad3f09c7ce546605d123f18b8a9c5c15ba3d68ae4f47a5a7f3920/eia-odin-pkg-rioatmadja2018-0.1.1682805588.tar.gz
+[2023-04-30 00:04:10] INFO root fetch - processPackages [grill]: Downloading https://files.pythonhosted.org/packages/f3/a4/327dfcf99317d67a405b62e78fd4939fcc546d3c7aea25d2221a7f112968/grill-0.9.1.tar.gz
+[2023-04-30 00:04:10] INFO root fetch - processPackages [ApiLogicServer]: Downloading https://files.pythonhosted.org/packages/d9/4a/2c162756a2b2052b8072f5b60215b732dbb66ca978de44f9977d28fd2b2a/ApiLogicServer-8.3.3.tar.gz
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/76/64/a85ad8cc70c0764dcb5148258a8f24bc6ed1517dbf3af1a67abf3f23af8a/eia_odin_pkg_rioatmadja2018-0.1.1682805597-py3-none-any.whl
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/76/64/a85ad8cc70c0764dcb5148258a8f24bc6ed1517dbf3af1a67abf3f23af8a/eia_odin_pkg_rioatmadja2018-0.1.1682805597-py3-none-any.whl
+[2023-04-30 00:04:10] INFO root fetch - processPackages [grill]: Downloading https://files.pythonhosted.org/packages/1a/69/6195e003a9c0941da8a57b9bfe8445678af914ddc02fb413ec15f43a611e/grill-0.9.2.tar.gz
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682805588.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682805597-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682805588-0.1.1682805597/diff.md --exclude *.pyd
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 00:04:10] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682805588.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682805597-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682805588-0.1.1682805597/diff.md --exclude *.pyd
+[2023-04-30 00:04:10] INFO root fetch - processPackages [grill]: executing diffoscope
+[2023-04-30 00:04:10] INFO root fetch - processPackages [grill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grill-0.9.1.tar.gz tmp/grill-0.9.2.tar.gz --markdown 20230430/g/grill/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-30 00:04:11] INFO root fetch - processPackages [ApiLogicServer]: executing diffoscope
+[2023-04-30 00:04:11] INFO root fetch - processPackages [ApiLogicServer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ApiLogicServer-8.3.0.tar.gz tmp/ApiLogicServer-8.3.3.tar.gz --markdown 20230430/A/ApiLogicServer/8.3.0-8.3.3/diff.md --exclude *.pyd
+[2023-04-30 00:04:11] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 00:04:11] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 00:04:12] INFO root fetch - main [MainThread]: End processing [grill]: success
+[2023-04-30 00:04:20] INFO root fetch - main [MainThread]: End processing [ApiLogicServer]: success
+[2023-04-30 00:04:20] INFO root fetch - main [MainThread]: Store serial: [17912753]
