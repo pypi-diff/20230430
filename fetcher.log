@@ -320,3 +320,43 @@
 [2023-04-30 00:41:02] INFO root fetch - main [MainThread]: End processing [noteyXMLParser]: success
 [2023-04-30 00:41:11] INFO root fetch - main [MainThread]: End processing [ovos-core]: success
 [2023-04-30 00:41:11] INFO root fetch - main [MainThread]: Store serial: [17913005]
+[2023-04-30 00:46:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913005]
+[2023-04-30 00:46:20] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 00:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luau
+[2023-04-30 00:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyTBC
+[2023-04-30 00:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dask-fly
+[2023-04-30 00:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pointstorm
+[2023-04-30 00:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ProjZ.py
+[2023-04-30 00:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prepup
+[2023-04-30 00:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: langflow
+[2023-04-30 00:46:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sqlmath
+[2023-04-30 00:46:21] INFO root fetch - processPackages [luau]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-30 00:46:21] INFO root fetch - processPackages [ProjZ.py]: New version: [2.4.3] Old Version: [2.4.2]
+[2023-04-30 00:46:21] WARNING root fetch - processPackages [pointstorm]: Skipping, unable to determine old version
+[2023-04-30 00:46:21] INFO root fetch - main [MainThread]: End processing [pointstorm] error
+[2023-04-30 00:46:21] INFO root fetch - processPackages [langflow]: New version: [0.0.62] Old Version: [0.0.61]
+[2023-04-30 00:46:21] INFO root fetch - processPackages [dask-fly]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 00:46:21] WARNING root fetch - processPackages [pyTBC]: Skipping, unable to determine old version
+[2023-04-30 00:46:21] INFO root fetch - main [MainThread]: End processing [pyTBC] error
+[2023-04-30 00:46:21] INFO root fetch - processPackages [langflow]: executing diffoscope
+[2023-04-30 00:46:21] INFO root fetch - processPackages [langflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langflow-0.0.61.tar.gz tmp/langflow-0.0.62.tar.gz --markdown 20230430/l/langflow/0.0.61-0.0.62/diff.md --exclude *.pyd
+[2023-04-30 00:46:21] WARNING root fetch - processPackages [prepup]: Skipping, unable to determine old version
+[2023-04-30 00:46:21] INFO root fetch - main [MainThread]: End processing [prepup] error
+[2023-04-30 00:46:21] WARNING root fetch - processPackages [sqlmath]: Skipping, unable to determine old version
+[2023-04-30 00:46:21] INFO root fetch - main [MainThread]: End processing [sqlmath] error
+[2023-04-30 00:46:21] INFO root fetch - processPackages [dask-fly]: Downloading https://files.pythonhosted.org/packages/34/b2/0edc225711c0efeaa7a863dc4e076a29826e5ad151139e83bb32f9a18031/dask_fly-0.0.1.tar.gz
+[2023-04-30 00:46:21] INFO root fetch - processPackages [ProjZ.py]: Downloading https://files.pythonhosted.org/packages/96/20/7bc63f62730e24c09ec9ef0baeebc3c3e8a8b08453cbdfdaf860854c4d49/ProjZ.py-2.4.2.tar.gz
+[2023-04-30 00:46:21] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/dd/d6/ec692a4dda26cba64c31824afef8a000506b26522b7146c07ae981093b66/luau-0.4.2.tar.gz
+[2023-04-30 00:46:21] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-30 00:46:21] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.1.tar.gz tmp/luau-0.4.2.tar.gz --markdown 20230430/l/luau/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-30 00:46:21] INFO root fetch - processPackages [ProjZ.py]: Downloading https://files.pythonhosted.org/packages/b8/a6/17e4370394cc024f205d9a72b8af90e1ebb7ae5a004f895b00428c2122d7/ProjZ.py-2.4.3.tar.gz
+[2023-04-30 00:46:21] INFO root fetch - processPackages [dask-fly]: Downloading https://files.pythonhosted.org/packages/e5/b7/15f18da152939be8b88b618a5d07d400b0797923ff7762a3d740fbb01cfe/dask_fly-0.0.2.tar.gz
+[2023-04-30 00:46:21] INFO root fetch - processPackages [ProjZ.py]: executing diffoscope
+[2023-04-30 00:46:21] INFO root fetch - processPackages [ProjZ.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ProjZ.py-2.4.2.tar.gz tmp/ProjZ.py-2.4.3.tar.gz --markdown 20230430/P/ProjZ.py/2.4.2-2.4.3/diff.md --exclude *.pyd
+[2023-04-30 00:46:21] INFO root fetch - processPackages [dask-fly]: executing diffoscope
+[2023-04-30 00:46:21] INFO root fetch - processPackages [dask-fly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask_fly-0.0.1.tar.gz tmp/dask_fly-0.0.2.tar.gz --markdown 20230430/d/dask-fly/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 00:46:22] INFO root fetch - main [MainThread]: End processing [dask-fly]: success
+[2023-04-30 00:46:23] INFO root fetch - main [MainThread]: End processing [ProjZ.py]: success
+[2023-04-30 00:46:23] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-30 00:48:04] INFO root fetch - main [MainThread]: End processing [langflow]: success
+[2023-04-30 00:48:04] INFO root fetch - main [MainThread]: Store serial: [17913033]
