@@ -479,3 +479,29 @@
 [2023-04-30 01:08:47] INFO root fetch - main [MainThread]: End processing [pymatviz]: success
 [2023-04-30 01:08:47] INFO root fetch - main [MainThread]: End processing [arabica]: success
 [2023-04-30 01:08:47] INFO root fetch - main [MainThread]: Store serial: [17913091]
+[2023-04-30 01:13:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913091]
+[2023-04-30 01:13:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 01:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netin
+[2023-04-30 01:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acrclient
+[2023-04-30 01:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datamachine
+[2023-04-30 01:13:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reactives
+[2023-04-30 01:13:56] INFO root fetch - processPackages [datamachine]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 01:13:56] INFO root fetch - processPackages [netin]: New version: [1.0.6] Old Version: [1.0.5.9.1]
+[2023-04-30 01:13:56] INFO root fetch - processPackages [reactives]: New version: [0.5.0] Old Version: [0.4.3]
+[2023-04-30 01:13:56] INFO root fetch - processPackages [acrclient]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-30 01:13:56] INFO root fetch - processPackages [datamachine]: executing diffoscope
+[2023-04-30 01:13:56] INFO root fetch - processPackages [datamachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamachine-0.0.8.tar.gz tmp/datamachine-0.0.9.tar.gz --markdown 20230430/d/datamachine/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 01:13:56] INFO root fetch - processPackages [reactives]: executing diffoscope
+[2023-04-30 01:13:56] INFO root fetch - processPackages [reactives]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactives-0.4.3.tar.gz tmp/reactives-0.5.0.tar.gz --markdown 20230430/r/reactives/0.4.3-0.5.0/diff.md --exclude *.pyd
+[2023-04-30 01:13:56] INFO root fetch - processPackages [acrclient]: Downloading https://files.pythonhosted.org/packages/70/0a/a8dca72aff3fa2b85a0ed489fced72240e31ae4de1e90f6d5fc1a44f22d6/acrclient-0.2.0.tar.gz
+[2023-04-30 01:13:56] INFO root fetch - processPackages [netin]: Downloading https://files.pythonhosted.org/packages/08/3b/dcc6e5f84b6d067c9bfc3276ce4b66a15570cc774721cb7ffb501b5b3e94/netin-1.0.6.tar.gz
+[2023-04-30 01:13:56] INFO root fetch - processPackages [netin]: executing diffoscope
+[2023-04-30 01:13:56] INFO root fetch - processPackages [netin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netin-1.0.5.9.1.tar.gz tmp/netin-1.0.6.tar.gz --markdown 20230430/n/netin/1.0.5.9.1-1.0.6/diff.md --exclude *.pyd
+[2023-04-30 01:13:56] INFO root fetch - processPackages [acrclient]: Downloading https://files.pythonhosted.org/packages/c6/6b/e887f587bbdd8b796de145713cbed3523563a0a0563497b2b92068c9aeca/acrclient-0.3.0.tar.gz
+[2023-04-30 01:13:56] INFO root fetch - processPackages [acrclient]: executing diffoscope
+[2023-04-30 01:13:56] INFO root fetch - processPackages [acrclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acrclient-0.2.0.tar.gz tmp/acrclient-0.3.0.tar.gz --markdown 20230430/a/acrclient/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 01:13:57] INFO root fetch - main [MainThread]: End processing [datamachine]: success
+[2023-04-30 01:13:57] INFO root fetch - main [MainThread]: End processing [reactives]: success
+[2023-04-30 01:13:57] INFO root fetch - main [MainThread]: End processing [netin]: success
+[2023-04-30 01:13:57] INFO root fetch - main [MainThread]: End processing [acrclient]: success
+[2023-04-30 01:13:57] INFO root fetch - main [MainThread]: Store serial: [17913103]
