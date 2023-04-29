@@ -707,3 +707,13 @@
 [2023-04-30 01:51:34] INFO root fetch - main [MainThread]: End processing [PigBotFramework]: success
 [2023-04-30 01:51:43] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-30 01:51:43] INFO root fetch - main [MainThread]: Store serial: [17913205]
+[2023-04-30 01:56:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913205]
+[2023-04-30 01:56:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-30 01:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ibonds
+[2023-04-30 01:56:53] INFO root fetch - processPackages [ibonds]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 01:56:53] INFO root fetch - processPackages [ibonds]: Downloading https://files.pythonhosted.org/packages/28/2c/e957d49512a9cf35f362c4e42775ffef51a1f3e6ebfd1cc230187674f2d3/ibonds-1.0.0.tar.gz
+[2023-04-30 01:56:54] INFO root fetch - processPackages [ibonds]: Downloading https://files.pythonhosted.org/packages/f5/4c/9231bf4fd00d16b00b9d134b739a1c16e05c530fb093a5c5c65591de76c9/ibonds-1.0.1.tar.gz
+[2023-04-30 01:56:54] INFO root fetch - processPackages [ibonds]: executing diffoscope
+[2023-04-30 01:56:54] INFO root fetch - processPackages [ibonds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibonds-1.0.0.tar.gz tmp/ibonds-1.0.1.tar.gz --markdown 20230430/i/ibonds/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 01:56:55] INFO root fetch - main [MainThread]: End processing [ibonds]: success
+[2023-04-30 01:56:55] INFO root fetch - main [MainThread]: Store serial: [17913208]
