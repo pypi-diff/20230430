@@ -360,3 +360,24 @@
 [2023-04-30 00:46:23] INFO root fetch - main [MainThread]: End processing [luau]: success
 [2023-04-30 00:48:04] INFO root fetch - main [MainThread]: End processing [langflow]: success
 [2023-04-30 00:48:04] INFO root fetch - main [MainThread]: Store serial: [17913033]
+[2023-04-30 00:53:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913033]
+[2023-04-30 00:53:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 00:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mia-accounting
+[2023-04-30 00:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: steamship-langchain
+[2023-04-30 00:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jrnl
+[2023-04-30 00:53:13] INFO root fetch - processPackages [mia-accounting]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-30 00:53:13] INFO root fetch - processPackages [steamship-langchain]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 00:53:13] INFO root fetch - processPackages [jrnl]: New version: [4.0b3] Old Version: [4.0b2]
+[2023-04-30 00:53:13] INFO root fetch - processPackages [steamship-langchain]: executing diffoscope
+[2023-04-30 00:53:13] INFO root fetch - processPackages [steamship-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamship-langchain-0.0.8.tar.gz tmp/steamship-langchain-0.0.9.tar.gz --markdown 20230430/s/steamship-langchain/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 00:53:13] INFO root fetch - processPackages [jrnl]: Downloading https://files.pythonhosted.org/packages/d0/58/d5ad1533f81ddca23c7dc2e0a4dbe08b59a51a119c5995e49825e21287bd/jrnl-4.0b2.tar.gz
+[2023-04-30 00:53:13] INFO root fetch - processPackages [mia-accounting]: Downloading https://files.pythonhosted.org/packages/20/ee/1556e3af460363d580cf4f412505c802fb55d697585ecd88cb35d772a34a/mia-accounting-1.5.2.tar.gz
+[2023-04-30 00:53:13] INFO root fetch - processPackages [mia-accounting]: executing diffoscope
+[2023-04-30 00:53:13] INFO root fetch - processPackages [mia-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mia-accounting-1.5.1.tar.gz tmp/mia-accounting-1.5.2.tar.gz --markdown 20230430/m/mia-accounting/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-30 00:53:14] INFO root fetch - processPackages [jrnl]: Downloading https://files.pythonhosted.org/packages/d8/8c/ff75fc3a4fe0ce6139039431b615ae60413e6661772e5360b7f0f708a69d/jrnl-4.0b3.tar.gz
+[2023-04-30 00:53:14] INFO root fetch - processPackages [jrnl]: executing diffoscope
+[2023-04-30 00:53:14] INFO root fetch - processPackages [jrnl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jrnl-4.0b2.tar.gz tmp/jrnl-4.0b3.tar.gz --markdown 20230430/j/jrnl/4.0b2-4.0b3/diff.md --exclude *.pyd
+[2023-04-30 00:53:14] INFO root fetch - main [MainThread]: End processing [steamship-langchain]: success
+[2023-04-30 00:53:15] INFO root fetch - main [MainThread]: End processing [jrnl]: success
+[2023-04-30 00:53:16] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
+[2023-04-30 00:53:16] INFO root fetch - main [MainThread]: Store serial: [17913043]
