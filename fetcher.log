@@ -381,3 +381,18 @@
 [2023-04-30 00:53:15] INFO root fetch - main [MainThread]: End processing [jrnl]: success
 [2023-04-30 00:53:16] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
 [2023-04-30 00:53:16] INFO root fetch - main [MainThread]: Store serial: [17913043]
+[2023-04-30 00:58:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913043]
+[2023-04-30 00:58:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 00:58:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luau
+[2023-04-30 00:58:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: denmune
+[2023-04-30 00:58:24] INFO root fetch - processPackages [luau]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-30 00:58:24] INFO root fetch - processPackages [denmune]: New version: [1.13] Old Version: [1.12]
+[2023-04-30 00:58:24] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/4d/8e/44d364beed1db23bf1b25b55a49802b93a40661eebbf56fc2e5f850a0d00/luau-0.4.3.tar.gz
+[2023-04-30 00:58:24] INFO root fetch - processPackages [denmune]: Downloading https://files.pythonhosted.org/packages/5a/96/b0bb094f026d3a9b58294bc9872ca95d344f66ec88aef1c23fbb3f24a88e/denmune-1.13.tar.gz
+[2023-04-30 00:58:24] INFO root fetch - processPackages [denmune]: executing diffoscope
+[2023-04-30 00:58:24] INFO root fetch - processPackages [denmune]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denmune-1.12.tar.gz tmp/denmune-1.13.tar.gz --markdown 20230430/d/denmune/1.12-1.13/diff.md --exclude *.pyd
+[2023-04-30 00:58:24] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-30 00:58:24] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.2.tar.gz tmp/luau-0.4.3.tar.gz --markdown 20230430/l/luau/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-30 00:58:25] INFO root fetch - main [MainThread]: End processing [denmune]: success
+[2023-04-30 00:58:26] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-30 00:58:26] INFO root fetch - main [MainThread]: Store serial: [17913048]
