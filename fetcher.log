@@ -592,3 +592,16 @@
 [2023-04-30 01:29:31] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
 [2023-04-30 01:29:31] INFO root fetch - main [MainThread]: End processing [fastrometry]: success
 [2023-04-30 01:29:31] INFO root fetch - main [MainThread]: Store serial: [17913152]
+[2023-04-30 01:34:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913152]
+[2023-04-30 01:34:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 01:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transformers-gradients
+[2023-04-30 01:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioregistry
+[2023-04-30 01:34:41] INFO root fetch - processPackages [transformers-gradients]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 01:34:41] INFO root fetch - processPackages [bioregistry]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-30 01:34:41] INFO root fetch - processPackages [transformers-gradients]: executing diffoscope
+[2023-04-30 01:34:41] INFO root fetch - processPackages [transformers-gradients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers_gradients-0.0.8.tar.gz tmp/transformers_gradients-0.0.9.tar.gz --markdown 20230430/t/transformers-gradients/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 01:34:41] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-04-30 01:34:41] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.8.8.tar.gz tmp/bioregistry-0.8.9.tar.gz --markdown 20230430/b/bioregistry/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-30 01:34:42] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
+[2023-04-30 01:35:51] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-04-30 01:35:51] INFO root fetch - main [MainThread]: Store serial: [17913158]
