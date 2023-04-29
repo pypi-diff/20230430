@@ -206,3 +206,51 @@
 [2023-04-30 00:25:22] INFO root fetch - main [MainThread]: End processing [openmapflow]: success
 [2023-04-30 00:25:27] INFO root fetch - main [MainThread]: End processing [copyparty]: success
 [2023-04-30 00:25:27] INFO root fetch - main [MainThread]: Store serial: [17912903]
+[2023-04-30 00:30:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17912903]
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mmmmmmm
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ooooooo
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bondgraph
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ofscraper
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uuuuuuu
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wwwwwww
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xxxxxxx
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yyyyyyy
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: poetry-source-env
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vvvvvvv
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [ooooooo]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ooooooo]: Start processing: zzzzzzz
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [ooooooo] error
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ofscraper]: New version: [1.86] Old Version: [1.83]
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [wwwwwww]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] INFO root fetch - processPackages [wwwwwww]: Start processing: steamship
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [wwwwwww] error
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [mmmmmmm]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [uuuuuuu]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [vvvvvvv]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [xxxxxxx]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [yyyyyyy]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] INFO root fetch - processPackages [poetry-source-env]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [mmmmmmm] error
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [uuuuuuu] error
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [vvvvvvv] error
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [xxxxxxx] error
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [yyyyyyy] error
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [zzzzzzz]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [zzzzzzz] error
+[2023-04-30 00:30:37] INFO root fetch - processPackages [steamship]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-30 00:30:37] WARNING root fetch - processPackages [bondgraph]: Skipping, unable to determine old version
+[2023-04-30 00:30:37] INFO root fetch - main [MainThread]: End processing [bondgraph] error
+[2023-04-30 00:30:37] INFO root fetch - processPackages [poetry-source-env]: Downloading https://files.pythonhosted.org/packages/80/88/1cb6acfb0ffc74e19e05e2ac6b94a0d448c0eb62fcfab12a4dcb47711f98/poetry_source_env-1.0.0.tar.gz
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/cc/6b/a4f5db516a87f7663355ca599e4f5cee73c51a91b3d625998c1c89cae6b5/ofscraper-1.86.tar.gz
+[2023-04-30 00:30:37] INFO root fetch - processPackages [poetry-source-env]: Downloading https://files.pythonhosted.org/packages/78/60/40dc3f04f477508480e8a77690b6c58609db470e1c5cf065123948489226/poetry_source_env-1.0.1.tar.gz
+[2023-04-30 00:30:37] INFO root fetch - processPackages [steamship]: executing diffoscope
+[2023-04-30 00:30:37] INFO root fetch - processPackages [steamship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamship-2.3.8.tar.gz tmp/steamship-2.3.9.tar.gz --markdown 20230430/s/steamship/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2023-04-30 00:30:37] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-1.83.tar.gz tmp/ofscraper-1.86.tar.gz --markdown 20230430/o/ofscraper/1.83-1.86/diff.md --exclude *.pyd
+[2023-04-30 00:30:37] INFO root fetch - processPackages [poetry-source-env]: executing diffoscope
+[2023-04-30 00:30:37] INFO root fetch - processPackages [poetry-source-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_source_env-1.0.0.tar.gz tmp/poetry_source_env-1.0.1.tar.gz --markdown 20230430/p/poetry-source-env/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 00:30:38] INFO root fetch - main [MainThread]: End processing [poetry-source-env]: success
+[2023-04-30 00:30:39] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2023-04-30 00:30:40] INFO root fetch - main [MainThread]: End processing [steamship]: success
+[2023-04-30 00:30:40] INFO root fetch - main [MainThread]: Store serial: [17912958]
