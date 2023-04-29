@@ -396,3 +396,37 @@
 [2023-04-30 00:58:25] INFO root fetch - main [MainThread]: End processing [denmune]: success
 [2023-04-30 00:58:26] INFO root fetch - main [MainThread]: End processing [luau]: success
 [2023-04-30 00:58:26] INFO root fetch - main [MainThread]: Store serial: [17913048]
+[2023-04-30 01:03:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913048]
+[2023-04-30 01:03:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 01:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xyxABC785
+[2023-04-30 01:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arcangelai
+[2023-04-30 01:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psycopg-infdate
+[2023-04-30 01:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmnt-cu101
+[2023-04-30 01:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prepup
+[2023-04-30 01:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tmnt
+[2023-04-30 01:03:35] INFO root fetch - processPackages [xyxABC785]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 01:03:35] INFO root fetch - processPackages [arcangelai]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-30 01:03:35] WARNING root fetch - processPackages [prepup]: Skipping, unable to determine old version
+[2023-04-30 01:03:35] INFO root fetch - main [MainThread]: End processing [prepup] error
+[2023-04-30 01:03:35] WARNING root fetch - processPackages [psycopg-infdate]: Skipping, unable to determine old version
+[2023-04-30 01:03:35] INFO root fetch - main [MainThread]: End processing [psycopg-infdate] error
+[2023-04-30 01:03:35] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230429] Old Version: [0.7.0b20230428]
+[2023-04-30 01:03:35] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230428] Old Version: [0.7.0b20230427]
+[2023-04-30 01:03:35] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-30 01:03:35] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230427.tar.gz tmp/tmnt-0.7.0b20230428.tar.gz --markdown 20230430/t/tmnt/0.7.0b20230427-0.7.0b20230428/diff.md --exclude *.pyd
+[2023-04-30 01:03:35] INFO root fetch - processPackages [xyxABC785]: Downloading https://files.pythonhosted.org/packages/2d/f5/d38aeec364b4e021a753eaaaa0525aa6d83b91ce929908ac7511a274a1b7/xyxABC785-0.1.0.tar.gz
+[2023-04-30 01:03:35] INFO root fetch - processPackages [arcangelai]: Downloading https://files.pythonhosted.org/packages/0d/35/257dc759ec723b170cfef1e2572cdd537bce9fb2185d3b10cd1550def785/arcangelai-2.0.0.tar.gz
+[2023-04-30 01:03:35] INFO root fetch - processPackages [xyxABC785]: Downloading https://files.pythonhosted.org/packages/33/55/7314f526f28d19544f3d6e9a053faeda6f94917b5581f5f22cf689d249e0/xyxABC785-0.1.1.tar.gz
+[2023-04-30 01:03:35] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/44/c1/b920187f4038e2032af548e831c0c73b954544a7d4b55f59bf53ad7138c3/tmnt-cu101-0.7.0b20230429.tar.gz
+[2023-04-30 01:03:35] INFO root fetch - processPackages [xyxABC785]: executing diffoscope
+[2023-04-30 01:03:35] INFO root fetch - processPackages [xyxABC785]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xyxABC785-0.1.0.tar.gz tmp/xyxABC785-0.1.1.tar.gz --markdown 20230430/x/xyxABC785/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 01:03:36] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-04-30 01:03:36] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230428.tar.gz tmp/tmnt-cu101-0.7.0b20230429.tar.gz --markdown 20230430/t/tmnt-cu101/0.7.0b20230428-0.7.0b20230429/diff.md --exclude *.pyd
+[2023-04-30 01:03:36] INFO root fetch - processPackages [arcangelai]: Downloading https://files.pythonhosted.org/packages/d4/ed/4d9048fdbd3c3b588c908dd6bd36b51298db00731021c95727d4e1050db2/arcangelai-2.0.1.tar.gz
+[2023-04-30 01:03:36] INFO root fetch - processPackages [arcangelai]: executing diffoscope
+[2023-04-30 01:03:36] INFO root fetch - processPackages [arcangelai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcangelai-2.0.0.tar.gz tmp/arcangelai-2.0.1.tar.gz --markdown 20230430/a/arcangelai/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-30 01:03:36] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-04-30 01:03:36] INFO root fetch - main [MainThread]: End processing [xyxABC785]: success
+[2023-04-30 01:03:37] INFO root fetch - main [MainThread]: End processing [arcangelai]: success
+[2023-04-30 01:03:37] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-04-30 01:03:37] INFO root fetch - main [MainThread]: Store serial: [17913066]
