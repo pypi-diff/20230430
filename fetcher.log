@@ -656,3 +656,19 @@
 [2023-04-30 01:41:11] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
 [2023-04-30 01:41:12] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-30 01:41:12] INFO root fetch - main [MainThread]: Store serial: [17913180]
+[2023-04-30 01:46:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913180]
+[2023-04-30 01:46:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 01:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Networkfix
+[2023-04-30 01:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Networkfix
+[2023-04-30 01:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: secimport
+[2023-04-30 01:46:21] ERROR root fetch - processPackages [Networkfix]: Unable to get metadata: No such project 'Networkfix'
+[2023-04-30 01:46:21] INFO root fetch - main [MainThread]: End processing [Networkfix] error
+[2023-04-30 01:46:21] ERROR root fetch - processPackages [Networkfix]: Unable to get metadata: No such project 'Networkfix'
+[2023-04-30 01:46:21] INFO root fetch - main [MainThread]: End processing [Networkfix] error
+[2023-04-30 01:46:21] INFO root fetch - processPackages [secimport]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-04-30 01:46:22] INFO root fetch - processPackages [secimport]: Downloading https://files.pythonhosted.org/packages/98/dd/7bbd0fb04d02bc16c32fc70f00674591644854d5261b783866e029cb9f23/secimport-0.7.3.tar.gz
+[2023-04-30 01:46:22] INFO root fetch - processPackages [secimport]: Downloading https://files.pythonhosted.org/packages/75/d3/6db9966694671d76068ccf44373bfd4550b8b26ec5514ca83bef79ddcdd7/secimport-0.8.0.tar.gz
+[2023-04-30 01:46:22] INFO root fetch - processPackages [secimport]: executing diffoscope
+[2023-04-30 01:46:22] INFO root fetch - processPackages [secimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secimport-0.7.3.tar.gz tmp/secimport-0.8.0.tar.gz --markdown 20230430/s/secimport/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-04-30 01:46:23] INFO root fetch - main [MainThread]: End processing [secimport]: success
+[2023-04-30 01:46:23] INFO root fetch - main [MainThread]: Store serial: [17913191]
