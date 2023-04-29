@@ -672,3 +672,38 @@
 [2023-04-30 01:46:22] INFO root fetch - processPackages [secimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secimport-0.7.3.tar.gz tmp/secimport-0.8.0.tar.gz --markdown 20230430/s/secimport/0.7.3-0.8.0/diff.md --exclude *.pyd
 [2023-04-30 01:46:23] INFO root fetch - main [MainThread]: End processing [secimport]: success
 [2023-04-30 01:46:23] INFO root fetch - main [MainThread]: Store serial: [17913191]
+[2023-04-30 01:51:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913191]
+[2023-04-30 01:51:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 01:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yatracker-linker
+[2023-04-30 01:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yatracker-linker
+[2023-04-30 01:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PigBotFramework
+[2023-04-30 01:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kcli
+[2023-04-30 01:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hotbox
+[2023-04-30 01:51:32] INFO root fetch - processPackages [PigBotFramework]: New version: [4.1.9] Old Version: [4.1.8]
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-30 01:51:32] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 01:51:32] INFO root fetch - processPackages [kcli]: New version: [99.0.202304292350] Old Version: [99.0.202304292334]
+[2023-04-30 01:51:32] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-30 01:51:32] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230430/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/1e/5a/10dedcd04934553554fcb30b5b9223bfb40bfc38c9f15a074ffd20e0b4e6/yatracker_linker-0.2.2.tar.gz
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/1e/5a/10dedcd04934553554fcb30b5b9223bfb40bfc38c9f15a074ffd20e0b4e6/yatracker_linker-0.2.2.tar.gz
+[2023-04-30 01:51:32] INFO root fetch - processPackages [PigBotFramework]: Downloading https://files.pythonhosted.org/packages/49/ec/9fb3b77384d7d7ab87c675a8586c1c1d45a15849d6c3babc4de326eaad70/PigBotFramework-4.1.8.tar.gz
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/d2/7b/256d91e8d5ad9258334b1ac24343e3a5b3cdbdcfd969c1c2952f0a14c80f/yatracker_linker-0.2.3.tar.gz
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/d2/7b/256d91e8d5ad9258334b1ac24343e3a5b3cdbdcfd969c1c2952f0a14c80f/yatracker_linker-0.2.3.tar.gz
+[2023-04-30 01:51:32] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/fb/4b/00e5bd1215f783c60039ac597a3e78b4cf5d1bff73d0f99fbac5aaa93f9d/kcli-99.0.202304292350-py3-none-any.whl
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: executing diffoscope
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yatracker_linker-0.2.2.tar.gz tmp/yatracker_linker-0.2.3.tar.gz --markdown 20230430/y/yatracker-linker/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: executing diffoscope
+[2023-04-30 01:51:32] INFO root fetch - processPackages [yatracker-linker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yatracker_linker-0.2.2.tar.gz tmp/yatracker_linker-0.2.3.tar.gz --markdown 20230430/y/yatracker-linker/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-30 01:51:32] INFO root fetch - processPackages [PigBotFramework]: Downloading https://files.pythonhosted.org/packages/6d/e2/f7fce21072ffc19fed3e3321ea9f987e729929562f7e3b32bc14018a6bf8/PigBotFramework-4.1.9.tar.gz
+[2023-04-30 01:51:33] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-30 01:51:33] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304292334-py3-none-any.whl.zip tmp/kcli-99.0.202304292350-py3-none-any.whl.zip --markdown 20230430/k/kcli/99.0.202304292334-99.0.202304292350/diff.md --exclude *.pyd
+[2023-04-30 01:51:33] INFO root fetch - processPackages [PigBotFramework]: executing diffoscope
+[2023-04-30 01:51:33] INFO root fetch - processPackages [PigBotFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PigBotFramework-4.1.8.tar.gz tmp/PigBotFramework-4.1.9.tar.gz --markdown 20230430/P/PigBotFramework/4.1.8-4.1.9/diff.md --exclude *.pyd
+[2023-04-30 01:51:33] INFO root fetch - main [MainThread]: End processing [yatracker-linker]: success
+[2023-04-30 01:51:33] INFO root fetch - main [MainThread]: End processing [yatracker-linker]: success
+[2023-04-30 01:51:34] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-04-30 01:51:34] INFO root fetch - main [MainThread]: End processing [PigBotFramework]: success
+[2023-04-30 01:51:43] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-30 01:51:43] INFO root fetch - main [MainThread]: Store serial: [17913205]
