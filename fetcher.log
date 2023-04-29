@@ -163,3 +163,46 @@
 [2023-04-30 00:19:59] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-30 00:20:10] INFO root fetch - main [MainThread]: End processing [scoop-template-engine]: success
 [2023-04-30 00:20:10] INFO root fetch - main [MainThread]: Store serial: [17912820]
+[2023-04-30 00:25:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17912820]
+[2023-04-30 00:25:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyscal3
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openmapflow
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: danielutils
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ppppppp
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sssssss
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: copyparty
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rrrrrrr
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ttttttt
+[2023-04-30 00:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-object-safety
+[2023-04-30 00:25:19] INFO root fetch - processPackages [django-object-safety]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-30 00:25:19] INFO root fetch - processPackages [danielutils]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-30 00:25:19] INFO root fetch - processPackages [copyparty]: New version: [1.7.0] Old Version: [1.6.9]
+[2023-04-30 00:25:19] WARNING root fetch - processPackages [sssssss]: Skipping, unable to determine old version
+[2023-04-30 00:25:19] INFO root fetch - main [MainThread]: End processing [sssssss] error
+[2023-04-30 00:25:19] WARNING root fetch - processPackages [ppppppp]: Skipping, unable to determine old version
+[2023-04-30 00:25:19] INFO root fetch - processPackages [openmapflow]: New version: [0.2.3rc3] Old Version: [0.2.3rc2]
+[2023-04-30 00:25:19] INFO root fetch - main [MainThread]: End processing [ppppppp] error
+[2023-04-30 00:25:19] WARNING root fetch - processPackages [pyscal3]: Skipping, unable to determine old version
+[2023-04-30 00:25:19] INFO root fetch - main [MainThread]: End processing [pyscal3] error
+[2023-04-30 00:25:20] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-30 00:25:20] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-1.2.0.tar.gz tmp/django_object_safety-1.2.1.tar.gz --markdown 20230430/d/django-object-safety/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-30 00:25:20] WARNING root fetch - processPackages [rrrrrrr]: Skipping, unable to determine old version
+[2023-04-30 00:25:20] INFO root fetch - main [MainThread]: End processing [rrrrrrr] error
+[2023-04-30 00:25:20] WARNING root fetch - processPackages [ttttttt]: Skipping, unable to determine old version
+[2023-04-30 00:25:20] INFO root fetch - main [MainThread]: End processing [ttttttt] error
+[2023-04-30 00:25:20] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/e0/2c/d84103ed2d11bce765b85d214059c1b77cf4a885f99086ea9bd1fc39615b/danielutils-0.8.5.tar.gz
+[2023-04-30 00:25:20] INFO root fetch - processPackages [openmapflow]: Downloading https://files.pythonhosted.org/packages/7b/af/c67c441cc9024cacebb9f7d1c1c6f28e45e629bce2e3cc3e598ca182499d/openmapflow-0.2.3rc2.tar.gz
+[2023-04-30 00:25:20] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/3e/0f/c07a94c707b1e0310df8c8bf31d98a80c1b39734a40dc20bc5235c0030cb/copyparty-1.7.0.tar.gz
+[2023-04-30 00:25:20] INFO root fetch - processPackages [copyparty]: executing diffoscope
+[2023-04-30 00:25:20] INFO root fetch - processPackages [copyparty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copyparty-1.6.9.tar.gz tmp/copyparty-1.7.0.tar.gz --markdown 20230430/c/copyparty/1.6.9-1.7.0/diff.md --exclude *.pyd
+[2023-04-30 00:25:20] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/52/60/5974dde372865020760422f9878b10a83f441db8bfe1dd755d2fd721e938/danielutils-0.8.6.tar.gz
+[2023-04-30 00:25:20] INFO root fetch - processPackages [danielutils]: executing diffoscope
+[2023-04-30 00:25:20] INFO root fetch - processPackages [danielutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danielutils-0.8.5.tar.gz tmp/danielutils-0.8.6.tar.gz --markdown 20230430/d/danielutils/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-30 00:25:20] INFO root fetch - processPackages [openmapflow]: Downloading https://files.pythonhosted.org/packages/1a/25/2c59e4bca52d4ed86aff29eb5b9d83f70b91868f91e58b46bd38f69ccce6/openmapflow-0.2.3rc3.tar.gz
+[2023-04-30 00:25:20] INFO root fetch - processPackages [openmapflow]: executing diffoscope
+[2023-04-30 00:25:20] INFO root fetch - processPackages [openmapflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmapflow-0.2.3rc2.tar.gz tmp/openmapflow-0.2.3rc3.tar.gz --markdown 20230430/o/openmapflow/0.2.3rc2-0.2.3rc3/diff.md --exclude *.pyd
+[2023-04-30 00:25:21] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-30 00:25:21] INFO root fetch - main [MainThread]: End processing [danielutils]: success
+[2023-04-30 00:25:22] INFO root fetch - main [MainThread]: End processing [openmapflow]: success
+[2023-04-30 00:25:27] INFO root fetch - main [MainThread]: End processing [copyparty]: success
+[2023-04-30 00:25:27] INFO root fetch - main [MainThread]: Store serial: [17912903]
