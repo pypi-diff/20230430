@@ -505,3 +505,19 @@
 [2023-04-30 01:13:57] INFO root fetch - main [MainThread]: End processing [netin]: success
 [2023-04-30 01:13:57] INFO root fetch - main [MainThread]: End processing [acrclient]: success
 [2023-04-30 01:13:57] INFO root fetch - main [MainThread]: Store serial: [17913103]
+[2023-04-30 01:19:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913103]
+[2023-04-30 01:19:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 01:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: icpp
+[2023-04-30 01:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweelol
+[2023-04-30 01:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alpha-filter
+[2023-04-30 01:19:07] WARNING root fetch - processPackages [icpp]: Skipping, unable to determine old version
+[2023-04-30 01:19:07] INFO root fetch - processPackages [alpha-filter]: New version: [0.4] Old Version: [0.2]
+[2023-04-30 01:19:07] INFO root fetch - main [MainThread]: End processing [icpp] error
+[2023-04-30 01:19:07] WARNING root fetch - processPackages [sweelol]: Skipping, unable to determine old version
+[2023-04-30 01:19:07] INFO root fetch - main [MainThread]: End processing [sweelol] error
+[2023-04-30 01:19:07] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/59/73/11df779cb63ca4c500936be6581b520f1d68d592232c37ce178e04ea69b1/alpha-filter-0.2.tar.gz
+[2023-04-30 01:19:08] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/77/f6/c2a29fbecbc69015dd903389599350740cf452de5fee6567734b95629e27/alpha-filter-0.4.tar.gz
+[2023-04-30 01:19:08] INFO root fetch - processPackages [alpha-filter]: executing diffoscope
+[2023-04-30 01:19:08] INFO root fetch - processPackages [alpha-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha-filter-0.2.tar.gz tmp/alpha-filter-0.4.tar.gz --markdown 20230430/a/alpha-filter/0.2-0.4/diff.md --exclude *.pyd
+[2023-04-30 01:19:09] INFO root fetch - main [MainThread]: End processing [alpha-filter]: success
+[2023-04-30 01:19:09] INFO root fetch - main [MainThread]: Store serial: [17913114]
