@@ -521,3 +521,21 @@
 [2023-04-30 01:19:08] INFO root fetch - processPackages [alpha-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha-filter-0.2.tar.gz tmp/alpha-filter-0.4.tar.gz --markdown 20230430/a/alpha-filter/0.2-0.4/diff.md --exclude *.pyd
 [2023-04-30 01:19:09] INFO root fetch - main [MainThread]: End processing [alpha-filter]: success
 [2023-04-30 01:19:09] INFO root fetch - main [MainThread]: Store serial: [17913114]
+[2023-04-30 01:24:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913114]
+[2023-04-30 01:24:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 01:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IMDbTraktSyncer
+[2023-04-30 01:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netin
+[2023-04-30 01:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alpha-filter
+[2023-04-30 01:24:17] INFO root fetch - processPackages [IMDbTraktSyncer]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 01:24:17] WARNING root fetch - processPackages [alpha-filter]: Skipping, unable to determine old version
+[2023-04-30 01:24:17] INFO root fetch - main [MainThread]: End processing [alpha-filter] error
+[2023-04-30 01:24:17] INFO root fetch - processPackages [netin]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-30 01:24:17] INFO root fetch - processPackages [IMDbTraktSyncer]: Downloading https://files.pythonhosted.org/packages/b6/c1/ee8a6d3b5e39498794be9b79deff804b73a67fadc6b73efdcc6dc1b83a24/IMDbTraktSyncer-1.0.4.tar.gz
+[2023-04-30 01:24:17] INFO root fetch - processPackages [netin]: Downloading https://files.pythonhosted.org/packages/84/8d/a024679ef606f943fac7afc51cb47f6df9072d2c8ff7aa7183e81376f3c8/netin-1.0.7.tar.gz
+[2023-04-30 01:24:17] INFO root fetch - processPackages [IMDbTraktSyncer]: executing diffoscope
+[2023-04-30 01:24:17] INFO root fetch - processPackages [IMDbTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDbTraktSyncer-1.0.3.tar.gz tmp/IMDbTraktSyncer-1.0.4.tar.gz --markdown 20230430/I/IMDbTraktSyncer/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 01:24:17] INFO root fetch - processPackages [netin]: executing diffoscope
+[2023-04-30 01:24:17] INFO root fetch - processPackages [netin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netin-1.0.6.tar.gz tmp/netin-1.0.7.tar.gz --markdown 20230430/n/netin/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-30 01:24:18] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
+[2023-04-30 01:24:19] INFO root fetch - main [MainThread]: End processing [netin]: success
+[2023-04-30 01:24:19] INFO root fetch - main [MainThread]: Store serial: [17913125]
