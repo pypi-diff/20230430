@@ -6647,3 +6647,43 @@
 [2023-04-30 14:55:02] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-04-30 14:55:02] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
 [2023-04-30 14:55:02] INFO root fetch - main [MainThread]: Store serial: [17916877]
+[2023-04-30 15:00:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916877]
+[2023-04-30 15:00:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 15:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: k2
+[2023-04-30 15:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bottle-test
+[2023-04-30 15:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transformers-gradients
+[2023-04-30 15:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bacteria
+[2023-04-30 15:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: GPTAgent
+[2023-04-30 15:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: so-vits-svc-fork
+[2023-04-30 15:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: novelai-api
+[2023-04-30 15:00:11] INFO root fetch - processPackages [GPTAgent]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:00:11] WARNING root fetch - processPackages [nonebot-plugin-bottle-test]: Skipping, unable to determine old version
+[2023-04-30 15:00:11] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bottle-test] error
+[2023-04-30 15:00:11] INFO root fetch - processPackages [transformers-gradients]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:00:11] INFO root fetch - processPackages [k2]: New version: [1.9.dev20211024] Old Version: [1.9]
+[2023-04-30 15:00:11] INFO root fetch - processPackages [bacteria]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-30 15:00:11] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-04-30 15:00:11] INFO root fetch - processPackages [GPTAgent]: executing diffoscope
+[2023-04-30 15:00:11] INFO root fetch - processPackages [GPTAgent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptagent-0.0.8.tar.gz tmp/gptagent-0.0.9.tar.gz --markdown 20230430/G/GPTAgent/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:00:11] INFO root fetch - processPackages [transformers-gradients]: executing diffoscope
+[2023-04-30 15:00:11] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2023-04-30 15:00:11] INFO root fetch - processPackages [transformers-gradients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers_gradients-0.0.8.tar.gz tmp/transformers_gradients-0.0.9.tar.gz --markdown 20230430/t/transformers-gradients/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:00:11] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-30 15:00:11] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230430/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-04-30 15:00:11] INFO root fetch - processPackages [k2]: Downloading https://files.pythonhosted.org/packages/c0/59/e8df7d4a1a79e1bc1b6c7cb734c6d1f16e70b9bf5e46c6bc33c268534ffa/k2-1.9-py38-none-any.whl
+[2023-04-30 15:00:11] INFO root fetch - processPackages [bacteria]: Downloading https://files.pythonhosted.org/packages/a9/dc/0e104d26762e7df055e57564b571f7cbd378785ccee78aac49ea5a4a5330/bacteria-0.1.9.tar.gz
+[2023-04-30 15:00:11] WARNING root fetch - processPackages [k2]: Skipping package: exceeds size limit 77736576>=10485760
+[2023-04-30 15:00:11] INFO root fetch - main [MainThread]: End processing [k2] error
+[2023-04-30 15:00:11] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/fc/5f/4521adcc080f088c499ad70d5ea4d991b23f72661d4aa68a9112d0b3283e/novelai-api-0.8.tar.gz
+[2023-04-30 15:00:11] INFO root fetch - processPackages [bacteria]: Downloading https://files.pythonhosted.org/packages/68/71/1cd168e64dfaa795dcb3d99157d8eba84fa878e98b1296cbf4703f6532ee/bacteria-0.2.0.tar.gz
+[2023-04-30 15:00:11] INFO root fetch - processPackages [bacteria]: executing diffoscope
+[2023-04-30 15:00:11] INFO root fetch - processPackages [bacteria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacteria-0.1.9.tar.gz tmp/bacteria-0.2.0.tar.gz --markdown 20230430/b/bacteria/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 15:00:12] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/69/ed/74960ad9154e8dc49c4d6c47cbc174dc97461bb9e5e113a548c167b72455/novelai-api-0.9.tar.gz
+[2023-04-30 15:00:12] INFO root fetch - main [MainThread]: End processing [GPTAgent]: success
+[2023-04-30 15:00:12] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
+[2023-04-30 15:00:12] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2023-04-30 15:00:12] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20230430/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-30 15:00:12] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-30 15:00:12] INFO root fetch - main [MainThread]: End processing [bacteria]: success
+[2023-04-30 15:00:14] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2023-04-30 15:00:14] INFO root fetch - main [MainThread]: Store serial: [17916900]
