@@ -7414,3 +7414,38 @@
 [2023-04-30 16:04:44] INFO root fetch - main [MainThread]: End processing [gehomesdk]: success
 [2023-04-30 16:05:00] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-30 16:05:00] INFO root fetch - main [MainThread]: Store serial: [17917305]
+[2023-04-30 16:10:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917305]
+[2023-04-30 16:10:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 16:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snc
+[2023-04-30 16:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt4free
+[2023-04-30 16:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: digitalguide
+[2023-04-30 16:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TIMING-SOLUTION
+[2023-04-30 16:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: loxt-models
+[2023-04-30 16:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: polars-streaming
+[2023-04-30 16:10:11] INFO root fetch - processPackages [loxt-models]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 16:10:11] INFO root fetch - processPackages [snc]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-30 16:10:11] WARNING root fetch - processPackages [gpt4free]: Skipping, unable to determine old version
+[2023-04-30 16:10:11] INFO root fetch - processPackages [polars-streaming]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-30 16:10:11] WARNING root fetch - processPackages [TIMING-SOLUTION]: Skipping, unable to determine old version
+[2023-04-30 16:10:11] INFO root fetch - main [MainThread]: End processing [gpt4free] error
+[2023-04-30 16:10:11] INFO root fetch - main [MainThread]: End processing [TIMING-SOLUTION] error
+[2023-04-30 16:10:11] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 16:10:11] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-04-30 16:10:11] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230430/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 16:10:11] INFO root fetch - processPackages [loxt-models]: Downloading https://files.pythonhosted.org/packages/ca/ff/31836c1a3677f6ef22dda7b0168d06d744db3e65bb341884e70fc738e5b0/loxt_models-0.1.0.tar.gz
+[2023-04-30 16:10:11] INFO root fetch - processPackages [snc]: Downloading https://files.pythonhosted.org/packages/f9/5b/216e1ba0a059945c18193087ad818aa928fdeb79e9c1c1a4d2639b8e5978/snc-0.2.0.tar.gz
+[2023-04-30 16:10:11] INFO root fetch - processPackages [polars-streaming]: Downloading https://files.pythonhosted.org/packages/02/64/d9c7bee57bb8e256d8f59950cb0bda130316e09afac3b409507d9416db50/polars-streaming-0.1.2.tar.gz
+[2023-04-30 16:10:11] INFO root fetch - processPackages [snc]: Downloading https://files.pythonhosted.org/packages/62/30/0000865059a20ee26b356c8895f535fc22377f66c94859fd411b19ba547c/snc-0.2.1.tar.gz
+[2023-04-30 16:10:11] INFO root fetch - processPackages [loxt-models]: Downloading https://files.pythonhosted.org/packages/2b/20/1cab800f2c387f0e96b0f004dceaba83ce16533b85d3d8dea541c0fa0fc1/loxt_models-0.1.1.tar.gz
+[2023-04-30 16:10:11] INFO root fetch - processPackages [polars-streaming]: Downloading https://files.pythonhosted.org/packages/fa/36/3a76fa04807a84770ec53cf66a9da2c62dcb2ed2cb9151a52c7a2285133b/polars-streaming-0.2.0.tar.gz
+[2023-04-30 16:10:12] INFO root fetch - processPackages [snc]: executing diffoscope
+[2023-04-30 16:10:12] INFO root fetch - processPackages [snc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snc-0.2.0.tar.gz tmp/snc-0.2.1.tar.gz --markdown 20230430/s/snc/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 16:10:12] INFO root fetch - processPackages [loxt-models]: executing diffoscope
+[2023-04-30 16:10:12] INFO root fetch - processPackages [loxt-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loxt_models-0.1.0.tar.gz tmp/loxt_models-0.1.1.tar.gz --markdown 20230430/l/loxt-models/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 16:10:12] INFO root fetch - processPackages [polars-streaming]: executing diffoscope
+[2023-04-30 16:10:12] INFO root fetch - processPackages [polars-streaming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-streaming-0.1.2.tar.gz tmp/polars-streaming-0.2.0.tar.gz --markdown 20230430/p/polars-streaming/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 16:10:12] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-04-30 16:10:13] INFO root fetch - main [MainThread]: End processing [loxt-models]: success
+[2023-04-30 16:10:13] INFO root fetch - main [MainThread]: End processing [snc]: success
+[2023-04-30 16:10:13] INFO root fetch - main [MainThread]: End processing [polars-streaming]: success
+[2023-04-30 16:10:13] INFO root fetch - main [MainThread]: Store serial: [17917330]
