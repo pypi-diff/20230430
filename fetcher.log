@@ -8414,3 +8414,32 @@
 [2023-04-30 18:08:42] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
 [2023-04-30 18:08:43] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-04-30 18:08:43] INFO root fetch - main [MainThread]: Store serial: [17917997]
+[2023-04-30 18:13:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917997]
+[2023-04-30 18:13:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 18:13:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-workshop
+[2023-04-30 18:13:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sdmx1
+[2023-04-30 18:13:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syscolorv7
+[2023-04-30 18:13:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mhn
+[2023-04-30 18:13:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-object-safety
+[2023-04-30 18:13:52] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-30 18:13:52] WARNING root fetch - processPackages [syscolorv7]: Skipping, unable to determine old version
+[2023-04-30 18:13:52] INFO root fetch - main [MainThread]: End processing [syscolorv7] error
+[2023-04-30 18:13:52] INFO root fetch - processPackages [sdmx1]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-04-30 18:13:52] INFO root fetch - processPackages [django-object-safety]: New version: [2.0.0] Old Version: [1.2.3]
+[2023-04-30 18:13:52] INFO root fetch - processPackages [mhn]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 18:13:52] INFO root fetch - processPackages [mhn]: executing diffoscope
+[2023-04-30 18:13:52] INFO root fetch - processPackages [mhn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mhn-0.0.8.tar.gz tmp/mhn-0.0.9.tar.gz --markdown 20230430/m/mhn/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 18:13:52] INFO root fetch - processPackages [sdmx1]: Downloading https://files.pythonhosted.org/packages/44/4b/374eba00e995541ce5d1a150b39ace8bdb28759085c5dfa8424c82ed2e4e/sdmx1-2.8.0.tar.gz
+[2023-04-30 18:13:52] INFO root fetch - processPackages [django-object-safety]: Downloading https://files.pythonhosted.org/packages/b7/8a/fe2d86fae2fe66984d5ca46e0ddd1ce859735843b9ab86e38398aa6a0a37/django_object_safety-2.0.0.tar.gz
+[2023-04-30 18:13:52] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-30 18:13:52] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-1.2.3.tar.gz tmp/django_object_safety-2.0.0.tar.gz --markdown 20230430/d/django-object-safety/1.2.3-2.0.0/diff.md --exclude *.pyd
+[2023-04-30 18:13:52] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-30 18:13:52] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230430/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-30 18:13:52] INFO root fetch - processPackages [sdmx1]: Downloading https://files.pythonhosted.org/packages/d4/74/474d459265382856a9124916f8b6b603ef57757e6127c94a76cee6f31de9/sdmx1-2.9.0.tar.gz
+[2023-04-30 18:13:53] INFO root fetch - processPackages [sdmx1]: executing diffoscope
+[2023-04-30 18:13:53] INFO root fetch - processPackages [sdmx1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdmx1-2.8.0.tar.gz tmp/sdmx1-2.9.0.tar.gz --markdown 20230430/s/sdmx1/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-04-30 18:13:53] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-30 18:13:53] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-30 18:13:53] INFO root fetch - main [MainThread]: End processing [mhn]: success
+[2023-04-30 18:13:55] INFO root fetch - main [MainThread]: End processing [sdmx1]: success
+[2023-04-30 18:13:55] INFO root fetch - main [MainThread]: Store serial: [17918018]
