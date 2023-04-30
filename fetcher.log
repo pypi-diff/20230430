@@ -8050,3 +8050,62 @@
 [2023-04-30 17:26:18] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
 [2023-04-30 17:26:19] INFO root fetch - main [MainThread]: End processing [llm-generation-server]: success
 [2023-04-30 17:26:19] INFO root fetch - main [MainThread]: Store serial: [17917754]
+[2023-04-30 17:31:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917754]
+[2023-04-30 17:31:28] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qtc
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mhtmlconverter
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pythoncryptov2
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scribe-data
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dxsp
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xcpcio-board-spider
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: telescope-sdk
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mafic
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ranch-hand
+[2023-04-30 17:31:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: back-to-sit
+[2023-04-30 17:31:28] WARNING root fetch - processPackages [pythoncryptov2]: Skipping, unable to determine old version
+[2023-04-30 17:31:28] INFO root fetch - main [MainThread]: End processing [pythoncryptov2] error
+[2023-04-30 17:31:28] INFO root fetch - processPackages [qtc]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 17:31:28] INFO root fetch - processPackages [dxsp]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-30 17:31:28] WARNING root fetch - processPackages [mhtmlconverter]: Skipping, unable to determine old version
+[2023-04-30 17:31:28] INFO root fetch - main [MainThread]: End processing [mhtmlconverter] error
+[2023-04-30 17:31:28] INFO root fetch - processPackages [scribe-data]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-04-30 17:31:28] WARNING root fetch - processPackages [ranch-hand]: Skipping, unable to determine old version
+[2023-04-30 17:31:28] INFO root fetch - processPackages [back-to-sit]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 17:31:28] INFO root fetch - main [MainThread]: End processing [ranch-hand] error
+[2023-04-30 17:31:28] INFO root fetch - processPackages [telescope-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 17:31:28] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 17:31:28] INFO root fetch - processPackages [mafic]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-30 17:31:28] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/fb/f5/7cc7c0ce0451cb9b5c54a5eb9e0e1a722d0b59ae3e90082e5ff46c838719/dxsp-1.4.0.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [qtc]: Downloading https://files.pythonhosted.org/packages/28/6e/915f7ee2664a41f209956f9ce4ccd1670ee2232022c6ee830648a1fed11c/qtc-0.0.1.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [scribe-data]: Downloading https://files.pythonhosted.org/packages/5d/7a/821aff7137169e6ee93931e8afc14b790da4488c16e690970f0cf9a98788/scribe_data-3.0.0-py3-none-any.whl
+[2023-04-30 17:31:28] INFO root fetch - processPackages [xcpcio-board-spider]: Downloading https://files.pythonhosted.org/packages/a8/d5/616e6e98aaf48c78e34990b46f8d68e1457159107c5971a2646a1633df72/xcpcio_board_spider-0.0.5.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [back-to-sit]: Downloading https://files.pythonhosted.org/packages/84/ca/9411ee473dc031ab2c16facecf9fbb4b70eeed47699422bbe90919bc4047/back_to_sit-0.0.5.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/54/a7/775080f9207b9b2addc9ec2bad02d9935f1341c8f2a1e5872ce9322753cc/telescope_sdk-0.1.8.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [mafic]: Downloading https://files.pythonhosted.org/packages/f9/ee/4983a33fe2fd47f2943befa5b873e0648642eff0a34e0b60f7f124a597f9/mafic-2.1.0.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-04-30 17:31:28] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.4.tar.gz tmp/xcpcio_board_spider-0.0.5.tar.gz --markdown 20230430/x/xcpcio-board-spider/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 17:31:28] INFO root fetch - processPackages [back-to-sit]: executing diffoscope
+[2023-04-30 17:31:28] INFO root fetch - processPackages [back-to-sit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/back_to_sit-0.0.4.tar.gz tmp/back_to_sit-0.0.5.tar.gz --markdown 20230430/b/back-to-sit/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 17:31:28] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/88/56/a25b2883ab990c67db3d6c223169724a09f3800bf182b98aba57196fe06b/dxsp-1.4.1.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [qtc]: Downloading https://files.pythonhosted.org/packages/dd/a1/aef644e43ec7198863de7deb34bd0930a66bb0ffe729674c0e5403d6d5a6/qtc-0.0.2.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [qtc]: executing diffoscope
+[2023-04-30 17:31:28] INFO root fetch - processPackages [qtc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtc-0.0.1.tar.gz tmp/qtc-0.0.2.tar.gz --markdown 20230430/q/qtc/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 17:31:28] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-30 17:31:28] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.4.0.tar.gz tmp/dxsp-1.4.1.tar.gz --markdown 20230430/d/dxsp/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-30 17:31:28] INFO root fetch - processPackages [scribe-data]: Downloading https://files.pythonhosted.org/packages/01/58/8cbfde4fce45b794d138750298bd26a0f5f991e84846959bfb613126fe38/scribe_data-3.1.0-py3-none-any.whl
+[2023-04-30 17:31:28] INFO root fetch - processPackages [mafic]: Downloading https://files.pythonhosted.org/packages/26/da/cd9f8df19ca9a6743ec2004fbf15e856253b7f9f962cba22db3d75d69865/mafic-2.1.1.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/0a/bb/38861a90d251e67f2517742bb238c8e3c1fcddda5f965901c92e3e9a1b3d/telescope_sdk-0.1.9.tar.gz
+[2023-04-30 17:31:28] INFO root fetch - processPackages [mafic]: executing diffoscope
+[2023-04-30 17:31:28] INFO root fetch - processPackages [mafic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mafic-2.1.0.tar.gz tmp/mafic-2.1.1.tar.gz --markdown 20230430/m/mafic/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-30 17:31:28] INFO root fetch - processPackages [scribe-data]: executing diffoscope
+[2023-04-30 17:31:28] INFO root fetch - processPackages [scribe-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scribe_data-3.0.0-py3-none-any.whl.zip tmp/scribe_data-3.1.0-py3-none-any.whl.zip --markdown 20230430/s/scribe-data/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-04-30 17:31:28] INFO root fetch - processPackages [telescope-sdk]: executing diffoscope
+[2023-04-30 17:31:28] INFO root fetch - processPackages [telescope-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescope_sdk-0.1.8.tar.gz tmp/telescope_sdk-0.1.9.tar.gz --markdown 20230430/t/telescope-sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 17:31:29] INFO root fetch - main [MainThread]: End processing [back-to-sit]: success
+[2023-04-30 17:31:29] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-04-30 17:31:29] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-30 17:31:30] INFO root fetch - main [MainThread]: End processing [telescope-sdk]: success
+[2023-04-30 17:31:30] INFO root fetch - main [MainThread]: End processing [qtc]: success
+[2023-04-30 17:31:30] INFO root fetch - main [MainThread]: End processing [mafic]: success
+[2023-04-30 17:31:30] INFO root fetch - main [MainThread]: End processing [scribe-data]: success
+[2023-04-30 17:31:30] INFO root fetch - main [MainThread]: Store serial: [17917787]
