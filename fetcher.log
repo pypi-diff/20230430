@@ -8860,3 +8860,29 @@
 [2023-04-30 19:01:08] INFO root fetch - main [MainThread]: End processing [CVAugmentor]: success
 [2023-04-30 19:01:09] INFO root fetch - main [MainThread]: End processing [pibble]: success
 [2023-04-30 19:01:09] INFO root fetch - main [MainThread]: Store serial: [17918304]
+[2023-04-30 19:06:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918304]
+[2023-04-30 19:06:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 19:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycoloringv9
+[2023-04-30 19:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: M2STR
+[2023-04-30 19:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SiteScraper
+[2023-04-30 19:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycryptokms
+[2023-04-30 19:06:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bovine
+[2023-04-30 19:06:18] WARNING root fetch - processPackages [M2STR]: Skipping, unable to determine old version
+[2023-04-30 19:06:18] WARNING root fetch - processPackages [SiteScraper]: Skipping, unable to determine old version
+[2023-04-30 19:06:18] INFO root fetch - main [MainThread]: End processing [M2STR] error
+[2023-04-30 19:06:18] INFO root fetch - processPackages [pycryptokms]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 19:06:18] WARNING root fetch - processPackages [pycoloringv9]: Skipping, unable to determine old version
+[2023-04-30 19:06:18] INFO root fetch - processPackages [bovine]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 19:06:18] INFO root fetch - main [MainThread]: End processing [SiteScraper] error
+[2023-04-30 19:06:18] INFO root fetch - main [MainThread]: End processing [pycoloringv9] error
+[2023-04-30 19:06:18] INFO root fetch - processPackages [pycryptokms]: Downloading https://files.pythonhosted.org/packages/ae/e1/1e6f75529a2ca7ebdc6c2d8bf9d8d51bd4c5e2dd09a4b6750a24f154482e/pycryptokms-0.0.2.tar.gz
+[2023-04-30 19:06:18] INFO root fetch - processPackages [bovine]: Downloading https://files.pythonhosted.org/packages/2a/b9/9f5f0cef8a719732c439ea6daf5e1d626ab83647863a7ea4180dc6440edc/bovine-0.1.2.tar.gz
+[2023-04-30 19:06:18] INFO root fetch - processPackages [pycryptokms]: Downloading https://files.pythonhosted.org/packages/48/4c/9c35d431221ec76f0e036943c42a2ff741b145c900ca5a423a2b67d2dbef/pycryptokms-0.0.3.tar.gz
+[2023-04-30 19:06:19] INFO root fetch - processPackages [pycryptokms]: executing diffoscope
+[2023-04-30 19:06:19] INFO root fetch - processPackages [pycryptokms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycryptokms-0.0.2.tar.gz tmp/pycryptokms-0.0.3.tar.gz --markdown 20230430/p/pycryptokms/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 19:06:19] INFO root fetch - processPackages [bovine]: Downloading https://files.pythonhosted.org/packages/15/76/bb26a9ef8e18dfe81f11c3768bb895dbe3b6e3ed7e06eb28406ae4381c99/bovine-0.1.3.tar.gz
+[2023-04-30 19:06:19] INFO root fetch - processPackages [bovine]: executing diffoscope
+[2023-04-30 19:06:19] INFO root fetch - processPackages [bovine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine-0.1.2.tar.gz tmp/bovine-0.1.3.tar.gz --markdown 20230430/b/bovine/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 19:06:20] INFO root fetch - main [MainThread]: End processing [pycryptokms]: success
+[2023-04-30 19:06:21] INFO root fetch - main [MainThread]: End processing [bovine]: success
+[2023-04-30 19:06:21] INFO root fetch - main [MainThread]: Store serial: [17918325]
