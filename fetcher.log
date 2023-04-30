@@ -7278,3 +7278,22 @@
 [2023-04-30 15:49:09] INFO root fetch - main [MainThread]: End processing [kappadata]: success
 [2023-04-30 15:49:09] INFO root fetch - main [MainThread]: End processing [debater-python-api]: success
 [2023-04-30 15:49:09] INFO root fetch - main [MainThread]: Store serial: [17917221]
+[2023-04-30 15:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917221]
+[2023-04-30 15:54:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 15:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-intel
+[2023-04-30 15:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loopgpt
+[2023-04-30 15:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wellets-cli
+[2023-04-30 15:54:18] INFO root fetch - processPackages [wellets-cli]: New version: [1.6.0] Old Version: [1.5.1]
+[2023-04-30 15:54:18] INFO root fetch - processPackages [loopgpt]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:54:18] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.13.0.dev20230430] Old Version: [2.13.0.dev20230429]
+[2023-04-30 15:54:18] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/2e/9e/e5683d7c6dc008a3eb45b75809eb949aaf15ab9d957fecc6174a4c6245ad/tf_nightly_intel-2.13.0.dev20230429-cp39-cp39-win_amd64.whl
+[2023-04-30 15:54:18] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 179311537>=10485760
+[2023-04-30 15:54:18] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-04-30 15:54:18] INFO root fetch - processPackages [loopgpt]: executing diffoscope
+[2023-04-30 15:54:18] INFO root fetch - processPackages [loopgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loopgpt-0.0.8.tar.gz tmp/loopgpt-0.0.9.tar.gz --markdown 20230430/l/loopgpt/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:54:18] INFO root fetch - processPackages [wellets-cli]: Downloading https://files.pythonhosted.org/packages/74/8d/2ce750bcb45b8bd8d42974c36530d35f3486d46b03e04322e415ab093781/wellets_cli-1.6.0.tar.gz
+[2023-04-30 15:54:18] INFO root fetch - processPackages [wellets-cli]: executing diffoscope
+[2023-04-30 15:54:18] INFO root fetch - processPackages [wellets-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wellets_cli-1.5.1.tar.gz tmp/wellets_cli-1.6.0.tar.gz --markdown 20230430/w/wellets-cli/1.5.1-1.6.0/diff.md --exclude *.pyd
+[2023-04-30 15:54:19] INFO root fetch - main [MainThread]: End processing [loopgpt]: success
+[2023-04-30 15:54:19] INFO root fetch - main [MainThread]: End processing [wellets-cli]: success
+[2023-04-30 15:54:19] INFO root fetch - main [MainThread]: Store serial: [17917235]
