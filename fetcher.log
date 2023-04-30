@@ -2311,3 +2311,43 @@
 [2023-04-30 04:58:49] INFO root fetch - main [MainThread]: End processing [polygone]: success
 [2023-04-30 04:58:49] INFO root fetch - main [MainThread]: End processing [dragonfile]: success
 [2023-04-30 04:58:49] INFO root fetch - main [MainThread]: Store serial: [17914207]
+[2023-04-30 05:03:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914207]
+[2023-04-30 05:03:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 05:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckdb
+[2023-04-30 05:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bam-core
+[2023-04-30 05:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tapr
+[2023-04-30 05:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AL-Khatma-lib
+[2023-04-30 05:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kk-plugins
+[2023-04-30 05:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bam-core
+[2023-04-30 05:03:59] INFO root fetch - processPackages [tapr]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-30 05:03:59] INFO root fetch - processPackages [bam-core]: New version: [2023.4.30.1682823612] Old Version: [2023.4.30.1682823045]
+[2023-04-30 05:03:59] INFO root fetch - processPackages [bam-core]: New version: [2023.4.30.1682823612] Old Version: [2023.4.30.1682823045]
+[2023-04-30 05:03:59] INFO root fetch - processPackages [AL-Khatma-lib]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-30 05:03:59] INFO root fetch - processPackages [duckdb]: New version: [0.7.2.dev2706] Old Version: [0.7.2.dev2699]
+[2023-04-30 05:03:59] INFO root fetch - processPackages [kk-plugins]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-30 05:03:59] INFO root fetch - processPackages [tapr]: Downloading https://files.pythonhosted.org/packages/a5/c0/2b7fa0b2519703aaa91dfce0a0480d1f04bcbdfa2b70b15a67119796b700/tapr-0.3.1.tar.gz
+[2023-04-30 05:04:00] INFO root fetch - processPackages [AL-Khatma-lib]: Downloading https://files.pythonhosted.org/packages/3c/15/574b71201cc70bc579e773955b5f1b0b2fbfd58ab23bf6c09f8cdbf3a948/AL_Khatma_lib-1.0.0.tar.gz
+[2023-04-30 05:04:00] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/35/e9/3921ac238b3cba818b82942bc696567898206db08170fe6c42584f61ff1b/bam-core-2023.4.30.1682823612.tar.gz
+[2023-04-30 05:04:00] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/35/e9/3921ac238b3cba818b82942bc696567898206db08170fe6c42584f61ff1b/bam-core-2023.4.30.1682823612.tar.gz
+[2023-04-30 05:04:00] INFO root fetch - processPackages [tapr]: executing diffoscope
+[2023-04-30 05:04:00] INFO root fetch - processPackages [tapr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapr-0.3.0.tar.gz tmp/tapr-0.3.1.tar.gz --markdown 20230430/t/tapr/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-30 05:04:00] INFO root fetch - processPackages [bam-core]: executing diffoscope
+[2023-04-30 05:04:00] INFO root fetch - processPackages [bam-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bam-core-2023.4.30.1682823045.tar.gz tmp/bam-core-2023.4.30.1682823612.tar.gz --markdown 20230430/b/bam-core/2023.4.30.1682823045-2023.4.30.1682823612/diff.md --exclude *.pyd
+[2023-04-30 05:04:00] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/e7/4a/ce8c257f8f32620a82463fb98887ddd63ed2bd277b2f56fe53d4d798f0e2/duckdb-0.7.2.dev2699.tar.gz
+[2023-04-30 05:04:00] INFO root fetch - processPackages [bam-core]: executing diffoscope
+[2023-04-30 05:04:00] INFO root fetch - processPackages [bam-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bam-core-2023.4.30.1682823045.tar.gz tmp/bam-core-2023.4.30.1682823612.tar.gz --markdown 20230430/b/bam-core/2023.4.30.1682823045-2023.4.30.1682823612/diff.md --exclude *.pyd
+[2023-04-30 05:04:00] INFO root fetch - processPackages [AL-Khatma-lib]: Downloading https://files.pythonhosted.org/packages/d8/a9/3319638d06f2baf3b963760fd964862fe5e53e81f1c54103dcccc9c529d4/AL_Khatma_lib-1.1.0.tar.gz
+[2023-04-30 05:04:00] INFO root fetch - processPackages [kk-plugins]: Downloading https://files.pythonhosted.org/packages/29/8b/e41ae1006e979e5ad9d925380a8e976092262b24be185e18471c632f519c/kk-plugins-0.1.0.tar.gz
+[2023-04-30 05:04:00] INFO root fetch - processPackages [AL-Khatma-lib]: executing diffoscope
+[2023-04-30 05:04:00] INFO root fetch - processPackages [AL-Khatma-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AL_Khatma_lib-1.0.0.tar.gz tmp/AL_Khatma_lib-1.1.0.tar.gz --markdown 20230430/A/AL-Khatma-lib/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-30 05:04:00] INFO root fetch - processPackages [kk-plugins]: executing diffoscope
+[2023-04-30 05:04:00] INFO root fetch - processPackages [kk-plugins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kk-plugins-0.0.4.tar.gz tmp/kk-plugins-0.1.0.tar.gz --markdown 20230430/k/kk-plugins/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-30 05:04:01] INFO root fetch - main [MainThread]: End processing [bam-core]: success
+[2023-04-30 05:04:01] INFO root fetch - main [MainThread]: End processing [tapr]: success
+[2023-04-30 05:04:01] INFO root fetch - main [MainThread]: End processing [kk-plugins]: success
+[2023-04-30 05:04:01] INFO root fetch - main [MainThread]: End processing [bam-core]: success
+[2023-04-30 05:04:01] INFO root fetch - main [MainThread]: End processing [AL-Khatma-lib]: success
+[2023-04-30 05:04:01] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/be/d6/c92fb2dcd52727e88cb57ff92d404f0f58cc67c7f7ba08ad5c9b96dc4d82/duckdb-0.7.2.dev2706-cp311-cp311-macosx_11_0_arm64.whl
+[2023-04-30 05:04:02] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 12365512>=10485760
+[2023-04-30 05:04:02] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2023-04-30 05:04:02] INFO root fetch - main [MainThread]: Store serial: [17914226]
