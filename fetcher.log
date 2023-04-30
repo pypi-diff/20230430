@@ -4126,3 +4126,64 @@
 [2023-04-30 10:00:25] INFO root fetch - main [MainThread]: End processing [mlogpp]: success
 [2023-04-30 10:00:25] INFO root fetch - main [MainThread]: End processing [classiq]: success
 [2023-04-30 10:00:25] INFO root fetch - main [MainThread]: Store serial: [17915352]
+[2023-04-30 10:05:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915352]
+[2023-04-30 10:05:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-og
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: backtrader-binance
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: automation-editor
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Bigsansar
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: automation-editor-dev
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: je-editor
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: je-editor-dev
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyrew
+[2023-04-30 10:05:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: quorum-data-py
+[2023-04-30 10:05:34] INFO root fetch - processPackages [automation-editor-dev]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [automation-editor]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [nonebot-plugin-og]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [je-editor]: New version: [0.0.9] Old Version: [0.0.82]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [backtrader-binance]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [quorum-data-py]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [Bigsansar]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [pyrew]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [je-editor-dev]: New version: [0.0.9] Old Version: [0.0.82]
+[2023-04-30 10:05:34] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-30 10:05:34] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.9.2.tar.gz tmp/pyrew-0.9.3.tar.gz --markdown 20230430/p/pyrew/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-30 10:05:34] INFO root fetch - processPackages [je-editor-dev]: Downloading https://files.pythonhosted.org/packages/6f/f3/b24c4ee5d740bb6cb55b67c8d94b04f92b19d8d31cb05defa5d5f5408ee1/je_editor_dev-0.0.82.tar.gz
+[2023-04-30 10:05:34] INFO root fetch - processPackages [nonebot-plugin-og]: Downloading https://files.pythonhosted.org/packages/65/20/440e6f0fd93586df972363f88ea09b261e760d1bde6920f607675ed586b5/nonebot_plugin_og-0.1.0.tar.gz
+[2023-04-30 10:05:34] INFO root fetch - processPackages [je-editor]: Downloading https://files.pythonhosted.org/packages/94/d7/a2412b5e43556c6c2eb74bfb3fb8fc56096d9206a266e332af462dd007af/je_editor-0.0.82.tar.gz
+[2023-04-30 10:05:34] INFO root fetch - processPackages [automation-editor-dev]: Downloading https://files.pythonhosted.org/packages/dd/02/c9a3ad7da5f961d131a4e1350697b2b3e903dbd8e87205ae26b7179c246f/automation_editor_dev-0.0.2.tar.gz
+[2023-04-30 10:05:34] INFO root fetch - processPackages [automation-editor]: Downloading https://files.pythonhosted.org/packages/2b/2e/907d4e88f71cd103d11b807885a8561fadad7c728f8dd5d4650fd24669c9/automation_editor-0.0.3.tar.gz
+[2023-04-30 10:05:34] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/6f/a4/9eef322acc074edd843da8b36089b939c2046ac0708566809133bdcadb20/Bigsansar-1.1.7.tar.gz
+[2023-04-30 10:05:34] INFO root fetch - processPackages [quorum-data-py]: Downloading https://files.pythonhosted.org/packages/67/2d/922ca78c4c44255c1a2cc4c7e415b17e4cdd0c33cfdc646cbed0423a10c7/quorum_data_py-1.2.5.tar.gz
+[2023-04-30 10:05:34] INFO root fetch - processPackages [backtrader-binance]: Downloading https://files.pythonhosted.org/packages/92/a7/8574c5cdcf674993c793481e168ad6c0fa55c305de793a9b0de139d1a859/backtrader_binance-1.0.2.tar.gz
+[2023-04-30 10:05:34] INFO root fetch - processPackages [automation-editor]: executing diffoscope
+[2023-04-30 10:05:34] INFO root fetch - processPackages [automation-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_editor-0.0.2.tar.gz tmp/automation_editor-0.0.3.tar.gz --markdown 20230430/a/automation-editor/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 10:05:35] INFO root fetch - processPackages [nonebot-plugin-og]: Downloading https://files.pythonhosted.org/packages/a5/46/59f81d3a2597bf0e3337e87964bf929fd650b0aafb8b3eb2989e0856d72f/nonebot_plugin_og-0.2.0.tar.gz
+[2023-04-30 10:05:35] INFO root fetch - processPackages [je-editor-dev]: executing diffoscope
+[2023-04-30 10:05:35] INFO root fetch - processPackages [je-editor-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_editor_dev-0.0.82.tar.gz tmp/je_editor_dev-0.0.9.tar.gz --markdown 20230430/j/je-editor-dev/0.0.82-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 10:05:35] INFO root fetch - processPackages [automation-editor-dev]: Downloading https://files.pythonhosted.org/packages/99/f7/1469d597e298b65c890b60ff5e1621d6c49cde05134cb9c1e06dd92e845c/automation_editor_dev-0.0.3.tar.gz
+[2023-04-30 10:05:35] INFO root fetch - processPackages [je-editor]: executing diffoscope
+[2023-04-30 10:05:35] INFO root fetch - processPackages [je-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_editor-0.0.82.tar.gz tmp/je_editor-0.0.9.tar.gz --markdown 20230430/j/je-editor/0.0.82-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 10:05:35] INFO root fetch - processPackages [quorum-data-py]: Downloading https://files.pythonhosted.org/packages/1a/b9/9c38a2a4016a76eed08c7f26ba0dca4141151d90907c5ca3fb750c8aeca9/quorum_data_py-1.2.6.tar.gz
+[2023-04-30 10:05:35] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/af/73/9f16da40aaec6038ad2ae0c2d819a81944cd68d50881bf53c89132a3e613/Bigsansar-1.1.8.tar.gz
+[2023-04-30 10:05:35] INFO root fetch - processPackages [backtrader-binance]: Downloading https://files.pythonhosted.org/packages/14/19/b81d38bb17f55b94af3a3254393362c30d70fc0b1f2e13a16e833bdf1c9d/backtrader_binance-1.0.3.tar.gz
+[2023-04-30 10:05:35] INFO root fetch - processPackages [nonebot-plugin-og]: executing diffoscope
+[2023-04-30 10:05:35] INFO root fetch - processPackages [nonebot-plugin-og]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_og-0.1.0.tar.gz tmp/nonebot_plugin_og-0.2.0.tar.gz --markdown 20230430/n/nonebot-plugin-og/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 10:05:35] INFO root fetch - processPackages [automation-editor-dev]: executing diffoscope
+[2023-04-30 10:05:35] INFO root fetch - processPackages [automation-editor-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_editor_dev-0.0.2.tar.gz tmp/automation_editor_dev-0.0.3.tar.gz --markdown 20230430/a/automation-editor-dev/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 10:05:35] INFO root fetch - processPackages [quorum-data-py]: executing diffoscope
+[2023-04-30 10:05:35] INFO root fetch - processPackages [quorum-data-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quorum_data_py-1.2.5.tar.gz tmp/quorum_data_py-1.2.6.tar.gz --markdown 20230430/q/quorum-data-py/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-04-30 10:05:35] INFO root fetch - processPackages [backtrader-binance]: executing diffoscope
+[2023-04-30 10:05:35] INFO root fetch - processPackages [backtrader-binance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backtrader_binance-1.0.2.tar.gz tmp/backtrader_binance-1.0.3.tar.gz --markdown 20230430/b/backtrader-binance/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 10:05:35] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-04-30 10:05:35] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.1.7.tar.gz tmp/Bigsansar-1.1.8.tar.gz --markdown 20230430/B/Bigsansar/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-30 10:05:36] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-30 10:05:36] INFO root fetch - main [MainThread]: End processing [je-editor-dev]: success
+[2023-04-30 10:05:36] INFO root fetch - main [MainThread]: End processing [automation-editor]: success
+[2023-04-30 10:05:36] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-og]: success
+[2023-04-30 10:05:36] INFO root fetch - main [MainThread]: End processing [backtrader-binance]: success
+[2023-04-30 10:05:36] INFO root fetch - main [MainThread]: End processing [je-editor]: success
+[2023-04-30 10:05:36] INFO root fetch - main [MainThread]: End processing [automation-editor-dev]: success
+[2023-04-30 10:05:36] INFO root fetch - main [MainThread]: End processing [quorum-data-py]: success
+[2023-04-30 10:05:37] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-04-30 10:05:37] INFO root fetch - main [MainThread]: Store serial: [17915384]
