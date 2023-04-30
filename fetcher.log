@@ -1423,3 +1423,62 @@
 [2023-04-30 03:00:47] INFO root fetch - main [MainThread]: End processing [hydrotoolbox]: success
 [2023-04-30 03:01:03] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-04-30 03:01:03] INFO root fetch - main [MainThread]: Store serial: [17913614]
+[2023-04-30 03:06:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913614]
+[2023-04-30 03:06:13] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantrm-xd
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-wget
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xtlib
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aemcmc-nightly
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tapr
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-lambda-layer-curl
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: renus
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: coconut-develop
+[2023-04-30 03:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: xtlib
+[2023-04-30 03:06:13] INFO root fetch - processPackages [tapr]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-30 03:06:13] INFO root fetch - processPackages [renus]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-30 03:06:13] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230429] Old Version: [0.0.8.dev20230428]
+[2023-04-30 03:06:13] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 03:06:13] INFO root fetch - processPackages [xtlib]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2023-04-30 03:06:13] INFO root fetch - processPackages [xtlib]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2023-04-30 03:06:13] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-04-30 03:06:13] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 03:06:13] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 03:06:13] WARNING root fetch - processPackages [quantrm-xd]: Skipping, unable to determine old version
+[2023-04-30 03:06:13] INFO root fetch - main [MainThread]: End processing [quantrm-xd] error
+[2023-04-30 03:06:14] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230428.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230429.tar.gz --markdown 20230430/a/aemcmc-nightly/0.0.8.dev20230428-0.0.8.dev20230429/diff.md --exclude *.pyd
+[2023-04-30 03:06:14] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230430/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-30 03:06:14] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230430/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-04-30 03:06:14] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230430/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-30 03:06:14] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230430/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-30 03:06:14] INFO root fetch - processPackages [tapr]: Downloading https://files.pythonhosted.org/packages/31/04/30f7c8db87fb1e514b1c12199032e0a9ab62e50ac1cb7bf0c2058c31f8b4/tapr-0.2.1.tar.gz
+[2023-04-30 03:06:14] INFO root fetch - processPackages [renus]: Downloading https://files.pythonhosted.org/packages/0d/0e/1aad04261a0e80c535adc62592fa6b87ab649bc7f6949efbce1fec804ee2/renus-1.1.0.tar.gz
+[2023-04-30 03:06:14] INFO root fetch - processPackages [xtlib]: Downloading https://files.pythonhosted.org/packages/ef/88/6f35605035024352f94de86919c8fb01a5172145653a1f3dd1f7638fe591/xtlib-1.0.0rc1.tar.gz
+[2023-04-30 03:06:14] INFO root fetch - processPackages [xtlib]: Downloading https://files.pythonhosted.org/packages/ef/88/6f35605035024352f94de86919c8fb01a5172145653a1f3dd1f7638fe591/xtlib-1.0.0rc1.tar.gz
+[2023-04-30 03:06:14] INFO root fetch - processPackages [renus]: Downloading https://files.pythonhosted.org/packages/ef/fe/90b4a5193f806758ea1b19f4229abdbc25c1ebc5425132093e9b4e782d5d/renus-1.1.1.tar.gz
+[2023-04-30 03:06:14] INFO root fetch - processPackages [renus]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [renus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renus-1.1.0.tar.gz tmp/renus-1.1.1.tar.gz --markdown 20230430/r/renus/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-30 03:06:14] INFO root fetch - processPackages [tapr]: Downloading https://files.pythonhosted.org/packages/8b/95/8a489ff477e7b2f6aefb1c9576beac8e4b492daaaad42cf4249f53005afa/tapr-0.3.0.tar.gz
+[2023-04-30 03:06:14] INFO root fetch - processPackages [tapr]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [tapr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapr-0.2.1.tar.gz tmp/tapr-0.3.0.tar.gz --markdown 20230430/t/tapr/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 03:06:14] INFO root fetch - processPackages [xtlib]: Downloading https://files.pythonhosted.org/packages/a0/01/df0f30261ee9fe10bb00ddc29344ae6aa0d8582eb47a23769c06bc782080/xtlib-1.0.0rc2.tar.gz
+[2023-04-30 03:06:14] INFO root fetch - processPackages [xtlib]: Downloading https://files.pythonhosted.org/packages/a0/01/df0f30261ee9fe10bb00ddc29344ae6aa0d8582eb47a23769c06bc782080/xtlib-1.0.0rc2.tar.gz
+[2023-04-30 03:06:14] INFO root fetch - processPackages [xtlib]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [xtlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtlib-1.0.0rc1.tar.gz tmp/xtlib-1.0.0rc2.tar.gz --markdown 20230430/x/xtlib/1.0.0rc1-1.0.0rc2/diff.md --exclude *.pyd
+[2023-04-30 03:06:14] INFO root fetch - processPackages [xtlib]: executing diffoscope
+[2023-04-30 03:06:14] INFO root fetch - processPackages [xtlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtlib-1.0.0rc1.tar.gz tmp/xtlib-1.0.0rc2.tar.gz --markdown 20230430/x/xtlib/1.0.0rc1-1.0.0rc2/diff.md --exclude *.pyd
+[2023-04-30 03:06:15] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-04-30 03:06:15] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-04-30 03:06:15] INFO root fetch - main [MainThread]: End processing [tapr]: success
+[2023-04-30 03:06:15] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-04-30 03:06:15] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-04-30 03:06:16] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-04-30 03:06:16] INFO root fetch - main [MainThread]: End processing [renus]: success
+[2023-04-30 03:06:17] INFO root fetch - main [MainThread]: End processing [xtlib]: success
+[2023-04-30 03:06:17] INFO root fetch - main [MainThread]: End processing [xtlib]: success
+[2023-04-30 03:06:17] INFO root fetch - main [MainThread]: Store serial: [17913644]
