@@ -5922,3 +5922,43 @@
 [2023-04-30 13:50:42] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2023-04-30 13:50:42] INFO root fetch - main [MainThread]: End processing [ykenan-file]: success
 [2023-04-30 13:50:42] INFO root fetch - main [MainThread]: Store serial: [17916359]
+[2023-04-30 13:55:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916359]
+[2023-04-30 13:55:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-s3-storage
+[2023-04-30 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-dllib
+[2023-04-30 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chef-helper
+[2023-04-30 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spotinst-agent-beta
+[2023-04-30 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: assisted-service-client
+[2023-04-30 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pygmi-get
+[2023-04-30 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pvbm
+[2023-04-30 13:55:50] INFO root fetch - processPackages [django-s3-storage]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-30 13:55:51] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.277] Old Version: [2.2.276]
+[2023-04-30 13:55:51] INFO root fetch - processPackages [chef-helper]: New version: [4] Old Version: [3]
+[2023-04-30 13:55:51] INFO root fetch - processPackages [bigdl-dllib]: New version: [2.4.0b20230430] Old Version: [2.4.0b20230429]
+[2023-04-30 13:55:51] INFO root fetch - processPackages [pygmi-get]: New version: [0.17.2] Old Version: [0.17.0]
+[2023-04-30 13:55:51] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-04-30 13:55:51] ERROR root fetch - processPackages [pvbm]: Unable to get metadata: No such project 'pvbm'
+[2023-04-30 13:55:51] INFO root fetch - main [MainThread]: End processing [pvbm] error
+[2023-04-30 13:55:51] INFO root fetch - processPackages [django-s3-storage]: Downloading https://files.pythonhosted.org/packages/c8/5c/e2db52ba766164a1f28d9a042a197ff60aa0dda27c19c36100c25271a939/django-s3-storage-0.9.8.tar.gz
+[2023-04-30 13:55:51] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 13:55:51] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.276.tar.gz tmp/spotinst-agent-beta-2.2.277.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.276-2.2.277/diff.md --exclude *.pyd
+[2023-04-30 13:55:51] INFO root fetch - processPackages [chef-helper]: executing diffoscope
+[2023-04-30 13:55:51] INFO root fetch - processPackages [chef-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chef_helper-3.tar.gz tmp/chef_helper-4.tar.gz --markdown 20230430/c/chef-helper/3-4/diff.md --exclude *.pyd
+[2023-04-30 13:55:51] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-04-30 13:55:51] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230430/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-04-30 13:55:51] INFO root fetch - processPackages [bigdl-dllib]: Downloading https://files.pythonhosted.org/packages/22/ee/1429cbf7e5da1113d84bcca13d0667b57d7420f685ebe908db7fec78abb9/bigdl-dllib-2.4.0b20230429.tar.gz
+[2023-04-30 13:55:51] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/c6/ab/ee95fa19436adb4d4901b24daa4a3dbba43e21f2d54c539af9621c283ebe/pygmi-get-0.17.0.tar.gz
+[2023-04-30 13:55:51] WARNING root fetch - processPackages [bigdl-dllib]: Skipping package: exceeds size limit 53560800>=10485760
+[2023-04-30 13:55:51] INFO root fetch - main [MainThread]: End processing [bigdl-dllib] error
+[2023-04-30 13:55:51] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/9c/55/35af7c35799612b3553bcc3a020451166c7cdbc132a236ad6299734ff2f4/pygmi-get-0.17.2.tar.gz
+[2023-04-30 13:55:51] INFO root fetch - processPackages [django-s3-storage]: Downloading https://files.pythonhosted.org/packages/8a/30/184225d27670d0cd1245daa440a7ce8f02c8691470e2d7a2933e735a9d1e/django-s3-storage-0.9.9.tar.gz
+[2023-04-30 13:55:51] INFO root fetch - processPackages [pygmi-get]: executing diffoscope
+[2023-04-30 13:55:51] INFO root fetch - processPackages [pygmi-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmi-get-0.17.0.tar.gz tmp/pygmi-get-0.17.2.tar.gz --markdown 20230430/p/pygmi-get/0.17.0-0.17.2/diff.md --exclude *.pyd
+[2023-04-30 13:55:51] INFO root fetch - processPackages [django-s3-storage]: executing diffoscope
+[2023-04-30 13:55:51] INFO root fetch - processPackages [django-s3-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-s3-storage-0.9.8.tar.gz tmp/django-s3-storage-0.9.9.tar.gz --markdown 20230430/d/django-s3-storage/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-30 13:55:52] INFO root fetch - main [MainThread]: End processing [chef-helper]: success
+[2023-04-30 13:55:52] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 13:55:52] INFO root fetch - main [MainThread]: End processing [pygmi-get]: success
+[2023-04-30 13:55:53] INFO root fetch - main [MainThread]: End processing [django-s3-storage]: success
+[2023-04-30 13:55:55] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-04-30 13:55:55] INFO root fetch - main [MainThread]: Store serial: [17916383]
