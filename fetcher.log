@@ -5144,3 +5144,34 @@
 [2023-04-30 12:02:41] INFO root fetch - main [MainThread]: End processing [zebrazoom]: success
 [2023-04-30 12:02:58] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-30 12:02:58] INFO root fetch - main [MainThread]: Store serial: [17915903]
+[2023-04-30 12:08:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915903]
+[2023-04-30 12:08:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 12:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utilfunction
+[2023-04-30 12:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syscryptv3
+[2023-04-30 12:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discord-py-interactions
+[2023-04-30 12:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: raindancers-network.raindancers-cdk
+[2023-04-30 12:08:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: interactions.py
+[2023-04-30 12:08:07] WARNING root fetch - processPackages [syscryptv3]: Skipping, unable to determine old version
+[2023-04-30 12:08:07] INFO root fetch - main [MainThread]: End processing [syscryptv3] error
+[2023-04-30 12:08:07] INFO root fetch - processPackages [utilfunction]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 12:08:08] INFO root fetch - processPackages [interactions.py]: New version: [5.2.0] Old Version: [5.1.0]
+[2023-04-30 12:08:08] INFO root fetch - processPackages [discord-py-interactions]: New version: [5.2.0] Old Version: [5.1.0]
+[2023-04-30 12:08:08] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-30 12:08:08] INFO root fetch - processPackages [interactions.py]: Downloading https://files.pythonhosted.org/packages/49/37/55b56c5d62b1df572ba6b59eda5921cc67808f9c672a1dd6cd4188ca7bcd/interactions.py-5.1.0.tar.gz
+[2023-04-30 12:08:08] INFO root fetch - processPackages [discord-py-interactions]: Downloading https://files.pythonhosted.org/packages/ec/c5/57b28e50b8bde797fd38af0c65d3cfd6b00d667a3ddb741bdeb7aee985ea/discord-py-interactions-5.1.0.tar.gz
+[2023-04-30 12:08:08] INFO root fetch - processPackages [utilfunction]: Downloading https://files.pythonhosted.org/packages/4d/40/80bde670259980d611edc9bbaa317ac4365396c3ea9b800d54c1f8e9be7b/utilfunction-0.1.5.tar.gz
+[2023-04-30 12:08:08] INFO root fetch - processPackages [utilfunction]: executing diffoscope
+[2023-04-30 12:08:08] INFO root fetch - processPackages [utilfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilfunction-0.1.4.tar.gz tmp/utilfunction-0.1.5.tar.gz --markdown 20230430/u/utilfunction/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 12:08:08] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: executing diffoscope
+[2023-04-30 12:08:08] INFO root fetch - processPackages [raindancers-network.raindancers-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raindancers-network.raindancers-cdk-1.9.8.tar.gz tmp/raindancers-network.raindancers-cdk-1.9.9.tar.gz --markdown 20230430/r/raindancers-network.raindancers-cdk/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-30 12:08:08] INFO root fetch - processPackages [interactions.py]: Downloading https://files.pythonhosted.org/packages/b5/64/82ccb2630ecc4a7f15f7a3b2cedf26fe28b9f9439417fdb3eeee3eda7a2d/interactions.py-5.2.0.tar.gz
+[2023-04-30 12:08:08] INFO root fetch - processPackages [discord-py-interactions]: Downloading https://files.pythonhosted.org/packages/c9/80/204326fc4adc064f98068ac9da5d6650b3f166e446f98db267be8ded8ab6/discord-py-interactions-5.2.0.tar.gz
+[2023-04-30 12:08:08] INFO root fetch - processPackages [interactions.py]: executing diffoscope
+[2023-04-30 12:08:08] INFO root fetch - processPackages [interactions.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interactions.py-5.1.0.tar.gz tmp/interactions.py-5.2.0.tar.gz --markdown 20230430/i/interactions.py/5.1.0-5.2.0/diff.md --exclude *.pyd
+[2023-04-30 12:08:08] INFO root fetch - processPackages [discord-py-interactions]: executing diffoscope
+[2023-04-30 12:08:08] INFO root fetch - processPackages [discord-py-interactions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-py-interactions-5.1.0.tar.gz tmp/discord-py-interactions-5.2.0.tar.gz --markdown 20230430/d/discord-py-interactions/5.1.0-5.2.0/diff.md --exclude *.pyd
+[2023-04-30 12:08:09] INFO root fetch - main [MainThread]: End processing [utilfunction]: success
+[2023-04-30 12:08:09] INFO root fetch - main [MainThread]: End processing [raindancers-network.raindancers-cdk]: success
+[2023-04-30 12:08:11] INFO root fetch - main [MainThread]: End processing [discord-py-interactions]: success
+[2023-04-30 12:08:11] INFO root fetch - main [MainThread]: End processing [interactions.py]: success
+[2023-04-30 12:08:11] INFO root fetch - main [MainThread]: Store serial: [17915923]
