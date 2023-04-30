@@ -2745,3 +2745,20 @@
 [2023-04-30 06:30:20] WARNING root fetch - processPackages [iewil]: Skipping, unable to determine old version
 [2023-04-30 06:30:20] INFO root fetch - main [MainThread]: End processing [iewil] error
 [2023-04-30 06:30:20] INFO root fetch - main [MainThread]: Store serial: [17914463]
+[2023-04-30 06:35:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914463]
+[2023-04-30 06:35:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 06:35:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opencv-stubs
+[2023-04-30 06:35:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: not1mm
+[2023-04-30 06:35:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: safenote
+[2023-04-30 06:35:29] INFO root fetch - processPackages [not1mm]: New version: [23.4.6] Old Version: [23.4.5]
+[2023-04-30 06:35:29] INFO root fetch - processPackages [opencv-stubs]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 06:35:29] WARNING root fetch - processPackages [safenote]: Skipping, unable to determine old version
+[2023-04-30 06:35:29] INFO root fetch - main [MainThread]: End processing [safenote] error
+[2023-04-30 06:35:29] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-04-30 06:35:29] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.4.5.tar.gz tmp/not1mm-23.4.6.tar.gz --markdown 20230430/n/not1mm/23.4.5-23.4.6/diff.md --exclude *.pyd
+[2023-04-30 06:35:29] INFO root fetch - processPackages [opencv-stubs]: Downloading https://files.pythonhosted.org/packages/9f/1d/e48c244627ee30075a65fba3519efadf5ec968eeb31f60e62209686a0aac/opencv_stubs-0.0.6.tar.gz
+[2023-04-30 06:35:29] INFO root fetch - processPackages [opencv-stubs]: executing diffoscope
+[2023-04-30 06:35:29] INFO root fetch - processPackages [opencv-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencv_stubs-0.0.5.tar.gz tmp/opencv_stubs-0.0.6.tar.gz --markdown 20230430/o/opencv-stubs/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 06:35:31] INFO root fetch - main [MainThread]: End processing [opencv-stubs]: success
+[2023-04-30 06:35:31] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-04-30 06:35:31] INFO root fetch - main [MainThread]: Store serial: [17914474]
