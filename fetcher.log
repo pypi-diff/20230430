@@ -2544,3 +2544,21 @@
 [2023-04-30 05:48:43] INFO root fetch - main [MainThread]: End processing [geomapdemo]: success
 [2023-04-30 05:48:43] INFO root fetch - main [MainThread]: End processing [auroralibs]: success
 [2023-04-30 05:48:43] INFO root fetch - main [MainThread]: Store serial: [17914344]
+[2023-04-30 05:53:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914344]
+[2023-04-30 05:53:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 05:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reactpy-flake8
+[2023-04-30 05:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: escrutinar-jp
+[2023-04-30 05:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: megadata
+[2023-04-30 05:53:52] WARNING root fetch - processPackages [reactpy-flake8]: Skipping, unable to determine old version
+[2023-04-30 05:53:52] INFO root fetch - processPackages [escrutinar-jp]: New version: [0.0.4] Old Version: [0.0.1]
+[2023-04-30 05:53:52] INFO root fetch - main [MainThread]: End processing [reactpy-flake8] error
+[2023-04-30 05:53:52] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 05:53:52] INFO root fetch - processPackages [escrutinar-jp]: Downloading https://files.pythonhosted.org/packages/9a/c4/ec5689825e0d679bab9257451cb6e70d4587c3f5316c42dea2acf99e1907/escrutinar_jp-0.0.1.tar.gz
+[2023-04-30 05:53:52] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-04-30 05:53:52] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230430/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 05:53:52] INFO root fetch - processPackages [escrutinar-jp]: Downloading https://files.pythonhosted.org/packages/8f/87/cf357c5049459d69424bcc6dc725c3067c7b8a2014d6e379aad9b2a06aa5/escrutinar_jp-0.0.4.tar.gz
+[2023-04-30 05:53:52] INFO root fetch - processPackages [escrutinar-jp]: executing diffoscope
+[2023-04-30 05:53:52] INFO root fetch - processPackages [escrutinar-jp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/escrutinar_jp-0.0.1.tar.gz tmp/escrutinar_jp-0.0.4.tar.gz --markdown 20230430/e/escrutinar-jp/0.0.1-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 05:53:53] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-04-30 05:53:53] INFO root fetch - main [MainThread]: End processing [escrutinar-jp]: success
+[2023-04-30 05:53:53] INFO root fetch - main [MainThread]: Store serial: [17914360]
