@@ -10378,3 +10378,46 @@
 [2023-04-30 21:46:37] INFO root fetch - main [MainThread]: End processing [arc-cli]: success
 [2023-04-30 21:46:43] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-30 21:46:43] INFO root fetch - main [MainThread]: Store serial: [17919551]
+[2023-04-30 21:51:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919551]
+[2023-04-30 21:51:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 21:51:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-toolkit
+[2023-04-30 21:51:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redmage
+[2023-04-30 21:51:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oso-sdk
+[2023-04-30 21:51:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rbxflip
+[2023-04-30 21:51:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: terka
+[2023-04-30 21:51:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chapsnap
+[2023-04-30 21:51:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xia-scw-template
+[2023-04-30 21:51:51] INFO root fetch - processPackages [data-toolkit]: New version: [1.4.8] Old Version: [1.4.7]
+[2023-04-30 21:51:51] WARNING root fetch - processPackages [xia-scw-template]: Skipping, unable to determine old version
+[2023-04-30 21:51:51] INFO root fetch - main [MainThread]: End processing [xia-scw-template] error
+[2023-04-30 21:51:51] INFO root fetch - processPackages [chapsnap]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-30 21:51:51] INFO root fetch - processPackages [rbxflip]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-30 21:51:51] INFO root fetch - processPackages [oso-sdk]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-30 21:51:51] INFO root fetch - processPackages [terka]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-04-30 21:51:51] INFO root fetch - processPackages [redmage]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-30 21:51:52] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/c2/54/023fec4413f5b4ca4bbee42c60d9c2b796a49453f4a974af3814117eb80d/rbxflip-1.0.5.tar.gz
+[2023-04-30 21:51:52] INFO root fetch - processPackages [redmage]: Downloading https://files.pythonhosted.org/packages/9e/f3/e01e89439de150fe1bbe73d4a5a584cf274a09d794578fcbc4c1742c32db/redmage-0.0.0.tar.gz
+[2023-04-30 21:51:52] INFO root fetch - processPackages [rbxflip]: executing diffoscope
+[2023-04-30 21:51:52] INFO root fetch - processPackages [rbxflip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbxflip-1.0.4.tar.gz tmp/rbxflip-1.0.5.tar.gz --markdown 20230430/r/rbxflip/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-30 21:51:52] INFO root fetch - processPackages [data-toolkit]: Downloading https://files.pythonhosted.org/packages/36/ad/c17b8a0ba012751a6ccd11c5fbfad2e207fd890fb4d9acd1b79a871036e5/data-toolkit-1.4.8.tar.gz
+[2023-04-30 21:51:52] INFO root fetch - processPackages [chapsnap]: Downloading https://files.pythonhosted.org/packages/43/dc/5d444fe197ddc681762d414468e717d2f5eb63725bc33a5d8c0784944384/chapsnap-1.2.0.tar.gz
+[2023-04-30 21:51:52] INFO root fetch - processPackages [oso-sdk]: Downloading https://files.pythonhosted.org/packages/fa/01/8682f016efe0402090092af3e52e4d7c7287ab58d79af86e877a1edb5b01/oso_sdk-0.3.2.tar.gz
+[2023-04-30 21:51:52] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/4b/d3/c24bab2a1e16e3e90e12ad5ae13202942a5189a1ccd7e86f914ac46321db/terka-1.7.1.tar.gz
+[2023-04-30 21:51:52] INFO root fetch - processPackages [data-toolkit]: executing diffoscope
+[2023-04-30 21:51:52] INFO root fetch - processPackages [data-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-toolkit-1.4.7.tar.gz tmp/data-toolkit-1.4.8.tar.gz --markdown 20230430/d/data-toolkit/1.4.7-1.4.8/diff.md --exclude *.pyd
+[2023-04-30 21:51:52] INFO root fetch - processPackages [oso-sdk]: executing diffoscope
+[2023-04-30 21:51:52] INFO root fetch - processPackages [oso-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oso_sdk-0.3.1.tar.gz tmp/oso_sdk-0.3.2.tar.gz --markdown 20230430/o/oso-sdk/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-30 21:51:52] INFO root fetch - processPackages [chapsnap]: executing diffoscope
+[2023-04-30 21:51:52] INFO root fetch - processPackages [chapsnap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chapsnap-1.1.0.tar.gz tmp/chapsnap-1.2.0.tar.gz --markdown 20230430/c/chapsnap/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 21:51:52] INFO root fetch - processPackages [redmage]: Downloading https://files.pythonhosted.org/packages/4a/6e/2aadc5b3e23679eafc13b21cca6d0fb8ea733808df5c8a8498a9e14ae48f/redmage-0.0.1.tar.gz
+[2023-04-30 21:51:52] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-30 21:51:52] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.7.0.tar.gz tmp/terka-1.7.1.tar.gz --markdown 20230430/t/terka/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-04-30 21:51:52] INFO root fetch - processPackages [redmage]: executing diffoscope
+[2023-04-30 21:51:52] INFO root fetch - processPackages [redmage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redmage-0.0.0.tar.gz tmp/redmage-0.0.1.tar.gz --markdown 20230430/r/redmage/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-30 21:51:53] INFO root fetch - main [MainThread]: End processing [rbxflip]: success
+[2023-04-30 21:51:53] INFO root fetch - main [MainThread]: End processing [redmage]: success
+[2023-04-30 21:51:53] INFO root fetch - main [MainThread]: End processing [chapsnap]: success
+[2023-04-30 21:51:53] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-04-30 21:51:53] INFO root fetch - main [MainThread]: End processing [oso-sdk]: success
+[2023-04-30 21:51:53] INFO root fetch - main [MainThread]: End processing [data-toolkit]: success
+[2023-04-30 21:51:53] INFO root fetch - main [MainThread]: Store serial: [17919627]
