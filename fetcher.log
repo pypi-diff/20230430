@@ -3681,3 +3681,49 @@
 [2023-04-30 09:06:51] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2023-04-30 09:06:52] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
 [2023-04-30 09:06:52] INFO root fetch - main [MainThread]: Store serial: [17915092]
+[2023-04-30 09:11:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915092]
+[2023-04-30 09:12:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 09:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IMDbTraktSyncer
+[2023-04-30 09:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bodhi-client
+[2023-04-30 09:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bodhi-messages
+[2023-04-30 09:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bodhi-server
+[2023-04-30 09:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gerswin-azure-api-rest
+[2023-04-30 09:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bondgraph
+[2023-04-30 09:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-hub-nightly
+[2023-04-30 09:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aiogram-ext
+[2023-04-30 09:12:00] INFO root fetch - processPackages [IMDbTraktSyncer]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 09:12:00] WARNING root fetch - processPackages [bondgraph]: Skipping, unable to determine old version
+[2023-04-30 09:12:00] INFO root fetch - main [MainThread]: End processing [bondgraph] error
+[2023-04-30 09:12:00] WARNING root fetch - processPackages [gerswin-azure-api-rest]: Skipping, unable to determine old version
+[2023-04-30 09:12:00] INFO root fetch - main [MainThread]: End processing [gerswin-azure-api-rest] error
+[2023-04-30 09:12:00] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-04-30 09:12:00] INFO root fetch - processPackages [bodhi-client]: New version: [7.2.0] Old Version: [7.1.1]
+[2023-04-30 09:12:00] INFO root fetch - processPackages [bodhi-server]: New version: [7.2.0] Old Version: [7.1.1]
+[2023-04-30 09:12:00] INFO root fetch - processPackages [IMDbTraktSyncer]: executing diffoscope
+[2023-04-30 09:12:00] INFO root fetch - processPackages [IMDbTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDbTraktSyncer-1.0.3.tar.gz tmp/IMDbTraktSyncer-1.0.4.tar.gz --markdown 20230430/I/IMDbTraktSyncer/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-messages]: New version: [7.2.0] Old Version: [7.1.1]
+[2023-04-30 09:12:01] INFO root fetch - processPackages [aiogram-ext]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-30 09:12:01] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-04-30 09:12:01] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230430/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-server]: Downloading https://files.pythonhosted.org/packages/c3/19/1f157c5e1ff74e8fd9dd550898f1cbe9bc77290dcf2109bf12feff53ed9a/bodhi_server-7.1.1.tar.gz
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-client]: Downloading https://files.pythonhosted.org/packages/2b/21/5d8e8b67b415142cee7df120c31094b00a32e33912f0e201147526023e11/bodhi_client-7.1.1.tar.gz
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-messages]: Downloading https://files.pythonhosted.org/packages/4a/66/eb02f34aa5950088d6ba50dfbfa2f0c9d4c8132ebc87697c2f42fac3a555/bodhi_messages-7.1.1.tar.gz
+[2023-04-30 09:12:01] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/10/48/e28da9deb9a68c06025150fd74c63fc1e09c7feff8192d5d0da68474de7f/aiogram-ext-0.2.0.tar.gz
+[2023-04-30 09:12:01] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-30 09:12:01] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.1.9.tar.gz tmp/aiogram-ext-0.2.0.tar.gz --markdown 20230430/a/aiogram-ext/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-messages]: Downloading https://files.pythonhosted.org/packages/66/02/034fed86470fb49a08d2c2e8ace217505f9a998d736efb3f2ffcab6ceae8/bodhi_messages-7.2.0.tar.gz
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-client]: Downloading https://files.pythonhosted.org/packages/07/5a/a404b8886e454f614ef7af5e27c72c42d5f976c800d16f2d716551b47087/bodhi_client-7.2.0.tar.gz
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-client]: executing diffoscope
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodhi_client-7.1.1.tar.gz tmp/bodhi_client-7.2.0.tar.gz --markdown 20230430/b/bodhi-client/7.1.1-7.2.0/diff.md --exclude *.pyd
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-messages]: executing diffoscope
+[2023-04-30 09:12:01] INFO root fetch - processPackages [bodhi-messages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodhi_messages-7.1.1.tar.gz tmp/bodhi_messages-7.2.0.tar.gz --markdown 20230430/b/bodhi-messages/7.1.1-7.2.0/diff.md --exclude *.pyd
+[2023-04-30 09:12:02] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
+[2023-04-30 09:12:02] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-04-30 09:12:02] INFO root fetch - processPackages [bodhi-server]: Downloading https://files.pythonhosted.org/packages/27/6c/d4e0b8e0e5e16ac0f5454ef8737e3169e1a78e1d27a4f032ba63dfbfe9b6/bodhi_server-7.2.0.tar.gz
+[2023-04-30 09:12:02] INFO root fetch - main [MainThread]: End processing [bodhi-messages]: success
+[2023-04-30 09:12:02] INFO root fetch - main [MainThread]: End processing [bodhi-client]: success
+[2023-04-30 09:12:02] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-30 09:12:03] INFO root fetch - processPackages [bodhi-server]: executing diffoscope
+[2023-04-30 09:12:03] INFO root fetch - processPackages [bodhi-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodhi_server-7.1.1.tar.gz tmp/bodhi_server-7.2.0.tar.gz --markdown 20230430/b/bodhi-server/7.1.1-7.2.0/diff.md --exclude *.pyd
+[2023-04-30 09:12:08] INFO root fetch - main [MainThread]: End processing [bodhi-server]: success
+[2023-04-30 09:12:08] INFO root fetch - main [MainThread]: Store serial: [17915114]
