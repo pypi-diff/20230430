@@ -2562,3 +2562,19 @@
 [2023-04-30 05:53:53] INFO root fetch - main [MainThread]: End processing [megadata]: success
 [2023-04-30 05:53:53] INFO root fetch - main [MainThread]: End processing [escrutinar-jp]: success
 [2023-04-30 05:53:53] INFO root fetch - main [MainThread]: Store serial: [17914360]
+[2023-04-30 05:58:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914360]
+[2023-04-30 05:59:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 05:59:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyascore
+[2023-04-30 05:59:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-website-sale-b2x-alt-price
+[2023-04-30 05:59:02] INFO root fetch - processPackages [pyascore]: New version: [1.0.0b0] Old Version: [0.7.0b0]
+[2023-04-30 05:59:02] INFO root fetch - processPackages [odoo-addon-website-sale-b2x-alt-price]: New version: [15.0.1.1.0.1] Old Version: [15.0.1.1.0]
+[2023-04-30 05:59:02] INFO root fetch - processPackages [pyascore]: Downloading https://files.pythonhosted.org/packages/81/66/8c4936b2e462f1edc61d59f6f827894231c27aa5c3f5c70c7cffb449ec42/pyascore-0.7.0b0.tar.gz
+[2023-04-30 05:59:02] INFO root fetch - processPackages [odoo-addon-website-sale-b2x-alt-price]: Downloading https://files.pythonhosted.org/packages/25/10/d9e218470077984eb5ab388964b0920ba8ed8e7a3c2b40a378be16dcca4f/odoo_addon_website_sale_b2x_alt_price-15.0.1.1.0.1-py3-none-any.whl
+[2023-04-30 05:59:03] INFO root fetch - processPackages [odoo-addon-website-sale-b2x-alt-price]: executing diffoscope
+[2023-04-30 05:59:03] INFO root fetch - processPackages [odoo-addon-website-sale-b2x-alt-price]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_website_sale_b2x_alt_price-15.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_website_sale_b2x_alt_price-15.0.1.1.0.1-py3-none-any.whl.zip --markdown 20230430/o/odoo-addon-website-sale-b2x-alt-price/15.0.1.1.0-15.0.1.1.0.1/diff.md --exclude *.pyd
+[2023-04-30 05:59:03] INFO root fetch - processPackages [pyascore]: Downloading https://files.pythonhosted.org/packages/e4/3c/f46be16a87d1545cf9d48f486cc91b9fdec50efb8f974bbdb81dae787545/pyascore-1.0.0b0.tar.gz
+[2023-04-30 05:59:03] INFO root fetch - processPackages [pyascore]: executing diffoscope
+[2023-04-30 05:59:03] INFO root fetch - processPackages [pyascore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyascore-0.7.0b0.tar.gz tmp/pyascore-1.0.0b0.tar.gz --markdown 20230430/p/pyascore/0.7.0b0-1.0.0b0/diff.md --exclude *.pyd
+[2023-04-30 05:59:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-b2x-alt-price]: success
+[2023-04-30 05:59:05] INFO root fetch - main [MainThread]: End processing [pyascore]: success
+[2023-04-30 05:59:05] INFO root fetch - main [MainThread]: Store serial: [17914364]
