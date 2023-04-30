@@ -2739,3 +2739,9 @@
 [2023-04-30 06:25:10] INFO root fetch - processPackages [pyascore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyascore-0.7.0b0.tar.gz tmp/pyascore-1.0.0b1-cp39-cp39-win_amd64.whl.zip --markdown 20230430/p/pyascore/0.7.0b0-1.0.0b1/diff.md --exclude *.pyd
 [2023-04-30 06:25:11] INFO root fetch - main [MainThread]: End processing [pyascore]: success
 [2023-04-30 06:25:11] INFO root fetch - main [MainThread]: Store serial: [17914458]
+[2023-04-30 06:30:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914458]
+[2023-04-30 06:30:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-30 06:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iewil
+[2023-04-30 06:30:20] WARNING root fetch - processPackages [iewil]: Skipping, unable to determine old version
+[2023-04-30 06:30:20] INFO root fetch - main [MainThread]: End processing [iewil] error
+[2023-04-30 06:30:20] INFO root fetch - main [MainThread]: Store serial: [17914463]
