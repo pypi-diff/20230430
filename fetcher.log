@@ -9501,3 +9501,35 @@
 [2023-04-30 20:05:30] INFO root fetch - main [MainThread]: End processing [mpc-obscodes]: success
 [2023-04-30 20:05:31] INFO root fetch - main [MainThread]: End processing [arkdata]: success
 [2023-04-30 20:05:31] INFO root fetch - main [MainThread]: Store serial: [17918775]
+[2023-04-30 20:10:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918775]
+[2023-04-30 20:10:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piperider-nightly
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-threads
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pangeo-forge-cordex
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycryptokms
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: defradb
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-tts-plugin-piper
+[2023-04-30 20:10:40] WARNING root fetch - processPackages [pangeo-forge-cordex]: Skipping, unable to determine old version
+[2023-04-30 20:10:40] INFO root fetch - main [MainThread]: End processing [pangeo-forge-cordex] error
+[2023-04-30 20:10:40] WARNING root fetch - processPackages [defradb]: Skipping, unable to determine old version
+[2023-04-30 20:10:40] INFO root fetch - main [MainThread]: End processing [defradb] error
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ovos-tts-plugin-piper]: New version: [0.0.0a4] Old Version: [0.0.0a3]
+[2023-04-30 20:10:40] INFO root fetch - processPackages [mo-threads]: New version: [5.53.21241] Old Version: [5.374.23120]
+[2023-04-30 20:10:40] INFO root fetch - processPackages [pycryptokms]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ovos-tts-plugin-piper]: executing diffoscope
+[2023-04-30 20:10:40] INFO root fetch - processPackages [ovos-tts-plugin-piper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_tts_plugin_piper-0.0.0a3-py3-none-any.whl.zip tmp/ovos_tts_plugin_piper-0.0.0a4-py3-none-any.whl.zip --markdown 20230430/o/ovos-tts-plugin-piper/0.0.0a3-0.0.0a4/diff.md --exclude *.pyd
+[2023-04-30 20:10:40] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-04-30 20:10:40] INFO root fetch - processPackages [mo-threads]: Downloading https://files.pythonhosted.org/packages/fd/ac/d00c584369afc69ccdbeb592613c90b780a27f8719542dcd5ea6eb6021f2/mo_threads-5.374.23120-py2.py3-none-any.whl
+[2023-04-30 20:10:40] INFO root fetch - processPackages [pycryptokms]: Downloading https://files.pythonhosted.org/packages/35/f5/4974fb133b3c28aae5de88e2f355b687ed808565f2495d59f06ccdfc683a/pycryptokms-0.0.4.tar.gz
+[2023-04-30 20:10:41] INFO root fetch - processPackages [pycryptokms]: executing diffoscope
+[2023-04-30 20:10:41] INFO root fetch - processPackages [pycryptokms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycryptokms-0.0.3.tar.gz tmp/pycryptokms-0.0.4.tar.gz --markdown 20230430/p/pycryptokms/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 20:10:41] INFO root fetch - processPackages [mo-threads]: Downloading https://files.pythonhosted.org/packages/42/9d/de356c2c8539c56dda084e897ea07d5f2553c6ff16ac6252cd6047268782/mo-threads-5.53.21241.tar.gz
+[2023-04-30 20:10:41] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-04-30 20:10:41] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230430/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-04-30 20:10:41] INFO root fetch - processPackages [mo-threads]: executing diffoscope
+[2023-04-30 20:10:41] INFO root fetch - processPackages [mo-threads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_threads-5.374.23120-py2.py3-none-any.whl.zip tmp/mo-threads-5.53.21241.tar.gz --markdown 20230430/m/mo-threads/5.374.23120-5.53.21241/diff.md --exclude *.pyd
+[2023-04-30 20:10:41] INFO root fetch - main [MainThread]: End processing [ovos-tts-plugin-piper]: success
+[2023-04-30 20:10:42] INFO root fetch - main [MainThread]: End processing [pycryptokms]: success
+[2023-04-30 20:10:42] INFO root fetch - main [MainThread]: End processing [mo-threads]: success
+[2023-04-30 20:10:43] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-04-30 20:10:43] INFO root fetch - main [MainThread]: Store serial: [17918810]
