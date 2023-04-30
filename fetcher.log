@@ -4008,3 +4008,37 @@
 [2023-04-30 09:44:46] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
 [2023-04-30 09:44:46] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
 [2023-04-30 09:44:46] INFO root fetch - main [MainThread]: Store serial: [17915287]
+[2023-04-30 09:49:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915287]
+[2023-04-30 09:49:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 09:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: assisted-service-client
+[2023-04-30 09:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feedwarrior
+[2023-04-30 09:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cellmap
+[2023-04-30 09:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keras-nightly
+[2023-04-30 09:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: terminalplay
+[2023-04-30 09:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-scw-instance
+[2023-04-30 09:49:55] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304300650] Old Version: [1.0.1.dev202304300542]
+[2023-04-30 09:49:55] INFO root fetch - processPackages [terminalplay]: New version: [1.0.24] Old Version: [1.0.22]
+[2023-04-30 09:49:55] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-04-30 09:49:55] INFO root fetch - processPackages [xia-scw-instance]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 09:49:55] WARNING root fetch - processPackages [feedwarrior]: Skipping, unable to determine old version
+[2023-04-30 09:49:55] INFO root fetch - main [MainThread]: End processing [feedwarrior] error
+[2023-04-30 09:49:55] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-04-30 09:49:55] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-30 09:49:55] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304300542-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304300650-py3-none-any.whl.zip --markdown 20230430/c/cellmap/1.0.1.dev202304300542-1.0.1.dev202304300650/diff.md --exclude *.pyd
+[2023-04-30 09:49:55] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-04-30 09:49:55] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230430/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-04-30 09:49:55] INFO root fetch - processPackages [xia-scw-instance]: Downloading https://files.pythonhosted.org/packages/0b/3e/ccfa017cadbf93a4c9d841ceedca7d4d8fecdb2cf5b89da243b87595ccc0/xia_scw_instance-0.0.8-cp39-none-win_amd64.whl
+[2023-04-30 09:49:55] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/e1/e7/67baaf5e8e7cbf559594fd6950485b02964bfa17b9d2c82076abea498a4c/terminalplay-1.0.24.tar.gz
+[2023-04-30 09:49:55] INFO root fetch - processPackages [terminalplay]: executing diffoscope
+[2023-04-30 09:49:55] INFO root fetch - processPackages [terminalplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalplay-1.0.22.tar.gz tmp/terminalplay-1.0.24.tar.gz --markdown 20230430/t/terminalplay/1.0.22-1.0.24/diff.md --exclude *.pyd
+[2023-04-30 09:49:55] INFO root fetch - processPackages [xia-scw-instance]: Downloading https://files.pythonhosted.org/packages/c7/25/3328fe3f28177852fbeba064922c0fed329475f10862da2ccec6ee47e0de/xia_scw_instance-0.0.9-cp39-none-win_amd64.whl
+[2023-04-30 09:49:55] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-04-30 09:49:55] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230430/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-04-30 09:49:55] INFO root fetch - processPackages [xia-scw-instance]: executing diffoscope
+[2023-04-30 09:49:55] INFO root fetch - processPackages [xia-scw-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_scw_instance-0.0.8-cp39-none-win_amd64.whl.zip tmp/xia_scw_instance-0.0.9-cp39-none-win_amd64.whl.zip --markdown 20230430/x/xia-scw-instance/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 09:49:56] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
+[2023-04-30 09:49:56] INFO root fetch - main [MainThread]: End processing [xia-scw-instance]: success
+[2023-04-30 09:49:56] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-30 09:49:58] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-04-30 09:50:03] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-04-30 09:50:03] INFO root fetch - main [MainThread]: Store serial: [17915302]
