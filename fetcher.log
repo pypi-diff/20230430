@@ -1356,3 +1356,28 @@
 [2023-04-30 02:50:17] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-30 02:50:21] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-04-30 02:50:21] INFO root fetch - main [MainThread]: Store serial: [17913576]
+[2023-04-30 02:55:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913576]
+[2023-04-30 02:55:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 02:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchtnt
+[2023-04-30 02:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dumpwd
+[2023-04-30 02:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-databrew-cicd
+[2023-04-30 02:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rm545-xd
+[2023-04-30 02:55:30] WARNING root fetch - processPackages [dumpwd]: Skipping, unable to determine old version
+[2023-04-30 02:55:30] INFO root fetch - processPackages [rm545-xd]: New version: [0.7.2] Old Version: [0.6.2]
+[2023-04-30 02:55:30] INFO root fetch - main [MainThread]: End processing [dumpwd] error
+[2023-04-30 02:55:30] INFO root fetch - processPackages [torchtnt]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-04-30 02:55:30] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 02:55:30] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-04-30 02:55:30] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230430/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-30 02:55:30] INFO root fetch - processPackages [rm545-xd]: Downloading https://files.pythonhosted.org/packages/11/b4/ee348daa87de53c8df870e5471c09b3c2066f442e9cbeee992e15df301cb/rm545_xd-0.6.2.tar.gz
+[2023-04-30 02:55:30] INFO root fetch - processPackages [torchtnt]: Downloading https://files.pythonhosted.org/packages/af/58/e3d2b92aa124901462ca656bd85eeb681167e4a6e8bfb2f5aa3ed5e7dc00/torchtnt-0.0.7.tar.gz
+[2023-04-30 02:55:31] INFO root fetch - processPackages [rm545-xd]: Downloading https://files.pythonhosted.org/packages/53/b9/27bb45518a7138a95d3175e19a7e2a168db0634ce96511c24ad4824e4198/rm545_xd-0.7.2.tar.gz
+[2023-04-30 02:55:31] INFO root fetch - processPackages [torchtnt]: Downloading https://files.pythonhosted.org/packages/20/4e/496d137e6d17d41a643833c26bf954cc2884d679f3ea7071c1ac123c29c4/torchtnt-0.1.0.tar.gz
+[2023-04-30 02:55:31] INFO root fetch - processPackages [rm545-xd]: executing diffoscope
+[2023-04-30 02:55:31] INFO root fetch - processPackages [rm545-xd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rm545_xd-0.6.2.tar.gz tmp/rm545_xd-0.7.2.tar.gz --markdown 20230430/r/rm545-xd/0.6.2-0.7.2/diff.md --exclude *.pyd
+[2023-04-30 02:55:31] INFO root fetch - processPackages [torchtnt]: executing diffoscope
+[2023-04-30 02:55:31] INFO root fetch - processPackages [torchtnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-0.0.7.tar.gz tmp/torchtnt-0.1.0.tar.gz --markdown 20230430/t/torchtnt/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-04-30 02:55:31] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-04-30 02:55:32] INFO root fetch - main [MainThread]: End processing [rm545-xd]: success
+[2023-04-30 02:55:32] INFO root fetch - main [MainThread]: End processing [torchtnt]: success
+[2023-04-30 02:55:32] INFO root fetch - main [MainThread]: Store serial: [17913590]
