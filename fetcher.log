@@ -10772,3 +10772,53 @@
 [2023-04-30 22:34:14] INFO root fetch - main [MainThread]: End processing [pypeek]: success
 [2023-04-30 22:34:14] INFO root fetch - main [MainThread]: End processing [nudecrawler]: success
 [2023-04-30 22:34:14] INFO root fetch - main [MainThread]: Store serial: [17919881]
+[2023-04-30 22:39:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919881]
+[2023-04-30 22:39:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stim
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiodistributor
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stuned
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stimcirq
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sinter
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mojo-xmodules
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: inquestlabs
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: coconut-develop
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: astronomer-cosmos
+[2023-04-30 22:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rbxflip
+[2023-04-30 22:39:23] WARNING root fetch - processPackages [aiodistributor]: Skipping, unable to determine old version
+[2023-04-30 22:39:23] INFO root fetch - main [MainThread]: End processing [aiodistributor] error
+[2023-04-30 22:39:23] WARNING root fetch - processPackages [stuned]: Skipping, unable to determine old version
+[2023-04-30 22:39:23] INFO root fetch - main [MainThread]: End processing [stuned] error
+[2023-04-30 22:39:23] INFO root fetch - processPackages [astronomer-cosmos]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-30 22:39:23] INFO root fetch - processPackages [mojo-xmodules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 22:39:23] INFO root fetch - processPackages [stimcirq]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-30 22:39:23] INFO root fetch - processPackages [sinter]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-30 22:39:23] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-04-30 22:39:23] WARNING root fetch - processPackages [inquestlabs]: Skipping, unable to determine old version
+[2023-04-30 22:39:23] INFO root fetch - main [MainThread]: End processing [inquestlabs] error
+[2023-04-30 22:39:23] INFO root fetch - processPackages [rbxflip]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-30 22:39:23] INFO root fetch - processPackages [stim]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-30 22:39:23] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-04-30 22:39:23] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230430/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-04-30 22:39:23] INFO root fetch - processPackages [stimcirq]: executing diffoscope
+[2023-04-30 22:39:23] INFO root fetch - processPackages [stimcirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stimcirq-1.9.dev1656756326.tar.gz tmp/stimcirq-1.9.dev1657429876.tar.gz --markdown 20230430/s/stimcirq/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-30 22:39:24] INFO root fetch - processPackages [sinter]: executing diffoscope
+[2023-04-30 22:39:24] INFO root fetch - processPackages [sinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinter-1.9.dev1656756326.tar.gz tmp/sinter-1.9.dev1657429876.tar.gz --markdown 20230430/s/sinter/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-30 22:39:24] INFO root fetch - processPackages [astronomer-cosmos]: Downloading https://files.pythonhosted.org/packages/6c/80/b2963955ced1cc71e6f638ada49a33e4345a0d17033d5b960454de26d23d/astronomer_cosmos-0.6.2.tar.gz
+[2023-04-30 22:39:24] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/9a/5f/6dc09514032fb627b8d58e2c47aafb43f821542a16fc0a6a3b77c0b64a83/rbxflip-1.0.8.tar.gz
+[2023-04-30 22:39:24] INFO root fetch - processPackages [rbxflip]: executing diffoscope
+[2023-04-30 22:39:24] INFO root fetch - processPackages [rbxflip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbxflip-1.0.7.tar.gz tmp/rbxflip-1.0.8.tar.gz --markdown 20230430/r/rbxflip/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-30 22:39:24] INFO root fetch - processPackages [mojo-xmodules]: executing diffoscope
+[2023-04-30 22:39:24] INFO root fetch - processPackages [mojo-xmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_xmodules-0.0.8.tar.gz tmp/mojo_xmodules-0.0.9.tar.gz --markdown 20230430/m/mojo-xmodules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 22:39:24] INFO root fetch - processPackages [stim]: executing diffoscope
+[2023-04-30 22:39:24] INFO root fetch - processPackages [stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stim-1.9.dev1656756326.tar.gz tmp/stim-1.9.dev1657429876.tar.gz --markdown 20230430/s/stim/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-30 22:39:24] INFO root fetch - processPackages [astronomer-cosmos]: Downloading https://files.pythonhosted.org/packages/50/08/437905fb43edcc2f11c3c2fa665f298b7a6e9ba1603a8f272e49ae0e6593/astronomer_cosmos-0.6.3.tar.gz
+[2023-04-30 22:39:24] INFO root fetch - processPackages [astronomer-cosmos]: executing diffoscope
+[2023-04-30 22:39:24] INFO root fetch - processPackages [astronomer-cosmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomer_cosmos-0.6.2.tar.gz tmp/astronomer_cosmos-0.6.3.tar.gz --markdown 20230430/a/astronomer-cosmos/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-30 22:39:25] INFO root fetch - main [MainThread]: End processing [sinter]: success
+[2023-04-30 22:39:25] INFO root fetch - main [MainThread]: End processing [rbxflip]: success
+[2023-04-30 22:39:25] INFO root fetch - main [MainThread]: End processing [stimcirq]: success
+[2023-04-30 22:39:25] INFO root fetch - main [MainThread]: End processing [mojo-xmodules]: success
+[2023-04-30 22:39:26] INFO root fetch - main [MainThread]: End processing [astronomer-cosmos]: success
+[2023-04-30 22:39:27] INFO root fetch - main [MainThread]: End processing [stim]: success
+[2023-04-30 22:39:27] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-04-30 22:39:27] INFO root fetch - main [MainThread]: Store serial: [17919940]
