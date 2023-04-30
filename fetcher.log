@@ -2495,3 +2495,36 @@
 [2023-04-30 05:38:17] INFO root fetch - main [MainThread]: End processing [pycep-parser]: success
 [2023-04-30 05:38:21] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-04-30 05:38:21] INFO root fetch - main [MainThread]: Store serial: [17914310]
+[2023-04-30 05:43:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914310]
+[2023-04-30 05:43:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 05:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clapy
+[2023-04-30 05:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysigma-backend-carbonblack
+[2023-04-30 05:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mbta-gtfs-sqlite
+[2023-04-30 05:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pcDataLoader
+[2023-04-30 05:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycep-parser
+[2023-04-30 05:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dnadb
+[2023-04-30 05:43:31] WARNING root fetch - processPackages [pysigma-backend-carbonblack]: Skipping, unable to determine old version
+[2023-04-30 05:43:31] INFO root fetch - main [MainThread]: End processing [pysigma-backend-carbonblack] error
+[2023-04-30 05:43:31] WARNING root fetch - processPackages [clapy]: Skipping, unable to determine old version
+[2023-04-30 05:43:31] INFO root fetch - main [MainThread]: End processing [clapy] error
+[2023-04-30 05:43:31] INFO root fetch - processPackages [pcDataLoader]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-04-30 05:43:31] INFO root fetch - processPackages [mbta-gtfs-sqlite]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 05:43:31] INFO root fetch - processPackages [dnadb]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-30 05:43:31] INFO root fetch - processPackages [pycep-parser]: New version: [0.4.0] Old Version: [0.3.9a3]
+[2023-04-30 05:43:31] INFO root fetch - processPackages [pcDataLoader]: Downloading https://files.pythonhosted.org/packages/d1/42/b38d24dc85096c275630481e5edd53c3576dbcf2d950c1c86fff3e1c12f7/pcDataLoader-3.0.5.tar.gz
+[2023-04-30 05:43:31] INFO root fetch - processPackages [mbta-gtfs-sqlite]: Downloading https://files.pythonhosted.org/packages/a3/cd/f35b9c45f1592413f92bc47d5d17f92ab0d74abd6bf270525f0c96ff47ee/mbta-gtfs-sqlite-0.1.3.tar.gz
+[2023-04-30 05:43:31] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/75/08/097b6781b417a3caf81256c3a510e7f854c85a3e8a390f20995660a3da54/dnadb-0.2.7.tar.gz
+[2023-04-30 05:43:31] INFO root fetch - processPackages [pycep-parser]: Downloading https://files.pythonhosted.org/packages/96/43/991d77d299ae73479a39ef1b3ac6739d130d35234935da86141af19f359b/pycep_parser-0.4.0.tar.gz
+[2023-04-30 05:43:31] INFO root fetch - processPackages [mbta-gtfs-sqlite]: executing diffoscope
+[2023-04-30 05:43:31] INFO root fetch - processPackages [mbta-gtfs-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbta-gtfs-sqlite-0.1.2.tar.gz tmp/mbta-gtfs-sqlite-0.1.3.tar.gz --markdown 20230430/m/mbta-gtfs-sqlite/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 05:43:31] WARNING root fetch - processPackages [pcDataLoader]: Skipping package: exceeds size limit 28570789>=10485760
+[2023-04-30 05:43:31] INFO root fetch - main [MainThread]: End processing [pcDataLoader] error
+[2023-04-30 05:43:31] INFO root fetch - processPackages [pycep-parser]: executing diffoscope
+[2023-04-30 05:43:31] INFO root fetch - processPackages [pycep-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycep-parser-0.3.9a3.tar.gz tmp/pycep_parser-0.4.0.tar.gz --markdown 20230430/p/pycep-parser/0.3.9a3-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 05:43:32] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/70/f2/685b322b22fc0355fcd9f012eb717a8931be29908090c23f891fd073ee3d/dnadb-0.2.8.tar.gz
+[2023-04-30 05:43:32] INFO root fetch - processPackages [dnadb]: executing diffoscope
+[2023-04-30 05:43:32] INFO root fetch - processPackages [dnadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnadb-0.2.7.tar.gz tmp/dnadb-0.2.8.tar.gz --markdown 20230430/d/dnadb/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-30 05:43:32] INFO root fetch - main [MainThread]: End processing [mbta-gtfs-sqlite]: success
+[2023-04-30 05:43:32] INFO root fetch - main [MainThread]: End processing [pycep-parser]: success
+[2023-04-30 05:43:33] INFO root fetch - main [MainThread]: End processing [dnadb]: success
+[2023-04-30 05:43:33] INFO root fetch - main [MainThread]: Store serial: [17914337]
