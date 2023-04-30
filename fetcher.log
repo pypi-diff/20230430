@@ -3547,3 +3547,53 @@
 [2023-04-30 08:50:40] INFO root fetch - main [MainThread]: End processing [i-texts]: success
 [2023-04-30 08:50:41] INFO root fetch - main [MainThread]: End processing [BlockFrame]: success
 [2023-04-30 08:50:41] INFO root fetch - main [MainThread]: Store serial: [17915007]
+[2023-04-30 08:55:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915007]
+[2023-04-30 08:55:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 08:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellmap
+[2023-04-30 08:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FairDynamicRec
+[2023-04-30 08:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: luau
+[2023-04-30 08:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chat-completion-utils
+[2023-04-30 08:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bridgecrew
+[2023-04-30 08:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: luau
+[2023-04-30 08:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chat-completion-utils
+[2023-04-30 08:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chat-completion-utils
+[2023-04-30 08:55:49] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304300650] Old Version: [1.0.1.dev202304300542]
+[2023-04-30 08:55:49] INFO root fetch - processPackages [chat-completion-utils]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-30 08:55:49] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 08:55:49] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 08:55:49] INFO root fetch - processPackages [FairDynamicRec]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 08:55:49] INFO root fetch - processPackages [chat-completion-utils]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-30 08:55:49] INFO root fetch - processPackages [chat-completion-utils]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-30 08:55:49] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 08:55:49] INFO root fetch - processPackages [chat-completion-utils]: Downloading https://files.pythonhosted.org/packages/85/a3/d50e0b766a6412fea8fa5a111d18bd49f69345ff3b72c5770f849d3e427c/chat_completion_utils-1.1.0.tar.gz
+[2023-04-30 08:55:49] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 08:55:49] INFO root fetch - processPackages [chat-completion-utils]: Downloading https://files.pythonhosted.org/packages/85/a3/d50e0b766a6412fea8fa5a111d18bd49f69345ff3b72c5770f849d3e427c/chat_completion_utils-1.1.0.tar.gz
+[2023-04-30 08:55:49] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 08:55:49] INFO root fetch - processPackages [FairDynamicRec]: executing diffoscope
+[2023-04-30 08:55:49] INFO root fetch - processPackages [FairDynamicRec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FairDynamicRec-0.0.98.tar.gz tmp/FairDynamicRec-0.0.99.tar.gz --markdown 20230430/F/FairDynamicRec/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 08:55:49] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 08:55:49] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 08:55:49] INFO root fetch - processPackages [chat-completion-utils]: Downloading https://files.pythonhosted.org/packages/f4/98/5168ff00795ae19be274cd3402ac6545bbe7b2f0e16f52330ad93a1de604/chat_completion_utils-1.2.2.tar.gz
+[2023-04-30 08:55:49] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/57/06/c8e2b77e1ab2157415caa18a98837d2f16f72965251313660b0f6a84eb36/cellmap-1.0.1.dev202304300650-py3-none-any.whl
+[2023-04-30 08:55:50] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 08:55:50] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 08:55:50] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-30 08:55:50] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304300542-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304300650-py3-none-any.whl.zip --markdown 20230430/c/cellmap/1.0.1.dev202304300542-1.0.1.dev202304300650/diff.md --exclude *.pyd
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: Downloading https://files.pythonhosted.org/packages/4b/0e/d09c159e766cde633b9dacc111d3e6c8526b3026e29eeb8a29bde36cc835/chat_completion_utils-1.2.0.tar.gz
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: Downloading https://files.pythonhosted.org/packages/4b/0e/d09c159e766cde633b9dacc111d3e6c8526b3026e29eeb8a29bde36cc835/chat_completion_utils-1.2.0.tar.gz
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: executing diffoscope
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_completion_utils-1.1.0.tar.gz tmp/chat_completion_utils-1.2.0.tar.gz --markdown 20230430/c/chat-completion-utils/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: executing diffoscope
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_completion_utils-1.1.0.tar.gz tmp/chat_completion_utils-1.2.0.tar.gz --markdown 20230430/c/chat-completion-utils/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: Downloading https://files.pythonhosted.org/packages/dd/32/cb1470b21b905ac514784d01b51ce084daf2427b1691e5c54091356435d8/chat_completion_utils-1.2.3.tar.gz
+[2023-04-30 08:55:50] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-30 08:55:50] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230430/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: executing diffoscope
+[2023-04-30 08:55:50] INFO root fetch - processPackages [chat-completion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_completion_utils-1.2.2.tar.gz tmp/chat_completion_utils-1.2.3.tar.gz --markdown 20230430/c/chat-completion-utils/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-30 08:55:51] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-30 08:55:51] INFO root fetch - main [MainThread]: End processing [chat-completion-utils]: success
+[2023-04-30 08:55:51] INFO root fetch - main [MainThread]: End processing [chat-completion-utils]: success
+[2023-04-30 08:55:51] INFO root fetch - main [MainThread]: End processing [chat-completion-utils]: success
+[2023-04-30 08:55:51] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-30 08:55:52] INFO root fetch - main [MainThread]: End processing [FairDynamicRec]: success
+[2023-04-30 08:55:52] INFO root fetch - main [MainThread]: Store serial: [17915030]
