@@ -5962,3 +5962,54 @@
 [2023-04-30 13:55:53] INFO root fetch - main [MainThread]: End processing [django-s3-storage]: success
 [2023-04-30 13:55:55] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-04-30 13:55:55] INFO root fetch - main [MainThread]: Store serial: [17916383]
+[2023-04-30 14:00:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916383]
+[2023-04-30 14:01:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 14:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: instld
+[2023-04-30 14:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torcheval-nightly
+[2023-04-30 14:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-distance-calculator
+[2023-04-30 14:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygmi-get
+[2023-04-30 14:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docbuild
+[2023-04-30 14:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-master
+[2023-04-30 14:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ark
+[2023-04-30 14:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: goxlrutilityapi
+[2023-04-30 14:01:04] INFO root fetch - processPackages [instld]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 14:01:04] INFO root fetch - processPackages [docbuild]: New version: [0.1.105] Old Version: [0.1.104]
+[2023-04-30 14:01:04] INFO root fetch - processPackages [simple-distance-calculator]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 14:01:04] INFO root fetch - processPackages [pygmi-get]: New version: [0.17.4] Old Version: [0.17.3]
+[2023-04-30 14:01:04] INFO root fetch - processPackages [goxlrutilityapi]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 14:01:04] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230430.11.58.7537] Old Version: [20230429.12.22.11391]
+[2023-04-30 14:01:04] INFO root fetch - processPackages [ark]: New version: [7.1.0] Old Version: [7.0.0]
+[2023-04-30 14:01:04] INFO root fetch - processPackages [torcheval-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-30 14:01:04] INFO root fetch - processPackages [goxlrutilityapi]: executing diffoscope
+[2023-04-30 14:01:04] INFO root fetch - processPackages [goxlrutilityapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goxlrutilityapi-1.0.1.tar.gz tmp/goxlrutilityapi-1.0.2.tar.gz --markdown 20230430/g/goxlrutilityapi/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 14:01:04] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/37/00/12f56c8d7561e2aec2fd922e07ba2a6de239ff80da1530c0bd6f87a74cca/pygmi-get-0.17.3.tar.gz
+[2023-04-30 14:01:04] INFO root fetch - processPackages [docbuild]: Downloading https://files.pythonhosted.org/packages/c6/47/3295396906f0349b01b9d2c48d214e0b8574e5d95d2e4d385011df0606b2/docbuild-0.1.105.tar.gz
+[2023-04-30 14:01:04] INFO root fetch - processPackages [simple-distance-calculator]: Downloading https://files.pythonhosted.org/packages/c4/e8/d5f6a3f86ef0ce534f22901b9dd06a634e0c5342c3426f1e554bd46bcb26/simple_distance_calculator-0.0.1.tar.gz
+[2023-04-30 14:01:04] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/32/78/6ec21b572ec1af178a511d77839a5ec4fd4d8ead6758532658a0c0cd9a8e/certora-cli-alpha-master-20230429.12.22.11391.tar.gz
+[2023-04-30 14:01:04] INFO root fetch - processPackages [instld]: Downloading https://files.pythonhosted.org/packages/14/a3/1068da375b62d6816a3830ff3061ec2be3376f9366db8dee98f691d4fa60/instld-0.0.4.tar.gz
+[2023-04-30 14:01:04] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38010161>=10485760
+[2023-04-30 14:01:04] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-30 14:01:04] INFO root fetch - processPackages [docbuild]: executing diffoscope
+[2023-04-30 14:01:04] INFO root fetch - processPackages [docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docbuild-0.1.104.tar.gz tmp/docbuild-0.1.105.tar.gz --markdown 20230430/d/docbuild/0.1.104-0.1.105/diff.md --exclude *.pyd
+[2023-04-30 14:01:04] INFO root fetch - processPackages [ark]: Downloading https://files.pythonhosted.org/packages/29/04/ba189a531d14aefa950646b519cfc1ed2d2ce2e2fda6f39bb260e299b288/ark-7.1.0.tar.gz
+[2023-04-30 14:01:04] INFO root fetch - processPackages [simple-distance-calculator]: Downloading https://files.pythonhosted.org/packages/bb/91/173760659833bd32575fd7dcfb4aaa71cf752f6adbed6f3ea83bf619485d/simple_distance_calculator-0.0.2.tar.gz
+[2023-04-30 14:01:04] INFO root fetch - processPackages [simple-distance-calculator]: executing diffoscope
+[2023-04-30 14:01:04] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/aa/89/12468a0ca7e61eca9fc4b06e34e5c677f2455de1dfc28355cad638ea3c02/pygmi-get-0.17.4.tar.gz
+[2023-04-30 14:01:04] INFO root fetch - processPackages [simple-distance-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_distance_calculator-0.0.1.tar.gz tmp/simple_distance_calculator-0.0.2.tar.gz --markdown 20230430/s/simple-distance-calculator/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 14:01:04] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2023-04-30 14:01:04] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2023.4.8.tar.gz tmp/torcheval-nightly-2023.4.9.tar.gz --markdown 20230430/t/torcheval-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-30 14:01:04] INFO root fetch - processPackages [pygmi-get]: executing diffoscope
+[2023-04-30 14:01:04] INFO root fetch - processPackages [pygmi-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmi-get-0.17.3.tar.gz tmp/pygmi-get-0.17.4.tar.gz --markdown 20230430/p/pygmi-get/0.17.3-0.17.4/diff.md --exclude *.pyd
+[2023-04-30 14:01:04] INFO root fetch - processPackages [instld]: Downloading https://files.pythonhosted.org/packages/8c/6c/86193ad95df5b152f23008de7860ef681577b4ca3ee4ad98322a9be2eeb0/instld-0.0.5.tar.gz
+[2023-04-30 14:01:04] INFO root fetch - processPackages [ark]: executing diffoscope
+[2023-04-30 14:01:04] INFO root fetch - processPackages [ark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ark-7.0.0.tar.gz tmp/ark-7.1.0.tar.gz --markdown 20230430/a/ark/7.0.0-7.1.0/diff.md --exclude *.pyd
+[2023-04-30 14:01:04] INFO root fetch - processPackages [instld]: executing diffoscope
+[2023-04-30 14:01:04] INFO root fetch - processPackages [instld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instld-0.0.4.tar.gz tmp/instld-0.0.5.tar.gz --markdown 20230430/i/instld/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 14:01:05] INFO root fetch - main [MainThread]: End processing [goxlrutilityapi]: success
+[2023-04-30 14:01:05] INFO root fetch - main [MainThread]: End processing [docbuild]: success
+[2023-04-30 14:01:05] INFO root fetch - main [MainThread]: End processing [simple-distance-calculator]: success
+[2023-04-30 14:01:05] INFO root fetch - main [MainThread]: End processing [pygmi-get]: success
+[2023-04-30 14:01:05] INFO root fetch - main [MainThread]: End processing [instld]: success
+[2023-04-30 14:01:06] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2023-04-30 14:01:06] INFO root fetch - main [MainThread]: End processing [ark]: success
+[2023-04-30 14:01:06] INFO root fetch - main [MainThread]: Store serial: [17916406]
