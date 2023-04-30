@@ -717,3 +717,40 @@
 [2023-04-30 01:56:54] INFO root fetch - processPackages [ibonds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibonds-1.0.0.tar.gz tmp/ibonds-1.0.1.tar.gz --markdown 20230430/i/ibonds/1.0.0-1.0.1/diff.md --exclude *.pyd
 [2023-04-30 01:56:55] INFO root fetch - main [MainThread]: End processing [ibonds]: success
 [2023-04-30 01:56:55] INFO root fetch - main [MainThread]: Store serial: [17913208]
+[2023-04-30 02:01:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913208]
+[2023-04-30 02:02:04] INFO root fetch - main [MainThread]: No changed packages found
+[2023-04-30 02:07:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913208]
+[2023-04-30 02:07:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 02:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antgo
+[2023-04-30 02:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ShortName
+[2023-04-30 02:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchdatasets-nightly
+[2023-04-30 02:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-nightly
+[2023-04-30 02:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: censoredsummarystats
+[2023-04-30 02:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: discovery-transition-ds
+[2023-04-30 02:07:11] INFO root fetch - processPackages [antgo]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 02:07:11] WARNING root fetch - processPackages [ShortName]: Skipping, unable to determine old version
+[2023-04-30 02:07:11] INFO root fetch - main [MainThread]: End processing [ShortName] error
+[2023-04-30 02:07:11] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1682726569] Old Version: [1682640191]
+[2023-04-30 02:07:11] INFO root fetch - processPackages [censoredsummarystats]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-30 02:07:11] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-04-30 02:07:11] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-30 02:07:11] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-04-30 02:07:11] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230430/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-04-30 02:07:11] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/fb/0d/ca63695a735aa896cd3cbfcf4d1bc3a6bea35af028b7c25ca79b063d31b3/torchdatasets-nightly-1682726569.tar.gz
+[2023-04-30 02:07:11] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-04-30 02:07:11] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230430/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-30 02:07:11] INFO root fetch - processPackages [censoredsummarystats]: Downloading https://files.pythonhosted.org/packages/d8/84/aea24be8c059927aaccdee49b43e5e9d3459646eb23ddb76b59ace0cfd86/censoredsummarystats-1.0.1.tar.gz
+[2023-04-30 02:07:11] INFO root fetch - processPackages [antgo]: Downloading https://files.pythonhosted.org/packages/d4/c7/dafc425b24617393b16a7c80356f13da5efff10f3b04faf243d26fd2fef0/antgo-0.1.5.tar.gz
+[2023-04-30 02:07:11] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-04-30 02:07:11] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1682640191.tar.gz tmp/torchdatasets-nightly-1682726569.tar.gz --markdown 20230430/t/torchdatasets-nightly/1682640191-1682726569/diff.md --exclude *.pyd
+[2023-04-30 02:07:11] INFO root fetch - processPackages [antgo]: executing diffoscope
+[2023-04-30 02:07:11] INFO root fetch - processPackages [antgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antgo-0.1.4.tar.gz tmp/antgo-0.1.5.tar.gz --markdown 20230430/a/antgo/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 02:07:11] INFO root fetch - processPackages [censoredsummarystats]: Downloading https://files.pythonhosted.org/packages/eb/55/7244789830c5f404953acbe73f52f7c4b028b166a3026f94f72c028b3f62/censoredsummarystats-1.1.0.tar.gz
+[2023-04-30 02:07:11] INFO root fetch - processPackages [censoredsummarystats]: executing diffoscope
+[2023-04-30 02:07:11] INFO root fetch - processPackages [censoredsummarystats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/censoredsummarystats-1.0.1.tar.gz tmp/censoredsummarystats-1.1.0.tar.gz --markdown 20230430/c/censoredsummarystats/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-30 02:07:12] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-04-30 02:07:13] INFO root fetch - main [MainThread]: End processing [censoredsummarystats]: success
+[2023-04-30 02:07:15] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-04-30 02:07:16] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-04-30 02:07:20] INFO root fetch - main [MainThread]: End processing [antgo]: success
+[2023-04-30 02:07:20] INFO root fetch - main [MainThread]: Store serial: [17913226]
