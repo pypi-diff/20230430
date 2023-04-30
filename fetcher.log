@@ -1513,3 +1513,15 @@
 [2023-04-30 03:11:27] INFO root fetch - main [MainThread]: End processing [blitzgsea]: success
 [2023-04-30 03:11:27] INFO root fetch - main [MainThread]: End processing [blitzgsea]: success
 [2023-04-30 03:11:27] INFO root fetch - main [MainThread]: Store serial: [17913664]
+[2023-04-30 03:16:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913664]
+[2023-04-30 03:16:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 03:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-cfdi
+[2023-04-30 03:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blitzgsea
+[2023-04-30 03:16:36] WARNING root fetch - processPackages [simple-cfdi]: Skipping, unable to determine old version
+[2023-04-30 03:16:36] INFO root fetch - main [MainThread]: End processing [simple-cfdi] error
+[2023-04-30 03:16:36] INFO root fetch - processPackages [blitzgsea]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-04-30 03:16:36] INFO root fetch - processPackages [blitzgsea]: Downloading https://files.pythonhosted.org/packages/14/f0/30acd5e8f2d1b0e8eb08332195ccd527c834ff837cd670b33a2adb5c35bb/blitzgsea-1.3.5.tar.gz
+[2023-04-30 03:16:36] INFO root fetch - processPackages [blitzgsea]: executing diffoscope
+[2023-04-30 03:16:36] INFO root fetch - processPackages [blitzgsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blitzgsea-1.3.4.tar.gz tmp/blitzgsea-1.3.5.tar.gz --markdown 20230430/b/blitzgsea/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-04-30 03:16:37] INFO root fetch - main [MainThread]: End processing [blitzgsea]: success
+[2023-04-30 03:16:37] INFO root fetch - main [MainThread]: Store serial: [17913671]
