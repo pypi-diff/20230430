@@ -8006,3 +8006,47 @@
 [2023-04-30 17:19:57] INFO root fetch - main [MainThread]: End processing [FlipperNested]: success
 [2023-04-30 17:21:06] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-04-30 17:21:06] INFO root fetch - main [MainThread]: Store serial: [17917726]
+[2023-04-30 17:26:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917726]
+[2023-04-30 17:26:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 17:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-generation-server
+[2023-04-30 17:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: state-space-generator
+[2023-04-30 17:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: leap-model-parser
+[2023-04-30 17:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psic
+[2023-04-30 17:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thinkgpt
+[2023-04-30 17:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rbxflip
+[2023-04-30 17:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: code-loader
+[2023-04-30 17:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: origin-Yzb-regret
+[2023-04-30 17:26:15] INFO root fetch - processPackages [llm-generation-server]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 17:26:15] INFO root fetch - processPackages [thinkgpt]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 17:26:15] INFO root fetch - processPackages [psic]: New version: [0.0.9] Old Version: [0.0.8.9]
+[2023-04-30 17:26:15] WARNING root fetch - processPackages [rbxflip]: Skipping, unable to determine old version
+[2023-04-30 17:26:15] INFO root fetch - main [MainThread]: End processing [rbxflip] error
+[2023-04-30 17:26:15] INFO root fetch - processPackages [state-space-generator]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-30 17:26:15] WARNING root fetch - processPackages [origin-Yzb-regret]: Skipping, unable to determine old version
+[2023-04-30 17:26:15] INFO root fetch - main [MainThread]: End processing [origin-Yzb-regret] error
+[2023-04-30 17:26:15] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-30 17:26:15] INFO root fetch - processPackages [leap-model-parser]: New version: [0.1.93.dev1] Old Version: [0.1.92.1]
+[2023-04-30 17:26:15] INFO root fetch - processPackages [psic]: Downloading https://files.pythonhosted.org/packages/b2/d2/e78449344b4a1247775355c528aaee63e03157e28c40c6a009b359b2c29a/psic-0.0.8.9.tar.gz
+[2023-04-30 17:26:16] INFO root fetch - processPackages [thinkgpt]: Downloading https://files.pythonhosted.org/packages/16/a8/6722ba3f12fde2a324de6d7190cb95de21b19bc3bad8b24e2d39dc659bb9/thinkgpt-0.0.6.tar.gz
+[2023-04-30 17:26:16] INFO root fetch - processPackages [llm-generation-server]: executing diffoscope
+[2023-04-30 17:26:16] INFO root fetch - processPackages [llm-generation-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_generation_server-0.0.8.tar.gz tmp/llm_generation_server-0.0.9.tar.gz --markdown 20230430/l/llm-generation-server/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 17:26:16] INFO root fetch - processPackages [state-space-generator]: Downloading https://files.pythonhosted.org/packages/c9/de/d0dea0a0d71286742cdc0e0f63e8dd8298bcfdb687382aa15fc7bc3be22c/state_space_generator-0.1.6.tar.gz
+[2023-04-30 17:26:16] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-04-30 17:26:16] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230430/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-30 17:26:16] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/ee/4e/426ac35dc5cacec8c3f970ac5048466c9d8a95d47ba6c21d717f7b2ec0e5/leap_model_parser-0.1.93.dev1.tar.gz
+[2023-04-30 17:26:16] INFO root fetch - processPackages [thinkgpt]: executing diffoscope
+[2023-04-30 17:26:16] INFO root fetch - processPackages [thinkgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thinkgpt-0.0.5.tar.gz tmp/thinkgpt-0.0.6.tar.gz --markdown 20230430/t/thinkgpt/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 17:26:16] INFO root fetch - processPackages [state-space-generator]: executing diffoscope
+[2023-04-30 17:26:16] INFO root fetch - processPackages [state-space-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state_space_generator-0.1.5.tar.gz tmp/state_space_generator-0.1.6.tar.gz --markdown 20230430/s/state-space-generator/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-30 17:26:16] INFO root fetch - processPackages [psic]: Downloading https://files.pythonhosted.org/packages/08/e2/cdb4f1a0f49a4d377f44e8c794935f08c0fbf778c9367da1f8dc4bca23bd/psic-0.0.9.tar.gz
+[2023-04-30 17:26:16] INFO root fetch - processPackages [leap-model-parser]: executing diffoscope
+[2023-04-30 17:26:16] INFO root fetch - processPackages [leap-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_parser-0.1.92.1.tar.gz tmp/leap_model_parser-0.1.93.dev1.tar.gz --markdown 20230430/l/leap-model-parser/0.1.92.1-0.1.93.dev1/diff.md --exclude *.pyd
+[2023-04-30 17:26:16] INFO root fetch - processPackages [psic]: executing diffoscope
+[2023-04-30 17:26:16] INFO root fetch - processPackages [psic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psic-0.0.8.9.tar.gz tmp/psic-0.0.9.tar.gz --markdown 20230430/p/psic/0.0.8.9-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 17:26:17] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-04-30 17:26:17] INFO root fetch - main [MainThread]: End processing [psic]: success
+[2023-04-30 17:26:17] INFO root fetch - main [MainThread]: End processing [thinkgpt]: success
+[2023-04-30 17:26:18] INFO root fetch - main [MainThread]: End processing [state-space-generator]: success
+[2023-04-30 17:26:18] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
+[2023-04-30 17:26:19] INFO root fetch - main [MainThread]: End processing [llm-generation-server]: success
+[2023-04-30 17:26:19] INFO root fetch - main [MainThread]: Store serial: [17917754]
