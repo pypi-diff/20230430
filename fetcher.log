@@ -10151,3 +10151,65 @@
 [2023-04-30 21:20:33] INFO root fetch - main [MainThread]: End processing [pycryptokms]: success
 [2023-04-30 21:20:34] INFO root fetch - main [MainThread]: End processing [arc-cli]: success
 [2023-04-30 21:20:34] INFO root fetch - main [MainThread]: Store serial: [17919335]
+[2023-04-30 21:25:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919335]
+[2023-04-30 21:25:42] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudsmith-cli
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: namefactory
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: picopins
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycryptokms
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ReverseShell
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpudb
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hyta
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: picods
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: angola
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gpt4free
+[2023-04-30 21:25:42] INFO root fetch - processPackages [cloudsmith-cli]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-30 21:25:42] INFO root fetch - processPackages [namefactory]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 21:25:42] WARNING root fetch - processPackages [pycryptokms]: Skipping, unable to determine old version
+[2023-04-30 21:25:42] INFO root fetch - main [MainThread]: End processing [pycryptokms] error
+[2023-04-30 21:25:42] INFO root fetch - processPackages [ReverseShell]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 21:25:42] INFO root fetch - processPackages [gpt4free]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 21:25:42] INFO root fetch - processPackages [picopins]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-30 21:25:42] WARNING root fetch - processPackages [hyta]: Skipping, unable to determine old version
+[2023-04-30 21:25:42] INFO root fetch - main [MainThread]: End processing [hyta] error
+[2023-04-30 21:25:42] INFO root fetch - processPackages [gpudb]: New version: [7.1.9.3] Old Version: [7.1.9.2]
+[2023-04-30 21:25:42] INFO root fetch - processPackages [angola]: New version: [0.10.9] Old Version: [0.10.8]
+[2023-04-30 21:25:43] INFO root fetch - processPackages [picods]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-30 21:25:43] INFO root fetch - processPackages [cloudsmith-cli]: Downloading https://files.pythonhosted.org/packages/f1/1b/1ba0864a317481c297acce9dbd8233a4053a1e7498784d881b4a46bce87b/cloudsmith_cli-0.8.2-py2.py3-none-any.whl
+[2023-04-30 21:25:43] INFO root fetch - processPackages [gpt4free]: Downloading https://files.pythonhosted.org/packages/7b/df/82e476a30f716ecf61d06928fe53e4a9d695bdc0f57e475671cbfcd946bf/gpt4free-0.1.2.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [ReverseShell]: Downloading https://files.pythonhosted.org/packages/ba/63/20421d4ce2937dbf51072d4f2e11c62f4ad53153c8247a914024bd04ef7a/ReverseShell-0.0.3.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [gpudb]: Downloading https://files.pythonhosted.org/packages/ed/15/9e55462fb7852293952f34480c0858debfdd61de21244145fb5c06fabd0c/gpudb-7.1.9.2-cp39-cp39-win_amd64.whl
+[2023-04-30 21:25:43] INFO root fetch - processPackages [angola]: Downloading https://files.pythonhosted.org/packages/ba/a1/156c3d4aefbca6c6bc3376b8fd19529f9b87d5d07b1ed731bc717a3d4cd9/angola-0.10.8.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [namefactory]: Downloading https://files.pythonhosted.org/packages/94/57/3080e43257bd477c1c29d06d2545c2efcdf81634b6fa0228e9d848039e62/namefactory-1.0.3.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [picopins]: Downloading https://files.pythonhosted.org/packages/2b/d5/ce2f9f6c910b7ea391e511c920d4cb0db57bdffab4cf9e16ce093a299c3f/picopins-1.1.0.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [namefactory]: executing diffoscope
+[2023-04-30 21:25:43] INFO root fetch - processPackages [namefactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/namefactory-1.0.2.tar.gz tmp/namefactory-1.0.3.tar.gz --markdown 20230430/n/namefactory/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 21:25:43] INFO root fetch - processPackages [ReverseShell]: Downloading https://files.pythonhosted.org/packages/ff/0e/c525c8b1c7c786b655387aad6599c3807fbf61585b4048299fc166356ea5/ReverseShell-0.0.4.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [gpt4free]: Downloading https://files.pythonhosted.org/packages/2f/70/434b70cd17bc2da1ae397e5e73052c78da0f440dbff0553c5c0a33be6f78/gpt4free-0.1.3.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [picods]: Downloading https://files.pythonhosted.org/packages/77/ff/c578e77f50daae345cfeb2e58f933a6582e8e2d29e712f5e91946cd2d17b/picods-0.1.6.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [gpudb]: Downloading https://files.pythonhosted.org/packages/cb/36/2bb8aaa00188e05086ac549569ed09ce04cb4918bea71d97f931b82751d5/gpudb-7.1.9.3-cp39-cp39-win_amd64.whl
+[2023-04-30 21:25:43] INFO root fetch - processPackages [picopins]: executing diffoscope
+[2023-04-30 21:25:43] INFO root fetch - processPackages [picopins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picopins-1.0.1.tar.gz tmp/picopins-1.1.0.tar.gz --markdown 20230430/p/picopins/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-30 21:25:43] INFO root fetch - processPackages [cloudsmith-cli]: Downloading https://files.pythonhosted.org/packages/d0/82/d0dc32141208a12e5ff4b32033a8ddbae05e7b970b51d519450582b183e5/cloudsmith_cli-0.9.0-py2.py3-none-any.whl
+[2023-04-30 21:25:43] INFO root fetch - processPackages [ReverseShell]: executing diffoscope
+[2023-04-30 21:25:43] INFO root fetch - processPackages [ReverseShell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseShell-0.0.3.tar.gz tmp/ReverseShell-0.0.4.tar.gz --markdown 20230430/R/ReverseShell/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 21:25:43] INFO root fetch - processPackages [gpt4free]: executing diffoscope
+[2023-04-30 21:25:43] INFO root fetch - processPackages [gpt4free]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt4free-0.1.2.tar.gz tmp/gpt4free-0.1.3.tar.gz --markdown 20230430/g/gpt4free/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 21:25:43] INFO root fetch - processPackages [angola]: Downloading https://files.pythonhosted.org/packages/ef/c2/f915c0dd3427d9c66fde4e54b90de911fd82fcc8c329459e12cbcd4a235d/angola-0.10.9.tar.gz
+[2023-04-30 21:25:43] INFO root fetch - processPackages [gpudb]: executing diffoscope
+[2023-04-30 21:25:43] INFO root fetch - processPackages [gpudb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpudb-7.1.9.2-cp39-cp39-win_amd64.whl.zip tmp/gpudb-7.1.9.3-cp39-cp39-win_amd64.whl.zip --markdown 20230430/g/gpudb/7.1.9.2-7.1.9.3/diff.md --exclude *.pyd
+[2023-04-30 21:25:43] INFO root fetch - processPackages [picods]: executing diffoscope
+[2023-04-30 21:25:43] INFO root fetch - processPackages [picods]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picods-0.1.5.tar.gz tmp/picods-0.1.6.tar.gz --markdown 20230430/p/picods/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-30 21:25:43] INFO root fetch - processPackages [cloudsmith-cli]: executing diffoscope
+[2023-04-30 21:25:43] INFO root fetch - processPackages [cloudsmith-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudsmith_cli-0.8.2-py2.py3-none-any.whl.zip tmp/cloudsmith_cli-0.9.0-py2.py3-none-any.whl.zip --markdown 20230430/c/cloudsmith-cli/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-30 21:25:43] INFO root fetch - processPackages [angola]: executing diffoscope
+[2023-04-30 21:25:43] INFO root fetch - processPackages [angola]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/angola-0.10.8.tar.gz tmp/angola-0.10.9.tar.gz --markdown 20230430/a/angola/0.10.8-0.10.9/diff.md --exclude *.pyd
+[2023-04-30 21:25:44] INFO root fetch - main [MainThread]: End processing [namefactory]: success
+[2023-04-30 21:25:44] INFO root fetch - main [MainThread]: End processing [picopins]: success
+[2023-04-30 21:25:44] INFO root fetch - main [MainThread]: End processing [ReverseShell]: success
+[2023-04-30 21:25:45] INFO root fetch - main [MainThread]: End processing [picods]: success
+[2023-04-30 21:25:45] INFO root fetch - main [MainThread]: End processing [gpt4free]: success
+[2023-04-30 21:25:45] INFO root fetch - main [MainThread]: End processing [angola]: success
+[2023-04-30 21:25:45] INFO root fetch - main [MainThread]: End processing [cloudsmith-cli]: success
+[2023-04-30 21:25:47] INFO root fetch - main [MainThread]: End processing [gpudb]: success
+[2023-04-30 21:25:47] INFO root fetch - main [MainThread]: Store serial: [17919402]
