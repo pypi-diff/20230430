@@ -3289,3 +3289,24 @@
 [2023-04-30 08:07:51] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-04-30 08:08:00] INFO root fetch - main [MainThread]: End processing [nautilus-trader]: success
 [2023-04-30 08:08:00] INFO root fetch - main [MainThread]: Store serial: [17914865]
+[2023-04-30 08:13:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914865]
+[2023-04-30 08:13:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 08:13:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datainventory
+[2023-04-30 08:13:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lamineml
+[2023-04-30 08:13:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yalexs
+[2023-04-30 08:13:10] INFO root fetch - processPackages [datainventory]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-30 08:13:10] INFO root fetch - processPackages [lamineml]: New version: [0.8] Old Version: [0.7]
+[2023-04-30 08:13:10] INFO root fetch - processPackages [yalexs]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-30 08:13:11] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-04-30 08:13:11] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.7.tar.gz tmp/lamineml-0.8.tar.gz --markdown 20230430/l/lamineml/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-30 08:13:11] INFO root fetch - processPackages [datainventory]: Downloading https://files.pythonhosted.org/packages/d5/70/ff9cbf8058f7b3de99d55dcb21cb4c498cb55a2f1c7a037c89235bd917e3/datainventory-0.0.3.tar.gz
+[2023-04-30 08:13:11] INFO root fetch - processPackages [yalexs]: Downloading https://files.pythonhosted.org/packages/34/cc/d0509bdad61c6bd769d25c7ab37dc448caa6dda7e4ea7bc0cbd79196e0fa/yalexs-1.3.3.tar.gz
+[2023-04-30 08:13:11] INFO root fetch - processPackages [yalexs]: executing diffoscope
+[2023-04-30 08:13:11] INFO root fetch - processPackages [yalexs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yalexs-1.3.2.tar.gz tmp/yalexs-1.3.3.tar.gz --markdown 20230430/y/yalexs/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-30 08:13:11] INFO root fetch - processPackages [datainventory]: Downloading https://files.pythonhosted.org/packages/c1/64/09c7b8429bf9bb4a87a8e599883d6a7d7465daa2c6a996612e0cee1d3776/datainventory-0.0.5.tar.gz
+[2023-04-30 08:13:11] INFO root fetch - processPackages [datainventory]: executing diffoscope
+[2023-04-30 08:13:11] INFO root fetch - processPackages [datainventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datainventory-0.0.3.tar.gz tmp/datainventory-0.0.5.tar.gz --markdown 20230430/d/datainventory/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 08:13:12] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-04-30 08:13:12] INFO root fetch - main [MainThread]: End processing [datainventory]: success
+[2023-04-30 08:13:12] INFO root fetch - main [MainThread]: End processing [yalexs]: success
+[2023-04-30 08:13:12] INFO root fetch - main [MainThread]: Store serial: [17914879]
