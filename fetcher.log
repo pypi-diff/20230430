@@ -10624,3 +10624,70 @@
 [2023-04-30 22:18:11] INFO root fetch - main [MainThread]: End processing [httpq]: success
 [2023-04-30 22:18:11] INFO root fetch - main [MainThread]: End processing [pynamer]: success
 [2023-04-30 22:18:11] INFO root fetch - main [MainThread]: Store serial: [17919785]
+[2023-04-30 22:23:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919785]
+[2023-04-30 22:23:20] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feedwarrior
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jinjat
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spPersist
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: existenz-api-fetcher
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openapi-python-client
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 22:23:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: spPersist
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spPersist]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [openapi-python-client]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682886076] Old Version: [0.1.1682886068]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [existenz-api-fetcher]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [feedwarrior]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [jinjat]: New version: [0.3] Old Version: [0.2]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spPersist]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682886076] Old Version: [0.1.1682886068]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-30 22:23:20] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/6f/f8/5548fef4e5368dbf814390196b6d98c47b8ef207d95839143d421b77fcfb/eia-odin-pkg-rioatmadja2018-0.1.1682886068.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spPersist]: Downloading https://files.pythonhosted.org/packages/cc/e3/7bd3734612ce6ffd5c99fb6f193f02d1698c78d796248267629a293ae7a3/sppersist-0.0.8.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [feedwarrior]: Downloading https://files.pythonhosted.org/packages/63/88/f8a6c7eac5784759f8e948e03a56ebe2cd05460267152fcacc61c05e3aa6/feedwarrior-0.5.4.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [openapi-python-client]: Downloading https://files.pythonhosted.org/packages/6d/81/a16696f6f341ef2b9872d69c8b9c5016abb1bc93edd4ba73c66adf26c1c3/openapi-python-client-0.9.1.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [existenz-api-fetcher]: Downloading https://files.pythonhosted.org/packages/33/de/6df6abc3d2130e37b226189a45df180c8ad14a522d7258480c6ce9c46dbc/existenz_api_fetcher-0.0.8.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/6f/f8/5548fef4e5368dbf814390196b6d98c47b8ef207d95839143d421b77fcfb/eia-odin-pkg-rioatmadja2018-0.1.1682886068.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spPersist]: Downloading https://files.pythonhosted.org/packages/cc/e3/7bd3734612ce6ffd5c99fb6f193f02d1698c78d796248267629a293ae7a3/sppersist-0.0.8.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [jinjat]: Downloading https://files.pythonhosted.org/packages/7f/6b/3012d50d15c6d8f5b881073b8ab6a815939e7f8411e939cd88852bdb81b7/jinjat-0.2.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230430/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230430/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spPersist]: executing diffoscope
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spPersist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sppersist-0.0.7.tar.gz tmp/sppersist-0.0.8.tar.gz --markdown 20230430/s/spPersist/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spPersist]: executing diffoscope
+[2023-04-30 22:23:20] INFO root fetch - processPackages [spPersist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sppersist-0.0.7.tar.gz tmp/sppersist-0.0.8.tar.gz --markdown 20230430/s/spPersist/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-30 22:23:20] INFO root fetch - processPackages [feedwarrior]: Downloading https://files.pythonhosted.org/packages/3b/7d/403e5bada46b92112d3ef0e42719baefa8476953198d3f8454142ae958db/feedwarrior-0.5.5.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/81/68/b2587e448b3952ea0b52566af34b08688c8cd58cd5169602eef0687b77f4/eia_odin_pkg_rioatmadja2018-0.1.1682886076-py3-none-any.whl
+[2023-04-30 22:23:20] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/81/68/b2587e448b3952ea0b52566af34b08688c8cd58cd5169602eef0687b77f4/eia_odin_pkg_rioatmadja2018-0.1.1682886076-py3-none-any.whl
+[2023-04-30 22:23:20] INFO root fetch - processPackages [existenz-api-fetcher]: Downloading https://files.pythonhosted.org/packages/03/13/81dba4e2e4cd7cd6e4cf4d26aa2dd6512c69779c94674f1230cf9400d8a1/existenz_api_fetcher-0.0.9.tar.gz
+[2023-04-30 22:23:20] INFO root fetch - processPackages [feedwarrior]: executing diffoscope
+[2023-04-30 22:23:20] INFO root fetch - processPackages [feedwarrior]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feedwarrior-0.5.4.tar.gz tmp/feedwarrior-0.5.5.tar.gz --markdown 20230430/f/feedwarrior/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-04-30 22:23:21] INFO root fetch - processPackages [existenz-api-fetcher]: executing diffoscope
+[2023-04-30 22:23:21] INFO root fetch - processPackages [existenz-api-fetcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/existenz_api_fetcher-0.0.8.tar.gz tmp/existenz_api_fetcher-0.0.9.tar.gz --markdown 20230430/e/existenz-api-fetcher/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 22:23:21] INFO root fetch - processPackages [jinjat]: Downloading https://files.pythonhosted.org/packages/a4/12/0dc0cfc51277924cfe23f3e523a211d9cf105b0f4cec3eb587ac778adbfe/jinjat-0.3.tar.gz
+[2023-04-30 22:23:21] INFO root fetch - processPackages [openapi-python-client]: Downloading https://files.pythonhosted.org/packages/4a/de/95e3c3a2a0b3b1e23b0a640e8c7751a17201bd319a98e3a1ab72cc101d34/openapi-python-client-0.9.2.tar.gz
+[2023-04-30 22:23:21] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 22:23:21] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 22:23:21] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682886068.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682886076-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682886068-0.1.1682886076/diff.md --exclude *.pyd
+[2023-04-30 22:23:21] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682886068.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682886076-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682886068-0.1.1682886076/diff.md --exclude *.pyd
+[2023-04-30 22:23:21] INFO root fetch - processPackages [jinjat]: executing diffoscope
+[2023-04-30 22:23:21] INFO root fetch - processPackages [jinjat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinjat-0.2.tar.gz tmp/jinjat-0.3.tar.gz --markdown 20230430/j/jinjat/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-30 22:23:21] INFO root fetch - processPackages [openapi-python-client]: executing diffoscope
+[2023-04-30 22:23:21] INFO root fetch - processPackages [openapi-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi-python-client-0.9.1.tar.gz tmp/openapi-python-client-0.9.2.tar.gz --markdown 20230430/o/openapi-python-client/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-30 22:23:21] INFO root fetch - main [MainThread]: End processing [spPersist]: success
+[2023-04-30 22:23:22] INFO root fetch - main [MainThread]: End processing [spPersist]: success
+[2023-04-30 22:23:22] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 22:23:22] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 22:23:22] INFO root fetch - main [MainThread]: End processing [existenz-api-fetcher]: success
+[2023-04-30 22:23:22] INFO root fetch - main [MainThread]: End processing [feedwarrior]: success
+[2023-04-30 22:23:22] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-30 22:23:23] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-30 22:23:23] INFO root fetch - main [MainThread]: End processing [jinjat]: success
+[2023-04-30 22:23:46] INFO root fetch - main [MainThread]: End processing [openapi-python-client]: success
+[2023-04-30 22:23:46] INFO root fetch - main [MainThread]: Store serial: [17919813]
