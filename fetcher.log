@@ -6589,3 +6589,61 @@
 [2023-04-30 14:48:36] INFO root fetch - main [MainThread]: End processing [maestral]: success
 [2023-04-30 14:49:36] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
 [2023-04-30 14:49:36] INFO root fetch - main [MainThread]: Store serial: [17916849]
+[2023-04-30 14:54:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916849]
+[2023-04-30 14:54:59] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elevenlabslib
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bigsansar
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotinst-agent-beta
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: so-vits-svc-fork
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyxx
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GPTAgent
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: goxlrutilityapi
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Bigsansar
+[2023-04-30 14:54:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nonebot-desktop-wing
+[2023-04-30 14:54:59] INFO root fetch - processPackages [goxlrutilityapi]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-30 14:54:59] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.280] Old Version: [2.2.279]
+[2023-04-30 14:54:59] INFO root fetch - processPackages [elevenlabslib]: New version: [0.6.0] Old Version: [0.5.3]
+[2023-04-30 14:54:59] INFO root fetch - processPackages [Bigsansar]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-04-30 14:54:59] INFO root fetch - processPackages [pyxx]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-30 14:54:59] INFO root fetch - processPackages [GPTAgent]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 14:54:59] INFO root fetch - processPackages [nonebot-desktop-wing]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-30 14:54:59] INFO root fetch - processPackages [Bigsansar]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-04-30 14:54:59] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-04-30 14:55:00] INFO root fetch - processPackages [goxlrutilityapi]: Downloading https://files.pythonhosted.org/packages/ed/58/4d2ccc81988497831f4623578cfce06d65f351eb3153f4fa8d874dbc7908/goxlrutilityapi-1.0.5.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230430/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-04-30 14:55:00] INFO root fetch - processPackages [GPTAgent]: Downloading https://files.pythonhosted.org/packages/78/9c/3c3c68db68755a834a3da7a5ddef6fa8b2da3e6a20de2d93d1ca5829b5db/gptagent-0.0.8.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [pyxx]: Downloading https://files.pythonhosted.org/packages/18/96/d02a98dd3fc616bc3c34f2334909e5084a9a45a26f9aecadf0cc617d0261/pyxx-0.1.0.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [nonebot-desktop-wing]: Downloading https://files.pythonhosted.org/packages/8d/d3/1725afaa815a0cffb9f73b6d7537554dacfa52e1aeb6b0e8992351af4a9c/nonebot-desktop-wing-0.2.4.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/ac/68/852eefe0820a381dd83f246c47d40d64aa14979a30bbaae7c0afb9b1dee0/spotinst-agent-beta-2.2.280.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [nonebot-desktop-wing]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/18/fe/8606640ee005c65ea28f6134945cca1e8256fde5a5d3feb764bda51e8904/Bigsansar-1.2.0.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [nonebot-desktop-wing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-wing-0.2.3.tar.gz tmp/nonebot-desktop-wing-0.2.4.tar.gz --markdown 20230430/n/nonebot-desktop-wing/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-30 14:55:00] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/18/fe/8606640ee005c65ea28f6134945cca1e8256fde5a5d3feb764bda51e8904/Bigsansar-1.2.0.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [elevenlabslib]: Downloading https://files.pythonhosted.org/packages/85/b5/993416773589eb830b3fb86b449add0596d2ffe03a818f94e7509b48af62/elevenlabslib-0.6.0.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [goxlrutilityapi]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [goxlrutilityapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goxlrutilityapi-1.0.4.tar.gz tmp/goxlrutilityapi-1.0.5.tar.gz --markdown 20230430/g/goxlrutilityapi/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-30 14:55:00] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.279.tar.gz tmp/spotinst-agent-beta-2.2.280.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.279-2.2.280/diff.md --exclude *.pyd
+[2023-04-30 14:55:00] INFO root fetch - processPackages [GPTAgent]: Downloading https://files.pythonhosted.org/packages/2a/7a/8247925f222cea58853d32e8fe3aa0ec0340da39bd86a81c4e005f5568a4/gptagent-0.0.9.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [pyxx]: Downloading https://files.pythonhosted.org/packages/a1/d7/0d56c964a5828e97c4b3b86992f2e577c9caf477624320d86d51dbe4a873/pyxx-0.2.0.tar.gz
+[2023-04-30 14:55:00] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.1.9.tar.gz tmp/Bigsansar-1.2.0.tar.gz --markdown 20230430/B/Bigsansar/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 14:55:00] INFO root fetch - processPackages [elevenlabslib]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [elevenlabslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elevenlabslib-0.5.3.tar.gz tmp/elevenlabslib-0.6.0.tar.gz --markdown 20230430/e/elevenlabslib/0.5.3-0.6.0/diff.md --exclude *.pyd
+[2023-04-30 14:55:00] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.1.9.tar.gz tmp/Bigsansar-1.2.0.tar.gz --markdown 20230430/B/Bigsansar/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 14:55:00] INFO root fetch - processPackages [GPTAgent]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [GPTAgent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptagent-0.0.8.tar.gz tmp/gptagent-0.0.9.tar.gz --markdown 20230430/G/GPTAgent/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 14:55:00] INFO root fetch - processPackages [pyxx]: executing diffoscope
+[2023-04-30 14:55:00] INFO root fetch - processPackages [pyxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxx-0.1.0.tar.gz tmp/pyxx-0.2.0.tar.gz --markdown 20230430/p/pyxx/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 14:55:01] INFO root fetch - main [MainThread]: End processing [nonebot-desktop-wing]: success
+[2023-04-30 14:55:01] INFO root fetch - main [MainThread]: End processing [goxlrutilityapi]: success
+[2023-04-30 14:55:01] INFO root fetch - main [MainThread]: End processing [GPTAgent]: success
+[2023-04-30 14:55:01] INFO root fetch - main [MainThread]: End processing [elevenlabslib]: success
+[2023-04-30 14:55:01] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 14:55:02] INFO root fetch - main [MainThread]: End processing [pyxx]: success
+[2023-04-30 14:55:02] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-04-30 14:55:02] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-04-30 14:55:02] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-30 14:55:02] INFO root fetch - main [MainThread]: Store serial: [17916877]
