@@ -7203,3 +7203,50 @@
 [2023-04-30 15:38:19] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
 [2023-04-30 15:38:46] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-30 15:38:46] INFO root fetch - main [MainThread]: Store serial: [17917177]
+[2023-04-30 15:43:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917177]
+[2023-04-30 15:43:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 15:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfed-macos
+[2023-04-30 15:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhrp
+[2023-04-30 15:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audclas
+[2023-04-30 15:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-breeze
+[2023-04-30 15:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jupyterlab-celltagsclasses
+[2023-04-30 15:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sandrine-basic
+[2023-04-30 15:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PostMD
+[2023-04-30 15:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spotinst-agent-beta
+[2023-04-30 15:43:55] WARNING root fetch - processPackages [sandrine-basic]: Skipping, unable to determine old version
+[2023-04-30 15:43:55] INFO root fetch - main [MainThread]: End processing [sandrine-basic] error
+[2023-04-30 15:43:55] INFO root fetch - processPackages [pyhrp]: New version: [0.7.2] Old Version: [0.6.9]
+[2023-04-30 15:43:55] INFO root fetch - processPackages [pyfed-macos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:43:55] INFO root fetch - processPackages [django-breeze]: New version: [1.0.0] Old Version: [0.3.1]
+[2023-04-30 15:43:55] INFO root fetch - processPackages [audclas]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 15:43:55] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.282] Old Version: [2.2.281]
+[2023-04-30 15:43:55] WARNING root fetch - processPackages [PostMD]: Skipping, unable to determine old version
+[2023-04-30 15:43:55] INFO root fetch - main [MainThread]: End processing [PostMD] error
+[2023-04-30 15:43:55] INFO root fetch - processPackages [jupyterlab-celltagsclasses]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 15:43:55] INFO root fetch - processPackages [pyfed-macos]: executing diffoscope
+[2023-04-30 15:43:55] INFO root fetch - processPackages [pyfed-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed_macos-0.0.8.tar.gz tmp/pyfed_macos-0.0.9.tar.gz --markdown 20230430/p/pyfed-macos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:43:55] INFO root fetch - processPackages [jupyterlab-celltagsclasses]: Downloading https://files.pythonhosted.org/packages/4a/92/76fa348cf7e6c2ad711fdc18b59bd68d2309ec9de308e6334be46fbeaccc/jupyterlab_celltagsclasses-0.1.1.tar.gz
+[2023-04-30 15:43:55] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/96/6a/a92a0bbb99e66b05f0688d5bf3fdaeabcce5ef0ded002ce0a3e5d3c8affa/pyhrp-0.7.2.tar.gz
+[2023-04-30 15:43:55] INFO root fetch - processPackages [audclas]: Downloading https://files.pythonhosted.org/packages/9e/11/2ed04ce9793991d4e4e9cda0776d083166e9cce0ad1f87318c9bf73616fd/audclas-0.0.5.tar.gz
+[2023-04-30 15:43:55] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/a1/fd/3eb074fa910435c56f384a0c3c7127622690d150ee96878e1fd67a34f912/spotinst-agent-beta-2.2.281.tar.gz
+[2023-04-30 15:43:55] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 15:43:55] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.6.9.tar.gz tmp/pyhrp-0.7.2.tar.gz --markdown 20230430/p/pyhrp/0.6.9-0.7.2/diff.md --exclude *.pyd
+[2023-04-30 15:43:55] INFO root fetch - processPackages [django-breeze]: Downloading https://files.pythonhosted.org/packages/8e/fc/76acec06a711c259af1a313b13cdcfa4a9135a7b5b0f04bffd73237b3ddf/django_breeze-1.0.0.tar.gz
+[2023-04-30 15:43:55] INFO root fetch - processPackages [django-breeze]: executing diffoscope
+[2023-04-30 15:43:55] INFO root fetch - processPackages [django-breeze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_breeze-0.3.1.tar.gz tmp/django_breeze-1.0.0.tar.gz --markdown 20230430/d/django-breeze/0.3.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 15:43:55] INFO root fetch - processPackages [jupyterlab-celltagsclasses]: Downloading https://files.pythonhosted.org/packages/84/44/9c5690367fb2b4a5a817286ac78f1dd27af8d01835cca0be1b7a1ed2c707/jupyterlab_celltagsclasses-0.1.2.tar.gz
+[2023-04-30 15:43:55] INFO root fetch - processPackages [audclas]: Downloading https://files.pythonhosted.org/packages/ed/15/a32209db528e7625f89cc3919f7bd0cd2ad5a720cf22f0447aba383af3ae/audclas-0.0.6.tar.gz
+[2023-04-30 15:43:55] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/ff/9f/5e287d561dd083b8f023a7b997def453ba92fa66c045751ab0e6f963e996/spotinst-agent-beta-2.2.282.tar.gz
+[2023-04-30 15:43:55] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 15:43:55] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.281.tar.gz tmp/spotinst-agent-beta-2.2.282.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.281-2.2.282/diff.md --exclude *.pyd
+[2023-04-30 15:43:55] INFO root fetch - processPackages [audclas]: executing diffoscope
+[2023-04-30 15:43:55] INFO root fetch - processPackages [audclas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audclas-0.0.5.tar.gz tmp/audclas-0.0.6.tar.gz --markdown 20230430/a/audclas/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 15:43:55] INFO root fetch - processPackages [jupyterlab-celltagsclasses]: executing diffoscope
+[2023-04-30 15:43:55] INFO root fetch - processPackages [jupyterlab-celltagsclasses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_celltagsclasses-0.1.1.tar.gz tmp/jupyterlab_celltagsclasses-0.1.2.tar.gz --markdown 20230430/j/jupyterlab-celltagsclasses/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 15:43:56] INFO root fetch - main [MainThread]: End processing [pyfed-macos]: success
+[2023-04-30 15:43:56] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 15:43:56] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 15:43:57] INFO root fetch - main [MainThread]: End processing [django-breeze]: success
+[2023-04-30 15:43:57] INFO root fetch - main [MainThread]: End processing [audclas]: success
+[2023-04-30 15:43:58] INFO root fetch - main [MainThread]: End processing [jupyterlab-celltagsclasses]: success
+[2023-04-30 15:43:58] INFO root fetch - main [MainThread]: Store serial: [17917208]
