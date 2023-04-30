@@ -3508,3 +3508,13 @@
 [2023-04-30 08:39:59] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-04-30 08:40:02] INFO root fetch - main [MainThread]: End processing [tkfly]: success
 [2023-04-30 08:40:02] INFO root fetch - main [MainThread]: Store serial: [17914986]
+[2023-04-30 08:45:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914986]
+[2023-04-30 08:45:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-30 08:45:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: powa-web
+[2023-04-30 08:45:11] INFO root fetch - processPackages [powa-web]: New version: [4.1.4] Old Version: [4.1.3]
+[2023-04-30 08:45:11] INFO root fetch - processPackages [powa-web]: Downloading https://files.pythonhosted.org/packages/40/c3/8bfe6db834c326699895fd33c63866056e5a9cd3367358e3ff6a05ab2c8d/powa-web-4.1.3.tar.gz
+[2023-04-30 08:45:12] INFO root fetch - processPackages [powa-web]: Downloading https://files.pythonhosted.org/packages/9b/04/8bd751f684dfa486f98c017c9c97fde243d8d59991807115414bac6b6ce3/powa-web-4.1.4.tar.gz
+[2023-04-30 08:45:12] INFO root fetch - processPackages [powa-web]: executing diffoscope
+[2023-04-30 08:45:12] INFO root fetch - processPackages [powa-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/powa-web-4.1.3.tar.gz tmp/powa-web-4.1.4.tar.gz --markdown 20230430/p/powa-web/4.1.3-4.1.4/diff.md --exclude *.pyd
+[2023-04-30 08:45:30] INFO root fetch - main [MainThread]: End processing [powa-web]: success
+[2023-04-30 08:45:30] INFO root fetch - main [MainThread]: Store serial: [17914990]
