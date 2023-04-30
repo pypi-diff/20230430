@@ -6865,3 +6865,58 @@
 [2023-04-30 15:11:43] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.emdb]: success
 [2023-04-30 15:11:44] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
 [2023-04-30 15:11:44] INFO root fetch - main [MainThread]: Store serial: [17916991]
+[2023-04-30 15:16:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916991]
+[2023-04-30 15:16:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-scipy
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cosmopower-jax
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-arn
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlitemanager
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-sphinx
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-django
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spotinst-agent-beta
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dumpwd
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-apl
+[2023-04-30 15:16:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: makejinja
+[2023-04-30 15:16:53] INFO root fetch - processPackages [cosmopower-jax]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-30 15:16:53] WARNING root fetch - processPackages [aws-arn]: Skipping, unable to determine old version
+[2023-04-30 15:16:53] INFO root fetch - main [MainThread]: End processing [aws-arn] error
+[2023-04-30 15:16:53] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.280] Old Version: [2.2.279]
+[2023-04-30 15:16:53] WARNING root fetch - processPackages [dumpwd]: Skipping, unable to determine old version
+[2023-04-30 15:16:53] INFO root fetch - main [MainThread]: End processing [dumpwd] error
+[2023-04-30 15:16:53] INFO root fetch - processPackages [sqlitemanager]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 15:16:53] INFO root fetch - processPackages [makejinja]: New version: [1.1.4] Old Version: [1.1.2]
+[2023-04-30 15:16:53] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 15:16:53] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.279.tar.gz tmp/spotinst-agent-beta-2.2.280.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.279-2.2.280/diff.md --exclude *.pyd
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.745] Old Version: [0.0.744]
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230430/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230430/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 15:16:53] INFO root fetch - processPackages [cosmopower-jax]: Downloading https://files.pythonhosted.org/packages/fa/00/88f372f75d91103b15aaa91f0d2f333d24b44bc72f0c340d844391266beb/cosmopower_jax-0.2.1.tar.gz
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230430/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 15:16:53] INFO root fetch - processPackages [sqlitemanager]: Downloading https://files.pythonhosted.org/packages/6e/69/6469d8bd0b7dba5bf86c7503c1bc92e71844df236b1e95a2517f5e985114/sqlitemanager-0.6.1.tar.gz
+[2023-04-30 15:16:53] INFO root fetch - processPackages [makejinja]: Downloading https://files.pythonhosted.org/packages/2a/58/5bd542a84ae5c1b96cbf7f3008f8e7053de249f37160de4b04e799319fc6/makejinja-1.1.2.tar.gz
+[2023-04-30 15:16:53] WARNING root fetch - processPackages [cosmopower-jax]: Skipping package: exceeds size limit 41404365>=10485760
+[2023-04-30 15:16:53] INFO root fetch - main [MainThread]: End processing [cosmopower-jax] error
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/0e/c3/86a1f8f7ab99c48040327f9d97961cc02eb9553697a61a9fe07366c5983e/nbdev-apl-0.0.744.tar.gz
+[2023-04-30 15:16:53] INFO root fetch - processPackages [makejinja]: Downloading https://files.pythonhosted.org/packages/67/68/a00119f7b0ac62afa0669c067d1fa638306c1528f8d3ccf82965b6baf7e4/makejinja-1.1.4.tar.gz
+[2023-04-30 15:16:53] INFO root fetch - processPackages [sqlitemanager]: Downloading https://files.pythonhosted.org/packages/ff/0f/eabfcb6a51cd37fc268e7ff3614d9d4f0c86872979b0e7575eb25c48155b/sqlitemanager-0.7.0.tar.gz
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/39/7c/bf7e7c8faa66bd22d65230133827123d805a69451315dd019228daf6fe95/nbdev-apl-0.0.745.tar.gz
+[2023-04-30 15:16:53] INFO root fetch - processPackages [makejinja]: executing diffoscope
+[2023-04-30 15:16:53] INFO root fetch - processPackages [makejinja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makejinja-1.1.2.tar.gz tmp/makejinja-1.1.4.tar.gz --markdown 20230430/m/makejinja/1.1.2-1.1.4/diff.md --exclude *.pyd
+[2023-04-30 15:16:53] INFO root fetch - processPackages [sqlitemanager]: executing diffoscope
+[2023-04-30 15:16:53] INFO root fetch - processPackages [sqlitemanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlitemanager-0.6.1.tar.gz tmp/sqlitemanager-0.7.0.tar.gz --markdown 20230430/s/sqlitemanager/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-30 15:16:53] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.744.tar.gz tmp/nbdev-apl-0.0.745.tar.gz --markdown 20230430/n/nbdev-apl/0.0.744-0.0.745/diff.md --exclude *.pyd
+[2023-04-30 15:16:54] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-04-30 15:16:54] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-30 15:16:54] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-04-30 15:16:55] INFO root fetch - main [MainThread]: End processing [makejinja]: success
+[2023-04-30 15:16:55] INFO root fetch - main [MainThread]: End processing [sqlitemanager]: success
+[2023-04-30 15:16:55] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 15:16:55] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-30 15:16:55] INFO root fetch - main [MainThread]: Store serial: [17917022]
