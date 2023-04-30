@@ -11301,3 +11301,50 @@
 [2023-04-30 23:49:34] INFO root fetch - main [MainThread]: End processing [DinoHash]: success
 [2023-04-30 23:49:34] INFO root fetch - main [MainThread]: End processing [meltanolabs-tap-postgres]: success
 [2023-04-30 23:49:34] INFO root fetch - main [MainThread]: Store serial: [17920223]
+[2023-04-30 23:54:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920223]
+[2023-04-30 23:54:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overloaded-iterables
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyNukiBT
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-workshop
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: objectscale-s3-client
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alignem
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: DinoHash
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: weatherly
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: diff-match-patch
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-30 23:54:43] INFO root fetch - processPackages [overloaded-iterables]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-30 23:54:43] INFO root fetch - processPackages [pyNukiBT]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 23:54:43] INFO root fetch - processPackages [alignem]: New version: [0.5.438] Old Version: [0.5.437]
+[2023-04-30 23:54:43] INFO root fetch - processPackages [diff-match-patch]: New version: [20200713] Old Version: [20181111]
+[2023-04-30 23:54:43] WARNING root fetch - processPackages [objectscale-s3-client]: Skipping, unable to determine old version
+[2023-04-30 23:54:43] INFO root fetch - main [MainThread]: End processing [objectscale-s3-client] error
+[2023-04-30 23:54:43] INFO root fetch - processPackages [DinoHash]: New version: [0.3] Old Version: [0.2]
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-30 23:54:43] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230430/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-30 23:54:43] INFO root fetch - processPackages [weatherly]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-30 23:54:43] INFO root fetch - processPackages [DinoHash]: executing diffoscope
+[2023-04-30 23:54:43] INFO root fetch - processPackages [DinoHash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DinoHash-0.2-py3-none-any.whl.zip tmp/DinoHash-0.3-py3-none-any.whl.zip --markdown 20230430/D/DinoHash/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-30 23:54:43] INFO root fetch - processPackages [alignem]: Downloading https://files.pythonhosted.org/packages/41/91/2a16c0705238aaa76a25f57f75ce96eb3f1637b74b972fd491e27e22eade/alignem-0.5.437.tar.gz
+[2023-04-30 23:54:43] WARNING root fetch - processPackages [alignem]: Skipping package: exceeds size limit 42502198>=10485760
+[2023-04-30 23:54:43] INFO root fetch - main [MainThread]: End processing [alignem] error
+[2023-04-30 23:54:43] INFO root fetch - processPackages [diff-match-patch]: Downloading https://files.pythonhosted.org/packages/f0/2a/5ba07def0e9107d935aba62cf632afbd0f7c723a98af47ccbcab753d2452/diff-match-patch-20181111.tar.gz
+[2023-04-30 23:54:43] INFO root fetch - processPackages [weatherly]: Downloading https://files.pythonhosted.org/packages/ed/cc/802e9d8019cfd90ee0295d1e435d6f8f480a50c590cfaed00f578db21bc5/weatherly-0.4.0.tar.gz
+[2023-04-30 23:54:43] INFO root fetch - processPackages [overloaded-iterables]: Downloading https://files.pythonhosted.org/packages/40/a4/196a0ed707ab80cc29741fbc55b8e85cd5ecf1ff700cf04771b4a45fa00d/overloaded-iterables-0.6.2.tar.gz
+[2023-04-30 23:54:43] INFO root fetch - processPackages [pyNukiBT]: Downloading https://files.pythonhosted.org/packages/a4/81/f8c363faad0426a20b608832ee385d611ac1a2dfb4fb23fa9788f03254b3/pynukibt-0.0.3.tar.gz
+[2023-04-30 23:54:43] INFO root fetch - processPackages [pyNukiBT]: executing diffoscope
+[2023-04-30 23:54:43] INFO root fetch - processPackages [pyNukiBT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynukibt-0.0.2.tar.gz tmp/pynukibt-0.0.3.tar.gz --markdown 20230430/p/pyNukiBT/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 23:54:43] INFO root fetch - processPackages [overloaded-iterables]: executing diffoscope
+[2023-04-30 23:54:43] INFO root fetch - processPackages [overloaded-iterables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overloaded-iterables-0.6.1.tar.gz tmp/overloaded-iterables-0.6.2.tar.gz --markdown 20230430/o/overloaded-iterables/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-30 23:54:43] INFO root fetch - processPackages [diff-match-patch]: Downloading https://files.pythonhosted.org/packages/f0/1e/48ba888757d3f63ff35536e3e73e05c8a20d701e2b4fcbe4b17c29a2408d/diff-match-patch-20200713.tar.gz
+[2023-04-30 23:54:43] INFO root fetch - processPackages [weatherly]: Downloading https://files.pythonhosted.org/packages/a3/62/ec96107fa7cfda7f0cd9e37650608546596269ee7d2ba3eaded3796d386e/weatherly-0.5.0.tar.gz
+[2023-04-30 23:54:43] INFO root fetch - processPackages [diff-match-patch]: executing diffoscope
+[2023-04-30 23:54:43] INFO root fetch - processPackages [diff-match-patch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diff-match-patch-20181111.tar.gz tmp/diff-match-patch-20200713.tar.gz --markdown 20230430/d/diff-match-patch/20181111-20200713/diff.md --exclude *.pyd
+[2023-04-30 23:54:43] INFO root fetch - processPackages [weatherly]: executing diffoscope
+[2023-04-30 23:54:43] INFO root fetch - processPackages [weatherly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weatherly-0.4.0.tar.gz tmp/weatherly-0.5.0.tar.gz --markdown 20230430/w/weatherly/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-30 23:54:44] INFO root fetch - main [MainThread]: End processing [DinoHash]: success
+[2023-04-30 23:54:44] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-30 23:54:44] INFO root fetch - main [MainThread]: End processing [pyNukiBT]: success
+[2023-04-30 23:54:44] INFO root fetch - main [MainThread]: End processing [overloaded-iterables]: success
+[2023-04-30 23:54:44] INFO root fetch - main [MainThread]: End processing [weatherly]: success
+[2023-04-30 23:54:45] INFO root fetch - main [MainThread]: End processing [diff-match-patch]: success
+[2023-04-30 23:54:45] INFO root fetch - main [MainThread]: Store serial: [17920254]
