@@ -9880,3 +9880,54 @@
 [2023-04-30 20:52:44] INFO root fetch - processPackages [dict-picker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dict_picker-0.1.4-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.whl.zip tmp/dict_picker-0.1.5-cp39-none-win_amd64.whl.zip --markdown 20230430/d/dict-picker/0.1.4-0.1.5/diff.md --exclude *.pyd
 [2023-04-30 20:52:45] INFO root fetch - main [MainThread]: End processing [dict-picker]: success
 [2023-04-30 20:52:45] INFO root fetch - main [MainThread]: Store serial: [17919046]
+[2023-04-30 20:57:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919046]
+[2023-04-30 20:57:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-shelly-certoraclibeta
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strawberry-graphql
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sosse
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyperlight
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-l4d2-server
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: finalynx
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfed
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: exitstatus
+[2023-04-30 20:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyfed-macos
+[2023-04-30 20:57:54] INFO root fetch - processPackages [certora-cli-alpha-shelly-certoraclibeta]: New version: [20230430.18.52.709899] Old Version: [20230430.16.35.65304]
+[2023-04-30 20:57:54] WARNING root fetch - processPackages [sosse]: Skipping, unable to determine old version
+[2023-04-30 20:57:54] INFO root fetch - main [MainThread]: End processing [sosse] error
+[2023-04-30 20:57:54] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 20:57:54] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-04-30 20:57:54] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-30 20:57:54] INFO root fetch - processPackages [hyperlight]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 20:57:54] INFO root fetch - processPackages [pyfed-macos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 20:57:54] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2023-04-30 20:57:54] INFO root fetch - processPackages [exitstatus]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-04-30 20:57:54] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2023-04-30 20:57:54] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20230430/s/strawberry-graphql/0.99.2-0.99.3/diff.md --exclude *.pyd
+[2023-04-30 20:57:54] INFO root fetch - processPackages [pyfed-macos]: executing diffoscope
+[2023-04-30 20:57:54] INFO root fetch - processPackages [pyfed-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed_macos-0.0.8.tar.gz tmp/pyfed_macos-0.0.9.tar.gz --markdown 20230430/p/pyfed-macos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 20:57:54] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 20:57:54] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 20:57:54] INFO root fetch - processPackages [certora-cli-alpha-shelly-certoraclibeta]: Downloading https://files.pythonhosted.org/packages/5e/8e/bd2fe5a2793aa05366a3849e030cfdd707dd147a8bf3dc150885dfb64e2e/certora-cli-alpha-shelly-certoraclibeta-20230430.16.35.65304.tar.gz
+[2023-04-30 20:57:54] INFO root fetch - processPackages [hyperlight]: Downloading https://files.pythonhosted.org/packages/67/6e/1f9befb12fc191d05308def321398144f1a3738e6c1a80f8222c8239231c/hyperlight-0.0.1.tar.gz
+[2023-04-30 20:57:54] WARNING root fetch - processPackages [certora-cli-alpha-shelly-certoraclibeta]: Skipping package: exceeds size limit 38297607>=10485760
+[2023-04-30 20:57:54] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-certoraclibeta] error
+[2023-04-30 20:57:54] INFO root fetch - processPackages [exitstatus]: Downloading https://files.pythonhosted.org/packages/7f/af/bd126c3993fb5eb787ddb33d95e68da3d1cf62be414e01baea960316172d/exitstatus-2.3.0.tar.gz
+[2023-04-30 20:57:54] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Downloading https://files.pythonhosted.org/packages/2b/f9/7a07d1ca7c093b4290a5cf180f05ea8d428e59fc65f52e46f2aa68227d3a/nonebot_plugin_l4d2_server-0.5.1.tar.gz
+[2023-04-30 20:57:54] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-04-30 20:57:54] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230430/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-04-30 20:57:54] INFO root fetch - processPackages [hyperlight]: Downloading https://files.pythonhosted.org/packages/5b/11/d4835c72354e50c33a09b1e591a8c8a319040a03b7664568ede737a7d2d1/hyperlight-0.0.2.tar.gz
+[2023-04-30 20:57:54] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: executing diffoscope
+[2023-04-30 20:57:54] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_l4d2_server-0.5.0.tar.gz tmp/nonebot_plugin_l4d2_server-0.5.1.tar.gz --markdown 20230430/n/nonebot-plugin-l4d2-server/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-30 20:57:54] INFO root fetch - processPackages [exitstatus]: Downloading https://files.pythonhosted.org/packages/23/68/028d653941f50447be646b71718bf7cf441417d5a428b824be7c51474cee/exitstatus-2.4.0.tar.gz
+[2023-04-30 20:57:54] INFO root fetch - processPackages [exitstatus]: executing diffoscope
+[2023-04-30 20:57:54] INFO root fetch - processPackages [exitstatus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exitstatus-2.3.0.tar.gz tmp/exitstatus-2.4.0.tar.gz --markdown 20230430/e/exitstatus/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-04-30 20:57:55] INFO root fetch - processPackages [hyperlight]: executing diffoscope
+[2023-04-30 20:57:55] INFO root fetch - processPackages [hyperlight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperlight-0.0.1.tar.gz tmp/hyperlight-0.0.2.tar.gz --markdown 20230430/h/hyperlight/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 20:57:55] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 20:57:55] INFO root fetch - main [MainThread]: End processing [pyfed-macos]: success
+[2023-04-30 20:57:55] INFO root fetch - main [MainThread]: End processing [exitstatus]: success
+[2023-04-30 20:57:56] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2023-04-30 20:57:56] INFO root fetch - main [MainThread]: End processing [hyperlight]: success
+[2023-04-30 20:57:57] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-04-30 20:57:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-l4d2-server]: success
+[2023-04-30 20:57:57] INFO root fetch - main [MainThread]: Store serial: [17919075]
