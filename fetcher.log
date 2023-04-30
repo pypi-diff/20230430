@@ -3385,3 +3385,45 @@
 [2023-04-30 08:23:34] INFO root fetch - main [MainThread]: End processing [iothealth]: success
 [2023-04-30 08:23:38] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-04-30 08:23:38] INFO root fetch - main [MainThread]: Store serial: [17914919]
+[2023-04-30 08:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914919]
+[2023-04-30 08:28:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fake-bpy-module-latest
+[2023-04-30 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smolai
+[2023-04-30 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yatracker-linker
+[2023-04-30 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lamineml
+[2023-04-30 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dnacurve
+[2023-04-30 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: atppy
+[2023-04-30 08:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sigmadsp
+[2023-04-30 08:28:47] WARNING root fetch - processPackages [smolai]: Skipping, unable to determine old version
+[2023-04-30 08:28:47] INFO root fetch - main [MainThread]: End processing [smolai] error
+[2023-04-30 08:28:47] INFO root fetch - processPackages [lamineml]: New version: [0.8] Old Version: [0.7]
+[2023-04-30 08:28:47] INFO root fetch - processPackages [dnacurve]: New version: [2023.4.30] Old Version: [2022.10.4]
+[2023-04-30 08:28:47] INFO root fetch - processPackages [atppy]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-30 08:28:47] INFO root fetch - processPackages [yatracker-linker]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-04-30 08:28:47] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230430] Old Version: [20230429]
+[2023-04-30 08:28:47] INFO root fetch - processPackages [sigmadsp]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-04-30 08:28:47] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-04-30 08:28:47] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.7.tar.gz tmp/lamineml-0.8.tar.gz --markdown 20230430/l/lamineml/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-30 08:28:47] INFO root fetch - processPackages [atppy]: executing diffoscope
+[2023-04-30 08:28:47] INFO root fetch - processPackages [atppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atppy-0.1.tar.gz tmp/atppy-0.1.1.tar.gz --markdown 20230430/a/atppy/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 08:28:47] INFO root fetch - processPackages [dnacurve]: Downloading https://files.pythonhosted.org/packages/19/5f/cdbd1c5bf514ba1ca9d1d82b49ceeb1d988cb5d197b1ddb662db0633f87e/dnacurve-2022.10.4.tar.gz
+[2023-04-30 08:28:47] INFO root fetch - processPackages [sigmadsp]: Downloading https://files.pythonhosted.org/packages/3f/d5/1acd206878bc4311fbd7e6b94ec29dbe3e27f5e31ebf6f949210ba31eb37/sigmadsp-3.0.1.tar.gz
+[2023-04-30 08:28:47] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/2b/36/021d294e3918b8222849adf5c345aa623c7255b60b196fdc773de7617662/fake-bpy-module-latest-20230430.tar.gz
+[2023-04-30 08:28:47] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/c3/15/7f95240ca12ba65fba515d770a0f59a4fe09dee405c2cb5331a460c8142f/yatracker_linker-0.3.0.tar.gz
+[2023-04-30 08:28:47] INFO root fetch - processPackages [yatracker-linker]: executing diffoscope
+[2023-04-30 08:28:47] INFO root fetch - processPackages [yatracker-linker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yatracker_linker-0.2.3.tar.gz tmp/yatracker_linker-0.3.0.tar.gz --markdown 20230430/y/yatracker-linker/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 08:28:47] INFO root fetch - processPackages [dnacurve]: Downloading https://files.pythonhosted.org/packages/3c/5a/d0bddcbdce13320fda0e6176929a166a9564529ae9cc03ee700f4c7fcb32/dnacurve-2023.4.30.tar.gz
+[2023-04-30 08:28:47] INFO root fetch - processPackages [dnacurve]: executing diffoscope
+[2023-04-30 08:28:47] INFO root fetch - processPackages [dnacurve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnacurve-2022.10.4.tar.gz tmp/dnacurve-2023.4.30.tar.gz --markdown 20230430/d/dnacurve/2022.10.4-2023.4.30/diff.md --exclude *.pyd
+[2023-04-30 08:28:47] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-04-30 08:28:47] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230429.tar.gz tmp/fake-bpy-module-latest-20230430.tar.gz --markdown 20230430/f/fake-bpy-module-latest/20230429-20230430/diff.md --exclude *.pyd
+[2023-04-30 08:28:47] INFO root fetch - processPackages [sigmadsp]: Downloading https://files.pythonhosted.org/packages/9b/dd/44d0296facd2cdc593b9ee333d4524f28dff8eeb02e91da166e8f589722c/sigmadsp-3.0.2.tar.gz
+[2023-04-30 08:28:47] INFO root fetch - processPackages [sigmadsp]: executing diffoscope
+[2023-04-30 08:28:47] INFO root fetch - processPackages [sigmadsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmadsp-3.0.1.tar.gz tmp/sigmadsp-3.0.2.tar.gz --markdown 20230430/s/sigmadsp/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-04-30 08:28:48] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-04-30 08:28:48] INFO root fetch - main [MainThread]: End processing [atppy]: success
+[2023-04-30 08:28:48] INFO root fetch - main [MainThread]: End processing [yatracker-linker]: success
+[2023-04-30 08:28:48] INFO root fetch - main [MainThread]: End processing [dnacurve]: success
+[2023-04-30 08:28:49] INFO root fetch - main [MainThread]: End processing [sigmadsp]: success
+[2023-04-30 08:28:53] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-04-30 08:28:53] INFO root fetch - main [MainThread]: Store serial: [17914941]
