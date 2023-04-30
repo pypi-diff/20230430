@@ -5238,3 +5238,34 @@
 [2023-04-30 12:19:24] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
 [2023-04-30 12:19:24] INFO root fetch - main [MainThread]: End processing [thingsvision]: success
 [2023-04-30 12:19:24] INFO root fetch - main [MainThread]: Store serial: [17915962]
+[2023-04-30 12:24:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915962]
+[2023-04-30 12:24:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 12:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GPTAgent
+[2023-04-30 12:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrdp
+[2023-04-30 12:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: citizenk
+[2023-04-30 12:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tumourkit
+[2023-04-30 12:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-encryption
+[2023-04-30 12:24:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyrdp
+[2023-04-30 12:24:32] WARNING root fetch - processPackages [pyrdp]: Skipping, unable to determine old version
+[2023-04-30 12:24:32] INFO root fetch - processPackages [citizenk]: New version: [0.1.38] Old Version: [0.1.37]
+[2023-04-30 12:24:32] INFO root fetch - main [MainThread]: End processing [pyrdp] error
+[2023-04-30 12:24:32] WARNING root fetch - processPackages [GPTAgent]: Skipping, unable to determine old version
+[2023-04-30 12:24:32] INFO root fetch - main [MainThread]: End processing [GPTAgent] error
+[2023-04-30 12:24:32] WARNING root fetch - processPackages [pyrdp]: Skipping, unable to determine old version
+[2023-04-30 12:24:32] INFO root fetch - main [MainThread]: End processing [pyrdp] error
+[2023-04-30 12:24:32] INFO root fetch - processPackages [django-encryption]: New version: [0.3.3] Old Version: [0.3.1]
+[2023-04-30 12:24:32] INFO root fetch - processPackages [tumourkit]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-04-30 12:24:33] INFO root fetch - processPackages [citizenk]: Downloading https://files.pythonhosted.org/packages/db/b1/e6c151e19ba46de17e7f6bc3ac23592f4844f96cc90e93593dbae3e5d3a2/citizenk-0.1.38.tar.gz
+[2023-04-30 12:24:33] INFO root fetch - processPackages [tumourkit]: Downloading https://files.pythonhosted.org/packages/25/71/f2c965c70bc84968251bd7159ce12d8b5e9d35ce510ce978236eab4007c6/tumourkit-0.4.1.tar.gz
+[2023-04-30 12:24:33] INFO root fetch - processPackages [citizenk]: executing diffoscope
+[2023-04-30 12:24:33] INFO root fetch - processPackages [citizenk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citizenk-0.1.37.tar.gz tmp/citizenk-0.1.38.tar.gz --markdown 20230430/c/citizenk/0.1.37-0.1.38/diff.md --exclude *.pyd
+[2023-04-30 12:24:33] INFO root fetch - processPackages [django-encryption]: Downloading https://files.pythonhosted.org/packages/ae/d2/60926492195d00a77970ac7c8f74728eeb0c92f338866f66258038924f77/django_encryption-0.3.3.tar.gz
+[2023-04-30 12:24:33] INFO root fetch - processPackages [django-encryption]: executing diffoscope
+[2023-04-30 12:24:33] INFO root fetch - processPackages [django-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_encryption-0.3.1.tar.gz tmp/django_encryption-0.3.3.tar.gz --markdown 20230430/d/django-encryption/0.3.1-0.3.3/diff.md --exclude *.pyd
+[2023-04-30 12:24:33] INFO root fetch - processPackages [tumourkit]: Downloading https://files.pythonhosted.org/packages/99/ee/ed9cc9948ef9415ab015eefd9fd1fa88dd711e379fb43ce65bc0ab90c834/tumourkit-0.5.0.tar.gz
+[2023-04-30 12:24:33] INFO root fetch - processPackages [tumourkit]: executing diffoscope
+[2023-04-30 12:24:33] INFO root fetch - processPackages [tumourkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tumourkit-0.4.1.tar.gz tmp/tumourkit-0.5.0.tar.gz --markdown 20230430/t/tumourkit/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-04-30 12:24:34] INFO root fetch - main [MainThread]: End processing [citizenk]: success
+[2023-04-30 12:24:34] INFO root fetch - main [MainThread]: End processing [django-encryption]: success
+[2023-04-30 12:24:35] INFO root fetch - main [MainThread]: End processing [tumourkit]: success
+[2023-04-30 12:24:35] INFO root fetch - main [MainThread]: Store serial: [17915989]
