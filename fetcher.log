@@ -2898,3 +2898,34 @@
 [2023-04-30 07:01:28] INFO root fetch - main [MainThread]: End processing [rp]: success
 [2023-04-30 07:01:35] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-30 07:01:35] INFO root fetch - main [MainThread]: Store serial: [17914578]
+[2023-04-30 07:06:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914578]
+[2023-04-30 07:06:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2023-04-30 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sgplib
+[2023-04-30 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapid-pe
+[2023-04-30 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apollo-sdk
+[2023-04-30 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multi-model-server
+[2023-04-30 07:06:44] INFO root fetch - processPackages [apollo-sdk]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 07:06:44] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230430] Old Version: [0.1.1.dev20230429]
+[2023-04-30 07:06:44] WARNING root fetch - processPackages [sgplib]: Skipping, unable to determine old version
+[2023-04-30 07:06:44] INFO root fetch - main [MainThread]: End processing [sgplib] error
+[2023-04-30 07:06:44] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.13.0.dev20230428] Old Version: [2.13.0.dev20230427]
+[2023-04-30 07:06:44] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230430] Old Version: [1.1.8b20230429]
+[2023-04-30 07:06:44] INFO root fetch - processPackages [apollo-sdk]: Downloading https://files.pythonhosted.org/packages/0d/b1/6fe0e9d241020deb71849bf3f27466f93520dc91d826538fb00788cde4bc/apollo-sdk-0.1.1.tar.gz
+[2023-04-30 07:06:44] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/2b/35/fc7031bad3482279778c067b7bdf12a8cc7f0374709ca2505193c02858a7/rapid_pe-0.1.1.dev20230430.tar.gz
+[2023-04-30 07:06:44] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/e5/22/ef39fef45a660b7343b33a7523f534e7783cb45e03d44dae427311ad0f98/multi_model_server-1.1.8b20230430-py2.py3-none-any.whl
+[2023-04-30 07:06:44] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/09/26/cdcbd3bac526df907e17191dad83709677aa93bcadf4fa82f63fb97daf58/tflite_runtime_nightly-2.13.0.dev20230428-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-30 07:06:45] INFO root fetch - processPackages [apollo-sdk]: Downloading https://files.pythonhosted.org/packages/6d/78/707c4887e9c0ce018575e2af38ccf35964ea6ff0f4a1650396885ad7b336/apollo-sdk-0.1.2.tar.gz
+[2023-04-30 07:06:45] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-30 07:06:45] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230429.tar.gz tmp/rapid_pe-0.1.1.dev20230430.tar.gz --markdown 20230430/r/rapid-pe/0.1.1.dev20230429-0.1.1.dev20230430/diff.md --exclude *.pyd
+[2023-04-30 07:06:45] INFO root fetch - processPackages [apollo-sdk]: executing diffoscope
+[2023-04-30 07:06:45] INFO root fetch - processPackages [apollo-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apollo-sdk-0.1.1.tar.gz tmp/apollo-sdk-0.1.2.tar.gz --markdown 20230430/a/apollo-sdk/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 07:06:45] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-04-30 07:06:45] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.13.0.dev20230427-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.13.0.dev20230428-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230430/t/tflite-runtime-nightly/2.13.0.dev20230427-2.13.0.dev20230428/diff.md --exclude *.pyd
+[2023-04-30 07:06:45] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-30 07:06:45] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230429-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230430-py2.py3-none-any.whl.zip --markdown 20230430/m/multi-model-server/1.1.8b20230429-1.1.8b20230430/diff.md --exclude *.pyd
+[2023-04-30 07:06:46] INFO root fetch - main [MainThread]: End processing [apollo-sdk]: success
+[2023-04-30 07:06:46] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-04-30 07:06:46] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-04-30 07:09:36] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-04-30 07:09:36] INFO root fetch - main [MainThread]: Store serial: [17914608]
