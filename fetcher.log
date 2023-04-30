@@ -5084,3 +5084,43 @@
 [2023-04-30 11:51:42] INFO root fetch - main [MainThread]: End processing [UzbekTagger]: success
 [2023-04-30 11:52:01] INFO root fetch - main [MainThread]: End processing [DBRetina]: success
 [2023-04-30 11:52:01] INFO root fetch - main [MainThread]: Store serial: [17915869]
+[2023-04-30 11:57:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915869]
+[2023-04-30 11:57:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 11:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spPersist
+[2023-04-30 11:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlptoolssna
+[2023-04-30 11:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: utilfunction
+[2023-04-30 11:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-dragonfly
+[2023-04-30 11:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: UzbekTagger
+[2023-04-30 11:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jupyter-manager
+[2023-04-30 11:57:12] INFO root fetch - processPackages [spPersist]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 11:57:12] INFO root fetch - processPackages [UzbekTagger]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-30 11:57:12] INFO root fetch - processPackages [utilfunction]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 11:57:12] INFO root fetch - processPackages [jupyter-manager]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 11:57:12] INFO root fetch - processPackages [nlptoolssna]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-30 11:57:12] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-30 11:57:12] INFO root fetch - processPackages [jupyter-manager]: Downloading https://files.pythonhosted.org/packages/19/12/0cef71bfb75be3a39135b78001248d657a988407a8683d35ade1b28bcdb8/jupyter_manager-0.0.2.tar.gz
+[2023-04-30 11:57:12] INFO root fetch - processPackages [UzbekTagger]: Downloading https://files.pythonhosted.org/packages/52/6f/6257c2c47be8af398777d329d97451d59f836f0fe99b1d08e8ce36c57e99/UzbekTagger-0.0.8.tar.gz
+[2023-04-30 11:57:12] INFO root fetch - processPackages [utilfunction]: Downloading https://files.pythonhosted.org/packages/ff/91/c694f368f745c529df7412fe859d9ff5ea195bf624718a5e009b12881172/utilfunction-0.1.3.tar.gz
+[2023-04-30 11:57:12] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/87/9f/d9a033f75b28d8826f28c4013c53da3af0d16d4f519e81cb833616408ae5/nlptoolssna-0.4.1.tar.gz
+[2023-04-30 11:57:12] INFO root fetch - processPackages [spPersist]: Downloading https://files.pythonhosted.org/packages/2d/31/902a248f49d59b30173dbffba22cbec691a6912e80409858b9f61388c5d7/sppersist-0.0.3.tar.gz
+[2023-04-30 11:57:12] INFO root fetch - processPackages [UzbekTagger]: executing diffoscope
+[2023-04-30 11:57:12] INFO root fetch - processPackages [UzbekTagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UzbekTagger-0.0.7.tar.gz tmp/UzbekTagger-0.0.8.tar.gz --markdown 20230430/U/UzbekTagger/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-30 11:57:12] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-30 11:57:12] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230430/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-30 11:57:12] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-30 11:57:12] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.4.0.tar.gz tmp/nlptoolssna-0.4.1.tar.gz --markdown 20230430/n/nlptoolssna/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-30 11:57:12] INFO root fetch - processPackages [spPersist]: executing diffoscope
+[2023-04-30 11:57:12] INFO root fetch - processPackages [spPersist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sppersist-0.0.2.tar.gz tmp/sppersist-0.0.3.tar.gz --markdown 20230430/s/spPersist/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 11:57:12] INFO root fetch - processPackages [utilfunction]: Downloading https://files.pythonhosted.org/packages/34/28/208c08559cd0210cdf4a49150fd24df1cac7363902bf0c6a78f0e8c10263/utilfunction-0.1.4.tar.gz
+[2023-04-30 11:57:12] INFO root fetch - processPackages [jupyter-manager]: Downloading https://files.pythonhosted.org/packages/9b/de/b27617cd6873ada49503492dc53bb973d53733904ce02d18d98c408a8a86/jupyter_manager-0.0.3.tar.gz
+[2023-04-30 11:57:13] INFO root fetch - processPackages [utilfunction]: executing diffoscope
+[2023-04-30 11:57:13] INFO root fetch - processPackages [utilfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilfunction-0.1.3.tar.gz tmp/utilfunction-0.1.4.tar.gz --markdown 20230430/u/utilfunction/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 11:57:13] INFO root fetch - processPackages [jupyter-manager]: executing diffoscope
+[2023-04-30 11:57:13] INFO root fetch - processPackages [jupyter-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_manager-0.0.2.tar.gz tmp/jupyter_manager-0.0.3.tar.gz --markdown 20230430/j/jupyter-manager/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 11:57:13] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-04-30 11:57:13] INFO root fetch - main [MainThread]: End processing [spPersist]: success
+[2023-04-30 11:57:14] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-30 11:57:14] INFO root fetch - main [MainThread]: End processing [utilfunction]: success
+[2023-04-30 11:57:17] INFO root fetch - main [MainThread]: End processing [UzbekTagger]: success
+[2023-04-30 11:57:26] INFO root fetch - main [MainThread]: End processing [jupyter-manager]: success
+[2023-04-30 11:57:26] INFO root fetch - main [MainThread]: Store serial: [17915889]
