@@ -5651,3 +5651,55 @@
 [2023-04-30 13:18:55] INFO root fetch - main [MainThread]: End processing [lightning-template]: success
 [2023-04-30 13:18:55] INFO root fetch - main [MainThread]: End processing [frogmouth]: success
 [2023-04-30 13:18:55] INFO root fetch - main [MainThread]: Store serial: [17916233]
+[2023-04-30 13:23:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916233]
+[2023-04-30 13:24:04] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 13:24:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alpha-filter
+[2023-04-30 13:24:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tb-nightly
+[2023-04-30 13:24:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: devapps
+[2023-04-30 13:24:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: classy-imaginary
+[2023-04-30 13:24:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchtnt-nightly
+[2023-04-30 13:24:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pygmi-get
+[2023-04-30 13:24:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: keypact
+[2023-04-30 13:24:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hostedpi
+[2023-04-30 13:24:04] INFO root fetch - processPackages [alpha-filter]: New version: [0.9] Old Version: [0.8]
+[2023-04-30 13:24:04] INFO root fetch - processPackages [keypact]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-30 13:24:04] INFO root fetch - processPackages [classy-imaginary]: New version: [0.6.0] Old Version: [0.5.8]
+[2023-04-30 13:24:04] INFO root fetch - processPackages [devapps]: New version: [2023.4.28] Old Version: [2023.3.23]
+[2023-04-30 13:24:04] INFO root fetch - processPackages [pygmi-get]: New version: [0.7.4] Old Version: [0.6.0]
+[2023-04-30 13:24:04] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-04-30 13:24:04] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-30 13:24:04] INFO root fetch - processPackages [hostedpi]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-30 13:24:04] INFO root fetch - processPackages [pygmi-get]: executing diffoscope
+[2023-04-30 13:24:04] INFO root fetch - processPackages [pygmi-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmi-get-0.6.0.tar.gz tmp/pygmi-get-0.7.4.tar.gz --markdown 20230430/p/pygmi-get/0.6.0-0.7.4/diff.md --exclude *.pyd
+[2023-04-30 13:24:04] INFO root fetch - processPackages [classy-imaginary]: Downloading https://files.pythonhosted.org/packages/a9/b6/6aeeadd30e749567e6260013b3048601056ac644170c1973a0ae365c02b8/classy_imaginary-0.5.8.tar.gz
+[2023-04-30 13:24:04] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-04-30 13:24:04] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230430/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-04-30 13:24:04] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-04-30 13:24:04] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.4.8.tar.gz tmp/torchtnt-nightly-2023.4.9.tar.gz --markdown 20230430/t/torchtnt-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-30 13:24:04] INFO root fetch - processPackages [keypact]: Downloading https://files.pythonhosted.org/packages/5b/3d/c84e35866d99c39d9fc792579fc12ff170ce948632fef65118d418274979/keypact-0.1.0.tar.gz
+[2023-04-30 13:24:04] INFO root fetch - processPackages [devapps]: Downloading https://files.pythonhosted.org/packages/50/bd/645c86094a1f7f8bf8da649e3edd5616961e972c4c5e733d9c1a78b33526/devapps-2023.3.23.tar.gz
+[2023-04-30 13:24:04] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/aa/62/70fe52b186a65e36f3085940c8dc9bb40b1f6c70025e604875fb8bc6ecc2/alpha-filter-0.9.tar.gz
+[2023-04-30 13:24:04] INFO root fetch - processPackages [alpha-filter]: executing diffoscope
+[2023-04-30 13:24:04] INFO root fetch - processPackages [alpha-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha-filter-0.8.tar.gz tmp/alpha-filter-0.9.tar.gz --markdown 20230430/a/alpha-filter/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-30 13:24:04] INFO root fetch - processPackages [hostedpi]: Downloading https://files.pythonhosted.org/packages/b1/6d/1bf9d00f04613a73a3ff213c56d0cd5c769cca573be5d2862e2428af0ea4/hostedpi-0.2.0.tar.gz
+[2023-04-30 13:24:04] INFO root fetch - processPackages [keypact]: Downloading https://files.pythonhosted.org/packages/c6/b1/230b126565020dc9d0fcf0fdf56a65f47d184a2ce1d1ad43452287a6a55b/keypact-0.2.0.tar.gz
+[2023-04-30 13:24:04] INFO root fetch - processPackages [classy-imaginary]: Downloading https://files.pythonhosted.org/packages/21/cd/f62486d422bd4848b738060aa20a58fbf2323af0680b5d8f301a1f415f70/classy_imaginary-0.6.0.tar.gz
+[2023-04-30 13:24:05] INFO root fetch - processPackages [devapps]: Downloading https://files.pythonhosted.org/packages/31/25/7e1dbfe11bedfd5dfd5f30b302faca6698d130b7c9eb75d86eb4305d54d9/devapps-2023.4.28.tar.gz
+[2023-04-30 13:24:05] INFO root fetch - processPackages [keypact]: executing diffoscope
+[2023-04-30 13:24:05] INFO root fetch - processPackages [keypact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keypact-0.1.0.tar.gz tmp/keypact-0.2.0.tar.gz --markdown 20230430/k/keypact/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 13:24:05] INFO root fetch - processPackages [classy-imaginary]: executing diffoscope
+[2023-04-30 13:24:05] INFO root fetch - processPackages [classy-imaginary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classy_imaginary-0.5.8.tar.gz tmp/classy_imaginary-0.6.0.tar.gz --markdown 20230430/c/classy-imaginary/0.5.8-0.6.0/diff.md --exclude *.pyd
+[2023-04-30 13:24:05] INFO root fetch - processPackages [hostedpi]: Downloading https://files.pythonhosted.org/packages/fd/aa/bbf359203d65a1612582f054641016acccf8fb4b16f1be293e62e2388f22/hostedpi-0.3.0.tar.gz
+[2023-04-30 13:24:05] INFO root fetch - processPackages [devapps]: executing diffoscope
+[2023-04-30 13:24:05] INFO root fetch - processPackages [devapps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devapps-2023.3.23.tar.gz tmp/devapps-2023.4.28.tar.gz --markdown 20230430/d/devapps/2023.3.23-2023.4.28/diff.md --exclude *.pyd
+[2023-04-30 13:24:05] INFO root fetch - processPackages [hostedpi]: executing diffoscope
+[2023-04-30 13:24:05] INFO root fetch - processPackages [hostedpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hostedpi-0.2.0.tar.gz tmp/hostedpi-0.3.0.tar.gz --markdown 20230430/h/hostedpi/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 13:24:05] INFO root fetch - main [MainThread]: End processing [pygmi-get]: success
+[2023-04-30 13:24:05] INFO root fetch - main [MainThread]: End processing [alpha-filter]: success
+[2023-04-30 13:24:06] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-04-30 13:24:06] INFO root fetch - main [MainThread]: End processing [keypact]: success
+[2023-04-30 13:24:06] INFO root fetch - main [MainThread]: End processing [hostedpi]: success
+[2023-04-30 13:24:06] INFO root fetch - main [MainThread]: End processing [devapps]: success
+[2023-04-30 13:24:09] INFO root fetch - main [MainThread]: End processing [classy-imaginary]: success
+[2023-04-30 13:24:10] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-04-30 13:24:10] INFO root fetch - main [MainThread]: Store serial: [17916255]
