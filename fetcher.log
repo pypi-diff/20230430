@@ -2578,3 +2578,35 @@
 [2023-04-30 05:59:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-b2x-alt-price]: success
 [2023-04-30 05:59:05] INFO root fetch - main [MainThread]: End processing [pyascore]: success
 [2023-04-30 05:59:05] INFO root fetch - main [MainThread]: Store serial: [17914364]
+[2023-04-30 06:04:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914364]
+[2023-04-30 06:04:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cikuu
+[2023-04-30 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proxyscraperomi
+[2023-04-30 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autosrt
+[2023-04-30 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 06:04:13] INFO root fetch - processPackages [cikuu]: New version: [2022.7.9] Old Version: [2022.7.8]
+[2023-04-30 06:04:13] WARNING root fetch - processPackages [proxyscraperomi]: Skipping, unable to determine old version
+[2023-04-30 06:04:13] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682827306] Old Version: [0.1.1682827297]
+[2023-04-30 06:04:13] INFO root fetch - main [MainThread]: End processing [proxyscraperomi] error
+[2023-04-30 06:04:13] INFO root fetch - processPackages [autosrt]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-30 06:04:13] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682827306] Old Version: [0.1.1682827297]
+[2023-04-30 06:04:14] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/d6/98/28b46accbcc82f3c11e19014304d83b3f54d89ebbdb45b006fbb7bd63ea7/eia-odin-pkg-rioatmadja2018-0.1.1682827297.tar.gz
+[2023-04-30 06:04:14] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/d6/98/28b46accbcc82f3c11e19014304d83b3f54d89ebbdb45b006fbb7bd63ea7/eia-odin-pkg-rioatmadja2018-0.1.1682827297.tar.gz
+[2023-04-30 06:04:14] INFO root fetch - processPackages [autosrt]: Downloading https://files.pythonhosted.org/packages/dc/c3/305b7e63965f06054e93080d290fd07fbc1e2d54b0e6a74a2998298e5ab6/autosrt-1.2.1.tar.gz
+[2023-04-30 06:04:14] INFO root fetch - processPackages [cikuu]: executing diffoscope
+[2023-04-30 06:04:14] INFO root fetch - processPackages [cikuu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cikuu-2022.7.8.tar.gz tmp/cikuu-2022.7.9.tar.gz --markdown 20230430/c/cikuu/2022.7.8-2022.7.9/diff.md --exclude *.pyd
+[2023-04-30 06:04:14] INFO root fetch - processPackages [autosrt]: Downloading https://files.pythonhosted.org/packages/d4/a5/2724432be2ea2106222cf3004c5dba81f3c96665b48cc42f0c0bb0a95c1f/autosrt-1.2.2.tar.gz
+[2023-04-30 06:04:14] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/d6/fa/0933145ef8cea0684ea37ad27f2d28427ee9c68e35e551be70ede153ebbe/eia_odin_pkg_rioatmadja2018-0.1.1682827306-py3-none-any.whl
+[2023-04-30 06:04:14] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-04-30 06:04:14] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.1.tar.gz tmp/autosrt-1.2.2.tar.gz --markdown 20230430/a/autosrt/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-30 06:04:14] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/d6/fa/0933145ef8cea0684ea37ad27f2d28427ee9c68e35e551be70ede153ebbe/eia_odin_pkg_rioatmadja2018-0.1.1682827306-py3-none-any.whl
+[2023-04-30 06:04:14] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 06:04:14] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682827297.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682827306-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682827297-0.1.1682827306/diff.md --exclude *.pyd
+[2023-04-30 06:04:14] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 06:04:14] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682827297.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682827306-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682827297-0.1.1682827306/diff.md --exclude *.pyd
+[2023-04-30 06:04:15] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-04-30 06:04:15] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 06:04:15] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 06:04:19] INFO root fetch - main [MainThread]: End processing [cikuu]: success
+[2023-04-30 06:04:19] INFO root fetch - main [MainThread]: Store serial: [17914386]
