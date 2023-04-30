@@ -9152,3 +9152,106 @@
 [2023-04-30 19:38:24] INFO root fetch - main [MainThread]: End processing [datamate]: success
 [2023-04-30 19:38:29] INFO root fetch - main [MainThread]: End processing [pymultiastar]: success
 [2023-04-30 19:38:29] INFO root fetch - main [MainThread]: Store serial: [17918573]
+[2023-04-30 19:43:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918573]
+[2023-04-30 19:43:37] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grai-client
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-encrypted-cookies-session
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grai-graph
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grai-schemas
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autoread-dotenv
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: grai-source-bigquery
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: meerkat-ml
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: grai-source-dbt
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: grai-source-fivetran
+[2023-04-30 19:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: grai-source-flat-file
+[2023-04-30 19:43:37] INFO root fetch - processPackages [grai-graph]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-30 19:43:37] INFO root fetch - processPackages [autoread-dotenv]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 19:43:37] INFO root fetch - processPackages [grai-schemas]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 19:43:37] INFO root fetch - processPackages [grai-source-bigquery]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 19:43:37] INFO root fetch - processPackages [grai-client]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-30 19:43:37] INFO root fetch - processPackages [grai-source-flat-file]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 19:43:37] INFO root fetch - processPackages [grai-source-dbt]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-30 19:43:37] INFO root fetch - processPackages [grai-source-fivetran]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 19:43:37] WARNING root fetch - processPackages [flask-encrypted-cookies-session]: Skipping, unable to determine old version
+[2023-04-30 19:43:37] INFO root fetch - processPackages [flask-encrypted-cookies-session]: Start processing: grai-source-mssql
+[2023-04-30 19:43:37] INFO root fetch - main [MainThread]: End processing [flask-encrypted-cookies-session] error
+[2023-04-30 19:43:37] INFO root fetch - processPackages [meerkat-ml]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 19:43:37] INFO root fetch - processPackages [grai-source-mssql]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 19:43:38] INFO root fetch - processPackages [meerkat-ml]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [meerkat-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meerkat-ml-0.4.8.tar.gz tmp/meerkat-ml-0.4.9.tar.gz --markdown 20230430/m/meerkat-ml/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-graph]: Downloading https://files.pythonhosted.org/packages/4d/d7/9967c0d88d09ff8785ff8424df199122d60e0d03e32a836a7129b60ce372/grai_graph-0.2.1.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [autoread-dotenv]: Downloading https://files.pythonhosted.org/packages/25/62/ac3695d66fff5da29a54e5b0edd0c8e0bc97ccf3d9d69ee5d16c9b652a30/autoread_dotenv-1.0.1.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-flat-file]: Downloading https://files.pythonhosted.org/packages/4d/00/7850ade542f529e8acf91e7419610126645ce4343b91382d24d08b743f60/grai_source_flat_file-0.0.9.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-client]: Downloading https://files.pythonhosted.org/packages/08/44/592e84bb9180375ab41db5cf79838193db14eb8c9927777b03fcdb255d50/grai_client-0.2.9.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-fivetran]: Downloading https://files.pythonhosted.org/packages/9a/d5/f1502196f148cda94e2b0520a372d6162bbff1ab171732c125ba8b5b2d45/grai_source_fivetran-0.0.5.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-dbt]: Downloading https://files.pythonhosted.org/packages/c4/f8/820644854a7921b59b17e8d9c7825bfa2ff205e4c7ec66543fed1eecbba2/grai_source_dbt-0.2.9.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-bigquery]: Downloading https://files.pythonhosted.org/packages/03/c0/ddb2015ed5ee5ba721dd6482116d577c408e09230de1d3a1cd6ef14cf2d6/grai_source_bigquery-0.0.5.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-schemas]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-schemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_schemas-0.1.8.tar.gz tmp/grai_schemas-0.1.9.tar.gz --markdown 20230430/g/grai-schemas/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-mssql]: Downloading https://files.pythonhosted.org/packages/a4/cb/002467283ef3818efcb2835e23c1747834ecda5a52dfdf4ee41eb801e862/grai_source_mssql-0.0.9.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-flat-file]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-flat-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_flat_file-0.0.8.tar.gz tmp/grai_source_flat_file-0.0.9.tar.gz --markdown 20230430/g/grai-source-flat-file/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-client]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_client-0.2.8.tar.gz tmp/grai_client-0.2.9.tar.gz --markdown 20230430/g/grai-client/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-bigquery]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_bigquery-0.0.4.tar.gz tmp/grai_source_bigquery-0.0.5.tar.gz --markdown 20230430/g/grai-source-bigquery/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-fivetran]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [autoread-dotenv]: Downloading https://files.pythonhosted.org/packages/3d/90/8c421f99291f2b6d81cba402020ac3f568b74be8b300365328f6459c5589/autoread_dotenv-1.0.2.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-fivetran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_fivetran-0.0.4.tar.gz tmp/grai_source_fivetran-0.0.5.tar.gz --markdown 20230430/g/grai-source-fivetran/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-graph]: Downloading https://files.pythonhosted.org/packages/59/29/feb784dc93cb26551e57fa25362bba6db6b9dc1e52db4bcebde1f052406b/grai_graph-0.2.2.tar.gz
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-dbt]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-dbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_dbt-0.2.8.tar.gz tmp/grai_source_dbt-0.2.9.tar.gz --markdown 20230430/g/grai-source-dbt/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-mssql]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-source-mssql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_mssql-0.0.8.tar.gz tmp/grai_source_mssql-0.0.9.tar.gz --markdown 20230430/g/grai-source-mssql/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [autoread-dotenv]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [autoread-dotenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoread_dotenv-1.0.1.tar.gz tmp/autoread_dotenv-1.0.2.tar.gz --markdown 20230430/a/autoread-dotenv/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-graph]: executing diffoscope
+[2023-04-30 19:43:38] INFO root fetch - processPackages [grai-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_graph-0.2.1.tar.gz tmp/grai_graph-0.2.2.tar.gz --markdown 20230430/g/grai-graph/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-30 19:43:39] INFO root fetch - processPackages [grai-schemas]: Start processing: grai-source-mysql
+[2023-04-30 19:43:39] INFO root fetch - main [MainThread]: End processing [grai-schemas]: success
+[2023-04-30 19:43:39] INFO root fetch - processPackages [grai-source-flat-file]: Start processing: grai-source-postgres
+[2023-04-30 19:43:39] INFO root fetch - main [MainThread]: End processing [grai-source-flat-file]: success
+[2023-04-30 19:43:39] INFO root fetch - processPackages [grai-source-mysql]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 19:43:39] INFO root fetch - processPackages [grai-source-postgres]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-mssql]: Start processing: grai-source-redshift
+[2023-04-30 19:43:40] INFO root fetch - main [MainThread]: End processing [grai-source-mssql]: success
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-redshift]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-graph]: Start processing: grai-source-snowflake
+[2023-04-30 19:43:40] INFO root fetch - main [MainThread]: End processing [grai-graph]: success
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 19:43:40] INFO root fetch - processPackages [autoread-dotenv]: Start processing: aiohttp-ip-rotator
+[2023-04-30 19:43:40] INFO root fetch - main [MainThread]: End processing [autoread-dotenv]: success
+[2023-04-30 19:43:40] WARNING root fetch - processPackages [aiohttp-ip-rotator]: Skipping, unable to determine old version
+[2023-04-30 19:43:40] INFO root fetch - processPackages [aiohttp-ip-rotator]: Start processing: proovl-sms
+[2023-04-30 19:43:40] INFO root fetch - main [MainThread]: End processing [aiohttp-ip-rotator] error
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-client]: Start processing: jc
+[2023-04-30 19:43:40] INFO root fetch - main [MainThread]: End processing [grai-client]: success
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-mysql]: executing diffoscope
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_mysql-0.0.8.tar.gz tmp/grai_source_mysql-0.0.9.tar.gz --markdown 20230430/g/grai-source-mysql/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:40] INFO root fetch - main [MainThread]: End processing [grai-source-bigquery]: success
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-redshift]: Downloading https://files.pythonhosted.org/packages/fc/f1/f2f3a827c96fa9d52b264c187dbf903a334b15ae11e799a715a37db23bf6/grai_source_redshift-0.0.5.tar.gz
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-snowflake]: executing diffoscope
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_snowflake-0.0.8.tar.gz tmp/grai_source_snowflake-0.0.9.tar.gz --markdown 20230430/g/grai-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-postgres]: executing diffoscope
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_postgres-0.1.8.tar.gz tmp/grai_source_postgres-0.1.9.tar.gz --markdown 20230430/g/grai-source-postgres/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-redshift]: executing diffoscope
+[2023-04-30 19:43:40] INFO root fetch - processPackages [grai-source-redshift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_redshift-0.0.4.tar.gz tmp/grai_source_redshift-0.0.5.tar.gz --markdown 20230430/g/grai-source-redshift/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 19:43:41] INFO root fetch - main [MainThread]: End processing [grai-source-mysql]: success
+[2023-04-30 19:43:41] INFO root fetch - main [MainThread]: End processing [grai-source-fivetran]: success
+[2023-04-30 19:43:41] INFO root fetch - processPackages [proovl-sms]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-30 19:43:41] INFO root fetch - processPackages [jc]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-04-30 19:43:41] INFO root fetch - processPackages [proovl-sms]: Downloading https://files.pythonhosted.org/packages/82/ef/9a717775cf707bf8eefb78189c9532485a206bd7c3ddff050a9147f53be3/proovl-sms-0.1.8.tar.gz
+[2023-04-30 19:43:41] INFO root fetch - processPackages [jc]: Downloading https://files.pythonhosted.org/packages/48/07/8a4c81803e573ae79bfb33878dfd5626a7176b70fcc459dd687074fdab4e/jc-1.9.2.tar.gz
+[2023-04-30 19:43:41] INFO root fetch - main [MainThread]: End processing [grai-source-snowflake]: success
+[2023-04-30 19:43:41] INFO root fetch - main [MainThread]: End processing [grai-source-redshift]: success
+[2023-04-30 19:43:41] INFO root fetch - processPackages [proovl-sms]: executing diffoscope
+[2023-04-30 19:43:41] INFO root fetch - processPackages [proovl-sms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proovl-sms-0.1.7.tar.gz tmp/proovl-sms-0.1.8.tar.gz --markdown 20230430/p/proovl-sms/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-30 19:43:41] INFO root fetch - main [MainThread]: End processing [grai-source-dbt]: success
+[2023-04-30 19:43:41] INFO root fetch - main [MainThread]: End processing [grai-source-postgres]: success
+[2023-04-30 19:43:42] INFO root fetch - processPackages [jc]: Downloading https://files.pythonhosted.org/packages/82/79/2e005b1a767c449092be56b2a1265724a46d77a74e05c9fe6c28973c7a21/jc-1.9.3.tar.gz
+[2023-04-30 19:43:42] INFO root fetch - main [MainThread]: End processing [proovl-sms]: success
+[2023-04-30 19:43:43] INFO root fetch - processPackages [jc]: executing diffoscope
+[2023-04-30 19:43:43] INFO root fetch - processPackages [jc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jc-1.9.2.tar.gz tmp/jc-1.9.3.tar.gz --markdown 20230430/j/jc/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-04-30 19:43:50] INFO root fetch - main [MainThread]: End processing [jc]: success
+[2023-04-30 19:44:16] INFO root fetch - main [MainThread]: End processing [meerkat-ml]: success
+[2023-04-30 19:44:16] INFO root fetch - main [MainThread]: Store serial: [17918632]
