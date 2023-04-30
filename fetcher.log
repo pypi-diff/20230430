@@ -5541,3 +5541,20 @@
 [2023-04-30 13:02:30] INFO root fetch - main [MainThread]: End processing [mbapy]: success
 [2023-04-30 13:03:07] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-30 13:03:07] INFO root fetch - main [MainThread]: Store serial: [17916131]
+[2023-04-30 13:08:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916131]
+[2023-04-30 13:08:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 13:08:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wansec
+[2023-04-30 13:08:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: awscli-plugin-passtotp
+[2023-04-30 13:08:16] INFO root fetch - processPackages [awscli-plugin-passtotp]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 13:08:16] INFO root fetch - processPackages [wansec]: New version: [1.1] Old Version: [1.0]
+[2023-04-30 13:08:16] INFO root fetch - processPackages [wansec]: Downloading https://files.pythonhosted.org/packages/9e/e5/214ef94b8018121aea2eede84f94fb4446217cf16cf83ad25bd3a9efa27a/wansec-1.0.tar.gz
+[2023-04-30 13:08:16] INFO root fetch - processPackages [awscli-plugin-passtotp]: Downloading https://files.pythonhosted.org/packages/20/f0/238da82ed66c5d7355bced99f48ebc216aa0a7f61ce6d806980e3fb26fd4/awscli_plugin_passtotp-1.0.1.tar.gz
+[2023-04-30 13:08:16] INFO root fetch - processPackages [wansec]: Downloading https://files.pythonhosted.org/packages/a5/63/479dea4db3be9e4400e43eb3db55059d094aeba70284849c2bd760f981da/wansec-1.1.tar.gz
+[2023-04-30 13:08:16] INFO root fetch - processPackages [awscli-plugin-passtotp]: Downloading https://files.pythonhosted.org/packages/20/e4/1f3237f6a01179f9d41733b3e3825f0fe472a1c9978ba96bb70c1acd686e/awscli_plugin_passtotp-1.0.2.tar.gz
+[2023-04-30 13:08:16] INFO root fetch - processPackages [wansec]: executing diffoscope
+[2023-04-30 13:08:16] INFO root fetch - processPackages [wansec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wansec-1.0.tar.gz tmp/wansec-1.1.tar.gz --markdown 20230430/w/wansec/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-30 13:08:16] INFO root fetch - processPackages [awscli-plugin-passtotp]: executing diffoscope
+[2023-04-30 13:08:16] INFO root fetch - processPackages [awscli-plugin-passtotp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awscli_plugin_passtotp-1.0.1.tar.gz tmp/awscli_plugin_passtotp-1.0.2.tar.gz --markdown 20230430/a/awscli-plugin-passtotp/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 13:08:17] INFO root fetch - main [MainThread]: End processing [awscli-plugin-passtotp]: success
+[2023-04-30 13:08:17] INFO root fetch - main [MainThread]: End processing [wansec]: success
+[2023-04-30 13:08:17] INFO root fetch - main [MainThread]: Store serial: [17916139]
