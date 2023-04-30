@@ -754,3 +754,70 @@
 [2023-04-30 02:07:16] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-04-30 02:07:20] INFO root fetch - main [MainThread]: End processing [antgo]: success
 [2023-04-30 02:07:20] INFO root fetch - main [MainThread]: Store serial: [17913226]
+[2023-04-30 02:12:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913226]
+[2023-04-30 02:12:30] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-redis
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchlayers-nightly
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vista-dna-metrics
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vesselapi
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-common
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: censoredsummarystats
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: playgroundrl
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-aws-discord-notifiers
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: openbb-nightly
+[2023-04-30 02:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: constructs
+[2023-04-30 02:12:30] INFO root fetch - processPackages [playgroundrl]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [vesselapi]: New version: [3.5.2] Old Version: [3.2.2]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [censoredsummarystats]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1682726797] Old Version: [1682640451]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc2.dev20230426] Old Version: [3.0.0rc2.dev20230425]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-04-30 02:12:30] WARNING root fetch - processPackages [vista-dna-metrics]: Skipping, unable to determine old version
+[2023-04-30 02:12:30] INFO root fetch - processPackages [vista-dna-metrics]: Start processing: django-whatsapp-business-api-is
+[2023-04-30 02:12:30] INFO root fetch - main [MainThread]: End processing [vista-dna-metrics] error
+[2023-04-30 02:12:30] INFO root fetch - processPackages [django-whatsapp-business-api-is]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 02:12:30] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc2.dev20230425.tar.gz tmp/openbb_nightly-3.0.0rc2.dev20230426.tar.gz --markdown 20230430/o/openbb-nightly/3.0.0rc2.dev20230425-3.0.0rc2.dev20230426/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [playgroundrl]: Downloading https://files.pythonhosted.org/packages/aa/a8/fa0c649a729f0f44ede06c059ea6fb112a135bf99801661f50709f8633aa/playgroundrl-0.0.7.tar.gz
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230430/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230430/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230430/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [censoredsummarystats]: Downloading https://files.pythonhosted.org/packages/2a/5e/e72f4c12ed68a4878285a55e3dfde9e299e3c37c047ea77112c9d98be5e0/censoredsummarystats-1.1.1.tar.gz
+[2023-04-30 02:12:30] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230430/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/ef/0a/139c37a041297451ab6bafe8210041198663f16336e2fe806383b2f7850f/torchlayers-nightly-1682726797.tar.gz
+[2023-04-30 02:12:30] INFO root fetch - processPackages [censoredsummarystats]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [censoredsummarystats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/censoredsummarystats-1.1.0.tar.gz tmp/censoredsummarystats-1.1.1.tar.gz --markdown 20230430/c/censoredsummarystats/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [django-whatsapp-business-api-is]: Downloading https://files.pythonhosted.org/packages/6a/5b/86dd1573693f790e25dabb4605213feda6a875a8b124508688c2055567ae/django-whatsapp-business-api-is-0.1.8.tar.gz
+[2023-04-30 02:12:30] INFO root fetch - processPackages [vesselapi]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [vesselapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesselapi-3.2.2.tar.gz tmp/vesselapi-3.5.2.tar.gz --markdown 20230430/v/vesselapi/3.2.2-3.5.2/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1682640451.tar.gz tmp/torchlayers-nightly-1682726797.tar.gz --markdown 20230430/t/torchlayers-nightly/1682640451-1682726797/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [playgroundrl]: Downloading https://files.pythonhosted.org/packages/e0/a1/8119120b75dcc8bb13f2eae252e7343d8e280ab3ac7c30fadbf52066b42e/playgroundrl-0.0.8.tar.gz
+[2023-04-30 02:12:30] INFO root fetch - processPackages [playgroundrl]: executing diffoscope
+[2023-04-30 02:12:30] INFO root fetch - processPackages [playgroundrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playgroundrl-0.0.7.tar.gz tmp/playgroundrl-0.0.8.tar.gz --markdown 20230430/p/playgroundrl/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-30 02:12:30] INFO root fetch - processPackages [django-whatsapp-business-api-is]: Downloading https://files.pythonhosted.org/packages/bc/cf/33370ed4db1524875ea492e35f3a6536030f806a6516ffbaa401a987ea4f/django-whatsapp-business-api-is-0.1.9.tar.gz
+[2023-04-30 02:12:31] INFO root fetch - processPackages [django-whatsapp-business-api-is]: executing diffoscope
+[2023-04-30 02:12:31] INFO root fetch - processPackages [django-whatsapp-business-api-is]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-whatsapp-business-api-is-0.1.8.tar.gz tmp/django-whatsapp-business-api-is-0.1.9.tar.gz --markdown 20230430/d/django-whatsapp-business-api-is/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 02:12:31] INFO root fetch - processPackages [censoredsummarystats]: Start processing: speakeasy-client-sdk-python
+[2023-04-30 02:12:31] INFO root fetch - main [MainThread]: End processing [censoredsummarystats]: success
+[2023-04-30 02:12:31] INFO root fetch - processPackages [speakeasy-client-sdk-python]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-30 02:12:31] INFO root fetch - main [MainThread]: End processing [playgroundrl]: success
+[2023-04-30 02:12:31] INFO root fetch - processPackages [speakeasy-client-sdk-python]: executing diffoscope
+[2023-04-30 02:12:31] INFO root fetch - processPackages [speakeasy-client-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speakeasy-client-sdk-python-1.9.0.tar.gz tmp/speakeasy-client-sdk-python-1.9.1.tar.gz --markdown 20230430/s/speakeasy-client-sdk-python/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-30 02:12:32] INFO root fetch - main [MainThread]: End processing [django-whatsapp-business-api-is]: success
+[2023-04-30 02:12:32] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-04-30 02:12:32] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-04-30 02:12:32] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-04-30 02:12:33] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-04-30 02:12:33] INFO root fetch - main [MainThread]: End processing [speakeasy-client-sdk-python]: success
+[2023-04-30 02:12:34] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-04-30 02:12:35] INFO root fetch - main [MainThread]: End processing [vesselapi]: success
+[2023-04-30 02:12:45] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-04-30 02:12:45] INFO root fetch - main [MainThread]: Store serial: [17913264]
