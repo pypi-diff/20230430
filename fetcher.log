@@ -5214,3 +5214,27 @@
 [2023-04-30 12:13:39] INFO root fetch - main [MainThread]: End processing [ipywidgets-bokeh]: success
 [2023-04-30 12:14:13] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-04-30 12:14:13] INFO root fetch - main [MainThread]: Store serial: [17915952]
+[2023-04-30 12:19:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915952]
+[2023-04-30 12:19:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 12:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: txt2ebook
+[2023-04-30 12:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thingsvision
+[2023-04-30 12:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygti
+[2023-04-30 12:19:22] INFO root fetch - processPackages [pygti]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-30 12:19:22] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 12:19:22] INFO root fetch - processPackages [thingsvision]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-30 12:19:22] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/7c/c4/d60a564f3da745273bfa35e59033388d7e8d9e9554261bd419d45d8071c7/txt2ebook-0.1.8.tar.gz
+[2023-04-30 12:19:22] INFO root fetch - processPackages [thingsvision]: Downloading https://files.pythonhosted.org/packages/ec/5e/2f8459bd6b574f343047c25c49da13a0c0553f9603e456d0d3db7ffa2736/thingsvision-2.3.8.tar.gz
+[2023-04-30 12:19:22] INFO root fetch - processPackages [pygti]: Downloading https://files.pythonhosted.org/packages/25/fd/63b12baf8aae635c4bbd450dbd7388dfaf7a85906202f04cc503dbf39155/pygti-0.9.3.tar.gz
+[2023-04-30 12:19:22] INFO root fetch - processPackages [pygti]: Downloading https://files.pythonhosted.org/packages/34/e9/3f11bff4bb9b48be80d65868edc0c1d5461c13b8234d42e8368090a65ec6/pygti-0.9.4.tar.gz
+[2023-04-30 12:19:23] INFO root fetch - processPackages [thingsvision]: Downloading https://files.pythonhosted.org/packages/76/17/f173eaefee854bfa8c1878c712e801e2ee25b00be57df0d85987fa4604f2/thingsvision-2.3.9.tar.gz
+[2023-04-30 12:19:23] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/2a/b8/8ad395f87b8f7685da9b3f389de9870183f09446c9f0624dfed431e3b9b8/txt2ebook-0.1.9.tar.gz
+[2023-04-30 12:19:23] INFO root fetch - processPackages [pygti]: executing diffoscope
+[2023-04-30 12:19:23] INFO root fetch - processPackages [pygti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygti-0.9.3.tar.gz tmp/pygti-0.9.4.tar.gz --markdown 20230430/p/pygti/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-30 12:19:23] INFO root fetch - processPackages [thingsvision]: executing diffoscope
+[2023-04-30 12:19:23] INFO root fetch - processPackages [thingsvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thingsvision-2.3.8.tar.gz tmp/thingsvision-2.3.9.tar.gz --markdown 20230430/t/thingsvision/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-30 12:19:23] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2023-04-30 12:19:23] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.8.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20230430/t/txt2ebook/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 12:19:24] INFO root fetch - main [MainThread]: End processing [pygti]: success
+[2023-04-30 12:19:24] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2023-04-30 12:19:24] INFO root fetch - main [MainThread]: End processing [thingsvision]: success
+[2023-04-30 12:19:24] INFO root fetch - main [MainThread]: Store serial: [17915962]
