@@ -8295,3 +8295,24 @@
 [2023-04-30 17:58:17] INFO root fetch - main [MainThread]: End processing [mafic]: success
 [2023-04-30 17:58:17] INFO root fetch - main [MainThread]: End processing [bib-lookup]: success
 [2023-04-30 17:58:17] INFO root fetch - main [MainThread]: Store serial: [17917928]
+[2023-04-30 18:03:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917928]
+[2023-04-30 18:03:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 18:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmltools
+[2023-04-30 18:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: playsoundsimple.py
+[2023-04-30 18:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proovl-sms
+[2023-04-30 18:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycryptokms
+[2023-04-30 18:03:27] INFO root fetch - processPackages [playsoundsimple.py]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-30 18:03:27] WARNING root fetch - processPackages [pycryptokms]: Skipping, unable to determine old version
+[2023-04-30 18:03:27] INFO root fetch - main [MainThread]: End processing [pycryptokms] error
+[2023-04-30 18:03:27] WARNING root fetch - processPackages [proovl-sms]: Skipping, unable to determine old version
+[2023-04-30 18:03:27] INFO root fetch - main [MainThread]: End processing [proovl-sms] error
+[2023-04-30 18:03:27] INFO root fetch - processPackages [gmltools]: New version: [0.0.61] Old Version: [0.0.60]
+[2023-04-30 18:03:27] INFO root fetch - processPackages [playsoundsimple.py]: executing diffoscope
+[2023-04-30 18:03:27] INFO root fetch - processPackages [playsoundsimple.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playsoundsimple.py-0.6.1-py3-none-any.whl.zip tmp/playsoundsimple.py-0.6.2-py3-none-any.whl.zip --markdown 20230430/p/playsoundsimple.py/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-30 18:03:27] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/28/79/d36b46660105bc828932bae565dc5823a2548595fdaffd249843650ea354/gmltools-0.0.60.tar.gz
+[2023-04-30 18:03:28] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/37/0b/bc3b966c3c033a61dcb09cfcc5cc90c4a237bb0c124caacc5afdfddd00bd/gmltools-0.0.61.tar.gz
+[2023-04-30 18:03:28] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-30 18:03:28] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.60.tar.gz tmp/gmltools-0.0.61.tar.gz --markdown 20230430/g/gmltools/0.0.60-0.0.61/diff.md --exclude *.pyd
+[2023-04-30 18:03:28] INFO root fetch - main [MainThread]: End processing [playsoundsimple.py]: success
+[2023-04-30 18:03:29] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-30 18:03:29] INFO root fetch - main [MainThread]: Store serial: [17917940]
