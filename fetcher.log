@@ -4399,3 +4399,52 @@
 [2023-04-30 10:32:15] INFO root fetch - main [MainThread]: End processing [badgie]: success
 [2023-04-30 10:32:29] INFO root fetch - main [MainThread]: End processing [tinyfk]: success
 [2023-04-30 10:32:29] INFO root fetch - main [MainThread]: Store serial: [17915488]
+[2023-04-30 10:37:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915488]
+[2023-04-30 10:37:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 10:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PySide2-Customized-Window
+[2023-04-30 10:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparkit
+[2023-04-30 10:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfirebird
+[2023-04-30 10:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PySide6-Customized-Window
+[2023-04-30 10:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-frank-energie
+[2023-04-30 10:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: websocket-tools
+[2023-04-30 10:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kcli
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide6-Customized-Window]: New version: [1.1] Old Version: [1.0]
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide2-Customized-Window]: New version: [1.1] Old Version: [1.0]
+[2023-04-30 10:37:38] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-30 10:37:38] INFO root fetch - processPackages [websocket-tools]: New version: [0.0.14] Old Version: [0.0.12]
+[2023-04-30 10:37:38] INFO root fetch - processPackages [sparkit]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-30 10:37:38] INFO root fetch - processPackages [python-frank-energie]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-04-30 10:37:38] INFO root fetch - processPackages [kcli]: New version: [99.0.202304292350] Old Version: [99.0.202304292334]
+[2023-04-30 10:37:38] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-30 10:37:38] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304292334-py3-none-any.whl.zip tmp/kcli-99.0.202304292350-py3-none-any.whl.zip --markdown 20230430/k/kcli/99.0.202304292334-99.0.202304292350/diff.md --exclude *.pyd
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide2-Customized-Window]: Downloading https://files.pythonhosted.org/packages/75/23/48d61b30aa61d9dea9d59d6da7ec2fde12ecffd5fc0b9a39154222ab1048/PySide2_Customized_Window-1.0-py3-none-any.whl
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide6-Customized-Window]: Downloading https://files.pythonhosted.org/packages/cf/ad/363a6a49c758d4fd5acf466ffa9ce6def22f6f45d2397f37551d3e088ccf/PySide6_Customized_Window-1.0-py3-none-any.whl
+[2023-04-30 10:37:38] INFO root fetch - processPackages [websocket-tools]: Downloading https://files.pythonhosted.org/packages/c9/9c/5e7045b19ddcb2026052b989c9216e6c27201b5ee3a4a0e0aee679ff571d/websocket-tools-0.0.12.tar.gz
+[2023-04-30 10:37:38] INFO root fetch - processPackages [sparkit]: Downloading https://files.pythonhosted.org/packages/ae/d6/f678b5bf2e7ed5396bb60a50929942a760f43d785d595de43e9284bd378e/sparkit-1.0.0.tar.gz
+[2023-04-30 10:37:38] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/1e/74/1b8c321eaffd58fb9c97946fe7c9d8b5fcb1136731e6b0245d7b8dac8cd5/pyfirebird-0.0.7.tar.gz
+[2023-04-30 10:37:38] INFO root fetch - processPackages [python-frank-energie]: Downloading https://files.pythonhosted.org/packages/1e/ad/c2c2961cf3badca48f3de1eef75941da10d4d50691c6f98660a8ac81af08/python_frank_energie-4.0.0.tar.gz
+[2023-04-30 10:37:38] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-04-30 10:37:38] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.6.tar.gz tmp/pyfirebird-0.0.7.tar.gz --markdown 20230430/p/pyfirebird/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide6-Customized-Window]: Downloading https://files.pythonhosted.org/packages/50/c1/ee2453f1b6ffefa0d9cf166cfc4a32ea8cb16e2e5aeed17c973a90d7b52a/PySide6_Customized_Window-1.1-py3-none-any.whl
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide2-Customized-Window]: Downloading https://files.pythonhosted.org/packages/db/24/88d8b2a942a9167db501e8cd8014b0ca935d86c00023dd2318d034c2c1ed/PySide2_Customized_Window-1.1-py3-none-any.whl
+[2023-04-30 10:37:38] INFO root fetch - processPackages [sparkit]: Downloading https://files.pythonhosted.org/packages/41/dd/174c95ba62e0ff7a55693ca1429d67841e73fddd2b33de9fcfbb5d11954f/sparkit-1.1.0.tar.gz
+[2023-04-30 10:37:38] INFO root fetch - processPackages [python-frank-energie]: Downloading https://files.pythonhosted.org/packages/b4/20/7160fa136aac86e1f3b3d7b7870450cc0fb5f06a4ce2a809f5c133b56ee4/python_frank_energie-4.0.1.tar.gz
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide2-Customized-Window]: executing diffoscope
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide2-Customized-Window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide2_Customized_Window-1.0-py3-none-any.whl.zip tmp/PySide2_Customized_Window-1.1-py3-none-any.whl.zip --markdown 20230430/P/PySide2-Customized-Window/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide6-Customized-Window]: executing diffoscope
+[2023-04-30 10:37:38] INFO root fetch - processPackages [PySide6-Customized-Window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6_Customized_Window-1.0-py3-none-any.whl.zip tmp/PySide6_Customized_Window-1.1-py3-none-any.whl.zip --markdown 20230430/P/PySide6-Customized-Window/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-30 10:37:38] INFO root fetch - processPackages [sparkit]: executing diffoscope
+[2023-04-30 10:37:38] INFO root fetch - processPackages [sparkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparkit-1.0.0.tar.gz tmp/sparkit-1.1.0.tar.gz --markdown 20230430/s/sparkit/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-30 10:37:38] INFO root fetch - processPackages [python-frank-energie]: executing diffoscope
+[2023-04-30 10:37:38] INFO root fetch - processPackages [python-frank-energie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_frank_energie-4.0.0.tar.gz tmp/python_frank_energie-4.0.1.tar.gz --markdown 20230430/p/python-frank-energie/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-04-30 10:37:39] INFO root fetch - processPackages [websocket-tools]: Downloading https://files.pythonhosted.org/packages/0b/d3/c13d3fb4924a1e89123b60903ba91172032c50fa34dc3a15655b86c88f0a/websocket-tools-0.0.14.tar.gz
+[2023-04-30 10:37:39] INFO root fetch - processPackages [websocket-tools]: executing diffoscope
+[2023-04-30 10:37:39] INFO root fetch - processPackages [websocket-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/websocket-tools-0.0.12.tar.gz tmp/websocket-tools-0.0.14.tar.gz --markdown 20230430/w/websocket-tools/0.0.12-0.0.14/diff.md --exclude *.pyd
+[2023-04-30 10:37:39] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-04-30 10:37:40] INFO root fetch - main [MainThread]: End processing [PySide6-Customized-Window]: success
+[2023-04-30 10:37:40] INFO root fetch - main [MainThread]: End processing [PySide2-Customized-Window]: success
+[2023-04-30 10:37:40] INFO root fetch - main [MainThread]: End processing [python-frank-energie]: success
+[2023-04-30 10:37:40] INFO root fetch - main [MainThread]: End processing [websocket-tools]: success
+[2023-04-30 10:37:40] INFO root fetch - main [MainThread]: End processing [sparkit]: success
+[2023-04-30 10:37:47] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-30 10:37:47] INFO root fetch - main [MainThread]: Store serial: [17915508]
