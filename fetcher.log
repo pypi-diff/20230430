@@ -9824,3 +9824,36 @@
 [2023-04-30 20:42:00] INFO root fetch - main [MainThread]: End processing [spectrum-fundamentals]: success
 [2023-04-30 20:42:23] INFO root fetch - main [MainThread]: End processing [xdat]: success
 [2023-04-30 20:42:23] INFO root fetch - main [MainThread]: Store serial: [17919003]
+[2023-04-30 20:47:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919003]
+[2023-04-30 20:47:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-thomas-tac-type-checker
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: duckduckgo-search
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-randomprime
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: concurrent-log-handler
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovos-translate-plugin-deepl
+[2023-04-30 20:47:32] INFO root fetch - processPackages [concurrent-log-handler]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-30 20:47:32] INFO root fetch - processPackages [duckduckgo-search]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-30 20:47:32] WARNING root fetch - processPackages [certora-cli-alpha-thomas-tac-type-checker]: Skipping, unable to determine old version
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ovos-translate-plugin-deepl]: New version: [0.0.0a2] Old Version: [0.0.0a1]
+[2023-04-30 20:47:32] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-thomas-tac-type-checker] error
+[2023-04-30 20:47:32] INFO root fetch - processPackages [py-randomprime]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-04-30 20:47:32] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/9b/f3/70d27015cd416a48170b13f253d8d1cc3c0d56cdae84c24b11b98b420960/duckduckgo_search-2.9.1.tar.gz
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ovos-translate-plugin-deepl]: Downloading https://files.pythonhosted.org/packages/23/b7/b5f1e2835d61681d811c8e6b5b140fdc216c5caa1fa609b106aade8a8a18/ovos_translate_plugin_deepl-0.0.0a1-py3-none-any.whl
+[2023-04-30 20:47:32] INFO root fetch - processPackages [concurrent-log-handler]: Downloading https://files.pythonhosted.org/packages/bf/3a/07ebc8acc1ffc846503a2fe97d18b98a38083af20a09bd66cf546dabacfe/concurrent-log-handler-0.9.8.tar.gz
+[2023-04-30 20:47:32] INFO root fetch - processPackages [py-randomprime]: Downloading https://files.pythonhosted.org/packages/a1/c2/9f63a80aa15c105bf618f0737e83a193079aeedd84344cd8bde9e895eb12/py-randomprime-1.9.5.tar.gz
+[2023-04-30 20:47:32] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2023-04-30 20:47:32] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-2.9.0.tar.gz tmp/duckduckgo_search-2.9.1.tar.gz --markdown 20230430/d/duckduckgo-search/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ovos-translate-plugin-deepl]: Downloading https://files.pythonhosted.org/packages/2c/f0/7fb5fc82b9293b40a9e2640e08f51040c49e8f4b507e86df6cee0ea50a36/ovos_translate_plugin_deepl-0.0.0a2-py3-none-any.whl
+[2023-04-30 20:47:32] INFO root fetch - processPackages [concurrent-log-handler]: Downloading https://files.pythonhosted.org/packages/38/d9/96a24fa043315293ae1adf73eafc7e58afe1e98c51641aeb3ee54d5beeff/concurrent-log-handler-0.9.9.tar.gz
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ovos-translate-plugin-deepl]: executing diffoscope
+[2023-04-30 20:47:32] INFO root fetch - processPackages [ovos-translate-plugin-deepl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_translate_plugin_deepl-0.0.0a1-py3-none-any.whl.zip tmp/ovos_translate_plugin_deepl-0.0.0a2-py3-none-any.whl.zip --markdown 20230430/o/ovos-translate-plugin-deepl/0.0.0a1-0.0.0a2/diff.md --exclude *.pyd
+[2023-04-30 20:47:32] INFO root fetch - processPackages [py-randomprime]: Downloading https://files.pythonhosted.org/packages/6a/a6/30f067323fda064fe22f5ce375f9f91e615acab8985915b93ce4839b3fd9/py-randomprime-1.9.6.tar.gz
+[2023-04-30 20:47:33] INFO root fetch - processPackages [concurrent-log-handler]: executing diffoscope
+[2023-04-30 20:47:33] INFO root fetch - processPackages [concurrent-log-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/concurrent-log-handler-0.9.8.tar.gz tmp/concurrent-log-handler-0.9.9.tar.gz --markdown 20230430/c/concurrent-log-handler/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-30 20:47:33] INFO root fetch - processPackages [py-randomprime]: executing diffoscope
+[2023-04-30 20:47:33] INFO root fetch - processPackages [py-randomprime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-randomprime-1.9.5.tar.gz tmp/py-randomprime-1.9.6.tar.gz --markdown 20230430/p/py-randomprime/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-04-30 20:47:33] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2023-04-30 20:47:33] INFO root fetch - main [MainThread]: End processing [ovos-translate-plugin-deepl]: success
+[2023-04-30 20:47:34] INFO root fetch - main [MainThread]: End processing [concurrent-log-handler]: success
+[2023-04-30 20:47:34] INFO root fetch - main [MainThread]: End processing [py-randomprime]: success
+[2023-04-30 20:47:34] INFO root fetch - main [MainThread]: Store serial: [17919021]
