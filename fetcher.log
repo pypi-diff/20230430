@@ -11236,3 +11236,42 @@
 [2023-04-30 23:37:05] INFO root fetch - main [MainThread]: End processing [jupyter-rfb]: success
 [2023-04-30 23:38:08] INFO root fetch - main [MainThread]: End processing [SQLAlchemy]: success
 [2023-04-30 23:38:08] INFO root fetch - main [MainThread]: Store serial: [17920188]
+[2023-04-30 23:43:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920188]
+[2023-04-30 23:43:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 23:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: itkwasm
+[2023-04-30 23:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bed-features
+[2023-04-30 23:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alignem
+[2023-04-30 23:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: palmers-preprocess
+[2023-04-30 23:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: capsphere
+[2023-04-30 23:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SQLAlchemy
+[2023-04-30 23:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vesper
+[2023-04-30 23:43:17] INFO root fetch - processPackages [alignem]: New version: [0.5.437] Old Version: [0.5.436]
+[2023-04-30 23:43:17] INFO root fetch - processPackages [itkwasm]: New version: [1.0b97] Old Version: [1.0b96]
+[2023-04-30 23:43:17] WARNING root fetch - processPackages [bed-features]: Skipping, unable to determine old version
+[2023-04-30 23:43:17] INFO root fetch - main [MainThread]: End processing [bed-features] error
+[2023-04-30 23:43:17] INFO root fetch - processPackages [palmers-preprocess]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 23:43:17] INFO root fetch - processPackages [SQLAlchemy]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-30 23:43:17] INFO root fetch - processPackages [vesper]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 23:43:18] INFO root fetch - processPackages [capsphere]: New version: [0.0.3] Old Version: [0.0.16]
+[2023-04-30 23:43:18] INFO root fetch - processPackages [SQLAlchemy]: executing diffoscope
+[2023-04-30 23:43:18] INFO root fetch - processPackages [SQLAlchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLAlchemy-2.0.8.tar.gz tmp/SQLAlchemy-2.0.9.tar.gz --markdown 20230430/S/SQLAlchemy/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:43:18] INFO root fetch - processPackages [alignem]: Downloading https://files.pythonhosted.org/packages/df/49/dec6d3ed9f55c71453194dbc2a623657602c8549ef704eb81620816540c1/alignem-0.5.436.tar.gz
+[2023-04-30 23:43:18] INFO root fetch - processPackages [vesper]: Downloading https://files.pythonhosted.org/packages/80/4c/4e8b0f92333a84961930681ca3a43e001029fd50738c97633c5ea838c479/vesper-0.4.8.tar.gz
+[2023-04-30 23:43:18] INFO root fetch - processPackages [capsphere]: Downloading https://files.pythonhosted.org/packages/35/d9/1e471efb7ff2f54c2ca97d02cba7decbb445f3d117a8bd7ac61b1e1259c0/capsphere-0.0.16.tar.gz
+[2023-04-30 23:43:18] INFO root fetch - processPackages [palmers-preprocess]: Downloading https://files.pythonhosted.org/packages/4b/cd/fc82f4babe54f7ef08cc07e5ba99248ebd99052292acc27023544e2e3dd5/palmers_preprocess-0.0.4.tar.gz
+[2023-04-30 23:43:18] WARNING root fetch - processPackages [alignem]: Skipping package: exceeds size limit 42502192>=10485760
+[2023-04-30 23:43:18] INFO root fetch - main [MainThread]: End processing [alignem] error
+[2023-04-30 23:43:18] INFO root fetch - processPackages [itkwasm]: executing diffoscope
+[2023-04-30 23:43:18] INFO root fetch - processPackages [itkwasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm-1.0b96.tar.gz tmp/itkwasm-1.0b97.tar.gz --markdown 20230430/i/itkwasm/1.0b96-1.0b97/diff.md --exclude *.pyd
+[2023-04-30 23:43:18] INFO root fetch - processPackages [palmers-preprocess]: executing diffoscope
+[2023-04-30 23:43:18] INFO root fetch - processPackages [palmers-preprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_preprocess-0.0.3.tar.gz tmp/palmers_preprocess-0.0.4.tar.gz --markdown 20230430/p/palmers-preprocess/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 23:43:18] INFO root fetch - processPackages [capsphere]: Downloading https://files.pythonhosted.org/packages/e8/ae/1b41d1453c72938fd983c5b9b44eadc19db76953c25df5dba8002e4464ec/capsphere-0.0.3.tar.gz
+[2023-04-30 23:43:18] WARNING root fetch - processPackages [vesper]: Skipping package: exceeds size limit 24187211>=10485760
+[2023-04-30 23:43:18] INFO root fetch - main [MainThread]: End processing [vesper] error
+[2023-04-30 23:43:18] INFO root fetch - processPackages [capsphere]: executing diffoscope
+[2023-04-30 23:43:18] INFO root fetch - processPackages [capsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capsphere-0.0.16.tar.gz tmp/capsphere-0.0.3.tar.gz --markdown 20230430/c/capsphere/0.0.16-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 23:43:19] INFO root fetch - main [MainThread]: End processing [palmers-preprocess]: success
+[2023-04-30 23:43:19] INFO root fetch - main [MainThread]: End processing [capsphere]: success
+[2023-04-30 23:43:20] INFO root fetch - main [MainThread]: End processing [itkwasm]: success
+[2023-04-30 23:44:24] INFO root fetch - main [MainThread]: End processing [SQLAlchemy]: success
+[2023-04-30 23:44:24] INFO root fetch - main [MainThread]: Store serial: [17920209]
