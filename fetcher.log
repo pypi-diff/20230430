@@ -2775,3 +2775,20 @@
 [2023-04-30 06:40:40] INFO root fetch - processPackages [iewil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iewil-0.0.1.tar.gz tmp/iewil-0.0.2.tar.gz --markdown 20230430/i/iewil/0.0.1-0.0.2/diff.md --exclude *.pyd
 [2023-04-30 06:40:41] INFO root fetch - main [MainThread]: End processing [iewil]: success
 [2023-04-30 06:40:41] INFO root fetch - main [MainThread]: Store serial: [17914481]
+[2023-04-30 06:45:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914481]
+[2023-04-30 06:45:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 06:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrew
+[2023-04-30 06:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-lambda-mess
+[2023-04-30 06:45:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyascore
+[2023-04-30 06:45:50] INFO root fetch - processPackages [pyascore]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2023-04-30 06:45:50] INFO root fetch - processPackages [pyrew]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-30 06:45:50] WARNING root fetch - processPackages [aws-lambda-mess]: Skipping, unable to determine old version
+[2023-04-30 06:45:50] INFO root fetch - main [MainThread]: End processing [aws-lambda-mess] error
+[2023-04-30 06:45:50] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-04-30 06:45:50] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.9.2.tar.gz tmp/pyrew-0.9.3.tar.gz --markdown 20230430/p/pyrew/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-30 06:45:50] INFO root fetch - processPackages [pyascore]: Downloading https://files.pythonhosted.org/packages/7c/a3/ef65e8496dba9159e987aa683dd077f2bf62bebc35e0cf488129e8f7288b/pyascore-1.0.0b2.tar.gz
+[2023-04-30 06:45:51] INFO root fetch - processPackages [pyascore]: executing diffoscope
+[2023-04-30 06:45:51] INFO root fetch - processPackages [pyascore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyascore-1.0.0b1-cp39-cp39-win_amd64.whl.zip tmp/pyascore-1.0.0b2.tar.gz --markdown 20230430/p/pyascore/1.0.0b1-1.0.0b2/diff.md --exclude *.pyd
+[2023-04-30 06:45:51] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-04-30 06:45:52] INFO root fetch - main [MainThread]: End processing [pyascore]: success
+[2023-04-30 06:45:52] INFO root fetch - main [MainThread]: Store serial: [17914501]
