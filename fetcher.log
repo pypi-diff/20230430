@@ -8766,3 +8766,41 @@
 [2023-04-30 18:45:36] INFO root fetch - main [MainThread]: End processing [pymap]: success
 [2023-04-30 18:45:37] INFO root fetch - main [MainThread]: End processing [limbus-components]: success
 [2023-04-30 18:45:37] INFO root fetch - main [MainThread]: Store serial: [17918211]
+[2023-04-30 18:50:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918211]
+[2023-04-30 18:50:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pddl-plus-parser
+[2023-04-30 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aidev
+[2023-04-30 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blitzgsea
+[2023-04-30 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pddl-plus-parser
+[2023-04-30 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: capabilities
+[2023-04-30 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythoncryptov2
+[2023-04-30 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: djangocms-simple-admin-style
+[2023-04-30 18:50:45] WARNING root fetch - processPackages [aidev]: Skipping, unable to determine old version
+[2023-04-30 18:50:45] INFO root fetch - main [MainThread]: End processing [aidev] error
+[2023-04-30 18:50:45] INFO root fetch - processPackages [pddl-plus-parser]: New version: [3.3.8] Old Version: [3.3.7]
+[2023-04-30 18:50:45] INFO root fetch - processPackages [blitzgsea]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-04-30 18:50:45] INFO root fetch - processPackages [pddl-plus-parser]: New version: [3.3.8] Old Version: [3.3.7]
+[2023-04-30 18:50:45] INFO root fetch - processPackages [capabilities]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-04-30 18:50:45] INFO root fetch - processPackages [blitzgsea]: executing diffoscope
+[2023-04-30 18:50:45] INFO root fetch - processPackages [blitzgsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blitzgsea-1.3.8.tar.gz tmp/blitzgsea-1.3.9.tar.gz --markdown 20230430/b/blitzgsea/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-04-30 18:50:45] WARNING root fetch - processPackages [djangocms-simple-admin-style]: Skipping, unable to determine old version
+[2023-04-30 18:50:45] INFO root fetch - main [MainThread]: End processing [djangocms-simple-admin-style] error
+[2023-04-30 18:50:45] ERROR root fetch - processPackages [pythoncryptov2]: Unable to get metadata: No such project 'pythoncryptov2'
+[2023-04-30 18:50:45] INFO root fetch - main [MainThread]: End processing [pythoncryptov2] error
+[2023-04-30 18:50:45] INFO root fetch - processPackages [pddl-plus-parser]: Downloading https://files.pythonhosted.org/packages/b0/bb/d6fa4e770e236d59f1597bb86764d374a3fb2c1a1575acc06d6f26704da0/pddl-plus-parser-3.3.7.tar.gz
+[2023-04-30 18:50:45] INFO root fetch - processPackages [pddl-plus-parser]: Downloading https://files.pythonhosted.org/packages/b0/bb/d6fa4e770e236d59f1597bb86764d374a3fb2c1a1575acc06d6f26704da0/pddl-plus-parser-3.3.7.tar.gz
+[2023-04-30 18:50:46] INFO root fetch - processPackages [capabilities]: Downloading https://files.pythonhosted.org/packages/d4/fe/6017b7260dd8ce0157341164165e84aa55323e38e6cd3151f75bfe0a16a7/capabilities-0.0.8.tar.gz
+[2023-04-30 18:50:46] INFO root fetch - processPackages [pddl-plus-parser]: Downloading https://files.pythonhosted.org/packages/a0/34/48f37bbf68815f77288fe00532dab20c6517e553de323396c72c2c68f849/pddl-plus-parser-3.3.8.tar.gz
+[2023-04-30 18:50:46] INFO root fetch - processPackages [pddl-plus-parser]: Downloading https://files.pythonhosted.org/packages/a0/34/48f37bbf68815f77288fe00532dab20c6517e553de323396c72c2c68f849/pddl-plus-parser-3.3.8.tar.gz
+[2023-04-30 18:50:46] INFO root fetch - processPackages [capabilities]: Downloading https://files.pythonhosted.org/packages/75/0d/5742756c512b7854ce01b39c9a19280eed064ee621b509385338540592a3/capabilities-0.1.0.tar.gz
+[2023-04-30 18:50:46] INFO root fetch - processPackages [pddl-plus-parser]: executing diffoscope
+[2023-04-30 18:50:46] INFO root fetch - processPackages [capabilities]: executing diffoscope
+[2023-04-30 18:50:46] INFO root fetch - processPackages [pddl-plus-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pddl-plus-parser-3.3.7.tar.gz tmp/pddl-plus-parser-3.3.8.tar.gz --markdown 20230430/p/pddl-plus-parser/3.3.7-3.3.8/diff.md --exclude *.pyd
+[2023-04-30 18:50:46] INFO root fetch - processPackages [capabilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capabilities-0.0.8.tar.gz tmp/capabilities-0.1.0.tar.gz --markdown 20230430/c/capabilities/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-04-30 18:50:46] INFO root fetch - processPackages [pddl-plus-parser]: executing diffoscope
+[2023-04-30 18:50:46] INFO root fetch - processPackages [pddl-plus-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pddl-plus-parser-3.3.7.tar.gz tmp/pddl-plus-parser-3.3.8.tar.gz --markdown 20230430/p/pddl-plus-parser/3.3.7-3.3.8/diff.md --exclude *.pyd
+[2023-04-30 18:50:47] INFO root fetch - main [MainThread]: End processing [blitzgsea]: success
+[2023-04-30 18:50:47] INFO root fetch - main [MainThread]: End processing [capabilities]: success
+[2023-04-30 18:50:47] INFO root fetch - main [MainThread]: End processing [pddl-plus-parser]: success
+[2023-04-30 18:50:48] INFO root fetch - main [MainThread]: End processing [pddl-plus-parser]: success
+[2023-04-30 18:50:48] INFO root fetch - main [MainThread]: Store serial: [17918254]
