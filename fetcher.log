@@ -5360,3 +5360,29 @@
 [2023-04-30 12:40:07] INFO root fetch - main [MainThread]: End processing [andebox]: success
 [2023-04-30 12:40:08] INFO root fetch - main [MainThread]: End processing [apsg]: success
 [2023-04-30 12:40:08] INFO root fetch - main [MainThread]: Store serial: [17916044]
+[2023-04-30 12:45:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916044]
+[2023-04-30 12:45:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 12:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-drf-cms
+[2023-04-30 12:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: force-relative-import
+[2023-04-30 12:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-onnx-processing-tools
+[2023-04-30 12:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Nikola
+[2023-04-30 12:45:17] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-30 12:45:17] WARNING root fetch - processPackages [force-relative-import]: Skipping, unable to determine old version
+[2023-04-30 12:45:17] INFO root fetch - main [MainThread]: End processing [force-relative-import] error
+[2023-04-30 12:45:17] INFO root fetch - processPackages [Nikola]: New version: [8.2.4] Old Version: [8.2.3]
+[2023-04-30 12:45:17] INFO root fetch - processPackages [simple-onnx-processing-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-30 12:45:17] INFO root fetch - processPackages [django-drf-cms]: Downloading https://files.pythonhosted.org/packages/8a/5b/c716b24387b0952ec51a18535fc197d10fb923231e7ad1073ebdf57a0356/django-drf-cms-0.1.7.tar.gz
+[2023-04-30 12:45:17] INFO root fetch - processPackages [Nikola]: Downloading https://files.pythonhosted.org/packages/ad/9b/134ae506fef107ae05233084d8562f285e3afce0277af40b6b1ee26479a3/Nikola-8.2.3.tar.gz
+[2023-04-30 12:45:17] INFO root fetch - processPackages [simple-onnx-processing-tools]: Downloading https://files.pythonhosted.org/packages/3f/f4/92df8a57b9bcea54014b43b0770d7180cc4a8a391ae2633a195977439cac/simple_onnx_processing_tools-1.1.8.tar.gz
+[2023-04-30 12:45:17] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 12:45:17] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.6.tar.gz tmp/django-drf-cms-0.1.7.tar.gz --markdown 20230430/d/django-drf-cms/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-30 12:45:17] INFO root fetch - processPackages [simple-onnx-processing-tools]: Downloading https://files.pythonhosted.org/packages/bf/72/77720ef0c0527d0fe245204514e2d72ac6fa100c69e63a5b7516ba21ad1c/simple_onnx_processing_tools-1.1.9.tar.gz
+[2023-04-30 12:45:17] INFO root fetch - processPackages [simple-onnx-processing-tools]: executing diffoscope
+[2023-04-30 12:45:17] INFO root fetch - processPackages [simple-onnx-processing-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_onnx_processing_tools-1.1.8.tar.gz tmp/simple_onnx_processing_tools-1.1.9.tar.gz --markdown 20230430/s/simple-onnx-processing-tools/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-30 12:45:18] INFO root fetch - processPackages [Nikola]: Downloading https://files.pythonhosted.org/packages/ef/e7/9ed1bb8f515b13d774b5e9c0fdbaa93860146321de4feb8127b014f04ffc/Nikola-8.2.4.tar.gz
+[2023-04-30 12:45:18] INFO root fetch - processPackages [Nikola]: executing diffoscope
+[2023-04-30 12:45:18] INFO root fetch - processPackages [Nikola]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Nikola-8.2.3.tar.gz tmp/Nikola-8.2.4.tar.gz --markdown 20230430/N/Nikola/8.2.3-8.2.4/diff.md --exclude *.pyd
+[2023-04-30 12:45:18] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 12:45:18] INFO root fetch - main [MainThread]: End processing [simple-onnx-processing-tools]: success
+[2023-04-30 12:46:52] INFO root fetch - main [MainThread]: End processing [Nikola]: success
+[2023-04-30 12:46:52] INFO root fetch - main [MainThread]: Store serial: [17916057]
