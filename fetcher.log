@@ -3097,3 +3097,46 @@
 [2023-04-30 07:36:02] INFO root fetch - main [MainThread]: End processing [cabinet]: success
 [2023-04-30 07:36:10] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-30 07:36:10] INFO root fetch - main [MainThread]: Store serial: [17914725]
+[2023-04-30 07:41:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914725]
+[2023-04-30 07:41:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 07:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luau
+[2023-04-30 07:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moecolor
+[2023-04-30 07:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psdtags
+[2023-04-30 07:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aws-lambda-mess
+[2023-04-30 07:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-comments-app
+[2023-04-30 07:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wagtail-photography
+[2023-04-30 07:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bc-detect-secrets
+[2023-04-30 07:41:19] WARNING root fetch - processPackages [django-comments-app]: Skipping, unable to determine old version
+[2023-04-30 07:41:19] INFO root fetch - main [MainThread]: End processing [django-comments-app] error
+[2023-04-30 07:41:19] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 07:41:19] INFO root fetch - processPackages [bc-detect-secrets]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-30 07:41:19] INFO root fetch - processPackages [psdtags]: New version: [2023.4.30] Old Version: [2023.2.8]
+[2023-04-30 07:41:19] INFO root fetch - processPackages [moecolor]: New version: [1.0.1] Old Version: [1.0.0rc1]
+[2023-04-30 07:41:19] INFO root fetch - processPackages [aws-lambda-mess]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 07:41:19] INFO root fetch - processPackages [wagtail-photography]: New version: [0.2] Old Version: [0.1]
+[2023-04-30 07:41:20] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 07:41:20] INFO root fetch - processPackages [wagtail-photography]: Downloading https://files.pythonhosted.org/packages/55/eb/118d2416c9a72813065ac4cfaf76b7feee5a3ccabb29bfefce4994bec385/wagtail-photography-0.1.tar.gz
+[2023-04-30 07:41:20] INFO root fetch - processPackages [psdtags]: Downloading https://files.pythonhosted.org/packages/d4/3b/492cd253f2af58a3f4ae79c656d4904c96253184f88ced6c626091291fc8/psdtags-2023.2.8.tar.gz
+[2023-04-30 07:41:20] INFO root fetch - processPackages [moecolor]: Downloading https://files.pythonhosted.org/packages/2f/40/b9a86e9edb7cbc5307fb27d11cf27d14f5fade89e7c3614a82638c499689/moecolor-1.0.0rc1.tar.gz
+[2023-04-30 07:41:20] INFO root fetch - processPackages [aws-lambda-mess]: Downloading https://files.pythonhosted.org/packages/57/ca/0377f4d7fbd181432a84704f1ff82e4cf77833cb7373d5da07252e269a13/aws_lambda_mess-0.0.3.tar.gz
+[2023-04-30 07:41:20] INFO root fetch - processPackages [aws-lambda-mess]: executing diffoscope
+[2023-04-30 07:41:20] INFO root fetch - processPackages [aws-lambda-mess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_mess-0.0.2.tar.gz tmp/aws_lambda_mess-0.0.3.tar.gz --markdown 20230430/a/aws-lambda-mess/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 07:41:20] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 07:41:20] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 07:41:20] INFO root fetch - processPackages [bc-detect-secrets]: executing diffoscope
+[2023-04-30 07:41:20] INFO root fetch - processPackages [bc-detect-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bc-detect-secrets-1.4.8.tar.gz tmp/bc-detect-secrets-1.4.9.tar.gz --markdown 20230430/b/bc-detect-secrets/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-30 07:41:20] INFO root fetch - processPackages [wagtail-photography]: Downloading https://files.pythonhosted.org/packages/93/3c/904269007aed70d4a132e3ff80a4a92a7bc96db086b79ed47d6b1a000d02/wagtail-photography-0.2.tar.gz
+[2023-04-30 07:41:20] INFO root fetch - processPackages [wagtail-photography]: executing diffoscope
+[2023-04-30 07:41:20] INFO root fetch - processPackages [wagtail-photography]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-photography-0.1.tar.gz tmp/wagtail-photography-0.2.tar.gz --markdown 20230430/w/wagtail-photography/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-30 07:41:20] INFO root fetch - processPackages [moecolor]: Downloading https://files.pythonhosted.org/packages/5b/1b/45eef3887d4c4134b8036df15448bda2022078723fb2cf22c32475263e07/moecolor-1.0.1.tar.gz
+[2023-04-30 07:41:20] INFO root fetch - processPackages [psdtags]: Downloading https://files.pythonhosted.org/packages/98/f3/f5d9adc3b70b822a96e16c78fddee4781e739a1ecb3fe4f38339d4407e9b/psdtags-2023.4.30.tar.gz
+[2023-04-30 07:41:20] INFO root fetch - processPackages [psdtags]: executing diffoscope
+[2023-04-30 07:41:20] INFO root fetch - processPackages [psdtags]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psdtags-2023.2.8.tar.gz tmp/psdtags-2023.4.30.tar.gz --markdown 20230430/p/psdtags/2023.2.8-2023.4.30/diff.md --exclude *.pyd
+[2023-04-30 07:41:20] INFO root fetch - processPackages [moecolor]: executing diffoscope
+[2023-04-30 07:41:20] INFO root fetch - processPackages [moecolor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moecolor-1.0.0rc1.tar.gz tmp/moecolor-1.0.1.tar.gz --markdown 20230430/m/moecolor/1.0.0rc1-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 07:41:21] INFO root fetch - main [MainThread]: End processing [aws-lambda-mess]: success
+[2023-04-30 07:41:21] INFO root fetch - main [MainThread]: End processing [wagtail-photography]: success
+[2023-04-30 07:41:21] INFO root fetch - main [MainThread]: End processing [psdtags]: success
+[2023-04-30 07:41:21] INFO root fetch - main [MainThread]: End processing [moecolor]: success
+[2023-04-30 07:41:44] INFO root fetch - main [MainThread]: End processing [bc-detect-secrets]: success
+[2023-04-30 07:41:44] INFO root fetch - main [MainThread]: Store serial: [17914747]
