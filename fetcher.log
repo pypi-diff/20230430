@@ -5175,3 +5175,42 @@
 [2023-04-30 12:08:11] INFO root fetch - main [MainThread]: End processing [discord-py-interactions]: success
 [2023-04-30 12:08:11] INFO root fetch - main [MainThread]: End processing [interactions.py]: success
 [2023-04-30 12:08:11] INFO root fetch - main [MainThread]: Store serial: [17915923]
+[2023-04-30 12:13:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915923]
+[2023-04-30 12:13:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 12:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dm-reverb-nightly
+[2023-04-30 12:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipywidgets-bokeh
+[2023-04-30 12:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: os-mfa
+[2023-04-30 12:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: utilfunction
+[2023-04-30 12:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Quick-Magic
+[2023-04-30 12:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sigma-cli
+[2023-04-30 12:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: irails
+[2023-04-30 12:13:19] WARNING root fetch - processPackages [os-mfa]: Skipping, unable to determine old version
+[2023-04-30 12:13:19] INFO root fetch - main [MainThread]: End processing [os-mfa] error
+[2023-04-30 12:13:19] INFO root fetch - processPackages [ipywidgets-bokeh]: New version: [1.4.0.dev3] Old Version: [1.4.0.dev2]
+[2023-04-30 12:13:19] INFO root fetch - processPackages [utilfunction]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-30 12:13:19] INFO root fetch - processPackages [Quick-Magic]: New version: [1.7] Old Version: [1.6]
+[2023-04-30 12:13:19] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-04-30 12:13:19] WARNING root fetch - processPackages [irails]: Skipping, unable to determine old version
+[2023-04-30 12:13:19] INFO root fetch - main [MainThread]: End processing [irails] error
+[2023-04-30 12:13:19] INFO root fetch - processPackages [sigma-cli]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-30 12:13:19] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-04-30 12:13:19] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230430/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-04-30 12:13:19] INFO root fetch - processPackages [utilfunction]: Downloading https://files.pythonhosted.org/packages/8a/de/22dcb5e768de70038482ffe8a1b4b6779154a93a2d39896fd14534bd4b5b/utilfunction-0.1.6.tar.gz
+[2023-04-30 12:13:19] INFO root fetch - processPackages [Quick-Magic]: Downloading https://files.pythonhosted.org/packages/c0/03/34ae3d5bdf914aaded5ea874002196c0e9896edf600cc1d6cf25b100b40c/Quick_Magic-1.7.tar.gz
+[2023-04-30 12:13:20] INFO root fetch - processPackages [sigma-cli]: Downloading https://files.pythonhosted.org/packages/5c/9c/bc79c9b1ea18842d2d9ff77fd03a5e897ae3fb4be9dcc4af34e6e9b84a47/sigma_cli-0.7.2.tar.gz
+[2023-04-30 12:13:20] INFO root fetch - processPackages [utilfunction]: executing diffoscope
+[2023-04-30 12:13:20] INFO root fetch - processPackages [utilfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilfunction-0.1.5.tar.gz tmp/utilfunction-0.1.6.tar.gz --markdown 20230430/u/utilfunction/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-30 12:13:20] INFO root fetch - processPackages [Quick-Magic]: executing diffoscope
+[2023-04-30 12:13:20] INFO root fetch - processPackages [ipywidgets-bokeh]: Downloading https://files.pythonhosted.org/packages/32/4a/acdf5bf996d8839f5f1188f0335941c965f9f09c5ce5ef8231a3e29b66c7/ipywidgets_bokeh-1.4.0.dev3.tar.gz
+[2023-04-30 12:13:20] INFO root fetch - processPackages [Quick-Magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Quick_Magic-1.6.tar.gz tmp/Quick_Magic-1.7.tar.gz --markdown 20230430/Q/Quick-Magic/1.6-1.7/diff.md --exclude *.pyd
+[2023-04-30 12:13:20] INFO root fetch - processPackages [ipywidgets-bokeh]: executing diffoscope
+[2023-04-30 12:13:20] INFO root fetch - processPackages [ipywidgets-bokeh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipywidgets_bokeh-1.4.0.dev2.tar.gz tmp/ipywidgets_bokeh-1.4.0.dev3.tar.gz --markdown 20230430/i/ipywidgets-bokeh/1.4.0.dev2-1.4.0.dev3/diff.md --exclude *.pyd
+[2023-04-30 12:13:20] INFO root fetch - processPackages [sigma-cli]: Downloading https://files.pythonhosted.org/packages/ff/07/9bfdebc62629186138dab3792779f177bcac1d1ae50de1449a80bfb7265f/sigma_cli-0.7.3.tar.gz
+[2023-04-30 12:13:20] INFO root fetch - processPackages [sigma-cli]: executing diffoscope
+[2023-04-30 12:13:20] INFO root fetch - processPackages [sigma-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigma_cli-0.7.2.tar.gz tmp/sigma_cli-0.7.3.tar.gz --markdown 20230430/s/sigma-cli/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-30 12:13:21] INFO root fetch - main [MainThread]: End processing [Quick-Magic]: success
+[2023-04-30 12:13:21] INFO root fetch - main [MainThread]: End processing [utilfunction]: success
+[2023-04-30 12:13:21] INFO root fetch - main [MainThread]: End processing [sigma-cli]: success
+[2023-04-30 12:13:39] INFO root fetch - main [MainThread]: End processing [ipywidgets-bokeh]: success
+[2023-04-30 12:14:13] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-04-30 12:14:13] INFO root fetch - main [MainThread]: Store serial: [17915952]
