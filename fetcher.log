@@ -6111,3 +6111,52 @@
 [2023-04-30 14:11:51] INFO root fetch - main [MainThread]: End processing [bigdl-friesian]: success
 [2023-04-30 14:12:02] INFO root fetch - main [MainThread]: End processing [posuto]: success
 [2023-04-30 14:12:02] INFO root fetch - main [MainThread]: Store serial: [17916445]
+[2023-04-30 14:17:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916445]
+[2023-04-30 14:17:11] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-collections
+[2023-04-30 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ssapi
+[2023-04-30 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: envoy.base.utils
+[2023-04-30 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-json
+[2023-04-30 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-drf-cms
+[2023-04-30 14:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyproject-generator
+[2023-04-30 14:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mo-files
+[2023-04-30 14:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: goxlrutilityapi
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-collections]: New version: [5.45.21241] Old Version: [5.373.23120]
+[2023-04-30 14:17:12] INFO root fetch - processPackages [goxlrutilityapi]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-json]: New version: [6.373.23120] Old Version: [6.371.23118]
+[2023-04-30 14:17:12] WARNING root fetch - processPackages [ssapi]: Skipping, unable to determine old version
+[2023-04-30 14:17:12] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 14:17:12] INFO root fetch - main [MainThread]: End processing [ssapi] error
+[2023-04-30 14:17:12] INFO root fetch - processPackages [pyproject-generator]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 14:17:12] INFO root fetch - processPackages [envoy.base.utils]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-files]: New version: [6.373.23120] Old Version: [6.372.23118]
+[2023-04-30 14:17:12] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 14:17:12] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.8.tar.gz tmp/django-drf-cms-0.1.9.tar.gz --markdown 20230430/d/django-drf-cms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-collections]: Downloading https://files.pythonhosted.org/packages/3d/0a/170d83d457d169a39454fb49d6e1896400c3534fe977354238bc71fef9db/mo_collections-5.373.23120-py2.py3-none-any.whl
+[2023-04-30 14:17:12] INFO root fetch - processPackages [goxlrutilityapi]: Downloading https://files.pythonhosted.org/packages/c1/d7/477cd11acba279f1235e364fb55ba1059e643c6acd47d87e31890e70ae45/goxlrutilityapi-1.0.3.tar.gz
+[2023-04-30 14:17:12] INFO root fetch - processPackages [pyproject-generator]: Downloading https://files.pythonhosted.org/packages/b9/93/cd04d577d7ed6b205f5ae869f51ff2febf3e692d835f66e25f3224677985/pyproject-generator-0.1.1.tar.gz
+[2023-04-30 14:17:12] INFO root fetch - processPackages [envoy.base.utils]: Downloading https://files.pythonhosted.org/packages/f1/74/537de5052a88e886c79497755c12533a089c39a72df9cd17d26698ff250c/envoy.base.utils-0.4.6.tar.gz
+[2023-04-30 14:17:12] INFO root fetch - processPackages [envoy.base.utils]: executing diffoscope
+[2023-04-30 14:17:12] INFO root fetch - processPackages [envoy.base.utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envoy.base.utils-0.4.5.tar.gz tmp/envoy.base.utils-0.4.6.tar.gz --markdown 20230430/e/envoy.base.utils/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/17/8f/1ce432d08d12491b39e448249500889148061933d05df0274685268a8479/mo_json-6.373.23120-py2.py3-none-any.whl
+[2023-04-30 14:17:12] INFO root fetch - processPackages [pyproject-generator]: executing diffoscope
+[2023-04-30 14:17:12] INFO root fetch - processPackages [pyproject-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-generator-0.1.0.tar.gz tmp/pyproject-generator-0.1.1.tar.gz --markdown 20230430/p/pyproject-generator/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/13/2b/1c43874bb3219e3c0cf82e66b76959e3a46424106ae9fbfb9db1e3fb327b/mo_files-6.373.23120-py2.py3-none-any.whl
+[2023-04-30 14:17:12] INFO root fetch - processPackages [goxlrutilityapi]: Downloading https://files.pythonhosted.org/packages/b7/82/f87829a940cd9bbea189d5d9417dcdbd079b1631c592789e9937e9c20815/goxlrutilityapi-1.0.4.tar.gz
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-json]: executing diffoscope
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json-6.371.23118-py2.py3-none-any.whl.zip tmp/mo_json-6.373.23120-py2.py3-none-any.whl.zip --markdown 20230430/m/mo-json/6.371.23118-6.373.23120/diff.md --exclude *.pyd
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-files]: executing diffoscope
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_files-6.372.23118-py2.py3-none-any.whl.zip tmp/mo_files-6.373.23120-py2.py3-none-any.whl.zip --markdown 20230430/m/mo-files/6.372.23118-6.373.23120/diff.md --exclude *.pyd
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-collections]: Downloading https://files.pythonhosted.org/packages/16/db/c74aa7d84f3c896385e0b68fe16b61f449d101ca62979e35457d05f12655/mo-collections-5.45.21241.tar.gz
+[2023-04-30 14:17:12] INFO root fetch - processPackages [goxlrutilityapi]: executing diffoscope
+[2023-04-30 14:17:12] INFO root fetch - processPackages [goxlrutilityapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goxlrutilityapi-1.0.3.tar.gz tmp/goxlrutilityapi-1.0.4.tar.gz --markdown 20230430/g/goxlrutilityapi/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-collections]: executing diffoscope
+[2023-04-30 14:17:12] INFO root fetch - processPackages [mo-collections]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_collections-5.373.23120-py2.py3-none-any.whl.zip tmp/mo-collections-5.45.21241.tar.gz --markdown 20230430/m/mo-collections/5.373.23120-5.45.21241/diff.md --exclude *.pyd
+[2023-04-30 14:17:13] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 14:17:13] INFO root fetch - main [MainThread]: End processing [mo-files]: success
+[2023-04-30 14:17:13] INFO root fetch - main [MainThread]: End processing [pyproject-generator]: success
+[2023-04-30 14:17:13] INFO root fetch - main [MainThread]: End processing [mo-json]: success
+[2023-04-30 14:17:13] INFO root fetch - main [MainThread]: End processing [mo-collections]: success
+[2023-04-30 14:17:14] INFO root fetch - main [MainThread]: End processing [envoy.base.utils]: success
+[2023-04-30 14:17:14] INFO root fetch - main [MainThread]: End processing [goxlrutilityapi]: success
+[2023-04-30 14:17:14] INFO root fetch - main [MainThread]: Store serial: [17916466]
