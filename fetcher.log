@@ -8201,3 +8201,34 @@
 [2023-04-30 17:47:06] INFO root fetch - main [MainThread]: End processing [mantis-xray]: success
 [2023-04-30 17:47:50] INFO root fetch - main [MainThread]: End processing [nbdime]: success
 [2023-04-30 17:47:50] INFO root fetch - main [MainThread]: Store serial: [17917845]
+[2023-04-30 17:52:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917845]
+[2023-04-30 17:53:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 17:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Prepup
+[2023-04-30 17:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-eol
+[2023-04-30 17:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cvworld
+[2023-04-30 17:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygame
+[2023-04-30 17:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-object-safety
+[2023-04-30 17:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alacorder
+[2023-04-30 17:53:04] INFO root fetch - processPackages [django-object-safety]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-30 17:53:04] INFO root fetch - processPackages [Prepup]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 17:53:04] INFO root fetch - processPackages [pygame]: New version: [2.4.0.dev2] Old Version: [2.3.0.dev2]
+[2023-04-30 17:53:04] INFO root fetch - processPackages [alacorder]: New version: [80.0.6] Old Version: [80.0.5]
+[2023-04-30 17:53:04] WARNING root fetch - processPackages [python-eol]: Skipping, unable to determine old version
+[2023-04-30 17:53:04] WARNING root fetch - processPackages [cvworld]: Skipping, unable to determine old version
+[2023-04-30 17:53:04] INFO root fetch - main [MainThread]: End processing [python-eol] error
+[2023-04-30 17:53:04] INFO root fetch - main [MainThread]: End processing [cvworld] error
+[2023-04-30 17:53:04] INFO root fetch - processPackages [django-object-safety]: executing diffoscope
+[2023-04-30 17:53:04] INFO root fetch - processPackages [django-object-safety]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_object_safety-1.2.2.tar.gz tmp/django_object_safety-1.2.3.tar.gz --markdown 20230430/d/django-object-safety/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-30 17:53:04] INFO root fetch - processPackages [pygame]: Downloading https://files.pythonhosted.org/packages/13/71/675cfb9e4f87d5b9e1dbc4d0e25974654b729f97f9715b869c39e931c291/pygame-2.3.0.dev2.tar.gz
+[2023-04-30 17:53:05] INFO root fetch - processPackages [Prepup]: Downloading https://files.pythonhosted.org/packages/00/70/29144a11379ca96129a3a1aa01f1cb2eb6bf0561659f1186c7c3f55ae1c7/prepup-0.0.3.tar.gz
+[2023-04-30 17:53:05] INFO root fetch - processPackages [Prepup]: executing diffoscope
+[2023-04-30 17:53:05] INFO root fetch - processPackages [Prepup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prepup-0.0.2.tar.gz tmp/prepup-0.0.3.tar.gz --markdown 20230430/P/Prepup/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 17:53:05] WARNING root fetch - processPackages [pygame]: Skipping package: exceeds size limit 12866198>=10485760
+[2023-04-30 17:53:05] INFO root fetch - main [MainThread]: End processing [pygame] error
+[2023-04-30 17:53:05] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/37/4e/db3d444eff3b35cea0f150b4a4ae287575065e0c02c98c884c7cb0999b72/alacorder-80.0.6.tar.gz
+[2023-04-30 17:53:05] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-04-30 17:53:05] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.0.5.tar.gz tmp/alacorder-80.0.6.tar.gz --markdown 20230430/a/alacorder/80.0.5-80.0.6/diff.md --exclude *.pyd
+[2023-04-30 17:53:05] INFO root fetch - main [MainThread]: End processing [django-object-safety]: success
+[2023-04-30 17:53:06] INFO root fetch - main [MainThread]: End processing [Prepup]: success
+[2023-04-30 17:53:06] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-04-30 17:53:06] INFO root fetch - main [MainThread]: Store serial: [17917881]
