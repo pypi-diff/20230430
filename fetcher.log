@@ -3140,3 +3140,29 @@
 [2023-04-30 07:41:21] INFO root fetch - main [MainThread]: End processing [moecolor]: success
 [2023-04-30 07:41:44] INFO root fetch - main [MainThread]: End processing [bc-detect-secrets]: success
 [2023-04-30 07:41:44] INFO root fetch - main [MainThread]: Store serial: [17914747]
+[2023-04-30 07:46:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914747]
+[2023-04-30 07:46:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 07:46:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2023-04-30 07:46:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cellmap
+[2023-04-30 07:46:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: katalytic-data
+[2023-04-30 07:46:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unisci
+[2023-04-30 07:46:53] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304300542] Old Version: [1.0.1.dev202304290429]
+[2023-04-30 07:46:53] INFO root fetch - processPackages [katalytic-data]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-30 07:46:53] INFO root fetch - processPackages [unisci]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-30 07:46:53] INFO root fetch - processPackages [rp]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-30 07:46:53] INFO root fetch - processPackages [katalytic-data]: Downloading https://files.pythonhosted.org/packages/4f/fe/6cf0c135e7c26b68f7399ca91ec2fa32cffb06843b8165d01c0df91ba2c2/katalytic-data-0.7.1.tar.gz
+[2023-04-30 07:46:53] INFO root fetch - processPackages [unisci]: Downloading https://files.pythonhosted.org/packages/80/ee/ed91bc719eab9b31a2f2f615c20ea877ba801719a544b374e577c8e15e2f/unisci-1.4.1.tar.gz
+[2023-04-30 07:46:53] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/a3/80/d75de2647c3da007ea6f0c014a6ce7195ff2fb0abb54e3839949a0623c2c/cellmap-1.0.1.dev202304300542-py3-none-any.whl
+[2023-04-30 07:46:53] INFO root fetch - processPackages [katalytic-data]: executing diffoscope
+[2023-04-30 07:46:53] INFO root fetch - processPackages [katalytic-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-data-0.7.0.tar.gz tmp/katalytic-data-0.7.1.tar.gz --markdown 20230430/k/katalytic-data/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-30 07:46:53] INFO root fetch - processPackages [unisci]: executing diffoscope
+[2023-04-30 07:46:53] INFO root fetch - processPackages [unisci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unisci-1.4.0.tar.gz tmp/unisci-1.4.1.tar.gz --markdown 20230430/u/unisci/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-30 07:46:54] INFO root fetch - processPackages [rp]: executing diffoscope
+[2023-04-30 07:46:54] INFO root fetch - processPackages [rp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rp-0.1.98.tar.gz tmp/rp-0.1.99.tar.gz --markdown 20230430/r/rp/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-30 07:46:54] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-30 07:46:54] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304290429-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304300542-py3-none-any.whl.zip --markdown 20230430/c/cellmap/1.0.1.dev202304290429-1.0.1.dev202304300542/diff.md --exclude *.pyd
+[2023-04-30 07:46:54] INFO root fetch - main [MainThread]: End processing [katalytic-data]: success
+[2023-04-30 07:46:55] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-30 07:46:55] INFO root fetch - main [MainThread]: End processing [unisci]: success
+[2023-04-30 07:46:55] INFO root fetch - main [MainThread]: End processing [rp]: success
+[2023-04-30 07:46:56] INFO root fetch - main [MainThread]: Store serial: [17914758]
