@@ -5505,3 +5505,39 @@
 [2023-04-30 12:57:17] INFO root fetch - main [MainThread]: End processing [test-swagger-coverage]: success
 [2023-04-30 12:57:19] INFO root fetch - main [MainThread]: End processing [zepben.protobuf]: success
 [2023-04-30 12:57:19] INFO root fetch - main [MainThread]: Store serial: [17916116]
+[2023-04-30 13:02:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916116]
+[2023-04-30 13:02:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 13:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckduckgo-search
+[2023-04-30 13:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-drf-cms
+[2023-04-30 13:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotinst-agent-beta
+[2023-04-30 13:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkov
+[2023-04-30 13:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nlptoolssna
+[2023-04-30 13:02:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mbapy
+[2023-04-30 13:02:28] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 13:02:28] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.276] Old Version: [2.2.275]
+[2023-04-30 13:02:28] INFO root fetch - processPackages [nlptoolssna]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-30 13:02:28] INFO root fetch - processPackages [duckduckgo-search]: New version: [2.9.0] Old Version: [2.8.6]
+[2023-04-30 13:02:28] INFO root fetch - processPackages [mbapy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 13:02:28] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 13:02:28] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 13:02:28] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.8.tar.gz tmp/django-drf-cms-0.1.9.tar.gz --markdown 20230430/d/django-drf-cms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 13:02:28] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-30 13:02:28] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.4.0.tar.gz tmp/nlptoolssna-0.4.1.tar.gz --markdown 20230430/n/nlptoolssna/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-30 13:02:28] INFO root fetch - processPackages [mbapy]: executing diffoscope
+[2023-04-30 13:02:28] INFO root fetch - processPackages [mbapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbapy-0.0.8.tar.gz tmp/mbapy-0.0.9.tar.gz --markdown 20230430/m/mbapy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 13:02:28] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/37/5d/8a752cc00893f15989e017e41447b8b75d035ff1c8343285ba63e3812ffc/duckduckgo_search-2.8.6.tar.gz
+[2023-04-30 13:02:28] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-30 13:02:28] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230430/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 13:02:28] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/a8/0c/70003f82f7c642752525425fd7b10fa45218cb02c6de70f79af3d2b075d7/spotinst-agent-beta-2.2.276.tar.gz
+[2023-04-30 13:02:28] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 13:02:28] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.275.tar.gz tmp/spotinst-agent-beta-2.2.276.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.275-2.2.276/diff.md --exclude *.pyd
+[2023-04-30 13:02:29] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/e1/2e/7bb7a42ec5fa0e6bbf206e5e12ea609aa2cb76c73a1785efb790cfc96ae0/duckduckgo_search-2.9.0.tar.gz
+[2023-04-30 13:02:29] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2023-04-30 13:02:29] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-2.8.6.tar.gz tmp/duckduckgo_search-2.9.0.tar.gz --markdown 20230430/d/duckduckgo-search/2.8.6-2.9.0/diff.md --exclude *.pyd
+[2023-04-30 13:02:30] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 13:02:30] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-30 13:02:30] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 13:02:30] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2023-04-30 13:02:30] INFO root fetch - main [MainThread]: End processing [mbapy]: success
+[2023-04-30 13:03:07] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-30 13:03:07] INFO root fetch - main [MainThread]: Store serial: [17916131]
