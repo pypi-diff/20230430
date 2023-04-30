@@ -1381,3 +1381,45 @@
 [2023-04-30 02:55:32] INFO root fetch - main [MainThread]: End processing [rm545-xd]: success
 [2023-04-30 02:55:32] INFO root fetch - main [MainThread]: End processing [torchtnt]: success
 [2023-04-30 02:55:32] INFO root fetch - main [MainThread]: Store serial: [17913590]
+[2023-04-30 03:00:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913590]
+[2023-04-30 03:00:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 03:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qrm545-xd
+[2023-04-30 03:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proxy-protocol
+[2023-04-30 03:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioversions
+[2023-04-30 03:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beginai
+[2023-04-30 03:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: beginai-cli
+[2023-04-30 03:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hydrotoolbox
+[2023-04-30 03:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-sns-notify
+[2023-04-30 03:00:42] INFO root fetch - processPackages [proxy-protocol]: New version: [0.9.1] Old Version: [0.9.0rc2]
+[2023-04-30 03:00:42] WARNING root fetch - processPackages [qrm545-xd]: Skipping, unable to determine old version
+[2023-04-30 03:00:42] INFO root fetch - main [MainThread]: End processing [qrm545-xd] error
+[2023-04-30 03:00:42] INFO root fetch - processPackages [beginai-cli]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-04-30 03:00:42] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 03:00:42] INFO root fetch - processPackages [beginai]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-30 03:00:42] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-04-30 03:00:42] INFO root fetch - processPackages [hydrotoolbox]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-04-30 03:00:42] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-04-30 03:00:42] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230430/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 03:00:42] INFO root fetch - processPackages [proxy-protocol]: Downloading https://files.pythonhosted.org/packages/08/43/4775be3e5335421b435e8515c509770916979dafe9a663fe30f49c9baca4/proxy-protocol-0.9.0rc2.tar.gz
+[2023-04-30 03:00:42] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-04-30 03:00:42] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230430/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-04-30 03:00:42] INFO root fetch - processPackages [hydrotoolbox]: Downloading https://files.pythonhosted.org/packages/cf/79/3f71338198d04e1951e7386f3410526c5855c69b696a7c59799840b14ac6/hydrotoolbox-2.0.5.tar.gz
+[2023-04-30 03:00:42] INFO root fetch - processPackages [beginai-cli]: Downloading https://files.pythonhosted.org/packages/0d/e7/3c7201524ed45fd1022d0affb30846be5e902178731fc753cc8ddb5b9ed6/beginai-cli-1.8.0.tar.gz
+[2023-04-30 03:00:42] INFO root fetch - processPackages [beginai]: Downloading https://files.pythonhosted.org/packages/7a/a6/99e618d210cb60fe544789483226c9868b6b2e28afaeb8977832a93e2239/beginai-2.0.1.tar.gz
+[2023-04-30 03:00:42] INFO root fetch - processPackages [beginai-cli]: executing diffoscope
+[2023-04-30 03:00:42] INFO root fetch - processPackages [beginai-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beginai-cli-1.7.0.tar.gz tmp/beginai-cli-1.8.0.tar.gz --markdown 20230430/b/beginai-cli/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-04-30 03:00:43] INFO root fetch - processPackages [beginai]: executing diffoscope
+[2023-04-30 03:00:43] INFO root fetch - processPackages [beginai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beginai-2.0.0.tar.gz tmp/beginai-2.0.1.tar.gz --markdown 20230430/b/beginai/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-30 03:00:43] INFO root fetch - processPackages [proxy-protocol]: Downloading https://files.pythonhosted.org/packages/79/10/d039fadca5dfb9370262d5766b082cb4bafdf675935b1fed7b6d42fef532/proxy-protocol-0.9.1.tar.gz
+[2023-04-30 03:00:43] INFO root fetch - processPackages [proxy-protocol]: executing diffoscope
+[2023-04-30 03:00:43] INFO root fetch - processPackages [proxy-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxy-protocol-0.9.0rc2.tar.gz tmp/proxy-protocol-0.9.1.tar.gz --markdown 20230430/p/proxy-protocol/0.9.0rc2-0.9.1/diff.md --exclude *.pyd
+[2023-04-30 03:00:43] INFO root fetch - processPackages [hydrotoolbox]: Downloading https://files.pythonhosted.org/packages/7b/b8/cbc20bcd5dc2f1b6180d5bc4dd00a555f9cc8cc310c9cd2b5aea3c9296d7/hydrotoolbox-2.0.6.tar.gz
+[2023-04-30 03:00:43] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-04-30 03:00:44] INFO root fetch - main [MainThread]: End processing [beginai-cli]: success
+[2023-04-30 03:00:44] INFO root fetch - main [MainThread]: End processing [beginai]: success
+[2023-04-30 03:00:44] INFO root fetch - processPackages [hydrotoolbox]: executing diffoscope
+[2023-04-30 03:00:44] INFO root fetch - processPackages [hydrotoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydrotoolbox-2.0.5.tar.gz tmp/hydrotoolbox-2.0.6.tar.gz --markdown 20230430/h/hydrotoolbox/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-04-30 03:00:44] INFO root fetch - main [MainThread]: End processing [proxy-protocol]: success
+[2023-04-30 03:00:47] INFO root fetch - main [MainThread]: End processing [hydrotoolbox]: success
+[2023-04-30 03:01:03] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-04-30 03:01:03] INFO root fetch - main [MainThread]: Store serial: [17913614]
