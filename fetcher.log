@@ -7630,3 +7630,43 @@
 [2023-04-30 16:31:58] INFO root fetch - main [MainThread]: End processing [narrow-down]: success
 [2023-04-30 16:32:03] INFO root fetch - main [MainThread]: End processing [RenderWatcher]: success
 [2023-04-30 16:32:03] INFO root fetch - main [MainThread]: Store serial: [17917417]
+[2023-04-30 16:37:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917417]
+[2023-04-30 16:37:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zadu
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyproject-generator
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ccxt
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Musicreater
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bridgecrew
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sleuren
+[2023-04-30 16:37:12] INFO root fetch - processPackages [pyproject-generator]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 16:37:12] INFO root fetch - processPackages [zadu]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.84]
+[2023-04-30 16:37:12] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 16:37:12] INFO root fetch - processPackages [Musicreater]: New version: [0.5.0.2] Old Version: [0.5.0.1]
+[2023-04-30 16:37:12] INFO root fetch - processPackages [sleuren]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-30 16:37:12] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-30 16:37:12] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230430/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/bc/f9/8bc403593d525c71bc67a58a83a2590082be044fa8c8939820158289133b/ccxt-3.0.84.tar.gz
+[2023-04-30 16:37:12] INFO root fetch - processPackages [zadu]: Downloading https://files.pythonhosted.org/packages/8e/5c/75d7f6e0a559abcc9aea5932c0d96f3c79dceeab18baa8141a8c7b97e171/zadu-0.0.1.tar.gz
+[2023-04-30 16:37:12] INFO root fetch - processPackages [pyproject-generator]: Downloading https://files.pythonhosted.org/packages/d7/fc/ee27398d5354384968204e703a3f9f7e2154cf15149559c48d80e7109d56/pyproject-generator-0.1.2.tar.gz
+[2023-04-30 16:37:12] INFO root fetch - processPackages [pyproject-generator]: executing diffoscope
+[2023-04-30 16:37:12] INFO root fetch - processPackages [pyproject-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-generator-0.1.1.tar.gz tmp/pyproject-generator-0.1.2.tar.gz --markdown 20230430/p/pyproject-generator/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 16:37:12] INFO root fetch - processPackages [sleuren]: Downloading https://files.pythonhosted.org/packages/b9/33/1dddcf59d88c2da51abfde1fb38a758488ae89f3609e1098a5178fb97ba8/sleuren-1.0.4.tar.gz
+[2023-04-30 16:37:12] INFO root fetch - processPackages [Musicreater]: Downloading https://files.pythonhosted.org/packages/75/7e/99544de344b02bbc81f4f1f5bda15f3e78698144ca008695dd836ad334a1/Musicreater-0.5.0.2.tar.gz
+[2023-04-30 16:37:12] INFO root fetch - processPackages [zadu]: Downloading https://files.pythonhosted.org/packages/2f/0e/437df31e664adced019a63af594469dadf4dbc245f3fd532a2f60edf1f3e/zadu-0.0.2.tar.gz
+[2023-04-30 16:37:12] INFO root fetch - processPackages [Musicreater]: executing diffoscope
+[2023-04-30 16:37:12] INFO root fetch - processPackages [Musicreater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Musicreater-0.5.0.1.tar.gz tmp/Musicreater-0.5.0.2.tar.gz --markdown 20230430/M/Musicreater/0.5.0.1-0.5.0.2/diff.md --exclude *.pyd
+[2023-04-30 16:37:12] INFO root fetch - processPackages [zadu]: executing diffoscope
+[2023-04-30 16:37:12] INFO root fetch - processPackages [zadu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zadu-0.0.1.tar.gz tmp/zadu-0.0.2.tar.gz --markdown 20230430/z/zadu/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-30 16:37:12] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.84.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230430/c/ccxt/3.0.84-3.0.9/diff.md --exclude *.pyd
+[2023-04-30 16:37:13] INFO root fetch - processPackages [sleuren]: Downloading https://files.pythonhosted.org/packages/45/3e/de828f6627192809b3833b47b99d792760b0710aa8d791f6d5322d76a648/sleuren-1.0.5-py3-none-any.whl
+[2023-04-30 16:37:13] INFO root fetch - processPackages [sleuren]: executing diffoscope
+[2023-04-30 16:37:13] INFO root fetch - processPackages [sleuren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleuren-1.0.4.tar.gz tmp/sleuren-1.0.5-py3-none-any.whl.zip --markdown 20230430/s/sleuren/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-30 16:37:13] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-30 16:37:13] INFO root fetch - main [MainThread]: End processing [pyproject-generator]: success
+[2023-04-30 16:37:13] INFO root fetch - main [MainThread]: End processing [zadu]: success
+[2023-04-30 16:37:14] INFO root fetch - main [MainThread]: End processing [sleuren]: success
+[2023-04-30 16:37:14] INFO root fetch - main [MainThread]: End processing [Musicreater]: success
+[2023-04-30 16:37:38] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-04-30 16:37:38] INFO root fetch - main [MainThread]: Store serial: [17917431]
