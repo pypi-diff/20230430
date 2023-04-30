@@ -4770,3 +4770,32 @@
 [2023-04-30 11:09:48] INFO root fetch - main [MainThread]: End processing [yeonghun123]: success
 [2023-04-30 11:09:48] INFO root fetch - main [MainThread]: End processing [Shark-sac-Korean-editor]: success
 [2023-04-30 11:09:48] INFO root fetch - main [MainThread]: Store serial: [17915670]
+[2023-04-30 11:14:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915670]
+[2023-04-30 11:14:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 11:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mwbot
+[2023-04-30 11:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-filter
+[2023-04-30 11:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly
+[2023-04-30 11:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test-swagger-coverage
+[2023-04-30 11:14:58] INFO root fetch - processPackages [django-filter]: New version: [23.2] Old Version: [23.1]
+[2023-04-30 11:14:58] INFO root fetch - processPackages [mwbot]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 11:14:58] INFO root fetch - processPackages [test-swagger-coverage]: New version: [2.1.58] Old Version: [2.1.57]
+[2023-04-30 11:14:58] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230430] Old Version: [2.13.0.dev20230429]
+[2023-04-30 11:14:58] INFO root fetch - processPackages [django-filter]: Downloading https://files.pythonhosted.org/packages/0e/6a/9f261c3270d6011d32a4b5e853c60f5bfcc24e7a6978db23d68a1606d27c/django-filter-23.1.tar.gz
+[2023-04-30 11:14:58] INFO root fetch - processPackages [test-swagger-coverage]: Downloading https://files.pythonhosted.org/packages/47/07/049756109c5920b3c6d56a31127503e96ccfe7b7228d6c860c3f99d8bd8c/test_swagger_coverage-2.1.58.tar.gz
+[2023-04-30 11:14:58] INFO root fetch - processPackages [mwbot]: Downloading https://files.pythonhosted.org/packages/04/2a/83c3c929ffa136caf04fe2e04e9996f788f3d902fda90f4b4a657879163b/mwbot-1.0.8.tar.gz
+[2023-04-30 11:14:58] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/e6/45/7ccd033d10507d5cc1d288d8b7edda0ee0e389cb430afe180395f710c8b4/tf_nightly-2.13.0.dev20230429-cp39-cp39-win_amd64.whl
+[2023-04-30 11:14:58] INFO root fetch - processPackages [test-swagger-coverage]: executing diffoscope
+[2023-04-30 11:14:58] INFO root fetch - processPackages [test-swagger-coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_swagger_coverage-2.1.57.tar.gz tmp/test_swagger_coverage-2.1.58.tar.gz --markdown 20230430/t/test-swagger-coverage/2.1.57-2.1.58/diff.md --exclude *.pyd
+[2023-04-30 11:14:58] INFO root fetch - processPackages [django-filter]: Downloading https://files.pythonhosted.org/packages/21/bd/c64e0c0c45fed5e6ee10efe96b1793d677dc4872932a620356fce28a81c3/django-filter-23.2.tar.gz
+[2023-04-30 11:14:59] INFO root fetch - processPackages [django-filter]: executing diffoscope
+[2023-04-30 11:14:59] INFO root fetch - processPackages [django-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-filter-23.1.tar.gz tmp/django-filter-23.2.tar.gz --markdown 20230430/d/django-filter/23.1-23.2/diff.md --exclude *.pyd
+[2023-04-30 11:14:59] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/7e/2e/ddd242d3db8de99cdf7de33399b2c5e6c8c37c7b7f6965cd39ebc16c4a15/tf_nightly-2.13.0.dev20230430-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 11:14:59] INFO root fetch - processPackages [mwbot]: Downloading https://files.pythonhosted.org/packages/13/d9/ccd8a39a431409e07bc8745f8cdfd517a823b4bbc6124285146a65795a24/mwbot-1.0.9.tar.gz
+[2023-04-30 11:14:59] WARNING root fetch - processPackages [tf-nightly]: Skipping package: exceeds size limit 524108741>=10485760
+[2023-04-30 11:14:59] INFO root fetch - main [MainThread]: End processing [tf-nightly] error
+[2023-04-30 11:14:59] INFO root fetch - processPackages [mwbot]: executing diffoscope
+[2023-04-30 11:14:59] INFO root fetch - processPackages [mwbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwbot-1.0.8.tar.gz tmp/mwbot-1.0.9.tar.gz --markdown 20230430/m/mwbot/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 11:14:59] INFO root fetch - main [MainThread]: End processing [test-swagger-coverage]: success
+[2023-04-30 11:15:00] INFO root fetch - main [MainThread]: End processing [mwbot]: success
+[2023-04-30 11:15:00] INFO root fetch - main [MainThread]: End processing [django-filter]: success
+[2023-04-30 11:15:00] INFO root fetch - main [MainThread]: Store serial: [17915681]
