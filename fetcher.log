@@ -6013,3 +6013,41 @@
 [2023-04-30 14:01:06] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
 [2023-04-30 14:01:06] INFO root fetch - main [MainThread]: End processing [ark]: success
 [2023-04-30 14:01:06] INFO root fetch - main [MainThread]: Store serial: [17916406]
+[2023-04-30 14:06:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916406]
+[2023-04-30 14:06:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 14:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: findmyorder
+[2023-04-30 14:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: instld
+[2023-04-30 14:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-distance-calculator
+[2023-04-30 14:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: amino.api
+[2023-04-30 14:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-agents-nightly
+[2023-04-30 14:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: minivn
+[2023-04-30 14:06:15] INFO root fetch - processPackages [amino.api]: New version: [1.2b6] Old Version: [1.2b5]
+[2023-04-30 14:06:15] INFO root fetch - processPackages [minivn]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 14:06:15] INFO root fetch - processPackages [instld]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 14:06:15] INFO root fetch - processPackages [simple-distance-calculator]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 14:06:15] INFO root fetch - processPackages [findmyorder]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 14:06:15] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-04-30 14:06:15] INFO root fetch - processPackages [minivn]: Downloading https://files.pythonhosted.org/packages/a0/9b/4f05e2300717a3c09c58f1ebe992ab49b3407e06a5e236f7bada64619ea5/minivn-0.1.2.tar.gz
+[2023-04-30 14:06:15] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-30 14:06:15] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.0.8.tar.gz tmp/findmyorder-1.0.9.tar.gz --markdown 20230430/f/findmyorder/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 14:06:15] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-04-30 14:06:15] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230430/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-04-30 14:06:15] INFO root fetch - processPackages [simple-distance-calculator]: Downloading https://files.pythonhosted.org/packages/b1/ee/81aa2a89e114acc9f5b4c584938e557b6636d322333c498956bbebc4f5d3/simple_distance_calculator-0.0.3.tar.gz
+[2023-04-30 14:06:15] INFO root fetch - processPackages [amino.api]: Downloading https://files.pythonhosted.org/packages/83/e9/c03b21bcd14e4d57c71a0eb20ae248d244ae13063cfbd66955f0baebbaf0/amino.api-1.2b6.tar.gz
+[2023-04-30 14:06:15] INFO root fetch - processPackages [instld]: Downloading https://files.pythonhosted.org/packages/4f/09/6cb1404406d3ce9a443bf03d8e4b8f4a81949ad90238aad4a06168e5a5af/instld-0.0.6.tar.gz
+[2023-04-30 14:06:15] INFO root fetch - processPackages [simple-distance-calculator]: executing diffoscope
+[2023-04-30 14:06:15] INFO root fetch - processPackages [simple-distance-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_distance_calculator-0.0.2.tar.gz tmp/simple_distance_calculator-0.0.3.tar.gz --markdown 20230430/s/simple-distance-calculator/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 14:06:15] INFO root fetch - processPackages [instld]: executing diffoscope
+[2023-04-30 14:06:15] INFO root fetch - processPackages [instld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instld-0.0.5.tar.gz tmp/instld-0.0.6.tar.gz --markdown 20230430/i/instld/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 14:06:15] INFO root fetch - processPackages [minivn]: Downloading https://files.pythonhosted.org/packages/be/7a/02b2cb9eaa6b39d31fa73a3bf2508e65258c78824509bcdecf13ba140d9b/minivn-0.1.3.tar.gz
+[2023-04-30 14:06:15] INFO root fetch - processPackages [amino.api]: executing diffoscope
+[2023-04-30 14:06:15] INFO root fetch - processPackages [amino.api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.api-1.2b5.tar.gz tmp/amino.api-1.2b6.tar.gz --markdown 20230430/a/amino.api/1.2b5-1.2b6/diff.md --exclude *.pyd
+[2023-04-30 14:06:15] INFO root fetch - processPackages [minivn]: executing diffoscope
+[2023-04-30 14:06:15] INFO root fetch - processPackages [minivn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minivn-0.1.2.tar.gz tmp/minivn-0.1.3.tar.gz --markdown 20230430/m/minivn/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 14:06:16] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-30 14:06:16] INFO root fetch - main [MainThread]: End processing [simple-distance-calculator]: success
+[2023-04-30 14:06:16] INFO root fetch - main [MainThread]: End processing [instld]: success
+[2023-04-30 14:06:16] INFO root fetch - main [MainThread]: End processing [amino.api]: success
+[2023-04-30 14:06:23] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-04-30 14:06:39] INFO root fetch - main [MainThread]: End processing [minivn]: success
+[2023-04-30 14:06:39] INFO root fetch - main [MainThread]: Store serial: [17916422]
