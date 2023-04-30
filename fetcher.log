@@ -8484,3 +8484,59 @@
 [2023-04-30 18:19:05] INFO root fetch - main [MainThread]: End processing [proovl-sms]: success
 [2023-04-30 18:19:06] INFO root fetch - main [MainThread]: End processing [space-invaders]: success
 [2023-04-30 18:19:06] INFO root fetch - main [MainThread]: Store serial: [17918046]
+[2023-04-30 18:24:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918046]
+[2023-04-30 18:24:15] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram-ext
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rbxflip
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syscolourv7
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vents
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rbxflip
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: proovl-sms
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hledger-lots
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: napatrackmater
+[2023-04-30 18:24:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hitchstory
+[2023-04-30 18:24:15] WARNING root fetch - processPackages [syscolourv7]: Skipping, unable to determine old version
+[2023-04-30 18:24:15] INFO root fetch - main [MainThread]: End processing [syscolourv7] error
+[2023-04-30 18:24:15] INFO root fetch - processPackages [vents]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 18:24:15] INFO root fetch - processPackages [aiogram-ext]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 18:24:15] INFO root fetch - processPackages [proovl-sms]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 18:24:15] INFO root fetch - processPackages [napatrackmater]: New version: [3.4.2] Old Version: [3.4.1]
+[2023-04-30 18:24:15] INFO root fetch - processPackages [hledger-lots]: New version: [0.2.0] Old Version: [0.1.6]
+[2023-04-30 18:24:15] INFO root fetch - processPackages [hitchstory]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/08/e6/aa781fa95e13dc95c5665b2a05811b6571ddcc21d25856410d6f78b001b2/rbxflip-1.0.3.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/08/e6/aa781fa95e13dc95c5665b2a05811b6571ddcc21d25856410d6f78b001b2/rbxflip-1.0.3.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/2e/4d/3925024fdd8516129d6b6e8e62fd602004b1dda336088b5110043c83440f/napatrackmater-3.4.1.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [proovl-sms]: Downloading https://files.pythonhosted.org/packages/db/ab/4470a38fda0b1734c6f8d5ba3d642ea3c8310c6acbbd8ff8bd6444330748/proovl-sms-0.1.2.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/59/a9/306122e662f14e1f382c22909982ab8823c96c15be222f5d7669b4cd55fd/aiogram-ext-0.5.1.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [vents]: Downloading https://files.pythonhosted.org/packages/7a/b1/cdfbca5dbdeb3625a5a1cd095bc7def3b09bd9fbc644904606863f410797/vents-0.0.6.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [proovl-sms]: executing diffoscope
+[2023-04-30 18:24:15] INFO root fetch - processPackages [proovl-sms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proovl-sms-0.1.1.tar.gz tmp/proovl-sms-0.1.2.tar.gz --markdown 20230430/p/proovl-sms/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 18:24:15] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-30 18:24:15] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.5.0.tar.gz tmp/aiogram-ext-0.5.1.tar.gz --markdown 20230430/a/aiogram-ext/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/83/74/83d9b47a94bc8e60a4ba31b3f3da7f730bf940c4898c499b05a126411397/rbxflip-1.0.4.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/83/74/83d9b47a94bc8e60a4ba31b3f3da7f730bf940c4898c499b05a126411397/rbxflip-1.0.4.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [hledger-lots]: Downloading https://files.pythonhosted.org/packages/d4/07/c933ccaefb8b2f6f90a5e99775fe97cb07b3a1ee205df78e36b6aadcc7c6/hledger_lots-0.2.0.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [vents]: executing diffoscope
+[2023-04-30 18:24:15] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/ce/a8/be1483b2d38bddd977f173eb3f5d62c4704de4cfef8632abdfe9d49e486c/napatrackmater-3.4.2.tar.gz
+[2023-04-30 18:24:15] INFO root fetch - processPackages [vents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vents-0.0.5.tar.gz tmp/vents-0.0.6.tar.gz --markdown 20230430/v/vents/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 18:24:15] INFO root fetch - processPackages [hitchstory]: executing diffoscope
+[2023-04-30 18:24:15] INFO root fetch - processPackages [hitchstory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchstory-0.9.0.tar.gz tmp/hitchstory-0.9.1.tar.gz --markdown 20230430/h/hitchstory/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: executing diffoscope
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbxflip-1.0.3.tar.gz tmp/rbxflip-1.0.4.tar.gz --markdown 20230430/r/rbxflip/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: executing diffoscope
+[2023-04-30 18:24:15] INFO root fetch - processPackages [rbxflip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbxflip-1.0.3.tar.gz tmp/rbxflip-1.0.4.tar.gz --markdown 20230430/r/rbxflip/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 18:24:15] INFO root fetch - processPackages [hledger-lots]: executing diffoscope
+[2023-04-30 18:24:15] INFO root fetch - processPackages [hledger-lots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hledger_lots-0.1.6.tar.gz tmp/hledger_lots-0.2.0.tar.gz --markdown 20230430/h/hledger-lots/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 18:24:15] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2023-04-30 18:24:15] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-3.4.1.tar.gz tmp/napatrackmater-3.4.2.tar.gz --markdown 20230430/n/napatrackmater/3.4.1-3.4.2/diff.md --exclude *.pyd
+[2023-04-30 18:24:16] INFO root fetch - main [MainThread]: End processing [proovl-sms]: success
+[2023-04-30 18:24:17] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-30 18:24:17] INFO root fetch - main [MainThread]: End processing [hitchstory]: success
+[2023-04-30 18:24:17] INFO root fetch - main [MainThread]: End processing [rbxflip]: success
+[2023-04-30 18:24:17] INFO root fetch - main [MainThread]: End processing [rbxflip]: success
+[2023-04-30 18:24:17] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2023-04-30 18:24:17] INFO root fetch - main [MainThread]: End processing [vents]: success
+[2023-04-30 18:24:17] INFO root fetch - main [MainThread]: End processing [hledger-lots]: success
+[2023-04-30 18:24:17] INFO root fetch - main [MainThread]: Store serial: [17918077]
