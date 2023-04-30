@@ -9255,3 +9255,33 @@
 [2023-04-30 19:43:50] INFO root fetch - main [MainThread]: End processing [jc]: success
 [2023-04-30 19:44:16] INFO root fetch - main [MainThread]: End processing [meerkat-ml]: success
 [2023-04-30 19:44:16] INFO root fetch - main [MainThread]: Store serial: [17918632]
+[2023-04-30 19:49:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918632]
+[2023-04-30 19:49:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 19:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hiddifypanel
+[2023-04-30 19:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: translators
+[2023-04-30 19:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: javiera-saludpackage
+[2023-04-30 19:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geotoolkit
+[2023-04-30 19:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jopdf
+[2023-04-30 19:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: insights-extractor
+[2023-04-30 19:49:25] WARNING root fetch - processPackages [javiera-saludpackage]: Skipping, unable to determine old version
+[2023-04-30 19:49:25] INFO root fetch - main [MainThread]: End processing [javiera-saludpackage] error
+[2023-04-30 19:49:25] INFO root fetch - processPackages [insights-extractor]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 19:49:25] WARNING root fetch - processPackages [geotoolkit]: Skipping, unable to determine old version
+[2023-04-30 19:49:25] INFO root fetch - main [MainThread]: End processing [geotoolkit] error
+[2023-04-30 19:49:25] INFO root fetch - processPackages [hiddifypanel]: New version: [6.0.0.dev4] Old Version: [6.0.0.dev3]
+[2023-04-30 19:49:25] INFO root fetch - processPackages [translators]: New version: [5.7.1] Old Version: [5.7.0]
+[2023-04-30 19:49:25] WARNING root fetch - processPackages [jopdf]: Skipping, unable to determine old version
+[2023-04-30 19:49:25] INFO root fetch - main [MainThread]: End processing [jopdf] error
+[2023-04-30 19:49:25] INFO root fetch - processPackages [insights-extractor]: executing diffoscope
+[2023-04-30 19:49:25] INFO root fetch - processPackages [insights-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insights-extractor-0.1.4.tar.gz tmp/insights-extractor-0.1.5.tar.gz --markdown 20230430/i/insights-extractor/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 19:49:26] INFO root fetch - processPackages [translators]: Downloading https://files.pythonhosted.org/packages/ff/fb/12c9806fbf2aae5dac2b28142f6302b4d22eb072a0e4c71e0655de4fb6ba/translators-5.7.0.tar.gz
+[2023-04-30 19:49:26] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/71/cb/ce2ed9b4fb451f0e8086808f20a5703ad7a048f2702f103506a8cbcbbbe8/hiddifypanel-6.0.0.dev4-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-30 19:49:26] INFO root fetch - processPackages [translators]: Downloading https://files.pythonhosted.org/packages/cf/de/24437012591eab0682b9e3e48b0f2047186fb71ca59cd644198e52b6393d/translators-5.7.1.tar.gz
+[2023-04-30 19:49:26] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-30 19:49:26] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-6.0.0.dev3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-6.0.0.dev4-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230430/h/hiddifypanel/6.0.0.dev3-6.0.0.dev4/diff.md --exclude *.pyd
+[2023-04-30 19:49:26] INFO root fetch - processPackages [translators]: executing diffoscope
+[2023-04-30 19:49:26] INFO root fetch - processPackages [translators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translators-5.7.0.tar.gz tmp/translators-5.7.1.tar.gz --markdown 20230430/t/translators/5.7.0-5.7.1/diff.md --exclude *.pyd
+[2023-04-30 19:49:27] INFO root fetch - main [MainThread]: End processing [insights-extractor]: success
+[2023-04-30 19:49:27] INFO root fetch - main [MainThread]: End processing [translators]: success
+[2023-04-30 19:49:47] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-30 19:49:47] INFO root fetch - main [MainThread]: Store serial: [17918659]
