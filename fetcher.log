@@ -3166,3 +3166,33 @@
 [2023-04-30 07:46:55] INFO root fetch - main [MainThread]: End processing [unisci]: success
 [2023-04-30 07:46:55] INFO root fetch - main [MainThread]: End processing [rp]: success
 [2023-04-30 07:46:56] INFO root fetch - main [MainThread]: Store serial: [17914758]
+[2023-04-30 07:51:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914758]
+[2023-04-30 07:52:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 07:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhrp
+[2023-04-30 07:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-lambda-mess
+[2023-04-30 07:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfirebird
+[2023-04-30 07:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmtools
+[2023-04-30 07:52:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moecolor
+[2023-04-30 07:52:04] INFO root fetch - processPackages [aws-lambda-mess]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 07:52:04] INFO root fetch - processPackages [pyhrp]: New version: [0.6.8] Old Version: [0.6.7]
+[2023-04-30 07:52:04] INFO root fetch - processPackages [moecolor]: New version: [1.0.1] Old Version: [1.0.0rc1]
+[2023-04-30 07:52:04] INFO root fetch - processPackages [tmtools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 07:52:04] WARNING root fetch - processPackages [pyfirebird]: Skipping, unable to determine old version
+[2023-04-30 07:52:04] INFO root fetch - main [MainThread]: End processing [pyfirebird] error
+[2023-04-30 07:52:04] INFO root fetch - processPackages [moecolor]: executing diffoscope
+[2023-04-30 07:52:04] INFO root fetch - processPackages [moecolor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moecolor-1.0.0rc1.tar.gz tmp/moecolor-1.0.1.tar.gz --markdown 20230430/m/moecolor/1.0.0rc1-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 07:52:04] INFO root fetch - processPackages [aws-lambda-mess]: Downloading https://files.pythonhosted.org/packages/4e/82/2b6e0d24018330d9841e155dda037b06d40b4ebacfe3f857e08b981a2d31/aws_lambda_mess-0.0.4.tar.gz
+[2023-04-30 07:52:04] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/9f/d4/211b0e4a45d137804e6ff06e9d3c3eb37e733e3ccd3b3229898dd5c89e4a/pyhrp-0.6.8.tar.gz
+[2023-04-30 07:52:04] INFO root fetch - processPackages [tmtools]: Downloading https://files.pythonhosted.org/packages/90/33/6b0a3d4befe126530ad659935c0560eccb02f00dace8fadd47e0967f9fe7/tmtools-0.0.2-cp39-cp39-win_amd64.whl
+[2023-04-30 07:52:04] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 07:52:04] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.6.7.tar.gz tmp/pyhrp-0.6.8.tar.gz --markdown 20230430/p/pyhrp/0.6.7-0.6.8/diff.md --exclude *.pyd
+[2023-04-30 07:52:04] INFO root fetch - processPackages [aws-lambda-mess]: executing diffoscope
+[2023-04-30 07:52:04] INFO root fetch - processPackages [aws-lambda-mess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_mess-0.0.3.tar.gz tmp/aws_lambda_mess-0.0.4.tar.gz --markdown 20230430/a/aws-lambda-mess/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 07:52:05] INFO root fetch - processPackages [tmtools]: Downloading https://files.pythonhosted.org/packages/2b/81/03ff3a385eda97c64a72d67b93f612ff4debc3341b871daf089ddcac8c3d/tmtools-0.0.3-cp37-cp37m-musllinux_1_1_i686.whl
+[2023-04-30 07:52:05] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 07:52:05] INFO root fetch - main [MainThread]: End processing [moecolor]: success
+[2023-04-30 07:52:05] INFO root fetch - main [MainThread]: End processing [aws-lambda-mess]: success
+[2023-04-30 07:52:06] INFO root fetch - processPackages [tmtools]: executing diffoscope
+[2023-04-30 07:52:06] INFO root fetch - processPackages [tmtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmtools-0.0.2-cp39-cp39-win_amd64.whl.zip tmp/tmtools-0.0.3-cp37-cp37m-musllinux_1_1_i686.whl.zip --markdown 20230430/t/tmtools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 07:52:11] INFO root fetch - main [MainThread]: End processing [tmtools]: success
+[2023-04-30 07:52:11] INFO root fetch - main [MainThread]: Store serial: [17914795]
