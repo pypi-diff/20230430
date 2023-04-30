@@ -7713,3 +7713,34 @@
 [2023-04-30 16:42:53] INFO root fetch - main [MainThread]: End processing [cerebrium]: success
 [2023-04-30 16:42:54] INFO root fetch - main [MainThread]: End processing [sleuren]: success
 [2023-04-30 16:42:54] INFO root fetch - main [MainThread]: Store serial: [17917481]
+[2023-04-30 16:47:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917481]
+[2023-04-30 16:48:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 16:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: botanix
+[2023-04-30 16:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raitracker
+[2023-04-30 16:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: linuxserver
+[2023-04-30 16:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-serverless-clamscan
+[2023-04-30 16:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyblitzdg
+[2023-04-30 16:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mmlab-lightning
+[2023-04-30 16:48:03] INFO root fetch - processPackages [raitracker]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 16:48:03] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.4.99] Old Version: [2.4.98]
+[2023-04-30 16:48:03] WARNING root fetch - processPackages [botanix]: Skipping, unable to determine old version
+[2023-04-30 16:48:03] INFO root fetch - main [MainThread]: End processing [botanix] error
+[2023-04-30 16:48:03] INFO root fetch - processPackages [raitracker]: Downloading https://files.pythonhosted.org/packages/c2/a2/b981e32fe89498f31180f0a5857709e3ed7132874f84229559b3a6eb00d4/raitracker-0.1.1.tar.gz
+[2023-04-30 16:48:03] WARNING root fetch - processPackages [mmlab-lightning]: Skipping, unable to determine old version
+[2023-04-30 16:48:03] INFO root fetch - processPackages [linuxserver]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 16:48:03] INFO root fetch - main [MainThread]: End processing [mmlab-lightning] error
+[2023-04-30 16:48:03] INFO root fetch - processPackages [pyblitzdg]: New version: [1.0.0] Old Version: [0.3.1]
+[2023-04-30 16:48:03] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2023-04-30 16:48:03] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.4.98.tar.gz tmp/cdk-serverless-clamscan-2.4.99.tar.gz --markdown 20230430/c/cdk-serverless-clamscan/2.4.98-2.4.99/diff.md --exclude *.pyd
+[2023-04-30 16:48:03] WARNING root fetch - processPackages [raitracker]: Skipping package: exceeds size limit 78660421>=10485760
+[2023-04-30 16:48:03] INFO root fetch - main [MainThread]: End processing [raitracker] error
+[2023-04-30 16:48:03] INFO root fetch - processPackages [linuxserver]: Downloading https://files.pythonhosted.org/packages/c4/b8/bff1869f244bc70562729350ac504089b93b30c2701a579a60d9a5f4987c/linuxserver-0.1.0.tar.gz
+[2023-04-30 16:48:03] INFO root fetch - processPackages [pyblitzdg]: Downloading https://files.pythonhosted.org/packages/a4/12/9ce6b2ae32fc8a2cd71a6123dfa749e4d1113fa74ce62c22186e41443883/pyblitzdg-0.3.1-cp37-cp37m-manylinux2010_x86_64.whl
+[2023-04-30 16:48:03] WARNING root fetch - processPackages [pyblitzdg]: Skipping package: exceeds size limit 33334386>=10485760
+[2023-04-30 16:48:03] INFO root fetch - main [MainThread]: End processing [pyblitzdg] error
+[2023-04-30 16:48:03] INFO root fetch - processPackages [linuxserver]: Downloading https://files.pythonhosted.org/packages/e9/70/9fb7dbd19e2121b1b77b21aa883ed2fd81c3781b89e658f78bf8439a13bf/linuxserver-0.1.1.tar.gz
+[2023-04-30 16:48:04] INFO root fetch - processPackages [linuxserver]: executing diffoscope
+[2023-04-30 16:48:04] INFO root fetch - processPackages [linuxserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linuxserver-0.1.0.tar.gz tmp/linuxserver-0.1.1.tar.gz --markdown 20230430/l/linuxserver/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 16:48:04] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2023-04-30 16:48:05] INFO root fetch - main [MainThread]: End processing [linuxserver]: success
+[2023-04-30 16:48:05] INFO root fetch - main [MainThread]: Store serial: [17917502]
