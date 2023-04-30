@@ -7474,3 +7474,86 @@
 [2023-04-30 16:15:24] INFO root fetch - main [MainThread]: End processing [trading-strategy]: success
 [2023-04-30 16:16:01] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-30 16:16:01] INFO root fetch - main [MainThread]: Store serial: [17917340]
+[2023-04-30 16:21:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917340]
+[2023-04-30 16:21:10] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bacteria
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wafl
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfed
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfed-macos
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aws-arn
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: write-the
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sci-oer
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: iolanta-tables
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dkimpy
+[2023-04-30 16:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: zadu
+[2023-04-30 16:21:10] INFO root fetch - processPackages [wafl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [bacteria]: New version: [1.0.0] Old Version: [0.2.5]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [write-the]: New version: [0.8.0] Old Version: [0.7.7]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [pyfed-macos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [iolanta-tables]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-30 16:21:10] WARNING root fetch - processPackages [zadu]: Skipping, unable to determine old version
+[2023-04-30 16:21:10] INFO root fetch - processPackages [sci-oer]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [aws-arn]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [dkimpy]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [zadu]: Start processing: dkimpy
+[2023-04-30 16:21:10] INFO root fetch - main [MainThread]: End processing [zadu] error
+[2023-04-30 16:21:10] INFO root fetch - processPackages [dkimpy]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-30 16:21:10] INFO root fetch - processPackages [pyfed-macos]: executing diffoscope
+[2023-04-30 16:21:10] INFO root fetch - processPackages [pyfed-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed_macos-0.0.8.tar.gz tmp/pyfed_macos-0.0.9.tar.gz --markdown 20230430/p/pyfed-macos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 16:21:10] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 16:21:10] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 16:21:10] INFO root fetch - processPackages [wafl]: Downloading https://files.pythonhosted.org/packages/a0/29/9dad9f231dd8108642686c29bf65dadb5145c044bd38a4068e72e77065cc/wafl-0.0.8-py3-none-any.whl
+[2023-04-30 16:21:10] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/b7/5d/4f22a0cb7ce3952c4fae6466edbfde319147f88f32a31d3ad8b3b556700e/aws-arn-0.0.6.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [dkimpy]: Downloading https://files.pythonhosted.org/packages/e9/fa/d220babf87bc638cd36b289f4da42300108d40203759bbc7cc20a95db605/dkimpy-1.1.2.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [dkimpy]: Downloading https://files.pythonhosted.org/packages/e9/fa/d220babf87bc638cd36b289f4da42300108d40203759bbc7cc20a95db605/dkimpy-1.1.2.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [sci-oer]: Downloading https://files.pythonhosted.org/packages/c6/92/c2c66b10a69bbcf8e6d7728bbd03305ed28cf32d1ad7f1276bc47f693c56/sci-oer-1.1.0.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [bacteria]: Downloading https://files.pythonhosted.org/packages/6b/a3/ae6037dbfab769bcb2961d9f201ea099d7d5b28e3f3ef927a985d8b18429/bacteria-1.0.0.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [iolanta-tables]: Downloading https://files.pythonhosted.org/packages/99/6b/0c9648b66742101f9116523ceedfc6db44a6df7d2adf5b51b930c27b78e3/iolanta_tables-0.1.6.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [aws-arn]: executing diffoscope
+[2023-04-30 16:21:10] INFO root fetch - processPackages [aws-arn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-arn-0.0.5.tar.gz tmp/aws-arn-0.0.6.tar.gz --markdown 20230430/a/aws-arn/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 16:21:10] INFO root fetch - processPackages [write-the]: Downloading https://files.pythonhosted.org/packages/db/43/429942cbd94b27749ba4c87d364a33bfe9bec1aa3d01ba535d338f951923/write_the-0.8.0.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [bacteria]: executing diffoscope
+[2023-04-30 16:21:10] INFO root fetch - processPackages [bacteria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacteria-0.2.5.tar.gz tmp/bacteria-1.0.0.tar.gz --markdown 20230430/b/bacteria/0.2.5-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 16:21:10] INFO root fetch - processPackages [iolanta-tables]: executing diffoscope
+[2023-04-30 16:21:10] INFO root fetch - processPackages [iolanta-tables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iolanta_tables-0.1.5.tar.gz tmp/iolanta_tables-0.1.6.tar.gz --markdown 20230430/i/iolanta-tables/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-30 16:21:10] INFO root fetch - processPackages [dkimpy]: Downloading https://files.pythonhosted.org/packages/b6/bc/f95dd39731369ba4ff32fd78c6e6cf2e77ad8a98d14b6ae59cb03508e7eb/dkimpy-1.1.3.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [dkimpy]: Downloading https://files.pythonhosted.org/packages/b6/bc/f95dd39731369ba4ff32fd78c6e6cf2e77ad8a98d14b6ae59cb03508e7eb/dkimpy-1.1.3.tar.gz
+[2023-04-30 16:21:10] INFO root fetch - processPackages [write-the]: executing diffoscope
+[2023-04-30 16:21:10] INFO root fetch - processPackages [write-the]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/write_the-0.7.7.tar.gz tmp/write_the-0.8.0.tar.gz --markdown 20230430/w/write-the/0.7.7-0.8.0/diff.md --exclude *.pyd
+[2023-04-30 16:21:10] INFO root fetch - processPackages [sci-oer]: Downloading https://files.pythonhosted.org/packages/8e/d4/415cb0ef513b21e989053861f304eef731aa6120b4eb607f097c74535e11/sci-oer-1.2.0.tar.gz
+[2023-04-30 16:21:11] INFO root fetch - processPackages [dkimpy]: executing diffoscope
+[2023-04-30 16:21:11] INFO root fetch - processPackages [dkimpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkimpy-1.1.2.tar.gz tmp/dkimpy-1.1.3.tar.gz --markdown 20230430/d/dkimpy/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-30 16:21:11] INFO root fetch - processPackages [dkimpy]: executing diffoscope
+[2023-04-30 16:21:11] INFO root fetch - processPackages [dkimpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkimpy-1.1.2.tar.gz tmp/dkimpy-1.1.3.tar.gz --markdown 20230430/d/dkimpy/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-30 16:21:11] INFO root fetch - processPackages [sci-oer]: executing diffoscope
+[2023-04-30 16:21:11] INFO root fetch - processPackages [sci-oer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sci-oer-1.1.0.tar.gz tmp/sci-oer-1.2.0.tar.gz --markdown 20230430/s/sci-oer/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 16:21:11] INFO root fetch - processPackages [wafl]: Downloading https://files.pythonhosted.org/packages/e8/ba/a479c38e7318eb06392b407915b72a861eda434ae4f577eacb094e5f8d4a/wafl-0.0.9-py3-none-any.whl
+[2023-04-30 16:21:12] INFO root fetch - processPackages [pyfed-macos]: Start processing: spanishconjugator
+[2023-04-30 16:21:12] INFO root fetch - main [MainThread]: End processing [pyfed-macos]: success
+[2023-04-30 16:21:12] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-30 16:21:12] INFO root fetch - processPackages [pyfed]: Start processing: spanishconjugator
+[2023-04-30 16:21:12] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 16:21:12] INFO root fetch - processPackages [wafl]: executing diffoscope
+[2023-04-30 16:21:12] INFO root fetch - processPackages [wafl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wafl-0.0.8-py3-none-any.whl.zip tmp/wafl-0.0.9-py3-none-any.whl.zip --markdown 20230430/w/wafl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 16:21:12] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-30 16:21:12] INFO root fetch - processPackages [iolanta-tables]: Start processing: napatrackmater
+[2023-04-30 16:21:12] INFO root fetch - main [MainThread]: End processing [iolanta-tables]: success
+[2023-04-30 16:21:12] INFO root fetch - processPackages [napatrackmater]: New version: [3.4.0] Old Version: [3.3.9]
+[2023-04-30 16:21:12] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-30 16:21:12] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230430/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-30 16:21:12] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-30 16:21:12] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230430/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-30 16:21:12] INFO root fetch - main [MainThread]: End processing [sci-oer]: success
+[2023-04-30 16:21:12] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2023-04-30 16:21:12] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-3.3.9.tar.gz tmp/napatrackmater-3.4.0.tar.gz --markdown 20230430/n/napatrackmater/3.3.9-3.4.0/diff.md --exclude *.pyd
+[2023-04-30 16:21:12] INFO root fetch - main [MainThread]: End processing [aws-arn]: success
+[2023-04-30 16:21:12] INFO root fetch - main [MainThread]: End processing [bacteria]: success
+[2023-04-30 16:21:12] INFO root fetch - main [MainThread]: End processing [dkimpy]: success
+[2023-04-30 16:21:13] INFO root fetch - main [MainThread]: End processing [write-the]: success
+[2023-04-30 16:21:13] INFO root fetch - main [MainThread]: End processing [dkimpy]: success
+[2023-04-30 16:21:13] INFO root fetch - main [MainThread]: End processing [wafl]: success
+[2023-04-30 16:21:14] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-30 16:21:14] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-30 16:21:36] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2023-04-30 16:21:36] INFO root fetch - main [MainThread]: Store serial: [17917382]
