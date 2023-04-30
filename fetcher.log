@@ -1815,3 +1815,45 @@
 [2023-04-30 03:48:54] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-04-30 03:48:55] INFO root fetch - main [MainThread]: End processing [jupyter-black]: success
 [2023-04-30 03:48:55] INFO root fetch - main [MainThread]: Store serial: [17913870]
+[2023-04-30 03:53:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913870]
+[2023-04-30 03:54:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 03:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: homeassistant-stubs
+[2023-04-30 03:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mmmmmmmm
+[2023-04-30 03:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: homeassistant-stubs
+[2023-04-30 03:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oooooooo
+[2023-04-30 03:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fschat
+[2023-04-30 03:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bulk-mv
+[2023-04-30 03:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pppppppp
+[2023-04-30 03:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qqqqqqqq
+[2023-04-30 03:54:03] WARNING root fetch - processPackages [qqqqqqqq]: Skipping, unable to determine old version
+[2023-04-30 03:54:03] INFO root fetch - main [MainThread]: End processing [qqqqqqqq] error
+[2023-04-30 03:54:03] INFO root fetch - processPackages [bulk-mv]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 03:54:03] WARNING root fetch - processPackages [oooooooo]: Skipping, unable to determine old version
+[2023-04-30 03:54:03] INFO root fetch - processPackages [fschat]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-30 03:54:03] INFO root fetch - main [MainThread]: End processing [oooooooo] error
+[2023-04-30 03:54:03] WARNING root fetch - processPackages [pppppppp]: Skipping, unable to determine old version
+[2023-04-30 03:54:03] INFO root fetch - main [MainThread]: End processing [pppppppp] error
+[2023-04-30 03:54:03] WARNING root fetch - processPackages [mmmmmmmm]: Skipping, unable to determine old version
+[2023-04-30 03:54:03] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2023.5.0b4] Old Version: [2023.5.0b3]
+[2023-04-30 03:54:03] INFO root fetch - main [MainThread]: End processing [mmmmmmmm] error
+[2023-04-30 03:54:03] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2023.5.0b4] Old Version: [2023.5.0b3]
+[2023-04-30 03:54:03] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/69/4f/4d61f723dcaf235ed0c3bf72ddfd2f1d3a46b3350e660a87776da5ef3173/homeassistant_stubs-2023.5.0b3.tar.gz
+[2023-04-30 03:54:03] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/69/4f/4d61f723dcaf235ed0c3bf72ddfd2f1d3a46b3350e660a87776da5ef3173/homeassistant_stubs-2023.5.0b3.tar.gz
+[2023-04-30 03:54:03] INFO root fetch - processPackages [bulk-mv]: Downloading https://files.pythonhosted.org/packages/b5/62/3690731a59f04158b0c2e8de5cd87837ef85520323bdfdf163b09dd5b5cd/bulk-mv-0.1.3.tar.gz
+[2023-04-30 03:54:03] INFO root fetch - processPackages [fschat]: Downloading https://files.pythonhosted.org/packages/1f/26/271993b09429799af3b3018964d0850e87ed3ab45e2b22fc020f21aeaa3f/fschat-0.2.5.tar.gz
+[2023-04-30 03:54:04] INFO root fetch - processPackages [fschat]: executing diffoscope
+[2023-04-30 03:54:04] INFO root fetch - processPackages [fschat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fschat-0.2.4.tar.gz tmp/fschat-0.2.5.tar.gz --markdown 20230430/f/fschat/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-30 03:54:04] INFO root fetch - processPackages [bulk-mv]: Downloading https://files.pythonhosted.org/packages/9d/aa/60928edc8594113933c414b6f501f06ca83005e894849d6422e4c45694ad/bulk-mv-0.1.4.tar.gz
+[2023-04-30 03:54:04] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/8b/7c/e613fd523e681b1654b5f78b7ab767facb9a6bf1cb26327e5c29e829a23d/homeassistant_stubs-2023.5.0b4.tar.gz
+[2023-04-30 03:54:04] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/8b/7c/e613fd523e681b1654b5f78b7ab767facb9a6bf1cb26327e5c29e829a23d/homeassistant_stubs-2023.5.0b4.tar.gz
+[2023-04-30 03:54:04] INFO root fetch - processPackages [bulk-mv]: executing diffoscope
+[2023-04-30 03:54:04] INFO root fetch - processPackages [bulk-mv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bulk-mv-0.1.3.tar.gz tmp/bulk-mv-0.1.4.tar.gz --markdown 20230430/b/bulk-mv/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 03:54:04] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2023-04-30 03:54:04] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2023.5.0b3.tar.gz tmp/homeassistant_stubs-2023.5.0b4.tar.gz --markdown 20230430/h/homeassistant-stubs/2023.5.0b3-2023.5.0b4/diff.md --exclude *.pyd
+[2023-04-30 03:54:04] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2023-04-30 03:54:04] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2023.5.0b3.tar.gz tmp/homeassistant_stubs-2023.5.0b4.tar.gz --markdown 20230430/h/homeassistant-stubs/2023.5.0b3-2023.5.0b4/diff.md --exclude *.pyd
+[2023-04-30 03:54:05] INFO root fetch - main [MainThread]: End processing [bulk-mv]: success
+[2023-04-30 03:54:05] INFO root fetch - main [MainThread]: End processing [fschat]: success
+[2023-04-30 03:54:48] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2023-04-30 03:54:52] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2023-04-30 03:54:52] INFO root fetch - main [MainThread]: Store serial: [17913902]
