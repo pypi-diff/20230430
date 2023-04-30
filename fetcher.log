@@ -5450,3 +5450,58 @@
 [2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [Shark-sac-Korean-editor]: success
 [2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [Shark-sac-Korean-editor]: success
 [2023-04-30 12:52:04] INFO root fetch - main [MainThread]: Store serial: [17916085]
+[2023-04-30 12:57:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916085]
+[2023-04-30 12:57:14] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Shark-sac-Korean-editor
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-drf-cms
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: facefinder
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zepben.protobuf
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbterd
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: schoolware-api
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xju
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: test-swagger-coverage
+[2023-04-30 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-eks-blueprint
+[2023-04-30 12:57:14] INFO root fetch - processPackages [facefinder]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 12:57:14] INFO root fetch - processPackages [Shark-sac-Korean-editor]: New version: [2.0.4] Old Version: [2.0.0]
+[2023-04-30 12:57:14] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 12:57:14] INFO root fetch - processPackages [schoolware-api]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-30 12:57:14] ERROR root fetch - processPackages [cdk-eks-blueprint]: Unable to get metadata: No such project 'cdk-eks-blueprint'
+[2023-04-30 12:57:14] INFO root fetch - main [MainThread]: End processing [cdk-eks-blueprint] error
+[2023-04-30 12:57:14] INFO root fetch - processPackages [zepben.protobuf]: New version: [0.9.0b3] Old Version: [0.9.0b2]
+[2023-04-30 12:57:14] INFO root fetch - processPackages [dbterd]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-30 12:57:14] INFO root fetch - processPackages [xju]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-30 12:57:14] INFO root fetch - processPackages [test-swagger-coverage]: New version: [2.1.59] Old Version: [2.1.58]
+[2023-04-30 12:57:14] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 12:57:14] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.8.tar.gz tmp/django-drf-cms-0.1.9.tar.gz --markdown 20230430/d/django-drf-cms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 12:57:15] INFO root fetch - processPackages [zepben.protobuf]: Downloading https://files.pythonhosted.org/packages/e7/f9/98a738ec69d1cf6c1169c9e0e98d520ed5a5943e9911bce5201611265f81/zepben.protobuf-0.9.0b2-py3-none-any.whl
+[2023-04-30 12:57:15] INFO root fetch - processPackages [test-swagger-coverage]: Downloading https://files.pythonhosted.org/packages/0f/0b/a2007ecda7d6a3071f0809543e996b166f9d4c240cb6e010c8d6847e48a6/test_swagger_coverage-2.1.59.tar.gz
+[2023-04-30 12:57:15] INFO root fetch - processPackages [xju]: Downloading https://files.pythonhosted.org/packages/98/e1/b145040ac900407a7734b098221210b3d9adf7d756c52b5c1c4aa3432da8/xju-1.2.8.tar.gz
+[2023-04-30 12:57:15] INFO root fetch - processPackages [facefinder]: Downloading https://files.pythonhosted.org/packages/04/c5/2f0c3ff1c39426501dc897ab3257e75eb98a6ddbf0d5b682819d32ff16fa/facefinder-0.1.3.tar.gz
+[2023-04-30 12:57:15] INFO root fetch - processPackages [schoolware-api]: Downloading https://files.pythonhosted.org/packages/b5/a9/5d3f953d3e49c40326ea905caea00a6817cb5052781ea7cae43dadb04eab/schoolware_api-1.0.8.tar.gz
+[2023-04-30 12:57:15] INFO root fetch - processPackages [dbterd]: Downloading https://files.pythonhosted.org/packages/1c/64/f6bb79451ee85041697a0ce7402f9caa94a88b9567799ec19fa61795d227/dbterd-1.1.2.tar.gz
+[2023-04-30 12:57:15] INFO root fetch - processPackages [facefinder]: executing diffoscope
+[2023-04-30 12:57:15] INFO root fetch - processPackages [facefinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/facefinder-0.1.2.tar.gz tmp/facefinder-0.1.3.tar.gz --markdown 20230430/f/facefinder/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 12:57:15] INFO root fetch - processPackages [schoolware-api]: executing diffoscope
+[2023-04-30 12:57:15] INFO root fetch - processPackages [schoolware-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schoolware_api-1.0.7.tar.gz tmp/schoolware_api-1.0.8.tar.gz --markdown 20230430/s/schoolware-api/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-30 12:57:15] INFO root fetch - processPackages [test-swagger-coverage]: executing diffoscope
+[2023-04-30 12:57:15] INFO root fetch - processPackages [test-swagger-coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_swagger_coverage-2.1.58.tar.gz tmp/test_swagger_coverage-2.1.59.tar.gz --markdown 20230430/t/test-swagger-coverage/2.1.58-2.1.59/diff.md --exclude *.pyd
+[2023-04-30 12:57:15] INFO root fetch - processPackages [dbterd]: executing diffoscope
+[2023-04-30 12:57:15] INFO root fetch - processPackages [dbterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbterd-1.1.1.tar.gz tmp/dbterd-1.1.2.tar.gz --markdown 20230430/d/dbterd/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-30 12:57:15] INFO root fetch - processPackages [Shark-sac-Korean-editor]: Downloading https://files.pythonhosted.org/packages/58/b6/326560aefaf5f721f626d9b458958a5f4593b7e51c771d8235ce89090f90/Shark%20sac%20Korean%20editor-2.0.4.tar.gz
+[2023-04-30 12:57:15] INFO root fetch - processPackages [xju]: Downloading https://files.pythonhosted.org/packages/a4/e6/fbb75eb8d948a6b94c698ab095688bd1846642eca2a38deca8fc0fa2ab7b/xju-1.2.9.tar.gz
+[2023-04-30 12:57:15] INFO root fetch - processPackages [zepben.protobuf]: Downloading https://files.pythonhosted.org/packages/ea/50/751033a2cb3fef1cb800a48f0d63bf756c6cdb739fe466ebcae674b82ea8/zepben.protobuf-0.9.0b3-py3-none-any.whl
+[2023-04-30 12:57:15] INFO root fetch - processPackages [Shark-sac-Korean-editor]: executing diffoscope
+[2023-04-30 12:57:15] INFO root fetch - processPackages [Shark-sac-Korean-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shark sac Korean editor-2.0.0.tar.gz tmp/Shark sac Korean editor-2.0.4.tar.gz --markdown 20230430/S/Shark-sac-Korean-editor/2.0.0-2.0.4/diff.md --exclude *.pyd
+[2023-04-30 12:57:15] INFO root fetch - processPackages [xju]: executing diffoscope
+[2023-04-30 12:57:15] INFO root fetch - processPackages [xju]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xju-1.2.8.tar.gz tmp/xju-1.2.9.tar.gz --markdown 20230430/x/xju/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-30 12:57:15] INFO root fetch - processPackages [zepben.protobuf]: executing diffoscope
+[2023-04-30 12:57:15] INFO root fetch - processPackages [zepben.protobuf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zepben.protobuf-0.9.0b2-py3-none-any.whl.zip tmp/zepben.protobuf-0.9.0b3-py3-none-any.whl.zip --markdown 20230430/z/zepben.protobuf/0.9.0b2-0.9.0b3/diff.md --exclude *.pyd
+[2023-04-30 12:57:16] INFO root fetch - main [MainThread]: End processing [schoolware-api]: success
+[2023-04-30 12:57:16] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 12:57:16] INFO root fetch - main [MainThread]: End processing [facefinder]: success
+[2023-04-30 12:57:17] INFO root fetch - main [MainThread]: End processing [dbterd]: success
+[2023-04-30 12:57:17] INFO root fetch - main [MainThread]: End processing [xju]: success
+[2023-04-30 12:57:17] INFO root fetch - main [MainThread]: End processing [Shark-sac-Korean-editor]: success
+[2023-04-30 12:57:17] INFO root fetch - main [MainThread]: End processing [test-swagger-coverage]: success
+[2023-04-30 12:57:19] INFO root fetch - main [MainThread]: End processing [zepben.protobuf]: success
+[2023-04-30 12:57:19] INFO root fetch - main [MainThread]: Store serial: [17916116]
