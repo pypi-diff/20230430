@@ -10737,3 +10737,38 @@
 [2023-04-30 22:28:57] INFO root fetch - main [MainThread]: End processing [tungstenkit]: success
 [2023-04-30 22:29:03] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-30 22:29:03] INFO root fetch - main [MainThread]: Store serial: [17919854]
+[2023-04-30 22:34:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919854]
+[2023-04-30 22:34:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 22:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vitalijtverskoj-mess-client
+[2023-04-30 22:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: landsat9-lc
+[2023-04-30 22:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vitalijtverskoj-mess-server
+[2023-04-30 22:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: search-hound-ai
+[2023-04-30 22:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nudecrawler
+[2023-04-30 22:34:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypeek
+[2023-04-30 22:34:12] WARNING root fetch - processPackages [vitalijtverskoj-mess-server]: Skipping, unable to determine old version
+[2023-04-30 22:34:12] INFO root fetch - main [MainThread]: End processing [vitalijtverskoj-mess-server] error
+[2023-04-30 22:34:12] WARNING root fetch - processPackages [vitalijtverskoj-mess-client]: Skipping, unable to determine old version
+[2023-04-30 22:34:12] INFO root fetch - main [MainThread]: End processing [vitalijtverskoj-mess-client] error
+[2023-04-30 22:34:12] INFO root fetch - processPackages [search-hound-ai]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-04-30 22:34:12] INFO root fetch - processPackages [landsat9-lc]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 22:34:12] INFO root fetch - processPackages [pypeek]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-04-30 22:34:12] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-30 22:34:12] INFO root fetch - processPackages [search-hound-ai]: executing diffoscope
+[2023-04-30 22:34:12] INFO root fetch - processPackages [search-hound-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search_hound_ai-0.1.6.tar.gz tmp/search_hound_ai-0.1.8.tar.gz --markdown 20230430/s/search-hound-ai/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-04-30 22:34:12] INFO root fetch - processPackages [landsat9-lc]: Downloading https://files.pythonhosted.org/packages/f0/26/372fac1a4b603fe32d6373efdf5b9e0a88a5319b5ad4ad599b45e2a0b0d8/landsat9_lc-0.0.5.tar.gz
+[2023-04-30 22:34:12] INFO root fetch - processPackages [pypeek]: Downloading https://files.pythonhosted.org/packages/36/b7/f93997569e35f139914b9ec6f6df4fd6e6d0fc0adf78e8fd290c04b5104e/pypeek-2.9.6.tar.gz
+[2023-04-30 22:34:12] INFO root fetch - processPackages [nudecrawler]: Downloading https://files.pythonhosted.org/packages/f9/a7/4d247a86ead362e70cf8a79b182a6f759c51f0a046b572785a9320ef9a43/nudecrawler-0.3.8.tar.gz
+[2023-04-30 22:34:13] INFO root fetch - processPackages [landsat9-lc]: Downloading https://files.pythonhosted.org/packages/78/8d/47a347f86c67a612a9e355490da738af08f2639e4cf4b0ec9f4d2af8c2a3/landsat9_lc-0.0.6.tar.gz
+[2023-04-30 22:34:13] INFO root fetch - processPackages [landsat9-lc]: executing diffoscope
+[2023-04-30 22:34:13] INFO root fetch - processPackages [landsat9-lc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landsat9_lc-0.0.5.tar.gz tmp/landsat9_lc-0.0.6.tar.gz --markdown 20230430/l/landsat9-lc/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 22:34:13] INFO root fetch - processPackages [nudecrawler]: Downloading https://files.pythonhosted.org/packages/19/82/6d5e08fc678e2204ea22b537ad273fe93e5ff1ca2c800b368fc73d7a48c6/nudecrawler-0.3.9.tar.gz
+[2023-04-30 22:34:13] INFO root fetch - processPackages [pypeek]: Downloading https://files.pythonhosted.org/packages/86/b8/519bcbb76920d8378cb297657f89b054a23101209ff8217d54b0071d51db/pypeek-2.9.7.tar.gz
+[2023-04-30 22:34:13] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-30 22:34:13] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230430/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-30 22:34:13] INFO root fetch - processPackages [pypeek]: executing diffoscope
+[2023-04-30 22:34:13] INFO root fetch - processPackages [pypeek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypeek-2.9.6.tar.gz tmp/pypeek-2.9.7.tar.gz --markdown 20230430/p/pypeek/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-04-30 22:34:13] INFO root fetch - main [MainThread]: End processing [search-hound-ai]: success
+[2023-04-30 22:34:14] INFO root fetch - main [MainThread]: End processing [landsat9-lc]: success
+[2023-04-30 22:34:14] INFO root fetch - main [MainThread]: End processing [pypeek]: success
+[2023-04-30 22:34:14] INFO root fetch - main [MainThread]: End processing [nudecrawler]: success
+[2023-04-30 22:34:14] INFO root fetch - main [MainThread]: Store serial: [17919881]
