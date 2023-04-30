@@ -1296,3 +1296,63 @@
 [2023-04-30 02:45:01] INFO root fetch - main [MainThread]: End processing [secimport]: success
 [2023-04-30 02:45:01] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
 [2023-04-30 02:45:01] INFO root fetch - main [MainThread]: Store serial: [17913509]
+[2023-04-30 02:50:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913509]
+[2023-04-30 02:50:09] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swift-sim
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfds-nightly
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: luau
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hordelib
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kubric-nightly
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arcangelai
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-comprehend-s3olap
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: polygone
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: projen
+[2023-04-30 02:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: context-managed-singleton
+[2023-04-30 02:50:09] INFO root fetch - processPackages [hordelib]: New version: [0.9.5] Old Version: [0.9.2]
+[2023-04-30 02:50:09] INFO root fetch - processPackages [swift-sim]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-30 02:50:09] INFO root fetch - processPackages [luau]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-30 02:50:09] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-30 02:50:09] INFO root fetch - processPackages [arcangelai]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-30 02:50:09] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 02:50:09] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-04-30 02:50:09] WARNING root fetch - processPackages [polygone]: Skipping, unable to determine old version
+[2023-04-30 02:50:09] INFO root fetch - processPackages [polygone]: Start processing: cdk-slack-chatbot
+[2023-04-30 02:50:09] INFO root fetch - main [MainThread]: End processing [polygone] error
+[2023-04-30 02:50:09] WARNING root fetch - processPackages [context-managed-singleton]: Skipping, unable to determine old version
+[2023-04-30 02:50:09] INFO root fetch - processPackages [context-managed-singleton]: Start processing: aassddee
+[2023-04-30 02:50:09] INFO root fetch - main [MainThread]: End processing [context-managed-singleton] error
+[2023-04-30 02:50:09] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-30 02:50:09] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.9.2.tar.gz tmp/hordelib-0.9.5.tar.gz --markdown 20230430/h/hordelib/0.9.2-0.9.5/diff.md --exclude *.pyd
+[2023-04-30 02:50:09] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-04-30 02:50:09] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.4.8.tar.gz tmp/kubric-nightly-2023.4.9.tar.gz --markdown 20230430/k/kubric-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-30 02:50:09] WARNING root fetch - processPackages [aassddee]: Skipping, unable to determine old version
+[2023-04-30 02:50:09] INFO root fetch - main [MainThread]: End processing [aassddee] error
+[2023-04-30 02:50:09] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202304300044] Old Version: [4.9.2.dev202304290044]
+[2023-04-30 02:50:09] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/fe/ba/fb721e1301d3b85f6b4c536f6dbb0df761d3ebaf91e8353b1c7cf8a590f5/luau-0.4.7.tar.gz
+[2023-04-30 02:50:09] INFO root fetch - processPackages [swift-sim]: Downloading https://files.pythonhosted.org/packages/8b/62/3c0bd18647463d47e86c496fe2eced3610ce781ee0672954ddbd4b25138f/swift-sim-1.0.1.tar.gz
+[2023-04-30 02:50:09] INFO root fetch - processPackages [arcangelai]: Downloading https://files.pythonhosted.org/packages/36/a8/7dfedf5be1e65c74ceb36e018dd70bbb234da8037dca45ef9925acd9e2b7/arcangelai-2.0.4.tar.gz
+[2023-04-30 02:50:09] INFO root fetch - processPackages [cdk-slack-chatbot]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-30 02:50:09] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-04-30 02:50:09] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230430/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-04-30 02:50:09] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-04-30 02:50:09] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-04-30 02:50:09] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-04-30 02:50:09] WARNING root fetch - processPackages [swift-sim]: Skipping package: exceeds size limit 11165407>=10485760
+[2023-04-30 02:50:09] INFO root fetch - main [MainThread]: End processing [swift-sim] error
+[2023-04-30 02:50:09] INFO root fetch - processPackages [arcangelai]: executing diffoscope
+[2023-04-30 02:50:09] INFO root fetch - processPackages [arcangelai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcangelai-2.0.3.tar.gz tmp/arcangelai-2.0.4.tar.gz --markdown 20230430/a/arcangelai/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-30 02:50:10] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/50/3c/66dc1df5a07dec712c09d3e1e16469a4e9e7e79b17ff57803bc3321af949/tfds-nightly-4.9.2.dev202304300044.tar.gz
+[2023-04-30 02:50:10] INFO root fetch - processPackages [cdk-slack-chatbot]: executing diffoscope
+[2023-04-30 02:50:10] INFO root fetch - processPackages [cdk-slack-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-slack-chatbot-1.0.98.tar.gz tmp/cdk-slack-chatbot-1.0.99.tar.gz --markdown 20230430/c/cdk-slack-chatbot/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-30 02:50:10] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-04-30 02:50:10] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202304290044.tar.gz tmp/tfds-nightly-4.9.2.dev202304300044.tar.gz --markdown 20230430/t/tfds-nightly/4.9.2.dev202304290044-4.9.2.dev202304300044/diff.md --exclude *.pyd
+[2023-04-30 02:50:10] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-30 02:50:10] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.6.tar.gz tmp/luau-0.4.7.tar.gz --markdown 20230430/l/luau/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-30 02:50:11] INFO root fetch - main [MainThread]: End processing [arcangelai]: success
+[2023-04-30 02:50:11] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-04-30 02:50:11] INFO root fetch - main [MainThread]: End processing [cdk-slack-chatbot]: success
+[2023-04-30 02:50:11] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-04-30 02:50:12] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-30 02:50:17] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-30 02:50:21] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-04-30 02:50:21] INFO root fetch - main [MainThread]: Store serial: [17913576]
