@@ -1146,3 +1146,91 @@
 [2023-04-30 02:29:16] INFO root fetch - main [MainThread]: End processing [cdk8s-jenkins]: success
 [2023-04-30 02:29:17] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-04-30 02:29:17] INFO root fetch - main [MainThread]: Store serial: [17913440]
+[2023-04-30 02:34:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913440]
+[2023-04-30 02:34:25] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-web-core
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: luau
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-aurora-globaldatabase
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-gitlab-runner
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdktf-proxmox
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdktf-github-actions
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk8s-operator
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zendron
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: luau
+[2023-04-30 02:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: everdrop-aws-cdk-constructs
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdktf-proxmox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdktf-github-actions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [zendron]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk8s-operator]: New version: [0.1.98] Old Version: [0.1.97]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/4d/c5/c922533ef1b9afc6f6388dfd30acdf62390cf779e7782faafef66a9f27c6/luau-0.4.4.tar.gz
+[2023-04-30 02:34:26] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230430/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/4d/c5/c922533ef1b9afc6f6388dfd30acdf62390cf779e7782faafef66a9f27c6/luau-0.4.4.tar.gz
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-04-30 02:34:26] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230430/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk8s-operator]: Downloading https://files.pythonhosted.org/packages/81/a1/472f9e27ea96746839caa41992257e24e496917b018d958034169769bdb6/cdk8s-operator-0.1.98.tar.gz
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230430/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.1.98.tar.gz tmp/cdk-gitlab-runner-2.1.99.tar.gz --markdown 20230430/c/cdk-gitlab-runner/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [zendron]: Downloading https://files.pythonhosted.org/packages/7e/6b/2f50dec55c5dc4a92b4091e6813be651084156d49ec6f994750c99de4ced/zendron-1.1.6.tar.gz
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdktf-proxmox]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdktf-proxmox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-proxmox-0.0.8.tar.gz tmp/cdktf-proxmox-0.0.9.tar.gz --markdown 20230430/c/cdktf-proxmox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdktf-github-actions]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdktf-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-github-actions-0.0.98.tar.gz tmp/cdktf-github-actions-0.0.99.tar.gz --markdown 20230430/c/cdktf-github-actions/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/20/16/d3db59730d517bb638b8f7287553251295a56aa70cef8bab924fdeddc229/luau-0.4.5.tar.gz
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/20/16/d3db59730d517bb638b8f7287553251295a56aa70cef8bab924fdeddc229/luau-0.4.5.tar.gz
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk8s-operator]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [cdk8s-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-operator-0.1.97.tar.gz tmp/cdk8s-operator-0.1.98.tar.gz --markdown 20230430/c/cdk8s-operator/0.1.97-0.1.98/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [zendron]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [zendron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zendron-1.1.5.tar.gz tmp/zendron-1.1.6.tar.gz --markdown 20230430/z/zendron/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.4.tar.gz tmp/luau-0.4.5.tar.gz --markdown 20230430/l/luau/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-30 02:34:26] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.4.tar.gz tmp/luau-0.4.5.tar.gz --markdown 20230430/l/luau/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-30 02:34:27] INFO root fetch - processPackages [sweetrpg-web-core]: Start processing: fgo-api-types
+[2023-04-30 02:34:27] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-04-30 02:34:27] INFO root fetch - processPackages [fgo-api-types]: New version: [2023.4.30.0.32.18] Old Version: [2023.4.30.0.24.57]
+[2023-04-30 02:34:27] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Start processing: mage-ai
+[2023-04-30 02:34:27] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-04-30 02:34:27] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-30 02:34:28] INFO root fetch - processPackages [cdk-gitlab-runner]: Start processing: aeppl-nightly
+[2023-04-30 02:34:28] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2023-04-30 02:34:28] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.3.dev20230429] Old Version: [0.1.3.dev20230428]
+[2023-04-30 02:34:28] INFO root fetch - processPackages [cdk8s-operator]: Start processing: chichitk
+[2023-04-30 02:34:28] INFO root fetch - main [MainThread]: End processing [cdk8s-operator]: success
+[2023-04-30 02:34:28] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/a7/52/273a9c313cbf61bb03093ebc31977e5c0ad6c649fb9bdca716a404ea6ff4/fgo_api_types-2023.4.30.0.32.18.tar.gz
+[2023-04-30 02:34:28] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-04-30 02:34:28] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230430/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-30 02:34:28] INFO root fetch - processPackages [chichitk]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 02:34:28] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-04-30 02:34:28] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-04-30 02:34:28] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 02:34:28] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2023-04-30 02:34:28] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2023.4.30.0.24.57.tar.gz tmp/fgo_api_types-2023.4.30.0.32.18.tar.gz --markdown 20230430/f/fgo-api-types/2023.4.30.0.24.57-2023.4.30.0.32.18/diff.md --exclude *.pyd
+[2023-04-30 02:34:28] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
+[2023-04-30 02:34:28] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-04-30 02:34:28] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230430/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 02:34:28] INFO root fetch - processPackages [chichitk]: Downloading https://files.pythonhosted.org/packages/cc/11/faf6b609e5238b97a679fc91210dd1df0ffdfee1003b190efeb74f9dca50/chichitk-0.0.2.tar.gz
+[2023-04-30 02:34:28] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/a0/1a/937b89cc4f4a66e512aef64880ba6051a3059e9600819a01a83736b8fa55/aeppl-nightly-0.1.3.dev20230429.tar.gz
+[2023-04-30 02:34:28] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-30 02:34:28] INFO root fetch - processPackages [chichitk]: Downloading https://files.pythonhosted.org/packages/04/65/3ba7bd8da7f29bf032880af26fcae2b0eda92da914f796bca8340144c410/chichitk-0.0.3.tar.gz
+[2023-04-30 02:34:28] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-04-30 02:34:28] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.3.dev20230428.tar.gz tmp/aeppl-nightly-0.1.3.dev20230429.tar.gz --markdown 20230430/a/aeppl-nightly/0.1.3.dev20230428-0.1.3.dev20230429/diff.md --exclude *.pyd
+[2023-04-30 02:34:28] INFO root fetch - processPackages [chichitk]: executing diffoscope
+[2023-04-30 02:34:28] INFO root fetch - processPackages [chichitk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chichitk-0.0.2.tar.gz tmp/chichitk-0.0.3.tar.gz --markdown 20230430/c/chichitk/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 02:34:28] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-30 02:34:28] INFO root fetch - main [MainThread]: End processing [zendron]: success
+[2023-04-30 02:34:29] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2023-04-30 02:34:29] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-04-30 02:34:30] INFO root fetch - main [MainThread]: End processing [chichitk]: success
+[2023-04-30 02:34:30] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-04-30 02:34:30] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
+[2023-04-30 02:34:40] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-04-30 02:34:40] INFO root fetch - main [MainThread]: Store serial: [17913482]
