@@ -10691,3 +10691,49 @@
 [2023-04-30 22:23:23] INFO root fetch - main [MainThread]: End processing [jinjat]: success
 [2023-04-30 22:23:46] INFO root fetch - main [MainThread]: End processing [openapi-python-client]: success
 [2023-04-30 22:23:46] INFO root fetch - main [MainThread]: Store serial: [17919813]
+[2023-04-30 22:28:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919813]
+[2023-04-30 22:28:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 22:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: models-files-manager
+[2023-04-30 22:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-scw-template
+[2023-04-30 22:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tungstenkit
+[2023-04-30 22:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: search-hound-ai
+[2023-04-30 22:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: robotframework-browser
+[2023-04-30 22:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fedml
+[2023-04-30 22:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: configlayer
+[2023-04-30 22:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: search-string-overvaagning
+[2023-04-30 22:28:55] WARNING root fetch - processPackages [configlayer]: Skipping, unable to determine old version
+[2023-04-30 22:28:55] INFO root fetch - main [MainThread]: End processing [configlayer] error
+[2023-04-30 22:28:55] INFO root fetch - processPackages [xia-scw-template]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 22:28:55] INFO root fetch - processPackages [fedml]: New version: [0.8.4a9] Old Version: [0.8.4a8]
+[2023-04-30 22:28:55] WARNING root fetch - processPackages [models-files-manager]: Skipping, unable to determine old version
+[2023-04-30 22:28:55] INFO root fetch - main [MainThread]: End processing [models-files-manager] error
+[2023-04-30 22:28:55] INFO root fetch - processPackages [tungstenkit]: New version: [0.0.1a6] Old Version: [0.0.1a5]
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-hound-ai]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-04-30 22:28:55] INFO root fetch - processPackages [robotframework-browser]: New version: [9.0.2] Old Version: [9.0.1]
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-string-overvaagning]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-30 22:28:55] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-04-30 22:28:55] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.4a8.tar.gz tmp/fedml-0.8.4a9.tar.gz --markdown 20230430/f/fedml/0.8.4a8-0.8.4a9/diff.md --exclude *.pyd
+[2023-04-30 22:28:55] INFO root fetch - processPackages [xia-scw-template]: Downloading https://files.pythonhosted.org/packages/0c/d8/11c3bcf39847e0f42aa77f2bf879e33e1de4fdd8b504b555455e00184729/xia_scw_template-0.0.1-cp39-none-win_amd64.whl
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-hound-ai]: Downloading https://files.pythonhosted.org/packages/30/26/c4f46a4ea846a29574ddb87cd0045a6c6d3f5baec5ca8c1a5332b4a477fa/search_hound_ai-0.1.6.tar.gz
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-string-overvaagning]: Downloading https://files.pythonhosted.org/packages/a3/71/757c962798681d0743cac098e12161df242d30a5047f75b12a3b78e10d94/search_string_overvaagning-0.3.7-py3-none-any.whl
+[2023-04-30 22:28:55] INFO root fetch - processPackages [tungstenkit]: Downloading https://files.pythonhosted.org/packages/22/14/040fe2da1224983a9ec5ce6ed0123bac2b4ebb634f56f460d0fd8db3c9af/tungstenkit-0.0.1a6.tar.gz
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-hound-ai]: Downloading https://files.pythonhosted.org/packages/ee/da/8c3b00e72285435ebc7dd5e9f987c67686a468a6c05590b1d938b46c28b4/search_hound_ai-0.1.8.tar.gz
+[2023-04-30 22:28:55] INFO root fetch - processPackages [xia-scw-template]: Downloading https://files.pythonhosted.org/packages/26/d4/4d0030effc62458365bd096b9ac49b2e44f0e5635d45648dd3235e8945c8/xia_scw_template-0.0.2-cp39-none-win_amd64.whl
+[2023-04-30 22:28:55] INFO root fetch - processPackages [tungstenkit]: executing diffoscope
+[2023-04-30 22:28:55] INFO root fetch - processPackages [tungstenkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tungstenkit-0.0.1a5.tar.gz tmp/tungstenkit-0.0.1a6.tar.gz --markdown 20230430/t/tungstenkit/0.0.1a5-0.0.1a6/diff.md --exclude *.pyd
+[2023-04-30 22:28:55] INFO root fetch - processPackages [robotframework-browser]: executing diffoscope
+[2023-04-30 22:28:55] INFO root fetch - processPackages [robotframework-browser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework-browser-9.0.1.tar.gz tmp/robotframework-browser-9.0.2.tar.gz --markdown 20230430/r/robotframework-browser/9.0.1-9.0.2/diff.md --exclude *.pyd
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-string-overvaagning]: Downloading https://files.pythonhosted.org/packages/b3/ba/6bea05b58bfd7bf767a4ae7a0df71234596d59b823d3fd683ef5ccb5d00f/search_string_overvaagning-0.3.8-py3-none-any.whl
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-hound-ai]: executing diffoscope
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-hound-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search_hound_ai-0.1.6.tar.gz tmp/search_hound_ai-0.1.8.tar.gz --markdown 20230430/s/search-hound-ai/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-04-30 22:28:55] INFO root fetch - processPackages [xia-scw-template]: executing diffoscope
+[2023-04-30 22:28:55] INFO root fetch - processPackages [xia-scw-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_scw_template-0.0.1-cp39-none-win_amd64.whl.zip tmp/xia_scw_template-0.0.2-cp39-none-win_amd64.whl.zip --markdown 20230430/x/xia-scw-template/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-string-overvaagning]: executing diffoscope
+[2023-04-30 22:28:55] INFO root fetch - processPackages [search-string-overvaagning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search_string_overvaagning-0.3.7-py3-none-any.whl.zip tmp/search_string_overvaagning-0.3.8-py3-none-any.whl.zip --markdown 20230430/s/search-string-overvaagning/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-30 22:28:57] INFO root fetch - main [MainThread]: End processing [xia-scw-template]: success
+[2023-04-30 22:28:57] INFO root fetch - main [MainThread]: End processing [search-hound-ai]: success
+[2023-04-30 22:28:57] INFO root fetch - main [MainThread]: End processing [search-string-overvaagning]: success
+[2023-04-30 22:28:57] INFO root fetch - main [MainThread]: End processing [robotframework-browser]: success
+[2023-04-30 22:28:57] INFO root fetch - main [MainThread]: End processing [tungstenkit]: success
+[2023-04-30 22:29:03] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-04-30 22:29:03] INFO root fetch - main [MainThread]: Store serial: [17919854]
