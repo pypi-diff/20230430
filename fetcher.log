@@ -3597,3 +3597,57 @@
 [2023-04-30 08:55:51] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
 [2023-04-30 08:55:52] INFO root fetch - main [MainThread]: End processing [FairDynamicRec]: success
 [2023-04-30 08:55:52] INFO root fetch - main [MainThread]: Store serial: [17915030]
+[2023-04-30 09:00:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915030]
+[2023-04-30 09:01:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chat-completion-utils
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bassmap
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkov
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chat-completion-utils
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-poe-chat
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netunicorn-connector-aci
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyspread
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: coconut-develop
+[2023-04-30 09:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: raw-image-converter
+[2023-04-30 09:01:01] INFO root fetch - processPackages [nonebot-poe-chat]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [chat-completion-utils]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [chat-completion-utils]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [nonebot-poe-chat]: Downloading https://files.pythonhosted.org/packages/d0/83/00cfa142f376850fab9fa4d6d95f91dde49d6942874971ce212d73ace1a1/nonebot_poe_chat-1.1.2.tar.gz
+[2023-04-30 09:01:01] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [netunicorn-connector-aci]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [raw-image-converter]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [pyspread]: New version: [2.2.1] Old Version: [2.2]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [bassmap]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 09:01:01] INFO root fetch - processPackages [chat-completion-utils]: executing diffoscope
+[2023-04-30 09:01:01] INFO root fetch - processPackages [chat-completion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_completion_utils-1.2.2.tar.gz tmp/chat_completion_utils-1.2.3.tar.gz --markdown 20230430/c/chat-completion-utils/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-30 09:01:01] INFO root fetch - processPackages [chat-completion-utils]: executing diffoscope
+[2023-04-30 09:01:01] INFO root fetch - processPackages [chat-completion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_completion_utils-1.2.2.tar.gz tmp/chat_completion_utils-1.2.3.tar.gz --markdown 20230430/c/chat-completion-utils/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-30 09:01:01] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-04-30 09:01:01] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230430/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-04-30 09:01:01] WARNING root fetch - processPackages [nonebot-poe-chat]: Skipping package: exceeds size limit 13493809>=10485760
+[2023-04-30 09:01:01] INFO root fetch - main [MainThread]: End processing [nonebot-poe-chat] error
+[2023-04-30 09:01:01] INFO root fetch - processPackages [netunicorn-connector-aci]: Downloading https://files.pythonhosted.org/packages/3b/7a/3c82384c4caf60ea15b8f22781b2b92acede761dafa8cb54826fe6f5649e/netunicorn-connector-aci-0.1.1.tar.gz
+[2023-04-30 09:01:01] INFO root fetch - processPackages [raw-image-converter]: Downloading https://files.pythonhosted.org/packages/04/4f/9aa8bb6e89c5bf2940ac9f87b7c47ceb2e0c7d6ec15432375535c30c7951/raw-image-converter-1.0.2.tar.gz
+[2023-04-30 09:01:01] INFO root fetch - processPackages [pyspread]: Downloading https://files.pythonhosted.org/packages/1d/fe/70d47863090e551eaaae84867453b4f2a51493748257344a5087f7dc9eca/pyspread-2.2.tar.gz
+[2023-04-30 09:01:01] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-30 09:01:01] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230430/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 09:01:01] INFO root fetch - processPackages [bassmap]: executing diffoscope
+[2023-04-30 09:01:01] INFO root fetch - processPackages [bassmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bassmap-0.0.8.tar.gz tmp/bassmap-0.0.9.tar.gz --markdown 20230430/b/bassmap/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 09:01:02] INFO root fetch - processPackages [raw-image-converter]: Downloading https://files.pythonhosted.org/packages/4c/07/ae24c7952812939adbc53a25dfd7c8fc0389a1342d7f9a844288bd3e8d38/raw-image-converter-1.0.3.tar.gz
+[2023-04-30 09:01:02] INFO root fetch - processPackages [netunicorn-connector-aci]: Downloading https://files.pythonhosted.org/packages/0c/de/8b586ce2c9b7f89824919f4629b5045b835f04fdaac820310f1b498e094c/netunicorn-connector-aci-0.1.2.tar.gz
+[2023-04-30 09:01:02] INFO root fetch - processPackages [raw-image-converter]: executing diffoscope
+[2023-04-30 09:01:02] INFO root fetch - processPackages [raw-image-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raw-image-converter-1.0.2.tar.gz tmp/raw-image-converter-1.0.3.tar.gz --markdown 20230430/r/raw-image-converter/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 09:01:02] INFO root fetch - processPackages [pyspread]: Downloading https://files.pythonhosted.org/packages/3c/0c/03d70b4c8ebc42794f552af972da12c6240a79892cca6c4f7bded9ffcb7a/pyspread-2.2.1.tar.gz
+[2023-04-30 09:01:02] INFO root fetch - processPackages [netunicorn-connector-aci]: executing diffoscope
+[2023-04-30 09:01:02] INFO root fetch - processPackages [netunicorn-connector-aci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netunicorn-connector-aci-0.1.1.tar.gz tmp/netunicorn-connector-aci-0.1.2.tar.gz --markdown 20230430/n/netunicorn-connector-aci/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 09:01:02] INFO root fetch - processPackages [pyspread]: executing diffoscope
+[2023-04-30 09:01:02] INFO root fetch - processPackages [pyspread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspread-2.2.tar.gz tmp/pyspread-2.2.1.tar.gz --markdown 20230430/p/pyspread/2.2-2.2.1/diff.md --exclude *.pyd
+[2023-04-30 09:01:02] INFO root fetch - main [MainThread]: End processing [chat-completion-utils]: success
+[2023-04-30 09:01:02] INFO root fetch - main [MainThread]: End processing [chat-completion-utils]: success
+[2023-04-30 09:01:03] INFO root fetch - main [MainThread]: End processing [bassmap]: success
+[2023-04-30 09:01:03] INFO root fetch - main [MainThread]: End processing [raw-image-converter]: success
+[2023-04-30 09:01:03] INFO root fetch - main [MainThread]: End processing [netunicorn-connector-aci]: success
+[2023-04-30 09:01:05] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-04-30 09:01:06] INFO root fetch - main [MainThread]: End processing [pyspread]: success
+[2023-04-30 09:01:41] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-30 09:01:41] INFO root fetch - main [MainThread]: Store serial: [17915058]
