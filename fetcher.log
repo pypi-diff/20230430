@@ -2762,3 +2762,16 @@
 [2023-04-30 06:35:31] INFO root fetch - main [MainThread]: End processing [opencv-stubs]: success
 [2023-04-30 06:35:31] INFO root fetch - main [MainThread]: End processing [not1mm]: success
 [2023-04-30 06:35:31] INFO root fetch - main [MainThread]: Store serial: [17914474]
+[2023-04-30 06:40:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914474]
+[2023-04-30 06:40:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 06:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: safenote
+[2023-04-30 06:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iewil
+[2023-04-30 06:40:40] WARNING root fetch - processPackages [safenote]: Skipping, unable to determine old version
+[2023-04-30 06:40:40] INFO root fetch - processPackages [iewil]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 06:40:40] INFO root fetch - main [MainThread]: End processing [safenote] error
+[2023-04-30 06:40:40] INFO root fetch - processPackages [iewil]: Downloading https://files.pythonhosted.org/packages/98/70/c24f70233cc32e4bc49bdd98c18bb484f1036185ea82b324882fb5df1165/iewil-0.0.1.tar.gz
+[2023-04-30 06:40:40] INFO root fetch - processPackages [iewil]: Downloading https://files.pythonhosted.org/packages/88/67/2fff1b94d9491dff0a1f99b78a8bcd08c942cb4df6e83563d247a0c25a62/iewil-0.0.2.tar.gz
+[2023-04-30 06:40:40] INFO root fetch - processPackages [iewil]: executing diffoscope
+[2023-04-30 06:40:40] INFO root fetch - processPackages [iewil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iewil-0.0.1.tar.gz tmp/iewil-0.0.2.tar.gz --markdown 20230430/i/iewil/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 06:40:41] INFO root fetch - main [MainThread]: End processing [iewil]: success
+[2023-04-30 06:40:41] INFO root fetch - main [MainThread]: Store serial: [17914481]
