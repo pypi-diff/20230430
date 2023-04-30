@@ -7869,3 +7869,62 @@
 [2023-04-30 17:04:13] INFO root fetch - main [MainThread]: End processing [FlipperNested]: success
 [2023-04-30 17:04:14] INFO root fetch - main [MainThread]: End processing [metapensiero.sphinx.patchdb]: success
 [2023-04-30 17:04:14] INFO root fetch - main [MainThread]: Store serial: [17917609]
+[2023-04-30 17:09:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917609]
+[2023-04-30 17:09:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastdev-py
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hikari-miru
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: digitalguide
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygpsclient
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: deeplc
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wtt01
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ReverseBox
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qatrah
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: karcher-home
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: certora-cli-alpha-master
+[2023-04-30 17:09:23] INFO root fetch - processPackages [pygpsclient]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-04-30 17:09:23] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 17:09:23] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230430.11.58.7537] Old Version: [20230429.12.22.11391]
+[2023-04-30 17:09:23] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/32/78/6ec21b572ec1af178a511d77839a5ec4fd4d8ead6758532658a0c0cd9a8e/certora-cli-alpha-master-20230429.12.22.11391.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [hikari-miru]: New version: [3.1.0] Old Version: [3.0.3]
+[2023-04-30 17:09:23] WARNING root fetch - processPackages [fastdev-py]: Skipping, unable to determine old version
+[2023-04-30 17:09:23] INFO root fetch - main [MainThread]: End processing [fastdev-py] error
+[2023-04-30 17:09:23] INFO root fetch - processPackages [deeplc]: New version: [2.0.0] Old Version: [1.2.1]
+[2023-04-30 17:09:23] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-04-30 17:09:23] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230430/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 17:09:23] WARNING root fetch - processPackages [qatrah]: Skipping, unable to determine old version
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ReverseBox]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-30 17:09:23] INFO root fetch - main [MainThread]: End processing [qatrah] error
+[2023-04-30 17:09:23] INFO root fetch - processPackages [karcher-home]: New version: [0.3] Old Version: [0.2.1]
+[2023-04-30 17:09:23] INFO root fetch - processPackages [wtt01]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-30 17:09:23] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38010161>=10485760
+[2023-04-30 17:09:23] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-30 17:09:23] INFO root fetch - processPackages [karcher-home]: Downloading https://files.pythonhosted.org/packages/05/13/1a9b3066ab69dc19ec9eaae95956b00cd44113821c8e84def27861c90c04/karcher-home-0.2.1.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/08/7a/bc1a39deb889e2b69753f8eed8c90472dd20057a6599010710a59d239008/ReverseBox-0.5.3.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [hikari-miru]: Downloading https://files.pythonhosted.org/packages/15/ff/b5d7e4818dd6c0e6bd530ee8e14de7ae3ad13f34d938930e892e19a65163/hikari-miru-3.0.3.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [wtt01]: Downloading https://files.pythonhosted.org/packages/bd/3b/53566566c0bc29536fc70628416296459f49fcbcd9fc9682fe0ab9ccc515/wtt01-0.3.2.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [deeplc]: Downloading https://files.pythonhosted.org/packages/9a/b4/ebcd53e6de1ea815809ea84e57b33c62f6c215e2976fc1a86038ccb500b3/deeplc-1.2.1.tar.gz
+[2023-04-30 17:09:23] WARNING root fetch - processPackages [deeplc]: Skipping package: exceeds size limit 77853968>=10485760
+[2023-04-30 17:09:23] INFO root fetch - main [MainThread]: End processing [deeplc] error
+[2023-04-30 17:09:23] INFO root fetch - processPackages [pygpsclient]: Downloading https://files.pythonhosted.org/packages/dc/43/85dbc5084855024d469eb19f9e798a808deff2658423606454080545f672/PyGPSClient-1.3.8.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [karcher-home]: Downloading https://files.pythonhosted.org/packages/70/35/657d7e0ed6ebf92674a5835473e1412204c70c607d8dd7ec3420c910a3b3/karcher-home-0.3.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ReverseBox]: Downloading https://files.pythonhosted.org/packages/fc/2b/1d485547454bd774870d843f605f2ff1708905979c10fe5d6a3f41f537c2/ReverseBox-0.5.4.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [wtt01]: Downloading https://files.pythonhosted.org/packages/24/7a/a568c6dcf01f088b566bb695cc21d88337ab64aa940babd6fe94c5953b75/wtt01-0.3.3.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [wtt01]: executing diffoscope
+[2023-04-30 17:09:23] INFO root fetch - processPackages [wtt01]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtt01-0.3.2.tar.gz tmp/wtt01-0.3.3.tar.gz --markdown 20230430/w/wtt01/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2023-04-30 17:09:23] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.5.3.tar.gz tmp/ReverseBox-0.5.4.tar.gz --markdown 20230430/R/ReverseBox/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-30 17:09:23] INFO root fetch - processPackages [hikari-miru]: Downloading https://files.pythonhosted.org/packages/0f/a1/bfbde52e9a6b9a6a6c8618dbeaa43849e4566ffeec6fde1a0e72afbc207e/hikari-miru-3.1.0.tar.gz
+[2023-04-30 17:09:23] INFO root fetch - processPackages [karcher-home]: executing diffoscope
+[2023-04-30 17:09:23] INFO root fetch - processPackages [karcher-home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karcher-home-0.2.1.tar.gz tmp/karcher-home-0.3.tar.gz --markdown 20230430/k/karcher-home/0.2.1-0.3/diff.md --exclude *.pyd
+[2023-04-30 17:09:23] INFO root fetch - processPackages [hikari-miru]: executing diffoscope
+[2023-04-30 17:09:23] INFO root fetch - processPackages [hikari-miru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari-miru-3.0.3.tar.gz tmp/hikari-miru-3.1.0.tar.gz --markdown 20230430/h/hikari-miru/3.0.3-3.1.0/diff.md --exclude *.pyd
+[2023-04-30 17:09:24] INFO root fetch - processPackages [pygpsclient]: Downloading https://files.pythonhosted.org/packages/e5/bd/8454c188f3af9cf23396bb9676d469014b1e5f12800e67c79cc7554b5208/PyGPSClient-1.3.9.tar.gz
+[2023-04-30 17:09:24] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-04-30 17:09:24] INFO root fetch - processPackages [pygpsclient]: executing diffoscope
+[2023-04-30 17:09:24] INFO root fetch - processPackages [pygpsclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGPSClient-1.3.8.tar.gz tmp/PyGPSClient-1.3.9.tar.gz --markdown 20230430/p/pygpsclient/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-04-30 17:09:24] INFO root fetch - main [MainThread]: End processing [wtt01]: success
+[2023-04-30 17:09:25] INFO root fetch - main [MainThread]: End processing [karcher-home]: success
+[2023-04-30 17:09:25] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2023-04-30 17:09:25] INFO root fetch - main [MainThread]: End processing [hikari-miru]: success
+[2023-04-30 17:09:26] INFO root fetch - main [MainThread]: End processing [pygpsclient]: success
+[2023-04-30 17:09:26] INFO root fetch - main [MainThread]: Store serial: [17917661]
