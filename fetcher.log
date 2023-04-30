@@ -2117,3 +2117,22 @@
 [2023-04-30 04:32:52] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
 [2023-04-30 04:32:52] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
 [2023-04-30 04:32:52] INFO root fetch - main [MainThread]: Store serial: [17914089]
+[2023-04-30 04:37:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914089]
+[2023-04-30 04:38:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 04:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: porter-depthai
+[2023-04-30 04:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shellcrafter
+[2023-04-30 04:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nure
+[2023-04-30 04:38:01] WARNING root fetch - processPackages [porter-depthai]: Skipping, unable to determine old version
+[2023-04-30 04:38:01] INFO root fetch - main [MainThread]: End processing [porter-depthai] error
+[2023-04-30 04:38:01] INFO root fetch - processPackages [shellcrafter]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 04:38:01] INFO root fetch - processPackages [nure]: New version: [2023.4.30] Old Version: [2023.4.27]
+[2023-04-30 04:38:01] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/49/8e/b4d113b6d4f7635b358aa58b2bae9791b2ffb82ecb5cb10390823c0d39cf/shellcrafter-1.0.1.tar.gz
+[2023-04-30 04:38:01] INFO root fetch - processPackages [nure]: Downloading https://files.pythonhosted.org/packages/5b/be/d58eb211e6868a7e0ee37e36956c11539520f1d9c0388c18b37f7e579bc0/nure-2023.4.30.tar.gz
+[2023-04-30 04:38:01] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/54/3f/083a2b731f20deed62d3e2a3bd5667de50e225683ea23c8503ae4f6d4155/shellcrafter-1.0.2.tar.gz
+[2023-04-30 04:38:01] INFO root fetch - processPackages [nure]: executing diffoscope
+[2023-04-30 04:38:01] INFO root fetch - processPackages [nure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nure-2023.4.27.tar.gz tmp/nure-2023.4.30.tar.gz --markdown 20230430/n/nure/2023.4.27-2023.4.30/diff.md --exclude *.pyd
+[2023-04-30 04:38:01] INFO root fetch - processPackages [shellcrafter]: executing diffoscope
+[2023-04-30 04:38:01] INFO root fetch - processPackages [shellcrafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellcrafter-1.0.1.tar.gz tmp/shellcrafter-1.0.2.tar.gz --markdown 20230430/s/shellcrafter/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 04:38:02] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
+[2023-04-30 04:38:02] INFO root fetch - main [MainThread]: End processing [nure]: success
+[2023-04-30 04:38:02] INFO root fetch - main [MainThread]: Store serial: [17914113]
