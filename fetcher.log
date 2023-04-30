@@ -6160,3 +6160,66 @@
 [2023-04-30 14:17:14] INFO root fetch - main [MainThread]: End processing [envoy.base.utils]: success
 [2023-04-30 14:17:14] INFO root fetch - main [MainThread]: End processing [goxlrutilityapi]: success
 [2023-04-30 14:17:14] INFO root fetch - main [MainThread]: Store serial: [17916466]
+[2023-04-30 14:22:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916466]
+[2023-04-30 14:22:23] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaussiebb
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-json-config
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: start-url
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygmi-get
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: GPTAgent
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: authomize-rest-api-client
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-desktop-wing
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyScaffolder
+[2023-04-30 14:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pygmi-get
+[2023-04-30 14:22:23] INFO root fetch - processPackages [GPTAgent]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pyaussiebb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [start-url]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [mo-json-config]: New version: [4.373.23120] Old Version: [4.372.23119]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [authomize-rest-api-client]: New version: [3.1.7] Old Version: [3.1.6]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pygmi-get]: New version: [0.17.6] Old Version: [0.17.5]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [nonebot-desktop-wing]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pygmi-get]: New version: [0.17.6] Old Version: [0.17.5]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [PyScaffolder]: New version: [1.5.2.post1] Old Version: [1.5.2]
+[2023-04-30 14:22:23] INFO root fetch - processPackages [GPTAgent]: Downloading https://files.pythonhosted.org/packages/80/17/6470489ccfbb10907cb5629ae4ea4005aa7f263691a3d5e93e3c3d39abc6/gptagent-0.0.6.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [PyScaffolder]: Downloading https://files.pythonhosted.org/packages/da/f8/05f1a0f281e17a12a368978e5b96c886a49ca1aa77d4b338802059d09e75/PyScaffolder-1.5.2.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [start-url]: Downloading https://files.pythonhosted.org/packages/b6/f7/cdca4da39ef5924ae06dc7dd015e69d925965b438f0a728481e88296adea/start_url-0.0.1.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pyaussiebb]: Downloading https://files.pythonhosted.org/packages/16/21/f07e81ac9151b1ae8fcaf0096aa821f33ca52474e3194db64a9201692928/pyaussiebb-0.0.8.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [authomize-rest-api-client]: Downloading https://files.pythonhosted.org/packages/41/72/8b0959e9405f188ed5cb07caf660b6423c0da4d43ac63a49158a8ded6305/authomize-rest-api-client-3.1.6.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [nonebot-desktop-wing]: Downloading https://files.pythonhosted.org/packages/c1/dc/e7a78ac3b531dadaf1404ba0d64d94127a1fe9649089d3828f61206d50b7/nonebot-desktop-wing-0.2.2.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/c3/f5/6c19a5e859aee251b89ba02c2b40bc4eac25a60d462389875556000b5790/pygmi-get-0.17.6.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/c3/f5/6c19a5e859aee251b89ba02c2b40bc4eac25a60d462389875556000b5790/pygmi-get-0.17.6.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [mo-json-config]: Downloading https://files.pythonhosted.org/packages/04/6a/c8ead99b4bb66a0acb095cd5a3794fd2684716c63b6b7981dd369d80d82f/mo_json_config-4.373.23120-py2.py3-none-any.whl
+[2023-04-30 14:22:23] INFO root fetch - processPackages [start-url]: Downloading https://files.pythonhosted.org/packages/3d/3d/e928ebe1b364497594bae150e9a044c769d03a4c3776df7e293597373f36/start_url-0.0.2.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pygmi-get]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pygmi-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmi-get-0.17.5.tar.gz tmp/pygmi-get-0.17.6.tar.gz --markdown 20230430/p/pygmi-get/0.17.5-0.17.6/diff.md --exclude *.pyd
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pygmi-get]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pygmi-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmi-get-0.17.5.tar.gz tmp/pygmi-get-0.17.6.tar.gz --markdown 20230430/p/pygmi-get/0.17.5-0.17.6/diff.md --exclude *.pyd
+[2023-04-30 14:22:23] INFO root fetch - processPackages [mo-json-config]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [mo-json-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json_config-4.372.23119-py2.py3-none-any.whl.zip tmp/mo_json_config-4.373.23120-py2.py3-none-any.whl.zip --markdown 20230430/m/mo-json-config/4.372.23119-4.373.23120/diff.md --exclude *.pyd
+[2023-04-30 14:22:23] INFO root fetch - processPackages [PyScaffolder]: Downloading https://files.pythonhosted.org/packages/9b/42/13febeb309d5476e02cfdd65b46e27463eb97b57f0a9acf82329caeafc1a/PyScaffolder-1.5.2.post1.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [authomize-rest-api-client]: Downloading https://files.pythonhosted.org/packages/11/9a/489a7f660010296d660c64ba81a10bc577188ded35cc4fb6127a52586dbb/authomize-rest-api-client-3.1.7.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [GPTAgent]: Downloading https://files.pythonhosted.org/packages/ff/c7/018c18b31a7b2e24b884e9db6e5ea301a470b954758b03789df358cd0d02/gptagent-0.0.7.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [start-url]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [start-url]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/start_url-0.0.1.tar.gz tmp/start_url-0.0.2.tar.gz --markdown 20230430/s/start-url/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pyaussiebb]: Downloading https://files.pythonhosted.org/packages/4b/36/5ef38d858576b0f2e53d5ffcc77d41f8ca2d58f256a3fcde521e3bb97228/pyaussiebb-0.0.9.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [nonebot-desktop-wing]: Downloading https://files.pythonhosted.org/packages/7b/81/962c8fdd91d0e452bdcdefa1d08f1065843b831c74d3725e16a542a1d019/nonebot-desktop-wing-0.2.3.tar.gz
+[2023-04-30 14:22:23] INFO root fetch - processPackages [nonebot-desktop-wing]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [nonebot-desktop-wing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-wing-0.2.2.tar.gz tmp/nonebot-desktop-wing-0.2.3.tar.gz --markdown 20230430/n/nonebot-desktop-wing/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-30 14:22:23] INFO root fetch - processPackages [PyScaffolder]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [PyScaffolder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyScaffolder-1.5.2.tar.gz tmp/PyScaffolder-1.5.2.post1.tar.gz --markdown 20230430/P/PyScaffolder/1.5.2-1.5.2.post1/diff.md --exclude *.pyd
+[2023-04-30 14:22:23] INFO root fetch - processPackages [GPTAgent]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [GPTAgent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptagent-0.0.6.tar.gz tmp/gptagent-0.0.7.tar.gz --markdown 20230430/G/GPTAgent/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-30 14:22:23] INFO root fetch - processPackages [authomize-rest-api-client]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [authomize-rest-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authomize-rest-api-client-3.1.6.tar.gz tmp/authomize-rest-api-client-3.1.7.tar.gz --markdown 20230430/a/authomize-rest-api-client/3.1.6-3.1.7/diff.md --exclude *.pyd
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pyaussiebb]: executing diffoscope
+[2023-04-30 14:22:23] INFO root fetch - processPackages [pyaussiebb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaussiebb-0.0.8.tar.gz tmp/pyaussiebb-0.0.9.tar.gz --markdown 20230430/p/pyaussiebb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 14:22:24] INFO root fetch - main [MainThread]: End processing [pygmi-get]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [start-url]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [mo-json-config]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [PyScaffolder]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [pygmi-get]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [GPTAgent]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [nonebot-desktop-wing]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [pyaussiebb]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [authomize-rest-api-client]: success
+[2023-04-30 14:22:25] INFO root fetch - main [MainThread]: Store serial: [17916511]
