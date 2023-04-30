@@ -9411,3 +9411,93 @@
 [2023-04-30 20:00:14] INFO root fetch - main [MainThread]: End processing [xtlib]: success
 [2023-04-30 20:00:17] INFO root fetch - main [MainThread]: End processing [Pyrogram]: success
 [2023-04-30 20:00:17] INFO root fetch - main [MainThread]: Store serial: [17918723]
+[2023-04-30 20:05:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918723]
+[2023-04-30 20:05:27] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: curl-arguments-url
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kivy-garden.frostedglass
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-logs
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datoso-seed-pleasuredome
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datoso-seed-nointro
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mpc-obscodes
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: poetry-git-version-plugin
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: arkdata
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tootstagram
+[2023-04-30 20:05:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: osnap-lib
+[2023-04-30 20:05:27] INFO root fetch - processPackages [kivy-garden.frostedglass]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-30 20:05:27] WARNING root fetch - processPackages [datoso-seed-pleasuredome]: Skipping, unable to determine old version
+[2023-04-30 20:05:27] INFO root fetch - processPackages [datoso-seed-pleasuredome]: Start processing: mo-times
+[2023-04-30 20:05:27] WARNING root fetch - processPackages [datoso-seed-nointro]: Skipping, unable to determine old version
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mpc-obscodes]: New version: [2023.4.30] Old Version: [2023.4.29]
+[2023-04-30 20:05:27] INFO root fetch - main [MainThread]: End processing [datoso-seed-pleasuredome] error
+[2023-04-30 20:05:27] INFO root fetch - processPackages [poetry-git-version-plugin]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 20:05:27] WARNING root fetch - processPackages [osnap-lib]: Skipping, unable to determine old version
+[2023-04-30 20:05:27] INFO root fetch - processPackages [tootstagram]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 20:05:27] INFO root fetch - processPackages [datoso-seed-nointro]: Start processing: cthreepo
+[2023-04-30 20:05:27] INFO root fetch - processPackages [curl-arguments-url]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 20:05:27] INFO root fetch - main [MainThread]: End processing [datoso-seed-nointro] error
+[2023-04-30 20:05:27] INFO root fetch - processPackages [osnap-lib]: Start processing: cyberpay-utils-lib
+[2023-04-30 20:05:27] INFO root fetch - processPackages [arkdata]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mo-logs]: New version: [7.4.21313] Old Version: [7.374.23120]
+[2023-04-30 20:05:27] INFO root fetch - main [MainThread]: End processing [osnap-lib] error
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mo-times]: New version: [5.53.21241] Old Version: [5.374.23120]
+[2023-04-30 20:05:27] INFO root fetch - processPackages [cthreepo]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 20:05:27] INFO root fetch - processPackages [cyberpay-utils-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/08/99/ec364e2d8a5e5a1eec7bf89e1b94465db35a1445725172efc9fab294b1cb/mo_times-5.374.23120-py2.py3-none-any.whl
+[2023-04-30 20:05:27] INFO root fetch - processPackages [poetry-git-version-plugin]: Downloading https://files.pythonhosted.org/packages/e1/a8/341ac89f3264f00a55706d92fc1f4d4ec51a370a062ac4a3306268c14bcc/poetry_git_version_plugin-0.1.3.tar.gz
+[2023-04-30 20:05:27] INFO root fetch - processPackages [kivy-garden.frostedglass]: Downloading https://files.pythonhosted.org/packages/39/e4/2c5fe710d8e6a5c9f6ef2473dab30b87e8820aa2d7563d395191d183e141/kivy_garden.frostedglass-0.3.0.tar.gz
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/ed/80/afd9677886c35dbe90e823b3ec1d9c24e7338f4d03f712cea89ec1b002f5/mo_logs-7.374.23120-py2.py3-none-any.whl
+[2023-04-30 20:05:27] INFO root fetch - processPackages [tootstagram]: Downloading https://files.pythonhosted.org/packages/dc/d2/4a18afd1215aaf1e3b7be0f8ffc9220212c2f4f144751a8381761082f5e7/tootstagram-0.0.4.tar.gz
+[2023-04-30 20:05:27] INFO root fetch - processPackages [cthreepo]: Downloading https://files.pythonhosted.org/packages/8b/0f/57bbf43a6729ea01c369d13e0c9c5de916b9b49b9bf1c19790e18e48a6f5/cthreepo-0.1.2.tar.gz
+[2023-04-30 20:05:27] INFO root fetch - processPackages [curl-arguments-url]: Downloading https://files.pythonhosted.org/packages/10/d4/45ded41f684220bcc3063c0479a5015b7e82dab0f693799f76a4c30eea3f/curl_arguments_url-0.1.2.tar.gz
+[2023-04-30 20:05:27] INFO root fetch - processPackages [cyberpay-utils-lib]: Downloading https://files.pythonhosted.org/packages/d1/37/c7a6768099dde787cb2f08158c5d504678a728b1b4f6d7e92a14cb4c9463/cyberpay-utils-lib-0.0.8.tar.gz
+[2023-04-30 20:05:27] INFO root fetch - processPackages [tootstagram]: executing diffoscope
+[2023-04-30 20:05:27] INFO root fetch - processPackages [tootstagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tootstagram-0.0.3.tar.gz tmp/tootstagram-0.0.4.tar.gz --markdown 20230430/t/tootstagram/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mpc-obscodes]: Downloading https://files.pythonhosted.org/packages/89/ec/b7d1b840b40800269afb55bd5b6f2537721013ae7887cefb11b91d087ccb/mpc_obscodes-2023.4.30.tar.gz
+[2023-04-30 20:05:27] INFO root fetch - processPackages [poetry-git-version-plugin]: Downloading https://files.pythonhosted.org/packages/cf/08/14de2ec8fc7971d952ba5c6715c8030a43e6814b2e5f965b2c8a389e5f97/poetry_git_version_plugin-0.1.4.tar.gz
+[2023-04-30 20:05:27] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-30 20:05:27] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-1.0.8.tar.gz tmp/arkdata-1.0.9.tar.gz --markdown 20230430/a/arkdata/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mo-times]: executing diffoscope
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mo-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_times-5.374.23120-py2.py3-none-any.whl.zip tmp/mo-times-5.53.21241.tar.gz --markdown 20230430/m/mo-times/5.374.23120-5.53.21241/diff.md --exclude *.pyd
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mpc-obscodes]: executing diffoscope
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mpc-obscodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpc_obscodes-2023.4.29.tar.gz tmp/mpc_obscodes-2023.4.30.tar.gz --markdown 20230430/m/mpc-obscodes/2023.4.29-2023.4.30/diff.md --exclude *.pyd
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2023-04-30 20:05:27] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_logs-7.374.23120-py2.py3-none-any.whl.zip tmp/mo-logs-7.4.21313.tar.gz --markdown 20230430/m/mo-logs/7.374.23120-7.4.21313/diff.md --exclude *.pyd
+[2023-04-30 20:05:27] INFO root fetch - processPackages [cthreepo]: Downloading https://files.pythonhosted.org/packages/6c/b8/80a03eb5d9ae0e43313ad9689f2f017f76c17fdf333aa0810ece62771b64/cthreepo-0.1.3.tar.gz
+[2023-04-30 20:05:28] INFO root fetch - processPackages [poetry-git-version-plugin]: executing diffoscope
+[2023-04-30 20:05:28] INFO root fetch - processPackages [poetry-git-version-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_git_version_plugin-0.1.3.tar.gz tmp/poetry_git_version_plugin-0.1.4.tar.gz --markdown 20230430/p/poetry-git-version-plugin/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 20:05:28] INFO root fetch - processPackages [kivy-garden.frostedglass]: Downloading https://files.pythonhosted.org/packages/33/e1/4563c10f2b758301be19a28416890b6d3a624596810eab0540d8db7afabe/kivy_garden.frostedglass-0.4.0.tar.gz
+[2023-04-30 20:05:28] INFO root fetch - processPackages [curl-arguments-url]: Downloading https://files.pythonhosted.org/packages/ec/b4/f18dc4f07e07eafb1f76851779d67cc95b7186252f7a2ec1b49e0ae0c9c9/curl_arguments_url-0.1.3.tar.gz
+[2023-04-30 20:05:28] INFO root fetch - processPackages [cthreepo]: executing diffoscope
+[2023-04-30 20:05:28] INFO root fetch - processPackages [cthreepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cthreepo-0.1.2.tar.gz tmp/cthreepo-0.1.3.tar.gz --markdown 20230430/c/cthreepo/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 20:05:28] INFO root fetch - processPackages [cyberpay-utils-lib]: Downloading https://files.pythonhosted.org/packages/3b/fc/c4ac385101b801421bfeda8cc9d67e2a5f8d18b38cac31400e3559963190/cyberpay-utils-lib-0.0.9.tar.gz
+[2023-04-30 20:05:28] INFO root fetch - processPackages [kivy-garden.frostedglass]: executing diffoscope
+[2023-04-30 20:05:28] INFO root fetch - processPackages [kivy-garden.frostedglass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kivy_garden.frostedglass-0.3.0.tar.gz tmp/kivy_garden.frostedglass-0.4.0.tar.gz --markdown 20230430/k/kivy-garden.frostedglass/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 20:05:28] INFO root fetch - processPackages [curl-arguments-url]: executing diffoscope
+[2023-04-30 20:05:28] INFO root fetch - processPackages [curl-arguments-url]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curl_arguments_url-0.1.2.tar.gz tmp/curl_arguments_url-0.1.3.tar.gz --markdown 20230430/c/curl-arguments-url/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 20:05:28] INFO root fetch - processPackages [cyberpay-utils-lib]: executing diffoscope
+[2023-04-30 20:05:28] INFO root fetch - processPackages [cyberpay-utils-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberpay-utils-lib-0.0.8.tar.gz tmp/cyberpay-utils-lib-0.0.9.tar.gz --markdown 20230430/c/cyberpay-utils-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 20:05:29] INFO root fetch - processPackages [mo-times]: Start processing: mo-json
+[2023-04-30 20:05:29] INFO root fetch - main [MainThread]: End processing [mo-times]: success
+[2023-04-30 20:05:29] INFO root fetch - processPackages [mo-json]: New version: [6.374.23120] Old Version: [6.373.23120]
+[2023-04-30 20:05:29] INFO root fetch - processPackages [tootstagram]: Start processing: qrmfinal-xd
+[2023-04-30 20:05:29] INFO root fetch - main [MainThread]: End processing [tootstagram]: success
+[2023-04-30 20:05:29] INFO root fetch - processPackages [mo-logs]: Start processing: findmyorder
+[2023-04-30 20:05:29] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2023-04-30 20:05:29] INFO root fetch - processPackages [findmyorder]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 20:05:29] WARNING root fetch - processPackages [qrmfinal-xd]: Skipping, unable to determine old version
+[2023-04-30 20:05:29] INFO root fetch - main [MainThread]: End processing [qrmfinal-xd] error
+[2023-04-30 20:05:29] INFO root fetch - main [MainThread]: End processing [poetry-git-version-plugin]: success
+[2023-04-30 20:05:29] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-30 20:05:29] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.0.8.tar.gz tmp/findmyorder-1.0.9.tar.gz --markdown 20230430/f/findmyorder/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 20:05:29] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/f2/45/33dcd79d5260ec3db98921541030a09cfddd4c49c2f3713040fb24eb787d/mo_json-6.374.23120-py2.py3-none-any.whl
+[2023-04-30 20:05:29] INFO root fetch - main [MainThread]: End processing [kivy-garden.frostedglass]: success
+[2023-04-30 20:05:29] INFO root fetch - processPackages [mo-json]: executing diffoscope
+[2023-04-30 20:05:29] INFO root fetch - processPackages [mo-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json-6.373.23120-py2.py3-none-any.whl.zip tmp/mo_json-6.374.23120-py2.py3-none-any.whl.zip --markdown 20230430/m/mo-json/6.373.23120-6.374.23120/diff.md --exclude *.pyd
+[2023-04-30 20:05:29] INFO root fetch - main [MainThread]: End processing [curl-arguments-url]: success
+[2023-04-30 20:05:29] INFO root fetch - main [MainThread]: End processing [cyberpay-utils-lib]: success
+[2023-04-30 20:05:30] INFO root fetch - main [MainThread]: End processing [cthreepo]: success
+[2023-04-30 20:05:30] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-30 20:05:30] INFO root fetch - main [MainThread]: End processing [mo-json]: success
+[2023-04-30 20:05:30] INFO root fetch - main [MainThread]: End processing [mpc-obscodes]: success
+[2023-04-30 20:05:31] INFO root fetch - main [MainThread]: End processing [arkdata]: success
+[2023-04-30 20:05:31] INFO root fetch - main [MainThread]: Store serial: [17918775]
