@@ -6051,3 +6051,63 @@
 [2023-04-30 14:06:23] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
 [2023-04-30 14:06:39] INFO root fetch - main [MainThread]: End processing [minivn]: success
 [2023-04-30 14:06:39] INFO root fetch - main [MainThread]: Store serial: [17916422]
+[2023-04-30 14:11:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916422]
+[2023-04-30 14:11:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-drf-cms
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shellcrafter
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-orca
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-materialsdb
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-friesian
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: posuto
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pygmi-get
+[2023-04-30 14:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: construct-gallery
+[2023-04-30 14:11:48] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [shellcrafter]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [posuto]: New version: [2023.5.0] Old Version: [2023.4.0]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [construct-gallery]: New version: [1.1.0] Old Version: [1.0.0.post3]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl-orca]: New version: [2.4.0b20230430] Old Version: [2.4.0b20230429]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [pygmi-get]: New version: [0.17.5] Old Version: [0.17.4]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [python-materialsdb]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl-friesian]: New version: [2.4.0b20230430] Old Version: [2.4.0b20230429]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl]: New version: [2.4.0b20230430] Old Version: [2.4.0b20230429]
+[2023-04-30 14:11:48] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 14:11:48] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.8.tar.gz tmp/django-drf-cms-0.1.9.tar.gz --markdown 20230430/d/django-drf-cms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 14:11:48] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/15/e2/37f224f4b58920c939c3cd16545a4988f2e138ca26dae630345168addf05/shellcrafter-1.0.3.tar.gz
+[2023-04-30 14:11:48] INFO root fetch - processPackages [posuto]: Downloading https://files.pythonhosted.org/packages/fe/e0/74609a672233cb5778d5732c1d1510977ea60e7122e99a6c09b6567e9d47/posuto-2023.4.0.tar.gz
+[2023-04-30 14:11:48] INFO root fetch - processPackages [construct-gallery]: Downloading https://files.pythonhosted.org/packages/8c/48/1150111517a7f5ad6c93ed23303639319f7f487af1f4d035b5fd95a4f3f3/construct-gallery-1.0.0.post3.tar.gz
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl]: Downloading https://files.pythonhosted.org/packages/9d/ca/879d74612371c53678f6189d4d2f68ee62a2eff155b69d0f46f21a1a5a6e/bigdl-2.4.0b20230429-py3-none-manylinux1_x86_64.whl
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl-orca]: Downloading https://files.pythonhosted.org/packages/45/ad/7197afc1733f3759101c66d5da50377f6f653d8fcdf61992eb02df36d831/bigdl_orca-2.4.0b20230429-py3-none-manylinux1_x86_64.whl
+[2023-04-30 14:11:48] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/d5/cf/03201be8a6d99319636ccfd95792a9f6ba9edfb6a60b06ee934270939da6/pygmi-get-0.17.5.tar.gz
+[2023-04-30 14:11:48] INFO root fetch - processPackages [python-materialsdb]: Downloading https://files.pythonhosted.org/packages/d9/93/15ba1f9fc951fdbf1b2f0d6e3ef1f40b1ba057922a3a7659d1f3bc879fb0/python-materialsdb-0.0.1.tar.gz
+[2023-04-30 14:11:48] WARNING root fetch - processPackages [bigdl-orca]: Skipping package: exceeds size limit 20369212>=10485760
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl-friesian]: Downloading https://files.pythonhosted.org/packages/a7/b4/02e0c69efb94de407cd807f503e2e82d8fecc385363f95a243116c1a7b6c/bigdl_friesian-2.4.0b20230429-py3-none-manylinux1_x86_64.whl
+[2023-04-30 14:11:48] INFO root fetch - main [MainThread]: End processing [bigdl-orca] error
+[2023-04-30 14:11:48] INFO root fetch - processPackages [shellcrafter]: executing diffoscope
+[2023-04-30 14:11:48] INFO root fetch - processPackages [shellcrafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellcrafter-1.0.2.tar.gz tmp/shellcrafter-1.0.3.tar.gz --markdown 20230430/s/shellcrafter/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 14:11:48] INFO root fetch - processPackages [python-materialsdb]: Downloading https://files.pythonhosted.org/packages/7e/af/618870a2a9db906302c1a49d2030cb9f9b691b8bb7e93bc5480b830d4aaa/python-materialsdb-0.0.2.tar.gz
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl]: Downloading https://files.pythonhosted.org/packages/2f/fb/82416aa20b5055d86be60af346d50ef7a0018bff183e10d7a30e3eafe6f9/bigdl-2.4.0b20230430-py3-none-manylinux1_x86_64.whl
+[2023-04-30 14:11:48] INFO root fetch - processPackages [pygmi-get]: executing diffoscope
+[2023-04-30 14:11:48] INFO root fetch - processPackages [pygmi-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmi-get-0.17.4.tar.gz tmp/pygmi-get-0.17.5.tar.gz --markdown 20230430/p/pygmi-get/0.17.4-0.17.5/diff.md --exclude *.pyd
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl-friesian]: Downloading https://files.pythonhosted.org/packages/a5/d6/0b85a7b2b3fa6eba63f3be7a464a65b36ec39191b2f89014b2dc790838f0/bigdl_friesian-2.4.0b20230430-py3-none-manylinux1_x86_64.whl
+[2023-04-30 14:11:48] INFO root fetch - processPackages [construct-gallery]: Downloading https://files.pythonhosted.org/packages/25/7e/b8fa5611240039ea45ebcee1ff8020d373155e277e7755bf7eb33c26b92f/construct-gallery-1.1.0.tar.gz
+[2023-04-30 14:11:48] INFO root fetch - processPackages [python-materialsdb]: executing diffoscope
+[2023-04-30 14:11:48] INFO root fetch - processPackages [python-materialsdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-materialsdb-0.0.1.tar.gz tmp/python-materialsdb-0.0.2.tar.gz --markdown 20230430/p/python-materialsdb/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl]: executing diffoscope
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl-2.4.0b20230429-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl-2.4.0b20230430-py3-none-manylinux1_x86_64.whl.zip --markdown 20230430/b/bigdl/2.4.0b20230429-2.4.0b20230430/diff.md --exclude *.pyd
+[2023-04-30 14:11:48] INFO root fetch - processPackages [construct-gallery]: executing diffoscope
+[2023-04-30 14:11:48] INFO root fetch - processPackages [construct-gallery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/construct-gallery-1.0.0.post3.tar.gz tmp/construct-gallery-1.1.0.tar.gz --markdown 20230430/c/construct-gallery/1.0.0.post3-1.1.0/diff.md --exclude *.pyd
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl-friesian]: executing diffoscope
+[2023-04-30 14:11:48] INFO root fetch - processPackages [bigdl-friesian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian-2.4.0b20230429-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian-2.4.0b20230430-py3-none-manylinux1_x86_64.whl.zip --markdown 20230430/b/bigdl-friesian/2.4.0b20230429-2.4.0b20230430/diff.md --exclude *.pyd
+[2023-04-30 14:11:48] INFO root fetch - processPackages [posuto]: Downloading https://files.pythonhosted.org/packages/af/fa/30967801e0f6cd5003ab90f72bf8ffa96eccef9be0673da9e7c8987b8f30/posuto-2023.5.0.tar.gz
+[2023-04-30 14:11:49] INFO root fetch - processPackages [posuto]: executing diffoscope
+[2023-04-30 14:11:49] INFO root fetch - processPackages [posuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/posuto-2023.4.0.tar.gz tmp/posuto-2023.5.0.tar.gz --markdown 20230430/p/posuto/2023.4.0-2023.5.0/diff.md --exclude *.pyd
+[2023-04-30 14:11:49] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 14:11:49] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
+[2023-04-30 14:11:49] INFO root fetch - main [MainThread]: End processing [pygmi-get]: success
+[2023-04-30 14:11:50] INFO root fetch - main [MainThread]: End processing [bigdl]: success
+[2023-04-30 14:11:50] INFO root fetch - main [MainThread]: End processing [construct-gallery]: success
+[2023-04-30 14:11:50] INFO root fetch - main [MainThread]: End processing [python-materialsdb]: success
+[2023-04-30 14:11:51] INFO root fetch - main [MainThread]: End processing [bigdl-friesian]: success
+[2023-04-30 14:12:02] INFO root fetch - main [MainThread]: End processing [posuto]: success
+[2023-04-30 14:12:02] INFO root fetch - main [MainThread]: Store serial: [17916445]
