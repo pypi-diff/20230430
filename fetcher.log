@@ -2709,3 +2709,24 @@
 [2023-04-30 06:14:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-mgmt]: success
 [2023-04-30 06:14:51] INFO root fetch - main [MainThread]: End processing [portage]: success
 [2023-04-30 06:14:51] INFO root fetch - main [MainThread]: Store serial: [17914424]
+[2023-04-30 06:19:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914424]
+[2023-04-30 06:19:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 06:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Vulncapture
+[2023-04-30 06:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cellatlas
+[2023-04-30 06:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfile
+[2023-04-30 06:19:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kangpy
+[2023-04-30 06:19:59] INFO root fetch - processPackages [Vulncapture]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 06:19:59] INFO root fetch - processPackages [dragonfile]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-30 06:19:59] WARNING root fetch - processPackages [cellatlas]: Skipping, unable to determine old version
+[2023-04-30 06:19:59] WARNING root fetch - processPackages [kangpy]: Skipping, unable to determine old version
+[2023-04-30 06:19:59] INFO root fetch - main [MainThread]: End processing [cellatlas] error
+[2023-04-30 06:19:59] INFO root fetch - main [MainThread]: End processing [kangpy] error
+[2023-04-30 06:19:59] INFO root fetch - processPackages [dragonfile]: Downloading https://files.pythonhosted.org/packages/d0/24/ff6f67cf7c9f00bfb3b0f516b6175f1b84d7eb5576aecf60b35e157b6d0f/dragonfile-1.0.5.tar.gz
+[2023-04-30 06:19:59] INFO root fetch - processPackages [dragonfile]: executing diffoscope
+[2023-04-30 06:19:59] INFO root fetch - processPackages [dragonfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfile-1.0.4.tar.gz tmp/dragonfile-1.0.5.tar.gz --markdown 20230430/d/dragonfile/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-30 06:19:59] INFO root fetch - processPackages [Vulncapture]: Downloading https://files.pythonhosted.org/packages/26/09/b79bedcddae06c27a7d26a547eb64e1ecaf8f2ccc0da9504380559eb17cf/Vulncapture-1.0.2.tar.gz
+[2023-04-30 06:20:00] INFO root fetch - processPackages [Vulncapture]: executing diffoscope
+[2023-04-30 06:20:00] INFO root fetch - processPackages [Vulncapture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Vulncapture-1.0.1.tar.gz tmp/Vulncapture-1.0.2.tar.gz --markdown 20230430/V/Vulncapture/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 06:20:00] INFO root fetch - main [MainThread]: End processing [dragonfile]: success
+[2023-04-30 06:20:01] INFO root fetch - main [MainThread]: End processing [Vulncapture]: success
+[2023-04-30 06:20:01] INFO root fetch - main [MainThread]: Store serial: [17914439]
