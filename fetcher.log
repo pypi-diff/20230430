@@ -9992,3 +9992,64 @@
 [2023-04-30 21:03:08] INFO root fetch - main [MainThread]: End processing [pykuda2]: success
 [2023-04-30 21:03:08] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
 [2023-04-30 21:03:08] INFO root fetch - main [MainThread]: Store serial: [17919114]
+[2023-04-30 21:08:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919114]
+[2023-04-30 21:09:44] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sharingiscaring
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfed
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfed-macos
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: term-image
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: custolint
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stim
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfed
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: stimcirq
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: psims
+[2023-04-30 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyfed-macos
+[2023-04-30 21:09:44] INFO root fetch - processPackages [custolint]: New version: [0.1.12] Old Version: [0.1.11]
+[2023-04-30 21:09:44] INFO root fetch - processPackages [pyfed-macos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:09:44] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:09:44] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-30 21:09:45] INFO root fetch - processPackages [term-image]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-30 21:09:45] INFO root fetch - processPackages [psims]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed-macos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:09:45] INFO root fetch - processPackages [stimcirq]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-30 21:09:45] INFO root fetch - processPackages [stim]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:09:45] INFO root fetch - processPackages [psims]: Downloading https://files.pythonhosted.org/packages/4e/2a/777c6186442df0f260886fab8361d9162876e09c83a814ec1e5edcf960fa/psims-1.2.3.tar.gz
+[2023-04-30 21:09:45] INFO root fetch - processPackages [term-image]: Downloading https://files.pythonhosted.org/packages/6f/6d/2399f71f40a170094c6f9c82b2ae749e076f0db5a30a54f68cdd63ece279/term-image-0.6.0.tar.gz
+[2023-04-30 21:09:45] INFO root fetch - processPackages [custolint]: Downloading https://files.pythonhosted.org/packages/73/10/ff67aa2403d0ee274741740d50939e653d0b256c9a5cdc4ceb29061568cf/custolint-0.1.12-py3-none-any.whl
+[2023-04-30 21:09:45] WARNING root fetch - processPackages [psims]: Skipping package: exceeds size limit 14646139>=10485760
+[2023-04-30 21:09:45] INFO root fetch - processPackages [psims]: Start processing: sinter
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed-macos]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - main [MainThread]: End processing [psims] error
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed_macos-0.0.8.tar.gz tmp/pyfed_macos-0.0.9.tar.gz --markdown 20230430/p/pyfed-macos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed-macos]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [custolint]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed_macos-0.0.8.tar.gz tmp/pyfed_macos-0.0.9.tar.gz --markdown 20230430/p/pyfed-macos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [custolint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custolint-0.1.11-py3-none-any.whl.zip tmp/custolint-0.1.12-py3-none-any.whl.zip --markdown 20230430/c/custolint/0.1.11-0.1.12/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230430/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [stimcirq]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [stimcirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stimcirq-1.9.dev1656756326.tar.gz tmp/stimcirq-1.9.dev1657429876.tar.gz --markdown 20230430/s/stimcirq/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [sinter]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [stim]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stim-1.9.dev1656756326.tar.gz tmp/stim-1.9.dev1657429876.tar.gz --markdown 20230430/s/stim/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [term-image]: Downloading https://files.pythonhosted.org/packages/b4/90/251164a52a666e33182be11c0333215750879f10995a18e5957838bfc253/term-image-0.6.1.tar.gz
+[2023-04-30 21:09:45] INFO root fetch - processPackages [term-image]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [term-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/term-image-0.6.0.tar.gz tmp/term-image-0.6.1.tar.gz --markdown 20230430/t/term-image/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-30 21:09:45] INFO root fetch - processPackages [sinter]: executing diffoscope
+[2023-04-30 21:09:45] INFO root fetch - processPackages [sinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinter-1.9.dev1656756326.tar.gz tmp/sinter-1.9.dev1657429876.tar.gz --markdown 20230430/s/sinter/1.9.dev1656756326-1.9.dev1657429876/diff.md --exclude *.pyd
+[2023-04-30 21:09:46] INFO root fetch - main [MainThread]: End processing [pyfed-macos]: success
+[2023-04-30 21:09:47] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 21:09:47] INFO root fetch - main [MainThread]: End processing [custolint]: success
+[2023-04-30 21:09:47] INFO root fetch - main [MainThread]: End processing [pyfed-macos]: success
+[2023-04-30 21:09:47] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 21:09:47] INFO root fetch - main [MainThread]: End processing [term-image]: success
+[2023-04-30 21:09:47] INFO root fetch - main [MainThread]: End processing [sinter]: success
+[2023-04-30 21:09:47] INFO root fetch - main [MainThread]: End processing [stimcirq]: success
+[2023-04-30 21:09:48] INFO root fetch - main [MainThread]: End processing [stim]: success
+[2023-04-30 21:09:48] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
+[2023-04-30 21:09:48] INFO root fetch - main [MainThread]: Store serial: [17919225]
