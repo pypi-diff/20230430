@@ -3794,3 +3794,30 @@
 [2023-04-30 09:17:19] INFO root fetch - main [MainThread]: End processing [baekjoonapi]: success
 [2023-04-30 09:17:20] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
 [2023-04-30 09:17:20] INFO root fetch - main [MainThread]: Store serial: [17915156]
+[2023-04-30 09:22:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915156]
+[2023-04-30 09:22:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfq-nightly
+[2023-04-30 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfirebird
+[2023-04-30 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: terminalplay
+[2023-04-30 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ukmon-meteortools
+[2023-04-30 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: citizenk
+[2023-04-30 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: terminalplay
+[2023-04-30 09:22:29] INFO root fetch - processPackages [terminalplay]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 09:22:29] WARNING root fetch - processPackages [citizenk]: Skipping, unable to determine old version
+[2023-04-30 09:22:29] INFO root fetch - main [MainThread]: End processing [citizenk] error
+[2023-04-30 09:22:29] INFO root fetch - processPackages [terminalplay]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 09:22:29] WARNING root fetch - processPackages [ukmon-meteortools]: Skipping, unable to determine old version
+[2023-04-30 09:22:29] INFO root fetch - main [MainThread]: End processing [ukmon-meteortools] error
+[2023-04-30 09:22:29] WARNING root fetch - processPackages [pyfirebird]: Skipping, unable to determine old version
+[2023-04-30 09:22:29] INFO root fetch - main [MainThread]: End processing [pyfirebird] error
+[2023-04-30 09:22:29] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230429] Old Version: [0.7.3.dev20230428]
+[2023-04-30 09:22:29] INFO root fetch - processPackages [terminalplay]: executing diffoscope
+[2023-04-30 09:22:29] INFO root fetch - processPackages [terminalplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalplay-1.0.0.tar.gz tmp/terminalplay-1.0.1.tar.gz --markdown 20230430/t/terminalplay/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 09:22:29] INFO root fetch - processPackages [terminalplay]: executing diffoscope
+[2023-04-30 09:22:29] INFO root fetch - processPackages [terminalplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalplay-1.0.0.tar.gz tmp/terminalplay-1.0.1.tar.gz --markdown 20230430/t/terminalplay/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 09:22:29] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/36/1a/94d7837f2db201f747a27695df04263497e2eee8ccbfccbbfcf3dfe359ef/tfq_nightly-0.7.3.dev20230428-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 09:22:29] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819847>=10485760
+[2023-04-30 09:22:29] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-04-30 09:22:30] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
+[2023-04-30 09:22:30] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
+[2023-04-30 09:22:30] INFO root fetch - main [MainThread]: Store serial: [17915169]
