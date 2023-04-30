@@ -7670,3 +7670,46 @@
 [2023-04-30 16:37:14] INFO root fetch - main [MainThread]: End processing [Musicreater]: success
 [2023-04-30 16:37:38] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-04-30 16:37:38] INFO root fetch - main [MainThread]: Store serial: [17917431]
+[2023-04-30 16:42:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917431]
+[2023-04-30 16:42:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 16:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2023-04-30 16:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sleuren
+[2023-04-30 16:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deeplcretrainer
+[2023-04-30 16:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylama-to-codeclimate
+[2023-04-30 16:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: KernelsPython
+[2023-04-30 16:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-desktop-wing
+[2023-04-30 16:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cerebrium
+[2023-04-30 16:42:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zadu
+[2023-04-30 16:42:51] WARNING root fetch - processPackages [KernelsPython]: Skipping, unable to determine old version
+[2023-04-30 16:42:51] INFO root fetch - main [MainThread]: End processing [KernelsPython] error
+[2023-04-30 16:42:51] INFO root fetch - processPackages [nonebot-desktop-wing]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-30 16:42:51] INFO root fetch - processPackages [zadu]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 16:42:51] INFO root fetch - processPackages [deeplcretrainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 16:42:51] INFO root fetch - processPackages [sleuren]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-30 16:42:51] WARNING root fetch - processPackages [pylama-to-codeclimate]: Skipping, unable to determine old version
+[2023-04-30 16:42:51] INFO root fetch - main [MainThread]: End processing [pylama-to-codeclimate] error
+[2023-04-30 16:42:51] INFO root fetch - processPackages [cerebrium]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 16:42:51] INFO root fetch - processPackages [zadu]: executing diffoscope
+[2023-04-30 16:42:51] INFO root fetch - processPackages [zadu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zadu-0.0.1.tar.gz tmp/zadu-0.0.2.tar.gz --markdown 20230430/z/zadu/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 16:42:51] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 16:42:51] INFO root fetch - processPackages [deeplcretrainer]: Downloading https://files.pythonhosted.org/packages/7c/9e/112506fcca1e563005283e957b25fa4467d58d085ccac4ad8c92f7358f89/deeplcretrainer-0.1.8.tar.gz
+[2023-04-30 16:42:51] INFO root fetch - processPackages [nonebot-desktop-wing]: Downloading https://files.pythonhosted.org/packages/e5/bb/e369f57e9e6b78be683611e0842252d10a8a6deae489f13a0dc41ac670b9/nonebot-desktop-wing-0.2.5.tar.gz
+[2023-04-30 16:42:51] INFO root fetch - processPackages [nonebot-desktop-wing]: executing diffoscope
+[2023-04-30 16:42:51] INFO root fetch - processPackages [nonebot-desktop-wing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-wing-0.2.4.tar.gz tmp/nonebot-desktop-wing-0.2.5.tar.gz --markdown 20230430/n/nonebot-desktop-wing/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-30 16:42:51] INFO root fetch - processPackages [sleuren]: Downloading https://files.pythonhosted.org/packages/f2/d5/dc25d73b82cb12bd8a0a04a8033429e6de0c3ae1f1eb22fad707226e74ae/sleuren-1.0.5.tar.gz
+[2023-04-30 16:42:51] INFO root fetch - processPackages [cerebrium]: executing diffoscope
+[2023-04-30 16:42:51] INFO root fetch - processPackages [cerebrium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerebrium-0.4.8.tar.gz tmp/cerebrium-0.4.9.tar.gz --markdown 20230430/c/cerebrium/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-30 16:42:51] INFO root fetch - processPackages [sleuren]: executing diffoscope
+[2023-04-30 16:42:51] INFO root fetch - processPackages [sleuren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleuren-1.0.4.tar.gz tmp/sleuren-1.0.5.tar.gz --markdown 20230430/s/sleuren/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-30 16:42:51] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-30 16:42:51] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230430/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 16:42:51] INFO root fetch - processPackages [deeplcretrainer]: Downloading https://files.pythonhosted.org/packages/8c/00/6729254d765d1b8153875d842c1bd60e689917b9d50b2c69338af6c31e94/deeplcretrainer-0.1.9.tar.gz
+[2023-04-30 16:42:52] INFO root fetch - processPackages [deeplcretrainer]: executing diffoscope
+[2023-04-30 16:42:52] INFO root fetch - processPackages [deeplcretrainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deeplcretrainer-0.1.8.tar.gz tmp/deeplcretrainer-0.1.9.tar.gz --markdown 20230430/d/deeplcretrainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 16:42:52] INFO root fetch - main [MainThread]: End processing [zadu]: success
+[2023-04-30 16:42:52] INFO root fetch - main [MainThread]: End processing [nonebot-desktop-wing]: success
+[2023-04-30 16:42:52] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-30 16:42:52] INFO root fetch - main [MainThread]: End processing [deeplcretrainer]: success
+[2023-04-30 16:42:53] INFO root fetch - main [MainThread]: End processing [cerebrium]: success
+[2023-04-30 16:42:54] INFO root fetch - main [MainThread]: End processing [sleuren]: success
+[2023-04-30 16:42:54] INFO root fetch - main [MainThread]: Store serial: [17917481]
