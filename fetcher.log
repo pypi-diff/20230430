@@ -5030,3 +5030,57 @@
 [2023-04-30 11:46:29] INFO root fetch - main [MainThread]: End processing [citizenk]: success
 [2023-04-30 11:46:29] INFO root fetch - main [MainThread]: End processing [salt-nornir]: success
 [2023-04-30 11:46:29] INFO root fetch - main [MainThread]: Store serial: [17915838]
+[2023-04-30 11:51:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915838]
+[2023-04-30 11:51:38] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: UzbekTagger
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tegda
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spPersist
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-statement-import-online-paypal
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rewards-envs
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipfsspec
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lbt-honeybee
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: leuci-map
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: DBRetina
+[2023-04-30 11:51:38] INFO root fetch - processPackages [tegda]: New version: [0.1.4.2] Old Version: [0.1.4]
+[2023-04-30 11:51:38] INFO root fetch - processPackages [UzbekTagger]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-30 11:51:38] INFO root fetch - processPackages [rewards-envs]: New version: [0.1.1] Old Version: [0.0.1]
+[2023-04-30 11:51:38] INFO root fetch - processPackages [DBRetina]: New version: [2.2.0] Old Version: [2.1.6]
+[2023-04-30 11:51:38] WARNING root fetch - processPackages [odoo-addon-account-statement-import-online-paypal]: Skipping, unable to determine old version
+[2023-04-30 11:51:38] INFO root fetch - processPackages [spPersist]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 11:51:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-statement-import-online-paypal] error
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ipfsspec]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-30 11:51:38] INFO root fetch - processPackages [leuci-map]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 11:51:38] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-30 11:51:38] INFO root fetch - processPackages [DBRetina]: executing diffoscope
+[2023-04-30 11:51:38] INFO root fetch - processPackages [DBRetina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DBRetina-2.1.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/DBRetina-2.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230430/D/DBRetina/2.1.6-2.2.0/diff.md --exclude *.pyd
+[2023-04-30 11:51:38] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2023-04-30 11:51:38] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.7.98.tar.gz tmp/lbt-honeybee-0.7.99.tar.gz --markdown 20230430/l/lbt-honeybee/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-30 11:51:38] INFO root fetch - processPackages [leuci-map]: executing diffoscope
+[2023-04-30 11:51:38] INFO root fetch - processPackages [leuci-map]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-map-0.1.8.tar.gz tmp/leuci-map-0.1.9.tar.gz --markdown 20230430/l/leuci-map/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 11:51:38] INFO root fetch - processPackages [rewards-envs]: Downloading https://files.pythonhosted.org/packages/7d/5f/4a47a4666ffe7dacef0259ea970352a9d651efd34a4b2d2615536ef6fb9c/rewards_envs-0.0.1.tar.gz
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ipfsspec]: Downloading https://files.pythonhosted.org/packages/70/34/85b83f1d37d53224c940fd8c8636e0bc38847911b310620ebc61b666dd3c/ipfsspec-0.3.0.tar.gz
+[2023-04-30 11:51:38] INFO root fetch - processPackages [UzbekTagger]: Downloading https://files.pythonhosted.org/packages/9e/e8/08ffd46137bc0c20ff67badb4fed905878e9c14a74afc58587023c091038/UzbekTagger-0.0.7.tar.gz
+[2023-04-30 11:51:38] INFO root fetch - processPackages [tegda]: Downloading https://files.pythonhosted.org/packages/81/a6/385a6141ed05bc8500948be145c79695457a883c681ce36a69932e3e0f75/tegda-0.1.4.2.tar.gz
+[2023-04-30 11:51:38] INFO root fetch - processPackages [spPersist]: Downloading https://files.pythonhosted.org/packages/61/c8/562759fbbc9187e3cd0faf8d60c289d79dc8dbe8edf1c53b1735620986f6/sppersist-0.0.1.tar.gz
+[2023-04-30 11:51:38] INFO root fetch - processPackages [UzbekTagger]: executing diffoscope
+[2023-04-30 11:51:38] INFO root fetch - processPackages [UzbekTagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UzbekTagger-0.0.6.tar.gz tmp/UzbekTagger-0.0.7.tar.gz --markdown 20230430/U/UzbekTagger/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-30 11:51:38] INFO root fetch - processPackages [tegda]: executing diffoscope
+[2023-04-30 11:51:38] INFO root fetch - processPackages [tegda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tegda-0.1.4.tar.gz tmp/tegda-0.1.4.2.tar.gz --markdown 20230430/t/tegda/0.1.4-0.1.4.2/diff.md --exclude *.pyd
+[2023-04-30 11:51:38] INFO root fetch - processPackages [spPersist]: Downloading https://files.pythonhosted.org/packages/45/3a/0290b06ed9218a6f730057f0fc57dd39628cd6d11acc989c90e485fb2a5a/sppersist-0.0.2.tar.gz
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ipfsspec]: Downloading https://files.pythonhosted.org/packages/ec/7f/dde6fb9b3c3a9edca83ccb1a834f6095d7183e739d09c9add78cd880e66c/ipfsspec-0.4.0.tar.gz
+[2023-04-30 11:51:38] INFO root fetch - processPackages [rewards-envs]: Downloading https://files.pythonhosted.org/packages/77/db/3f1b3fd6049ae192cd42c7f2b8b25e022d03b1d076ead11b550619e08fe2/rewards_envs-0.1.1.tar.gz
+[2023-04-30 11:51:38] INFO root fetch - processPackages [spPersist]: executing diffoscope
+[2023-04-30 11:51:38] INFO root fetch - processPackages [spPersist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sppersist-0.0.1.tar.gz tmp/sppersist-0.0.2.tar.gz --markdown 20230430/s/spPersist/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 11:51:38] INFO root fetch - processPackages [rewards-envs]: executing diffoscope
+[2023-04-30 11:51:38] INFO root fetch - processPackages [rewards-envs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rewards_envs-0.0.1.tar.gz tmp/rewards_envs-0.1.1.tar.gz --markdown 20230430/r/rewards-envs/0.0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ipfsspec]: executing diffoscope
+[2023-04-30 11:51:38] INFO root fetch - processPackages [ipfsspec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfsspec-0.3.0.tar.gz tmp/ipfsspec-0.4.0.tar.gz --markdown 20230430/i/ipfsspec/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 11:51:39] INFO root fetch - main [MainThread]: End processing [leuci-map]: success
+[2023-04-30 11:51:39] INFO root fetch - main [MainThread]: End processing [tegda]: success
+[2023-04-30 11:51:39] INFO root fetch - main [MainThread]: End processing [spPersist]: success
+[2023-04-30 11:51:39] INFO root fetch - main [MainThread]: End processing [rewards-envs]: success
+[2023-04-30 11:51:40] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2023-04-30 11:51:40] INFO root fetch - main [MainThread]: End processing [ipfsspec]: success
+[2023-04-30 11:51:42] INFO root fetch - main [MainThread]: End processing [UzbekTagger]: success
+[2023-04-30 11:52:01] INFO root fetch - main [MainThread]: End processing [DBRetina]: success
+[2023-04-30 11:52:01] INFO root fetch - main [MainThread]: Store serial: [17915869]
