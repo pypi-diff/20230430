@@ -2433,3 +2433,36 @@
 [2023-04-30 05:27:57] INFO root fetch - main [MainThread]: End processing [h3daemon]: success
 [2023-04-30 05:27:57] INFO root fetch - main [MainThread]: End processing [ms-api]: success
 [2023-04-30 05:27:57] INFO root fetch - main [MainThread]: Store serial: [17914270]
+[2023-04-30 05:33:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914270]
+[2023-04-30 05:33:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 05:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mbta-gtfs-sqlite
+[2023-04-30 05:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: estimenergy
+[2023-04-30 05:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: estimenergy
+[2023-04-30 05:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BingImageCreator
+[2023-04-30 05:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: systems-manager
+[2023-04-30 05:33:06] INFO root fetch - processPackages [systems-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-30 05:33:06] INFO root fetch - processPackages [estimenergy]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-30 05:33:06] INFO root fetch - processPackages [estimenergy]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-30 05:33:06] INFO root fetch - processPackages [mbta-gtfs-sqlite]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 05:33:06] INFO root fetch - processPackages [BingImageCreator]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 05:33:06] INFO root fetch - processPackages [BingImageCreator]: Downloading https://files.pythonhosted.org/packages/80/e0/2dcab940013acc759ff0e1d6a5140c7a4db89f1422da1578c2f154ac9ac1/BingImageCreator-0.1.3.tar.gz
+[2023-04-30 05:33:06] INFO root fetch - processPackages [mbta-gtfs-sqlite]: Downloading https://files.pythonhosted.org/packages/92/c4/d029cfbd245795badbee2cb95520a18f286afb01cc7033613640431026de/mbta-gtfs-sqlite-0.1.2.tar.gz
+[2023-04-30 05:33:06] INFO root fetch - processPackages [estimenergy]: executing diffoscope
+[2023-04-30 05:33:06] INFO root fetch - processPackages [estimenergy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/estimenergy-2.0.8.tar.gz tmp/estimenergy-2.0.9.tar.gz --markdown 20230430/e/estimenergy/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-30 05:33:06] INFO root fetch - processPackages [estimenergy]: executing diffoscope
+[2023-04-30 05:33:06] INFO root fetch - processPackages [estimenergy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/estimenergy-2.0.8.tar.gz tmp/estimenergy-2.0.9.tar.gz --markdown 20230430/e/estimenergy/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-30 05:33:06] INFO root fetch - processPackages [systems-manager]: Downloading https://files.pythonhosted.org/packages/0a/9f/637250b3c42b63a59c45de07eb90853ea0958cb78d0d043b573838e73584/systems_manager-0.8.0-py2.py3-none-any.whl
+[2023-04-30 05:33:06] INFO root fetch - processPackages [mbta-gtfs-sqlite]: executing diffoscope
+[2023-04-30 05:33:06] INFO root fetch - processPackages [mbta-gtfs-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbta-gtfs-sqlite-0.1.1.tar.gz tmp/mbta-gtfs-sqlite-0.1.2.tar.gz --markdown 20230430/m/mbta-gtfs-sqlite/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 05:33:06] INFO root fetch - processPackages [BingImageCreator]: Downloading https://files.pythonhosted.org/packages/f0/80/b83918bdffc0015ac852d04059a8c4d8fc2b1a268c0cc80d690e85899a7e/BingImageCreator-0.1.4.tar.gz
+[2023-04-30 05:33:06] INFO root fetch - processPackages [BingImageCreator]: executing diffoscope
+[2023-04-30 05:33:06] INFO root fetch - processPackages [BingImageCreator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BingImageCreator-0.1.3.tar.gz tmp/BingImageCreator-0.1.4.tar.gz --markdown 20230430/B/BingImageCreator/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 05:33:06] INFO root fetch - processPackages [systems-manager]: Downloading https://files.pythonhosted.org/packages/68/28/02a27173c177a8a83a2fbf278250985f93c69856fda1ba8ab95e09bd391f/systems_manager-0.9.0-py2.py3-none-any.whl
+[2023-04-30 05:33:06] INFO root fetch - processPackages [systems-manager]: executing diffoscope
+[2023-04-30 05:33:06] INFO root fetch - processPackages [systems-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systems_manager-0.8.0-py2.py3-none-any.whl.zip tmp/systems_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20230430/s/systems-manager/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-30 05:33:07] INFO root fetch - main [MainThread]: End processing [estimenergy]: success
+[2023-04-30 05:33:07] INFO root fetch - main [MainThread]: End processing [mbta-gtfs-sqlite]: success
+[2023-04-30 05:33:07] INFO root fetch - main [MainThread]: End processing [estimenergy]: success
+[2023-04-30 05:33:07] INFO root fetch - main [MainThread]: End processing [BingImageCreator]: success
+[2023-04-30 05:33:07] INFO root fetch - main [MainThread]: End processing [systems-manager]: success
+[2023-04-30 05:33:07] INFO root fetch - main [MainThread]: Store serial: [17914291]
