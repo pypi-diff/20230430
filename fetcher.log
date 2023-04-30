@@ -4057,3 +4057,72 @@
 [2023-04-30 09:55:13] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230429-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230430-cp39-cp39-win_amd64.whl.zip --markdown 20230430/t/tf-nightly-cpu/2.13.0.dev20230429-2.13.0.dev20230430/diff.md --exclude *.pyd
 [2023-04-30 09:55:14] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2023-04-30 09:55:14] INFO root fetch - main [MainThread]: Store serial: [17915321]
+[2023-04-30 10:00:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915321]
+[2023-04-30 10:00:22] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlogpp
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: terminalplay
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: secapi-tl
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test-swagger-coverage
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inworld-python
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: iamprayut
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aiogram-ext
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spotinst-agent-beta
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: classiq
+[2023-04-30 10:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: inworld-python
+[2023-04-30 10:00:22] INFO root fetch - processPackages [mlogpp]: New version: [3.1.0] Old Version: [3.0.0rc1]
+[2023-04-30 10:00:22] INFO root fetch - processPackages [secapi-tl]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-30 10:00:22] INFO root fetch - processPackages [test-swagger-coverage]: New version: [2.1.56] Old Version: [2.1.55]
+[2023-04-30 10:00:22] INFO root fetch - processPackages [iamprayut]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 10:00:22] INFO root fetch - processPackages [aiogram-ext]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-30 10:00:22] ERROR root fetch - processPackages [inworld-python]: Unable to get metadata: No such project 'inworld-python'
+[2023-04-30 10:00:22] INFO root fetch - processPackages [inworld-python]: Start processing: xia-scw-vpc
+[2023-04-30 10:00:22] INFO root fetch - main [MainThread]: End processing [inworld-python] error
+[2023-04-30 10:00:22] INFO root fetch - processPackages [terminalplay]: New version: [1.0.26] Old Version: [1.0.25]
+[2023-04-30 10:00:22] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.275] Old Version: [2.2.274]
+[2023-04-30 10:00:22] ERROR root fetch - processPackages [inworld-python]: Unable to get metadata: No such project 'inworld-python'
+[2023-04-30 10:00:22] INFO root fetch - main [MainThread]: End processing [inworld-python] error
+[2023-04-30 10:00:22] INFO root fetch - processPackages [classiq]: New version: [0.9.3] Old Version: [0.9.1]
+[2023-04-30 10:00:22] INFO root fetch - processPackages [xia-scw-vpc]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-30 10:00:22] INFO root fetch - processPackages [test-swagger-coverage]: Downloading https://files.pythonhosted.org/packages/b2/b2/11ed267f9546cd3e8a284a0042fc6d37f9c36038cc526949bb1ec3f162ca/test_swagger_coverage-2.1.55.tar.gz
+[2023-04-30 10:00:22] INFO root fetch - processPackages [iamprayut]: Downloading https://files.pythonhosted.org/packages/33/e9/61eb729bd64be07477dd8e87692dacea5f1c2b5f4de5931dd7f6d70bcd57/iamprayut-0.0.1.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/f2/7e/96842593cc6558da78d1c58840dce741fe0ddc362dc089be658f3b1e6116/spotinst-agent-beta-2.2.274.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/d5/29/a7eb462a7982d7f529e212216d4fe1fcacfe83c717735a258b3b4ec9477e/terminalplay-1.0.25.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/47/bf/e6f6d1d00a69bb4f97de9a289ba585ee441e3ac8065ffab89a625fc7ac53/aiogram-ext-0.4.0.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [mlogpp]: Downloading https://files.pythonhosted.org/packages/be/bf/d2004e7e77a7130aebc3df36af8cb77604ca99e59147f6b2db3f38d8f2df/mlogpp-3.0.0rc1.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [xia-scw-vpc]: Downloading https://files.pythonhosted.org/packages/c1/4c/5d843b4d0bbd3e2a7b146bba6680ea769e1a752239980dfbb9373c7e3daa/xia_scw_vpc-0.0.6-cp39-none-win_amd64.whl
+[2023-04-30 10:00:23] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/62/bd/a743e4141094b0e9dc17aeac1cedfe15efc910502e7411611d5cdf9d1878/classiq-0.9.1-py3-none-any.whl
+[2023-04-30 10:00:23] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.3.0.tar.gz tmp/aiogram-ext-0.4.0.tar.gz --markdown 20230430/a/aiogram-ext/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 10:00:23] INFO root fetch - processPackages [secapi-tl]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [secapi-tl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secapi-tl-1.1.8.tar.gz tmp/secapi-tl-1.1.9.tar.gz --markdown 20230430/s/secapi-tl/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-30 10:00:23] INFO root fetch - processPackages [iamprayut]: Downloading https://files.pythonhosted.org/packages/f0/1b/4123f18fbc896aaa078e555369120e12fabad305962c03c9d6b5cf24c10a/iamprayut-0.0.2.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/56/cf/2fb51180d8fa9ab8c514efe02ac066d77b5fbfecc1ba1c8ed70cb7c01ec9/terminalplay-1.0.26.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [test-swagger-coverage]: Downloading https://files.pythonhosted.org/packages/26/fd/0f05cc4b3f4f67ccc51db6d94babd678b97a62a419fb34e6e5f4c1a87761/test_swagger_coverage-2.1.56.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/ac/12/a4559c3798147a11145e2c306dd63b069595c95a297a6bcfdc21cd3ffa59/spotinst-agent-beta-2.2.275.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [xia-scw-vpc]: Downloading https://files.pythonhosted.org/packages/33/69/a100a532cd29191590617311b5ead96f70a2601963c9b53329ad52f474ca/xia_scw_vpc-0.0.7-cp39-none-macosx_11_0_x86_64.whl
+[2023-04-30 10:00:23] INFO root fetch - processPackages [iamprayut]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [iamprayut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamprayut-0.0.1.tar.gz tmp/iamprayut-0.0.2.tar.gz --markdown 20230430/i/iamprayut/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 10:00:23] INFO root fetch - processPackages [mlogpp]: Downloading https://files.pythonhosted.org/packages/d9/f5/6e0daa4b0bcfe7fdf5e01b3af55fbb9e4da4e8f7d50be8590c007eb26e43/mlogpp-3.1.0.tar.gz
+[2023-04-30 10:00:23] INFO root fetch - processPackages [terminalplay]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [terminalplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalplay-1.0.25.tar.gz tmp/terminalplay-1.0.26.tar.gz --markdown 20230430/t/terminalplay/1.0.25-1.0.26/diff.md --exclude *.pyd
+[2023-04-30 10:00:23] INFO root fetch - processPackages [test-swagger-coverage]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [test-swagger-coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_swagger_coverage-2.1.55.tar.gz tmp/test_swagger_coverage-2.1.56.tar.gz --markdown 20230430/t/test-swagger-coverage/2.1.55-2.1.56/diff.md --exclude *.pyd
+[2023-04-30 10:00:23] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.274.tar.gz tmp/spotinst-agent-beta-2.2.275.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.274-2.2.275/diff.md --exclude *.pyd
+[2023-04-30 10:00:23] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/e5/eb/9b39365fd2d7c2027f6610a884229059149ab9a3395be331767306762c07/classiq-0.9.3-py3-none-any.whl
+[2023-04-30 10:00:23] INFO root fetch - processPackages [mlogpp]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [mlogpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlogpp-3.0.0rc1.tar.gz tmp/mlogpp-3.1.0.tar.gz --markdown 20230430/m/mlogpp/3.0.0rc1-3.1.0/diff.md --exclude *.pyd
+[2023-04-30 10:00:23] INFO root fetch - processPackages [xia-scw-vpc]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [xia-scw-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_scw_vpc-0.0.6-cp39-none-win_amd64.whl.zip tmp/xia_scw_vpc-0.0.7-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230430/x/xia-scw-vpc/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-30 10:00:23] INFO root fetch - processPackages [classiq]: executing diffoscope
+[2023-04-30 10:00:23] INFO root fetch - processPackages [classiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classiq-0.9.1-py3-none-any.whl.zip tmp/classiq-0.9.3-py3-none-any.whl.zip --markdown 20230430/c/classiq/0.9.1-0.9.3/diff.md --exclude *.pyd
+[2023-04-30 10:00:24] INFO root fetch - main [MainThread]: End processing [secapi-tl]: success
+[2023-04-30 10:00:24] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
+[2023-04-30 10:00:24] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-30 10:00:24] INFO root fetch - main [MainThread]: End processing [iamprayut]: success
+[2023-04-30 10:00:24] INFO root fetch - main [MainThread]: End processing [xia-scw-vpc]: success
+[2023-04-30 10:00:25] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 10:00:25] INFO root fetch - main [MainThread]: End processing [test-swagger-coverage]: success
+[2023-04-30 10:00:25] INFO root fetch - main [MainThread]: End processing [mlogpp]: success
+[2023-04-30 10:00:25] INFO root fetch - main [MainThread]: End processing [classiq]: success
+[2023-04-30 10:00:25] INFO root fetch - main [MainThread]: Store serial: [17915352]
