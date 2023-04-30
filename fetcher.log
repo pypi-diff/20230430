@@ -5386,3 +5386,67 @@
 [2023-04-30 12:45:18] INFO root fetch - main [MainThread]: End processing [simple-onnx-processing-tools]: success
 [2023-04-30 12:46:52] INFO root fetch - main [MainThread]: End processing [Nikola]: success
 [2023-04-30 12:46:52] INFO root fetch - main [MainThread]: Store serial: [17916057]
+[2023-04-30 12:51:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916057]
+[2023-04-30 12:52:02] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Shark-sac-Korean-editor
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-drf-cms
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: goxlrutilityapi
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aspreno
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Shark-sac-Korean-editor
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-drf-cms
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mbapy
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: force-relative-import
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-drf-cms
+[2023-04-30 12:52:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wansec
+[2023-04-30 12:52:02] INFO root fetch - processPackages [goxlrutilityapi]: New version: [1.0.1] Old Version: [1.0.0.dev9]
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 12:52:02] INFO root fetch - processPackages [Shark-sac-Korean-editor]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-30 12:52:02] WARNING root fetch - processPackages [aspreno]: Skipping, unable to determine old version
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 12:52:02] INFO root fetch - main [MainThread]: End processing [aspreno] error
+[2023-04-30 12:52:02] INFO root fetch - processPackages [Shark-sac-Korean-editor]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-30 12:52:02] INFO root fetch - processPackages [mbapy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 12:52:02] INFO root fetch - processPackages [force-relative-import]: New version: [0.0.1.post1] Old Version: [0.0.1]
+[2023-04-30 12:52:02] WARNING root fetch - processPackages [wansec]: Skipping, unable to determine old version
+[2023-04-30 12:52:02] INFO root fetch - main [MainThread]: End processing [wansec] error
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: Downloading https://files.pythonhosted.org/packages/eb/fc/bdd05176efd2a3b8999213c246dabb4cd363e5b8420f8f8cfa3c708aaa60/django-drf-cms-0.1.8.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [Shark-sac-Korean-editor]: Downloading https://files.pythonhosted.org/packages/cb/4c/9c12bfbd62ca1360f70d7264cc3e2424f8ff7922b133cbff29b4bf2a4323/Shark%20sac%20Korean%20editor-2.0.2.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [force-relative-import]: Downloading https://files.pythonhosted.org/packages/51/89/0f1d1b4791f4c75f33ea2bcdff2dca5c9e91fe8025495e4fe65d97d5eff9/force-relative-import-0.0.1.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [Shark-sac-Korean-editor]: Downloading https://files.pythonhosted.org/packages/cb/4c/9c12bfbd62ca1360f70d7264cc3e2424f8ff7922b133cbff29b4bf2a4323/Shark%20sac%20Korean%20editor-2.0.2.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: Downloading https://files.pythonhosted.org/packages/eb/fc/bdd05176efd2a3b8999213c246dabb4cd363e5b8420f8f8cfa3c708aaa60/django-drf-cms-0.1.8.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: Downloading https://files.pythonhosted.org/packages/eb/fc/bdd05176efd2a3b8999213c246dabb4cd363e5b8420f8f8cfa3c708aaa60/django-drf-cms-0.1.8.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [mbapy]: Downloading https://files.pythonhosted.org/packages/cf/c0/bf660cac38ad785d89902f34c7fa9f085e1a99813cfb8f0afabc7653b334/mbapy-0.0.8.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [goxlrutilityapi]: Downloading https://files.pythonhosted.org/packages/0e/e3/5e8ba21d5b87df2989a6d654fbe9dc342a66c8578b04233c3e91022ca713/goxlrutilityapi-1.0.1.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [goxlrutilityapi]: executing diffoscope
+[2023-04-30 12:52:02] INFO root fetch - processPackages [goxlrutilityapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goxlrutilityapi-1.0.0.dev9.tar.gz tmp/goxlrutilityapi-1.0.1.tar.gz --markdown 20230430/g/goxlrutilityapi/1.0.0.dev9-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 12:52:02] INFO root fetch - processPackages [force-relative-import]: Downloading https://files.pythonhosted.org/packages/d9/c8/ab3c9be6b3994436e871d9292be31d31ee6cde8cd22e490a67397c9f8b7c/force-relative-import-0.0.1.post1.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [Shark-sac-Korean-editor]: Downloading https://files.pythonhosted.org/packages/df/f2/2f0ab0dd8578a080684391d30ee96d57e4b87d6494d6f2c983b0ed899bdd/Shark%20sac%20Korean%20editor-2.0.3.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: Downloading https://files.pythonhosted.org/packages/7c/e1/d4f32bd2968322451f66902023295a7d8c286d3f7251106f0a36b31f5489/django-drf-cms-0.1.9.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [Shark-sac-Korean-editor]: Downloading https://files.pythonhosted.org/packages/df/f2/2f0ab0dd8578a080684391d30ee96d57e4b87d6494d6f2c983b0ed899bdd/Shark%20sac%20Korean%20editor-2.0.3.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: Downloading https://files.pythonhosted.org/packages/7c/e1/d4f32bd2968322451f66902023295a7d8c286d3f7251106f0a36b31f5489/django-drf-cms-0.1.9.tar.gz
+[2023-04-30 12:52:02] INFO root fetch - processPackages [django-drf-cms]: Downloading https://files.pythonhosted.org/packages/7c/e1/d4f32bd2968322451f66902023295a7d8c286d3f7251106f0a36b31f5489/django-drf-cms-0.1.9.tar.gz
+[2023-04-30 12:52:03] INFO root fetch - processPackages [mbapy]: Downloading https://files.pythonhosted.org/packages/57/77/561dd598bc1cb79b5dce57363452e96a6c77f847695075711961df03a183/mbapy-0.0.9.tar.gz
+[2023-04-30 12:52:03] INFO root fetch - processPackages [force-relative-import]: executing diffoscope
+[2023-04-30 12:52:03] INFO root fetch - processPackages [force-relative-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/force-relative-import-0.0.1.tar.gz tmp/force-relative-import-0.0.1.post1.tar.gz --markdown 20230430/f/force-relative-import/0.0.1-0.0.1.post1/diff.md --exclude *.pyd
+[2023-04-30 12:52:03] INFO root fetch - processPackages [Shark-sac-Korean-editor]: executing diffoscope
+[2023-04-30 12:52:03] INFO root fetch - processPackages [Shark-sac-Korean-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shark sac Korean editor-2.0.2.tar.gz tmp/Shark sac Korean editor-2.0.3.tar.gz --markdown 20230430/S/Shark-sac-Korean-editor/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-30 12:52:03] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 12:52:03] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.8.tar.gz tmp/django-drf-cms-0.1.9.tar.gz --markdown 20230430/d/django-drf-cms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 12:52:03] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 12:52:03] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.8.tar.gz tmp/django-drf-cms-0.1.9.tar.gz --markdown 20230430/d/django-drf-cms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 12:52:03] INFO root fetch - processPackages [Shark-sac-Korean-editor]: executing diffoscope
+[2023-04-30 12:52:03] INFO root fetch - processPackages [Shark-sac-Korean-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shark sac Korean editor-2.0.2.tar.gz tmp/Shark sac Korean editor-2.0.3.tar.gz --markdown 20230430/S/Shark-sac-Korean-editor/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-30 12:52:03] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 12:52:03] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.8.tar.gz tmp/django-drf-cms-0.1.9.tar.gz --markdown 20230430/d/django-drf-cms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 12:52:03] INFO root fetch - processPackages [mbapy]: executing diffoscope
+[2023-04-30 12:52:03] INFO root fetch - processPackages [mbapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbapy-0.0.8.tar.gz tmp/mbapy-0.0.9.tar.gz --markdown 20230430/m/mbapy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [force-relative-import]: success
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [goxlrutilityapi]: success
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [mbapy]: success
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [Shark-sac-Korean-editor]: success
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: End processing [Shark-sac-Korean-editor]: success
+[2023-04-30 12:52:04] INFO root fetch - main [MainThread]: Store serial: [17916085]
