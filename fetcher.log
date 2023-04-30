@@ -4605,3 +4605,51 @@
 [2023-04-30 10:48:51] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2023-04-30 10:48:59] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-04-30 10:48:59] INFO root fetch - main [MainThread]: Store serial: [17915587]
+[2023-04-30 10:54:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915587]
+[2023-04-30 10:54:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 10:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-index
+[2023-04-30 10:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easypipinstall
+[2023-04-30 10:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfirebird
+[2023-04-30 10:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: allianceauth-graphql
+[2023-04-30 10:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wbBase
+[2023-04-30 10:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: botfleet
+[2023-04-30 10:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dokuwikidumper
+[2023-04-30 10:54:08] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-30 10:54:08] INFO root fetch - processPackages [gpt-index]: New version: [0.6.0a3] Old Version: [0.6.0a2]
+[2023-04-30 10:54:08] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 10:54:08] INFO root fetch - processPackages [botfleet]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 10:54:08] INFO root fetch - processPackages [easypipinstall]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-30 10:54:08] INFO root fetch - processPackages [wbBase]: New version: [0.1.55] Old Version: [0.1.54]
+[2023-04-30 10:54:08] INFO root fetch - processPackages [allianceauth-graphql]: New version: [1.1.0] Old Version: [1.0.0b3]
+[2023-04-30 10:54:08] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-04-30 10:54:08] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230430/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 10:54:08] INFO root fetch - processPackages [easypipinstall]: Downloading https://files.pythonhosted.org/packages/45/16/cef3001c2638bc44714a31cf83aa5f443e1d555e281cc99dc5f6fcbddf3c/easypipinstall-0.2.1.tar.gz
+[2023-04-30 10:54:08] INFO root fetch - processPackages [gpt-index]: Downloading https://files.pythonhosted.org/packages/9f/c2/1d05849f1338a459b964c061c17c39e3a7613cbeb60a0d2785e3e1a6d629/gpt_index-0.6.0a2.tar.gz
+[2023-04-30 10:54:08] INFO root fetch - processPackages [allianceauth-graphql]: Downloading https://files.pythonhosted.org/packages/07/a7/006af22fe556fac8df83df0d68395220bf026e9ab9ea36199bc33f97f38b/allianceauth_graphql-1.0.0b3.tar.gz
+[2023-04-30 10:54:08] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/fc/f3/2cbf5b5eba09504470f26c304db363128ac5f5743b26d2cc50d178274e09/pyfirebird-0.0.8.tar.gz
+[2023-04-30 10:54:08] INFO root fetch - processPackages [botfleet]: Downloading https://files.pythonhosted.org/packages/e1/6e/7c6d5e27c928907f03f77d885014eb838716c9debc314abffa48a23aef4b/botfleet-0.0.2-py3-none-any.whl
+[2023-04-30 10:54:08] INFO root fetch - processPackages [easypipinstall]: executing diffoscope
+[2023-04-30 10:54:08] INFO root fetch - processPackages [easypipinstall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easypipinstall-0.2.0.tar.gz tmp/easypipinstall-0.2.1.tar.gz --markdown 20230430/e/easypipinstall/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 10:54:08] INFO root fetch - processPackages [wbBase]: Downloading https://files.pythonhosted.org/packages/f9/da/fe51a102dbf935fcc23fad6e268089d2c4ea8f6303df66cd5ae8aa197a46/wbBase-0.1.54.tar.gz
+[2023-04-30 10:54:08] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-04-30 10:54:08] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.7.tar.gz tmp/pyfirebird-0.0.8.tar.gz --markdown 20230430/p/pyfirebird/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-30 10:54:09] INFO root fetch - processPackages [allianceauth-graphql]: Downloading https://files.pythonhosted.org/packages/73/02/e51e16b4576792befab7ed7545e53a006a7ea5f114389065da8c58fc274c/allianceauth_graphql-1.1.0.tar.gz
+[2023-04-30 10:54:09] INFO root fetch - processPackages [gpt-index]: Downloading https://files.pythonhosted.org/packages/f0/b2/0509c5dc8012e48bb3a5fb95247cb78b005fe42d2f88d77315c32ebd3870/gpt_index-0.6.0a3.tar.gz
+[2023-04-30 10:54:09] INFO root fetch - processPackages [botfleet]: Downloading https://files.pythonhosted.org/packages/e0/2e/8996e502da83f6f01beefc58f522b9bd7281dbe37fe8353e75f0ffc195a0/botfleet-0.0.3-py3-none-any.whl
+[2023-04-30 10:54:09] INFO root fetch - processPackages [wbBase]: Downloading https://files.pythonhosted.org/packages/d9/b9/0cfe9bc9dadb5c764a9c451c1413089ac8e7c88dd549279c18d0a837512a/wbBase-0.1.55.tar.gz
+[2023-04-30 10:54:09] INFO root fetch - processPackages [allianceauth-graphql]: executing diffoscope
+[2023-04-30 10:54:09] INFO root fetch - processPackages [allianceauth-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allianceauth_graphql-1.0.0b3.tar.gz tmp/allianceauth_graphql-1.1.0.tar.gz --markdown 20230430/a/allianceauth-graphql/1.0.0b3-1.1.0/diff.md --exclude *.pyd
+[2023-04-30 10:54:09] INFO root fetch - processPackages [botfleet]: executing diffoscope
+[2023-04-30 10:54:09] INFO root fetch - processPackages [botfleet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botfleet-0.0.2-py3-none-any.whl.zip tmp/botfleet-0.0.3-py3-none-any.whl.zip --markdown 20230430/b/botfleet/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 10:54:09] INFO root fetch - processPackages [wbBase]: executing diffoscope
+[2023-04-30 10:54:09] INFO root fetch - processPackages [wbBase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbBase-0.1.54.tar.gz tmp/wbBase-0.1.55.tar.gz --markdown 20230430/w/wbBase/0.1.54-0.1.55/diff.md --exclude *.pyd
+[2023-04-30 10:54:09] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-04-30 10:54:09] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.6.0a2.tar.gz tmp/gpt_index-0.6.0a3.tar.gz --markdown 20230430/g/gpt-index/0.6.0a2-0.6.0a3/diff.md --exclude *.pyd
+[2023-04-30 10:54:10] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-04-30 10:54:10] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-04-30 10:54:10] INFO root fetch - main [MainThread]: End processing [easypipinstall]: success
+[2023-04-30 10:54:10] INFO root fetch - main [MainThread]: End processing [botfleet]: success
+[2023-04-30 10:54:10] INFO root fetch - main [MainThread]: End processing [wbBase]: success
+[2023-04-30 10:54:11] INFO root fetch - main [MainThread]: End processing [allianceauth-graphql]: success
+[2023-04-30 10:54:12] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
+[2023-04-30 10:54:12] INFO root fetch - main [MainThread]: Store serial: [17915608]
