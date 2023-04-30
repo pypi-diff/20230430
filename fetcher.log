@@ -2405,3 +2405,31 @@
 [2023-04-30 05:19:55] INFO root fetch - processPackages [lino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lino-23.4.0.tar.gz tmp/lino-23.4.1.tar.gz --markdown 20230430/l/lino/23.4.0-23.4.1/diff.md --exclude *.pyd
 [2023-04-30 05:22:45] INFO root fetch - main [MainThread]: End processing [lino]: success
 [2023-04-30 05:22:45] INFO root fetch - main [MainThread]: Store serial: [17914251]
+[2023-04-30 05:27:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914251]
+[2023-04-30 05:27:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 05:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mbta-gtfs-sqlite
+[2023-04-30 05:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: h3daemon
+[2023-04-30 05:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ms-api
+[2023-04-30 05:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AL-Khatma-lib
+[2023-04-30 05:27:55] INFO root fetch - processPackages [ms-api]: New version: [0.9.70] Old Version: [0.9.59]
+[2023-04-30 05:27:55] INFO root fetch - processPackages [h3daemon]: New version: [0.9.3] Old Version: [0.9.0]
+[2023-04-30 05:27:55] INFO root fetch - processPackages [AL-Khatma-lib]: New version: [1.1.1] Old Version: [1.0.0]
+[2023-04-30 05:27:55] INFO root fetch - processPackages [mbta-gtfs-sqlite]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 05:27:55] INFO root fetch - processPackages [ms-api]: executing diffoscope
+[2023-04-30 05:27:55] INFO root fetch - processPackages [ms-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms_api-0.9.59.tar.gz tmp/ms_api-0.9.70.tar.gz --markdown 20230430/m/ms-api/0.9.59-0.9.70/diff.md --exclude *.pyd
+[2023-04-30 05:27:55] INFO root fetch - processPackages [h3daemon]: Downloading https://files.pythonhosted.org/packages/df/3b/d69ef59c3761c991a40f1139de738bde9d4932626e0988670ed53dda3b23/h3daemon-0.9.0.tar.gz
+[2023-04-30 05:27:55] INFO root fetch - processPackages [mbta-gtfs-sqlite]: Downloading https://files.pythonhosted.org/packages/41/b6/0d3205b73a0375b3cbbb70fae2bf3ea9ca6c80c21f0d5306f712b600948c/mbta-gtfs-sqlite-0.1.0.tar.gz
+[2023-04-30 05:27:56] INFO root fetch - processPackages [AL-Khatma-lib]: Downloading https://files.pythonhosted.org/packages/a7/63/a507ed0acbaf15d7144b2d8b1acf92b50424ff1b9a218e3517c589336942/AL_Khatma_lib-1.1.1.tar.gz
+[2023-04-30 05:27:56] INFO root fetch - processPackages [AL-Khatma-lib]: executing diffoscope
+[2023-04-30 05:27:56] INFO root fetch - processPackages [AL-Khatma-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AL_Khatma_lib-1.0.0.tar.gz tmp/AL_Khatma_lib-1.1.1.tar.gz --markdown 20230430/A/AL-Khatma-lib/1.0.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-30 05:27:56] INFO root fetch - processPackages [mbta-gtfs-sqlite]: Downloading https://files.pythonhosted.org/packages/e0/8b/a1d4c6901f86f0902bb54cac44188cc4cbefc89027bae85122758133f383/mbta-gtfs-sqlite-0.1.1.tar.gz
+[2023-04-30 05:27:56] INFO root fetch - processPackages [mbta-gtfs-sqlite]: executing diffoscope
+[2023-04-30 05:27:56] INFO root fetch - processPackages [mbta-gtfs-sqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbta-gtfs-sqlite-0.1.0.tar.gz tmp/mbta-gtfs-sqlite-0.1.1.tar.gz --markdown 20230430/m/mbta-gtfs-sqlite/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 05:27:56] INFO root fetch - processPackages [h3daemon]: Downloading https://files.pythonhosted.org/packages/f1/76/cfca9c0a83d992fee13548490212c13e2b5cbfcb2501fbec9519f7b335cf/h3daemon-0.9.3.tar.gz
+[2023-04-30 05:27:56] INFO root fetch - processPackages [h3daemon]: executing diffoscope
+[2023-04-30 05:27:56] INFO root fetch - processPackages [h3daemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/h3daemon-0.9.0.tar.gz tmp/h3daemon-0.9.3.tar.gz --markdown 20230430/h/h3daemon/0.9.0-0.9.3/diff.md --exclude *.pyd
+[2023-04-30 05:27:57] INFO root fetch - main [MainThread]: End processing [mbta-gtfs-sqlite]: success
+[2023-04-30 05:27:57] INFO root fetch - main [MainThread]: End processing [AL-Khatma-lib]: success
+[2023-04-30 05:27:57] INFO root fetch - main [MainThread]: End processing [h3daemon]: success
+[2023-04-30 05:27:57] INFO root fetch - main [MainThread]: End processing [ms-api]: success
+[2023-04-30 05:27:57] INFO root fetch - main [MainThread]: Store serial: [17914270]
