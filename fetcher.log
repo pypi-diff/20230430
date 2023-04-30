@@ -3029,3 +3029,37 @@
 [2023-04-30 07:25:20] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-5.0.3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-5.1.0.dev0-cp39-cp39-manylinux2014_aarch64.whl.zip --markdown 20230430/h/hiddifypanel/5.0.3-5.1.0.dev0/diff.md --exclude *.pyd
 [2023-04-30 07:25:38] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-30 07:25:38] INFO root fetch - main [MainThread]: Store serial: [17914678]
+[2023-04-30 07:30:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914678]
+[2023-04-30 07:30:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 07:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chaos-mesh
+[2023-04-30 07:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: luau
+[2023-04-30 07:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-lambda-mess
+[2023-04-30 07:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crazy-thursday
+[2023-04-30 07:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhrp
+[2023-04-30 07:30:48] INFO root fetch - processPackages [chaos-mesh]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-30 07:30:48] INFO root fetch - processPackages [luau]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-30 07:30:48] INFO root fetch - processPackages [pyhrp]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-04-30 07:30:48] INFO root fetch - processPackages [aws-lambda-mess]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 07:30:48] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-30 07:30:48] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-30 07:30:48] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230430/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-30 07:30:48] INFO root fetch - processPackages [aws-lambda-mess]: Downloading https://files.pythonhosted.org/packages/06/9e/ba81e8ca3d241c98b2ad7883a21d65fe7b451afb5ba2fb2b6f8aa9e2466d/aws_lambda_mess-0.0.1.tar.gz
+[2023-04-30 07:30:48] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/95/13/13feabe1bf5a63a64296f6b34133c09fe36d0bac0d4c17d5137e381d46e2/pyhrp-0.6.7.tar.gz
+[2023-04-30 07:30:48] INFO root fetch - processPackages [chaos-mesh]: Downloading https://files.pythonhosted.org/packages/12/61/25a1fc04269c44e5c4d0018d9d53d7d755d0399711999762c741b21c317c/chaos_mesh-1.2.8.tar.gz
+[2023-04-30 07:30:48] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/4e/67/cec291c205779be29a69aae635b017a1870e4008a8e339c20dc6b2d8ee7b/luau-0.4.8.tar.gz
+[2023-04-30 07:30:48] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 07:30:48] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.6.6.tar.gz tmp/pyhrp-0.6.7.tar.gz --markdown 20230430/p/pyhrp/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-04-30 07:30:48] INFO root fetch - processPackages [aws-lambda-mess]: Downloading https://files.pythonhosted.org/packages/03/f8/11f64120910245926f0b40f875f98a364ccc7abd808e5e43c451e83e4792/aws_lambda_mess-0.0.2.tar.gz
+[2023-04-30 07:30:49] INFO root fetch - processPackages [chaos-mesh]: Downloading https://files.pythonhosted.org/packages/e5/18/300f5ad6edbb92e315c46351f6d652d02ce3025d9e298363d642333f2624/chaos_mesh-1.2.9.tar.gz
+[2023-04-30 07:30:49] INFO root fetch - processPackages [aws-lambda-mess]: executing diffoscope
+[2023-04-30 07:30:49] INFO root fetch - processPackages [aws-lambda-mess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_mess-0.0.1.tar.gz tmp/aws_lambda_mess-0.0.2.tar.gz --markdown 20230430/a/aws-lambda-mess/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 07:30:49] INFO root fetch - processPackages [chaos-mesh]: executing diffoscope
+[2023-04-30 07:30:49] INFO root fetch - processPackages [chaos-mesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaos_mesh-1.2.8.tar.gz tmp/chaos_mesh-1.2.9.tar.gz --markdown 20230430/c/chaos-mesh/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-30 07:30:49] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-30 07:30:49] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 07:30:50] INFO root fetch - main [MainThread]: End processing [aws-lambda-mess]: success
+[2023-04-30 07:30:50] INFO root fetch - main [MainThread]: End processing [chaos-mesh]: success
+[2023-04-30 07:30:50] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-30 07:30:50] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.7.tar.gz tmp/luau-0.4.8.tar.gz --markdown 20230430/l/luau/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-30 07:30:52] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-30 07:30:52] INFO root fetch - main [MainThread]: Store serial: [17914703]
