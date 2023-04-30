@@ -11348,3 +11348,58 @@
 [2023-04-30 23:54:44] INFO root fetch - main [MainThread]: End processing [weatherly]: success
 [2023-04-30 23:54:45] INFO root fetch - main [MainThread]: End processing [diff-match-patch]: success
 [2023-04-30 23:54:45] INFO root fetch - main [MainThread]: Store serial: [17920254]
+[2023-04-30 23:59:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920254]
+[2023-04-30 23:59:54] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spa-bed-sensor
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DinoHash
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ReverseShell
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: EC521-malice-package1
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphscope-client
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aws-analytics-reference-architecture
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gs-apps
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gs-coordinator
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gs-engine
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gs-include
+[2023-04-30 23:59:54] WARNING root fetch - processPackages [spa-bed-sensor]: Skipping, unable to determine old version
+[2023-04-30 23:59:54] INFO root fetch - main [MainThread]: End processing [spa-bed-sensor] error
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-include]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [graphscope-client]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-coordinator]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [EC521-malice-package1]: New version: [0.3] Old Version: [0.2]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ReverseShell]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [DinoHash]: New version: [0.5] Old Version: [0.4]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-apps]: New version: [0.22.0a20230430] Old Version: [0.22.0a20230429]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-engine]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [aws-analytics-reference-architecture]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-30 23:59:54] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/f7/53/c1ffb245684956bc30883fd2945f3e1677b030e8d69945fbfca28db2b46a/graphscope_client-0.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/14/24/6aa7d96461fb18c825639db76c5c3edc7abfca148e3e55cc010cbf4d9a02/gs_include-0.9.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/bd/b0/b9b1a1a65be3a78a220a726aa90bda0d1e1a17bbc47999c157c784a7320e/gs_engine-0.9.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/gs_coordinator-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230430/g/gs-coordinator/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-30 23:59:54] INFO root fetch - processPackages [DinoHash]: Downloading https://files.pythonhosted.org/packages/bf/bd/0a8a8d9b6fd57279a648cd93917d68b82f1a3337fe080d7d4ed004bb2e6d/DinoHash-0.4-py3-none-any.whl
+[2023-04-30 23:59:54] INFO root fetch - processPackages [EC521-malice-package1]: Downloading https://files.pythonhosted.org/packages/c6/9b/224786f9322b506597d00fa75a36bef4f75e3ca9a0ac6940745a30af5052/EC521_malice_package1-0.3.tar.gz
+[2023-04-30 23:59:54] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 73794505>=10485760
+[2023-04-30 23:59:54] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-04-30 23:59:54] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 48560616>=10485760
+[2023-04-30 23:59:54] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2023-04-30 23:59:54] WARNING root fetch - processPackages [gs-engine]: Skipping package: exceeds size limit 88119450>=10485760
+[2023-04-30 23:59:54] INFO root fetch - main [MainThread]: End processing [gs-engine] error
+[2023-04-30 23:59:54] INFO root fetch - processPackages [ReverseShell]: Downloading https://files.pythonhosted.org/packages/67/b7/3a4d7dc47a1db62fd77b78239371d130ddda39393e1f1b4054c53803301c/ReverseShell-0.0.5.tar.gz
+[2023-04-30 23:59:54] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/19/3f/56eb8d7290dc94db4d6622a57000df9c19d5624f0c50b73317deef1ecc72/gs_apps-0.22.0a20230429-py2.py3-none-macosx_10_9_x86_64.whl
+[2023-04-30 23:59:54] INFO root fetch - processPackages [aws-analytics-reference-architecture]: Downloading https://files.pythonhosted.org/packages/ae/2b/5f638a1ef1f2c98e5cabf7d36e8ec3c32166be2db0c031a731483adef20f/aws_analytics_reference_architecture-2.9.8.tar.gz
+[2023-04-30 23:59:54] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 42779227>=10485760
+[2023-04-30 23:59:54] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2023-04-30 23:59:54] INFO root fetch - processPackages [EC521-malice-package1]: executing diffoscope
+[2023-04-30 23:59:54] INFO root fetch - processPackages [EC521-malice-package1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EC521_malice_package1-0.2.tar.gz tmp/EC521_malice_package1-0.3.tar.gz --markdown 20230430/E/EC521-malice-package1/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-30 23:59:55] INFO root fetch - processPackages [ReverseShell]: executing diffoscope
+[2023-04-30 23:59:55] INFO root fetch - processPackages [ReverseShell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseShell-0.0.4.tar.gz tmp/ReverseShell-0.0.5.tar.gz --markdown 20230430/R/ReverseShell/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 23:59:55] INFO root fetch - processPackages [DinoHash]: Downloading https://files.pythonhosted.org/packages/7a/b2/1926533aa349ea75cf6c8b9675c5db57dff91571cf0653ece2b4a8d378dd/DinoHash-0.5-py3-none-any.whl
+[2023-04-30 23:59:55] WARNING root fetch - processPackages [aws-analytics-reference-architecture]: Skipping package: exceeds size limit 118649369>=10485760
+[2023-04-30 23:59:55] INFO root fetch - main [MainThread]: End processing [aws-analytics-reference-architecture] error
+[2023-04-30 23:59:55] INFO root fetch - processPackages [DinoHash]: executing diffoscope
+[2023-04-30 23:59:55] INFO root fetch - processPackages [DinoHash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DinoHash-0.4-py3-none-any.whl.zip tmp/DinoHash-0.5-py3-none-any.whl.zip --markdown 20230430/D/DinoHash/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-30 23:59:55] INFO root fetch - main [MainThread]: End processing [EC521-malice-package1]: success
+[2023-04-30 23:59:56] INFO root fetch - main [MainThread]: End processing [ReverseShell]: success
+[2023-04-30 23:59:56] INFO root fetch - main [MainThread]: End processing [DinoHash]: success
+[2023-04-30 23:59:56] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2023-04-30 23:59:56] INFO root fetch - main [MainThread]: Store serial: [17920285]
