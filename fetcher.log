@@ -9335,3 +9335,79 @@
 [2023-04-30 19:54:59] INFO root fetch - main [MainThread]: End processing [ManimPango]: success
 [2023-04-30 19:55:00] INFO root fetch - main [MainThread]: End processing [IPFS-Toolkit]: success
 [2023-04-30 19:55:00] INFO root fetch - main [MainThread]: Store serial: [17918683]
+[2023-04-30 20:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918683]
+[2023-04-30 20:00:09] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ReverseShell
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hagis
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Pyrogram
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xtlib
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: envoy.base.utils
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: libtukaan-unix
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tootstagram
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flask-encrypted-cookies-session
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: libtukaan-mac
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: libtukaan-win
+[2023-04-30 20:00:09] INFO root fetch - processPackages [tootstagram]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 20:00:09] WARNING root fetch - processPackages [ReverseShell]: Skipping, unable to determine old version
+[2023-04-30 20:00:09] INFO root fetch - processPackages [ReverseShell]: Start processing: datoso
+[2023-04-30 20:00:09] INFO root fetch - main [MainThread]: End processing [ReverseShell] error
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-mac]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [flask-encrypted-cookies-session]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [hagis]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-unix]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-win]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [envoy.base.utils]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [Pyrogram]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [xtlib]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [datoso]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-30 20:00:09] INFO root fetch - processPackages [xtlib]: executing diffoscope
+[2023-04-30 20:00:09] INFO root fetch - processPackages [xtlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtlib-1.0.0rc1.tar.gz tmp/xtlib-1.0.0rc2.tar.gz --markdown 20230430/x/xtlib/1.0.0rc1-1.0.0rc2/diff.md --exclude *.pyd
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-mac]: Downloading https://files.pythonhosted.org/packages/4f/17/ba7efa0a59df2cc695b6f18107947c9315c043208d7ece19356b86a60edb/libtukaan-mac-0.1.3.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [tootstagram]: Downloading https://files.pythonhosted.org/packages/82/aa/2b479f13ad99c5ce475b77b843b0b40a88a7d799f3c92d7e3c8aa99177f0/tootstagram-0.0.2.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [flask-encrypted-cookies-session]: Downloading https://files.pythonhosted.org/packages/eb/d7/d49d3e566e2fefb5094f2ab7f12dbd7ad3bab5180dda183d476836d89bfc/flask_encrypted_cookies_session-0.2.0.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-unix]: Downloading https://files.pythonhosted.org/packages/15/b4/2f622a8c86c8ae6feb3deaa2d122bc0758a9b2b028e060fe54c46410b468/libtukaan-unix-0.1.3.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/10/70/7c30068ed0b536a5f34bc0c7ff1d4981075b20bc918467632af255bbc8bd/hagis-0.4.5.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-win]: Downloading https://files.pythonhosted.org/packages/0a/02/4d305dfe27bb9c9063b29fcbcfc746c3f260e1b883d66330eaf5bb9eb48a/libtukaan-win-0.1.3.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [Pyrogram]: Downloading https://files.pythonhosted.org/packages/29/76/9386cc38278670701fc500258db11389245f7412149eb4ebd069dafbdfe7/Pyrogram-2.0.98.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [envoy.base.utils]: Downloading https://files.pythonhosted.org/packages/5a/79/11d19d2e999eceeb06ae8f0f7161c3948552d1a4ea9914e9affe21f66c6a/envoy.base.utils-0.4.7.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [datoso]: Downloading https://files.pythonhosted.org/packages/bc/2c/90cc8e290a4209958e2765b55ef5a85cadd229c602f01e134441596f16f9/datoso-0.2.0.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [envoy.base.utils]: executing diffoscope
+[2023-04-30 20:00:09] INFO root fetch - processPackages [envoy.base.utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envoy.base.utils-0.4.6.tar.gz tmp/envoy.base.utils-0.4.7.tar.gz --markdown 20230430/e/envoy.base.utils/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-30 20:00:09] INFO root fetch - processPackages [tootstagram]: Downloading https://files.pythonhosted.org/packages/93/2b/ab5ef8947f31975728cf97d4c076468c4b0279e8c429afcaf2f12b702cde/tootstagram-0.0.3.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [flask-encrypted-cookies-session]: Downloading https://files.pythonhosted.org/packages/97/81/84a7c320cae2aed0b7fe98f976ca8d316dcf61318c4cc8d0f3a59489bff7/flask_encrypted_cookies_session-0.2.1.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/31/3f/9cc11c5fa7c3fbb85dc273b5054ca2c4706af02b5f1d2a06b389be67f31d/hagis-0.4.6.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-mac]: Downloading https://files.pythonhosted.org/packages/73/cf/ae131cafac1193e20d3194fa526127364a5fcae3c3a5ee2521606702e877/libtukaan-mac-0.1.4.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [tootstagram]: executing diffoscope
+[2023-04-30 20:00:09] INFO root fetch - processPackages [tootstagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tootstagram-0.0.2.tar.gz tmp/tootstagram-0.0.3.tar.gz --markdown 20230430/t/tootstagram/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-win]: Downloading https://files.pythonhosted.org/packages/58/58/79859b12d0ae32f9ba750bdc939b880ae0795f6208d47d1b522fe61c96ea/libtukaan-win-0.1.4.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [hagis]: executing diffoscope
+[2023-04-30 20:00:09] INFO root fetch - processPackages [hagis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagis-0.4.5.tar.gz tmp/hagis-0.4.6.tar.gz --markdown 20230430/h/hagis/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-unix]: Downloading https://files.pythonhosted.org/packages/05/ab/c587e0dd7455857b4c94a84d9b14bd7e9c69b810ac326ca963f93a335342/libtukaan-unix-0.1.4.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [datoso]: Downloading https://files.pythonhosted.org/packages/f8/07/4518f2c605207dd73f471d9f4b83b2e468f4b3b9ad423392f57e68337c77/datoso-0.2.1.tar.gz
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-mac]: executing diffoscope
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-mac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libtukaan-mac-0.1.3.tar.gz tmp/libtukaan-mac-0.1.4.tar.gz --markdown 20230430/l/libtukaan-mac/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-win]: executing diffoscope
+[2023-04-30 20:00:09] INFO root fetch - processPackages [flask-encrypted-cookies-session]: executing diffoscope
+[2023-04-30 20:00:09] INFO root fetch - processPackages [libtukaan-win]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libtukaan-win-0.1.3.tar.gz tmp/libtukaan-win-0.1.4.tar.gz --markdown 20230430/l/libtukaan-win/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 20:00:09] INFO root fetch - processPackages [flask-encrypted-cookies-session]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_encrypted_cookies_session-0.2.0.tar.gz tmp/flask_encrypted_cookies_session-0.2.1.tar.gz --markdown 20230430/f/flask-encrypted-cookies-session/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 20:00:10] INFO root fetch - processPackages [libtukaan-unix]: executing diffoscope
+[2023-04-30 20:00:10] INFO root fetch - processPackages [libtukaan-unix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libtukaan-unix-0.1.3.tar.gz tmp/libtukaan-unix-0.1.4.tar.gz --markdown 20230430/l/libtukaan-unix/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 20:00:10] INFO root fetch - processPackages [datoso]: executing diffoscope
+[2023-04-30 20:00:10] INFO root fetch - processPackages [datoso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datoso-0.2.0.tar.gz tmp/datoso-0.2.1.tar.gz --markdown 20230430/d/datoso/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 20:00:10] INFO root fetch - processPackages [Pyrogram]: Downloading https://files.pythonhosted.org/packages/b7/3b/21bca7d03c590017851d1e2d8c7e0c691f065efd33429bef006e1b846c53/Pyrogram-2.0.99.tar.gz
+[2023-04-30 20:00:10] INFO root fetch - processPackages [Pyrogram]: executing diffoscope
+[2023-04-30 20:00:10] INFO root fetch - processPackages [Pyrogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pyrogram-2.0.98.tar.gz tmp/Pyrogram-2.0.99.tar.gz --markdown 20230430/P/Pyrogram/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-30 20:00:11] INFO root fetch - processPackages [envoy.base.utils]: Start processing: datoso-plugin-internetarchive
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [envoy.base.utils]: success
+[2023-04-30 20:00:11] WARNING root fetch - processPackages [datoso-plugin-internetarchive]: Skipping, unable to determine old version
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [datoso-plugin-internetarchive] error
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [tootstagram]: success
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [hagis]: success
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [flask-encrypted-cookies-session]: success
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [libtukaan-unix]: success
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [libtukaan-win]: success
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [libtukaan-mac]: success
+[2023-04-30 20:00:11] INFO root fetch - main [MainThread]: End processing [datoso]: success
+[2023-04-30 20:00:14] INFO root fetch - main [MainThread]: End processing [xtlib]: success
+[2023-04-30 20:00:17] INFO root fetch - main [MainThread]: End processing [Pyrogram]: success
+[2023-04-30 20:00:17] INFO root fetch - main [MainThread]: Store serial: [17918723]
