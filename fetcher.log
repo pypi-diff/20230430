@@ -4799,3 +4799,38 @@
 [2023-04-30 11:15:00] INFO root fetch - main [MainThread]: End processing [mwbot]: success
 [2023-04-30 11:15:00] INFO root fetch - main [MainThread]: End processing [django-filter]: success
 [2023-04-30 11:15:00] INFO root fetch - main [MainThread]: Store serial: [17915681]
+[2023-04-30 11:20:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915681]
+[2023-04-30 11:20:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 11:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tegda
+[2023-04-30 11:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlptoolssna
+[2023-04-30 11:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-04-30 11:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-04-30 11:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trainerbase
+[2023-04-30 11:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-nightly-cpu-aws
+[2023-04-30 11:20:08] INFO root fetch - processPackages [tegda]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 11:20:08] INFO root fetch - processPackages [trainerbase]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-30 11:20:08] INFO root fetch - processPackages [nlptoolssna]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-30 11:20:08] INFO root fetch - processPackages [tf-nightly-cpu-aws]: New version: [2.13.0.dev20230429] Old Version: [2.13.0.dev20230427]
+[2023-04-30 11:20:09] INFO root fetch - processPackages [tf-nightly-cpu-aws]: Downloading https://files.pythonhosted.org/packages/2d/7a/1aff55c71b78344eedd72f3c1a9742ae6e08bda516aa1329de9a29a4b516/tf_nightly_cpu_aws-2.13.0.dev20230427-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-04-30 11:20:09] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-30 11:20:09] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-30 11:20:09] WARNING root fetch - processPackages [tf-nightly-cpu-aws]: Skipping package: exceeds size limit 248696012>=10485760
+[2023-04-30 11:20:09] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu-aws] error
+[2023-04-30 11:20:09] INFO root fetch - processPackages [tegda]: Downloading https://files.pythonhosted.org/packages/74/02/16b08d3f26661815ee05050331cf7c437bacce50c0be194f2113424e07ce/tegda-0.1.3.tar.gz
+[2023-04-30 11:20:09] INFO root fetch - processPackages [trainerbase]: executing diffoscope
+[2023-04-30 11:20:09] INFO root fetch - processPackages [trainerbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrainerBase-2.9.8.tar.gz tmp/TrainerBase-2.9.9.tar.gz --markdown 20230430/t/trainerbase/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-30 11:20:09] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-30 11:20:09] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230430/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-30 11:20:09] INFO root fetch - processPackages [tegda]: executing diffoscope
+[2023-04-30 11:20:09] INFO root fetch - processPackages [tegda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tegda-0.1.2.tar.gz tmp/tegda-0.1.3.tar.gz --markdown 20230430/t/tegda/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 11:20:09] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-30 11:20:09] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230430/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-30 11:20:09] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/fe/ba/c688824d74ea537fcfdc468f1cc5e5c47daae60df31aaf91d940f1d10e37/nlptoolssna-0.3.9.tar.gz
+[2023-04-30 11:20:09] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-30 11:20:09] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.3.8.tar.gz tmp/nlptoolssna-0.3.9.tar.gz --markdown 20230430/n/nlptoolssna/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-30 11:20:10] INFO root fetch - main [MainThread]: End processing [trainerbase]: success
+[2023-04-30 11:20:10] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-30 11:20:10] INFO root fetch - main [MainThread]: End processing [tegda]: success
+[2023-04-30 11:20:10] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-30 11:20:10] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-30 11:20:10] INFO root fetch - main [MainThread]: Store serial: [17915710]
