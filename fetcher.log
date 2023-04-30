@@ -1857,3 +1857,34 @@
 [2023-04-30 03:54:48] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2023-04-30 03:54:52] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2023-04-30 03:54:52] INFO root fetch - main [MainThread]: Store serial: [17913902]
+[2023-04-30 03:59:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913902]
+[2023-04-30 04:00:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cooldfa
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rrrrrrrr
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tttttttt
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ShortName
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yyyyyyyy
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wwwwwwww
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xxxxxxxx
+[2023-04-30 04:00:01] INFO root fetch - processPackages [cooldfa]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 04:00:01] WARNING root fetch - processPackages [yyyyyyyy]: Skipping, unable to determine old version
+[2023-04-30 04:00:01] INFO root fetch - main [MainThread]: End processing [yyyyyyyy] error
+[2023-04-30 04:00:01] WARNING root fetch - processPackages [xxxxxxxx]: Skipping, unable to determine old version
+[2023-04-30 04:00:01] INFO root fetch - main [MainThread]: End processing [xxxxxxxx] error
+[2023-04-30 04:00:01] WARNING root fetch - processPackages [tttttttt]: Skipping, unable to determine old version
+[2023-04-30 04:00:01] INFO root fetch - main [MainThread]: End processing [tttttttt] error
+[2023-04-30 04:00:01] WARNING root fetch - processPackages [rrrrrrrr]: Skipping, unable to determine old version
+[2023-04-30 04:00:01] WARNING root fetch - processPackages [wwwwwwww]: Skipping, unable to determine old version
+[2023-04-30 04:00:01] INFO root fetch - main [MainThread]: End processing [rrrrrrrr] error
+[2023-04-30 04:00:01] INFO root fetch - main [MainThread]: End processing [wwwwwwww] error
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ShortName]: New version: [1.1.0] Old Version: [1.0.0.post1]
+[2023-04-30 04:00:01] INFO root fetch - processPackages [cooldfa]: Downloading https://files.pythonhosted.org/packages/e0/29/f8ed5bc6b5394089cb3fdd0eed07e69b72fbbbf82d428459b4e6ddf539c6/cooldfa-1.0.2.tar.gz
+[2023-04-30 04:00:01] INFO root fetch - processPackages [ShortName]: Downloading https://files.pythonhosted.org/packages/d0/cc/ea1ab477d2edd10e7e4a76895ffe6efa9beb64a27247426cd9660da4b82c/ShortName-1.1.0.tar.gz
+[2023-04-30 04:00:02] INFO root fetch - processPackages [ShortName]: executing diffoscope
+[2023-04-30 04:00:02] INFO root fetch - processPackages [ShortName]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShortName-1.0.0.post1.tar.gz tmp/ShortName-1.1.0.tar.gz --markdown 20230430/S/ShortName/1.0.0.post1-1.1.0/diff.md --exclude *.pyd
+[2023-04-30 04:00:02] INFO root fetch - processPackages [cooldfa]: Downloading https://files.pythonhosted.org/packages/6b/b6/e7e42f521327b206b7e0ab0bb1ff2a6590528de1432d97bc404c95c518eb/cooldfa-1.0.3.tar.gz
+[2023-04-30 04:00:02] INFO root fetch - processPackages [cooldfa]: executing diffoscope
+[2023-04-30 04:00:02] INFO root fetch - processPackages [cooldfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cooldfa-1.0.2.tar.gz tmp/cooldfa-1.0.3.tar.gz --markdown 20230430/c/cooldfa/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 04:00:03] INFO root fetch - main [MainThread]: End processing [ShortName]: success
+[2023-04-30 04:00:03] INFO root fetch - main [MainThread]: End processing [cooldfa]: success
+[2023-04-30 04:00:03] INFO root fetch - main [MainThread]: Store serial: [17913933]
