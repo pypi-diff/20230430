@@ -2079,3 +2079,41 @@
 [2023-04-30 04:27:32] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2317-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2318-py3-none-any.whl.zip --markdown 20230430/m/monailabel-weekly/0.5.dev2317-0.5.dev2318/diff.md --exclude *.pyd
 [2023-04-30 04:27:39] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
 [2023-04-30 04:27:39] INFO root fetch - main [MainThread]: Store serial: [17914062]
+[2023-04-30 04:32:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914062]
+[2023-04-30 04:32:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 04:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2023-04-30 04:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-26
+[2023-04-30 04:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zmtools
+[2023-04-30 04:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prql-python
+[2023-04-30 04:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk8s-plus-24
+[2023-04-30 04:32:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk8s-plus-25
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-30 04:32:50] INFO root fetch - processPackages [zmtools]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-30 04:32:50] INFO root fetch - processPackages [prql-python]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-30 04:32:50] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230430] Old Version: [1.2.20230429]
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.3.8.tar.gz tmp/cdk8s-plus-26-2.3.9.tar.gz --markdown 20230430/c/cdk8s-plus-26/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.7.8.tar.gz tmp/cdk8s-plus-25-2.7.9.tar.gz --markdown 20230430/c/cdk8s-plus-25/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-30 04:32:50] INFO root fetch - processPackages [prql-python]: Downloading https://files.pythonhosted.org/packages/ae/01/305aa904b3221b2f4b172db1de19dd5c6ed2659f1ece1b8ec3f96535ed69/prql_python-0.8.0-cp37-abi3-win_amd64.whl
+[2023-04-30 04:32:50] INFO root fetch - processPackages [zmtools]: Downloading https://files.pythonhosted.org/packages/19/19/9470b2588a855c2a2a3f9fea6d5bb51cc3961266c9decf21a644d5928714/zmtools-2.0.3.tar.gz
+[2023-04-30 04:32:50] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/39/30/a845d9323410ec9261e6754dd58c8b10e866bdee18c3467a3adffac76092/iam_actions-1.2.20230430.tar.gz
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-04-30 04:32:50] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.7.8.tar.gz tmp/cdk8s-plus-24-2.7.9.tar.gz --markdown 20230430/c/cdk8s-plus-24/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-30 04:32:50] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-30 04:32:50] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230429.tar.gz tmp/iam_actions-1.2.20230430.tar.gz --markdown 20230430/i/iam-actions/1.2.20230429-1.2.20230430/diff.md --exclude *.pyd
+[2023-04-30 04:32:50] INFO root fetch - processPackages [zmtools]: Downloading https://files.pythonhosted.org/packages/81/89/21ec4bdd4e43a254d39d81b07dc882bb7a793812c967fa5be0abaa33a359/zmtools-2.0.4.tar.gz
+[2023-04-30 04:32:50] INFO root fetch - processPackages [zmtools]: executing diffoscope
+[2023-04-30 04:32:50] INFO root fetch - processPackages [zmtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zmtools-2.0.3.tar.gz tmp/zmtools-2.0.4.tar.gz --markdown 20230430/z/zmtools/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-30 04:32:50] INFO root fetch - processPackages [prql-python]: Downloading https://files.pythonhosted.org/packages/31/72/776ab1a8541fdfd02873df7896d1f45521a1c7d133ca861988d5efa5163e/prql_python-0.8.1-cp37-abi3-win_amd64.whl
+[2023-04-30 04:32:50] INFO root fetch - processPackages [prql-python]: executing diffoscope
+[2023-04-30 04:32:50] INFO root fetch - processPackages [prql-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prql_python-0.8.0-cp37-abi3-win_amd64.whl.zip tmp/prql_python-0.8.1-cp37-abi3-win_amd64.whl.zip --markdown 20230430/p/prql-python/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-30 04:32:51] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-04-30 04:32:51] INFO root fetch - main [MainThread]: End processing [zmtools]: success
+[2023-04-30 04:32:51] INFO root fetch - main [MainThread]: End processing [prql-python]: success
+[2023-04-30 04:32:52] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-04-30 04:32:52] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-04-30 04:32:52] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-04-30 04:32:52] INFO root fetch - main [MainThread]: Store serial: [17914089]
