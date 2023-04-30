@@ -1987,3 +1987,42 @@
 [2023-04-30 04:16:55] INFO root fetch - main [MainThread]: End processing [alchemymodel-xlsx]: success
 [2023-04-30 04:16:55] INFO root fetch - main [MainThread]: End processing [UzSyllable]: success
 [2023-04-30 04:16:55] INFO root fetch - main [MainThread]: Store serial: [17914023]
+[2023-04-30 04:21:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914023]
+[2023-04-30 04:22:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 04:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-library-objects
+[2023-04-30 04:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transitmatters-gtfs
+[2023-04-30 04:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ytchat
+[2023-04-30 04:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monai-weekly
+[2023-04-30 04:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pibble
+[2023-04-30 04:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sweetrpg-web-core
+[2023-04-30 04:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: blitzgsea
+[2023-04-30 04:22:04] INFO root fetch - processPackages [ytchat]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-04-30 04:22:04] INFO root fetch - processPackages [blitzgsea]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-04-30 04:22:04] WARNING root fetch - processPackages [transitmatters-gtfs]: Skipping, unable to determine old version
+[2023-04-30 04:22:04] INFO root fetch - main [MainThread]: End processing [transitmatters-gtfs] error
+[2023-04-30 04:22:04] INFO root fetch - processPackages [pibble]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-30 04:22:04] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-04-30 04:22:04] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 04:22:04] INFO root fetch - processPackages [ytchat]: Downloading https://files.pythonhosted.org/packages/36/86/d2c0568b7f30c5094c52e282e6801e09925d7937c8e72dc445d90249270d/ytchat-0.0.6.tar.gz
+[2023-04-30 04:22:04] INFO root fetch - processPackages [monai-weekly]: New version: [1.2.dev2318] Old Version: [1.2.dev2317]
+[2023-04-30 04:22:04] INFO root fetch - processPackages [pibble]: executing diffoscope
+[2023-04-30 04:22:04] INFO root fetch - processPackages [pibble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pibble-0.4.4.tar.gz tmp/pibble-0.4.5.tar.gz --markdown 20230430/p/pibble/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-30 04:22:04] WARNING root fetch - processPackages [ytchat]: Skipping package: exceeds size limit 12544287>=10485760
+[2023-04-30 04:22:04] INFO root fetch - main [MainThread]: End processing [ytchat] error
+[2023-04-30 04:22:04] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-04-30 04:22:04] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230430/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 04:22:04] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-04-30 04:22:04] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230430/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-04-30 04:22:04] INFO root fetch - processPackages [blitzgsea]: Downloading https://files.pythonhosted.org/packages/bc/a4/e429f1564bfe1ffd075a3657e95c4b89b5ce46d8f2fc46b7655abd3b15bf/blitzgsea-1.3.9.tar.gz
+[2023-04-30 04:22:04] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/b0/03/059dd8834247c2fa1b74da8cda516feb98a16e1c095eba431d874ce7f0ba/monai-weekly-1.2.dev2317.tar.gz
+[2023-04-30 04:22:04] INFO root fetch - processPackages [blitzgsea]: executing diffoscope
+[2023-04-30 04:22:04] INFO root fetch - processPackages [blitzgsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blitzgsea-1.3.8.tar.gz tmp/blitzgsea-1.3.9.tar.gz --markdown 20230430/b/blitzgsea/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-04-30 04:22:04] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/a0/80/76a653b7776408041f2c15d7607c8ac8c93781e6806a3a0625c8b388664e/monai-weekly-1.2.dev2318.tar.gz
+[2023-04-30 04:22:04] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2023-04-30 04:22:04] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai-weekly-1.2.dev2317.tar.gz tmp/monai-weekly-1.2.dev2318.tar.gz --markdown 20230430/m/monai-weekly/1.2.dev2317-1.2.dev2318/diff.md --exclude *.pyd
+[2023-04-30 04:22:05] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-04-30 04:22:05] INFO root fetch - main [MainThread]: End processing [blitzgsea]: success
+[2023-04-30 04:22:05] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-04-30 04:22:05] INFO root fetch - main [MainThread]: End processing [pibble]: success
+[2023-04-30 04:22:19] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2023-04-30 04:22:19] INFO root fetch - main [MainThread]: Store serial: [17914042]
