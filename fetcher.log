@@ -10871,3 +10871,40 @@
 [2023-04-30 22:44:41] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-04-30 22:44:46] INFO root fetch - main [MainThread]: End processing [starlette-admin]: success
 [2023-04-30 22:44:46] INFO root fetch - main [MainThread]: Store serial: [17919963]
+[2023-04-30 22:49:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919963]
+[2023-04-30 22:49:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 22:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: digitalguide
+[2023-04-30 22:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: astronomer-cosmos
+[2023-04-30 22:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dxsp
+[2023-04-30 22:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ytspider
+[2023-04-30 22:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: piknik
+[2023-04-30 22:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edge-tts
+[2023-04-30 22:49:56] INFO root fetch - processPackages [piknik]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-30 22:49:56] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 22:49:56] INFO root fetch - processPackages [astronomer-cosmos]: New version: [0.6.4] Old Version: [0.6.2]
+[2023-04-30 22:49:56] WARNING root fetch - processPackages [ytspider]: Skipping, unable to determine old version
+[2023-04-30 22:49:56] INFO root fetch - main [MainThread]: End processing [ytspider] error
+[2023-04-30 22:49:56] INFO root fetch - processPackages [dxsp]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-30 22:49:56] INFO root fetch - processPackages [edge-tts]: New version: [6.1.4] Old Version: [6.1.3]
+[2023-04-30 22:49:56] INFO root fetch - processPackages [piknik]: Downloading https://files.pythonhosted.org/packages/24/db/a426b4cecb2e5b03d372da9481a9a1d6c09e4b8ae3ed02288cee2a9dcc11/piknik-0.3.8.tar.gz
+[2023-04-30 22:49:56] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/29/df/e54c7528dcbf52aa8202d442c52a87a15e4a93579b2ce9332adae5e12606/dxsp-1.5.1.tar.gz
+[2023-04-30 22:49:56] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-30 22:49:56] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.5.0.tar.gz tmp/dxsp-1.5.1.tar.gz --markdown 20230430/d/dxsp/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-30 22:49:56] INFO root fetch - processPackages [edge-tts]: Downloading https://files.pythonhosted.org/packages/84/2c/5a6f5d2a5f2cd393533eeab239177c1ce4f5c05b36de4048e2281e3d1c57/edge-tts-6.1.3.tar.gz
+[2023-04-30 22:49:56] INFO root fetch - processPackages [astronomer-cosmos]: Downloading https://files.pythonhosted.org/packages/2d/3e/6cbc1c11614cb385d09354ce7f8b21873996c11a6e307d76f1d4787981a6/astronomer_cosmos-0.6.4.tar.gz
+[2023-04-30 22:49:56] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-04-30 22:49:56] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230430/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 22:49:56] INFO root fetch - processPackages [astronomer-cosmos]: executing diffoscope
+[2023-04-30 22:49:56] INFO root fetch - processPackages [astronomer-cosmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomer_cosmos-0.6.2.tar.gz tmp/astronomer_cosmos-0.6.4.tar.gz --markdown 20230430/a/astronomer-cosmos/0.6.2-0.6.4/diff.md --exclude *.pyd
+[2023-04-30 22:49:56] INFO root fetch - processPackages [piknik]: Downloading https://files.pythonhosted.org/packages/d2/9d/ae919559cf29acef8493531b673be7654a875c357d11770f88a8a5958c8b/piknik-0.3.9.tar.gz
+[2023-04-30 22:49:56] INFO root fetch - processPackages [piknik]: executing diffoscope
+[2023-04-30 22:49:56] INFO root fetch - processPackages [piknik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piknik-0.3.8.tar.gz tmp/piknik-0.3.9.tar.gz --markdown 20230430/p/piknik/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-30 22:49:56] INFO root fetch - processPackages [edge-tts]: Downloading https://files.pythonhosted.org/packages/21/c8/4fd71b7f5db23a7bac0ebb9e4aaad6c07d50a8d89de2c42e616890f42f75/edge-tts-6.1.4.tar.gz
+[2023-04-30 22:49:57] INFO root fetch - processPackages [edge-tts]: executing diffoscope
+[2023-04-30 22:49:57] INFO root fetch - processPackages [edge-tts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge-tts-6.1.3.tar.gz tmp/edge-tts-6.1.4.tar.gz --markdown 20230430/e/edge-tts/6.1.3-6.1.4/diff.md --exclude *.pyd
+[2023-04-30 22:49:57] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-30 22:49:57] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-04-30 22:49:57] INFO root fetch - main [MainThread]: End processing [astronomer-cosmos]: success
+[2023-04-30 22:49:58] INFO root fetch - main [MainThread]: End processing [piknik]: success
+[2023-04-30 22:49:58] INFO root fetch - main [MainThread]: End processing [edge-tts]: success
+[2023-04-30 22:49:58] INFO root fetch - main [MainThread]: Store serial: [17919981]
