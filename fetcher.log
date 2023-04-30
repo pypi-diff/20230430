@@ -7599,3 +7599,34 @@
 [2023-04-30 16:26:47] INFO root fetch - main [MainThread]: End processing [RenderWatcher]: success
 [2023-04-30 16:26:47] INFO root fetch - main [MainThread]: End processing [RenderWatcher]: success
 [2023-04-30 16:26:47] INFO root fetch - main [MainThread]: Store serial: [17917402]
+[2023-04-30 16:31:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917402]
+[2023-04-30 16:31:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RenderWatcher
+[2023-04-30 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bilifan
+[2023-04-30 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: narrow-down
+[2023-04-30 16:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keras-data-format-converter
+[2023-04-30 16:31:56] INFO root fetch - processPackages [RenderWatcher]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-30 16:31:56] INFO root fetch - processPackages [narrow-down]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 16:31:56] INFO root fetch - processPackages [nonebot-plugin-bilifan]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 16:31:56] INFO root fetch - processPackages [keras-data-format-converter]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 16:31:56] INFO root fetch - processPackages [RenderWatcher]: Downloading https://files.pythonhosted.org/packages/e3/64/7d5652b66dd9a780dc1e72ad72d8344ccdcc456c4043f8cd2a4ff1231567/RenderWatcher-0.0.2.tar.gz
+[2023-04-30 16:31:56] INFO root fetch - processPackages [narrow-down]: Downloading https://files.pythonhosted.org/packages/3c/f1/f8f17f703b0ce450bb8bff110852a0b7220635fa23949b28bf9a18ff3cf4/narrow_down-1.0.0-cp37-abi3-win_amd64.whl
+[2023-04-30 16:31:56] INFO root fetch - processPackages [nonebot-plugin-bilifan]: Downloading https://files.pythonhosted.org/packages/3a/c8/c2a025998e56670dcf538b41a55554c7ba0cca3ffcb850ddccf79c0eb7be/nonebot_plugin_bilifan-0.1.1.tar.gz
+[2023-04-30 16:31:56] INFO root fetch - processPackages [keras-data-format-converter]: Downloading https://files.pythonhosted.org/packages/69/e1/6197f82986aa58e2d3224b180105d7a7989563b02dcb30c65c985b251139/keras-data-format-converter-0.1.8.tar.gz
+[2023-04-30 16:31:57] INFO root fetch - processPackages [RenderWatcher]: Downloading https://files.pythonhosted.org/packages/8d/74/2ef0f64daca5ecef51f13e4f072e83dfd1a42e25ebe5ac2568b2caa44440/RenderWatcher-0.0.4.tar.gz
+[2023-04-30 16:31:57] INFO root fetch - processPackages [nonebot-plugin-bilifan]: Downloading https://files.pythonhosted.org/packages/a8/4e/1938c27510266258c3271a593a4a039df6c339321873f4a7a07060832795/nonebot_plugin_bilifan-0.1.2.tar.gz
+[2023-04-30 16:31:57] INFO root fetch - processPackages [narrow-down]: Downloading https://files.pythonhosted.org/packages/ec/4c/6e2e944e0126dcae7a7b3bd290bbac0d32b66782cabdf0795a244e846f5b/narrow_down-1.0.1-cp37-abi3-win_amd64.whl
+[2023-04-30 16:31:57] INFO root fetch - processPackages [nonebot-plugin-bilifan]: executing diffoscope
+[2023-04-30 16:31:57] INFO root fetch - processPackages [nonebot-plugin-bilifan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilifan-0.1.1.tar.gz tmp/nonebot_plugin_bilifan-0.1.2.tar.gz --markdown 20230430/n/nonebot-plugin-bilifan/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 16:31:57] INFO root fetch - processPackages [RenderWatcher]: executing diffoscope
+[2023-04-30 16:31:57] INFO root fetch - processPackages [RenderWatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RenderWatcher-0.0.2.tar.gz tmp/RenderWatcher-0.0.4.tar.gz --markdown 20230430/R/RenderWatcher/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 16:31:57] INFO root fetch - processPackages [keras-data-format-converter]: Downloading https://files.pythonhosted.org/packages/93/1b/13aef5e3bb4f3c7729fe70dc704b3626c0a713391d3afecfb63569f0a120/keras-data-format-converter-0.1.9.tar.gz
+[2023-04-30 16:31:57] INFO root fetch - processPackages [keras-data-format-converter]: executing diffoscope
+[2023-04-30 16:31:57] INFO root fetch - processPackages [keras-data-format-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-data-format-converter-0.1.8.tar.gz tmp/keras-data-format-converter-0.1.9.tar.gz --markdown 20230430/k/keras-data-format-converter/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 16:31:57] INFO root fetch - processPackages [narrow-down]: executing diffoscope
+[2023-04-30 16:31:57] INFO root fetch - processPackages [narrow-down]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narrow_down-1.0.0-cp37-abi3-win_amd64.whl.zip tmp/narrow_down-1.0.1-cp37-abi3-win_amd64.whl.zip --markdown 20230430/n/narrow-down/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 16:31:58] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilifan]: success
+[2023-04-30 16:31:58] INFO root fetch - main [MainThread]: End processing [keras-data-format-converter]: success
+[2023-04-30 16:31:58] INFO root fetch - main [MainThread]: End processing [narrow-down]: success
+[2023-04-30 16:32:03] INFO root fetch - main [MainThread]: End processing [RenderWatcher]: success
+[2023-04-30 16:32:03] INFO root fetch - main [MainThread]: Store serial: [17917417]
