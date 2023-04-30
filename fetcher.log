@@ -1259,3 +1259,40 @@
 [2023-04-30 02:39:50] INFO root fetch - main [MainThread]: End processing [repid]: success
 [2023-04-30 02:39:51] INFO root fetch - main [MainThread]: End processing [repid]: success
 [2023-04-30 02:39:51] INFO root fetch - main [MainThread]: Store serial: [17913495]
+[2023-04-30 02:44:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913495]
+[2023-04-30 02:44:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 02:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overloaded-iterables
+[2023-04-30 02:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arcangelai
+[2023-04-30 02:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: secimport
+[2023-04-30 02:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: luau
+[2023-04-30 02:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhrp
+[2023-04-30 02:44:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swift-sim
+[2023-04-30 02:44:59] INFO root fetch - processPackages [arcangelai]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-30 02:44:59] INFO root fetch - processPackages [pyhrp]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-30 02:44:59] INFO root fetch - processPackages [luau]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-30 02:44:59] WARNING root fetch - processPackages [overloaded-iterables]: Skipping, unable to determine old version
+[2023-04-30 02:44:59] INFO root fetch - main [MainThread]: End processing [overloaded-iterables] error
+[2023-04-30 02:44:59] INFO root fetch - processPackages [secimport]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-30 02:44:59] INFO root fetch - processPackages [swift-sim]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-30 02:44:59] INFO root fetch - processPackages [arcangelai]: Downloading https://files.pythonhosted.org/packages/e9/58/b162e0265b2aec7b7a34ae4d5e96d571bdc18c1c0c9fa90652159ed1ce9f/arcangelai-2.0.2.tar.gz
+[2023-04-30 02:44:59] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/de/f3/0b3a49c45344cf5b33ee85a05637321a6fae7c6066219c84eee477c3824b/pyhrp-0.0.7.tar.gz
+[2023-04-30 02:44:59] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/1d/41/91e28b9bf51fa3f9b28c62de026c5081ca1d31102e67385bc57ac2e709b5/luau-0.4.6.tar.gz
+[2023-04-30 02:44:59] INFO root fetch - processPackages [secimport]: Downloading https://files.pythonhosted.org/packages/00/bd/28053a861656f325e827a9f6305626cafbc146efbde1305013c404e1fcc9/secimport-0.8.1.tar.gz
+[2023-04-30 02:44:59] INFO root fetch - processPackages [swift-sim]: Downloading https://files.pythonhosted.org/packages/8b/62/3c0bd18647463d47e86c496fe2eced3610ce781ee0672954ddbd4b25138f/swift-sim-1.0.1.tar.gz
+[2023-04-30 02:44:59] INFO root fetch - processPackages [luau]: executing diffoscope
+[2023-04-30 02:44:59] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.5.tar.gz tmp/luau-0.4.6.tar.gz --markdown 20230430/l/luau/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-30 02:45:00] INFO root fetch - processPackages [secimport]: executing diffoscope
+[2023-04-30 02:45:00] INFO root fetch - processPackages [secimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secimport-0.8.0.tar.gz tmp/secimport-0.8.1.tar.gz --markdown 20230430/s/secimport/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-30 02:45:00] WARNING root fetch - processPackages [swift-sim]: Skipping package: exceeds size limit 11165407>=10485760
+[2023-04-30 02:45:00] INFO root fetch - main [MainThread]: End processing [swift-sim] error
+[2023-04-30 02:45:00] INFO root fetch - processPackages [arcangelai]: Downloading https://files.pythonhosted.org/packages/7c/5a/3be0db6f6cf31a6cfc07a9accc53d7006b3cd473c4ff5b546ca2eb52b112/arcangelai-2.0.3.tar.gz
+[2023-04-30 02:45:00] INFO root fetch - processPackages [arcangelai]: executing diffoscope
+[2023-04-30 02:45:00] INFO root fetch - processPackages [arcangelai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcangelai-2.0.2.tar.gz tmp/arcangelai-2.0.3.tar.gz --markdown 20230430/a/arcangelai/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-30 02:45:00] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/0b/d4/1cd20decd2e234312ed7cf03215a8ace7edb9f3fb652c0ffb8860b1b6777/pyhrp-0.0.8.tar.gz
+[2023-04-30 02:45:00] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 02:45:00] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.0.7.tar.gz tmp/pyhrp-0.0.8.tar.gz --markdown 20230430/p/pyhrp/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-30 02:45:01] INFO root fetch - main [MainThread]: End processing [luau]: success
+[2023-04-30 02:45:01] INFO root fetch - main [MainThread]: End processing [arcangelai]: success
+[2023-04-30 02:45:01] INFO root fetch - main [MainThread]: End processing [secimport]: success
+[2023-04-30 02:45:01] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 02:45:01] INFO root fetch - main [MainThread]: Store serial: [17913509]
