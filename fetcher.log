@@ -8232,3 +8232,66 @@
 [2023-04-30 17:53:06] INFO root fetch - main [MainThread]: End processing [Prepup]: success
 [2023-04-30 17:53:06] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-04-30 17:53:06] INFO root fetch - main [MainThread]: Store serial: [17917881]
+[2023-04-30 17:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917881]
+[2023-04-30 17:58:15] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ftfjsdhfsdoiu
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-messagebus
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: buckaroo
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-gui
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovos-gui
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bib-lookup
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sgplib
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mafic
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sushipy
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ofscraper
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-messagebus]: New version: [0.0.2a6] Old Version: [0.0.2a5]
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-gui]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-gui]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2023-04-30 17:58:15] INFO root fetch - processPackages [mafic]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ofscraper]: New version: [1.86] Old Version: [1.83]
+[2023-04-30 17:58:15] WARNING root fetch - processPackages [sgplib]: Skipping, unable to determine old version
+[2023-04-30 17:58:15] INFO root fetch - processPackages [sgplib]: Start processing: origin-Yzb-regret
+[2023-04-30 17:58:15] INFO root fetch - main [MainThread]: End processing [sgplib] error
+[2023-04-30 17:58:15] INFO root fetch - processPackages [mafic]: executing diffoscope
+[2023-04-30 17:58:15] INFO root fetch - processPackages [mafic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mafic-2.1.0.tar.gz tmp/mafic-2.1.1.tar.gz --markdown 20230430/m/mafic/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-30 17:58:15] INFO root fetch - processPackages [bib-lookup]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 17:58:15] WARNING root fetch - processPackages [buckaroo]: Skipping, unable to determine old version
+[2023-04-30 17:58:15] INFO root fetch - processPackages [buckaroo]: Start processing: back-to-sit
+[2023-04-30 17:58:15] INFO root fetch - main [MainThread]: End processing [buckaroo] error
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-messagebus]: executing diffoscope
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-messagebus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_messagebus-0.0.2a5-py3-none-any.whl.zip tmp/ovos_messagebus-0.0.2a6-py3-none-any.whl.zip --markdown 20230430/o/ovos-messagebus/0.0.2a5-0.0.2a6/diff.md --exclude *.pyd
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-gui]: executing diffoscope
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_gui-0.0.2a8-py3-none-any.whl.zip tmp/ovos_gui-0.0.2a9-py3-none-any.whl.zip --markdown 20230430/o/ovos-gui/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-04-30 17:58:15] INFO root fetch - processPackages [sushipy]: New version: [0.1.80] Old Version: [0.1.7]
+[2023-04-30 17:58:15] ERROR root fetch - processPackages [ftfjsdhfsdoiu]: Unable to get metadata: No such project 'ftfjsdhfsdoiu'
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ftfjsdhfsdoiu]: Start processing: utils-easy
+[2023-04-30 17:58:15] INFO root fetch - main [MainThread]: End processing [ftfjsdhfsdoiu] error
+[2023-04-30 17:58:15] INFO root fetch - processPackages [back-to-sit]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-1.83.tar.gz tmp/ofscraper-1.86.tar.gz --markdown 20230430/o/ofscraper/1.83-1.86/diff.md --exclude *.pyd
+[2023-04-30 17:58:15] WARNING root fetch - processPackages [origin-Yzb-regret]: Skipping, unable to determine old version
+[2023-04-30 17:58:15] INFO root fetch - main [MainThread]: End processing [origin-Yzb-regret] error
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-gui]: executing diffoscope
+[2023-04-30 17:58:15] INFO root fetch - processPackages [ovos-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_gui-0.0.2a8-py3-none-any.whl.zip tmp/ovos_gui-0.0.2a9-py3-none-any.whl.zip --markdown 20230430/o/ovos-gui/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2023-04-30 17:58:15] INFO root fetch - processPackages [bib-lookup]: Downloading https://files.pythonhosted.org/packages/0f/db/ae7f5e8a73500fe8ac5540463e623b35839deec1a0fdadef666ff5b4a251/bib_lookup-0.0.8.tar.gz
+[2023-04-30 17:58:15] WARNING root fetch - processPackages [utils-easy]: Skipping, unable to determine old version
+[2023-04-30 17:58:15] INFO root fetch - main [MainThread]: End processing [utils-easy] error
+[2023-04-30 17:58:15] INFO root fetch - processPackages [sushipy]: Downloading https://files.pythonhosted.org/packages/43/39/9f2c37a83d6daabc30b9205cc1b0b8e5e293cc6506d35fcfb7ddd8f23193/sushipy-0.1.7.tar.gz
+[2023-04-30 17:58:15] INFO root fetch - processPackages [back-to-sit]: Downloading https://files.pythonhosted.org/packages/7e/6e/548d5b64bf9498e20bdd8590412e8ac0ec5f200ba7eb191d3cf24a1d07b6/back_to_sit-0.0.6.tar.gz
+[2023-04-30 17:58:15] INFO root fetch - processPackages [back-to-sit]: executing diffoscope
+[2023-04-30 17:58:15] INFO root fetch - processPackages [back-to-sit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/back_to_sit-0.0.5.tar.gz tmp/back_to_sit-0.0.6.tar.gz --markdown 20230430/b/back-to-sit/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 17:58:15] INFO root fetch - processPackages [sushipy]: Downloading https://files.pythonhosted.org/packages/7f/43/20d05a5090eb8d37a6668aa6c3212b90330bba703813f6ab0650dd96c17a/sushipy-0.1.80.tar.gz
+[2023-04-30 17:58:15] INFO root fetch - processPackages [bib-lookup]: Downloading https://files.pythonhosted.org/packages/74/6e/58229fb30ce6858166ce4b442e213e199a7c9291e3621cadc06878f3421d/bib_lookup-0.0.9.tar.gz
+[2023-04-30 17:58:15] INFO root fetch - processPackages [sushipy]: executing diffoscope
+[2023-04-30 17:58:15] INFO root fetch - processPackages [sushipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sushipy-0.1.7.tar.gz tmp/sushipy-0.1.80.tar.gz --markdown 20230430/s/sushipy/0.1.7-0.1.80/diff.md --exclude *.pyd
+[2023-04-30 17:58:15] INFO root fetch - processPackages [bib-lookup]: executing diffoscope
+[2023-04-30 17:58:15] INFO root fetch - processPackages [bib-lookup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bib_lookup-0.0.8.tar.gz tmp/bib_lookup-0.0.9.tar.gz --markdown 20230430/b/bib-lookup/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 17:58:16] INFO root fetch - main [MainThread]: End processing [ovos-messagebus]: success
+[2023-04-30 17:58:16] INFO root fetch - main [MainThread]: End processing [ovos-gui]: success
+[2023-04-30 17:58:16] INFO root fetch - main [MainThread]: End processing [ovos-gui]: success
+[2023-04-30 17:58:16] INFO root fetch - main [MainThread]: End processing [back-to-sit]: success
+[2023-04-30 17:58:16] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2023-04-30 17:58:17] INFO root fetch - main [MainThread]: End processing [sushipy]: success
+[2023-04-30 17:58:17] INFO root fetch - main [MainThread]: End processing [mafic]: success
+[2023-04-30 17:58:17] INFO root fetch - main [MainThread]: End processing [bib-lookup]: success
+[2023-04-30 17:58:17] INFO root fetch - main [MainThread]: Store serial: [17917928]
