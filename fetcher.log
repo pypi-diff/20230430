@@ -4900,3 +4900,37 @@
 [2023-04-30 11:25:22] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-04-30 11:25:43] INFO root fetch - main [MainThread]: End processing [UzbekTagger]: success
 [2023-04-30 11:25:43] INFO root fetch - main [MainThread]: Store serial: [17915756]
+[2023-04-30 11:30:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915756]
+[2023-04-30 11:30:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 11:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: androset
+[2023-04-30 11:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wbpOutput
+[2023-04-30 11:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vmk-spectrum
+[2023-04-30 11:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: overloaded-iterables
+[2023-04-30 11:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anymlops
+[2023-04-30 11:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfed-macos
+[2023-04-30 11:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nornir-salt
+[2023-04-30 11:30:52] WARNING root fetch - processPackages [androset]: Skipping, unable to determine old version
+[2023-04-30 11:30:52] INFO root fetch - main [MainThread]: End processing [androset] error
+[2023-04-30 11:30:52] INFO root fetch - processPackages [nornir-salt]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-30 11:30:52] INFO root fetch - processPackages [pyfed-macos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 11:30:52] WARNING root fetch - processPackages [overloaded-iterables]: Skipping, unable to determine old version
+[2023-04-30 11:30:52] INFO root fetch - processPackages [wbpOutput]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-04-30 11:30:52] WARNING root fetch - processPackages [vmk-spectrum]: Skipping, unable to determine old version
+[2023-04-30 11:30:52] WARNING root fetch - processPackages [anymlops]: Skipping, unable to determine old version
+[2023-04-30 11:30:52] INFO root fetch - main [MainThread]: End processing [overloaded-iterables] error
+[2023-04-30 11:30:52] INFO root fetch - main [MainThread]: End processing [vmk-spectrum] error
+[2023-04-30 11:30:52] INFO root fetch - main [MainThread]: End processing [anymlops] error
+[2023-04-30 11:30:52] INFO root fetch - processPackages [nornir-salt]: Downloading https://files.pythonhosted.org/packages/b6/6c/9bcdf9c90a13a9dfe709f1d6923307726f660368b3ae049b5a8b37ca56c3/nornir_salt-0.8.0.tar.gz
+[2023-04-30 11:30:52] INFO root fetch - processPackages [wbpOutput]: Downloading https://files.pythonhosted.org/packages/48/cb/fe859c599655bd715f4adfa5b2a9ba5e1b83aabcfbcd3f43885317f72751/wbpOutput-0.1.6.tar.gz
+[2023-04-30 11:30:53] INFO root fetch - processPackages [pyfed-macos]: executing diffoscope
+[2023-04-30 11:30:53] INFO root fetch - processPackages [pyfed-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed_macos-0.0.8.tar.gz tmp/pyfed_macos-0.0.9.tar.gz --markdown 20230430/p/pyfed-macos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 11:30:53] INFO root fetch - processPackages [wbpOutput]: Downloading https://files.pythonhosted.org/packages/b1/b8/2ebd14c041d275d237526d9bc16d70f98e667075ee497606f1bb02e653cf/wbpOutput-0.1.8.tar.gz
+[2023-04-30 11:30:53] INFO root fetch - processPackages [nornir-salt]: Downloading https://files.pythonhosted.org/packages/98/11/15783d53a2ffd95d91290b0b75d760f193f777b4400e28e5b11b2dc1a5ef/nornir_salt-0.9.0.tar.gz
+[2023-04-30 11:30:53] INFO root fetch - processPackages [wbpOutput]: executing diffoscope
+[2023-04-30 11:30:53] INFO root fetch - processPackages [wbpOutput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbpOutput-0.1.6.tar.gz tmp/wbpOutput-0.1.8.tar.gz --markdown 20230430/w/wbpOutput/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-04-30 11:30:53] INFO root fetch - processPackages [nornir-salt]: executing diffoscope
+[2023-04-30 11:30:53] INFO root fetch - processPackages [nornir-salt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nornir_salt-0.8.0.tar.gz tmp/nornir_salt-0.9.0.tar.gz --markdown 20230430/n/nornir-salt/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-30 11:30:54] INFO root fetch - main [MainThread]: End processing [pyfed-macos]: success
+[2023-04-30 11:30:54] INFO root fetch - main [MainThread]: End processing [wbpOutput]: success
+[2023-04-30 11:30:54] INFO root fetch - main [MainThread]: End processing [nornir-salt]: success
+[2023-04-30 11:30:54] INFO root fetch - main [MainThread]: Store serial: [17915791]
