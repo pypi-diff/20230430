@@ -3875,3 +3875,52 @@
 [2023-04-30 09:27:55] INFO root fetch - main [MainThread]: End processing [azure-ai-vision]: success
 [2023-04-30 09:27:58] INFO root fetch - main [MainThread]: End processing [azure-cognitiveservices-speech]: success
 [2023-04-30 09:27:58] INFO root fetch - main [MainThread]: Store serial: [17915201]
+[2023-04-30 09:33:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915201]
+[2023-04-30 09:33:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 09:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terminalplay
+[2023-04-30 09:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: luau
+[2023-04-30 09:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: katalytic-checks
+[2023-04-30 09:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: timelessnesses-typed-env
+[2023-04-30 09:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiogram-ext
+[2023-04-30 09:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: timelessnesses-typed-env
+[2023-04-30 09:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: inworld-python
+[2023-04-30 09:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spotinst-agent-beta
+[2023-04-30 09:33:15] INFO root fetch - processPackages [terminalplay]: New version: [1.0.22] Old Version: [1.0.21]
+[2023-04-30 09:33:15] INFO root fetch - processPackages [katalytic-checks]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-30 09:33:15] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 09:33:15] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.271] Old Version: [2.2.270]
+[2023-04-30 09:33:15] INFO root fetch - processPackages [aiogram-ext]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-30 09:33:15] WARNING root fetch - processPackages [inworld-python]: Skipping, unable to determine old version
+[2023-04-30 09:33:15] INFO root fetch - main [MainThread]: End processing [inworld-python] error
+[2023-04-30 09:33:15] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 09:33:15] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.270.tar.gz tmp/spotinst-agent-beta-2.2.271.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.270-2.2.271/diff.md --exclude *.pyd
+[2023-04-30 09:33:15] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 09:33:15] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 09:33:15] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/92/63/34260709f0dae8b3b614c73f21d3ccc47ec767208a2877b4585e81600926/terminalplay-1.0.22.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [katalytic-checks]: Downloading https://files.pythonhosted.org/packages/15/2b/d5e0634dc20a8f3e4f65f2f0904c00793e05032aaae1f4d3c7e184660a64/katalytic-checks-0.1.1.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/8d/a3/10fcd341a4bc60f049dfe66e13f4c1a422dad8c53dd2b599c4c4649599bb/aiogram-ext-0.2.1.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: Downloading https://files.pythonhosted.org/packages/d6/85/53667c61208514042c62e45d39325fdfb699998f4905fac2b95f6559d200/timelessnesses_typed_env-0.1.0.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: Downloading https://files.pythonhosted.org/packages/d6/85/53667c61208514042c62e45d39325fdfb699998f4905fac2b95f6559d200/timelessnesses_typed_env-0.1.0.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [terminalplay]: executing diffoscope
+[2023-04-30 09:33:15] INFO root fetch - processPackages [terminalplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalplay-1.0.21.tar.gz tmp/terminalplay-1.0.22.tar.gz --markdown 20230430/t/terminalplay/1.0.21-1.0.22/diff.md --exclude *.pyd
+[2023-04-30 09:33:15] INFO root fetch - processPackages [katalytic-checks]: executing diffoscope
+[2023-04-30 09:33:15] INFO root fetch - processPackages [katalytic-checks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-checks-0.1.0.tar.gz tmp/katalytic-checks-0.1.1.tar.gz --markdown 20230430/k/katalytic-checks/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 09:33:15] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/48/66/6639493e1333924b8d88aa00b388482f23b22d30455271f0fbf455d1d1e9/aiogram-ext-0.3.0.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: Downloading https://files.pythonhosted.org/packages/47/77/842e5f3b7dd1ebe942302cf9eb129c3f9ab17c1e166bf0728307c464ad88/timelessnesses_typed_env-1.0.0.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: Downloading https://files.pythonhosted.org/packages/47/77/842e5f3b7dd1ebe942302cf9eb129c3f9ab17c1e166bf0728307c464ad88/timelessnesses_typed_env-1.0.0.tar.gz
+[2023-04-30 09:33:15] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-30 09:33:15] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.2.1.tar.gz tmp/aiogram-ext-0.3.0.tar.gz --markdown 20230430/a/aiogram-ext/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: executing diffoscope
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: executing diffoscope
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timelessnesses_typed_env-0.1.0.tar.gz tmp/timelessnesses_typed_env-1.0.0.tar.gz --markdown 20230430/t/timelessnesses-typed-env/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 09:33:15] INFO root fetch - processPackages [timelessnesses-typed-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timelessnesses_typed_env-0.1.0.tar.gz tmp/timelessnesses_typed_env-1.0.0.tar.gz --markdown 20230430/t/timelessnesses-typed-env/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 09:33:16] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
+[2023-04-30 09:33:16] INFO root fetch - main [MainThread]: End processing [katalytic-checks]: success
+[2023-04-30 09:33:16] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 09:33:16] INFO root fetch - main [MainThread]: End processing [timelessnesses-typed-env]: success
+[2023-04-30 09:33:17] INFO root fetch - main [MainThread]: End processing [timelessnesses-typed-env]: success
+[2023-04-30 09:33:17] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-30 09:33:17] INFO root fetch - main [MainThread]: Store serial: [17915224]
