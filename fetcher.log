@@ -7775,3 +7775,44 @@
 [2023-04-30 16:53:15] INFO root fetch - main [MainThread]: End processing [zadu]: success
 [2023-04-30 16:53:48] INFO root fetch - main [MainThread]: End processing [meerkat-ml]: success
 [2023-04-30 16:53:48] INFO root fetch - main [MainThread]: Store serial: [17917518]
+[2023-04-30 16:58:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917518]
+[2023-04-30 16:58:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 16:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kolombos
+[2023-04-30 16:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digitalguide
+[2023-04-30 16:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quo
+[2023-04-30 16:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-generation-server
+[2023-04-30 16:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zadu
+[2023-04-30 16:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: biobear
+[2023-04-30 16:58:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: material-zui
+[2023-04-30 16:58:57] INFO root fetch - processPackages [llm-generation-server]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 16:58:57] INFO root fetch - processPackages [zadu]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 16:58:58] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 16:58:58] INFO root fetch - processPackages [kolombos]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-30 16:58:58] WARNING root fetch - processPackages [material-zui]: Skipping, unable to determine old version
+[2023-04-30 16:58:58] INFO root fetch - main [MainThread]: End processing [material-zui] error
+[2023-04-30 16:58:58] INFO root fetch - processPackages [quo]: New version: [2023.5.1] Old Version: [2023.5]
+[2023-04-30 16:58:58] INFO root fetch - processPackages [llm-generation-server]: executing diffoscope
+[2023-04-30 16:58:58] INFO root fetch - processPackages [llm-generation-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_generation_server-0.0.8.tar.gz tmp/llm_generation_server-0.0.9.tar.gz --markdown 20230430/l/llm-generation-server/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 16:58:58] INFO root fetch - processPackages [biobear]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-30 16:58:58] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-04-30 16:58:58] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230430/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 16:58:58] INFO root fetch - processPackages [kolombos]: Downloading https://files.pythonhosted.org/packages/9c/95/02b650ab7475b76b396c062fa24e80e50f19d0afd9ece34d94d0b1e662b0/kolombos-1.5.1.tar.gz
+[2023-04-30 16:58:58] INFO root fetch - processPackages [zadu]: Downloading https://files.pythonhosted.org/packages/d8/11/ad8d86e303fb6dbbcae10371f4b5923d456ddbd3cb15e3cb3beedebdc4de/zadu-0.0.5.tar.gz
+[2023-04-30 16:58:58] INFO root fetch - processPackages [zadu]: executing diffoscope
+[2023-04-30 16:58:58] INFO root fetch - processPackages [zadu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zadu-0.0.4.tar.gz tmp/zadu-0.0.5.tar.gz --markdown 20230430/z/zadu/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 16:58:58] INFO root fetch - processPackages [quo]: Downloading https://files.pythonhosted.org/packages/4e/a5/cd296ed6cf8682e7bbb3583f93347294823caa3c1ea48fcf92d6a1795900/quo-2023.5.1-py3-none-any.whl
+[2023-04-30 16:58:58] INFO root fetch - processPackages [quo]: executing diffoscope
+[2023-04-30 16:58:58] INFO root fetch - processPackages [quo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quo-2023.5-py3-none-any.whl.zip tmp/quo-2023.5.1-py3-none-any.whl.zip --markdown 20230430/q/quo/2023.5-2023.5.1/diff.md --exclude *.pyd
+[2023-04-30 16:58:58] INFO root fetch - processPackages [biobear]: Downloading https://files.pythonhosted.org/packages/96/dd/4cdcda6cd85f282005af0f2f15783870b4f675f49e01305b8b0eb06c42e2/biobear-0.4.0.tar.gz
+[2023-04-30 16:58:58] INFO root fetch - processPackages [kolombos]: Downloading https://files.pythonhosted.org/packages/13/84/1b4be42d6b2285f2033192262f88de2fb76e41ee0cef9a7cae7b520d2028/kolombos-1.5.2.tar.gz
+[2023-04-30 16:58:58] INFO root fetch - processPackages [kolombos]: executing diffoscope
+[2023-04-30 16:58:58] INFO root fetch - processPackages [kolombos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kolombos-1.5.1.tar.gz tmp/kolombos-1.5.2.tar.gz --markdown 20230430/k/kolombos/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-30 16:58:58] INFO root fetch - processPackages [biobear]: executing diffoscope
+[2023-04-30 16:58:58] INFO root fetch - processPackages [biobear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobear-0.3.0.tar.gz tmp/biobear-0.4.0.tar.gz --markdown 20230430/b/biobear/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 16:58:59] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-04-30 16:58:59] INFO root fetch - main [MainThread]: End processing [zadu]: success
+[2023-04-30 16:59:00] INFO root fetch - main [MainThread]: End processing [kolombos]: success
+[2023-04-30 16:59:00] INFO root fetch - main [MainThread]: End processing [quo]: success
+[2023-04-30 16:59:01] INFO root fetch - main [MainThread]: End processing [biobear]: success
+[2023-04-30 16:59:01] INFO root fetch - main [MainThread]: End processing [llm-generation-server]: success
+[2023-04-30 16:59:01] INFO root fetch - main [MainThread]: Store serial: [17917578]
