@@ -3727,3 +3727,70 @@
 [2023-04-30 09:12:03] INFO root fetch - processPackages [bodhi-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodhi_server-7.1.1.tar.gz tmp/bodhi_server-7.2.0.tar.gz --markdown 20230430/b/bodhi-server/7.1.1-7.2.0/diff.md --exclude *.pyd
 [2023-04-30 09:12:08] INFO root fetch - main [MainThread]: End processing [bodhi-server]: success
 [2023-04-30 09:12:08] INFO root fetch - main [MainThread]: Store serial: [17915114]
+[2023-04-30 09:17:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915114]
+[2023-04-30 09:17:17] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terminalplay
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygmi-get
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiogram-ext
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: terminalplay
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bridgecrew
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mia-accounting
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: test-swagger-coverage
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: emoji-regex
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: baekjoonapi
+[2023-04-30 09:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: automation-file
+[2023-04-30 09:17:17] INFO root fetch - processPackages [mia-accounting]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-30 09:17:17] INFO root fetch - processPackages [aiogram-ext]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-30 09:17:17] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 09:17:17] INFO root fetch - processPackages [terminalplay]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 09:17:17] INFO root fetch - processPackages [pygmi-get]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-04-30 09:17:17] INFO root fetch - processPackages [terminalplay]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 09:17:17] WARNING root fetch - processPackages [automation-file]: Skipping, unable to determine old version
+[2023-04-30 09:17:17] INFO root fetch - processPackages [automation-file]: Start processing: automation-file-dev
+[2023-04-30 09:17:17] INFO root fetch - main [MainThread]: End processing [automation-file] error
+[2023-04-30 09:17:17] INFO root fetch - processPackages [baekjoonapi]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-30 09:17:17] WARNING root fetch - processPackages [emoji-regex]: Skipping, unable to determine old version
+[2023-04-30 09:17:17] INFO root fetch - processPackages [emoji-regex]: Start processing: luau
+[2023-04-30 09:17:17] INFO root fetch - main [MainThread]: End processing [emoji-regex] error
+[2023-04-30 09:17:17] INFO root fetch - processPackages [test-swagger-coverage]: New version: [2.1.54] Old Version: [0.1.54]
+[2023-04-30 09:17:17] INFO root fetch - processPackages [mia-accounting]: executing diffoscope
+[2023-04-30 09:17:17] INFO root fetch - processPackages [mia-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mia-accounting-1.5.1.tar.gz tmp/mia-accounting-1.5.2.tar.gz --markdown 20230430/m/mia-accounting/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-30 09:17:17] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 09:17:17] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-30 09:17:17] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.1.9.tar.gz tmp/aiogram-ext-0.2.0.tar.gz --markdown 20230430/a/aiogram-ext/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 09:17:17] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-30 09:17:17] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230430/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 09:17:17] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/15/a3/fa9b4583de028285b28142765104507e3874ed41c8e78a8c99435eb20863/pygmi-get-0.1.0.tar.gz
+[2023-04-30 09:17:17] WARNING root fetch - processPackages [automation-file-dev]: Skipping, unable to determine old version
+[2023-04-30 09:17:17] INFO root fetch - main [MainThread]: End processing [automation-file-dev] error
+[2023-04-30 09:17:17] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/b7/1d/215ce9bdf941928d90eb31fd9f873de6ded1cee162faaebff1acbb18499d/terminalplay-1.0.0.tar.gz
+[2023-04-30 09:17:17] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/b7/1d/215ce9bdf941928d90eb31fd9f873de6ded1cee162faaebff1acbb18499d/terminalplay-1.0.0.tar.gz
+[2023-04-30 09:17:18] INFO root fetch - processPackages [test-swagger-coverage]: Downloading https://files.pythonhosted.org/packages/bf/30/d9a696cf58df5d0be4c16bf4db2bb4403c70f0c725ae35103e76471fa4dd/test_swagger_coverage-0.1.54.tar.gz
+[2023-04-30 09:17:18] INFO root fetch - processPackages [baekjoonapi]: Downloading https://files.pythonhosted.org/packages/e3/b8/fa554d1b001836d32cbb2f1e225e8fd1831a592df1d8d0d7d3522c94f802/baekjoonapi-0.2.1.tar.gz
+[2023-04-30 09:17:18] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 09:17:18] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 09:17:18] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 09:17:18] INFO root fetch - processPackages [pygmi-get]: Downloading https://files.pythonhosted.org/packages/27/a9/ec9b31014cb3615a83e67f35477ccb75d072ad885fbac9ceb727fbf61eaf/pygmi-get-0.2.1.tar.gz
+[2023-04-30 09:17:18] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/5c/5e/05c958115659925050780f1f8bebc404e35580de5836048897cadd114ccc/terminalplay-1.0.1.tar.gz
+[2023-04-30 09:17:18] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/5c/5e/05c958115659925050780f1f8bebc404e35580de5836048897cadd114ccc/terminalplay-1.0.1.tar.gz
+[2023-04-30 09:17:18] INFO root fetch - processPackages [test-swagger-coverage]: Downloading https://files.pythonhosted.org/packages/42/9a/68cb8a0a194c4526369b91f12ee1a3c9e5bbf4f9b35d53239a9826673a2c/test_swagger_coverage-2.1.54.tar.gz
+[2023-04-30 09:17:18] INFO root fetch - processPackages [baekjoonapi]: Downloading https://files.pythonhosted.org/packages/b6/b3/bdc8d9e001bad1e3a71c2f7da8d03915748938987afa2dd8152ce24ab1e8/baekjoonapi-0.2.2.tar.gz
+[2023-04-30 09:17:18] INFO root fetch - processPackages [pygmi-get]: executing diffoscope
+[2023-04-30 09:17:18] INFO root fetch - processPackages [pygmi-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmi-get-0.1.0.tar.gz tmp/pygmi-get-0.2.1.tar.gz --markdown 20230430/p/pygmi-get/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 09:17:18] INFO root fetch - processPackages [terminalplay]: executing diffoscope
+[2023-04-30 09:17:18] INFO root fetch - processPackages [terminalplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalplay-1.0.0.tar.gz tmp/terminalplay-1.0.1.tar.gz --markdown 20230430/t/terminalplay/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 09:17:18] INFO root fetch - processPackages [terminalplay]: executing diffoscope
+[2023-04-30 09:17:18] INFO root fetch - processPackages [terminalplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalplay-1.0.0.tar.gz tmp/terminalplay-1.0.1.tar.gz --markdown 20230430/t/terminalplay/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 09:17:18] INFO root fetch - processPackages [test-swagger-coverage]: executing diffoscope
+[2023-04-30 09:17:18] INFO root fetch - processPackages [test-swagger-coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_swagger_coverage-0.1.54.tar.gz tmp/test_swagger_coverage-2.1.54.tar.gz --markdown 20230430/t/test-swagger-coverage/0.1.54-2.1.54/diff.md --exclude *.pyd
+[2023-04-30 09:17:18] INFO root fetch - processPackages [baekjoonapi]: executing diffoscope
+[2023-04-30 09:17:18] INFO root fetch - processPackages [baekjoonapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baekjoonapi-0.2.1.tar.gz tmp/baekjoonapi-0.2.2.tar.gz --markdown 20230430/b/baekjoonapi/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-30 09:17:19] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-30 09:17:19] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-30 09:17:19] INFO root fetch - main [MainThread]: End processing [pygmi-get]: success
+[2023-04-30 09:17:19] INFO root fetch - main [MainThread]: End processing [test-swagger-coverage]: success
+[2023-04-30 09:17:19] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
+[2023-04-30 09:17:19] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
+[2023-04-30 09:17:19] INFO root fetch - main [MainThread]: End processing [baekjoonapi]: success
+[2023-04-30 09:17:20] INFO root fetch - main [MainThread]: End processing [mia-accounting]: success
+[2023-04-30 09:17:20] INFO root fetch - main [MainThread]: Store serial: [17915156]
