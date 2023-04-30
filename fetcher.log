@@ -1781,3 +1781,37 @@
 [2023-04-30 03:43:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
 [2023-04-30 03:43:44] INFO root fetch - main [MainThread]: End processing [formant]: success
 [2023-04-30 03:43:44] INFO root fetch - main [MainThread]: Store serial: [17913843]
+[2023-04-30 03:48:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913843]
+[2023-04-30 03:48:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 03:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-wget
+[2023-04-30 03:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nnnnnnnn
+[2023-04-30 03:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proactive
+[2023-04-30 03:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proactive-jupyter-kernel
+[2023-04-30 03:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: iiiiiiii
+[2023-04-30 03:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kkkkkkkk
+[2023-04-30 03:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jupyter-black
+[2023-04-30 03:48:53] WARNING root fetch - processPackages [kkkkkkkk]: Skipping, unable to determine old version
+[2023-04-30 03:48:53] INFO root fetch - processPackages [jupyter-black]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-30 03:48:53] INFO root fetch - main [MainThread]: End processing [kkkkkkkk] error
+[2023-04-30 03:48:53] WARNING root fetch - processPackages [nnnnnnnn]: Skipping, unable to determine old version
+[2023-04-30 03:48:53] INFO root fetch - main [MainThread]: End processing [nnnnnnnn] error
+[2023-04-30 03:48:53] WARNING root fetch - processPackages [iiiiiiii]: Skipping, unable to determine old version
+[2023-04-30 03:48:53] INFO root fetch - main [MainThread]: End processing [iiiiiiii] error
+[2023-04-30 03:48:53] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 03:48:53] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-04-30 03:48:53] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-30 03:48:53] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-04-30 03:48:53] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-04-30 03:48:53] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-04-30 03:48:53] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-30 03:48:53] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230430/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-30 03:48:53] INFO root fetch - processPackages [jupyter-black]: Downloading https://files.pythonhosted.org/packages/f6/9f/4204ce7ba6d193bf284b353449c2d26abf58b0eafb36d3f360f6c652907c/jupyter-black-0.3.3.tar.gz
+[2023-04-30 03:48:53] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-30 03:48:53] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230430/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-30 03:48:54] INFO root fetch - processPackages [jupyter-black]: Downloading https://files.pythonhosted.org/packages/72/21/19ae14b522083340e58a52125eddafb6d24028db7112acca0f142904744b/jupyter-black-0.3.4.tar.gz
+[2023-04-30 03:48:54] INFO root fetch - processPackages [jupyter-black]: executing diffoscope
+[2023-04-30 03:48:54] INFO root fetch - processPackages [jupyter-black]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-black-0.3.3.tar.gz tmp/jupyter-black-0.3.4.tar.gz --markdown 20230430/j/jupyter-black/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-30 03:48:54] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-04-30 03:48:54] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-04-30 03:48:55] INFO root fetch - main [MainThread]: End processing [jupyter-black]: success
+[2023-04-30 03:48:55] INFO root fetch - main [MainThread]: Store serial: [17913870]
