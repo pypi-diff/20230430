@@ -10094,3 +10094,60 @@
 [2023-04-30 21:14:59] INFO root fetch - main [MainThread]: End processing [zood]: success
 [2023-04-30 21:15:06] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-30 21:15:06] INFO root fetch - main [MainThread]: Store serial: [17919249]
+[2023-04-30 21:20:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919249]
+[2023-04-30 21:20:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vtece4564-websockets
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: valio
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dxsp
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hypothesis
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mmn-experiments
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycryptokms
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: arc-cli
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: secury-code
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: datoso
+[2023-04-30 21:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: leuci-pol
+[2023-04-30 21:20:31] INFO root fetch - processPackages [valio]: New version: [0.1.0b6] Old Version: [0.1.0b5]
+[2023-04-30 21:20:31] INFO root fetch - processPackages [datoso]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-30 21:20:31] INFO root fetch - processPackages [pycryptokms]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-30 21:20:31] INFO root fetch - processPackages [dxsp]: New version: [1.5.0] Old Version: [1.4.4]
+[2023-04-30 21:20:31] WARNING root fetch - processPackages [mmn-experiments]: Skipping, unable to determine old version
+[2023-04-30 21:20:31] INFO root fetch - main [MainThread]: End processing [mmn-experiments] error
+[2023-04-30 21:20:31] WARNING root fetch - processPackages [secury-code]: Skipping, unable to determine old version
+[2023-04-30 21:20:31] INFO root fetch - main [MainThread]: End processing [secury-code] error
+[2023-04-30 21:20:31] INFO root fetch - processPackages [arc-cli]: New version: [8.1.1] Old Version: [8.1.0]
+[2023-04-30 21:20:31] INFO root fetch - processPackages [vtece4564-websockets]: New version: [11.0.2.post3] Old Version: [11.0.2.post2]
+[2023-04-30 21:20:31] INFO root fetch - processPackages [hypothesis]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-04-30 21:20:31] INFO root fetch - processPackages [datoso]: executing diffoscope
+[2023-04-30 21:20:31] INFO root fetch - processPackages [datoso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datoso-0.2.0.tar.gz tmp/datoso-0.2.1.tar.gz --markdown 20230430/d/datoso/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 21:20:31] INFO root fetch - processPackages [hypothesis]: executing diffoscope
+[2023-04-30 21:20:31] INFO root fetch - processPackages [hypothesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-6.9.1.tar.gz tmp/hypothesis-6.9.2.tar.gz --markdown 20230430/h/hypothesis/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-04-30 21:20:31] INFO root fetch - processPackages [pycryptokms]: Downloading https://files.pythonhosted.org/packages/26/90/215a83cad85b5749f01e3f5e8b2ea1dbbe961ad34fbdeaee1b679a75540a/pycryptokms-0.0.6.tar.gz
+[2023-04-30 21:20:31] INFO root fetch - processPackages [valio]: Downloading https://files.pythonhosted.org/packages/40/54/adea1a629f4dd13302b4ec62994f68ae27391afe90b9720b8d87e94f3ff3/valio-0.1.0b5.tar.gz
+[2023-04-30 21:20:31] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:20:31] INFO root fetch - processPackages [arc-cli]: Downloading https://files.pythonhosted.org/packages/d9/2a/53660323f97203d025d631e6e1ca86c5ae9b8d2371325a9d73d2ed61c194/arc_cli-8.1.0.tar.gz
+[2023-04-30 21:20:32] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/8d/56/c2501c3bcf95584acd16f9de66bb559e2c0a360fde80912f00edf513c613/dxsp-1.5.0.tar.gz
+[2023-04-30 21:20:32] INFO root fetch - processPackages [vtece4564-websockets]: Downloading https://files.pythonhosted.org/packages/00/f1/4eb7b5e7a0cc1d66198e66a52b176dd69af399f3eee4db9d3a43d5f8e627/vtece4564-websockets-11.0.2.post3.tar.gz
+[2023-04-30 21:20:32] INFO root fetch - processPackages [pycryptokms]: Downloading https://files.pythonhosted.org/packages/23/8b/03a28a38b019d8d1ccd1d2917f113c277c4aa498949f1f9eb0be6ef9ef8f/pycryptokms-0.0.7.tar.gz
+[2023-04-30 21:20:32] INFO root fetch - processPackages [arc-cli]: Downloading https://files.pythonhosted.org/packages/28/aa/744049b6d9854c60909d5d13af93394aebb5e755e8736d117a34977c1d58/arc_cli-8.1.1.tar.gz
+[2023-04-30 21:20:32] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-30 21:20:32] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.4.4.tar.gz tmp/dxsp-1.5.0.tar.gz --markdown 20230430/d/dxsp/1.4.4-1.5.0/diff.md --exclude *.pyd
+[2023-04-30 21:20:32] INFO root fetch - processPackages [vtece4564-websockets]: executing diffoscope
+[2023-04-30 21:20:32] INFO root fetch - processPackages [vtece4564-websockets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtece4564-websockets-11.0.2.post2.tar.gz tmp/vtece4564-websockets-11.0.2.post3.tar.gz --markdown 20230430/v/vtece4564-websockets/11.0.2.post2-11.0.2.post3/diff.md --exclude *.pyd
+[2023-04-30 21:20:32] INFO root fetch - processPackages [valio]: Downloading https://files.pythonhosted.org/packages/e3/33/b72ea7ebd9549193c0eaf0c9ccb01868293dd437c379306b1d1d9b13dcfe/valio-0.1.0b6.tar.gz
+[2023-04-30 21:20:32] INFO root fetch - processPackages [arc-cli]: executing diffoscope
+[2023-04-30 21:20:32] INFO root fetch - processPackages [arc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arc_cli-8.1.0.tar.gz tmp/arc_cli-8.1.1.tar.gz --markdown 20230430/a/arc-cli/8.1.0-8.1.1/diff.md --exclude *.pyd
+[2023-04-30 21:20:32] INFO root fetch - processPackages [pycryptokms]: executing diffoscope
+[2023-04-30 21:20:32] INFO root fetch - processPackages [pycryptokms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycryptokms-0.0.6.tar.gz tmp/pycryptokms-0.0.7.tar.gz --markdown 20230430/p/pycryptokms/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-30 21:20:32] INFO root fetch - processPackages [valio]: executing diffoscope
+[2023-04-30 21:20:32] INFO root fetch - processPackages [valio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valio-0.1.0b5.tar.gz tmp/valio-0.1.0b6.tar.gz --markdown 20230430/v/valio/0.1.0b5-0.1.0b6/diff.md --exclude *.pyd
+[2023-04-30 21:20:32] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-04-30 21:20:32] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230430/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:20:33] INFO root fetch - main [MainThread]: End processing [datoso]: success
+[2023-04-30 21:20:33] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-30 21:20:33] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-04-30 21:20:33] INFO root fetch - main [MainThread]: End processing [vtece4564-websockets]: success
+[2023-04-30 21:20:33] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
+[2023-04-30 21:20:33] INFO root fetch - main [MainThread]: End processing [valio]: success
+[2023-04-30 21:20:33] INFO root fetch - main [MainThread]: End processing [pycryptokms]: success
+[2023-04-30 21:20:34] INFO root fetch - main [MainThread]: End processing [arc-cli]: success
+[2023-04-30 21:20:34] INFO root fetch - main [MainThread]: Store serial: [17919335]
