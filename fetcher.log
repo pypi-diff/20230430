@@ -5616,3 +5616,38 @@
 [2023-04-30 13:13:30] INFO root fetch - main [MainThread]: End processing [coverage]: success
 [2023-04-30 13:13:44] INFO root fetch - main [MainThread]: End processing [sphinx-revealjs]: success
 [2023-04-30 13:13:44] INFO root fetch - main [MainThread]: Store serial: [17916217]
+[2023-04-30 13:18:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916217]
+[2023-04-30 13:18:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 13:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frogmouth
+[2023-04-30 13:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spPersist
+[2023-04-30 13:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcontainer
+[2023-04-30 13:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lightning-template
+[2023-04-30 13:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-cml2
+[2023-04-30 13:18:53] INFO root fetch - processPackages [spPersist]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 13:18:53] INFO root fetch - processPackages [dcontainer]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-30 13:18:53] INFO root fetch - processPackages [frogmouth]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-30 13:18:53] INFO root fetch - processPackages [django-cml2]: New version: [1.0.0.1] Old Version: [1.0.0]
+[2023-04-30 13:18:53] INFO root fetch - processPackages [lightning-template]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 13:18:53] INFO root fetch - processPackages [django-cml2]: executing diffoscope
+[2023-04-30 13:18:53] INFO root fetch - processPackages [django-cml2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cml2-1.0.0.tar.gz tmp/django-cml2-1.0.0.1.tar.gz --markdown 20230430/d/django-cml2/1.0.0-1.0.0.1/diff.md --exclude *.pyd
+[2023-04-30 13:18:53] INFO root fetch - processPackages [dcontainer]: Downloading https://files.pythonhosted.org/packages/d7/65/303e335b125395c4b5dc9ac4b0afd8f87778e817627d299378489852fc97/dcontainer-1.0.7-py3-none-any.whl
+[2023-04-30 13:18:54] INFO root fetch - processPackages [frogmouth]: Downloading https://files.pythonhosted.org/packages/23/74/eb3484e615d645de436dba06f1b4d16ee3161e4ae84eb5131f048a607579/frogmouth-0.3.1.tar.gz
+[2023-04-30 13:18:54] INFO root fetch - processPackages [spPersist]: Downloading https://files.pythonhosted.org/packages/85/04/6576343129a1d39a549f01e51d6ad6b6f43ba666f48f4a0c6d922317343c/sppersist-0.0.4.tar.gz
+[2023-04-30 13:18:54] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/34/3b/97b890cb17b88f219707c5d744334895f09a12d3dd0d76b79f8a4125111e/lightning-template-1.0.0.tar.gz
+[2023-04-30 13:18:54] INFO root fetch - processPackages [spPersist]: executing diffoscope
+[2023-04-30 13:18:54] INFO root fetch - processPackages [spPersist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sppersist-0.0.3.tar.gz tmp/sppersist-0.0.4.tar.gz --markdown 20230430/s/spPersist/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 13:18:54] INFO root fetch - processPackages [frogmouth]: Downloading https://files.pythonhosted.org/packages/9d/3f/afe8e5e65e981ea222fbcf71ec555fa7eced9e3c71c0fe9132dd65a83ea5/frogmouth-0.3.2.tar.gz
+[2023-04-30 13:18:54] INFO root fetch - processPackages [dcontainer]: Downloading https://files.pythonhosted.org/packages/43/1b/199961783edbb61586661f800039392c520ca2e74300fa7b7ed5ad8e503c/dcontainer-1.0.8-py3-none-any.whl
+[2023-04-30 13:18:54] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/59/30/e4eb1557043641f46f424095a2ac15d83434294a23fd9923ca148ac89015/lightning-template-1.0.1.tar.gz
+[2023-04-30 13:18:54] INFO root fetch - processPackages [frogmouth]: executing diffoscope
+[2023-04-30 13:18:54] INFO root fetch - processPackages [frogmouth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frogmouth-0.3.1.tar.gz tmp/frogmouth-0.3.2.tar.gz --markdown 20230430/f/frogmouth/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-30 13:18:54] INFO root fetch - processPackages [dcontainer]: executing diffoscope
+[2023-04-30 13:18:54] INFO root fetch - processPackages [dcontainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcontainer-1.0.7-py3-none-any.whl.zip tmp/dcontainer-1.0.8-py3-none-any.whl.zip --markdown 20230430/d/dcontainer/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-30 13:18:54] INFO root fetch - processPackages [lightning-template]: executing diffoscope
+[2023-04-30 13:18:54] INFO root fetch - processPackages [lightning-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-template-1.0.0.tar.gz tmp/lightning-template-1.0.1.tar.gz --markdown 20230430/l/lightning-template/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 13:18:55] INFO root fetch - main [MainThread]: End processing [django-cml2]: success
+[2023-04-30 13:18:55] INFO root fetch - main [MainThread]: End processing [spPersist]: success
+[2023-04-30 13:18:55] INFO root fetch - main [MainThread]: End processing [dcontainer]: success
+[2023-04-30 13:18:55] INFO root fetch - main [MainThread]: End processing [lightning-template]: success
+[2023-04-30 13:18:55] INFO root fetch - main [MainThread]: End processing [frogmouth]: success
+[2023-04-30 13:18:55] INFO root fetch - main [MainThread]: Store serial: [17916233]
