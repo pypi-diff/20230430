@@ -7101,3 +7101,105 @@
 [2023-04-30 15:32:46] INFO root fetch - main [MainThread]: End processing [fedml]: success
 [2023-04-30 15:32:52] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
 [2023-04-30 15:32:52] INFO root fetch - main [MainThread]: Store serial: [17917112]
+[2023-04-30 15:37:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917112]
+[2023-04-30 15:38:01] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GPTAgent
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polars
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gold-miner-ui
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellpy
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: akshare
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyella
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfed
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyfed-macos
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: polars-u64-idx
+[2023-04-30 15:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wwpdb.utils.wf
+[2023-04-30 15:38:01] INFO root fetch - processPackages [GPTAgent]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyella]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyfed-macos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [wwpdb.utils.wf]: New version: [0.33] Old Version: [0.32]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [gold-miner-ui]: New version: [1.5] Old Version: [1.4]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [cellpy]: New version: [0.4.3a3] Old Version: [0.4.3a2]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [polars-u64-idx]: New version: [0.17.9] Old Version: [0.17.8]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [polars]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyfed-macos]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyfed-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed_macos-0.0.8.tar.gz tmp/pyfed_macos-0.0.9.tar.gz --markdown 20230430/p/pyfed-macos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyella]: Downloading https://files.pythonhosted.org/packages/c2/52/26ac4b1d216677e77dabf4e582b80f186b55eb82bfbcfa1a38b977e081ba/pyella-1.2.0.tar.gz
+[2023-04-30 15:38:01] INFO root fetch - processPackages [wwpdb.utils.wf]: Downloading https://files.pythonhosted.org/packages/ab/4b/f3424e7d92489ac352ca01227bfc30e2b2e66b2d51a97793df8bb253f166/wwpdb.utils.wf-0.32.tar.gz
+[2023-04-30 15:38:01] INFO root fetch - processPackages [cellpy]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [cellpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellpy-0.4.3a2.tar.gz tmp/cellpy-0.4.3a3.tar.gz --markdown 20230430/c/cellpy/0.4.3a2-0.4.3a3/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [GPTAgent]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [GPTAgent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptagent-0.0.8.tar.gz tmp/gptagent-0.0.9.tar.gz --markdown 20230430/G/GPTAgent/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230430/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [gold-miner-ui]: Downloading https://files.pythonhosted.org/packages/9a/b1/234b6b25b32031e9134983890d43b7ae67104da4fad25615868ce9eb0161/gold-miner-ui-1.5.tar.gz
+[2023-04-30 15:38:01] INFO root fetch - processPackages [polars]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [polars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-0.9.8.tar.gz tmp/polars-0.9.9.tar.gz --markdown 20230430/p/polars/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [polars-u64-idx]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [polars-u64-idx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_u64_idx-0.17.8.tar.gz tmp/polars_u64_idx-0.17.9.tar.gz --markdown 20230430/p/polars-u64-idx/0.17.8-0.17.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [wwpdb.utils.wf]: Downloading https://files.pythonhosted.org/packages/c5/0b/c9f87c825e570d475f1ef78dd419e5d9022ec84e4fb1af186e1cca511a81/wwpdb.utils.wf-0.33.tar.gz
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyella]: Downloading https://files.pythonhosted.org/packages/39/c8/7b921fa487871a060299e1f0d0a68012a3fcfaa267fb9d7e45678556b8e3/pyella-1.3.0.tar.gz
+[2023-04-30 15:38:01] INFO root fetch - processPackages [gold-miner-ui]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [gold-miner-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gold-miner-ui-1.4.tar.gz tmp/gold-miner-ui-1.5.tar.gz --markdown 20230430/g/gold-miner-ui/1.4-1.5/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [wwpdb.utils.wf]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [wwpdb.utils.wf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.wf-0.32.tar.gz tmp/wwpdb.utils.wf-0.33.tar.gz --markdown 20230430/w/wwpdb.utils.wf/0.32-0.33/diff.md --exclude *.pyd
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyella]: executing diffoscope
+[2023-04-30 15:38:01] INFO root fetch - processPackages [pyella]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyella-1.2.0.tar.gz tmp/pyella-1.3.0.tar.gz --markdown 20230430/p/pyella/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-30 15:38:02] INFO root fetch - processPackages [pyfed-macos]: Start processing: splittr
+[2023-04-30 15:38:02] INFO root fetch - main [MainThread]: End processing [pyfed-macos]: success
+[2023-04-30 15:38:02] INFO root fetch - processPackages [splittr]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-30 15:38:02] INFO root fetch - processPackages [pyfed]: Start processing: pyfed
+[2023-04-30 15:38:02] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 15:38:02] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:38:03] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 15:38:03] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:03] INFO root fetch - processPackages [splittr]: Downloading https://files.pythonhosted.org/packages/c5/fc/e00e1dde9f44163871835369cdc88be414906e9e722b47a5acf9de553ee7/splittr-0.0.0.tar.gz
+[2023-04-30 15:38:03] INFO root fetch - processPackages [GPTAgent]: Start processing: checkov
+[2023-04-30 15:38:03] INFO root fetch - main [MainThread]: End processing [GPTAgent]: success
+[2023-04-30 15:38:03] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 15:38:03] INFO root fetch - processPackages [splittr]: Downloading https://files.pythonhosted.org/packages/96/23/000cd7081e7376c422034a2566f0f4490383a0a0cdf43ab7a615e91aef02/splittr-0.0.1.tar.gz
+[2023-04-30 15:38:03] INFO root fetch - processPackages [pyella]: Start processing: sharetop
+[2023-04-30 15:38:03] INFO root fetch - main [MainThread]: End processing [pyella]: success
+[2023-04-30 15:38:03] INFO root fetch - processPackages [gold-miner-ui]: Start processing: autosrt
+[2023-04-30 15:38:03] INFO root fetch - main [MainThread]: End processing [gold-miner-ui]: success
+[2023-04-30 15:38:03] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-30 15:38:03] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230430/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 15:38:03] INFO root fetch - processPackages [autosrt]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-30 15:38:03] INFO root fetch - processPackages [splittr]: executing diffoscope
+[2023-04-30 15:38:03] INFO root fetch - processPackages [splittr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splittr-0.0.0.tar.gz tmp/splittr-0.0.1.tar.gz --markdown 20230430/s/splittr/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-30 15:38:03] INFO root fetch - processPackages [sharetop]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 15:38:03] INFO root fetch - processPackages [wwpdb.utils.wf]: Start processing: bc-detect-secrets
+[2023-04-30 15:38:03] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.wf]: success
+[2023-04-30 15:38:03] INFO root fetch - processPackages [autosrt]: Downloading https://files.pythonhosted.org/packages/43/30/6e07948930535a621e37e658e8c53a1092f48715fd1ada20151df3944d9e/autosrt-1.2.3.tar.gz
+[2023-04-30 15:38:03] INFO root fetch - processPackages [sharetop]: Downloading https://files.pythonhosted.org/packages/e9/24/4aa52fba3e740a08e656bc02129bed7eb208bc7808b300953d6c2f9150be/sharetop-1.0.2.tar.gz
+[2023-04-30 15:38:03] INFO root fetch - processPackages [bc-detect-secrets]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-30 15:38:03] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-04-30 15:38:03] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.2.tar.gz tmp/autosrt-1.2.3.tar.gz --markdown 20230430/a/autosrt/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-30 15:38:03] INFO root fetch - processPackages [sharetop]: executing diffoscope
+[2023-04-30 15:38:03] INFO root fetch - processPackages [sharetop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharetop-1.0.1.tar.gz tmp/sharetop-1.0.2.tar.gz --markdown 20230430/s/sharetop/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 15:38:03] INFO root fetch - processPackages [bc-detect-secrets]: executing diffoscope
+[2023-04-30 15:38:03] INFO root fetch - processPackages [bc-detect-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bc-detect-secrets-1.4.8.tar.gz tmp/bc-detect-secrets-1.4.9.tar.gz --markdown 20230430/b/bc-detect-secrets/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:04] INFO root fetch - processPackages [pyfed]: Start processing: GPTAgent
+[2023-04-30 15:38:04] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 15:38:04] INFO root fetch - processPackages [GPTAgent]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:38:04] INFO root fetch - processPackages [GPTAgent]: executing diffoscope
+[2023-04-30 15:38:04] INFO root fetch - processPackages [GPTAgent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptagent-0.0.8.tar.gz tmp/gptagent-0.0.9.tar.gz --markdown 20230430/G/GPTAgent/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:04] INFO root fetch - processPackages [splittr]: Start processing: pyfed
+[2023-04-30 15:38:04] INFO root fetch - main [MainThread]: End processing [splittr]: success
+[2023-04-30 15:38:04] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:38:04] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 15:38:04] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:38:05] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-04-30 15:38:05] INFO root fetch - main [MainThread]: End processing [sharetop]: success
+[2023-04-30 15:38:05] INFO root fetch - main [MainThread]: End processing [GPTAgent]: success
+[2023-04-30 15:38:05] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 15:38:06] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-04-30 15:38:06] INFO root fetch - main [MainThread]: End processing [bc-detect-secrets]: success
+[2023-04-30 15:38:07] INFO root fetch - main [MainThread]: End processing [cellpy]: success
+[2023-04-30 15:38:08] INFO root fetch - main [MainThread]: End processing [polars]: success
+[2023-04-30 15:38:19] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
+[2023-04-30 15:38:46] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-30 15:38:46] INFO root fetch - main [MainThread]: Store serial: [17917177]
