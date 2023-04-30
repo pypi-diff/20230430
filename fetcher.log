@@ -4250,3 +4250,35 @@
 [2023-04-30 10:10:48] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-04-30 10:10:55] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-30 10:10:55] INFO root fetch - main [MainThread]: Store serial: [17915415]
+[2023-04-30 10:15:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915415]
+[2023-04-30 10:16:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 10:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: voxx-cli
+[2023-04-30 10:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yatracker-linker
+[2023-04-30 10:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inworld-python
+[2023-04-30 10:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cvworld
+[2023-04-30 10:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfirebird
+[2023-04-30 10:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netunicorn-connector-aws
+[2023-04-30 10:16:03] WARNING root fetch - processPackages [cvworld]: Skipping, unable to determine old version
+[2023-04-30 10:16:03] INFO root fetch - processPackages [voxx-cli]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 10:16:03] INFO root fetch - main [MainThread]: End processing [cvworld] error
+[2023-04-30 10:16:03] INFO root fetch - processPackages [yatracker-linker]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-30 10:16:03] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 10:16:03] WARNING root fetch - processPackages [inworld-python]: Skipping, unable to determine old version
+[2023-04-30 10:16:03] INFO root fetch - main [MainThread]: End processing [inworld-python] error
+[2023-04-30 10:16:04] WARNING root fetch - processPackages [netunicorn-connector-aws]: Skipping, unable to determine old version
+[2023-04-30 10:16:04] INFO root fetch - main [MainThread]: End processing [netunicorn-connector-aws] error
+[2023-04-30 10:16:04] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/7b/52/85c2938533f5cdedbf8bcb8b7b179fa47afb6fb6bc7e18f33a4f14ae30c1/yatracker_linker-0.3.1.tar.gz
+[2023-04-30 10:16:04] INFO root fetch - processPackages [voxx-cli]: Downloading https://files.pythonhosted.org/packages/7c/48/1a94e0d0bbd153edf5e9d01828d39e3118cd392a77b6b02af8083165d5b8/voxx-cli-1.0.3.tar.gz
+[2023-04-30 10:16:04] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/a9/bf/cd1a7a79e5db837268a6c88b0c6bb56c8241367383f253cb34fe37f3bca4/pyfirebird-0.0.4.tar.gz
+[2023-04-30 10:16:04] INFO root fetch - processPackages [voxx-cli]: executing diffoscope
+[2023-04-30 10:16:04] INFO root fetch - processPackages [voxx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voxx-cli-1.0.2.tar.gz tmp/voxx-cli-1.0.3.tar.gz --markdown 20230430/v/voxx-cli/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 10:16:04] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/b0/ca/1dc04dfb01e03d013c65ac699db52aa6c1022f924d343f2851d56eab8cef/yatracker_linker-0.3.2.tar.gz
+[2023-04-30 10:16:04] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/22/4c/2f589c9de5c787b74f82ad43b0e32890405714fdca4d1afbeac7f6479e30/pyfirebird-0.0.5.tar.gz
+[2023-04-30 10:16:04] INFO root fetch - processPackages [yatracker-linker]: executing diffoscope
+[2023-04-30 10:16:04] INFO root fetch - processPackages [yatracker-linker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yatracker_linker-0.3.1.tar.gz tmp/yatracker_linker-0.3.2.tar.gz --markdown 20230430/y/yatracker-linker/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-30 10:16:04] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-04-30 10:16:04] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.4.tar.gz tmp/pyfirebird-0.0.5.tar.gz --markdown 20230430/p/pyfirebird/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 10:16:05] INFO root fetch - main [MainThread]: End processing [yatracker-linker]: success
+[2023-04-30 10:16:05] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-04-30 10:16:05] INFO root fetch - main [MainThread]: End processing [voxx-cli]: success
+[2023-04-30 10:16:05] INFO root fetch - main [MainThread]: Store serial: [17915437]
