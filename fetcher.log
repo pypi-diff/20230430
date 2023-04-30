@@ -3349,3 +3349,39 @@
 [2023-04-30 08:18:23] INFO root fetch - main [MainThread]: End processing [helios-opentelemetry-sdk]: success
 [2023-04-30 08:18:23] INFO root fetch - main [MainThread]: End processing [ErCore]: success
 [2023-04-30 08:18:23] INFO root fetch - main [MainThread]: Store serial: [17914898]
+[2023-04-30 08:23:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914898]
+[2023-04-30 08:23:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 08:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AudioProcessor
+[2023-04-30 08:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pretext
+[2023-04-30 08:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iothealth
+[2023-04-30 08:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lamineml
+[2023-04-30 08:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: luau
+[2023-04-30 08:23:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: djfuesah
+[2023-04-30 08:23:33] INFO root fetch - processPackages [AudioProcessor]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-30 08:23:33] WARNING root fetch - processPackages [djfuesah]: Skipping, unable to determine old version
+[2023-04-30 08:23:33] INFO root fetch - main [MainThread]: End processing [djfuesah] error
+[2023-04-30 08:23:33] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 08:23:33] INFO root fetch - processPackages [lamineml]: New version: [0.8] Old Version: [0.7]
+[2023-04-30 08:23:33] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230430] Old Version: [1.5.3.dev20230429]
+[2023-04-30 08:23:33] INFO root fetch - processPackages [iothealth]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 08:23:33] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-04-30 08:23:33] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.7.tar.gz tmp/lamineml-0.8.tar.gz --markdown 20230430/l/lamineml/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-30 08:23:33] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 08:23:33] INFO root fetch - processPackages [AudioProcessor]: Downloading https://files.pythonhosted.org/packages/44/2e/2278e14f76b2dc9fdaff055766195102a3869e2a85e6137e0547ff2492ca/AudioProcessor-0.1.4.tar.gz
+[2023-04-30 08:23:33] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 08:23:33] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 08:23:33] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/b2/e4/120c20d39844798a5a67820535427a89b106c3b08993e8b66b077e7df451/pretext-1.5.3.dev20230430.tar.gz
+[2023-04-30 08:23:33] INFO root fetch - processPackages [iothealth]: Downloading https://files.pythonhosted.org/packages/72/c8/b11b4efd1d4581c5213e925685e32c73029e0bdf6cca435514329f560041/iothealth-0.0.4.tar.gz
+[2023-04-30 08:23:33] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-04-30 08:23:33] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230429.tar.gz tmp/pretext-1.5.3.dev20230430.tar.gz --markdown 20230430/p/pretext/1.5.3.dev20230429-1.5.3.dev20230430/diff.md --exclude *.pyd
+[2023-04-30 08:23:33] INFO root fetch - processPackages [AudioProcessor]: Downloading https://files.pythonhosted.org/packages/8b/32/23a1590453bf3214a20d3e4b07cc1e70a1ddc65fe9100c0cc950eca5f38b/AudioProcessor-0.2.0.tar.gz
+[2023-04-30 08:23:33] INFO root fetch - processPackages [AudioProcessor]: executing diffoscope
+[2023-04-30 08:23:33] INFO root fetch - processPackages [AudioProcessor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AudioProcessor-0.1.4.tar.gz tmp/AudioProcessor-0.2.0.tar.gz --markdown 20230430/A/AudioProcessor/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 08:23:33] INFO root fetch - processPackages [iothealth]: Downloading https://files.pythonhosted.org/packages/aa/46/2a448bd1e6ae53d744002b5126a7524e9ac27f25721141876b9e4796ad6f/iothealth-0.0.5.tar.gz
+[2023-04-30 08:23:33] INFO root fetch - processPackages [iothealth]: executing diffoscope
+[2023-04-30 08:23:33] INFO root fetch - processPackages [iothealth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iothealth-0.0.4.tar.gz tmp/iothealth-0.0.5.tar.gz --markdown 20230430/i/iothealth/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 08:23:34] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-04-30 08:23:34] INFO root fetch - main [MainThread]: End processing [AudioProcessor]: success
+[2023-04-30 08:23:34] INFO root fetch - main [MainThread]: End processing [iothealth]: success
+[2023-04-30 08:23:38] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-04-30 08:23:38] INFO root fetch - main [MainThread]: Store serial: [17914919]
