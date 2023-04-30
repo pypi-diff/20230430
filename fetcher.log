@@ -2929,3 +2929,39 @@
 [2023-04-30 07:06:46] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-04-30 07:09:36] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-04-30 07:09:36] INFO root fetch - main [MainThread]: Store serial: [17914608]
+[2023-04-30 07:14:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914608]
+[2023-04-30 07:14:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 07:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: safenote
+[2023-04-30 07:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhrp
+[2023-04-30 07:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notion-api
+[2023-04-30 07:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tflite-model-maker-nightly
+[2023-04-30 07:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-homeassistant-custom-component
+[2023-04-30 07:14:45] INFO root fetch - processPackages [safenote]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 07:14:45] INFO root fetch - processPackages [pyhrp]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-30 07:14:45] INFO root fetch - processPackages [notion-api]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-04-30 07:14:45] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-30 07:14:45] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202304300508] Old Version: [0.4.3.dev202304290510]
+[2023-04-30 07:14:45] INFO root fetch - processPackages [notion-api]: Downloading https://files.pythonhosted.org/packages/37/8e/74e8bc54423a65428b8bbbd2359330e3fc2e98279132efe5ad9126a7c329/notion_api-0.4.2.tar.gz
+[2023-04-30 07:14:45] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/8a/3b/b76075872ac35edad46a4fd3401c3faebda7af874b306526a1d7e1a4336a/pytest-homeassistant-custom-component-0.9.8.tar.gz
+[2023-04-30 07:14:45] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/91/49/c1bcb06c9bff4e59ade333babbff92d9f69836b331da2114eb748c9a6e48/pyhrp-0.6.5.tar.gz
+[2023-04-30 07:14:45] INFO root fetch - processPackages [safenote]: Downloading https://files.pythonhosted.org/packages/28/5f/1552c19a43ba95b64f2115bc0f8e6a228ec115224ef0a1aca59aba3604be/safenote-0.1.5.tar.gz
+[2023-04-30 07:14:45] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/d5/77/39ab334af23a926e826f8f4d7485297f210e7292463ed7474e609ec53227/tflite-model-maker-nightly-0.4.3.dev202304290510.tar.gz
+[2023-04-30 07:14:45] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 07:14:45] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.6.4.tar.gz tmp/pyhrp-0.6.5.tar.gz --markdown 20230430/p/pyhrp/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-30 07:14:45] INFO root fetch - processPackages [safenote]: executing diffoscope
+[2023-04-30 07:14:45] INFO root fetch - processPackages [safenote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safenote-0.1.4.tar.gz tmp/safenote-0.1.5.tar.gz --markdown 20230430/s/safenote/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 07:14:46] INFO root fetch - processPackages [notion-api]: Downloading https://files.pythonhosted.org/packages/f5/e6/f93b731a67fdb88a606c354f227a51439c8283032168e6ea8bd145012bad/notion_api-0.5.0.tar.gz
+[2023-04-30 07:14:46] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/2e/80/ef5ca84f12ae7862d4ba95b2fca8a31ac581a1a46e2687999d0ca9a30a55/tflite-model-maker-nightly-0.4.3.dev202304300508.tar.gz
+[2023-04-30 07:14:46] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/60/4e/ba1174db4b883610c2a5afba7a30857178ada41a2368936b2e3d764bfe6a/pytest-homeassistant-custom-component-0.9.9.tar.gz
+[2023-04-30 07:14:46] INFO root fetch - processPackages [notion-api]: executing diffoscope
+[2023-04-30 07:14:46] INFO root fetch - processPackages [notion-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notion_api-0.4.2.tar.gz tmp/notion_api-0.5.0.tar.gz --markdown 20230430/n/notion-api/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-04-30 07:14:46] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2023-04-30 07:14:46] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20230430/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-30 07:14:46] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-04-30 07:14:46] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202304290510.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202304300508.tar.gz --markdown 20230430/t/tflite-model-maker-nightly/0.4.3.dev202304290510-0.4.3.dev202304300508/diff.md --exclude *.pyd
+[2023-04-30 07:14:47] INFO root fetch - main [MainThread]: End processing [safenote]: success
+[2023-04-30 07:14:47] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 07:14:47] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2023-04-30 07:14:47] INFO root fetch - main [MainThread]: End processing [notion-api]: success
+[2023-04-30 07:14:49] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-04-30 07:14:49] INFO root fetch - main [MainThread]: Store serial: [17914641]
