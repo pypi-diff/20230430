@@ -8886,3 +8886,25 @@
 [2023-04-30 19:06:20] INFO root fetch - main [MainThread]: End processing [pycryptokms]: success
 [2023-04-30 19:06:21] INFO root fetch - main [MainThread]: End processing [bovine]: success
 [2023-04-30 19:06:21] INFO root fetch - main [MainThread]: Store serial: [17918325]
+[2023-04-30 19:11:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918325]
+[2023-04-30 19:11:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 19:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymailers
+[2023-04-30 19:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proovl-sms
+[2023-04-30 19:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: g8fyi-beancount
+[2023-04-30 19:11:30] INFO root fetch - processPackages [proovl-sms]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 19:11:30] INFO root fetch - processPackages [pymailers]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-30 19:11:30] INFO root fetch - processPackages [g8fyi-beancount]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 19:11:30] INFO root fetch - processPackages [pymailers]: Downloading https://files.pythonhosted.org/packages/e9/db/e9ca6bd4c8288c98b787f021de7f35cbf239f7738172780e2844169a752a/pymailers-1.1.8.tar.gz
+[2023-04-30 19:11:30] INFO root fetch - processPackages [proovl-sms]: Downloading https://files.pythonhosted.org/packages/37/6f/ad21b503ec2f45d9f099b836159ac3504b7c7f07b4963fbea92935d18c34/proovl-sms-0.1.5.tar.gz
+[2023-04-30 19:11:30] INFO root fetch - processPackages [g8fyi-beancount]: Downloading https://files.pythonhosted.org/packages/32/4e/f3f8621a87896bd8c52985123719801de2c9593cf5ba4086c89062eebcc1/g8fyi-beancount-1.0.8.tar.gz
+[2023-04-30 19:11:30] INFO root fetch - processPackages [proovl-sms]: executing diffoscope
+[2023-04-30 19:11:30] INFO root fetch - processPackages [proovl-sms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proovl-sms-0.1.4.tar.gz tmp/proovl-sms-0.1.5.tar.gz --markdown 20230430/p/proovl-sms/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 19:11:30] INFO root fetch - processPackages [pymailers]: executing diffoscope
+[2023-04-30 19:11:30] INFO root fetch - processPackages [pymailers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymailers-1.1.7.tar.gz tmp/pymailers-1.1.8.tar.gz --markdown 20230430/p/pymailers/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-30 19:11:31] INFO root fetch - processPackages [g8fyi-beancount]: Downloading https://files.pythonhosted.org/packages/21/e6/65f34a0eb3e8fb92e12f4c7a97de69ddf2cfad70a97291fd23695b74a138/g8fyi-beancount-1.0.9.tar.gz
+[2023-04-30 19:11:31] INFO root fetch - processPackages [g8fyi-beancount]: executing diffoscope
+[2023-04-30 19:11:31] INFO root fetch - processPackages [g8fyi-beancount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g8fyi-beancount-1.0.8.tar.gz tmp/g8fyi-beancount-1.0.9.tar.gz --markdown 20230430/g/g8fyi-beancount/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 19:11:31] INFO root fetch - main [MainThread]: End processing [proovl-sms]: success
+[2023-04-30 19:11:31] INFO root fetch - main [MainThread]: End processing [pymailers]: success
+[2023-04-30 19:11:34] INFO root fetch - main [MainThread]: End processing [g8fyi-beancount]: success
+[2023-04-30 19:11:34] INFO root fetch - main [MainThread]: Store serial: [17918334]
