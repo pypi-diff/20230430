@@ -4934,3 +4934,44 @@
 [2023-04-30 11:30:54] INFO root fetch - main [MainThread]: End processing [wbpOutput]: success
 [2023-04-30 11:30:54] INFO root fetch - main [MainThread]: End processing [nornir-salt]: success
 [2023-04-30 11:30:54] INFO root fetch - main [MainThread]: Store serial: [17915791]
+[2023-04-30 11:35:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915791]
+[2023-04-30 11:36:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: newsdash
+[2023-04-30 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-frank-energie
+[2023-04-30 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: UzbekTagger
+[2023-04-30 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transformers-gradients
+[2023-04-30 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: so-vits-svc-fork
+[2023-04-30 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zeroinger
+[2023-04-30 11:36:03] INFO root fetch - processPackages [zeroinger]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-04-30 11:36:03] INFO root fetch - processPackages [python-frank-energie]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-04-30 11:36:03] INFO root fetch - processPackages [UzbekTagger]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 11:36:03] INFO root fetch - processPackages [newsdash]: New version: [0.1.1a0] Old Version: [0.1.0a1]
+[2023-04-30 11:36:03] INFO root fetch - processPackages [transformers-gradients]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 11:36:03] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-04-30 11:36:03] INFO root fetch - processPackages [transformers-gradients]: executing diffoscope
+[2023-04-30 11:36:03] INFO root fetch - processPackages [transformers-gradients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers_gradients-0.0.8.tar.gz tmp/transformers_gradients-0.0.9.tar.gz --markdown 20230430/t/transformers-gradients/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 11:36:03] INFO root fetch - processPackages [zeroinger]: Downloading https://files.pythonhosted.org/packages/95/d3/b9a6e0ee5fda16da3e5c894e1117e12854953301f5760df1bda525c11539/zeroinger-1.2.7.tar.gz
+[2023-04-30 11:36:03] INFO root fetch - processPackages [UzbekTagger]: Downloading https://files.pythonhosted.org/packages/e4/6f/88b9d2ac024c5d6e1807f14a1893cd1f0877bc7eb045091935261e0dddf7/UzbekTagger-0.0.6.tar.gz
+[2023-04-30 11:36:03] INFO root fetch - processPackages [python-frank-energie]: Downloading https://files.pythonhosted.org/packages/e7/95/35204c5ccf71d1a402a763cedf2b39e635a5692fa9cf0a1b867686e5aa09/python_frank_energie-4.0.2.tar.gz
+[2023-04-30 11:36:03] INFO root fetch - processPackages [newsdash]: Downloading https://files.pythonhosted.org/packages/e0/55/603556aa8d912f662515f8f47055b671b395aa5113e955356f21fcf01145/newsdash-0.1.0a1.tar.gz
+[2023-04-30 11:36:03] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/a2/e4/4aad9b1c6227bc52736acd53be6d3dd7045143434892b6ba371710ea438b/so_vits_svc_fork-3.9.4.tar.gz
+[2023-04-30 11:36:03] INFO root fetch - processPackages [python-frank-energie]: executing diffoscope
+[2023-04-30 11:36:03] INFO root fetch - processPackages [python-frank-energie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_frank_energie-4.0.1.tar.gz tmp/python_frank_energie-4.0.2.tar.gz --markdown 20230430/p/python-frank-energie/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-04-30 11:36:03] INFO root fetch - processPackages [UzbekTagger]: executing diffoscope
+[2023-04-30 11:36:03] INFO root fetch - processPackages [UzbekTagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UzbekTagger-0.0.5.tar.gz tmp/UzbekTagger-0.0.6.tar.gz --markdown 20230430/U/UzbekTagger/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 11:36:03] INFO root fetch - processPackages [newsdash]: Downloading https://files.pythonhosted.org/packages/8e/81/2cd45195d0909440e05f984b2b33a88bedf16d75e858aa06f81efd668e62/newsdash-0.1.1a0.tar.gz
+[2023-04-30 11:36:03] INFO root fetch - processPackages [newsdash]: executing diffoscope
+[2023-04-30 11:36:03] INFO root fetch - processPackages [newsdash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newsdash-0.1.0a1.tar.gz tmp/newsdash-0.1.1a0.tar.gz --markdown 20230430/n/newsdash/0.1.0a1-0.1.1a0/diff.md --exclude *.pyd
+[2023-04-30 11:36:03] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/ef/17/23ad44cbca05b2881798a17db40b32b7b4d9c715d70eec2e10bb8bff079a/so_vits_svc_fork-3.9.5.tar.gz
+[2023-04-30 11:36:03] INFO root fetch - processPackages [zeroinger]: Downloading https://files.pythonhosted.org/packages/8f/a5/0a75ca9feefb4f7cd011dd0be7bde3aa085c0b05e4db2f8b99063e071284/zeroinger-1.2.8.tar.gz
+[2023-04-30 11:36:04] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-30 11:36:04] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230430/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-04-30 11:36:04] INFO root fetch - processPackages [zeroinger]: executing diffoscope
+[2023-04-30 11:36:04] INFO root fetch - processPackages [zeroinger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroinger-1.2.7.tar.gz tmp/zeroinger-1.2.8.tar.gz --markdown 20230430/z/zeroinger/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-04-30 11:36:04] INFO root fetch - main [MainThread]: End processing [python-frank-energie]: success
+[2023-04-30 11:36:04] INFO root fetch - main [MainThread]: End processing [transformers-gradients]: success
+[2023-04-30 11:36:04] INFO root fetch - main [MainThread]: End processing [newsdash]: success
+[2023-04-30 11:36:05] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-30 11:36:06] INFO root fetch - main [MainThread]: End processing [zeroinger]: success
+[2023-04-30 11:36:07] INFO root fetch - main [MainThread]: End processing [UzbekTagger]: success
+[2023-04-30 11:36:07] INFO root fetch - main [MainThread]: Store serial: [17915812]
