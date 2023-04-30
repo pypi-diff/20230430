@@ -2610,3 +2610,40 @@
 [2023-04-30 06:04:15] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
 [2023-04-30 06:04:19] INFO root fetch - main [MainThread]: End processing [cikuu]: success
 [2023-04-30 06:04:19] INFO root fetch - main [MainThread]: Store serial: [17914386]
+[2023-04-30 06:09:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914386]
+[2023-04-30 06:09:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 06:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reactpy-flake8
+[2023-04-30 06:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Vulncapture
+[2023-04-30 06:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyghs
+[2023-04-30 06:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-geoacumen
+[2023-04-30 06:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Awespykit
+[2023-04-30 06:09:28] INFO root fetch - processPackages [pyghs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 06:09:28] INFO root fetch - processPackages [reactpy-flake8]: New version: [0.7.0] Old Version: [0.6.5]
+[2023-04-30 06:09:28] INFO root fetch - processPackages [Vulncapture]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 06:09:28] INFO root fetch - processPackages [python-geoacumen]: New version: [2023.4.9] Old Version: [2023.4.30]
+[2023-04-30 06:09:28] INFO root fetch - processPackages [Awespykit]: New version: [2.1.0] Old Version: [2.0.2.dev18]
+[2023-04-30 06:09:28] INFO root fetch - processPackages [reactpy-flake8]: Downloading https://files.pythonhosted.org/packages/e8/59/5629c8cecd5dcbd11f91d830d09f1e40d517fe60b8d508dcead179b4e383/reactpy_flake8-0.6.5-py3-none-any.whl
+[2023-04-30 06:09:28] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/fe/21/aa17ac1ad1807dc74239758aa8b4b9a709f57ac8ca1603689c46c3cb0694/python-geoacumen-2023.4.30.tar.gz
+[2023-04-30 06:09:28] INFO root fetch - processPackages [Vulncapture]: Downloading https://files.pythonhosted.org/packages/1d/2e/09575fddf1fbc9467309c38e18e5bef7fda7ac6c664c5623890890ab3d5f/Vulncapture-1.0.1.tar.gz
+[2023-04-30 06:09:28] INFO root fetch - processPackages [pyghs]: Downloading https://files.pythonhosted.org/packages/fa/74/d3c64575f9ed097d447e7aa56a9547d36b9d755716f60bf028b22ee68f4f/pyghs-0.1.0.tar.gz
+[2023-04-30 06:09:28] INFO root fetch - processPackages [Awespykit]: Downloading https://files.pythonhosted.org/packages/d1/6f/fc28d3e173ff3f35d9c9666accd121a4bb0a061aae977cc5dc09ca7d389b/Awespykit-2.0.2.dev18-py3-none-any.whl
+[2023-04-30 06:09:28] INFO root fetch - processPackages [Vulncapture]: executing diffoscope
+[2023-04-30 06:09:28] INFO root fetch - processPackages [Vulncapture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Vulncapture-1.0.0.tar.gz tmp/Vulncapture-1.0.1.tar.gz --markdown 20230430/V/Vulncapture/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 06:09:29] INFO root fetch - processPackages [reactpy-flake8]: Downloading https://files.pythonhosted.org/packages/09/b8/426598b4d7ed5b38aba93ef54d94816f5043647f94f1f340280b8b268c85/reactpy_flake8-0.7.0-py3-none-any.whl
+[2023-04-30 06:09:29] INFO root fetch - processPackages [pyghs]: Downloading https://files.pythonhosted.org/packages/5e/b0/7f7cdd00579173e7deb08eb980fe50ea2f3d17fa8f11d7848ce29fab9190/pyghs-0.1.1.tar.gz
+[2023-04-30 06:09:29] INFO root fetch - processPackages [pyghs]: executing diffoscope
+[2023-04-30 06:09:29] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/5f/e2/00a753a65c099d5dc1e7e08b33007a36c2242ef2f41953a24324a98eb31e/python-geoacumen-2023.4.9.tar.gz
+[2023-04-30 06:09:29] INFO root fetch - processPackages [pyghs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyghs-0.1.0.tar.gz tmp/pyghs-0.1.1.tar.gz --markdown 20230430/p/pyghs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 06:09:29] INFO root fetch - processPackages [reactpy-flake8]: executing diffoscope
+[2023-04-30 06:09:29] INFO root fetch - processPackages [reactpy-flake8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactpy_flake8-0.6.5-py3-none-any.whl.zip tmp/reactpy_flake8-0.7.0-py3-none-any.whl.zip --markdown 20230430/r/reactpy-flake8/0.6.5-0.7.0/diff.md --exclude *.pyd
+[2023-04-30 06:09:29] INFO root fetch - processPackages [Awespykit]: Downloading https://files.pythonhosted.org/packages/00/d1/d052b10623a3b3ec318a5fcde90028b0af6264c390d80517cbebbd2a6bd1/Awespykit-2.1.0.tar.gz
+[2023-04-30 06:09:29] INFO root fetch - processPackages [Awespykit]: executing diffoscope
+[2023-04-30 06:09:29] INFO root fetch - processPackages [Awespykit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Awespykit-2.0.2.dev18-py3-none-any.whl.zip tmp/Awespykit-2.1.0.tar.gz --markdown 20230430/A/Awespykit/2.0.2.dev18-2.1.0/diff.md --exclude *.pyd
+[2023-04-30 06:09:29] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2023-04-30 06:09:29] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2023.4.30.tar.gz tmp/python-geoacumen-2023.4.9.tar.gz --markdown 20230430/p/python-geoacumen/2023.4.30-2023.4.9/diff.md --exclude *.pyd
+[2023-04-30 06:09:30] INFO root fetch - main [MainThread]: End processing [pyghs]: success
+[2023-04-30 06:09:30] INFO root fetch - main [MainThread]: End processing [reactpy-flake8]: success
+[2023-04-30 06:09:30] INFO root fetch - main [MainThread]: End processing [Vulncapture]: success
+[2023-04-30 06:09:30] INFO root fetch - main [MainThread]: End processing [Awespykit]: success
+[2023-04-30 06:09:31] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2023-04-30 06:09:31] INFO root fetch - main [MainThread]: Store serial: [17914400]
