@@ -8969,3 +8969,62 @@
 [2023-04-30 19:16:49] INFO root fetch - main [MainThread]: End processing [pybamm]: success
 [2023-04-30 19:17:18] INFO root fetch - main [MainThread]: End processing [meerkat-ml]: success
 [2023-04-30 19:17:18] INFO root fetch - main [MainThread]: Store serial: [17918377]
+[2023-04-30 19:22:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918377]
+[2023-04-30 19:22:27] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dreamy
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lpython-emulation
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqrack
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simulated-bifurcation
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: goodmodslab-api
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: goodmodslab-api
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Fortuna
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: spanishconjugator
+[2023-04-30 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Prepup
+[2023-04-30 19:22:27] WARNING root fetch - processPackages [goodmodslab-api]: Skipping, unable to determine old version
+[2023-04-30 19:22:27] INFO root fetch - processPackages [goodmodslab-api]: Start processing: proovl-sms
+[2023-04-30 19:22:27] INFO root fetch - main [MainThread]: End processing [goodmodslab-api] error
+[2023-04-30 19:22:27] INFO root fetch - processPackages [simulated-bifurcation]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 19:22:27] INFO root fetch - processPackages [lpython-emulation]: New version: [0.0.1.3] Old Version: [0.0.1.2]
+[2023-04-30 19:22:27] WARNING root fetch - processPackages [goodmodslab-api]: Skipping, unable to determine old version
+[2023-04-30 19:22:27] INFO root fetch - main [MainThread]: End processing [goodmodslab-api] error
+[2023-04-30 19:22:27] WARNING root fetch - processPackages [dreamy]: Skipping, unable to determine old version
+[2023-04-30 19:22:27] INFO root fetch - main [MainThread]: End processing [dreamy] error
+[2023-04-30 19:22:27] INFO root fetch - processPackages [Prepup]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 19:22:27] INFO root fetch - processPackages [pyqrack]: New version: [1.7.0] Old Version: [1.6.4]
+[2023-04-30 19:22:27] INFO root fetch - processPackages [Fortuna]: New version: [5.1.2] Old Version: [5.1.1]
+[2023-04-30 19:22:27] INFO root fetch - processPackages [proovl-sms]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 19:22:27] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-30 19:22:27] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-30 19:22:27] INFO root fetch - processPackages [Prepup]: Downloading https://files.pythonhosted.org/packages/ea/57/501424ee231e4acaba66d21e1ba5673ad33a4f93f6c9a09c8dfcbbf1565b/prepup-0.0.4.tar.gz
+[2023-04-30 19:22:27] INFO root fetch - processPackages [lpython-emulation]: Downloading https://files.pythonhosted.org/packages/24/aa/61604a8a0ea69e435e4fd3bfc75fb210f5de07b6778aabcb9227e4da37b9/lpython_emulation-0.0.1.3.tar.gz
+[2023-04-30 19:22:27] INFO root fetch - processPackages [Fortuna]: Downloading https://files.pythonhosted.org/packages/15/83/c3a2f3564376ef877b98e52a174e5d269d5b08a06076ab226818baaf2ee6/Fortuna-5.1.1.tar.gz
+[2023-04-30 19:22:27] INFO root fetch - processPackages [proovl-sms]: executing diffoscope
+[2023-04-30 19:22:27] INFO root fetch - processPackages [proovl-sms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proovl-sms-0.1.4.tar.gz tmp/proovl-sms-0.1.5.tar.gz --markdown 20230430/p/proovl-sms/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 19:22:27] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-30 19:22:27] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230430/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-30 19:22:27] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-30 19:22:27] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230430/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-30 19:22:27] INFO root fetch - processPackages [lpython-emulation]: executing diffoscope
+[2023-04-30 19:22:27] INFO root fetch - processPackages [lpython-emulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpython_emulation-0.0.1.2.tar.gz tmp/lpython_emulation-0.0.1.3.tar.gz --markdown 20230430/l/lpython-emulation/0.0.1.2-0.0.1.3/diff.md --exclude *.pyd
+[2023-04-30 19:22:27] INFO root fetch - processPackages [simulated-bifurcation]: Downloading https://files.pythonhosted.org/packages/ae/9b/22d0e8119379df838f084087f7834a7ecefd89e5b38e62ad2121bcbc6820/simulated_bifurcation-1.0.2.tar.gz
+[2023-04-30 19:22:28] INFO root fetch - processPackages [pyqrack]: Downloading https://files.pythonhosted.org/packages/60/03/4c4c852343e1100f29be809f8e289903209bcaac3562c242b72518d1beb0/pyqrack-1.7.0.tar.gz
+[2023-04-30 19:22:28] INFO root fetch - processPackages [simulated-bifurcation]: executing diffoscope
+[2023-04-30 19:22:28] INFO root fetch - processPackages [simulated-bifurcation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simulated_bifurcation-1.0.1.tar.gz tmp/simulated_bifurcation-1.0.2.tar.gz --markdown 20230430/s/simulated-bifurcation/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 19:22:28] INFO root fetch - processPackages [Prepup]: Downloading https://files.pythonhosted.org/packages/8a/15/0a04ecb319410b61e8396c1d53aab4521a53b93fb760cc1e3dec5acc69fd/Prepup-0.0.5.tar.gz
+[2023-04-30 19:22:28] INFO root fetch - processPackages [Fortuna]: Downloading https://files.pythonhosted.org/packages/f8/aa/d567b48deebe3626fe131a283bad1587546bbfd4e915a93c024399ea88e4/Fortuna-5.1.2.tar.gz
+[2023-04-30 19:22:28] INFO root fetch - processPackages [pyqrack]: executing diffoscope
+[2023-04-30 19:22:28] INFO root fetch - processPackages [pyqrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqrack-1.6.4.tar.gz tmp/pyqrack-1.7.0.tar.gz --markdown 20230430/p/pyqrack/1.6.4-1.7.0/diff.md --exclude *.pyd
+[2023-04-30 19:22:28] INFO root fetch - processPackages [Prepup]: executing diffoscope
+[2023-04-30 19:22:28] INFO root fetch - processPackages [Prepup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prepup-0.0.4.tar.gz tmp/Prepup-0.0.5.tar.gz --markdown 20230430/P/Prepup/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 19:22:28] INFO root fetch - processPackages [Fortuna]: executing diffoscope
+[2023-04-30 19:22:28] INFO root fetch - processPackages [Fortuna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fortuna-5.1.1.tar.gz tmp/Fortuna-5.1.2.tar.gz --markdown 20230430/F/Fortuna/5.1.1-5.1.2/diff.md --exclude *.pyd
+[2023-04-30 19:22:29] INFO root fetch - main [MainThread]: End processing [proovl-sms]: success
+[2023-04-30 19:22:29] INFO root fetch - main [MainThread]: End processing [lpython-emulation]: success
+[2023-04-30 19:22:29] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-30 19:22:29] INFO root fetch - main [MainThread]: End processing [simulated-bifurcation]: success
+[2023-04-30 19:22:29] INFO root fetch - main [MainThread]: End processing [Prepup]: success
+[2023-04-30 19:22:30] INFO root fetch - main [MainThread]: End processing [pyqrack]: success
+[2023-04-30 19:22:32] INFO root fetch - main [MainThread]: End processing [Fortuna]: success
+[2023-04-30 19:22:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-04-30 19:22:51] INFO root fetch - main [MainThread]: Store serial: [17918483]
