@@ -5902,3 +5902,23 @@
 [2023-04-30 13:44:58] INFO root fetch - main [MainThread]: End processing [Paste]: success
 [2023-04-30 13:45:28] INFO root fetch - main [MainThread]: End processing [gpt4all-j]: success
 [2023-04-30 13:45:28] INFO root fetch - main [MainThread]: Store serial: [17916350]
+[2023-04-30 13:50:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916350]
+[2023-04-30 13:50:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 13:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dxsp
+[2023-04-30 13:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ykenan-file
+[2023-04-30 13:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apache-airflow
+[2023-04-30 13:50:41] INFO root fetch - processPackages [ykenan-file]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-30 13:50:41] INFO root fetch - processPackages [dxsp]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-30 13:50:41] INFO root fetch - processPackages [apache-airflow]: New version: [2.6.0rc5] Old Version: [2.6.0rc4]
+[2023-04-30 13:50:41] INFO root fetch - processPackages [ykenan-file]: Downloading https://files.pythonhosted.org/packages/99/ac/e2a806499b1da580cf4940f40c2f87cde3522639c7c93ba0ce9e96dcfe9f/ykenan_file-0.1.6.tar.gz
+[2023-04-30 13:50:41] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/de/93/7e007f811bd0d6678bb5d18cdab1fab1ffd39a57537092a02a3616bbae2c/dxsp-1.3.0.tar.gz
+[2023-04-30 13:50:41] INFO root fetch - processPackages [ykenan-file]: executing diffoscope
+[2023-04-30 13:50:41] INFO root fetch - processPackages [ykenan-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_file-0.1.5.tar.gz tmp/ykenan_file-0.1.6.tar.gz --markdown 20230430/y/ykenan-file/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-30 13:50:41] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-30 13:50:41] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.2.9.tar.gz tmp/dxsp-1.3.0.tar.gz --markdown 20230430/d/dxsp/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-30 13:50:42] INFO root fetch - processPackages [apache-airflow]: Downloading https://files.pythonhosted.org/packages/e1/94/909b5ff35b7aeec4a4fcdc1bff65b55f3ab2d3bb7aee036088112ccf65ed/apache-airflow-2.6.0rc4.tar.gz
+[2023-04-30 13:50:42] WARNING root fetch - processPackages [apache-airflow]: Skipping package: exceeds size limit 11468787>=10485760
+[2023-04-30 13:50:42] INFO root fetch - main [MainThread]: End processing [apache-airflow] error
+[2023-04-30 13:50:42] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-30 13:50:42] INFO root fetch - main [MainThread]: End processing [ykenan-file]: success
+[2023-04-30 13:50:42] INFO root fetch - main [MainThread]: Store serial: [17916359]
