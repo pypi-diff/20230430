@@ -11275,3 +11275,29 @@
 [2023-04-30 23:43:20] INFO root fetch - main [MainThread]: End processing [itkwasm]: success
 [2023-04-30 23:44:24] INFO root fetch - main [MainThread]: End processing [SQLAlchemy]: success
 [2023-04-30 23:44:24] INFO root fetch - main [MainThread]: Store serial: [17920209]
+[2023-04-30 23:49:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920209]
+[2023-04-30 23:49:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 23:49:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NetworkPackage
+[2023-04-30 23:49:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meltanolabs-tap-postgres
+[2023-04-30 23:49:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DinoHash
+[2023-04-30 23:49:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: notation
+[2023-04-30 23:49:32] INFO root fetch - processPackages [meltanolabs-tap-postgres]: New version: [0.0.1a3] Old Version: [0.0.0]
+[2023-04-30 23:49:32] INFO root fetch - processPackages [notation]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 23:49:32] INFO root fetch - processPackages [DinoHash]: New version: [0.3] Old Version: [0.2]
+[2023-04-30 23:49:32] WARNING root fetch - processPackages [NetworkPackage]: Skipping, unable to determine old version
+[2023-04-30 23:49:32] INFO root fetch - main [MainThread]: End processing [NetworkPackage] error
+[2023-04-30 23:49:33] INFO root fetch - processPackages [meltanolabs-tap-postgres]: Downloading https://files.pythonhosted.org/packages/3b/f4/3d02ef8b77d940799ff52624b7eccf9867376aa4c79e3e1a0022bf0df2ea/meltanolabs_tap_postgres-0.0.0.tar.gz
+[2023-04-30 23:49:33] INFO root fetch - processPackages [notation]: Downloading https://files.pythonhosted.org/packages/a8/d9/8997398528a76c1353798d37a58f9c5c98a2f2849f464cb1d0cb433f8ef2/notation-0.0.1.tar.gz
+[2023-04-30 23:49:33] INFO root fetch - processPackages [DinoHash]: Downloading https://files.pythonhosted.org/packages/f4/47/841d80c072dd2acb0dd13e5d401f79dc171fecdd03c0b289c06fe0e5f836/DinoHash-0.3-py3-none-any.whl
+[2023-04-30 23:49:33] INFO root fetch - processPackages [meltanolabs-tap-postgres]: Downloading https://files.pythonhosted.org/packages/ca/3c/649e62921a5a19fc56e870b8c96a54dca866d2430c5b21ff72477f6ec153/meltanolabs_tap_postgres-0.0.1a3.tar.gz
+[2023-04-30 23:49:33] INFO root fetch - processPackages [DinoHash]: executing diffoscope
+[2023-04-30 23:49:33] INFO root fetch - processPackages [DinoHash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DinoHash-0.2-py3-none-any.whl.zip tmp/DinoHash-0.3-py3-none-any.whl.zip --markdown 20230430/D/DinoHash/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-30 23:49:33] INFO root fetch - processPackages [notation]: Downloading https://files.pythonhosted.org/packages/45/b7/6132d75bece79fd0a4291d3453905d6517cbe9dab1198e0eaa24a0d4965a/notation-0.0.2.tar.gz
+[2023-04-30 23:49:33] INFO root fetch - processPackages [notation]: executing diffoscope
+[2023-04-30 23:49:33] INFO root fetch - processPackages [notation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notation-0.0.1.tar.gz tmp/notation-0.0.2.tar.gz --markdown 20230430/n/notation/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 23:49:33] INFO root fetch - processPackages [meltanolabs-tap-postgres]: executing diffoscope
+[2023-04-30 23:49:33] INFO root fetch - processPackages [meltanolabs-tap-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meltanolabs_tap_postgres-0.0.0.tar.gz tmp/meltanolabs_tap_postgres-0.0.1a3.tar.gz --markdown 20230430/m/meltanolabs-tap-postgres/0.0.0-0.0.1a3/diff.md --exclude *.pyd
+[2023-04-30 23:49:34] INFO root fetch - main [MainThread]: End processing [notation]: success
+[2023-04-30 23:49:34] INFO root fetch - main [MainThread]: End processing [DinoHash]: success
+[2023-04-30 23:49:34] INFO root fetch - main [MainThread]: End processing [meltanolabs-tap-postgres]: success
+[2023-04-30 23:49:34] INFO root fetch - main [MainThread]: Store serial: [17920223]
