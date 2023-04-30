@@ -3063,3 +3063,37 @@
 [2023-04-30 07:30:50] INFO root fetch - processPackages [luau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luau-0.4.7.tar.gz tmp/luau-0.4.8.tar.gz --markdown 20230430/l/luau/0.4.7-0.4.8/diff.md --exclude *.pyd
 [2023-04-30 07:30:52] INFO root fetch - main [MainThread]: End processing [luau]: success
 [2023-04-30 07:30:52] INFO root fetch - main [MainThread]: Store serial: [17914703]
+[2023-04-30 07:35:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914703]
+[2023-04-30 07:36:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 07:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chat-completion-utils
+[2023-04-30 07:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cabinet
+[2023-04-30 07:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fedml
+[2023-04-30 07:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: always-updates
+[2023-04-30 07:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: always-updates
+[2023-04-30 07:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: always-updates
+[2023-04-30 07:36:01] WARNING root fetch - processPackages [chat-completion-utils]: Skipping, unable to determine old version
+[2023-04-30 07:36:01] INFO root fetch - main [MainThread]: End processing [chat-completion-utils] error
+[2023-04-30 07:36:01] INFO root fetch - processPackages [fedml]: New version: [0.8.4a9] Old Version: [0.8.4a8]
+[2023-04-30 07:36:01] INFO root fetch - processPackages [cabinet]: New version: [2023.4.9.1] Old Version: [2023.4.30.1]
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-30 07:36:01] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/f1/b8/9c83f73716d1566dae7b003384473f01632334a94af6868a05de2d0b8666/cabinet-2023.4.30.1.tar.gz
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230430/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230430/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-30 07:36:01] INFO root fetch - processPackages [fedml]: Downloading https://files.pythonhosted.org/packages/33/9b/be9e98195d0e435792d20db883ee2ae3f9b661f8bc6a8d98bb9c8a460195/fedml-0.8.4a9.tar.gz
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-30 07:36:01] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230430/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-30 07:36:01] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/25/2e/8a24fd5ff7eb020430a34daa1405a587f6dde75bc959553265ed25a6a14c/cabinet-2023.4.9.1.tar.gz
+[2023-04-30 07:36:01] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2023-04-30 07:36:01] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2023.4.30.1.tar.gz tmp/cabinet-2023.4.9.1.tar.gz --markdown 20230430/c/cabinet/2023.4.30.1-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-30 07:36:01] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-04-30 07:36:01] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.4a8.tar.gz tmp/fedml-0.8.4a9.tar.gz --markdown 20230430/f/fedml/0.8.4a8-0.8.4a9/diff.md --exclude *.pyd
+[2023-04-30 07:36:02] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-30 07:36:02] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-30 07:36:02] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-04-30 07:36:02] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2023-04-30 07:36:10] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-04-30 07:36:10] INFO root fetch - main [MainThread]: Store serial: [17914725]
