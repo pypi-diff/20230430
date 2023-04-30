@@ -4985,3 +4985,48 @@
 [2023-04-30 11:41:17] INFO root fetch - processPackages [reqif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqif-0.0.8.tar.gz tmp/reqif-0.0.9.tar.gz --markdown 20230430/r/reqif/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-04-30 11:41:18] INFO root fetch - main [MainThread]: End processing [reqif]: success
 [2023-04-30 11:41:18] INFO root fetch - main [MainThread]: Store serial: [17915816]
+[2023-04-30 11:46:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915816]
+[2023-04-30 11:46:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 11:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipymock
+[2023-04-30 11:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: envoy.base.utils
+[2023-04-30 11:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GameMaker
+[2023-04-30 11:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: salt-nornir
+[2023-04-30 11:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: citizenk
+[2023-04-30 11:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AutoLinker
+[2023-04-30 11:46:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nlptoolssna
+[2023-04-30 11:46:27] INFO root fetch - processPackages [citizenk]: New version: [0.1.37] Old Version: [0.1.36]
+[2023-04-30 11:46:27] INFO root fetch - processPackages [envoy.base.utils]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-30 11:46:27] INFO root fetch - processPackages [GameMaker]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 11:46:27] INFO root fetch - processPackages [nlptoolssna]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-30 11:46:27] INFO root fetch - processPackages [salt-nornir]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-30 11:46:27] WARNING root fetch - processPackages [AutoLinker]: Skipping, unable to determine old version
+[2023-04-30 11:46:27] INFO root fetch - processPackages [ipymock]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 11:46:27] INFO root fetch - main [MainThread]: End processing [AutoLinker] error
+[2023-04-30 11:46:27] INFO root fetch - processPackages [citizenk]: Downloading https://files.pythonhosted.org/packages/b2/a7/ccbe32a332c0ceae2c28c04ad42f0f0dbb8155964d6a9e4eb42cd3ea8f9d/citizenk-0.1.36.tar.gz
+[2023-04-30 11:46:27] INFO root fetch - processPackages [salt-nornir]: Downloading https://files.pythonhosted.org/packages/a1/13/10191ea405d1b2279b2871663f0446149a71aaae3cfbb7047c447bab296c/salt_nornir-0.8.0.tar.gz
+[2023-04-30 11:46:27] INFO root fetch - processPackages [GameMaker]: Downloading https://files.pythonhosted.org/packages/70/23/c793511cfbad66ec47f6e4d626614dd10f1983a25ef4f4b33e1b76adbead/GameMaker-0.1.2.tar.gz
+[2023-04-30 11:46:27] INFO root fetch - processPackages [envoy.base.utils]: Downloading https://files.pythonhosted.org/packages/09/40/e43b21ed7770bf63d1c3f3f2da8f0f3a708ea063286c1a715f44e7dbb799/envoy.base.utils-0.4.5.tar.gz
+[2023-04-30 11:46:27] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/2a/95/7ddcbf64eae21769c88bbe38d319dac87a8fb6f9dbb17a90304546d63f63/nlptoolssna-0.4.0.tar.gz
+[2023-04-30 11:46:28] INFO root fetch - processPackages [envoy.base.utils]: executing diffoscope
+[2023-04-30 11:46:28] INFO root fetch - processPackages [envoy.base.utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envoy.base.utils-0.4.4.tar.gz tmp/envoy.base.utils-0.4.5.tar.gz --markdown 20230430/e/envoy.base.utils/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-30 11:46:28] INFO root fetch - processPackages [ipymock]: Downloading https://files.pythonhosted.org/packages/46/c7/e2bf6f5053a0b43e8a158c9ed41f98811f59ea2120c26f823eb0888bebe3/ipymock-1.0.4.tar.gz
+[2023-04-30 11:46:28] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-30 11:46:28] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.3.9.tar.gz tmp/nlptoolssna-0.4.0.tar.gz --markdown 20230430/n/nlptoolssna/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 11:46:28] INFO root fetch - processPackages [ipymock]: executing diffoscope
+[2023-04-30 11:46:28] INFO root fetch - processPackages [ipymock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipymock-1.0.3.tar.gz tmp/ipymock-1.0.4.tar.gz --markdown 20230430/i/ipymock/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 11:46:28] INFO root fetch - processPackages [GameMaker]: Downloading https://files.pythonhosted.org/packages/4d/c1/5cb4cacf264c73e16014748e13e83abf4f4a6122009935d4da6151d333b0/GameMaker-0.1.3.tar.gz
+[2023-04-30 11:46:28] INFO root fetch - processPackages [citizenk]: Downloading https://files.pythonhosted.org/packages/c7/c0/22ff923062cf632c25565277da367fa95d1b56ef742621ae6c92213a9cd0/citizenk-0.1.37.tar.gz
+[2023-04-30 11:46:28] INFO root fetch - processPackages [GameMaker]: executing diffoscope
+[2023-04-30 11:46:28] INFO root fetch - processPackages [GameMaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GameMaker-0.1.2.tar.gz tmp/GameMaker-0.1.3.tar.gz --markdown 20230430/G/GameMaker/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 11:46:28] INFO root fetch - processPackages [salt-nornir]: Downloading https://files.pythonhosted.org/packages/29/e0/e942cb8a42de6842bbc6fd2c7348b78910db1c1f9443eb88baa66a895e99/salt_nornir-0.9.0.tar.gz
+[2023-04-30 11:46:28] INFO root fetch - processPackages [citizenk]: executing diffoscope
+[2023-04-30 11:46:28] INFO root fetch - processPackages [citizenk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citizenk-0.1.36.tar.gz tmp/citizenk-0.1.37.tar.gz --markdown 20230430/c/citizenk/0.1.36-0.1.37/diff.md --exclude *.pyd
+[2023-04-30 11:46:28] INFO root fetch - processPackages [salt-nornir]: executing diffoscope
+[2023-04-30 11:46:28] INFO root fetch - processPackages [salt-nornir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salt_nornir-0.8.0.tar.gz tmp/salt_nornir-0.9.0.tar.gz --markdown 20230430/s/salt-nornir/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-30 11:46:29] INFO root fetch - main [MainThread]: End processing [envoy.base.utils]: success
+[2023-04-30 11:46:29] INFO root fetch - main [MainThread]: End processing [ipymock]: success
+[2023-04-30 11:46:29] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-30 11:46:29] INFO root fetch - main [MainThread]: End processing [GameMaker]: success
+[2023-04-30 11:46:29] INFO root fetch - main [MainThread]: End processing [citizenk]: success
+[2023-04-30 11:46:29] INFO root fetch - main [MainThread]: End processing [salt-nornir]: success
+[2023-04-30 11:46:29] INFO root fetch - main [MainThread]: Store serial: [17915838]
