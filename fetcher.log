@@ -2186,3 +2186,30 @@
 [2023-04-30 04:43:15] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
 [2023-04-30 04:43:16] INFO root fetch - main [MainThread]: End processing [moptipy]: success
 [2023-04-30 04:43:16] INFO root fetch - main [MainThread]: Store serial: [17914141]
+[2023-04-30 04:48:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914141]
+[2023-04-30 04:48:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 04:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anyplusone
+[2023-04-30 04:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bam-core
+[2023-04-30 04:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhrp
+[2023-04-30 04:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bam-core
+[2023-04-30 04:48:26] WARNING root fetch - processPackages [anyplusone]: Skipping, unable to determine old version
+[2023-04-30 04:48:26] INFO root fetch - main [MainThread]: End processing [anyplusone] error
+[2023-04-30 04:48:26] INFO root fetch - processPackages [bam-core]: New version: [2023.4.30.1682822740] Old Version: [2023.4.29.1682791290]
+[2023-04-30 04:48:26] INFO root fetch - processPackages [bam-core]: New version: [2023.4.30.1682822740] Old Version: [2023.4.29.1682791290]
+[2023-04-30 04:48:26] INFO root fetch - processPackages [pyhrp]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-30 04:48:26] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/72/75/48b82da870e85a2da11c8c0e7f7cbe9fdcec4bed3d31a9d121b1d42fdbb9/bam-core-2023.4.29.1682791290.tar.gz
+[2023-04-30 04:48:26] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/72/75/48b82da870e85a2da11c8c0e7f7cbe9fdcec4bed3d31a9d121b1d42fdbb9/bam-core-2023.4.29.1682791290.tar.gz
+[2023-04-30 04:48:26] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/7e/87/f5deb0fdb48f795491721d750593ab6e596676adc92bfa01293303cd2813/pyhrp-0.4.7.tar.gz
+[2023-04-30 04:48:27] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/c5/26/3218d9d3f23fc6cbf75cae847f9fa0c928d0e63c320a325055b75ebb7230/pyhrp-0.4.8.tar.gz
+[2023-04-30 04:48:27] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/c6/2c/3b74d24cadd45db30697d3c68617db89eab4aea2c4871a1c067a89878b71/bam-core-2023.4.30.1682822740.tar.gz
+[2023-04-30 04:48:27] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/c6/2c/3b74d24cadd45db30697d3c68617db89eab4aea2c4871a1c067a89878b71/bam-core-2023.4.30.1682822740.tar.gz
+[2023-04-30 04:48:27] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 04:48:27] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.4.7.tar.gz tmp/pyhrp-0.4.8.tar.gz --markdown 20230430/p/pyhrp/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-30 04:48:27] INFO root fetch - processPackages [bam-core]: executing diffoscope
+[2023-04-30 04:48:27] INFO root fetch - processPackages [bam-core]: executing diffoscope
+[2023-04-30 04:48:27] INFO root fetch - processPackages [bam-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bam-core-2023.4.29.1682791290.tar.gz tmp/bam-core-2023.4.30.1682822740.tar.gz --markdown 20230430/b/bam-core/2023.4.29.1682791290-2023.4.30.1682822740/diff.md --exclude *.pyd
+[2023-04-30 04:48:27] INFO root fetch - processPackages [bam-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bam-core-2023.4.29.1682791290.tar.gz tmp/bam-core-2023.4.30.1682822740.tar.gz --markdown 20230430/b/bam-core/2023.4.29.1682791290-2023.4.30.1682822740/diff.md --exclude *.pyd
+[2023-04-30 04:48:28] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 04:48:28] INFO root fetch - main [MainThread]: End processing [bam-core]: success
+[2023-04-30 04:48:28] INFO root fetch - main [MainThread]: End processing [bam-core]: success
+[2023-04-30 04:48:28] INFO root fetch - main [MainThread]: Store serial: [17914155]
