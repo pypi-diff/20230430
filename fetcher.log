@@ -8443,3 +8443,44 @@
 [2023-04-30 18:13:53] INFO root fetch - main [MainThread]: End processing [mhn]: success
 [2023-04-30 18:13:55] INFO root fetch - main [MainThread]: End processing [sdmx1]: success
 [2023-04-30 18:13:55] INFO root fetch - main [MainThread]: Store serial: [17918018]
+[2023-04-30 18:18:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918018]
+[2023-04-30 18:19:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 18:19:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rbxflip
+[2023-04-30 18:19:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stepping
+[2023-04-30 18:19:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipcryptov10
+[2023-04-30 18:19:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: space-invaders
+[2023-04-30 18:19:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: proovl-sms
+[2023-04-30 18:19:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: airflow-metrics-gbq
+[2023-04-30 18:19:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: elliptic-sdk
+[2023-04-30 18:19:03] WARNING root fetch - processPackages [stepping]: Skipping, unable to determine old version
+[2023-04-30 18:19:03] INFO root fetch - main [MainThread]: End processing [stepping] error
+[2023-04-30 18:19:03] INFO root fetch - processPackages [rbxflip]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-04-30 18:19:03] WARNING root fetch - processPackages [pipcryptov10]: Skipping, unable to determine old version
+[2023-04-30 18:19:03] INFO root fetch - main [MainThread]: End processing [pipcryptov10] error
+[2023-04-30 18:19:03] INFO root fetch - processPackages [space-invaders]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-30 18:19:03] INFO root fetch - processPackages [elliptic-sdk]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 18:19:03] INFO root fetch - processPackages [proovl-sms]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 18:19:03] INFO root fetch - processPackages [airflow-metrics-gbq]: New version: [0.0.5a2] Old Version: [0.0.5a1]
+[2023-04-30 18:19:03] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/81/c2/69813bcd77e5c6d8880640aed5ce21271162460b26f44b3914774986ecfb/rbxflip-1.0.0.tar.gz
+[2023-04-30 18:19:03] INFO root fetch - processPackages [proovl-sms]: Downloading https://files.pythonhosted.org/packages/0c/86/ed1aa9edb58922716ab0988a37a0707d37d98cddbff979575632a72832c1/proovl-sms-0.1.0.tar.gz
+[2023-04-30 18:19:03] INFO root fetch - processPackages [space-invaders]: Downloading https://files.pythonhosted.org/packages/41/79/80073a8938940f89dbd2063fde1fd98c7132e4759a49b08ff3a279104794/space-invaders-0.3.0.tar.gz
+[2023-04-30 18:19:03] INFO root fetch - processPackages [airflow-metrics-gbq]: Downloading https://files.pythonhosted.org/packages/ad/90/2366fb1aee719f3f90ecd1e79095e2331fc757ee0f3fcfcfc908e85f4ea3/airflow_metrics_gbq-0.0.5a2.tar.gz
+[2023-04-30 18:19:03] INFO root fetch - processPackages [elliptic-sdk]: Downloading https://files.pythonhosted.org/packages/20/c3/eae1395702338ad41105c5fca838e1b885df3ae171d54fb74944c8a8a398/elliptic_sdk-0.0.4.tar.gz
+[2023-04-30 18:19:04] INFO root fetch - processPackages [airflow-metrics-gbq]: executing diffoscope
+[2023-04-30 18:19:04] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/99/0a/8b42e929f5ed6abc686861c68cfa46b14f7c85e5426187891c693cdd9f73/rbxflip-1.0.2.tar.gz
+[2023-04-30 18:19:04] INFO root fetch - processPackages [airflow-metrics-gbq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_metrics_gbq-0.0.5a1.tar.gz tmp/airflow_metrics_gbq-0.0.5a2.tar.gz --markdown 20230430/a/airflow-metrics-gbq/0.0.5a1-0.0.5a2/diff.md --exclude *.pyd
+[2023-04-30 18:19:04] INFO root fetch - processPackages [elliptic-sdk]: executing diffoscope
+[2023-04-30 18:19:04] INFO root fetch - processPackages [elliptic-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elliptic_sdk-0.0.3.tar.gz tmp/elliptic_sdk-0.0.4.tar.gz --markdown 20230430/e/elliptic-sdk/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 18:19:04] INFO root fetch - processPackages [space-invaders]: executing diffoscope
+[2023-04-30 18:19:04] INFO root fetch - processPackages [space-invaders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/space-invaders-0.2.0.tar.gz tmp/space-invaders-0.3.0.tar.gz --markdown 20230430/s/space-invaders/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 18:19:04] INFO root fetch - processPackages [proovl-sms]: Downloading https://files.pythonhosted.org/packages/92/c1/7e8a38fe97878ce0a1278d7d7a131192dfac10355670f431f0a828e0e3d6/proovl-sms-0.1.1.tar.gz
+[2023-04-30 18:19:04] INFO root fetch - processPackages [rbxflip]: executing diffoscope
+[2023-04-30 18:19:04] INFO root fetch - processPackages [rbxflip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbxflip-1.0.0.tar.gz tmp/rbxflip-1.0.2.tar.gz --markdown 20230430/r/rbxflip/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 18:19:04] INFO root fetch - processPackages [proovl-sms]: executing diffoscope
+[2023-04-30 18:19:04] INFO root fetch - processPackages [proovl-sms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proovl-sms-0.1.0.tar.gz tmp/proovl-sms-0.1.1.tar.gz --markdown 20230430/p/proovl-sms/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 18:19:05] INFO root fetch - main [MainThread]: End processing [airflow-metrics-gbq]: success
+[2023-04-30 18:19:05] INFO root fetch - main [MainThread]: End processing [elliptic-sdk]: success
+[2023-04-30 18:19:05] INFO root fetch - main [MainThread]: End processing [rbxflip]: success
+[2023-04-30 18:19:05] INFO root fetch - main [MainThread]: End processing [proovl-sms]: success
+[2023-04-30 18:19:06] INFO root fetch - main [MainThread]: End processing [space-invaders]: success
+[2023-04-30 18:19:06] INFO root fetch - main [MainThread]: Store serial: [17918046]
