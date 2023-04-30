@@ -4292,3 +4292,59 @@
 [2023-04-30 10:21:15] INFO root fetch - processPackages [python-automation-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-automation-framework-0.0.7.tar.gz tmp/python-automation-framework-0.0.8.tar.gz --markdown 20230430/p/python-automation-framework/0.0.7-0.0.8/diff.md --exclude *.pyd
 [2023-04-30 10:21:16] INFO root fetch - main [MainThread]: End processing [python-automation-framework]: success
 [2023-04-30 10:21:16] INFO root fetch - main [MainThread]: Store serial: [17915439]
+[2023-04-30 10:26:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915439]
+[2023-04-30 10:26:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auroralibs
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: checkov
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lumibot
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: voxx-cli
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfirebird
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: easypipinstall
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tonsdk
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: luau
+[2023-04-30 10:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qwak-core
+[2023-04-30 10:26:25] INFO root fetch - processPackages [auroralibs]: New version: [8.0.2] Old Version: [8.0.1]
+[2023-04-30 10:26:25] INFO root fetch - processPackages [voxx-cli]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 10:26:25] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 10:26:25] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 10:26:25] INFO root fetch - processPackages [tonsdk]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-04-30 10:26:25] INFO root fetch - processPackages [easypipinstall]: New version: [0.2.0] Old Version: [0.1.6]
+[2023-04-30 10:26:25] INFO root fetch - processPackages [qwak-core]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-04-30 10:26:25] INFO root fetch - processPackages [lumibot]: New version: [2.5.8] Old Version: [2.5.7]
+[2023-04-30 10:26:25] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 10:26:26] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 10:26:26] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 10:26:26] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 10:26:26] INFO root fetch - processPackages [lumibot]: Downloading https://files.pythonhosted.org/packages/57/9c/28e988bc9dd79caa8c2d63f57950e31d8e8b72f5852cafc5da6af5b26bb4/lumibot-2.5.7.tar.gz
+[2023-04-30 10:26:26] INFO root fetch - processPackages [tonsdk]: Downloading https://files.pythonhosted.org/packages/c5/66/1a1dd8a0c4e69fb3feb47244b63b07a4bd9931500d6fbcc826f4310d8c41/tonsdk-1.0.7.tar.gz
+[2023-04-30 10:26:26] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/89/e6/6e0edb88c0fbac49cb95fa6197ac56d70600be8658470c78a4ba4edeb45d/pyfirebird-0.0.6.tar.gz
+[2023-04-30 10:26:26] INFO root fetch - processPackages [easypipinstall]: Downloading https://files.pythonhosted.org/packages/02/d4/67d704990ac3b857384f32ae1702097af0ab1c8fda7e51199d1ccf0a4011/easypipinstall-0.1.6.tar.gz
+[2023-04-30 10:26:26] INFO root fetch - processPackages [voxx-cli]: Downloading https://files.pythonhosted.org/packages/bf/cf/d72d33f3983cf3b1df2950fa66cc8cb46908e8c25f0c90f1bb7666e12519/voxx-cli-1.0.4.tar.gz
+[2023-04-30 10:26:26] WARNING root fetch - processPackages [lumibot]: Skipping package: exceeds size limit 23647327>=10485760
+[2023-04-30 10:26:26] INFO root fetch - main [MainThread]: End processing [lumibot] error
+[2023-04-30 10:26:26] INFO root fetch - processPackages [auroralibs]: Downloading https://files.pythonhosted.org/packages/29/e2/008adb6e9b12a7609f91fd034177e94626b1818b38bc1f0de771a564fb49/auroralibs-8.0.2.tar.gz
+[2023-04-30 10:26:26] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-04-30 10:26:26] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.5.tar.gz tmp/pyfirebird-0.0.6.tar.gz --markdown 20230430/p/pyfirebird/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 10:26:26] INFO root fetch - processPackages [voxx-cli]: executing diffoscope
+[2023-04-30 10:26:26] INFO root fetch - processPackages [voxx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voxx-cli-1.0.3.tar.gz tmp/voxx-cli-1.0.4.tar.gz --markdown 20230430/v/voxx-cli/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 10:26:26] INFO root fetch - processPackages [auroralibs]: executing diffoscope
+[2023-04-30 10:26:26] INFO root fetch - processPackages [auroralibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auroralibs-8.0.1.tar.gz tmp/auroralibs-8.0.2.tar.gz --markdown 20230430/a/auroralibs/8.0.1-8.0.2/diff.md --exclude *.pyd
+[2023-04-30 10:26:26] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/5b/e1/5275893d19511e1d89ad100ecfa36f95ec2eef9b5b01257f8fad7b269f21/qwak_core-0.0.37.tar.gz
+[2023-04-30 10:26:26] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-30 10:26:26] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230430/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 10:26:26] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-04-30 10:26:26] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.36.tar.gz tmp/qwak_core-0.0.37.tar.gz --markdown 20230430/q/qwak-core/0.0.36-0.0.37/diff.md --exclude *.pyd
+[2023-04-30 10:26:26] INFO root fetch - processPackages [easypipinstall]: Downloading https://files.pythonhosted.org/packages/66/a5/1663a77bcb0f447969f5a7292d58a2389f43696bde43d333b230bc2d1bed/easypipinstall-0.2.0.tar.gz
+[2023-04-30 10:26:26] INFO root fetch - processPackages [tonsdk]: Downloading https://files.pythonhosted.org/packages/75/1d/803c17603df443b7203a36418975fe213d165a4c2dad2caeaa582fd80904/tonsdk-1.0.9.tar.gz
+[2023-04-30 10:26:26] INFO root fetch - processPackages [easypipinstall]: executing diffoscope
+[2023-04-30 10:26:26] INFO root fetch - processPackages [easypipinstall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easypipinstall-0.1.6.tar.gz tmp/easypipinstall-0.2.0.tar.gz --markdown 20230430/e/easypipinstall/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 10:26:26] INFO root fetch - processPackages [tonsdk]: executing diffoscope
+[2023-04-30 10:26:26] INFO root fetch - processPackages [tonsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tonsdk-1.0.7.tar.gz tmp/tonsdk-1.0.9.tar.gz --markdown 20230430/t/tonsdk/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 10:26:27] INFO root fetch - main [MainThread]: End processing [voxx-cli]: success
+[2023-04-30 10:26:27] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-04-30 10:26:27] INFO root fetch - main [MainThread]: End processing [easypipinstall]: success
+[2023-04-30 10:26:28] INFO root fetch - main [MainThread]: End processing [tonsdk]: success
+[2023-04-30 10:26:29] INFO root fetch - main [MainThread]: End processing [auroralibs]: success
+[2023-04-30 10:26:31] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-04-30 10:27:05] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-04-30 10:27:05] INFO root fetch - main [MainThread]: Store serial: [17915465]
