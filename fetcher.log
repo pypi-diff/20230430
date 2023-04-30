@@ -3651,3 +3651,33 @@
 [2023-04-30 09:01:06] INFO root fetch - main [MainThread]: End processing [pyspread]: success
 [2023-04-30 09:01:41] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-30 09:01:41] INFO root fetch - main [MainThread]: Store serial: [17915058]
+[2023-04-30 09:06:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915058]
+[2023-04-30 09:06:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 09:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anylabeling
+[2023-04-30 09:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2023-04-30 09:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ibmodules
+[2023-04-30 09:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-og
+[2023-04-30 09:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gerswin-azure-api-rest
+[2023-04-30 09:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pygmi-get
+[2023-04-30 09:06:49] INFO root fetch - processPackages [ibmodules]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 09:06:49] INFO root fetch - processPackages [anylabeling]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-30 09:06:50] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-04-30 09:06:50] ERROR root fetch - processPackages [pygmi-get]: Unable to get metadata: No such project 'pygmi-get'
+[2023-04-30 09:06:50] INFO root fetch - main [MainThread]: End processing [pygmi-get] error
+[2023-04-30 09:06:50] WARNING root fetch - processPackages [nonebot-plugin-og]: Skipping, unable to determine old version
+[2023-04-30 09:06:50] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-og] error
+[2023-04-30 09:06:50] WARNING root fetch - processPackages [gerswin-azure-api-rest]: Skipping, unable to determine old version
+[2023-04-30 09:06:50] INFO root fetch - main [MainThread]: End processing [gerswin-azure-api-rest] error
+[2023-04-30 09:06:50] INFO root fetch - processPackages [ibmodules]: Downloading https://files.pythonhosted.org/packages/f0/6a/e8ca70357c89b6470a80101a903de15fabcdbde285e7d170af0103f7f528/ibmodules-0.1.1.tar.gz
+[2023-04-30 09:06:50] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-04-30 09:06:50] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230430/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-04-30 09:06:50] INFO root fetch - processPackages [ibmodules]: Downloading https://files.pythonhosted.org/packages/ba/5e/efbb4e001f40999695ae3b33dc7ce79a5f161bf08cbdd9e21c63243e2bc3/ibmodules-0.1.2.tar.gz
+[2023-04-30 09:06:50] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/a1/f6/b481803051cb87f4ac45a08869fbef2f0dc3c7541bf3abecb466191b1f2e/anylabeling-0.2.9.tar.gz
+[2023-04-30 09:06:50] INFO root fetch - processPackages [ibmodules]: executing diffoscope
+[2023-04-30 09:06:50] INFO root fetch - processPackages [ibmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibmodules-0.1.1.tar.gz tmp/ibmodules-0.1.2.tar.gz --markdown 20230430/i/ibmodules/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 09:06:50] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-30 09:06:50] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.2.8.tar.gz tmp/anylabeling-0.2.9.tar.gz --markdown 20230430/a/anylabeling/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-30 09:06:51] INFO root fetch - main [MainThread]: End processing [ibmodules]: success
+[2023-04-30 09:06:51] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-04-30 09:06:52] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-30 09:06:52] INFO root fetch - main [MainThread]: Store serial: [17915092]
