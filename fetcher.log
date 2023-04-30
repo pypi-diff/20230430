@@ -3821,3 +3821,57 @@
 [2023-04-30 09:22:30] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
 [2023-04-30 09:22:30] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
 [2023-04-30 09:22:30] INFO root fetch - main [MainThread]: Store serial: [17915169]
+[2023-04-30 09:27:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915169]
+[2023-04-30 09:27:39] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terminalplay
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iamprayut
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfirebird
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DeltaKG
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CLIbrary
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: azure-cognitiveservices-speech
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: azure-ai-vision
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pygmi-get
+[2023-04-30 09:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: frogmouth
+[2023-04-30 09:27:39] INFO root fetch - processPackages [CLIbrary]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-30 09:27:39] INFO root fetch - processPackages [pygmi-get]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-04-30 09:27:39] INFO root fetch - processPackages [frogmouth]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-30 09:27:39] INFO root fetch - processPackages [terminalplay]: New version: [1.0.21] Old Version: [1.0.2]
+[2023-04-30 09:27:39] WARNING root fetch - processPackages [iamprayut]: Skipping, unable to determine old version
+[2023-04-30 09:27:39] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 09:27:39] INFO root fetch - main [MainThread]: End processing [iamprayut] error
+[2023-04-30 09:27:39] INFO root fetch - processPackages [DeltaKG]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 09:27:39] INFO root fetch - processPackages [frogmouth]: executing diffoscope
+[2023-04-30 09:27:39] INFO root fetch - processPackages [frogmouth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frogmouth-0.2.1.tar.gz tmp/frogmouth-0.3.0.tar.gz --markdown 20230430/f/frogmouth/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 09:27:39] INFO root fetch - processPackages [azure-cognitiveservices-speech]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-30 09:27:39] INFO root fetch - processPackages [pygmi-get]: executing diffoscope
+[2023-04-30 09:27:39] INFO root fetch - processPackages [pygmi-get]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmi-get-0.1.0.tar.gz tmp/pygmi-get-0.2.1.tar.gz --markdown 20230430/p/pygmi-get/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 09:27:39] INFO root fetch - processPackages [azure-ai-vision]: New version: [0.9.0b1] Old Version: [0.8.1b1]
+[2023-04-30 09:27:39] INFO root fetch - processPackages [CLIbrary]: executing diffoscope
+[2023-04-30 09:27:39] INFO root fetch - processPackages [CLIbrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clibrary-1.8.1.tar.gz tmp/clibrary-1.9.0.tar.gz --markdown 20230430/C/CLIbrary/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-30 09:27:39] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/d8/57/e73a38a1d1c3f4a3d7dc6667a1b7292320ae656f956ebeba61636c3b74eb/terminalplay-1.0.2.tar.gz
+[2023-04-30 09:27:39] INFO root fetch - processPackages [DeltaKG]: executing diffoscope
+[2023-04-30 09:27:39] INFO root fetch - processPackages [DeltaKG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeltaKG-0.0.4.tar.gz tmp/DeltaKG-0.0.5.tar.gz --markdown 20230430/D/DeltaKG/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 09:27:39] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/29/e1/551e87a1eaa2124bb5f44b1a880053043d41a8ed604894c7bcb12988bace/pyfirebird-0.0.2.tar.gz
+[2023-04-30 09:27:39] INFO root fetch - processPackages [azure-ai-vision]: Downloading https://files.pythonhosted.org/packages/23/0e/882e7f18cfde6c89bf1b429897cd0684c089498a14bb07d43b0978340b0e/azure_ai_vision-0.8.1b1-py3-none-win_amd64.whl
+[2023-04-30 09:27:39] INFO root fetch - processPackages [azure-cognitiveservices-speech]: Downloading https://files.pythonhosted.org/packages/03/0d/5aebb4bc61da6868d4a3c38d3042a793dcf1584988c56641de8acf4cc950/azure_cognitiveservices_speech-1.8.0-cp37-cp37m-win_amd64.whl
+[2023-04-30 09:27:39] INFO root fetch - processPackages [terminalplay]: Downloading https://files.pythonhosted.org/packages/28/42/1553da7c40732306374ed3e5dc7b67360f964e385bec2db57d832b631940/terminalplay-1.0.21.tar.gz
+[2023-04-30 09:27:39] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/04/fe/3ad321d7fef1dbad5e0d28b8b4d90b1e37b4fd38765630ecacf80fcf9479/pyfirebird-0.0.3.tar.gz
+[2023-04-30 09:27:39] INFO root fetch - processPackages [terminalplay]: executing diffoscope
+[2023-04-30 09:27:39] INFO root fetch - processPackages [terminalplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalplay-1.0.2.tar.gz tmp/terminalplay-1.0.21.tar.gz --markdown 20230430/t/terminalplay/1.0.2-1.0.21/diff.md --exclude *.pyd
+[2023-04-30 09:27:39] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-04-30 09:27:39] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.2.tar.gz tmp/pyfirebird-0.0.3.tar.gz --markdown 20230430/p/pyfirebird/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 09:27:40] INFO root fetch - processPackages [azure-ai-vision]: Downloading https://files.pythonhosted.org/packages/f4/8e/f76abdb3a6ed4cf8e692359fd3fa5e628f78016c18b27d9f04b2c59830e9/azure_ai_vision-0.9.0b1-py3-none-win_amd64.whl
+[2023-04-30 09:27:40] INFO root fetch - processPackages [azure-cognitiveservices-speech]: Downloading https://files.pythonhosted.org/packages/6d/82/318d687feb5fc7c0fa949ac1385bee683d52398dbd253ef6c185135a0c2a/azure_cognitiveservices_speech-1.9.0-cp37-cp37m-win_amd64.whl
+[2023-04-30 09:27:40] INFO root fetch - main [MainThread]: End processing [pygmi-get]: success
+[2023-04-30 09:27:40] INFO root fetch - main [MainThread]: End processing [DeltaKG]: success
+[2023-04-30 09:27:40] INFO root fetch - main [MainThread]: End processing [CLIbrary]: success
+[2023-04-30 09:27:40] INFO root fetch - main [MainThread]: End processing [frogmouth]: success
+[2023-04-30 09:27:40] INFO root fetch - main [MainThread]: End processing [terminalplay]: success
+[2023-04-30 09:27:40] INFO root fetch - processPackages [azure-ai-vision]: executing diffoscope
+[2023-04-30 09:27:40] INFO root fetch - processPackages [azure-ai-vision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure_ai_vision-0.8.1b1-py3-none-win_amd64.whl.zip tmp/azure_ai_vision-0.9.0b1-py3-none-win_amd64.whl.zip --markdown 20230430/a/azure-ai-vision/0.8.1b1-0.9.0b1/diff.md --exclude *.pyd
+[2023-04-30 09:27:41] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-04-30 09:27:41] INFO root fetch - processPackages [azure-cognitiveservices-speech]: executing diffoscope
+[2023-04-30 09:27:41] INFO root fetch - processPackages [azure-cognitiveservices-speech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure_cognitiveservices_speech-1.8.0-cp37-cp37m-win_amd64.whl.zip tmp/azure_cognitiveservices_speech-1.9.0-cp37-cp37m-win_amd64.whl.zip --markdown 20230430/a/azure-cognitiveservices-speech/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-30 09:27:55] INFO root fetch - main [MainThread]: End processing [azure-ai-vision]: success
+[2023-04-30 09:27:58] INFO root fetch - main [MainThread]: End processing [azure-cognitiveservices-speech]: success
+[2023-04-30 09:27:58] INFO root fetch - main [MainThread]: Store serial: [17915201]
