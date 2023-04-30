@@ -8161,3 +8161,43 @@
 [2023-04-30 17:41:53] INFO root fetch - main [MainThread]: End processing [start-url]: success
 [2023-04-30 17:41:53] INFO root fetch - main [MainThread]: End processing [hikari-miru]: success
 [2023-04-30 17:41:53] INFO root fetch - main [MainThread]: Store serial: [17917824]
+[2023-04-30 17:46:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917824]
+[2023-04-30 17:47:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 17:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: back-to-sit
+[2023-04-30 17:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: overloaded-iterables
+[2023-04-30 17:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lightning-template
+[2023-04-30 17:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdime
+[2023-04-30 17:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycryptokms
+[2023-04-30 17:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mantis-xray
+[2023-04-30 17:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: custolint
+[2023-04-30 17:47:02] INFO root fetch - processPackages [back-to-sit]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 17:47:02] INFO root fetch - processPackages [lightning-template]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 17:47:02] WARNING root fetch - processPackages [overloaded-iterables]: Skipping, unable to determine old version
+[2023-04-30 17:47:02] INFO root fetch - main [MainThread]: End processing [overloaded-iterables] error
+[2023-04-30 17:47:02] INFO root fetch - processPackages [nbdime]: New version: [3.2.1] Old Version: [3.2.0]
+[2023-04-30 17:47:02] INFO root fetch - processPackages [custolint]: New version: [0.1.11] Old Version: [0.0.9.dev3]
+[2023-04-30 17:47:02] INFO root fetch - processPackages [mantis-xray]: New version: [3.1.9] Old Version: [3.1.7]
+[2023-04-30 17:47:02] WARNING root fetch - processPackages [pycryptokms]: Skipping, unable to determine old version
+[2023-04-30 17:47:02] INFO root fetch - main [MainThread]: End processing [pycryptokms] error
+[2023-04-30 17:47:02] INFO root fetch - processPackages [lightning-template]: executing diffoscope
+[2023-04-30 17:47:02] INFO root fetch - processPackages [lightning-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-template-1.0.0.tar.gz tmp/lightning-template-1.0.1.tar.gz --markdown 20230430/l/lightning-template/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 17:47:02] INFO root fetch - processPackages [back-to-sit]: executing diffoscope
+[2023-04-30 17:47:02] INFO root fetch - processPackages [back-to-sit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/back_to_sit-0.0.4.tar.gz tmp/back_to_sit-0.0.5.tar.gz --markdown 20230430/b/back-to-sit/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 17:47:02] INFO root fetch - processPackages [nbdime]: Downloading https://files.pythonhosted.org/packages/60/a4/0745920f04986eaf47447a18cf445a179d76cf5789430badf4b681a50ec3/nbdime-3.2.0.tar.gz
+[2023-04-30 17:47:02] INFO root fetch - processPackages [custolint]: Downloading https://files.pythonhosted.org/packages/63/7d/b46afae2702f5b5f22e94eea304d7e80eaff0b264a4c713cbc99dc627bd7/custolint-0.0.9.dev3-py3-none-any.whl
+[2023-04-30 17:47:03] INFO root fetch - processPackages [mantis-xray]: Downloading https://files.pythonhosted.org/packages/cf/41/6eb4d9a3f2bb54b0a2daf847328af3b513112c1e84e1ed7019330efd9c2e/mantis-xray-3.1.7.tar.gz
+[2023-04-30 17:47:03] INFO root fetch - processPackages [custolint]: Downloading https://files.pythonhosted.org/packages/f7/1d/ca439464fe30c3dec8af0d06a4d89e27d06ccbf577bcd4bb7cc512b08b8e/custolint-0.1.11-py3-none-any.whl
+[2023-04-30 17:47:03] INFO root fetch - processPackages [custolint]: executing diffoscope
+[2023-04-30 17:47:03] INFO root fetch - processPackages [custolint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custolint-0.0.9.dev3-py3-none-any.whl.zip tmp/custolint-0.1.11-py3-none-any.whl.zip --markdown 20230430/c/custolint/0.0.9.dev3-0.1.11/diff.md --exclude *.pyd
+[2023-04-30 17:47:03] INFO root fetch - processPackages [mantis-xray]: Downloading https://files.pythonhosted.org/packages/a8/71/7daef9e8a3eb894b500da4c2be0cd7aca427ed3b35f530d99585be2d71f1/mantis-xray-3.1.9.tar.gz
+[2023-04-30 17:47:03] INFO root fetch - main [MainThread]: End processing [back-to-sit]: success
+[2023-04-30 17:47:04] INFO root fetch - main [MainThread]: End processing [lightning-template]: success
+[2023-04-30 17:47:04] INFO root fetch - processPackages [nbdime]: Downloading https://files.pythonhosted.org/packages/12/ae/4c403b94984adaa3859a829d1b99e2bd8cf65c06c6cb950111467d4cbb39/nbdime-3.2.1.tar.gz
+[2023-04-30 17:47:04] INFO root fetch - processPackages [mantis-xray]: executing diffoscope
+[2023-04-30 17:47:04] INFO root fetch - processPackages [mantis-xray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mantis-xray-3.1.7.tar.gz tmp/mantis-xray-3.1.9.tar.gz --markdown 20230430/m/mantis-xray/3.1.7-3.1.9/diff.md --exclude *.pyd
+[2023-04-30 17:47:04] INFO root fetch - processPackages [nbdime]: executing diffoscope
+[2023-04-30 17:47:04] INFO root fetch - processPackages [nbdime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdime-3.2.0.tar.gz tmp/nbdime-3.2.1.tar.gz --markdown 20230430/n/nbdime/3.2.0-3.2.1/diff.md --exclude *.pyd
+[2023-04-30 17:47:04] INFO root fetch - main [MainThread]: End processing [custolint]: success
+[2023-04-30 17:47:06] INFO root fetch - main [MainThread]: End processing [mantis-xray]: success
+[2023-04-30 17:47:50] INFO root fetch - main [MainThread]: End processing [nbdime]: success
+[2023-04-30 17:47:50] INFO root fetch - main [MainThread]: Store serial: [17917845]
