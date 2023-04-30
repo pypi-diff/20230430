@@ -1888,3 +1888,27 @@
 [2023-04-30 04:00:03] INFO root fetch - main [MainThread]: End processing [ShortName]: success
 [2023-04-30 04:00:03] INFO root fetch - main [MainThread]: End processing [cooldfa]: success
 [2023-04-30 04:00:03] INFO root fetch - main [MainThread]: Store serial: [17913933]
+[2023-04-30 04:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913933]
+[2023-04-30 04:05:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 04:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cgem
+[2023-04-30 04:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkfly
+[2023-04-30 04:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Scopul
+[2023-04-30 04:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xj-user
+[2023-04-30 04:05:13] WARNING root fetch - processPackages [cgem]: Skipping, unable to determine old version
+[2023-04-30 04:05:13] INFO root fetch - main [MainThread]: End processing [cgem] error
+[2023-04-30 04:05:13] INFO root fetch - processPackages [Scopul]: New version: [1.1.4] Old Version: [1.0.4]
+[2023-04-30 04:05:13] INFO root fetch - processPackages [tkfly]: New version: [0.1.0a3] Old Version: [0.1.0a2]
+[2023-04-30 04:05:13] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-30 04:05:13] INFO root fetch - processPackages [Scopul]: Downloading https://files.pythonhosted.org/packages/48/61/3709452a91b1dff68e4cd95418de41c6f6b07471db67f26314aca21524aa/Scopul-1.0.4.tar.gz
+[2023-04-30 04:05:13] INFO root fetch - processPackages [tkfly]: Downloading https://files.pythonhosted.org/packages/84/9c/119cc0f5c7b4a4473f6398fa8ff089c80edb6698a40821eda766183c321e/tkfly-0.1.0a3.tar.gz
+[2023-04-30 04:05:13] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-30 04:05:13] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230430/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-30 04:05:13] INFO root fetch - processPackages [Scopul]: Downloading https://files.pythonhosted.org/packages/97/33/7241d41d110adea59495fe6457c71d6382767946479f54fdb4fc2a0d0305/Scopul-1.1.4.tar.gz
+[2023-04-30 04:05:13] INFO root fetch - processPackages [Scopul]: executing diffoscope
+[2023-04-30 04:05:13] INFO root fetch - processPackages [Scopul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Scopul-1.0.4.tar.gz tmp/Scopul-1.1.4.tar.gz --markdown 20230430/S/Scopul/1.0.4-1.1.4/diff.md --exclude *.pyd
+[2023-04-30 04:05:14] INFO root fetch - processPackages [tkfly]: executing diffoscope
+[2023-04-30 04:05:14] INFO root fetch - processPackages [tkfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkfly-0.1.0a2.tar.gz tmp/tkfly-0.1.0a3.tar.gz --markdown 20230430/t/tkfly/0.1.0a2-0.1.0a3/diff.md --exclude *.pyd
+[2023-04-30 04:05:14] INFO root fetch - main [MainThread]: End processing [Scopul]: success
+[2023-04-30 04:05:14] INFO root fetch - main [MainThread]: End processing [xj-user]: success
+[2023-04-30 04:05:19] INFO root fetch - main [MainThread]: End processing [tkfly]: success
+[2023-04-30 04:05:19] INFO root fetch - main [MainThread]: Store serial: [17913947]
