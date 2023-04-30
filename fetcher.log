@@ -9533,3 +9533,56 @@
 [2023-04-30 20:10:42] INFO root fetch - main [MainThread]: End processing [mo-threads]: success
 [2023-04-30 20:10:43] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2023-04-30 20:10:43] INFO root fetch - main [MainThread]: Store serial: [17918810]
+[2023-04-30 20:15:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918810]
+[2023-04-30 20:15:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spimdisasm
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TheSilent
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ReverseShell
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlalchemy-iris
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mo-files
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pangeo-forge-cordex
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: TheSilent
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gitbetter
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: netbox-topology-views
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: flask-encrypted-cookies-session
+[2023-04-30 20:15:53] INFO root fetch - processPackages [spimdisasm]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-30 20:15:53] INFO root fetch - processPackages [mo-files]: New version: [6.375.23120] Old Version: [6.373.23120]
+[2023-04-30 20:15:53] INFO root fetch - processPackages [sqlalchemy-iris]: New version: [0.9.0] Old Version: [0.8.1b1]
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ReverseShell]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 20:15:53] WARNING root fetch - processPackages [pangeo-forge-cordex]: Skipping, unable to determine old version
+[2023-04-30 20:15:53] INFO root fetch - main [MainThread]: End processing [pangeo-forge-cordex] error
+[2023-04-30 20:15:53] WARNING root fetch - processPackages [gitbetter]: Skipping, unable to determine old version
+[2023-04-30 20:15:53] INFO root fetch - main [MainThread]: End processing [gitbetter] error
+[2023-04-30 20:15:53] INFO root fetch - processPackages [flask-encrypted-cookies-session]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-30 20:15:53] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 20:15:53] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 20:15:53] INFO root fetch - processPackages [flask-encrypted-cookies-session]: executing diffoscope
+[2023-04-30 20:15:53] INFO root fetch - processPackages [flask-encrypted-cookies-session]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_encrypted_cookies_session-0.2.0.tar.gz tmp/flask_encrypted_cookies_session-0.2.1.tar.gz --markdown 20230430/f/flask-encrypted-cookies-session/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 20:15:53] INFO root fetch - processPackages [netbox-topology-views]: New version: [3.5.0] Old Version: [3.4.0]
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ReverseShell]: Downloading https://files.pythonhosted.org/packages/83/57/28478bc2e5cd8c422d3c7f6d163e19abf060b6d7d878ec7ab355cda256f6/ReverseShell-0.0.1.tar.gz
+[2023-04-30 20:15:53] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/4f/c0/686c3765a57e2b1c22882bc5e7feb17cf94ef8440c445798b030bc3b4e26/mo_files-6.375.23120-py2.py3-none-any.whl
+[2023-04-30 20:15:53] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-30 20:15:53] INFO root fetch - processPackages [sqlalchemy-iris]: executing diffoscope
+[2023-04-30 20:15:53] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230430/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 20:15:53] INFO root fetch - processPackages [sqlalchemy-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-iris-0.8.1b1.tar.gz tmp/sqlalchemy-iris-0.9.0.tar.gz --markdown 20230430/s/sqlalchemy-iris/0.8.1b1-0.9.0/diff.md --exclude *.pyd
+[2023-04-30 20:15:53] INFO root fetch - processPackages [mo-files]: executing diffoscope
+[2023-04-30 20:15:53] INFO root fetch - processPackages [mo-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_files-6.373.23120-py2.py3-none-any.whl.zip tmp/mo_files-6.375.23120-py2.py3-none-any.whl.zip --markdown 20230430/m/mo-files/6.373.23120-6.375.23120/diff.md --exclude *.pyd
+[2023-04-30 20:15:53] INFO root fetch - processPackages [spimdisasm]: executing diffoscope
+[2023-04-30 20:15:53] INFO root fetch - processPackages [spimdisasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spimdisasm-1.9.1.tar.gz tmp/spimdisasm-1.9.2.tar.gz --markdown 20230430/s/spimdisasm/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-30 20:15:53] INFO root fetch - processPackages [netbox-topology-views]: Downloading https://files.pythonhosted.org/packages/af/78/6d3be46ea84a3f8da8f8d5be3a8a5b5c1b868182a1b1ac69192adfb83e3e/netbox-topology-views-3.5.0.tar.gz
+[2023-04-30 20:15:53] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-30 20:15:53] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230430/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ReverseShell]: Downloading https://files.pythonhosted.org/packages/ae/5a/48a3eedbe0b060cffe1f382cd04484dc79358be45789c48ef2d1892149f2/ReverseShell-0.0.2.tar.gz
+[2023-04-30 20:15:53] INFO root fetch - processPackages [netbox-topology-views]: executing diffoscope
+[2023-04-30 20:15:53] INFO root fetch - processPackages [netbox-topology-views]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-topology-views-3.4.0.tar.gz tmp/netbox-topology-views-3.5.0.tar.gz --markdown 20230430/n/netbox-topology-views/3.4.0-3.5.0/diff.md --exclude *.pyd
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ReverseShell]: executing diffoscope
+[2023-04-30 20:15:53] INFO root fetch - processPackages [ReverseShell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseShell-0.0.1.tar.gz tmp/ReverseShell-0.0.2.tar.gz --markdown 20230430/R/ReverseShell/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 20:15:54] INFO root fetch - main [MainThread]: End processing [flask-encrypted-cookies-session]: success
+[2023-04-30 20:15:54] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-30 20:15:54] INFO root fetch - main [MainThread]: End processing [mo-files]: success
+[2023-04-30 20:15:55] INFO root fetch - main [MainThread]: End processing [ReverseShell]: success
+[2023-04-30 20:15:55] INFO root fetch - main [MainThread]: End processing [sqlalchemy-iris]: success
+[2023-04-30 20:15:55] INFO root fetch - main [MainThread]: End processing [spimdisasm]: success
+[2023-04-30 20:15:55] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-30 20:15:58] INFO root fetch - main [MainThread]: End processing [netbox-topology-views]: success
+[2023-04-30 20:15:58] INFO root fetch - main [MainThread]: Store serial: [17918839]
