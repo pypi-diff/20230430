@@ -5269,3 +5269,28 @@
 [2023-04-30 12:24:34] INFO root fetch - main [MainThread]: End processing [django-encryption]: success
 [2023-04-30 12:24:35] INFO root fetch - main [MainThread]: End processing [tumourkit]: success
 [2023-04-30 12:24:35] INFO root fetch - main [MainThread]: Store serial: [17915989]
+[2023-04-30 12:29:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915989]
+[2023-04-30 12:29:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 12:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tls-client
+[2023-04-30 12:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: start-url
+[2023-04-30 12:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoLinker
+[2023-04-30 12:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mik-py
+[2023-04-30 12:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frouros
+[2023-04-30 12:29:44] WARNING root fetch - processPackages [mik-py]: Skipping, unable to determine old version
+[2023-04-30 12:29:44] INFO root fetch - main [MainThread]: End processing [mik-py] error
+[2023-04-30 12:29:44] INFO root fetch - processPackages [frouros]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-30 12:29:44] WARNING root fetch - processPackages [autoLinker]: Skipping, unable to determine old version
+[2023-04-30 12:29:44] WARNING root fetch - processPackages [start-url]: Skipping, unable to determine old version
+[2023-04-30 12:29:44] INFO root fetch - main [MainThread]: End processing [autoLinker] error
+[2023-04-30 12:29:44] INFO root fetch - main [MainThread]: End processing [start-url] error
+[2023-04-30 12:29:44] INFO root fetch - processPackages [tls-client]: New version: [0.2.1] Old Version: [0.2]
+[2023-04-30 12:29:44] INFO root fetch - processPackages [tls-client]: Downloading https://files.pythonhosted.org/packages/9d/29/01c498b9314625d7e8418ab1c8aabe3d6e660bd15905fb5f8438e310f88e/tls_client-0.2.tar.gz
+[2023-04-30 12:29:44] INFO root fetch - processPackages [frouros]: Downloading https://files.pythonhosted.org/packages/1f/46/dd0fa32da58fa5f032c99743d39ce985093a7d5228f7df297499f7782424/frouros-0.2.6.tar.gz
+[2023-04-30 12:29:44] INFO root fetch - processPackages [frouros]: executing diffoscope
+[2023-04-30 12:29:44] INFO root fetch - processPackages [frouros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frouros-0.2.5.tar.gz tmp/frouros-0.2.6.tar.gz --markdown 20230430/f/frouros/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-30 12:29:44] INFO root fetch - processPackages [tls-client]: Downloading https://files.pythonhosted.org/packages/31/00/73c6aa49f67c94e4a63e87194748f5c505b870bc3d8a32422ba8eb792803/tls_client-0.2.1.tar.gz
+[2023-04-30 12:29:44] INFO root fetch - processPackages [tls-client]: executing diffoscope
+[2023-04-30 12:29:44] INFO root fetch - processPackages [tls-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tls_client-0.2.tar.gz tmp/tls_client-0.2.1.tar.gz --markdown 20230430/t/tls-client/0.2-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 12:29:45] INFO root fetch - main [MainThread]: End processing [tls-client]: success
+[2023-04-30 12:29:46] INFO root fetch - main [MainThread]: End processing [frouros]: success
+[2023-04-30 12:29:46] INFO root fetch - main [MainThread]: Store serial: [17916006]
