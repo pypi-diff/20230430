@@ -7744,3 +7744,34 @@
 [2023-04-30 16:48:04] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
 [2023-04-30 16:48:05] INFO root fetch - main [MainThread]: End processing [linuxserver]: success
 [2023-04-30 16:48:05] INFO root fetch - main [MainThread]: Store serial: [17917502]
+[2023-04-30 16:53:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917502]
+[2023-04-30 16:53:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 16:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rankgun
+[2023-04-30 16:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-filter
+[2023-04-30 16:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zadu
+[2023-04-30 16:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: origin-Yzb-regret.py
+[2023-04-30 16:53:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: meerkat-ml
+[2023-04-30 16:53:13] INFO root fetch - processPackages [zadu]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-30 16:53:13] INFO root fetch - processPackages [rankgun]: New version: [2.0.0] Old Version: [1.0.1]
+[2023-04-30 16:53:13] INFO root fetch - processPackages [python-filter]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 16:53:13] WARNING root fetch - processPackages [origin-Yzb-regret.py]: Skipping, unable to determine old version
+[2023-04-30 16:53:13] INFO root fetch - main [MainThread]: End processing [origin-Yzb-regret.py] error
+[2023-04-30 16:53:13] INFO root fetch - processPackages [meerkat-ml]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 16:53:13] INFO root fetch - processPackages [zadu]: Downloading https://files.pythonhosted.org/packages/5f/d0/1c1ae0f0bec03f87b94518762d8f3adc4ff79a1da1cee0815b980926d41f/zadu-0.0.4.tar.gz
+[2023-04-30 16:53:13] INFO root fetch - processPackages [python-filter]: Downloading https://files.pythonhosted.org/packages/23/94/e389c9ba8ea4ef78a373e743ba49b4f78db27f2ec13f142b4273184c9806/python-filter-1.0.2.tar.gz
+[2023-04-30 16:53:13] INFO root fetch - processPackages [rankgun]: Downloading https://files.pythonhosted.org/packages/d5/a5/99743670e72c6e8c008b99e0e91d3f6468e6ad41a000943c494bd0ffa49a/rankgun-1.0.1.tar.gz
+[2023-04-30 16:53:13] INFO root fetch - processPackages [zadu]: executing diffoscope
+[2023-04-30 16:53:13] INFO root fetch - processPackages [zadu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zadu-0.0.2.tar.gz tmp/zadu-0.0.4.tar.gz --markdown 20230430/z/zadu/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 16:53:14] INFO root fetch - processPackages [meerkat-ml]: executing diffoscope
+[2023-04-30 16:53:14] INFO root fetch - processPackages [meerkat-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meerkat-ml-0.4.8.tar.gz tmp/meerkat-ml-0.4.9.tar.gz --markdown 20230430/m/meerkat-ml/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-30 16:53:14] INFO root fetch - processPackages [python-filter]: Downloading https://files.pythonhosted.org/packages/99/41/79cfa7105dd777c7f7b7614fed2128ff0d580e712bc365e78d9a65639409/python-filter-1.0.3.tar.gz
+[2023-04-30 16:53:14] INFO root fetch - processPackages [rankgun]: Downloading https://files.pythonhosted.org/packages/b3/c9/434afedef40d8340c7978883eb483fb9826349e77149174dbd703ba6e7fc/rankgun-2.0.0.tar.gz
+[2023-04-30 16:53:14] INFO root fetch - processPackages [python-filter]: executing diffoscope
+[2023-04-30 16:53:14] INFO root fetch - processPackages [python-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-filter-1.0.2.tar.gz tmp/python-filter-1.0.3.tar.gz --markdown 20230430/p/python-filter/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 16:53:14] INFO root fetch - processPackages [rankgun]: executing diffoscope
+[2023-04-30 16:53:14] INFO root fetch - processPackages [rankgun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rankgun-1.0.1.tar.gz tmp/rankgun-2.0.0.tar.gz --markdown 20230430/r/rankgun/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2023-04-30 16:53:15] INFO root fetch - main [MainThread]: End processing [python-filter]: success
+[2023-04-30 16:53:15] INFO root fetch - main [MainThread]: End processing [rankgun]: success
+[2023-04-30 16:53:15] INFO root fetch - main [MainThread]: End processing [zadu]: success
+[2023-04-30 16:53:48] INFO root fetch - main [MainThread]: End processing [meerkat-ml]: success
+[2023-04-30 16:53:48] INFO root fetch - main [MainThread]: Store serial: [17917518]
