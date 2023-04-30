@@ -1912,3 +1912,47 @@
 [2023-04-30 04:05:14] INFO root fetch - main [MainThread]: End processing [xj-user]: success
 [2023-04-30 04:05:19] INFO root fetch - main [MainThread]: End processing [tkfly]: success
 [2023-04-30 04:05:19] INFO root fetch - main [MainThread]: Store serial: [17913947]
+[2023-04-30 04:10:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913947]
+[2023-04-30 04:10:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 04:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wikidl
+[2023-04-30 04:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-megumin
+[2023-04-30 04:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shellcrafter
+[2023-04-30 04:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autosrt
+[2023-04-30 04:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DBRetina
+[2023-04-30 04:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: coptpy
+[2023-04-30 04:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-stats-middleware
+[2023-04-30 04:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Routing-flet
+[2023-04-30 04:10:28] WARNING root fetch - processPackages [shellcrafter]: Skipping, unable to determine old version
+[2023-04-30 04:10:28] INFO root fetch - main [MainThread]: End processing [shellcrafter] error
+[2023-04-30 04:10:28] INFO root fetch - processPackages [DBRetina]: New version: [2.2.0] Old Version: [2.1.6]
+[2023-04-30 04:10:28] WARNING root fetch - processPackages [Routing-flet]: Skipping, unable to determine old version
+[2023-04-30 04:10:28] INFO root fetch - main [MainThread]: End processing [Routing-flet] error
+[2023-04-30 04:10:28] WARNING root fetch - processPackages [wikidl]: Skipping, unable to determine old version
+[2023-04-30 04:10:28] INFO root fetch - main [MainThread]: End processing [wikidl] error
+[2023-04-30 04:10:28] INFO root fetch - processPackages [autosrt]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-04-30 04:10:28] INFO root fetch - processPackages [coptpy]: New version: [6.5.3] Old Version: [6.5.2]
+[2023-04-30 04:10:28] INFO root fetch - processPackages [nonebot-plugin-megumin]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 04:10:28] INFO root fetch - processPackages [django-stats-middleware]: New version: [0.3] Old Version: [0.2]
+[2023-04-30 04:10:28] INFO root fetch - processPackages [django-stats-middleware]: Downloading https://files.pythonhosted.org/packages/b5/31/34575f00005d36beb65ca22197d4e9969c72175b0610b554eb6a9711891a/django_stats_middleware-0.2.tar.gz
+[2023-04-30 04:10:28] INFO root fetch - processPackages [coptpy]: Downloading https://files.pythonhosted.org/packages/37/78/385253607ca356f41c5a670d9d5d048530d167bbddcb53d4a164504204fb/coptpy-6.5.2-cp39-cp39-win_amd64.whl
+[2023-04-30 04:10:28] INFO root fetch - processPackages [DBRetina]: Downloading https://files.pythonhosted.org/packages/54/2b/6ae9d81f71e2266ae61e6c016dd99cb9df1eeb98348a6c6e35bdb7189839/DBRetina-2.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 04:10:28] INFO root fetch - processPackages [nonebot-plugin-megumin]: Downloading https://files.pythonhosted.org/packages/d0/f3/21489a764a9a783508c39eaa1ee2dfc970597d092709fe3ec2f299609f27/nonebot_plugin_megumin-0.0.5-py3-none-any.whl
+[2023-04-30 04:10:28] INFO root fetch - processPackages [autosrt]: Downloading https://files.pythonhosted.org/packages/8c/f6/8157d6c376e94b0d9c0e721848ec2361c969d514d25425f1f57b0b9b6c50/autosrt-1.2.0.tar.gz
+[2023-04-30 04:10:28] INFO root fetch - processPackages [nonebot-plugin-megumin]: executing diffoscope
+[2023-04-30 04:10:28] INFO root fetch - processPackages [nonebot-plugin-megumin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_megumin-0.0.4-py3-none-any.whl.zip tmp/nonebot_plugin_megumin-0.0.5-py3-none-any.whl.zip --markdown 20230430/n/nonebot-plugin-megumin/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 04:10:28] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-04-30 04:10:28] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.1.3.tar.gz tmp/autosrt-1.2.0.tar.gz --markdown 20230430/a/autosrt/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 04:10:28] INFO root fetch - processPackages [DBRetina]: executing diffoscope
+[2023-04-30 04:10:28] INFO root fetch - processPackages [DBRetina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DBRetina-2.1.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/DBRetina-2.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230430/D/DBRetina/2.1.6-2.2.0/diff.md --exclude *.pyd
+[2023-04-30 04:10:28] INFO root fetch - processPackages [django-stats-middleware]: Downloading https://files.pythonhosted.org/packages/7b/e8/afba9d45829cf7a3acb86d3c4530ebbf3e0b5ca6fcfabeac106eee0ff814/django_stats_middleware-0.3.tar.gz
+[2023-04-30 04:10:28] INFO root fetch - processPackages [django-stats-middleware]: executing diffoscope
+[2023-04-30 04:10:28] INFO root fetch - processPackages [django-stats-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_stats_middleware-0.2.tar.gz tmp/django_stats_middleware-0.3.tar.gz --markdown 20230430/d/django-stats-middleware/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-30 04:10:29] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-04-30 04:10:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-megumin]: success
+[2023-04-30 04:10:29] INFO root fetch - main [MainThread]: End processing [django-stats-middleware]: success
+[2023-04-30 04:10:29] INFO root fetch - processPackages [coptpy]: Downloading https://files.pythonhosted.org/packages/94/c0/65eeeab28cec4dbee638979f2aaf0bf56fafb15598fcf3ae323fba9ddf43/coptpy-6.5.3-cp38-cp38-win_amd64.whl
+[2023-04-30 04:10:32] INFO root fetch - processPackages [coptpy]: executing diffoscope
+[2023-04-30 04:10:32] INFO root fetch - processPackages [coptpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coptpy-6.5.2-cp39-cp39-win_amd64.whl.zip tmp/coptpy-6.5.3-cp38-cp38-win_amd64.whl.zip --markdown 20230430/c/coptpy/6.5.2-6.5.3/diff.md --exclude *.pyd
+[2023-04-30 04:10:50] INFO root fetch - main [MainThread]: End processing [DBRetina]: success
+[2023-04-30 04:11:24] INFO root fetch - main [MainThread]: End processing [coptpy]: success
+[2023-04-30 04:11:24] INFO root fetch - main [MainThread]: Store serial: [17913996]
