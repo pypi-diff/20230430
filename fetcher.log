@@ -11010,3 +11010,37 @@
 [2023-04-30 23:10:43] INFO root fetch - main [MainThread]: End processing [overloaded-iterables]: success
 [2023-04-30 23:10:43] INFO root fetch - main [MainThread]: End processing [arkdata]: success
 [2023-04-30 23:10:43] INFO root fetch - main [MainThread]: Store serial: [17920040]
+[2023-04-30 23:15:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920040]
+[2023-04-30 23:15:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 23:15:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: java-bytecode-disassembler
+[2023-04-30 23:15:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frankAllSkyCam
+[2023-04-30 23:15:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hiddifypanel
+[2023-04-30 23:15:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydeck-grid
+[2023-04-30 23:15:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: findmyorder
+[2023-04-30 23:15:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: culturalconformity
+[2023-04-30 23:15:52] INFO root fetch - processPackages [findmyorder]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 23:15:52] INFO root fetch - processPackages [pydeck-grid]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 23:15:52] INFO root fetch - processPackages [java-bytecode-disassembler]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 23:15:52] INFO root fetch - processPackages [culturalconformity]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 23:15:52] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-04-30 23:15:52] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-04-30 23:15:52] INFO root fetch - processPackages [hiddifypanel]: New version: [6.0.0.dev5] Old Version: [6.0.0.dev4]
+[2023-04-30 23:15:52] INFO root fetch - processPackages [pydeck-grid]: Downloading https://files.pythonhosted.org/packages/15/50/164d3a9af9df1fc1db94057a456d83d76e96f935fb950383d1baf6c33004/pydeck-grid-0.1.1.tar.gz
+[2023-04-30 23:15:52] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-30 23:15:52] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.0.8.tar.gz tmp/findmyorder-1.0.9.tar.gz --markdown 20230430/f/findmyorder/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:15:52] INFO root fetch - processPackages [culturalconformity]: executing diffoscope
+[2023-04-30 23:15:52] INFO root fetch - processPackages [culturalconformity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culturalconformity-0.0.8.tar.gz tmp/culturalconformity-0.0.9.tar.gz --markdown 20230430/c/culturalconformity/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:15:52] WARNING root fetch - processPackages [pydeck-grid]: Skipping package: exceeds size limit 10665872>=10485760
+[2023-04-30 23:15:52] INFO root fetch - main [MainThread]: End processing [pydeck-grid] error
+[2023-04-30 23:15:52] INFO root fetch - processPackages [java-bytecode-disassembler]: Downloading https://files.pythonhosted.org/packages/5f/60/2315c2a6764e66ab9cc614926730e7d82065624f25c0c709e55191e4cbbd/java_bytecode_disassembler-1.0.0.tar.gz
+[2023-04-30 23:15:53] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/a1/6a/f4a05632e906d24124ba4ce805401b7502f7777246099512cb3332fa0edf/hiddifypanel-6.0.0.dev5-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-30 23:15:53] INFO root fetch - processPackages [java-bytecode-disassembler]: Downloading https://files.pythonhosted.org/packages/aa/1c/61f836444f9294700ca1b9d2c07ef05989a034b5eb932f176c32d0788cf2/java_bytecode_disassembler-1.0.1.tar.gz
+[2023-04-30 23:15:53] INFO root fetch - processPackages [java-bytecode-disassembler]: executing diffoscope
+[2023-04-30 23:15:53] INFO root fetch - processPackages [java-bytecode-disassembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/java_bytecode_disassembler-1.0.0.tar.gz tmp/java_bytecode_disassembler-1.0.1.tar.gz --markdown 20230430/j/java-bytecode-disassembler/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 23:15:53] INFO root fetch - main [MainThread]: End processing [culturalconformity]: success
+[2023-04-30 23:15:53] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-30 23:15:54] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-30 23:15:54] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-6.0.0.dev4-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-6.0.0.dev5-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230430/h/hiddifypanel/6.0.0.dev4-6.0.0.dev5/diff.md --exclude *.pyd
+[2023-04-30 23:15:54] INFO root fetch - main [MainThread]: End processing [java-bytecode-disassembler]: success
+[2023-04-30 23:16:15] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-30 23:16:15] INFO root fetch - main [MainThread]: Store serial: [17920063]
