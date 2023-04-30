@@ -2213,3 +2213,57 @@
 [2023-04-30 04:48:28] INFO root fetch - main [MainThread]: End processing [bam-core]: success
 [2023-04-30 04:48:28] INFO root fetch - main [MainThread]: End processing [bam-core]: success
 [2023-04-30 04:48:28] INFO root fetch - main [MainThread]: Store serial: [17914155]
+[2023-04-30 04:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914155]
+[2023-04-30 04:53:36] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piv
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydistcheck
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zmtools
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bam-core
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bam-core
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: honkaistarrail
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: honkaistarrail
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dox-search
+[2023-04-30 04:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Networkdriver
+[2023-04-30 04:53:36] INFO root fetch - processPackages [pydistcheck]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-30 04:53:36] WARNING root fetch - processPackages [zmtools]: Skipping, unable to determine old version
+[2023-04-30 04:53:36] INFO root fetch - main [MainThread]: End processing [zmtools] error
+[2023-04-30 04:53:36] WARNING root fetch - processPackages [piv]: Skipping, unable to determine old version
+[2023-04-30 04:53:36] INFO root fetch - main [MainThread]: End processing [piv] error
+[2023-04-30 04:53:36] INFO root fetch - processPackages [dox-search]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 04:53:36] INFO root fetch - processPackages [honkaistarrail]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 04:53:36] INFO root fetch - processPackages [bam-core]: New version: [2023.4.30.1682823045] Old Version: [2023.4.30.1682822967]
+[2023-04-30 04:53:36] INFO root fetch - processPackages [honkaistarrail]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 04:53:36] INFO root fetch - processPackages [bam-core]: New version: [2023.4.30.1682823045] Old Version: [2023.4.30.1682822967]
+[2023-04-30 04:53:36] WARNING root fetch - processPackages [Networkdriver]: Skipping, unable to determine old version
+[2023-04-30 04:53:36] INFO root fetch - main [MainThread]: End processing [Networkdriver] error
+[2023-04-30 04:53:37] INFO root fetch - processPackages [honkaistarrail]: Downloading https://files.pythonhosted.org/packages/fe/db/85e44d0db5d614083d8e55a57d470e234275de89d6aefd1b20d562b3ceac/honkaistarrail-0.0.1.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [honkaistarrail]: Downloading https://files.pythonhosted.org/packages/fe/db/85e44d0db5d614083d8e55a57d470e234275de89d6aefd1b20d562b3ceac/honkaistarrail-0.0.1.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [dox-search]: Downloading https://files.pythonhosted.org/packages/59/b9/2d12f10357dffed574d5dadfb0e0ba6ed6d14335ca074b01db6183e66292/dox-search-0.0.1.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [pydistcheck]: Downloading https://files.pythonhosted.org/packages/b5/0e/e5790fe36cfd18bb6c7a0861472d6961bcf2cdce67d1ce38946c4475ee68/pydistcheck-0.3.0.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [dox-search]: Downloading https://files.pythonhosted.org/packages/f8/98/1c383f93cda501d29047e30a14c778b3f742a227ce83ca112cedbf85fe61/dox-search-0.0.2.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/2c/db/5bfa70f63af4be831b027fc56e9d775f001cd718e39b78b8080afb5d925a/bam-core-2023.4.30.1682822967.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/2c/db/5bfa70f63af4be831b027fc56e9d775f001cd718e39b78b8080afb5d925a/bam-core-2023.4.30.1682822967.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [dox-search]: executing diffoscope
+[2023-04-30 04:53:37] INFO root fetch - processPackages [dox-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dox-search-0.0.1.tar.gz tmp/dox-search-0.0.2.tar.gz --markdown 20230430/d/dox-search/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 04:53:37] INFO root fetch - processPackages [honkaistarrail]: Downloading https://files.pythonhosted.org/packages/a8/ca/307d81b3a774a7080b496ae5d5ae7d208fd126bed0b3cfc614e2e30295ab/honkaistarrail-0.0.2.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [honkaistarrail]: Downloading https://files.pythonhosted.org/packages/a8/ca/307d81b3a774a7080b496ae5d5ae7d208fd126bed0b3cfc614e2e30295ab/honkaistarrail-0.0.2.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [pydistcheck]: Downloading https://files.pythonhosted.org/packages/7a/d6/f8fc22777d265dc6252d7cd5ea157dff653ca1a5017d1e2da791ad57611c/pydistcheck-0.4.0.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [honkaistarrail]: executing diffoscope
+[2023-04-30 04:53:37] INFO root fetch - processPackages [honkaistarrail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honkaistarrail-0.0.1.tar.gz tmp/honkaistarrail-0.0.2.tar.gz --markdown 20230430/h/honkaistarrail/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 04:53:37] INFO root fetch - processPackages [honkaistarrail]: executing diffoscope
+[2023-04-30 04:53:37] INFO root fetch - processPackages [honkaistarrail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honkaistarrail-0.0.1.tar.gz tmp/honkaistarrail-0.0.2.tar.gz --markdown 20230430/h/honkaistarrail/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 04:53:37] INFO root fetch - processPackages [pydistcheck]: executing diffoscope
+[2023-04-30 04:53:37] INFO root fetch - processPackages [pydistcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydistcheck-0.3.0.tar.gz tmp/pydistcheck-0.4.0.tar.gz --markdown 20230430/p/pydistcheck/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 04:53:37] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/d5/b6/b98759eb935dcb87b3b765e9b0803540f1d04a772598cc309ef7cfdbb6db/bam-core-2023.4.30.1682823045.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [bam-core]: Downloading https://files.pythonhosted.org/packages/d5/b6/b98759eb935dcb87b3b765e9b0803540f1d04a772598cc309ef7cfdbb6db/bam-core-2023.4.30.1682823045.tar.gz
+[2023-04-30 04:53:37] INFO root fetch - processPackages [bam-core]: executing diffoscope
+[2023-04-30 04:53:37] INFO root fetch - processPackages [bam-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bam-core-2023.4.30.1682822967.tar.gz tmp/bam-core-2023.4.30.1682823045.tar.gz --markdown 20230430/b/bam-core/2023.4.30.1682822967-2023.4.30.1682823045/diff.md --exclude *.pyd
+[2023-04-30 04:53:37] INFO root fetch - processPackages [bam-core]: executing diffoscope
+[2023-04-30 04:53:37] INFO root fetch - processPackages [bam-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bam-core-2023.4.30.1682822967.tar.gz tmp/bam-core-2023.4.30.1682823045.tar.gz --markdown 20230430/b/bam-core/2023.4.30.1682822967-2023.4.30.1682823045/diff.md --exclude *.pyd
+[2023-04-30 04:53:38] INFO root fetch - main [MainThread]: End processing [honkaistarrail]: success
+[2023-04-30 04:53:38] INFO root fetch - main [MainThread]: End processing [honkaistarrail]: success
+[2023-04-30 04:53:38] INFO root fetch - main [MainThread]: End processing [pydistcheck]: success
+[2023-04-30 04:53:38] INFO root fetch - main [MainThread]: End processing [bam-core]: success
+[2023-04-30 04:53:38] INFO root fetch - main [MainThread]: End processing [bam-core]: success
+[2023-04-30 04:53:39] INFO root fetch - main [MainThread]: End processing [dox-search]: success
+[2023-04-30 04:53:39] INFO root fetch - main [MainThread]: Store serial: [17914185]
