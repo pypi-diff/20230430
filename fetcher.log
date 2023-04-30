@@ -8592,3 +8592,45 @@
 [2023-04-30 18:29:28] INFO root fetch - main [MainThread]: End processing [flaskz]: success
 [2023-04-30 18:29:51] INFO root fetch - main [MainThread]: End processing [opof]: success
 [2023-04-30 18:29:51] INFO root fetch - main [MainThread]: Store serial: [17918116]
+[2023-04-30 18:34:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918116]
+[2023-04-30 18:34:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 18:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arouteserver
+[2023-04-30 18:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feathub-nightly
+[2023-04-30 18:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iolanta-tables
+[2023-04-30 18:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rum-with-telegram
+[2023-04-30 18:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fedml
+[2023-04-30 18:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-desktop-wing
+[2023-04-30 18:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xia-engine-terraform
+[2023-04-30 18:34:59] INFO root fetch - processPackages [arouteserver]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-30 18:34:59] INFO root fetch - processPackages [fedml]: New version: [0.8.4a9] Old Version: [0.8.4a8]
+[2023-04-30 18:34:59] INFO root fetch - processPackages [iolanta-tables]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-30 18:34:59] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230429] Old Version: [0.1.dev20230428]
+[2023-04-30 18:34:59] INFO root fetch - processPackages [nonebot-desktop-wing]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-30 18:34:59] INFO root fetch - processPackages [xia-engine-terraform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-30 18:34:59] INFO root fetch - processPackages [rum-with-telegram]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-04-30 18:34:59] INFO root fetch - processPackages [iolanta-tables]: executing diffoscope
+[2023-04-30 18:34:59] INFO root fetch - processPackages [iolanta-tables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iolanta_tables-0.1.5.tar.gz tmp/iolanta_tables-0.1.6.tar.gz --markdown 20230430/i/iolanta-tables/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-30 18:34:59] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-04-30 18:34:59] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.4a8.tar.gz tmp/fedml-0.8.4a9.tar.gz --markdown 20230430/f/fedml/0.8.4a8-0.8.4a9/diff.md --exclude *.pyd
+[2023-04-30 18:34:59] INFO root fetch - processPackages [nonebot-desktop-wing]: executing diffoscope
+[2023-04-30 18:34:59] INFO root fetch - processPackages [nonebot-desktop-wing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-wing-0.2.6.tar.gz tmp/nonebot-desktop-wing-0.2.7.tar.gz --markdown 20230430/n/nonebot-desktop-wing/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-30 18:35:00] INFO root fetch - processPackages [arouteserver]: Downloading https://files.pythonhosted.org/packages/ff/30/167ffd820a3db47d39327ce1fb32f3c3354558c2fe430a9ce585fb37942c/arouteserver-1.8.0.tar.gz
+[2023-04-30 18:35:00] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/d5/7a/ac41ec1c6c962339c8aedd98ffe1377f8e7b66ee24230cb361df71fcaef3/feathub_nightly-0.1.dev20230429-py3-none-any.whl
+[2023-04-30 18:35:00] INFO root fetch - processPackages [rum-with-telegram]: Downloading https://files.pythonhosted.org/packages/53/46/4210c89a0754eb263b8e8423fb146e0f684fca09939a66c85eb16b585f3e/rum_with_telegram-0.8.7.tar.gz
+[2023-04-30 18:35:00] INFO root fetch - processPackages [xia-engine-terraform]: executing diffoscope
+[2023-04-30 18:35:00] INFO root fetch - processPackages [xia-engine-terraform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_terraform-0.0.7-cp39-none-win_amd64.whl.zip tmp/xia_engine_terraform-0.0.9-cp39-none-win_amd64.whl.zip --markdown 20230430/x/xia-engine-terraform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 18:35:00] INFO root fetch - processPackages [rum-with-telegram]: executing diffoscope
+[2023-04-30 18:35:00] INFO root fetch - processPackages [rum-with-telegram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rum_with_telegram-0.8.6.tar.gz tmp/rum_with_telegram-0.8.7.tar.gz --markdown 20230430/r/rum-with-telegram/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-04-30 18:35:00] INFO root fetch - processPackages [feathub-nightly]: executing diffoscope
+[2023-04-30 18:35:00] INFO root fetch - processPackages [feathub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feathub_nightly-0.1.dev20230428-py3-none-any.whl.zip tmp/feathub_nightly-0.1.dev20230429-py3-none-any.whl.zip --markdown 20230430/f/feathub-nightly/0.1.dev20230428-0.1.dev20230429/diff.md --exclude *.pyd
+[2023-04-30 18:35:00] INFO root fetch - processPackages [arouteserver]: Downloading https://files.pythonhosted.org/packages/73/60/4a5568dafabf9239e3f02324815da6278f459acab70919df8345b99c61ce/arouteserver-1.9.0.tar.gz
+[2023-04-30 18:35:00] INFO root fetch - processPackages [arouteserver]: executing diffoscope
+[2023-04-30 18:35:00] INFO root fetch - processPackages [arouteserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arouteserver-1.8.0.tar.gz tmp/arouteserver-1.9.0.tar.gz --markdown 20230430/a/arouteserver/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-30 18:35:01] INFO root fetch - main [MainThread]: End processing [iolanta-tables]: success
+[2023-04-30 18:35:01] INFO root fetch - main [MainThread]: End processing [xia-engine-terraform]: success
+[2023-04-30 18:35:01] INFO root fetch - main [MainThread]: End processing [nonebot-desktop-wing]: success
+[2023-04-30 18:35:01] INFO root fetch - main [MainThread]: End processing [rum-with-telegram]: success
+[2023-04-30 18:35:02] INFO root fetch - main [MainThread]: End processing [arouteserver]: success
+[2023-04-30 18:35:03] INFO root fetch - main [MainThread]: End processing [feathub-nightly]: success
+[2023-04-30 18:35:09] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-04-30 18:35:09] INFO root fetch - main [MainThread]: Store serial: [17918145]
