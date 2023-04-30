@@ -4042,3 +4042,18 @@
 [2023-04-30 09:49:58] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-04-30 09:50:03] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2023-04-30 09:50:03] INFO root fetch - main [MainThread]: Store serial: [17915302]
+[2023-04-30 09:55:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915302]
+[2023-04-30 09:55:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 09:55:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CV-World
+[2023-04-30 09:55:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-cpu
+[2023-04-30 09:55:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inworld-python
+[2023-04-30 09:55:12] WARNING root fetch - processPackages [inworld-python]: Skipping, unable to determine old version
+[2023-04-30 09:55:12] INFO root fetch - main [MainThread]: End processing [inworld-python] error
+[2023-04-30 09:55:12] WARNING root fetch - processPackages [CV-World]: Skipping, unable to determine old version
+[2023-04-30 09:55:12] INFO root fetch - main [MainThread]: End processing [CV-World] error
+[2023-04-30 09:55:12] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230430] Old Version: [2.13.0.dev20230429]
+[2023-04-30 09:55:13] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/ad/fd/2ec752069e097f3afb5a90a20f0813e2ecc6dffcf9cf716b9a81aae1c475/tf_nightly_cpu-2.13.0.dev20230430-cp39-cp39-win_amd64.whl
+[2023-04-30 09:55:13] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-30 09:55:13] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230429-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230430-cp39-cp39-win_amd64.whl.zip --markdown 20230430/t/tf-nightly-cpu/2.13.0.dev20230429-2.13.0.dev20230430/diff.md --exclude *.pyd
+[2023-04-30 09:55:14] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-04-30 09:55:14] INFO root fetch - main [MainThread]: Store serial: [17915321]
