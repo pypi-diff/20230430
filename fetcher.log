@@ -5703,3 +5703,51 @@
 [2023-04-30 13:24:09] INFO root fetch - main [MainThread]: End processing [classy-imaginary]: success
 [2023-04-30 13:24:10] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-04-30 13:24:10] INFO root fetch - main [MainThread]: Store serial: [17916255]
+[2023-04-30 13:29:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916255]
+[2023-04-30 13:29:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 13:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotinst-agent-beta
+[2023-04-30 13:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: napatrackmater
+[2023-04-30 13:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-drf-cms
+[2023-04-30 13:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bridgecrew
+[2023-04-30 13:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: icommandlib
+[2023-04-30 13:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchx-nightly
+[2023-04-30 13:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchrec-nightly
+[2023-04-30 13:29:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: appopener
+[2023-04-30 13:29:19] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.277] Old Version: [2.2.276]
+[2023-04-30 13:29:19] INFO root fetch - processPackages [icommandlib]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-30 13:29:19] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 13:29:19] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.4.9] Old Version: [2023.4.7]
+[2023-04-30 13:29:19] INFO root fetch - processPackages [napatrackmater]: New version: [3.3.9] Old Version: [3.3.8]
+[2023-04-30 13:29:19] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-30 13:29:19] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 13:29:19] INFO root fetch - processPackages [appopener]: New version: [1.7] Old Version: [1.6]
+[2023-04-30 13:29:19] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-04-30 13:29:19] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.4.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.4.9-py39-none-any.whl.zip --markdown 20230430/t/torchrec-nightly/2023.4.7-2023.4.9/diff.md --exclude *.pyd
+[2023-04-30 13:29:19] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-04-30 13:29:19] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.4.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230430/t/torchx-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-30 13:29:19] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 13:29:19] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.8.tar.gz tmp/django-drf-cms-0.1.9.tar.gz --markdown 20230430/d/django-drf-cms/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 13:29:19] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-30 13:29:19] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230430/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 13:29:19] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/86/cb/5e42b284307fc673410521f2200d791648e710f5fcfd66631db02b3e8b75/napatrackmater-3.3.9.tar.gz
+[2023-04-30 13:29:19] INFO root fetch - processPackages [appopener]: Downloading https://files.pythonhosted.org/packages/4b/c5/9843b3264f354f95aa21cf41e899c36f9cc78bcf9b41d4ccf9964ec8836d/appopener-1.6.tar.gz
+[2023-04-30 13:29:19] INFO root fetch - processPackages [icommandlib]: Downloading https://files.pythonhosted.org/packages/4b/a4/493a811855c1fdd4eeb0d01733d453884389ec0904d62ec3a8d6996c20a1/icommandlib-0.8.0.tar.gz
+[2023-04-30 13:29:19] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2023-04-30 13:29:19] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-3.3.8.tar.gz tmp/napatrackmater-3.3.9.tar.gz --markdown 20230430/n/napatrackmater/3.3.8-3.3.9/diff.md --exclude *.pyd
+[2023-04-30 13:29:19] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/c1/80/01e0b0e7704c4b4d402772c9c6e183be8504c41f8c30f2b900e16d933f24/spotinst-agent-beta-2.2.277.tar.gz
+[2023-04-30 13:29:20] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 13:29:20] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.276.tar.gz tmp/spotinst-agent-beta-2.2.277.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.276-2.2.277/diff.md --exclude *.pyd
+[2023-04-30 13:29:20] INFO root fetch - processPackages [icommandlib]: executing diffoscope
+[2023-04-30 13:29:20] INFO root fetch - processPackages [icommandlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icommandlib-0.7.0.tar.gz tmp/icommandlib-0.8.0.tar.gz --markdown 20230430/i/icommandlib/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-30 13:29:20] INFO root fetch - processPackages [appopener]: Downloading https://files.pythonhosted.org/packages/6c/80/c332f7b6221135e5065d85ebdc02ab5f26ca8b27ff44df6bcccceae6517d/appopener-1.7.tar.gz
+[2023-04-30 13:29:20] INFO root fetch - processPackages [appopener]: executing diffoscope
+[2023-04-30 13:29:20] INFO root fetch - processPackages [appopener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appopener-1.6.tar.gz tmp/appopener-1.7.tar.gz --markdown 20230430/a/appopener/1.6-1.7/diff.md --exclude *.pyd
+[2023-04-30 13:29:21] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 13:29:21] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-30 13:29:21] INFO root fetch - main [MainThread]: End processing [icommandlib]: success
+[2023-04-30 13:29:21] INFO root fetch - main [MainThread]: End processing [appopener]: success
+[2023-04-30 13:29:21] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-04-30 13:29:21] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 13:29:21] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-04-30 13:29:22] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2023-04-30 13:29:22] INFO root fetch - main [MainThread]: Store serial: [17916277]
