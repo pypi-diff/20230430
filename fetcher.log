@@ -4754,3 +4754,19 @@
 [2023-04-30 11:04:35] INFO root fetch - main [MainThread]: End processing [autogluon.eda]: success
 [2023-04-30 11:04:36] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
 [2023-04-30 11:04:36] INFO root fetch - main [MainThread]: Store serial: [17915664]
+[2023-04-30 11:09:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915664]
+[2023-04-30 11:09:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 11:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeonghun123
+[2023-04-30 11:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Shark-sac-Korean-editor
+[2023-04-30 11:09:46] INFO root fetch - processPackages [yeonghun123]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 11:09:46] INFO root fetch - processPackages [Shark-sac-Korean-editor]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-30 11:09:46] INFO root fetch - processPackages [yeonghun123]: Downloading https://files.pythonhosted.org/packages/9f/dd/cfae2d79c08882c35208875a584865419baa89ef0e96df7d2d5e4a5da24e/yeonghun123-0.0.5-py3-none-any.whl
+[2023-04-30 11:09:47] INFO root fetch - processPackages [yeonghun123]: executing diffoscope
+[2023-04-30 11:09:47] INFO root fetch - processPackages [yeonghun123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeonghun123-0.0.4-py3-none-any.whl.zip tmp/yeonghun123-0.0.5-py3-none-any.whl.zip --markdown 20230430/y/yeonghun123/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 11:09:47] INFO root fetch - processPackages [Shark-sac-Korean-editor]: Downloading https://files.pythonhosted.org/packages/98/90/5730ef99199c6e0f61db63fe0a7ba79a7797d80166503c8ee166703018dc/Shark%20sac%20Korean%20editor-2.0.0.tar.gz
+[2023-04-30 11:09:47] INFO root fetch - processPackages [Shark-sac-Korean-editor]: Downloading https://files.pythonhosted.org/packages/92/e6/aa5eb3e12b2d3ae4bde964a97eeb7becef76fed4af8469fb64c2169fa651/Shark%20sac%20Korean%20editor-2.0.1.tar.gz
+[2023-04-30 11:09:47] INFO root fetch - processPackages [Shark-sac-Korean-editor]: executing diffoscope
+[2023-04-30 11:09:47] INFO root fetch - processPackages [Shark-sac-Korean-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shark sac Korean editor-2.0.0.tar.gz tmp/Shark sac Korean editor-2.0.1.tar.gz --markdown 20230430/S/Shark-sac-Korean-editor/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-30 11:09:48] INFO root fetch - main [MainThread]: End processing [yeonghun123]: success
+[2023-04-30 11:09:48] INFO root fetch - main [MainThread]: End processing [Shark-sac-Korean-editor]: success
+[2023-04-30 11:09:48] INFO root fetch - main [MainThread]: Store serial: [17915670]
