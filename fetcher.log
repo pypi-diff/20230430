@@ -8109,3 +8109,36 @@
 [2023-04-30 17:31:30] INFO root fetch - main [MainThread]: End processing [mafic]: success
 [2023-04-30 17:31:30] INFO root fetch - main [MainThread]: End processing [scribe-data]: success
 [2023-04-30 17:31:30] INFO root fetch - main [MainThread]: Store serial: [17917787]
+[2023-04-30 17:36:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917787]
+[2023-04-30 17:36:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 17:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Prepup
+[2023-04-30 17:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dlplan
+[2023-04-30 17:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tksheet
+[2023-04-30 17:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ReverseBox
+[2023-04-30 17:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cardiac-geometries
+[2023-04-30 17:36:39] INFO root fetch - processPackages [Prepup]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 17:36:39] INFO root fetch - processPackages [ReverseBox]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-30 17:36:39] INFO root fetch - processPackages [dlplan]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-30 17:36:39] INFO root fetch - processPackages [cardiac-geometries]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-30 17:36:39] INFO root fetch - processPackages [tksheet]: New version: [6.0.3] Old Version: [6.0.2]
+[2023-04-30 17:36:39] INFO root fetch - processPackages [ReverseBox]: executing diffoscope
+[2023-04-30 17:36:39] INFO root fetch - processPackages [ReverseBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseBox-0.5.3.tar.gz tmp/ReverseBox-0.5.4.tar.gz --markdown 20230430/R/ReverseBox/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-30 17:36:39] INFO root fetch - processPackages [Prepup]: Downloading https://files.pythonhosted.org/packages/b9/c9/74180c6c964284a284e99e0cb6246dcdb34f2c8cf3f177c2edb5347890eb/prepup-0.0.1.tar.gz
+[2023-04-30 17:36:39] INFO root fetch - processPackages [Prepup]: Downloading https://files.pythonhosted.org/packages/93/2d/4b45fdd8b83bc4668676500d15bddb222ee7983b6b2bdd7b7ace7671b40b/prepup-0.0.2.tar.gz
+[2023-04-30 17:36:39] INFO root fetch - processPackages [dlplan]: Downloading https://files.pythonhosted.org/packages/f8/0c/76d28cd9283d8b73692083acc2ba3d004ae851de42cec829ebb6f0964a29/dlplan-0.2.7.tar.gz
+[2023-04-30 17:36:39] INFO root fetch - processPackages [cardiac-geometries]: Downloading https://files.pythonhosted.org/packages/b4/fc/abee3b05c757810da3500e469a22297256d0389c36540d67b3ca3daaae24/cardiac_geometries-0.5.1.tar.gz
+[2023-04-30 17:36:39] INFO root fetch - processPackages [Prepup]: executing diffoscope
+[2023-04-30 17:36:39] INFO root fetch - processPackages [Prepup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prepup-0.0.1.tar.gz tmp/prepup-0.0.2.tar.gz --markdown 20230430/P/Prepup/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 17:36:39] INFO root fetch - processPackages [tksheet]: Downloading https://files.pythonhosted.org/packages/cc/12/a8e1124008c7ee8f1d69c7c586967e327a8efc03410767428afa94cc4c38/tksheet-6.0.3.tar.gz
+[2023-04-30 17:36:39] INFO root fetch - processPackages [dlplan]: executing diffoscope
+[2023-04-30 17:36:39] INFO root fetch - processPackages [dlplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlplan-0.2.6.tar.gz tmp/dlplan-0.2.7.tar.gz --markdown 20230430/d/dlplan/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-30 17:36:39] INFO root fetch - processPackages [cardiac-geometries]: executing diffoscope
+[2023-04-30 17:36:39] INFO root fetch - processPackages [cardiac-geometries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardiac_geometries-0.5.0.tar.gz tmp/cardiac_geometries-0.5.1.tar.gz --markdown 20230430/c/cardiac-geometries/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-30 17:36:40] INFO root fetch - processPackages [tksheet]: executing diffoscope
+[2023-04-30 17:36:40] INFO root fetch - processPackages [tksheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tksheet-6.0.2.tar.gz tmp/tksheet-6.0.3.tar.gz --markdown 20230430/t/tksheet/6.0.2-6.0.3/diff.md --exclude *.pyd
+[2023-04-30 17:36:40] INFO root fetch - main [MainThread]: End processing [ReverseBox]: success
+[2023-04-30 17:36:41] INFO root fetch - main [MainThread]: End processing [Prepup]: success
+[2023-04-30 17:36:41] INFO root fetch - main [MainThread]: End processing [cardiac-geometries]: success
+[2023-04-30 17:36:41] INFO root fetch - main [MainThread]: End processing [tksheet]: success
+[2023-04-30 17:36:42] INFO root fetch - main [MainThread]: End processing [dlplan]: success
+[2023-04-30 17:36:42] INFO root fetch - main [MainThread]: Store serial: [17917805]
