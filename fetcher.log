@@ -7250,3 +7250,31 @@
 [2023-04-30 15:43:57] INFO root fetch - main [MainThread]: End processing [audclas]: success
 [2023-04-30 15:43:58] INFO root fetch - main [MainThread]: End processing [jupyterlab-celltagsclasses]: success
 [2023-04-30 15:43:58] INFO root fetch - main [MainThread]: Store serial: [17917208]
+[2023-04-30 15:49:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917208]
+[2023-04-30 15:49:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: debater-python-api
+[2023-04-30 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kappadata
+[2023-04-30 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: os-mfa
+[2023-04-30 15:49:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhrp
+[2023-04-30 15:49:07] INFO root fetch - processPackages [debater-python-api]: New version: [4.3.2] Old Version: [4.3.1]
+[2023-04-30 15:49:07] INFO root fetch - processPackages [pyhrp]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-30 15:49:07] INFO root fetch - processPackages [os-mfa]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 15:49:07] INFO root fetch - processPackages [kappadata]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-30 15:49:07] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/f2/f3/1d8b1e368608f82ad8869ca4a850d3d3cef3bbbc9bf10726e1910ab31ae4/pyhrp-0.7.3.tar.gz
+[2023-04-30 15:49:07] INFO root fetch - processPackages [os-mfa]: Downloading https://files.pythonhosted.org/packages/03/60/700508919991d7fe34bfb54539e2f6591f46b15008a5f9ca80e1fa6e5243/os-mfa-0.0.1.tar.gz
+[2023-04-30 15:49:07] INFO root fetch - processPackages [debater-python-api]: Downloading https://files.pythonhosted.org/packages/04/76/0e1b412cb5528e144e27e270038e275d9e03bff3da88d36b69ae9c13ddba/debater_python_api-4.3.1.tar.gz
+[2023-04-30 15:49:07] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 15:49:07] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.7.2.tar.gz tmp/pyhrp-0.7.3.tar.gz --markdown 20230430/p/pyhrp/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-30 15:49:07] INFO root fetch - processPackages [kappadata]: executing diffoscope
+[2023-04-30 15:49:07] INFO root fetch - processPackages [kappadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappadata-1.2.8.tar.gz tmp/kappadata-1.2.9.tar.gz --markdown 20230430/k/kappadata/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-30 15:49:07] INFO root fetch - processPackages [os-mfa]: Downloading https://files.pythonhosted.org/packages/38/52/d023ecf63197913f185c795762cca74c2932a2ba659b1391b59f36d1e360/os-mfa-0.0.2.tar.gz
+[2023-04-30 15:49:07] INFO root fetch - processPackages [debater-python-api]: Downloading https://files.pythonhosted.org/packages/aa/63/256efa503e36304b445c0cdd57b409cba6c69e3ce4e9c93ed4ad5c26f223/debater_python_api-4.3.2.tar.gz
+[2023-04-30 15:49:07] INFO root fetch - processPackages [debater-python-api]: executing diffoscope
+[2023-04-30 15:49:07] INFO root fetch - processPackages [debater-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/debater_python_api-4.3.1.tar.gz tmp/debater_python_api-4.3.2.tar.gz --markdown 20230430/d/debater-python-api/4.3.1-4.3.2/diff.md --exclude *.pyd
+[2023-04-30 15:49:07] INFO root fetch - processPackages [os-mfa]: executing diffoscope
+[2023-04-30 15:49:07] INFO root fetch - processPackages [os-mfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os-mfa-0.0.1.tar.gz tmp/os-mfa-0.0.2.tar.gz --markdown 20230430/o/os-mfa/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 15:49:08] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 15:49:08] INFO root fetch - main [MainThread]: End processing [os-mfa]: success
+[2023-04-30 15:49:09] INFO root fetch - main [MainThread]: End processing [kappadata]: success
+[2023-04-30 15:49:09] INFO root fetch - main [MainThread]: End processing [debater-python-api]: success
+[2023-04-30 15:49:09] INFO root fetch - main [MainThread]: Store serial: [17917221]
