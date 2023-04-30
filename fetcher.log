@@ -2361,3 +2361,35 @@
 [2023-04-30 05:09:11] INFO root fetch - processPackages [hugchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugchat-0.0.2.tar.gz tmp/hugchat-0.0.3.tar.gz --markdown 20230430/h/hugchat/0.0.2-0.0.3/diff.md --exclude *.pyd
 [2023-04-30 05:09:12] INFO root fetch - main [MainThread]: End processing [hugchat]: success
 [2023-04-30 05:09:12] INFO root fetch - main [MainThread]: Store serial: [17914231]
+[2023-04-30 05:14:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914231]
+[2023-04-30 05:14:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 05:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mbta-gtfs-sqlite
+[2023-04-30 05:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lino-avanti
+[2023-04-30 05:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ms-api
+[2023-04-30 05:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GANDLF
+[2023-04-30 05:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autosrt
+[2023-04-30 05:14:22] INFO root fetch - processPackages [autosrt]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-04-30 05:14:22] WARNING root fetch - processPackages [mbta-gtfs-sqlite]: Skipping, unable to determine old version
+[2023-04-30 05:14:22] INFO root fetch - processPackages [lino-avanti]: New version: [23.4.0] Old Version: [23.3.0]
+[2023-04-30 05:14:22] INFO root fetch - main [MainThread]: End processing [mbta-gtfs-sqlite] error
+[2023-04-30 05:14:22] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230430] Old Version: [0.0.16.dev20230429]
+[2023-04-30 05:14:22] INFO root fetch - processPackages [ms-api]: New version: [0.9.70] Old Version: [0.9.59]
+[2023-04-30 05:14:22] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-04-30 05:14:22] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.1.3.tar.gz tmp/autosrt-1.2.0.tar.gz --markdown 20230430/a/autosrt/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 05:14:22] INFO root fetch - processPackages [ms-api]: Downloading https://files.pythonhosted.org/packages/f8/4f/2b36e234d468e328c1b46d09d3239d19df777d1b3e1a352db61931465b6d/ms_api-0.9.59.tar.gz
+[2023-04-30 05:14:22] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/f8/b9/58ceae424ef4458c8a92c1b4fcbf131ceef867030d1f72e313b609a6898f/GANDLF-0.0.16.dev20230429.tar.gz
+[2023-04-30 05:14:22] INFO root fetch - processPackages [lino-avanti]: Downloading https://files.pythonhosted.org/packages/37/12/06d90b0f4ed5fb6055bd0a932e30c0f33ea70fa643a0bf073fb1872d38b1/lino-avanti-23.3.0.tar.gz
+[2023-04-30 05:14:22] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/dd/67/d2948ac78e41336d9570ea3e85fdce40caab1eedce0478326fcd7b861347/GANDLF-0.0.16.dev20230430.tar.gz
+[2023-04-30 05:14:22] INFO root fetch - processPackages [lino-avanti]: Downloading https://files.pythonhosted.org/packages/38/a7/267518e226373605729e8b4ccc17c95a69f8df2fd3ff6b4fb4e958d16140/lino-avanti-23.4.0.tar.gz
+[2023-04-30 05:14:22] INFO root fetch - processPackages [ms-api]: Downloading https://files.pythonhosted.org/packages/dc/8d/c6e9730cc39c7a7bf96a3f458a6b13f85406cfe2a4e43ce09d8c2e39a4a2/ms_api-0.9.70.tar.gz
+[2023-04-30 05:14:22] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-04-30 05:14:22] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230429.tar.gz tmp/GANDLF-0.0.16.dev20230430.tar.gz --markdown 20230430/G/GANDLF/0.0.16.dev20230429-0.0.16.dev20230430/diff.md --exclude *.pyd
+[2023-04-30 05:14:22] INFO root fetch - processPackages [lino-avanti]: executing diffoscope
+[2023-04-30 05:14:22] INFO root fetch - processPackages [lino-avanti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lino-avanti-23.3.0.tar.gz tmp/lino-avanti-23.4.0.tar.gz --markdown 20230430/l/lino-avanti/23.3.0-23.4.0/diff.md --exclude *.pyd
+[2023-04-30 05:14:23] INFO root fetch - processPackages [ms-api]: executing diffoscope
+[2023-04-30 05:14:23] INFO root fetch - processPackages [ms-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms_api-0.9.59.tar.gz tmp/ms_api-0.9.70.tar.gz --markdown 20230430/m/ms-api/0.9.59-0.9.70/diff.md --exclude *.pyd
+[2023-04-30 05:14:24] INFO root fetch - main [MainThread]: End processing [lino-avanti]: success
+[2023-04-30 05:14:24] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-04-30 05:14:24] INFO root fetch - main [MainThread]: End processing [ms-api]: success
+[2023-04-30 05:14:46] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-04-30 05:14:46] INFO root fetch - main [MainThread]: Store serial: [17914246]
