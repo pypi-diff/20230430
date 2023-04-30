@@ -3518,3 +3518,32 @@
 [2023-04-30 08:45:12] INFO root fetch - processPackages [powa-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/powa-web-4.1.3.tar.gz tmp/powa-web-4.1.4.tar.gz --markdown 20230430/p/powa-web/4.1.3-4.1.4/diff.md --exclude *.pyd
 [2023-04-30 08:45:30] INFO root fetch - main [MainThread]: End processing [powa-web]: success
 [2023-04-30 08:45:30] INFO root fetch - main [MainThread]: Store serial: [17914990]
+[2023-04-30 08:50:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914990]
+[2023-04-30 08:50:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 08:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auto-clicks
+[2023-04-30 08:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chat-completion-utils
+[2023-04-30 08:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: i-texts
+[2023-04-30 08:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chat-completion-utils
+[2023-04-30 08:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: BlockFrame
+[2023-04-30 08:50:39] INFO root fetch - processPackages [chat-completion-utils]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-30 08:50:39] INFO root fetch - processPackages [chat-completion-utils]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-30 08:50:39] INFO root fetch - processPackages [chat-completion-utils]: executing diffoscope
+[2023-04-30 08:50:39] INFO root fetch - processPackages [chat-completion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_completion_utils-0.1.0.tar.gz tmp/chat_completion_utils-1.0.0.tar.gz --markdown 20230430/c/chat-completion-utils/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 08:50:39] WARNING root fetch - processPackages [auto-clicks]: Skipping, unable to determine old version
+[2023-04-30 08:50:39] INFO root fetch - main [MainThread]: End processing [auto-clicks] error
+[2023-04-30 08:50:39] INFO root fetch - processPackages [i-texts]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-30 08:50:39] INFO root fetch - processPackages [chat-completion-utils]: executing diffoscope
+[2023-04-30 08:50:39] INFO root fetch - processPackages [chat-completion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_completion_utils-0.1.0.tar.gz tmp/chat_completion_utils-1.0.0.tar.gz --markdown 20230430/c/chat-completion-utils/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 08:50:39] INFO root fetch - processPackages [BlockFrame]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 08:50:39] INFO root fetch - processPackages [i-texts]: Downloading https://files.pythonhosted.org/packages/8e/1f/da115700d204c092235810b75f91a79a8afadf67df5c2e991e1895ef025b/i-texts-0.1.1.tar.gz
+[2023-04-30 08:50:39] INFO root fetch - processPackages [BlockFrame]: Downloading https://files.pythonhosted.org/packages/3e/d2/741bc2be5afdd338909b95da93cf9f4a8f5388e29a6589e7865a92db1612/BlockFrame-0.1.4.tar.gz
+[2023-04-30 08:50:39] INFO root fetch - processPackages [i-texts]: Downloading https://files.pythonhosted.org/packages/93/26/a281dcd57c67b0db32770e5d8936ee689f4472453c37b708aa1d52b01d27/i-texts-0.2.0.tar.gz
+[2023-04-30 08:50:39] INFO root fetch - processPackages [i-texts]: executing diffoscope
+[2023-04-30 08:50:39] INFO root fetch - processPackages [i-texts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i-texts-0.1.1.tar.gz tmp/i-texts-0.2.0.tar.gz --markdown 20230430/i/i-texts/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 08:50:39] INFO root fetch - processPackages [BlockFrame]: executing diffoscope
+[2023-04-30 08:50:39] INFO root fetch - processPackages [BlockFrame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BlockFrame-0.1.3.tar.gz tmp/BlockFrame-0.1.4.tar.gz --markdown 20230430/B/BlockFrame/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 08:50:40] INFO root fetch - main [MainThread]: End processing [chat-completion-utils]: success
+[2023-04-30 08:50:40] INFO root fetch - main [MainThread]: End processing [chat-completion-utils]: success
+[2023-04-30 08:50:40] INFO root fetch - main [MainThread]: End processing [i-texts]: success
+[2023-04-30 08:50:41] INFO root fetch - main [MainThread]: End processing [BlockFrame]: success
+[2023-04-30 08:50:41] INFO root fetch - main [MainThread]: Store serial: [17915007]
