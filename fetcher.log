@@ -2136,3 +2136,53 @@
 [2023-04-30 04:38:02] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
 [2023-04-30 04:38:02] INFO root fetch - main [MainThread]: End processing [nure]: success
 [2023-04-30 04:38:02] INFO root fetch - main [MainThread]: Store serial: [17914113]
+[2023-04-30 04:43:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914113]
+[2023-04-30 04:43:11] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 04:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhrp
+[2023-04-30 04:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bulk-mv
+[2023-04-30 04:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-Ayra
+[2023-04-30 04:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhrp
+[2023-04-30 04:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moptipy
+[2023-04-30 04:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: psynet
+[2023-04-30 04:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyhrp
+[2023-04-30 04:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: auroralibs
+[2023-04-30 04:43:11] INFO root fetch - processPackages [pyhrp]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-30 04:43:11] INFO root fetch - processPackages [bulk-mv]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 04:43:11] INFO root fetch - processPackages [pyhrp]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-30 04:43:11] INFO root fetch - processPackages [moptipy]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-30 04:43:11] INFO root fetch - processPackages [py-Ayra]: New version: [8.6.6] Old Version: [8.6.5]
+[2023-04-30 04:43:11] INFO root fetch - processPackages [pyhrp]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-30 04:43:11] INFO root fetch - processPackages [psynet]: New version: [9.4.5] Old Version: [9.4.4]
+[2023-04-30 04:43:11] WARNING root fetch - processPackages [auroralibs]: Skipping, unable to determine old version
+[2023-04-30 04:43:11] INFO root fetch - main [MainThread]: End processing [auroralibs] error
+[2023-04-30 04:43:11] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/f3/2e/15ef6bf7cfada3d745e900ae9783b72b4608f1237c10cf4239e795dbe19f/pyhrp-0.4.5.tar.gz
+[2023-04-30 04:43:11] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/f3/2e/15ef6bf7cfada3d745e900ae9783b72b4608f1237c10cf4239e795dbe19f/pyhrp-0.4.5.tar.gz
+[2023-04-30 04:43:11] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/f3/2e/15ef6bf7cfada3d745e900ae9783b72b4608f1237c10cf4239e795dbe19f/pyhrp-0.4.5.tar.gz
+[2023-04-30 04:43:11] INFO root fetch - processPackages [bulk-mv]: Downloading https://files.pythonhosted.org/packages/d2/e5/43f919f0b2c190e655e27e7da78c45f4f36606aaaa65296d20e5fa69dfa6/bulk-mv-0.1.5.tar.gz
+[2023-04-30 04:43:11] INFO root fetch - processPackages [psynet]: Downloading https://files.pythonhosted.org/packages/28/c8/64007f7382be1bb201607d1e6c4b87a0655931512a59847b17a6765966b9/psynet-9.4.4.tar.gz
+[2023-04-30 04:43:12] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-04-30 04:43:12] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.6.5.tar.gz tmp/py-Ayra-8.6.6.tar.gz --markdown 20230430/p/py-Ayra/8.6.5-8.6.6/diff.md --exclude *.pyd
+[2023-04-30 04:43:12] INFO root fetch - processPackages [bulk-mv]: executing diffoscope
+[2023-04-30 04:43:12] INFO root fetch - processPackages [bulk-mv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bulk-mv-0.1.4.tar.gz tmp/bulk-mv-0.1.5.tar.gz --markdown 20230430/b/bulk-mv/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 04:43:12] INFO root fetch - processPackages [moptipy]: executing diffoscope
+[2023-04-30 04:43:12] INFO root fetch - processPackages [moptipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moptipy-0.9.8.tar.gz tmp/moptipy-0.9.9.tar.gz --markdown 20230430/m/moptipy/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/25/9d/522444bc697b3ea98308a4d55779e1d221ec6bb04949d83ff1956f92e1ee/pyhrp-0.4.6.tar.gz
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/25/9d/522444bc697b3ea98308a4d55779e1d221ec6bb04949d83ff1956f92e1ee/pyhrp-0.4.6.tar.gz
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/25/9d/522444bc697b3ea98308a4d55779e1d221ec6bb04949d83ff1956f92e1ee/pyhrp-0.4.6.tar.gz
+[2023-04-30 04:43:12] INFO root fetch - processPackages [psynet]: Downloading https://files.pythonhosted.org/packages/c1/6f/61b816abab86b0509c098a6d0f8b682f36096e489aaa83ed15eec4773acd/psynet-9.4.5.tar.gz
+[2023-04-30 04:43:12] INFO root fetch - processPackages [psynet]: executing diffoscope
+[2023-04-30 04:43:12] INFO root fetch - processPackages [psynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psynet-9.4.4.tar.gz tmp/psynet-9.4.5.tar.gz --markdown 20230430/p/psynet/9.4.4-9.4.5/diff.md --exclude *.pyd
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.4.5.tar.gz tmp/pyhrp-0.4.6.tar.gz --markdown 20230430/p/pyhrp/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.4.5.tar.gz tmp/pyhrp-0.4.6.tar.gz --markdown 20230430/p/pyhrp/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-30 04:43:12] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.4.5.tar.gz tmp/pyhrp-0.4.6.tar.gz --markdown 20230430/p/pyhrp/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-30 04:43:13] INFO root fetch - main [MainThread]: End processing [bulk-mv]: success
+[2023-04-30 04:43:13] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 04:43:13] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 04:43:13] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 04:43:14] INFO root fetch - main [MainThread]: End processing [psynet]: success
+[2023-04-30 04:43:15] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-04-30 04:43:16] INFO root fetch - main [MainThread]: End processing [moptipy]: success
+[2023-04-30 04:43:16] INFO root fetch - main [MainThread]: Store serial: [17914141]
