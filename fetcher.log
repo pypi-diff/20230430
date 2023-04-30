@@ -1525,3 +1525,42 @@
 [2023-04-30 03:16:36] INFO root fetch - processPackages [blitzgsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blitzgsea-1.3.4.tar.gz tmp/blitzgsea-1.3.5.tar.gz --markdown 20230430/b/blitzgsea/1.3.4-1.3.5/diff.md --exclude *.pyd
 [2023-04-30 03:16:37] INFO root fetch - main [MainThread]: End processing [blitzgsea]: success
 [2023-04-30 03:16:37] INFO root fetch - main [MainThread]: Store serial: [17913671]
+[2023-04-30 03:21:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913671]
+[2023-04-30 03:21:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhrp
+[2023-04-30 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-sops-secrets
+[2023-04-30 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alchemymodel-xlsx
+[2023-04-30 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: overloaded-iterables
+[2023-04-30 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastrometry
+[2023-04-30 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyagrum-nightly
+[2023-04-30 03:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-lambda-subminute
+[2023-04-30 03:21:46] INFO root fetch - processPackages [overloaded-iterables]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-30 03:21:46] INFO root fetch - processPackages [pyhrp]: New version: [0.4.0] Old Version: [0.0.8]
+[2023-04-30 03:21:46] WARNING root fetch - processPackages [alchemymodel-xlsx]: Skipping, unable to determine old version
+[2023-04-30 03:21:46] INFO root fetch - main [MainThread]: End processing [alchemymodel-xlsx] error
+[2023-04-30 03:21:46] INFO root fetch - processPackages [fastrometry]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 03:21:46] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-30 03:21:46] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-30 03:21:46] INFO root fetch - processPackages [fastrometry]: executing diffoscope
+[2023-04-30 03:21:46] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-04-30 03:21:46] INFO root fetch - processPackages [fastrometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastrometry-1.0.8.tar.gz tmp/fastrometry-1.0.9.tar.gz --markdown 20230430/f/fastrometry/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 03:21:46] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230430/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-30 03:21:46] INFO root fetch - processPackages [overloaded-iterables]: Downloading https://files.pythonhosted.org/packages/cf/42/7fb26c134e17759d7dedd0adbaed140ec6629d00d493a8bd09d19e77620c/overloaded-iterables-0.5.2.tar.gz
+[2023-04-30 03:21:46] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.7.1.9.dev202304291682782393] Old Version: [1.7.1.9.dev202304291682774691]
+[2023-04-30 03:21:46] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-04-30 03:21:46] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.7.1.9.dev202304291682774691-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.7.1.9.dev202304291682782393-cp39-cp39-win_amd64.whl.zip --markdown 20230430/p/pyagrum-nightly/1.7.1.9.dev202304291682774691-1.7.1.9.dev202304291682782393/diff.md --exclude *.pyd
+[2023-04-30 03:21:46] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/33/41/d95730c7d5a740b121e1d9a88effaaddbbf21aa8c844506a949e0de03bd6/pyhrp-0.4.0.tar.gz
+[2023-04-30 03:21:46] INFO root fetch - processPackages [overloaded-iterables]: Downloading https://files.pythonhosted.org/packages/ac/70/17d2cc1a8b5f37cfcbe05397b0e5774f6cdd62644afe20f76891f7e0cc53/overloaded-iterables-0.5.3.tar.gz
+[2023-04-30 03:21:46] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 03:21:46] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.0.8.tar.gz tmp/pyhrp-0.4.0.tar.gz --markdown 20230430/p/pyhrp/0.0.8-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 03:21:46] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-30 03:21:46] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230430/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-30 03:21:46] INFO root fetch - processPackages [overloaded-iterables]: executing diffoscope
+[2023-04-30 03:21:46] INFO root fetch - processPackages [overloaded-iterables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overloaded-iterables-0.5.2.tar.gz tmp/overloaded-iterables-0.5.3.tar.gz --markdown 20230430/o/overloaded-iterables/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-30 03:21:47] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-04-30 03:21:47] INFO root fetch - main [MainThread]: End processing [overloaded-iterables]: success
+[2023-04-30 03:21:47] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 03:21:47] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-04-30 03:21:47] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-04-30 03:21:48] INFO root fetch - main [MainThread]: End processing [fastrometry]: success
+[2023-04-30 03:21:48] INFO root fetch - main [MainThread]: Store serial: [17913709]
