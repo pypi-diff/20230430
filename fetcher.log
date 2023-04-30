@@ -7816,3 +7816,56 @@
 [2023-04-30 16:59:01] INFO root fetch - main [MainThread]: End processing [biobear]: success
 [2023-04-30 16:59:01] INFO root fetch - main [MainThread]: End processing [llm-generation-server]: success
 [2023-04-30 16:59:01] INFO root fetch - main [MainThread]: Store serial: [17917578]
+[2023-04-30 17:04:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917578]
+[2023-04-30 17:04:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 17:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tplink-omada-client
+[2023-04-30 17:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wafl
+[2023-04-30 17:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onnx2kerastl
+[2023-04-30 17:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyproject-generator
+[2023-04-30 17:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: metapensiero.sphinx.patchdb
+[2023-04-30 17:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: glue-helper-lib
+[2023-04-30 17:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: back-to-sit
+[2023-04-30 17:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: FlipperNested
+[2023-04-30 17:04:10] INFO root fetch - processPackages [wafl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 17:04:10] INFO root fetch - processPackages [glue-helper-lib]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-30 17:04:10] INFO root fetch - processPackages [pyproject-generator]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 17:04:11] INFO root fetch - processPackages [tplink-omada-client]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-30 17:04:11] INFO root fetch - processPackages [back-to-sit]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 17:04:11] INFO root fetch - processPackages [onnx2kerastl]: New version: [0.0.84.dev1] Old Version: [0.0.83.1]
+[2023-04-30 17:04:11] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: New version: [4.0.dev4] Old Version: [4.0.dev3]
+[2023-04-30 17:04:11] INFO root fetch - processPackages [wafl]: executing diffoscope
+[2023-04-30 17:04:11] INFO root fetch - processPackages [wafl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wafl-0.0.8-py3-none-any.whl.zip tmp/wafl-0.0.9-py3-none-any.whl.zip --markdown 20230430/w/wafl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 17:04:11] INFO root fetch - processPackages [pyproject-generator]: executing diffoscope
+[2023-04-30 17:04:11] INFO root fetch - processPackages [pyproject-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-generator-0.1.1.tar.gz tmp/pyproject-generator-0.1.2.tar.gz --markdown 20230430/p/pyproject-generator/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 17:04:11] INFO root fetch - processPackages [glue-helper-lib]: Downloading https://files.pythonhosted.org/packages/8e/b6/585ead68f237769595921737eb2961a05748311fe7481659568395b3d370/glue_helper_lib-0.1.0.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [FlipperNested]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-30 17:04:11] INFO root fetch - processPackages [back-to-sit]: Downloading https://files.pythonhosted.org/packages/c1/d7/5a31717cdd2939e86839ff464dda1a76399dd7edad876d8feb50592101b5/back_to_sit-0.0.3.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/3f/6d/c74244e74e449400f7fc6d7e6366bc949722d6a56d97971f3d16496b2ac8/tplink_omada_client-1.2.4.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: Downloading https://files.pythonhosted.org/packages/e5/ab/7a0058916d1ee573cb2f13ea19ecb915b34e56e57cde662c114916e4b562/metapensiero.sphinx.patchdb-4.0.dev3.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/41/2b/1d8fd0891a343d0cd4f2dacd45ecadadb7afcdbde07e5a264c3769e21b41/onnx2kerastl-0.0.84.dev1.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [back-to-sit]: Downloading https://files.pythonhosted.org/packages/ce/c9/8a8aefb09f58bc0e20352d16961870ed94b195779652b8b5c010f73e23d6/back_to_sit-0.0.4.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/f5/60/7cfe3dd97f756b3bd75ede65e4ff810e93b067fe8f20a02cd19f11b269fc/tplink_omada_client-1.2.5.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [glue-helper-lib]: Downloading https://files.pythonhosted.org/packages/07/24/9b67d466ae044582b79fce759f218ffb82128e105ec63d0f03b0090b9698/glue_helper_lib-0.2.0.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [onnx2kerastl]: executing diffoscope
+[2023-04-30 17:04:11] INFO root fetch - processPackages [onnx2kerastl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2kerastl-0.0.83.1.tar.gz tmp/onnx2kerastl-0.0.84.dev1.tar.gz --markdown 20230430/o/onnx2kerastl/0.0.83.1-0.0.84.dev1/diff.md --exclude *.pyd
+[2023-04-30 17:04:11] INFO root fetch - processPackages [back-to-sit]: executing diffoscope
+[2023-04-30 17:04:11] INFO root fetch - processPackages [back-to-sit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/back_to_sit-0.0.3.tar.gz tmp/back_to_sit-0.0.4.tar.gz --markdown 20230430/b/back-to-sit/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 17:04:11] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: Downloading https://files.pythonhosted.org/packages/45/3b/e4be44d6b5c896ba034b46ef54654c0dc93055c468de24554008ab5f6632/metapensiero.sphinx.patchdb-4.0.dev4.tar.gz
+[2023-04-30 17:04:11] INFO root fetch - processPackages [glue-helper-lib]: executing diffoscope
+[2023-04-30 17:04:11] INFO root fetch - processPackages [glue-helper-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glue_helper_lib-0.1.0.tar.gz tmp/glue_helper_lib-0.2.0.tar.gz --markdown 20230430/g/glue-helper-lib/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 17:04:11] INFO root fetch - processPackages [tplink-omada-client]: executing diffoscope
+[2023-04-30 17:04:11] INFO root fetch - processPackages [tplink-omada-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tplink_omada_client-1.2.4.tar.gz tmp/tplink_omada_client-1.2.5.tar.gz --markdown 20230430/t/tplink-omada-client/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-30 17:04:11] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/fa/12/9603b331ac0d750beb045cabfedab2c3e1e16790400e9ca71e1388b0cf04/FlipperNested-2.1.1-cp311-cp311-musllinux_1_1_x86_64.whl
+[2023-04-30 17:04:11] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: executing diffoscope
+[2023-04-30 17:04:11] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metapensiero.sphinx.patchdb-4.0.dev3.tar.gz tmp/metapensiero.sphinx.patchdb-4.0.dev4.tar.gz --markdown 20230430/m/metapensiero.sphinx.patchdb/4.0.dev3-4.0.dev4/diff.md --exclude *.pyd
+[2023-04-30 17:04:12] INFO root fetch - processPackages [FlipperNested]: executing diffoscope
+[2023-04-30 17:04:12] INFO root fetch - processPackages [FlipperNested]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlipperNested-2.1.0.tar.gz tmp/FlipperNested-2.1.1-cp311-cp311-musllinux_1_1_x86_64.whl.zip --markdown 20230430/F/FlipperNested/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-30 17:04:12] INFO root fetch - main [MainThread]: End processing [pyproject-generator]: success
+[2023-04-30 17:04:12] INFO root fetch - main [MainThread]: End processing [wafl]: success
+[2023-04-30 17:04:12] INFO root fetch - main [MainThread]: End processing [back-to-sit]: success
+[2023-04-30 17:04:12] INFO root fetch - main [MainThread]: End processing [onnx2kerastl]: success
+[2023-04-30 17:04:12] INFO root fetch - main [MainThread]: End processing [glue-helper-lib]: success
+[2023-04-30 17:04:13] INFO root fetch - main [MainThread]: End processing [tplink-omada-client]: success
+[2023-04-30 17:04:13] INFO root fetch - main [MainThread]: End processing [FlipperNested]: success
+[2023-04-30 17:04:14] INFO root fetch - main [MainThread]: End processing [metapensiero.sphinx.patchdb]: success
+[2023-04-30 17:04:14] INFO root fetch - main [MainThread]: Store serial: [17917609]
