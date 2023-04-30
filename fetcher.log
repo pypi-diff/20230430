@@ -6979,3 +6979,60 @@
 [2023-04-30 15:22:07] INFO root fetch - main [MainThread]: End processing [cellpy]: success
 [2023-04-30 15:22:13] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.nmr]: success
 [2023-04-30 15:22:13] INFO root fetch - main [MainThread]: Store serial: [17917049]
+[2023-04-30 15:27:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917049]
+[2023-04-30 15:27:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mosparo-django
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: findmyorder
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Bigsansar
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipsocgen
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vents
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: omniValidator
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: KernelsPython
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tkreform
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gold-miner-ui
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: classy-imaginary
+[2023-04-30 15:27:23] WARNING root fetch - processPackages [mosparo-django]: Skipping, unable to determine old version
+[2023-04-30 15:27:23] INFO root fetch - main [MainThread]: End processing [mosparo-django] error
+[2023-04-30 15:27:23] INFO root fetch - processPackages [vents]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 15:27:23] INFO root fetch - processPackages [classy-imaginary]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-30 15:27:23] INFO root fetch - processPackages [tkreform]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-30 15:27:23] INFO root fetch - processPackages [omniValidator]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-04-30 15:27:23] WARNING root fetch - processPackages [KernelsPython]: Skipping, unable to determine old version
+[2023-04-30 15:27:23] INFO root fetch - main [MainThread]: End processing [KernelsPython] error
+[2023-04-30 15:27:23] INFO root fetch - processPackages [gold-miner-ui]: New version: [1.4] Old Version: [1.3]
+[2023-04-30 15:27:23] INFO root fetch - processPackages [Bigsansar]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-30 15:27:23] INFO root fetch - processPackages [findmyorder]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ipsocgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 15:27:23] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-30 15:27:23] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.0.8.tar.gz tmp/findmyorder-1.0.9.tar.gz --markdown 20230430/f/findmyorder/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ipsocgen]: executing diffoscope
+[2023-04-30 15:27:23] INFO root fetch - processPackages [ipsocgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsocgen-0.1.8.tar.gz tmp/ipsocgen-0.1.9.tar.gz --markdown 20230430/i/ipsocgen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 15:27:23] INFO root fetch - processPackages [omniValidator]: Downloading https://files.pythonhosted.org/packages/13/20/018141e262c6e8942579ddfb1996239d379bdd666d5997ca95d4df5da2bc/omniValidator-0.0.15.tar.gz
+[2023-04-30 15:27:23] INFO root fetch - processPackages [classy-imaginary]: Downloading https://files.pythonhosted.org/packages/9b/1a/c7cbe3a525e1baa08db573c7773f930afab88d76009b9fabaa6f43f23018/classy_imaginary-0.6.1.tar.gz
+[2023-04-30 15:27:23] INFO root fetch - processPackages [tkreform]: Downloading https://files.pythonhosted.org/packages/9a/0c/fbe3eafc500883b92d6f1ae4dbe1704731506bad6370665418a1c3bc8b76/tkreform-0.3.6.tar.gz
+[2023-04-30 15:27:23] INFO root fetch - processPackages [vents]: Downloading https://files.pythonhosted.org/packages/6c/12/31572916ff44171503c6e6dc0faeb69d7d3be7da2e393d52e033142788f2/vents-0.0.5.tar.gz
+[2023-04-30 15:27:23] INFO root fetch - processPackages [gold-miner-ui]: Downloading https://files.pythonhosted.org/packages/5c/c1/a4e9999d53b134d880f5aa424eb16a7cb85f460e6a7ccb2c4e3daf0da7fe/gold-miner-ui-1.3.tar.gz
+[2023-04-30 15:27:23] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/5e/7d/4671a59c69c4103dbc3cbcc018cd49007c4d28a3390471d7e54e969f750c/Bigsansar-1.2.4.tar.gz
+[2023-04-30 15:27:23] INFO root fetch - processPackages [tkreform]: executing diffoscope
+[2023-04-30 15:27:23] INFO root fetch - processPackages [tkreform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkreform-0.3.5.tar.gz tmp/tkreform-0.3.6.tar.gz --markdown 20230430/t/tkreform/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-30 15:27:23] INFO root fetch - processPackages [vents]: executing diffoscope
+[2023-04-30 15:27:23] INFO root fetch - processPackages [vents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vents-0.0.4.tar.gz tmp/vents-0.0.5.tar.gz --markdown 20230430/v/vents/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 15:27:23] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-04-30 15:27:23] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.2.3.tar.gz tmp/Bigsansar-1.2.4.tar.gz --markdown 20230430/B/Bigsansar/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-30 15:27:23] INFO root fetch - processPackages [classy-imaginary]: executing diffoscope
+[2023-04-30 15:27:23] INFO root fetch - processPackages [classy-imaginary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classy_imaginary-0.6.0.tar.gz tmp/classy_imaginary-0.6.1.tar.gz --markdown 20230430/c/classy-imaginary/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-30 15:27:23] INFO root fetch - processPackages [gold-miner-ui]: Downloading https://files.pythonhosted.org/packages/b7/de/7ce4f39ac19416a6559d818cddb9e772ed6e4f577bc331a35c025a3ad38e/gold-miner-ui-1.4.tar.gz
+[2023-04-30 15:27:23] INFO root fetch - processPackages [omniValidator]: Downloading https://files.pythonhosted.org/packages/04/20/29fcfa1b96e8016edc79f154eedd61604aea37db4e7188cf017d8059c057/omniValidator-0.0.16.tar.gz
+[2023-04-30 15:27:23] INFO root fetch - processPackages [gold-miner-ui]: executing diffoscope
+[2023-04-30 15:27:23] INFO root fetch - processPackages [gold-miner-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gold-miner-ui-1.3.tar.gz tmp/gold-miner-ui-1.4.tar.gz --markdown 20230430/g/gold-miner-ui/1.3-1.4/diff.md --exclude *.pyd
+[2023-04-30 15:27:23] INFO root fetch - processPackages [omniValidator]: executing diffoscope
+[2023-04-30 15:27:23] INFO root fetch - processPackages [omniValidator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniValidator-0.0.15.tar.gz tmp/omniValidator-0.0.16.tar.gz --markdown 20230430/o/omniValidator/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-04-30 15:27:24] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-30 15:27:24] INFO root fetch - main [MainThread]: End processing [ipsocgen]: success
+[2023-04-30 15:27:24] INFO root fetch - main [MainThread]: End processing [tkreform]: success
+[2023-04-30 15:27:25] INFO root fetch - main [MainThread]: End processing [gold-miner-ui]: success
+[2023-04-30 15:27:25] INFO root fetch - main [MainThread]: End processing [omniValidator]: success
+[2023-04-30 15:27:25] INFO root fetch - main [MainThread]: End processing [vents]: success
+[2023-04-30 15:27:25] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-04-30 15:27:26] INFO root fetch - main [MainThread]: End processing [classy-imaginary]: success
+[2023-04-30 15:27:26] INFO root fetch - main [MainThread]: Store serial: [17917083]
