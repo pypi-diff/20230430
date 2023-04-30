@@ -10334,3 +10334,47 @@
 [2023-04-30 21:41:25] INFO root fetch - main [MainThread]: End processing [arc-cli]: success
 [2023-04-30 21:41:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-l4d2-server]: success
 [2023-04-30 21:41:25] INFO root fetch - main [MainThread]: Store serial: [17919525]
+[2023-04-30 21:46:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919525]
+[2023-04-30 21:46:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 21:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-engine-terraform
+[2023-04-30 21:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arc-cli
+[2023-04-30 21:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-04-30 21:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycryptokms
+[2023-04-30 21:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: leuci-map
+[2023-04-30 21:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: itkwasm
+[2023-04-30 21:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: anime-api
+[2023-04-30 21:46:34] INFO root fetch - processPackages [arc-cli]: New version: [8.1.4a2] Old Version: [8.1.4a1]
+[2023-04-30 21:46:34] INFO root fetch - processPackages [pycryptokms]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 21:46:34] INFO root fetch - processPackages [xia-engine-terraform]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-30 21:46:34] INFO root fetch - processPackages [itkwasm]: New version: [1.0b97] Old Version: [1.0b96]
+[2023-04-30 21:46:34] INFO root fetch - processPackages [leuci-map]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 21:46:34] INFO root fetch - processPackages [kcli]: New version: [99.0.202304301944] Old Version: [99.0.202304300837]
+[2023-04-30 21:46:34] INFO root fetch - processPackages [anime-api]: New version: [1.0.0] Old Version: [0.9.1]
+[2023-04-30 21:46:34] ERROR root fetch - processPackages [pycryptokms]: Unable to fetch info: No such project/version 'pycryptokms' 0.1.0
+[2023-04-30 21:46:34] INFO root fetch - main [MainThread]: End processing [pycryptokms] error
+[2023-04-30 21:46:34] INFO root fetch - processPackages [arc-cli]: Downloading https://files.pythonhosted.org/packages/26/e8/8645c6186fe234aa54cea18733686c8cf41eec94930f2b15ce8820849578/arc_cli-8.1.4a1.tar.gz
+[2023-04-30 21:46:34] INFO root fetch - processPackages [leuci-map]: executing diffoscope
+[2023-04-30 21:46:34] INFO root fetch - processPackages [leuci-map]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-map-0.1.8.tar.gz tmp/leuci-map-0.1.9.tar.gz --markdown 20230430/l/leuci-map/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 21:46:34] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/45/c3/0555d68da390c4649e36de195d10babd88793a4d74b68322748050f78ea0/kcli-99.0.202304300837-py3-none-any.whl
+[2023-04-30 21:46:34] INFO root fetch - processPackages [anime-api]: Downloading https://files.pythonhosted.org/packages/77/bb/4b80550e47d5465e23835386a3ecfa9d6b843f87687aab59d810fff398e3/anime-api-0.9.1.tar.gz
+[2023-04-30 21:46:34] INFO root fetch - processPackages [xia-engine-terraform]: Downloading https://files.pythonhosted.org/packages/a9/20/ecaca36706617477ce14df9967664c0515fa8309c7abf9d87c7e73626930/xia_engine_terraform-0.1.0-cp39-none-win_amd64.whl
+[2023-04-30 21:46:34] INFO root fetch - processPackages [itkwasm]: executing diffoscope
+[2023-04-30 21:46:34] INFO root fetch - processPackages [itkwasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm-1.0b96.tar.gz tmp/itkwasm-1.0b97.tar.gz --markdown 20230430/i/itkwasm/1.0b96-1.0b97/diff.md --exclude *.pyd
+[2023-04-30 21:46:34] INFO root fetch - processPackages [arc-cli]: Downloading https://files.pythonhosted.org/packages/1a/9f/6c9281bfb9bc6b6f48a98789778f6861189040a0e36ff8ecb52da693ba6d/arc_cli-8.1.4a2.tar.gz
+[2023-04-30 21:46:34] INFO root fetch - processPackages [xia-engine-terraform]: executing diffoscope
+[2023-04-30 21:46:34] INFO root fetch - processPackages [xia-engine-terraform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_engine_terraform-0.0.9-cp39-none-win_amd64.whl.zip tmp/xia_engine_terraform-0.1.0-cp39-none-win_amd64.whl.zip --markdown 20230430/x/xia-engine-terraform/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-30 21:46:34] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/b0/7d/aebee7c7790853fdf77d8817e09bfb8b6f76418fb44fe48d485e1c89427b/kcli-99.0.202304301944-py3-none-any.whl
+[2023-04-30 21:46:34] INFO root fetch - processPackages [arc-cli]: executing diffoscope
+[2023-04-30 21:46:34] INFO root fetch - processPackages [arc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arc_cli-8.1.4a1.tar.gz tmp/arc_cli-8.1.4a2.tar.gz --markdown 20230430/a/arc-cli/8.1.4a1-8.1.4a2/diff.md --exclude *.pyd
+[2023-04-30 21:46:34] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-30 21:46:34] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304300837-py3-none-any.whl.zip tmp/kcli-99.0.202304301944-py3-none-any.whl.zip --markdown 20230430/k/kcli/99.0.202304300837-99.0.202304301944/diff.md --exclude *.pyd
+[2023-04-30 21:46:35] INFO root fetch - processPackages [anime-api]: Downloading https://files.pythonhosted.org/packages/34/70/5ea413bbb37af26558a9120e7ba09f6459257b97d1cd0e072d46515aaf82/anime-api-1.0.0.tar.gz
+[2023-04-30 21:46:35] INFO root fetch - processPackages [anime-api]: executing diffoscope
+[2023-04-30 21:46:35] INFO root fetch - processPackages [anime-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anime-api-0.9.1.tar.gz tmp/anime-api-1.0.0.tar.gz --markdown 20230430/a/anime-api/0.9.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 21:46:35] INFO root fetch - main [MainThread]: End processing [leuci-map]: success
+[2023-04-30 21:46:35] INFO root fetch - main [MainThread]: End processing [xia-engine-terraform]: success
+[2023-04-30 21:46:36] INFO root fetch - main [MainThread]: End processing [anime-api]: success
+[2023-04-30 21:46:36] INFO root fetch - main [MainThread]: End processing [itkwasm]: success
+[2023-04-30 21:46:37] INFO root fetch - main [MainThread]: End processing [arc-cli]: success
+[2023-04-30 21:46:43] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-04-30 21:46:43] INFO root fetch - main [MainThread]: Store serial: [17919551]
