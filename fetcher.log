@@ -4282,3 +4282,13 @@
 [2023-04-30 10:16:05] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
 [2023-04-30 10:16:05] INFO root fetch - main [MainThread]: End processing [voxx-cli]: success
 [2023-04-30 10:16:05] INFO root fetch - main [MainThread]: Store serial: [17915437]
+[2023-04-30 10:21:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915437]
+[2023-04-30 10:21:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-30 10:21:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-automation-framework
+[2023-04-30 10:21:14] INFO root fetch - processPackages [python-automation-framework]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-30 10:21:14] INFO root fetch - processPackages [python-automation-framework]: Downloading https://files.pythonhosted.org/packages/d0/fc/64c99cee65ed4bf70fa43b8a75f472158dc4a69520fd03c583864fd3ae1a/python-automation-framework-0.0.7.tar.gz
+[2023-04-30 10:21:14] INFO root fetch - processPackages [python-automation-framework]: Downloading https://files.pythonhosted.org/packages/36/6d/df3ad4c1232dd93f73c7d168344e7d09696190dd28707ee5c062b9572cdd/python-automation-framework-0.0.8.tar.gz
+[2023-04-30 10:21:15] INFO root fetch - processPackages [python-automation-framework]: executing diffoscope
+[2023-04-30 10:21:15] INFO root fetch - processPackages [python-automation-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-automation-framework-0.0.7.tar.gz tmp/python-automation-framework-0.0.8.tar.gz --markdown 20230430/p/python-automation-framework/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-30 10:21:16] INFO root fetch - main [MainThread]: End processing [python-automation-framework]: success
+[2023-04-30 10:21:16] INFO root fetch - main [MainThread]: Store serial: [17915439]
