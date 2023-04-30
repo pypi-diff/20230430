@@ -10421,3 +10421,62 @@
 [2023-04-30 21:51:53] INFO root fetch - main [MainThread]: End processing [oso-sdk]: success
 [2023-04-30 21:51:53] INFO root fetch - main [MainThread]: End processing [data-toolkit]: success
 [2023-04-30 21:51:53] INFO root fetch - main [MainThread]: Store serial: [17919627]
+[2023-04-30 21:56:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919627]
+[2023-04-30 21:57:02] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OSFResearchClient
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linuxp
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smarteo
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spPersisit
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ytspider
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: secury-code
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pibble
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rbxflip
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: unigui
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo-env
+[2023-04-30 21:57:02] INFO root fetch - processPackages [OSFResearchClient]: New version: [0.2] Old Version: [0.1]
+[2023-04-30 21:57:02] INFO root fetch - processPackages [linuxp]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 21:57:02] WARNING root fetch - processPackages [ytspider]: Skipping, unable to determine old version
+[2023-04-30 21:57:02] INFO root fetch - processPackages [ytspider]: Start processing: canaverall
+[2023-04-30 21:57:02] INFO root fetch - main [MainThread]: End processing [ytspider] error
+[2023-04-30 21:57:02] WARNING root fetch - processPackages [smarteo]: Skipping, unable to determine old version
+[2023-04-30 21:57:02] WARNING root fetch - processPackages [spPersisit]: Skipping, unable to determine old version
+[2023-04-30 21:57:02] INFO root fetch - main [MainThread]: End processing [smarteo] error
+[2023-04-30 21:57:02] INFO root fetch - main [MainThread]: End processing [spPersisit] error
+[2023-04-30 21:57:02] INFO root fetch - processPackages [pibble]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-30 21:57:02] INFO root fetch - processPackages [rbxflip]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-30 21:57:02] WARNING root fetch - processPackages [secury-code]: Skipping, unable to determine old version
+[2023-04-30 21:57:02] INFO root fetch - main [MainThread]: End processing [secury-code] error
+[2023-04-30 21:57:02] INFO root fetch - processPackages [unigui]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-04-30 21:57:02] INFO root fetch - processPackages [odoo-env]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-30 21:57:02] WARNING root fetch - processPackages [canaverall]: Skipping, unable to determine old version
+[2023-04-30 21:57:02] INFO root fetch - main [MainThread]: End processing [canaverall] error
+[2023-04-30 21:57:02] INFO root fetch - processPackages [pibble]: Downloading https://files.pythonhosted.org/packages/11/6e/a1843c290ae50405e4410c1d948660715994ada7d38250e94cf6ec37c829/pibble-0.4.7.tar.gz
+[2023-04-30 21:57:02] INFO root fetch - processPackages [OSFResearchClient]: Downloading https://files.pythonhosted.org/packages/e8/95/49b2e4c3af7197546b6afc1393eb941a2e50d1a2627ccbe47a60f2d78dfd/OSFResearchClient-0.1.tar.gz
+[2023-04-30 21:57:02] INFO root fetch - processPackages [linuxp]: Downloading https://files.pythonhosted.org/packages/1c/1a/bc92915ccad933deb92332593268eb5c50bf98764d58ec46bb9cc026e2ec/linuxp-1.0.8.tar.gz
+[2023-04-30 21:57:02] INFO root fetch - processPackages [rbxflip]: Downloading https://files.pythonhosted.org/packages/37/b8/bca1f8debe211d30f5d05f5db1eec30c45177e0e8dcf618696ee25b15496/rbxflip-1.0.6.tar.gz
+[2023-04-30 21:57:02] INFO root fetch - processPackages [unigui]: Downloading https://files.pythonhosted.org/packages/35/cb/aad03f3455cfb2556e2be143926bdcf0b3d4512ebaa1ff8279be8e63ccdd/unigui-1.3.7.tar.gz
+[2023-04-30 21:57:02] INFO root fetch - processPackages [odoo-env]: Downloading https://files.pythonhosted.org/packages/fc/9c/b71f33a4c604affe0e3a7ecc00e0ef45e33b424af1b5c94183e8ebc3e300/odoo-env-0.9.8.tar.gz
+[2023-04-30 21:57:02] INFO root fetch - processPackages [rbxflip]: executing diffoscope
+[2023-04-30 21:57:02] INFO root fetch - processPackages [rbxflip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbxflip-1.0.5.tar.gz tmp/rbxflip-1.0.6.tar.gz --markdown 20230430/r/rbxflip/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-30 21:57:02] INFO root fetch - processPackages [OSFResearchClient]: Downloading https://files.pythonhosted.org/packages/cb/95/cb2b9e420311d5f691473fc91b5b531b20d49a056c0672dcba4ce8fae11e/OSFResearchClient-0.2.tar.gz
+[2023-04-30 21:57:02] INFO root fetch - processPackages [pibble]: Downloading https://files.pythonhosted.org/packages/43/3a/31b5d485718a839dc8194cd7abdd505a01b0d0ad519a42f783dc34a627e5/pibble-0.4.8.tar.gz
+[2023-04-30 21:57:03] INFO root fetch - processPackages [OSFResearchClient]: executing diffoscope
+[2023-04-30 21:57:03] INFO root fetch - processPackages [OSFResearchClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OSFResearchClient-0.1.tar.gz tmp/OSFResearchClient-0.2.tar.gz --markdown 20230430/O/OSFResearchClient/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-30 21:57:03] INFO root fetch - processPackages [pibble]: executing diffoscope
+[2023-04-30 21:57:03] INFO root fetch - processPackages [pibble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pibble-0.4.7.tar.gz tmp/pibble-0.4.8.tar.gz --markdown 20230430/p/pibble/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-30 21:57:03] INFO root fetch - processPackages [unigui]: Downloading https://files.pythonhosted.org/packages/0b/aa/13f22dbef515187a786de5b4d289357710ccaa4e913269a029880b7f0604/unigui-1.3.8.tar.gz
+[2023-04-30 21:57:03] INFO root fetch - processPackages [linuxp]: Downloading https://files.pythonhosted.org/packages/6f/73/bf29357b0a0571db1a50735c793ebc34477ef09ce35117e3fb254ea639e3/linuxp-1.0.9.tar.gz
+[2023-04-30 21:57:03] INFO root fetch - processPackages [odoo-env]: Downloading https://files.pythonhosted.org/packages/a0/53/5ee30fb680dd77b0f64bc973a67db15aa1bc5be9440ce36dabdd43c18ec8/odoo-env-0.9.9.tar.gz
+[2023-04-30 21:57:03] INFO root fetch - processPackages [unigui]: executing diffoscope
+[2023-04-30 21:57:03] INFO root fetch - processPackages [unigui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unigui-1.3.7.tar.gz tmp/unigui-1.3.8.tar.gz --markdown 20230430/u/unigui/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-04-30 21:57:03] INFO root fetch - processPackages [linuxp]: executing diffoscope
+[2023-04-30 21:57:03] INFO root fetch - processPackages [linuxp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linuxp-1.0.8.tar.gz tmp/linuxp-1.0.9.tar.gz --markdown 20230430/l/linuxp/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:57:03] INFO root fetch - processPackages [odoo-env]: executing diffoscope
+[2023-04-30 21:57:03] INFO root fetch - processPackages [odoo-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo-env-0.9.8.tar.gz tmp/odoo-env-0.9.9.tar.gz --markdown 20230430/o/odoo-env/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-30 21:57:03] INFO root fetch - main [MainThread]: End processing [rbxflip]: success
+[2023-04-30 21:57:04] INFO root fetch - main [MainThread]: End processing [OSFResearchClient]: success
+[2023-04-30 21:57:04] INFO root fetch - main [MainThread]: End processing [odoo-env]: success
+[2023-04-30 21:57:04] INFO root fetch - main [MainThread]: End processing [unigui]: success
+[2023-04-30 21:57:04] INFO root fetch - main [MainThread]: End processing [linuxp]: success
+[2023-04-30 21:57:04] INFO root fetch - main [MainThread]: End processing [pibble]: success
+[2023-04-30 21:57:04] INFO root fetch - main [MainThread]: Store serial: [17919671]
