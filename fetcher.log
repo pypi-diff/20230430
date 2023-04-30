@@ -4975,3 +4975,13 @@
 [2023-04-30 11:36:06] INFO root fetch - main [MainThread]: End processing [zeroinger]: success
 [2023-04-30 11:36:07] INFO root fetch - main [MainThread]: End processing [UzbekTagger]: success
 [2023-04-30 11:36:07] INFO root fetch - main [MainThread]: Store serial: [17915812]
+[2023-04-30 11:41:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915812]
+[2023-04-30 11:41:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-30 11:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reqif
+[2023-04-30 11:41:16] INFO root fetch - processPackages [reqif]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 11:41:16] INFO root fetch - processPackages [reqif]: Downloading https://files.pythonhosted.org/packages/97/c5/1ab90ed22955eab3434858c7c0e711c1c344c65d4991702858f370e5857c/reqif-0.0.8.tar.gz
+[2023-04-30 11:41:17] INFO root fetch - processPackages [reqif]: Downloading https://files.pythonhosted.org/packages/96/38/1b48adb104222d62ca3e62128ad49a7c20d13e24d244df98563da19d4126/reqif-0.0.9.tar.gz
+[2023-04-30 11:41:17] INFO root fetch - processPackages [reqif]: executing diffoscope
+[2023-04-30 11:41:17] INFO root fetch - processPackages [reqif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reqif-0.0.8.tar.gz tmp/reqif-0.0.9.tar.gz --markdown 20230430/r/reqif/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 11:41:18] INFO root fetch - main [MainThread]: End processing [reqif]: success
+[2023-04-30 11:41:18] INFO root fetch - main [MainThread]: Store serial: [17915816]
