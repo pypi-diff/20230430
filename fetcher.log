@@ -1956,3 +1956,34 @@
 [2023-04-30 04:10:50] INFO root fetch - main [MainThread]: End processing [DBRetina]: success
 [2023-04-30 04:11:24] INFO root fetch - main [MainThread]: End processing [coptpy]: success
 [2023-04-30 04:11:24] INFO root fetch - main [MainThread]: Store serial: [17913996]
+[2023-04-30 04:16:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17913996]
+[2023-04-30 04:16:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 04:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transitmatters-gtfs
+[2023-04-30 04:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: UzSyllable
+[2023-04-30 04:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alchemymodel-xlsx
+[2023-04-30 04:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blitzgsea
+[2023-04-30 04:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shellcrafter
+[2023-04-30 04:16:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: uuuuuuuu
+[2023-04-30 04:16:54] WARNING root fetch - processPackages [transitmatters-gtfs]: Skipping, unable to determine old version
+[2023-04-30 04:16:54] INFO root fetch - main [MainThread]: End processing [transitmatters-gtfs] error
+[2023-04-30 04:16:54] INFO root fetch - processPackages [alchemymodel-xlsx]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 04:16:54] WARNING root fetch - processPackages [shellcrafter]: Skipping, unable to determine old version
+[2023-04-30 04:16:54] INFO root fetch - processPackages [blitzgsea]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-04-30 04:16:54] INFO root fetch - main [MainThread]: End processing [shellcrafter] error
+[2023-04-30 04:16:54] INFO root fetch - processPackages [UzSyllable]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 04:16:54] WARNING root fetch - processPackages [uuuuuuuu]: Skipping, unable to determine old version
+[2023-04-30 04:16:54] INFO root fetch - main [MainThread]: End processing [uuuuuuuu] error
+[2023-04-30 04:16:54] INFO root fetch - processPackages [blitzgsea]: executing diffoscope
+[2023-04-30 04:16:54] INFO root fetch - processPackages [blitzgsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blitzgsea-1.3.7.tar.gz tmp/blitzgsea-1.3.8.tar.gz --markdown 20230430/b/blitzgsea/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-04-30 04:16:54] INFO root fetch - processPackages [alchemymodel-xlsx]: Downloading https://files.pythonhosted.org/packages/40/fb/bac2ef2649c8c867b57c09124b7d866d0cc93dad351bf7c75d01940d069f/alchemymodel_xlsx-1.0.0-py3-none-any.whl
+[2023-04-30 04:16:54] INFO root fetch - processPackages [UzSyllable]: Downloading https://files.pythonhosted.org/packages/d8/57/e7ecac8b393e1544c681273047abb8b0a59128aa09ae39bc8277ebd87f27/UzSyllable-0.0.5.tar.gz
+[2023-04-30 04:16:54] INFO root fetch - processPackages [alchemymodel-xlsx]: Downloading https://files.pythonhosted.org/packages/fd/49/dd03bed64eea7ad59d9c5fad0fa97afcf0901a77f466583d1e3568ecc8ec/alchemymodel_xlsx-1.0.1-py3-none-any.whl
+[2023-04-30 04:16:54] INFO root fetch - processPackages [UzSyllable]: Downloading https://files.pythonhosted.org/packages/ba/13/b0ef7fd47a0ad54692227fa47753cc0aa36b79033b4444fb95e3b465706b/UzSyllable-0.0.6.tar.gz
+[2023-04-30 04:16:54] INFO root fetch - processPackages [alchemymodel-xlsx]: executing diffoscope
+[2023-04-30 04:16:54] INFO root fetch - processPackages [alchemymodel-xlsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alchemymodel_xlsx-1.0.0-py3-none-any.whl.zip tmp/alchemymodel_xlsx-1.0.1-py3-none-any.whl.zip --markdown 20230430/a/alchemymodel-xlsx/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 04:16:54] INFO root fetch - processPackages [UzSyllable]: executing diffoscope
+[2023-04-30 04:16:54] INFO root fetch - processPackages [UzSyllable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UzSyllable-0.0.5.tar.gz tmp/UzSyllable-0.0.6.tar.gz --markdown 20230430/U/UzSyllable/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 04:16:55] INFO root fetch - main [MainThread]: End processing [blitzgsea]: success
+[2023-04-30 04:16:55] INFO root fetch - main [MainThread]: End processing [alchemymodel-xlsx]: success
+[2023-04-30 04:16:55] INFO root fetch - main [MainThread]: End processing [UzSyllable]: success
+[2023-04-30 04:16:55] INFO root fetch - main [MainThread]: Store serial: [17914023]
