@@ -7557,3 +7557,45 @@
 [2023-04-30 16:21:14] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-04-30 16:21:36] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
 [2023-04-30 16:21:36] INFO root fetch - main [MainThread]: Store serial: [17917382]
+[2023-04-30 16:26:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917382]
+[2023-04-30 16:26:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerebrium
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ramodels
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nlpforturkish
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mama
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RenderWatcher
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: RenderWatcher
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: RenderWatcher
+[2023-04-30 16:26:45] WARNING root fetch - processPackages [nlpforturkish]: Skipping, unable to determine old version
+[2023-04-30 16:26:45] INFO root fetch - main [MainThread]: End processing [nlpforturkish] error
+[2023-04-30 16:26:45] INFO root fetch - processPackages [cerebrium]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2023-04-30 16:26:45] INFO root fetch - processPackages [mama]: New version: [0.7.9] Old Version: [0.7.7]
+[2023-04-30 16:26:45] INFO root fetch - processPackages [RenderWatcher]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-30 16:26:45] INFO root fetch - processPackages [RenderWatcher]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-30 16:26:45] INFO root fetch - processPackages [RenderWatcher]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-30 16:26:45] INFO root fetch - processPackages [mama]: executing diffoscope
+[2023-04-30 16:26:45] INFO root fetch - processPackages [mama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mama-0.7.7.tar.gz tmp/mama-0.7.9.tar.gz --markdown 20230430/m/mama/0.7.7-0.7.9/diff.md --exclude *.pyd
+[2023-04-30 16:26:45] INFO root fetch - processPackages [RenderWatcher]: Downloading https://files.pythonhosted.org/packages/41/60/037673152c517ffe8a9180d88a64249006ba441f253376d8fb3d3647578d/RenderWatcher-0.0.2-py3-none-any.whl
+[2023-04-30 16:26:45] INFO root fetch - processPackages [RenderWatcher]: Downloading https://files.pythonhosted.org/packages/41/60/037673152c517ffe8a9180d88a64249006ba441f253376d8fb3d3647578d/RenderWatcher-0.0.2-py3-none-any.whl
+[2023-04-30 16:26:45] INFO root fetch - processPackages [RenderWatcher]: Downloading https://files.pythonhosted.org/packages/41/60/037673152c517ffe8a9180d88a64249006ba441f253376d8fb3d3647578d/RenderWatcher-0.0.2-py3-none-any.whl
+[2023-04-30 16:26:45] INFO root fetch - processPackages [cerebrium]: executing diffoscope
+[2023-04-30 16:26:45] INFO root fetch - processPackages [cerebrium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerebrium-0.4.8.tar.gz tmp/cerebrium-0.4.9.tar.gz --markdown 20230430/c/cerebrium/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2023-04-30 16:26:45] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20230430/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: Downloading https://files.pythonhosted.org/packages/fe/a8/46bfd205772d1730025b5a53f6b09fb62419cb9cfded902e5f0fc62ab278/RenderWatcher-0.0.4-py3-none-any.whl
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: Downloading https://files.pythonhosted.org/packages/fe/a8/46bfd205772d1730025b5a53f6b09fb62419cb9cfded902e5f0fc62ab278/RenderWatcher-0.0.4-py3-none-any.whl
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: Downloading https://files.pythonhosted.org/packages/fe/a8/46bfd205772d1730025b5a53f6b09fb62419cb9cfded902e5f0fc62ab278/RenderWatcher-0.0.4-py3-none-any.whl
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: executing diffoscope
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RenderWatcher-0.0.2-py3-none-any.whl.zip tmp/RenderWatcher-0.0.4-py3-none-any.whl.zip --markdown 20230430/R/RenderWatcher/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: executing diffoscope
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RenderWatcher-0.0.2-py3-none-any.whl.zip tmp/RenderWatcher-0.0.4-py3-none-any.whl.zip --markdown 20230430/R/RenderWatcher/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: executing diffoscope
+[2023-04-30 16:26:46] INFO root fetch - processPackages [RenderWatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RenderWatcher-0.0.2-py3-none-any.whl.zip tmp/RenderWatcher-0.0.4-py3-none-any.whl.zip --markdown 20230430/R/RenderWatcher/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 16:26:47] INFO root fetch - main [MainThread]: End processing [cerebrium]: success
+[2023-04-30 16:26:47] INFO root fetch - main [MainThread]: End processing [mama]: success
+[2023-04-30 16:26:47] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2023-04-30 16:26:47] INFO root fetch - main [MainThread]: End processing [RenderWatcher]: success
+[2023-04-30 16:26:47] INFO root fetch - main [MainThread]: End processing [RenderWatcher]: success
+[2023-04-30 16:26:47] INFO root fetch - main [MainThread]: End processing [RenderWatcher]: success
+[2023-04-30 16:26:47] INFO root fetch - main [MainThread]: Store serial: [17917402]
