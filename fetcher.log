@@ -7297,3 +7297,56 @@
 [2023-04-30 15:54:19] INFO root fetch - main [MainThread]: End processing [loopgpt]: success
 [2023-04-30 15:54:19] INFO root fetch - main [MainThread]: End processing [wellets-cli]: success
 [2023-04-30 15:54:19] INFO root fetch - main [MainThread]: Store serial: [17917235]
+[2023-04-30 15:59:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917235]
+[2023-04-30 15:59:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 15:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hcli
+[2023-04-30 15:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digitalguide
+[2023-04-30 15:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hcli
+[2023-04-30 15:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hcli
+[2023-04-30 15:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hcli
+[2023-04-30 15:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pprint-torrent
+[2023-04-30 15:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aa-charlink
+[2023-04-30 15:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: musiclang
+[2023-04-30 15:59:28] INFO root fetch - processPackages [hcli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 15:59:28] INFO root fetch - processPackages [hcli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 15:59:28] ERROR root fetch - processPackages [pprint-torrent]: Unable to get metadata: No such project 'pprint-torrent'
+[2023-04-30 15:59:28] INFO root fetch - processPackages [hcli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 15:59:28] INFO root fetch - main [MainThread]: End processing [pprint-torrent] error
+[2023-04-30 15:59:28] INFO root fetch - processPackages [hcli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 15:59:28] INFO root fetch - processPackages [musiclang]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-30 15:59:28] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 15:59:28] INFO root fetch - processPackages [aa-charlink]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-30 15:59:28] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/7e/d6/9cab5b42a42d91870beadd1071e8974b72cae99b242509da7e3f5e358182/hcli-1.0.8.tar.gz
+[2023-04-30 15:59:28] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/7e/d6/9cab5b42a42d91870beadd1071e8974b72cae99b242509da7e3f5e358182/hcli-1.0.8.tar.gz
+[2023-04-30 15:59:28] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/7e/d6/9cab5b42a42d91870beadd1071e8974b72cae99b242509da7e3f5e358182/hcli-1.0.8.tar.gz
+[2023-04-30 15:59:28] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/7e/d6/9cab5b42a42d91870beadd1071e8974b72cae99b242509da7e3f5e358182/hcli-1.0.8.tar.gz
+[2023-04-30 15:59:28] INFO root fetch - processPackages [musiclang]: Downloading https://files.pythonhosted.org/packages/fb/a6/a87cd76c77ddcc03e230e2011ca5b799dbfdfabbef7f3e981a9e774689f5/musiclang-0.8.2.tar.gz
+[2023-04-30 15:59:28] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/d3/ed/b24b180ce68fe4a81ad6edbae7e228f211ca5bd5f4a92cbf6d7656aed10b/aa-charlink-0.2.0.tar.gz
+[2023-04-30 15:59:29] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-04-30 15:59:29] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230430/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 15:59:29] INFO root fetch - processPackages [musiclang]: Downloading https://files.pythonhosted.org/packages/60/5b/76e3e68d03c4e1e6f7b89d642ad0aec74aa79bf429bfd8a43cd41e1c67c7/musiclang-0.8.3.tar.gz
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/3f/71/077b43e086520b8178696bc3883823caf204f5770f4310ba068827b2ade0/hcli-1.0.9.tar.gz
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/3f/71/077b43e086520b8178696bc3883823caf204f5770f4310ba068827b2ade0/hcli-1.0.9.tar.gz
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/3f/71/077b43e086520b8178696bc3883823caf204f5770f4310ba068827b2ade0/hcli-1.0.9.tar.gz
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: Downloading https://files.pythonhosted.org/packages/3f/71/077b43e086520b8178696bc3883823caf204f5770f4310ba068827b2ade0/hcli-1.0.9.tar.gz
+[2023-04-30 15:59:29] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/77/ad/086ecd57d29fb2d6d76f3568829eddcd848def6f81960f15ebc2f9aed287/aa-charlink-0.3.0.tar.gz
+[2023-04-30 15:59:29] INFO root fetch - processPackages [musiclang]: executing diffoscope
+[2023-04-30 15:59:29] INFO root fetch - processPackages [musiclang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musiclang-0.8.2.tar.gz tmp/musiclang-0.8.3.tar.gz --markdown 20230430/m/musiclang/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-30 15:59:29] INFO root fetch - processPackages [aa-charlink]: executing diffoscope
+[2023-04-30 15:59:29] INFO root fetch - processPackages [aa-charlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-charlink-0.2.0.tar.gz tmp/aa-charlink-0.3.0.tar.gz --markdown 20230430/a/aa-charlink/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: executing diffoscope
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcli-1.0.8.tar.gz tmp/hcli-1.0.9.tar.gz --markdown 20230430/h/hcli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: executing diffoscope
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcli-1.0.8.tar.gz tmp/hcli-1.0.9.tar.gz --markdown 20230430/h/hcli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: executing diffoscope
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcli-1.0.8.tar.gz tmp/hcli-1.0.9.tar.gz --markdown 20230430/h/hcli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: executing diffoscope
+[2023-04-30 15:59:29] INFO root fetch - processPackages [hcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcli-1.0.8.tar.gz tmp/hcli-1.0.9.tar.gz --markdown 20230430/h/hcli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:59:30] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-04-30 15:59:30] INFO root fetch - main [MainThread]: End processing [hcli]: success
+[2023-04-30 15:59:30] INFO root fetch - main [MainThread]: End processing [hcli]: success
+[2023-04-30 15:59:30] INFO root fetch - main [MainThread]: End processing [hcli]: success
+[2023-04-30 15:59:30] INFO root fetch - main [MainThread]: End processing [hcli]: success
+[2023-04-30 15:59:31] INFO root fetch - main [MainThread]: End processing [aa-charlink]: success
+[2023-04-30 15:59:31] INFO root fetch - main [MainThread]: End processing [musiclang]: success
+[2023-04-30 15:59:31] INFO root fetch - main [MainThread]: Store serial: [17917265]
