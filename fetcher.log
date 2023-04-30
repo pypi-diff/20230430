@@ -9586,3 +9586,62 @@
 [2023-04-30 20:15:55] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
 [2023-04-30 20:15:58] INFO root fetch - main [MainThread]: End processing [netbox-topology-views]: success
 [2023-04-30 20:15:58] INFO root fetch - main [MainThread]: Store serial: [17918839]
+[2023-04-30 20:21:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918839]
+[2023-04-30 20:21:07] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-json-config
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opof-pomdp
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: assisted-service-client
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datoso-seed-translatedenglish
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: craiyon.py
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: opof-sbmp
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: injective-py
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: datoso-seed-redump
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: systems-manager
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ReverseShell
+[2023-04-30 20:21:07] WARNING root fetch - processPackages [datoso-seed-translatedenglish]: Skipping, unable to determine old version
+[2023-04-30 20:21:07] INFO root fetch - processPackages [datoso-seed-translatedenglish]: Start processing: qrmfinal-xd
+[2023-04-30 20:21:07] INFO root fetch - main [MainThread]: End processing [datoso-seed-translatedenglish] error
+[2023-04-30 20:21:07] INFO root fetch - processPackages [opof-pomdp]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-30 20:21:07] WARNING root fetch - processPackages [qrmfinal-xd]: Skipping, unable to determine old version
+[2023-04-30 20:21:07] INFO root fetch - processPackages [mo-json-config]: New version: [4.375.23120] Old Version: [4.373.23120]
+[2023-04-30 20:21:07] INFO root fetch - main [MainThread]: End processing [qrmfinal-xd] error
+[2023-04-30 20:21:07] INFO root fetch - processPackages [systems-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ReverseShell]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 20:21:07] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-04-30 20:21:07] WARNING root fetch - processPackages [datoso-seed-redump]: Skipping, unable to determine old version
+[2023-04-30 20:21:07] INFO root fetch - main [MainThread]: End processing [datoso-seed-redump] error
+[2023-04-30 20:21:07] INFO root fetch - processPackages [opof-sbmp]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-30 20:21:07] INFO root fetch - processPackages [craiyon.py]: New version: [1.0.0] Old Version: [0.3.0]
+[2023-04-30 20:21:07] INFO root fetch - processPackages [injective-py]: New version: [0.6.2.0] Old Version: [0.6.1.9]
+[2023-04-30 20:21:07] INFO root fetch - processPackages [systems-manager]: executing diffoscope
+[2023-04-30 20:21:07] INFO root fetch - processPackages [systems-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systems_manager-0.8.0-py2.py3-none-any.whl.zip tmp/systems_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20230430/s/systems-manager/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-30 20:21:07] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-04-30 20:21:07] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230430/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ReverseShell]: executing diffoscope
+[2023-04-30 20:21:07] INFO root fetch - processPackages [ReverseShell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReverseShell-0.0.1.tar.gz tmp/ReverseShell-0.0.2.tar.gz --markdown 20230430/R/ReverseShell/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 20:21:07] INFO root fetch - processPackages [mo-json-config]: Downloading https://files.pythonhosted.org/packages/0c/02/6a9d04e51dd2d0bd548aca7294650b2b9337431b8ec21086a08c8f190fa9/mo_json_config-4.375.23120-py2.py3-none-any.whl
+[2023-04-30 20:21:07] INFO root fetch - processPackages [opof-pomdp]: Downloading https://files.pythonhosted.org/packages/66/6c/fec637648af987621f80e12bc5d09221df162b1aece45825529be186ef96/opof_pomdp-0.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 20:21:08] INFO root fetch - processPackages [craiyon.py]: Downloading https://files.pythonhosted.org/packages/82/d8/d73194468d07109d209e69b74df365cfd05d12e387b624b485df7d495b62/craiyon.py-0.3.0.tar.gz
+[2023-04-30 20:21:08] INFO root fetch - processPackages [injective-py]: Downloading https://files.pythonhosted.org/packages/5d/f0/5c92aabc9102c7d4eabe9a9940d723161d677d75c8ba1e6cfe636428541b/injective-py-0.6.1.9.tar.gz
+[2023-04-30 20:21:08] INFO root fetch - processPackages [opof-sbmp]: Downloading https://files.pythonhosted.org/packages/63/2d/4a2502266b37bca05d84a9d99a71f76412b04cd53aa7691b6de4584e82b6/opof_sbmp-0.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 20:21:08] INFO root fetch - processPackages [mo-json-config]: executing diffoscope
+[2023-04-30 20:21:08] INFO root fetch - processPackages [mo-json-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_json_config-4.373.23120-py2.py3-none-any.whl.zip tmp/mo_json_config-4.375.23120-py2.py3-none-any.whl.zip --markdown 20230430/m/mo-json-config/4.373.23120-4.375.23120/diff.md --exclude *.pyd
+[2023-04-30 20:21:08] INFO root fetch - processPackages [craiyon.py]: Downloading https://files.pythonhosted.org/packages/db/82/75b60bd2fadf8a897b03d91cc5623d75359609e5252a14391a14807562a5/craiyon.py-1.0.0.tar.gz
+[2023-04-30 20:21:08] WARNING root fetch - processPackages [opof-sbmp]: Skipping package: exceeds size limit 56739969>=10485760
+[2023-04-30 20:21:08] INFO root fetch - main [MainThread]: End processing [opof-sbmp] error
+[2023-04-30 20:21:08] INFO root fetch - processPackages [injective-py]: Downloading https://files.pythonhosted.org/packages/2f/98/cf5413dc8306a654a9cdc63dd55fc0104c1d2c90af846e19a29f58d644eb/injective-py-0.6.2.0.tar.gz
+[2023-04-30 20:21:08] INFO root fetch - processPackages [craiyon.py]: executing diffoscope
+[2023-04-30 20:21:08] INFO root fetch - processPackages [craiyon.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/craiyon.py-0.3.0.tar.gz tmp/craiyon.py-1.0.0.tar.gz --markdown 20230430/c/craiyon.py/0.3.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 20:21:08] INFO root fetch - processPackages [injective-py]: executing diffoscope
+[2023-04-30 20:21:08] INFO root fetch - processPackages [injective-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/injective-py-0.6.1.9.tar.gz tmp/injective-py-0.6.2.0.tar.gz --markdown 20230430/i/injective-py/0.6.1.9-0.6.2.0/diff.md --exclude *.pyd
+[2023-04-30 20:21:08] INFO root fetch - processPackages [opof-pomdp]: Downloading https://files.pythonhosted.org/packages/ed/d2/a093089d279c4c61c3cc1d3f1408320ab29885caf9608c7b14b681b3b166/opof_pomdp-0.2.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 20:21:08] INFO root fetch - processPackages [opof-pomdp]: executing diffoscope
+[2023-04-30 20:21:08] INFO root fetch - processPackages [opof-pomdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opof_pomdp-0.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/opof_pomdp-0.2.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230430/o/opof-pomdp/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 20:21:09] INFO root fetch - main [MainThread]: End processing [systems-manager]: success
+[2023-04-30 20:21:09] INFO root fetch - main [MainThread]: End processing [ReverseShell]: success
+[2023-04-30 20:21:09] INFO root fetch - main [MainThread]: End processing [mo-json-config]: success
+[2023-04-30 20:21:09] INFO root fetch - main [MainThread]: End processing [craiyon.py]: success
+[2023-04-30 20:21:09] INFO root fetch - main [MainThread]: End processing [opof-pomdp]: success
+[2023-04-30 20:21:11] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-04-30 20:21:12] INFO root fetch - main [MainThread]: End processing [injective-py]: success
+[2023-04-30 20:21:12] INFO root fetch - main [MainThread]: Store serial: [17918876]
