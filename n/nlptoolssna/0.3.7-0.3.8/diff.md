@@ -1,0 +1,391 @@
+# Comparing `tmp/nlptoolssna-0.3.7.tar.gz` & `tmp/nlptoolssna-0.3.8.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "nlptoolssna-0.3.7.tar", last modified: Sun Apr 30 06:10:02 2023, max compression
++gzip compressed data, was "nlptoolssna-0.3.8.tar", last modified: Sun Apr 30 08:56:08 2023, max compression
+```
+
+## Comparing `nlptoolssna-0.3.7.tar` & `nlptoolssna-0.3.8.tar`
+
+### file list
+
+```diff
+@@ -1,84 +1,82 @@
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.847293 nlptoolssna-0.3.7/
+--rw-rw-rw-   0        0        0      172 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/AUTHORS.rst
+--rw-rw-rw-   0        0        0     3667 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/CONTRIBUTING.rst
+--rw-rw-rw-   0        0        0       97 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/HISTORY.rst
+--rw-rw-rw-   0        0        0     1091 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/LICENSE
+--rw-rw-rw-   0        0        0      273 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/MANIFEST.in
+--rw-rw-rw-   0        0        0     1924 2023-04-30 06:10:02.848292 nlptoolssna-0.3.7/PKG-INFO
+--rw-rw-rw-   0        0        0      951 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/README.rst
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.740569 nlptoolssna-0.3.7/docs/
+--rw-rw-rw-   0        0        0      676 2023-04-26 19:48:07.000000 nlptoolssna-0.3.7/docs/Makefile
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.703097 nlptoolssna-0.3.7/docs/build/
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.704277 nlptoolssna-0.3.7/docs/build/html/
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.743710 nlptoolssna-0.3.7/docs/build/html/_images/
+--rw-rw-rw-   0        0        0     9568 2023-04-26 20:26:03.000000 nlptoolssna-0.3.7/docs/build/html/_images/download.png
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.751781 nlptoolssna-0.3.7/docs/build/html/_static/
+--rw-rw-rw-   0        0        0     9568 2023-04-26 20:26:03.000000 nlptoolssna-0.3.7/docs/build/html/_static/download.png
+--rw-rw-rw-   0        0        0      286 2023-04-11 21:34:54.000000 nlptoolssna-0.3.7/docs/build/html/_static/file.png
+--rw-rw-rw-   0        0        0       90 2023-04-11 21:34:54.000000 nlptoolssna-0.3.7/docs/build/html/_static/minus.png
+--rw-rw-rw-   0        0        0       90 2023-04-11 21:34:54.000000 nlptoolssna-0.3.7/docs/build/html/_static/plus.png
+--rwxrwxrwx   0        0        0      791 2023-03-28 19:29:13.000000 nlptoolssna-0.3.7/docs/make.bat
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.765830 nlptoolssna-0.3.7/docs/source/
+--rw-rw-rw-   0        0        0      318 2023-04-27 09:55:38.000000 nlptoolssna-0.3.7/docs/source/DataDownload.rst
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.767831 nlptoolssna-0.3.7/docs/source/_static/
+--rw-rw-rw-   0        0        0     9568 2023-04-26 20:26:03.000000 nlptoolssna-0.3.7/docs/source/_static/download.png
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.769836 nlptoolssna-0.3.7/docs/source/api/
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.778576 nlptoolssna-0.3.7/docs/source/api/morph/
+--rw-rw-rw-   0        0        0       48 2023-04-26 20:02:35.000000 nlptoolssna-0.3.7/docs/source/api/morph/charsets.rst
+--rw-rw-rw-   0        0        0       66 2023-04-26 20:02:52.000000 nlptoolssna-0.3.7/docs/source/api/morph/lemmatizeSentence.rst
+--rw-rw-rw-   0        0        0      127 2023-04-27 18:16:11.000000 nlptoolssna-0.3.7/docs/source/api/morph/morph_tagger.rst
+--rw-rw-rw-   0        0        0       65 2023-04-26 20:03:13.000000 nlptoolssna-0.3.7/docs/source/api/morph/tokenizers_words.rst
+--rw-rw-rw-   0        0        0      280 2023-04-27 12:17:19.000000 nlptoolssna-0.3.7/docs/source/api/morph.rst
+--rw-rw-rw-   0        0        0      140 2023-04-26 20:11:06.000000 nlptoolssna-0.3.7/docs/source/api.rst
+--rw-rw-rw-   0        0        0       32 2023-04-26 19:28:12.000000 nlptoolssna-0.3.7/docs/source/authors.rst
+--rw-rw-rw-   0        0        0     6180 2023-04-27 12:10:35.000000 nlptoolssna-0.3.7/docs/source/conf.py
+--rw-rw-rw-   0        0        0      329 2023-04-27 09:52:07.000000 nlptoolssna-0.3.7/docs/source/index.rst
+--rw-rw-rw-   0        0        0     1177 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/docs/source/installation.rst
+--rw-rw-rw-   0        0        0       31 2023-04-26 19:27:50.000000 nlptoolssna-0.3.7/docs/source/readme.rst
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.784880 nlptoolssna-0.3.7/nlptools/
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.789319 nlptoolssna-0.3.7/nlptools/DataDownload/
+--rw-rw-rw-   0        0        0        0 2023-04-16 17:23:41.000000 nlptoolssna-0.3.7/nlptools/DataDownload/__init__.py
+--rw-rw-rw-   0        0        0     2527 2023-04-27 21:39:46.000000 nlptoolssna-0.3.7/nlptools/DataDownload/downloader.py
+--rw-rw-rw-   0        0        0      134 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/nlptools/__init__.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.790316 nlptoolssna-0.3.7/nlptools/arabiner/
+--rw-rw-rw-   0        0        0        0 2023-02-26 06:10:53.000000 nlptoolssna-0.3.7/nlptools/arabiner/__init__.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.794415 nlptoolssna-0.3.7/nlptools/arabiner/bin/
+--rw-rw-rw-   0        0        0        0 2023-02-26 06:10:53.000000 nlptoolssna-0.3.7/nlptools/arabiner/bin/__init__.py
+--rw-rw-rw-   0        0        0     1350 2023-04-30 05:53:08.000000 nlptoolssna-0.3.7/nlptools/arabiner/bin/infer.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.800965 nlptoolssna-0.3.7/nlptools/arabiner/utils/
+--rw-rw-rw-   0        0        0        0 2023-02-26 06:10:53.000000 nlptoolssna-0.3.7/nlptools/arabiner/utils/__init__.py
+--rw-rw-rw-   0        0        0     4220 2023-03-29 20:22:54.000000 nlptoolssna-0.3.7/nlptools/arabiner/utils/data.py
+--rw-rw-rw-   0        0        0     3676 2023-03-29 20:23:29.000000 nlptoolssna-0.3.7/nlptools/arabiner/utils/helpers.py
+--rw-rw-rw-   0        0        0      458 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/nlptools/cli.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.803634 nlptoolssna-0.3.7/nlptools/data/
+--rw-rw-rw-   0        0        0    86011 2023-04-06 09:01:12.000000 nlptoolssna-0.3.7/nlptools/data/my_data.pickle
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.807469 nlptoolssna-0.3.7/nlptools/jaccard/
+--rw-rw-rw-   0        0        0        0 2023-04-06 10:47:17.000000 nlptoolssna-0.3.7/nlptools/jaccard/__init__.py
+--rw-rw-rw-   0        0        0     7425 2023-04-18 10:15:57.000000 nlptoolssna-0.3.7/nlptools/jaccard/jaccardFunction.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.818335 nlptoolssna-0.3.7/nlptools/morph/
+--rw-rw-rw-   0        0        0        0 2023-04-15 18:29:14.000000 nlptoolssna-0.3.7/nlptools/morph/__init__.py
+--rw-rw-rw-   0        0        0     2784 2023-04-27 18:35:11.000000 nlptoolssna-0.3.7/nlptools/morph/charsets.py
+--rw-rw-rw-   0        0        0     7629 2023-04-29 19:50:22.000000 nlptoolssna-0.3.7/nlptools/morph/morph_tagger.py
+--rw-rw-rw-   0        0        0       47 2023-04-01 20:02:46.000000 nlptoolssna-0.3.7/nlptools/morph/settings.py
+--rw-rw-rw-   0        0        0      592 2023-04-15 18:51:58.000000 nlptoolssna-0.3.7/nlptools/morph/tokenizers_words.py
+--rw-rw-rw-   0        0        0       20 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/nlptools/nlptools.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.821883 nlptoolssna-0.3.7/nlptools/parse/
+--rw-rw-rw-   0        0        0        0 2023-04-11 20:45:31.000000 nlptoolssna-0.3.7/nlptools/parse/__init__.py
+--rw-rw-rw-   0        0        0     4517 2023-04-11 20:46:38.000000 nlptoolssna-0.3.7/nlptools/parse/parser.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.829839 nlptoolssna-0.3.7/nlptools/salma/
+--rw-rw-rw-   0        0        0        0 2023-04-06 11:46:10.000000 nlptoolssna-0.3.7/nlptools/salma/__init__.py
+--rw-rw-rw-   0        0        0    20593 2023-04-06 21:04:01.000000 nlptoolssna-0.3.7/nlptools/salma/implication.py
+--rw-rw-rw-   0        0        0      531 2023-04-18 21:41:47.000000 nlptoolssna-0.3.7/nlptools/salma/tokenizers_words.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.840259 nlptoolssna-0.3.7/nlptoolssna.egg-info/
+--rw-rw-rw-   0        0        0     1924 2023-04-30 06:10:02.000000 nlptoolssna-0.3.7/nlptoolssna.egg-info/PKG-INFO
+--rw-rw-rw-   0        0        0     1677 2023-04-30 06:10:02.000000 nlptoolssna-0.3.7/nlptoolssna.egg-info/SOURCES.txt
+--rw-rw-rw-   0        0        0        1 2023-04-30 06:10:02.000000 nlptoolssna-0.3.7/nlptoolssna.egg-info/dependency_links.txt
+--rw-rw-rw-   0        0        0       47 2023-04-30 06:10:02.000000 nlptoolssna-0.3.7/nlptoolssna.egg-info/entry_points.txt
+--rw-rw-rw-   0        0        0        2 2023-04-15 18:40:32.000000 nlptoolssna-0.3.7/nlptoolssna.egg-info/not-zip-safe
+--rw-rw-rw-   0        0        0      101 2023-04-30 06:10:02.000000 nlptoolssna-0.3.7/nlptoolssna.egg-info/requires.txt
+--rw-rw-rw-   0        0        0        9 2023-04-30 06:10:02.000000 nlptoolssna-0.3.7/nlptoolssna.egg-info/top_level.txt
+--rw-rw-rw-   0        0        0      586 2023-04-30 06:10:02.849913 nlptoolssna-0.3.7/setup.cfg
+--rw-rw-rw-   0        0        0     2036 2023-04-30 06:09:18.000000 nlptoolssna-0.3.7/setup.py
+-drwxrwxrwx   0        0        0        0 2023-04-30 06:10:02.846300 nlptoolssna-0.3.7/tests/
+--rw-rw-rw-   0        0        0       39 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/tests/__init__.py
+--rw-rw-rw-   0        0        0      413 2023-04-15 18:20:16.000000 nlptoolssna-0.3.7/tests/test_nlptools.py
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.128407 nlptoolssna-0.3.8/
++-rw-rw-rw-   0        0        0      172 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/AUTHORS.rst
++-rw-rw-rw-   0        0        0     3667 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/CONTRIBUTING.rst
++-rw-rw-rw-   0        0        0       97 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/HISTORY.rst
++-rw-rw-rw-   0        0        0     1091 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/LICENSE
++-rw-rw-rw-   0        0        0      273 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/MANIFEST.in
++-rw-rw-rw-   0        0        0     1924 2023-04-30 08:56:08.128407 nlptoolssna-0.3.8/PKG-INFO
++-rw-rw-rw-   0        0        0      951 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/README.rst
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:07.956007 nlptoolssna-0.3.8/docs/
++-rw-rw-rw-   0        0        0      676 2023-04-26 19:48:07.000000 nlptoolssna-0.3.8/docs/Makefile
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:07.883067 nlptoolssna-0.3.8/docs/build/
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:07.884068 nlptoolssna-0.3.8/docs/build/html/
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:07.963819 nlptoolssna-0.3.8/docs/build/html/_images/
++-rw-rw-rw-   0        0        0     9568 2023-04-26 20:26:03.000000 nlptoolssna-0.3.8/docs/build/html/_images/download.png
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:07.990052 nlptoolssna-0.3.8/docs/build/html/_static/
++-rw-rw-rw-   0        0        0     9568 2023-04-26 20:26:03.000000 nlptoolssna-0.3.8/docs/build/html/_static/download.png
++-rw-rw-rw-   0        0        0      286 2023-04-11 21:34:54.000000 nlptoolssna-0.3.8/docs/build/html/_static/file.png
++-rw-rw-rw-   0        0        0       90 2023-04-11 21:34:54.000000 nlptoolssna-0.3.8/docs/build/html/_static/minus.png
++-rw-rw-rw-   0        0        0       90 2023-04-11 21:34:54.000000 nlptoolssna-0.3.8/docs/build/html/_static/plus.png
++-rwxrwxrwx   0        0        0      791 2023-03-28 19:29:13.000000 nlptoolssna-0.3.8/docs/make.bat
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.014716 nlptoolssna-0.3.8/docs/source/
++-rw-rw-rw-   0        0        0      318 2023-04-27 09:55:38.000000 nlptoolssna-0.3.8/docs/source/DataDownload.rst
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.016717 nlptoolssna-0.3.8/docs/source/_static/
++-rw-rw-rw-   0        0        0     9568 2023-04-26 20:26:03.000000 nlptoolssna-0.3.8/docs/source/_static/download.png
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.019734 nlptoolssna-0.3.8/docs/source/api/
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.032349 nlptoolssna-0.3.8/docs/source/api/morph/
++-rw-rw-rw-   0        0        0       48 2023-04-26 20:02:35.000000 nlptoolssna-0.3.8/docs/source/api/morph/charsets.rst
++-rw-rw-rw-   0        0        0       66 2023-04-26 20:02:52.000000 nlptoolssna-0.3.8/docs/source/api/morph/lemmatizeSentence.rst
++-rw-rw-rw-   0        0        0      127 2023-04-27 18:16:11.000000 nlptoolssna-0.3.8/docs/source/api/morph/morph_tagger.rst
++-rw-rw-rw-   0        0        0       65 2023-04-26 20:03:13.000000 nlptoolssna-0.3.8/docs/source/api/morph/tokenizers_words.rst
++-rw-rw-rw-   0        0        0      280 2023-04-27 12:17:19.000000 nlptoolssna-0.3.8/docs/source/api/morph.rst
++-rw-rw-rw-   0        0        0      140 2023-04-26 20:11:06.000000 nlptoolssna-0.3.8/docs/source/api.rst
++-rw-rw-rw-   0        0        0       32 2023-04-26 19:28:12.000000 nlptoolssna-0.3.8/docs/source/authors.rst
++-rw-rw-rw-   0        0        0     6180 2023-04-27 12:10:35.000000 nlptoolssna-0.3.8/docs/source/conf.py
++-rw-rw-rw-   0        0        0      329 2023-04-27 09:52:07.000000 nlptoolssna-0.3.8/docs/source/index.rst
++-rw-rw-rw-   0        0        0     1177 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/docs/source/installation.rst
++-rw-rw-rw-   0        0        0       31 2023-04-26 19:27:50.000000 nlptoolssna-0.3.8/docs/source/readme.rst
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.041064 nlptoolssna-0.3.8/nlptools/
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.047753 nlptoolssna-0.3.8/nlptools/DataDownload/
++-rw-rw-rw-   0        0        0        0 2023-04-16 17:23:41.000000 nlptoolssna-0.3.8/nlptools/DataDownload/__init__.py
++-rw-rw-rw-   0        0        0     2527 2023-04-27 21:39:46.000000 nlptoolssna-0.3.8/nlptools/DataDownload/downloader.py
++-rw-rw-rw-   0        0        0      134 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/nlptools/__init__.py
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.067569 nlptoolssna-0.3.8/nlptools/arabiner/
++-rw-rw-rw-   0        0        0        0 2023-02-26 06:10:53.000000 nlptoolssna-0.3.8/nlptools/arabiner/__init__.py
++-rw-rw-rw-   0        0        0     4227 2023-04-30 06:31:38.000000 nlptoolssna-0.3.8/nlptools/arabiner/data.py
++-rw-rw-rw-   0        0        0     5061 2023-04-30 06:31:27.000000 nlptoolssna-0.3.8/nlptools/arabiner/datasets.py
++-rw-rw-rw-   0        0        0     3676 2023-03-29 20:23:29.000000 nlptoolssna-0.3.8/nlptools/arabiner/helpers.py
++-rw-rw-rw-   0        0        0     1365 2023-04-30 06:28:09.000000 nlptoolssna-0.3.8/nlptools/arabiner/infer.py
++-rw-rw-rw-   0        0        0     5092 2023-04-30 06:31:23.000000 nlptoolssna-0.3.8/nlptools/arabiner/transforms.py
++-rw-rw-rw-   0        0        0      458 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/nlptools/cli.py
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.070520 nlptoolssna-0.3.8/nlptools/data/
++-rw-rw-rw-   0        0        0    86011 2023-04-06 09:01:12.000000 nlptoolssna-0.3.8/nlptools/data/my_data.pickle
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.077705 nlptoolssna-0.3.8/nlptools/jaccard/
++-rw-rw-rw-   0        0        0        0 2023-04-06 10:47:17.000000 nlptoolssna-0.3.8/nlptools/jaccard/__init__.py
++-rw-rw-rw-   0        0        0     7425 2023-04-18 10:15:57.000000 nlptoolssna-0.3.8/nlptools/jaccard/jaccardFunction.py
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.091303 nlptoolssna-0.3.8/nlptools/morph/
++-rw-rw-rw-   0        0        0        0 2023-04-15 18:29:14.000000 nlptoolssna-0.3.8/nlptools/morph/__init__.py
++-rw-rw-rw-   0        0        0     2784 2023-04-27 18:35:11.000000 nlptoolssna-0.3.8/nlptools/morph/charsets.py
++-rw-rw-rw-   0        0        0     7629 2023-04-29 19:50:22.000000 nlptoolssna-0.3.8/nlptools/morph/morph_tagger.py
++-rw-rw-rw-   0        0        0       47 2023-04-01 20:02:46.000000 nlptoolssna-0.3.8/nlptools/morph/settings.py
++-rw-rw-rw-   0        0        0      592 2023-04-15 18:51:58.000000 nlptoolssna-0.3.8/nlptools/morph/tokenizers_words.py
++-rw-rw-rw-   0        0        0       20 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/nlptools/nlptools.py
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.096828 nlptoolssna-0.3.8/nlptools/parse/
++-rw-rw-rw-   0        0        0        0 2023-04-11 20:45:31.000000 nlptoolssna-0.3.8/nlptools/parse/__init__.py
++-rw-rw-rw-   0        0        0     4517 2023-04-11 20:46:38.000000 nlptoolssna-0.3.8/nlptools/parse/parser.py
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.104830 nlptoolssna-0.3.8/nlptools/salma/
++-rw-rw-rw-   0        0        0        0 2023-04-06 11:46:10.000000 nlptoolssna-0.3.8/nlptools/salma/__init__.py
++-rw-rw-rw-   0        0        0    20593 2023-04-06 21:04:01.000000 nlptoolssna-0.3.8/nlptools/salma/implication.py
++-rw-rw-rw-   0        0        0      531 2023-04-18 21:41:47.000000 nlptoolssna-0.3.8/nlptools/salma/tokenizers_words.py
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.119333 nlptoolssna-0.3.8/nlptoolssna.egg-info/
++-rw-rw-rw-   0        0        0     1924 2023-04-30 08:56:07.000000 nlptoolssna-0.3.8/nlptoolssna.egg-info/PKG-INFO
++-rw-rw-rw-   0        0        0     1653 2023-04-30 08:56:07.000000 nlptoolssna-0.3.8/nlptoolssna.egg-info/SOURCES.txt
++-rw-rw-rw-   0        0        0        1 2023-04-30 08:56:07.000000 nlptoolssna-0.3.8/nlptoolssna.egg-info/dependency_links.txt
++-rw-rw-rw-   0        0        0       47 2023-04-30 08:56:07.000000 nlptoolssna-0.3.8/nlptoolssna.egg-info/entry_points.txt
++-rw-rw-rw-   0        0        0        2 2023-04-15 18:40:32.000000 nlptoolssna-0.3.8/nlptoolssna.egg-info/not-zip-safe
++-rw-rw-rw-   0        0        0      101 2023-04-30 08:56:07.000000 nlptoolssna-0.3.8/nlptoolssna.egg-info/requires.txt
++-rw-rw-rw-   0        0        0        9 2023-04-30 08:56:07.000000 nlptoolssna-0.3.8/nlptoolssna.egg-info/top_level.txt
++-rw-rw-rw-   0        0        0      586 2023-04-30 08:56:08.130411 nlptoolssna-0.3.8/setup.cfg
++-rw-rw-rw-   0        0        0     2036 2023-04-30 06:09:18.000000 nlptoolssna-0.3.8/setup.py
++drwxrwxrwx   0        0        0        0 2023-04-30 08:56:08.127409 nlptoolssna-0.3.8/tests/
++-rw-rw-rw-   0        0        0       39 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/tests/__init__.py
++-rw-rw-rw-   0        0        0      413 2023-04-15 18:20:16.000000 nlptoolssna-0.3.8/tests/test_nlptools.py
+```
+
+### Comparing `nlptoolssna-0.3.7/CONTRIBUTING.rst` & `nlptoolssna-0.3.8/CONTRIBUTING.rst`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/LICENSE` & `nlptoolssna-0.3.8/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/PKG-INFO` & `nlptoolssna-0.3.8/PKG-INFO`
+
+ * *Files 4% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: nlptoolssna
+-Version: 0.3.7
++Version: 0.3.8
+ Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+ Home-page: https://github.com/eng-aomar/nlptools
+ Author: Alaa' Omar
+ Author-email: alaa.omer2009@gmail.com
+ License: MIT license
+ Keywords: nlptools
+ Classifier: Development Status :: 2 - Pre-Alpha
+```
+
+### Comparing `nlptoolssna-0.3.7/README.rst` & `nlptoolssna-0.3.8/README.rst`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/docs/Makefile` & `nlptoolssna-0.3.8/docs/Makefile`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/docs/build/html/_images/download.png` & `nlptoolssna-0.3.8/docs/build/html/_images/download.png`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/docs/build/html/_static/download.png` & `nlptoolssna-0.3.8/docs/build/html/_static/download.png`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/docs/make.bat` & `nlptoolssna-0.3.8/docs/make.bat`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/docs/source/_static/download.png` & `nlptoolssna-0.3.8/docs/source/_static/download.png`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/docs/source/conf.py` & `nlptoolssna-0.3.8/docs/source/conf.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/docs/source/installation.rst` & `nlptoolssna-0.3.8/docs/source/installation.rst`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/DataDownload/downloader.py` & `nlptoolssna-0.3.8/nlptools/DataDownload/downloader.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/arabiner/bin/infer.py` & `nlptoolssna-0.3.8/nlptools/arabiner/infer.py`
+
+ * *Files 18% similar despite different names*
+
+```diff
+@@ -1,13 +1,13 @@
+ import logging
+ # import argparse
+ from collections import namedtuple
+-from arabiner.utils.helpers import load_checkpoint
+-from arabiner.utils.data import get_dataloaders, text2segments
+-from DataDownload import downloader
++from nlptools.arabiner.helpers import load_checkpoint
++from nlptools.arabiner.data import get_dataloaders, text2segments
++from nlptools.DataDownload import downloader
+ import os
+ logger = logging.getLogger(__name__)
+ 
+ 
+ 
+ def ner(text, model_path, batch_size=32):
+     # Load tagger
+```
+
+### Comparing `nlptoolssna-0.3.7/nlptools/arabiner/utils/data.py` & `nlptoolssna-0.3.8/nlptools/arabiner/data.py`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,15 +1,15 @@
+ from torch.utils.data import DataLoader
+ from torchtext.vocab import vocab
+ from collections import Counter, namedtuple
+ import logging
+ import re
+ #import itertools
+-from arabiner.utils.helpers import load_object
+-from arabiner.data.datasets import Token
++from nlptools.arabiner.helpers import load_object
++from nlptools.arabiner.datasets import Token
+ 
+ logger = logging.getLogger(__name__)
+ 
+ 
+ # def conll_to_segments(filename):
+ #     """
+ #     Convert CoNLL files to segments. This return list of segments and each segment is
+```
+
+### Comparing `nlptoolssna-0.3.7/nlptools/arabiner/utils/helpers.py` & `nlptoolssna-0.3.8/nlptools/arabiner/helpers.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/data/my_data.pickle` & `nlptoolssna-0.3.8/nlptools/data/my_data.pickle`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/jaccard/jaccardFunction.py` & `nlptoolssna-0.3.8/nlptools/jaccard/jaccardFunction.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/morph/charsets.py` & `nlptoolssna-0.3.8/nlptools/morph/charsets.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/morph/morph_tagger.py` & `nlptoolssna-0.3.8/nlptools/morph/morph_tagger.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/morph/tokenizers_words.py` & `nlptoolssna-0.3.8/nlptools/morph/tokenizers_words.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/parse/parser.py` & `nlptoolssna-0.3.8/nlptools/parse/parser.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/salma/implication.py` & `nlptoolssna-0.3.8/nlptools/salma/implication.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptools/salma/tokenizers_words.py` & `nlptoolssna-0.3.8/nlptools/salma/tokenizers_words.py`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/nlptoolssna.egg-info/PKG-INFO` & `nlptoolssna-0.3.8/nlptoolssna.egg-info/PKG-INFO`
+
+ * *Files 4% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: nlptoolssna
+-Version: 0.3.7
++Version: 0.3.8
+ Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+ Home-page: https://github.com/eng-aomar/nlptools
+ Author: Alaa' Omar
+ Author-email: alaa.omer2009@gmail.com
+ License: MIT license
+ Keywords: nlptools
+ Classifier: Development Status :: 2 - Pre-Alpha
+```
+
+### Comparing `nlptoolssna-0.3.7/nlptoolssna.egg-info/SOURCES.txt` & `nlptoolssna-0.3.8/nlptoolssna.egg-info/SOURCES.txt`
+
+ * *Files 7% similar despite different names*
+
+```diff
+@@ -28,19 +28,19 @@
+ docs/source/api/morph/tokenizers_words.rst
+ nlptools/__init__.py
+ nlptools/cli.py
+ nlptools/nlptools.py
+ nlptools/DataDownload/__init__.py
+ nlptools/DataDownload/downloader.py
+ nlptools/arabiner/__init__.py
+-nlptools/arabiner/bin/__init__.py
+-nlptools/arabiner/bin/infer.py
+-nlptools/arabiner/utils/__init__.py
+-nlptools/arabiner/utils/data.py
+-nlptools/arabiner/utils/helpers.py
++nlptools/arabiner/data.py
++nlptools/arabiner/datasets.py
++nlptools/arabiner/helpers.py
++nlptools/arabiner/infer.py
++nlptools/arabiner/transforms.py
+ nlptools/data/my_data.pickle
+ nlptools/jaccard/__init__.py
+ nlptools/jaccard/jaccardFunction.py
+ nlptools/morph/__init__.py
+ nlptools/morph/charsets.py
+ nlptools/morph/morph_tagger.py
+ nlptools/morph/settings.py
+```
+
+### Comparing `nlptoolssna-0.3.7/setup.cfg` & `nlptoolssna-0.3.8/setup.cfg`
+
+ * *Files identical despite different names*
+
+### Comparing `nlptoolssna-0.3.7/setup.py` & `nlptoolssna-0.3.8/setup.py`
+
+ * *Files identical despite different names*
+

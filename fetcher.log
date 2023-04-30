@@ -4653,3 +4653,34 @@
 [2023-04-30 10:54:11] INFO root fetch - main [MainThread]: End processing [allianceauth-graphql]: success
 [2023-04-30 10:54:12] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
 [2023-04-30 10:54:12] INFO root fetch - main [MainThread]: Store serial: [17915608]
+[2023-04-30 10:59:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915608]
+[2023-04-30 10:59:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 10:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overloaded-iterables
+[2023-04-30 10:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scikit-mol
+[2023-04-30 10:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nlptoolssna
+[2023-04-30 10:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CVAugmentor
+[2023-04-30 10:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chitose
+[2023-04-30 10:59:21] INFO root fetch - processPackages [CVAugmentor]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 10:59:21] INFO root fetch - processPackages [scikit-mol]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-30 10:59:21] INFO root fetch - processPackages [overloaded-iterables]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-30 10:59:21] INFO root fetch - processPackages [nlptoolssna]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-30 10:59:21] WARNING root fetch - processPackages [chitose]: Skipping, unable to determine old version
+[2023-04-30 10:59:21] INFO root fetch - main [MainThread]: End processing [chitose] error
+[2023-04-30 10:59:21] INFO root fetch - processPackages [scikit-mol]: Downloading https://files.pythonhosted.org/packages/96/d1/073a76a399197e9199a5161a883d322bcf3481c047d5c4769d0dca87d44a/scikit_mol-0.1.2.tar.gz
+[2023-04-30 10:59:21] INFO root fetch - processPackages [CVAugmentor]: Downloading https://files.pythonhosted.org/packages/1d/07/0aa53fa98ab32eb54f65c7edda8090324c2571eeeaf29801537bd1e5d715/CVAugmentor-1.0.1.tar.gz
+[2023-04-30 10:59:21] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/a9/7c/b9335f0f6919c3d4dcdaa3f493c26770a033da5d091573c1e6e033a23462/nlptoolssna-0.3.8.tar.gz
+[2023-04-30 10:59:21] INFO root fetch - processPackages [overloaded-iterables]: Downloading https://files.pythonhosted.org/packages/01/04/328caa2b2597b4dce59726b7a663f7d83e5d7c1304607f8d19ab2c06c81c/overloaded-iterables-0.5.4.tar.gz
+[2023-04-30 10:59:21] INFO root fetch - processPackages [CVAugmentor]: executing diffoscope
+[2023-04-30 10:59:21] INFO root fetch - processPackages [CVAugmentor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CVAugmentor-1.0.0.tar.gz tmp/CVAugmentor-1.0.1.tar.gz --markdown 20230430/C/CVAugmentor/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 10:59:21] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-04-30 10:59:21] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.3.7.tar.gz tmp/nlptoolssna-0.3.8.tar.gz --markdown 20230430/n/nlptoolssna/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-30 10:59:21] INFO root fetch - processPackages [overloaded-iterables]: executing diffoscope
+[2023-04-30 10:59:21] INFO root fetch - processPackages [overloaded-iterables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overloaded-iterables-0.5.3.tar.gz tmp/overloaded-iterables-0.5.4.tar.gz --markdown 20230430/o/overloaded-iterables/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-30 10:59:21] INFO root fetch - processPackages [scikit-mol]: Downloading https://files.pythonhosted.org/packages/d5/f7/ce58c818a75980a20dbb412a20d62e02ed40aa0da7d285b5173d5158ecde/scikit_mol-0.2.0.tar.gz
+[2023-04-30 10:59:22] INFO root fetch - processPackages [scikit-mol]: executing diffoscope
+[2023-04-30 10:59:22] INFO root fetch - processPackages [scikit-mol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_mol-0.1.2.tar.gz tmp/scikit_mol-0.2.0.tar.gz --markdown 20230430/s/scikit-mol/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 10:59:22] INFO root fetch - main [MainThread]: End processing [CVAugmentor]: success
+[2023-04-30 10:59:22] INFO root fetch - main [MainThread]: End processing [overloaded-iterables]: success
+[2023-04-30 10:59:22] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-04-30 10:59:23] INFO root fetch - main [MainThread]: End processing [scikit-mol]: success
+[2023-04-30 10:59:23] INFO root fetch - main [MainThread]: Store serial: [17915626]
