@@ -10920,3 +10920,29 @@
 [2023-04-30 22:55:07] INFO root fetch - processPackages [griptape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape-0.6.1.tar.gz tmp/griptape-0.7.0.tar.gz --markdown 20230430/g/griptape/0.6.1-0.7.0/diff.md --exclude *.pyd
 [2023-04-30 22:55:09] INFO root fetch - main [MainThread]: End processing [griptape]: success
 [2023-04-30 22:55:09] INFO root fetch - main [MainThread]: Store serial: [17919989]
+[2023-04-30 23:00:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919989]
+[2023-04-30 23:00:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-30 23:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edge-tts
+[2023-04-30 23:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: findmyorder
+[2023-04-30 23:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chemotools
+[2023-04-30 23:00:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DinoHash
+[2023-04-30 23:00:18] INFO root fetch - processPackages [DinoHash]: New version: [0.2] Old Version: [0.1]
+[2023-04-30 23:00:18] INFO root fetch - processPackages [edge-tts]: New version: [6.1.5] Old Version: [6.1.4]
+[2023-04-30 23:00:18] INFO root fetch - processPackages [findmyorder]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 23:00:18] INFO root fetch - processPackages [chemotools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 23:00:18] INFO root fetch - processPackages [DinoHash]: Downloading https://files.pythonhosted.org/packages/92/b9/c152391d0000f8a32f7594babcbf258887aa7e3700ef205e10405f573278/DinoHash-0.1-py3-none-any.whl
+[2023-04-30 23:00:18] INFO root fetch - processPackages [edge-tts]: Downloading https://files.pythonhosted.org/packages/57/9b/c210806c9179e366254840014cd339e8f84453d7d562c9c9299635ecd043/edge-tts-6.1.5.tar.gz
+[2023-04-30 23:00:18] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-30 23:00:18] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.0.8.tar.gz tmp/findmyorder-1.0.9.tar.gz --markdown 20230430/f/findmyorder/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:00:18] INFO root fetch - processPackages [edge-tts]: executing diffoscope
+[2023-04-30 23:00:18] INFO root fetch - processPackages [edge-tts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge-tts-6.1.4.tar.gz tmp/edge-tts-6.1.5.tar.gz --markdown 20230430/e/edge-tts/6.1.4-6.1.5/diff.md --exclude *.pyd
+[2023-04-30 23:00:18] INFO root fetch - processPackages [chemotools]: executing diffoscope
+[2023-04-30 23:00:19] INFO root fetch - processPackages [chemotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemotools-0.0.8.tar.gz tmp/chemotools-0.0.9.tar.gz --markdown 20230430/c/chemotools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:00:19] INFO root fetch - processPackages [DinoHash]: Downloading https://files.pythonhosted.org/packages/f9/c8/0c61511efc23d8849fde0055b3629535f2e9be8e62da2a57858c9bb7d7b8/DinoHash-0.2-py3-none-any.whl
+[2023-04-30 23:00:19] INFO root fetch - processPackages [DinoHash]: executing diffoscope
+[2023-04-30 23:00:19] INFO root fetch - processPackages [DinoHash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DinoHash-0.1-py3-none-any.whl.zip tmp/DinoHash-0.2-py3-none-any.whl.zip --markdown 20230430/D/DinoHash/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-30 23:00:19] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-30 23:00:19] INFO root fetch - main [MainThread]: End processing [DinoHash]: success
+[2023-04-30 23:00:20] INFO root fetch - main [MainThread]: End processing [chemotools]: success
+[2023-04-30 23:00:20] INFO root fetch - main [MainThread]: End processing [edge-tts]: success
+[2023-04-30 23:00:20] INFO root fetch - main [MainThread]: Store serial: [17920000]
