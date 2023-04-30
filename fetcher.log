@@ -9285,3 +9285,53 @@
 [2023-04-30 19:49:27] INFO root fetch - main [MainThread]: End processing [translators]: success
 [2023-04-30 19:49:47] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-04-30 19:49:47] INFO root fetch - main [MainThread]: Store serial: [17918659]
+[2023-04-30 19:54:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918659]
+[2023-04-30 19:54:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geotoolkit
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lpython-emulation
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoadd-bindir
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kirbyverysimplepackage
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: amlctor
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: IPFS-Toolkit
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ManimPango
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cli-command-parser
+[2023-04-30 19:54:57] INFO root fetch - processPackages [geotoolkit]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-30 19:54:57] INFO root fetch - processPackages [IPFS-Toolkit]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-30 19:54:57] INFO root fetch - processPackages [lpython-emulation]: New version: [0.0.1.5] Old Version: [0.0.1.4]
+[2023-04-30 19:54:57] WARNING root fetch - processPackages [kirbyverysimplepackage]: Skipping, unable to determine old version
+[2023-04-30 19:54:57] INFO root fetch - processPackages [amlctor]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 19:54:57] INFO root fetch - main [MainThread]: End processing [kirbyverysimplepackage] error
+[2023-04-30 19:54:57] INFO root fetch - processPackages [autoadd-bindir]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-30 19:54:57] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ManimPango]: New version: [1.0.0a2] Old Version: [1.0.0a1]
+[2023-04-30 19:54:57] INFO root fetch - processPackages [geotoolkit]: Downloading https://files.pythonhosted.org/packages/6e/e1/3fd940cc5dd4c1363c014e6808f3f865618c5279beef6a0cf368621aa211/geotoolkit-0.2.0.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [lpython-emulation]: Downloading https://files.pythonhosted.org/packages/0f/c4/bbe46df431b4d4e79e38c1bdb751a09a3531355fb88cd7d1f73491796343/lpython_emulation-0.0.1.5.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [autoadd-bindir]: Downloading https://files.pythonhosted.org/packages/4d/da/09cfca24a1a59054290bd94893cf3fd1c00071d888a201ba1fa45ddecb7c/autoadd_bindir-1.0.5.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [amlctor]: Downloading https://files.pythonhosted.org/packages/49/ce/4fb3dd82edde338df557ee4e61acb0432d2381dd12d425836b105d7cb312/amlctor-0.0.1.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [lpython-emulation]: executing diffoscope
+[2023-04-30 19:54:57] INFO root fetch - processPackages [lpython-emulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpython_emulation-0.0.1.4.tar.gz tmp/lpython_emulation-0.0.1.5.tar.gz --markdown 20230430/l/lpython-emulation/0.0.1.4-0.0.1.5/diff.md --exclude *.pyd
+[2023-04-30 19:54:57] INFO root fetch - processPackages [IPFS-Toolkit]: Downloading https://files.pythonhosted.org/packages/e0/2f/6498cf2b01bb94984e150d37c3bc0cca4440e2b0f42fe5db530b63759bac/IPFS-Toolkit-0.5.6.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-04-30 19:54:57] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.4.7.tar.gz tmp/cli_command_parser-2023.4.8.tar.gz --markdown 20230430/c/cli-command-parser/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ManimPango]: Downloading https://files.pythonhosted.org/packages/ab/2a/67188b9630bdb49fa2b1f2cad7f6393d98783b9adcdd98290f7e10960248/ManimPango-1.0.0a2.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [geotoolkit]: Downloading https://files.pythonhosted.org/packages/20/d4/acd4c3cfb752c8f4ec821e47f2fdd8c0eb76b67c98fecd3aa3e510e3e2b4/geotoolkit-0.2.1.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [IPFS-Toolkit]: executing diffoscope
+[2023-04-30 19:54:57] INFO root fetch - processPackages [IPFS-Toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IPFS-Toolkit-0.5.5.tar.gz tmp/IPFS-Toolkit-0.5.6.tar.gz --markdown 20230430/I/IPFS-Toolkit/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-04-30 19:54:57] INFO root fetch - processPackages [autoadd-bindir]: Downloading https://files.pythonhosted.org/packages/3b/cb/4782b080c26098002ebbb0398d565d39252bde5cc933ad947dfdb5a6e4ae/autoadd_bindir-1.0.6.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [amlctor]: Downloading https://files.pythonhosted.org/packages/ba/db/5445c839e637aa83e1faa7319bb318ea9280688191ebda02d471e909681b/amlctor-0.0.2.tar.gz
+[2023-04-30 19:54:57] INFO root fetch - processPackages [geotoolkit]: executing diffoscope
+[2023-04-30 19:54:57] INFO root fetch - processPackages [geotoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geotoolkit-0.2.0.tar.gz tmp/geotoolkit-0.2.1.tar.gz --markdown 20230430/g/geotoolkit/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ManimPango]: executing diffoscope
+[2023-04-30 19:54:57] INFO root fetch - processPackages [ManimPango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ManimPango-1.0.0a1.tar.gz tmp/ManimPango-1.0.0a2.tar.gz --markdown 20230430/M/ManimPango/1.0.0a1-1.0.0a2/diff.md --exclude *.pyd
+[2023-04-30 19:54:57] INFO root fetch - processPackages [autoadd-bindir]: executing diffoscope
+[2023-04-30 19:54:57] INFO root fetch - processPackages [autoadd-bindir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoadd_bindir-1.0.5.tar.gz tmp/autoadd_bindir-1.0.6.tar.gz --markdown 20230430/a/autoadd-bindir/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-30 19:54:57] INFO root fetch - processPackages [amlctor]: executing diffoscope
+[2023-04-30 19:54:57] INFO root fetch - processPackages [amlctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amlctor-0.0.1.tar.gz tmp/amlctor-0.0.2.tar.gz --markdown 20230430/a/amlctor/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 19:54:58] INFO root fetch - main [MainThread]: End processing [lpython-emulation]: success
+[2023-04-30 19:54:58] INFO root fetch - main [MainThread]: End processing [geotoolkit]: success
+[2023-04-30 19:54:58] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-04-30 19:54:59] INFO root fetch - main [MainThread]: End processing [autoadd-bindir]: success
+[2023-04-30 19:54:59] INFO root fetch - main [MainThread]: End processing [amlctor]: success
+[2023-04-30 19:54:59] INFO root fetch - main [MainThread]: End processing [ManimPango]: success
+[2023-04-30 19:55:00] INFO root fetch - main [MainThread]: End processing [IPFS-Toolkit]: success
+[2023-04-30 19:55:00] INFO root fetch - main [MainThread]: Store serial: [17918683]
