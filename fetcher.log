@@ -8804,3 +8804,31 @@
 [2023-04-30 18:50:47] INFO root fetch - main [MainThread]: End processing [pddl-plus-parser]: success
 [2023-04-30 18:50:48] INFO root fetch - main [MainThread]: End processing [pddl-plus-parser]: success
 [2023-04-30 18:50:48] INFO root fetch - main [MainThread]: Store serial: [17918254]
+[2023-04-30 18:55:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918254]
+[2023-04-30 18:55:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 18:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superpowered-sdk
+[2023-04-30 18:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pythoncryptv10
+[2023-04-30 18:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: goodmodslab-api
+[2023-04-30 18:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycryptv7
+[2023-04-30 18:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiogram-ext
+[2023-04-30 18:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: superpowered-sdk
+[2023-04-30 18:55:57] INFO root fetch - processPackages [superpowered-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 18:55:57] INFO root fetch - processPackages [aiogram-ext]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-30 18:55:57] INFO root fetch - processPackages [superpowered-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 18:55:57] WARNING root fetch - processPackages [goodmodslab-api]: Skipping, unable to determine old version
+[2023-04-30 18:55:57] INFO root fetch - main [MainThread]: End processing [goodmodslab-api] error
+[2023-04-30 18:55:57] WARNING root fetch - processPackages [pythoncryptv10]: Skipping, unable to determine old version
+[2023-04-30 18:55:57] INFO root fetch - main [MainThread]: End processing [pythoncryptv10] error
+[2023-04-30 18:55:57] WARNING root fetch - processPackages [pycryptv7]: Skipping, unable to determine old version
+[2023-04-30 18:55:57] INFO root fetch - main [MainThread]: End processing [pycryptv7] error
+[2023-04-30 18:55:57] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/4e/d2/9d34ac191f1d63ef7f181675581db205917d58bd9aded3c5b3010b30baa4/aiogram-ext-0.5.2.tar.gz
+[2023-04-30 18:55:58] INFO root fetch - processPackages [superpowered-sdk]: executing diffoscope
+[2023-04-30 18:55:58] INFO root fetch - processPackages [superpowered-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superpowered-sdk-0.0.8.tar.gz tmp/superpowered-sdk-0.0.9.tar.gz --markdown 20230430/s/superpowered-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 18:55:58] INFO root fetch - processPackages [superpowered-sdk]: executing diffoscope
+[2023-04-30 18:55:58] INFO root fetch - processPackages [superpowered-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superpowered-sdk-0.0.8.tar.gz tmp/superpowered-sdk-0.0.9.tar.gz --markdown 20230430/s/superpowered-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 18:55:58] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-30 18:55:58] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.5.1.tar.gz tmp/aiogram-ext-0.5.2.tar.gz --markdown 20230430/a/aiogram-ext/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-30 18:55:59] INFO root fetch - main [MainThread]: End processing [superpowered-sdk]: success
+[2023-04-30 18:55:59] INFO root fetch - main [MainThread]: End processing [superpowered-sdk]: success
+[2023-04-30 18:55:59] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-30 18:55:59] INFO root fetch - main [MainThread]: Store serial: [17918280]
