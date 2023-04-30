@@ -4834,3 +4834,69 @@
 [2023-04-30 11:20:10] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
 [2023-04-30 11:20:10] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-04-30 11:20:10] INFO root fetch - main [MainThread]: Store serial: [17915710]
+[2023-04-30 11:25:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915710]
+[2023-04-30 11:25:18] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tegda
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dirigera
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfed
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spPersist
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simc-support
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: malariagen
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: overloaded-iterables
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tbp-nightly
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: UzbekTagger
+[2023-04-30 11:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: absl-extra
+[2023-04-30 11:25:18] INFO root fetch - processPackages [dirigera]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 11:25:18] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 11:25:18] WARNING root fetch - processPackages [spPersist]: Skipping, unable to determine old version
+[2023-04-30 11:25:18] INFO root fetch - processPackages [tegda]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 11:25:18] INFO root fetch - processPackages [spPersist]: Start processing: sqlite-database
+[2023-04-30 11:25:18] INFO root fetch - main [MainThread]: End processing [spPersist] error
+[2023-04-30 11:25:18] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2023-04-30 11:25:18] INFO root fetch - processPackages [overloaded-iterables]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-30 11:25:19] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-30 11:25:19] INFO root fetch - processPackages [overloaded-iterables]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [overloaded-iterables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overloaded-iterables-0.5.3.tar.gz tmp/overloaded-iterables-0.5.4.tar.gz --markdown 20230430/o/overloaded-iterables/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] WARNING root fetch - processPackages [malariagen]: Skipping, unable to determine old version
+[2023-04-30 11:25:19] INFO root fetch - processPackages [UzbekTagger]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 11:25:19] INFO root fetch - processPackages [malariagen]: Start processing: aligned-text-table
+[2023-04-30 11:25:19] INFO root fetch - main [MainThread]: End processing [malariagen] error
+[2023-04-30 11:25:19] INFO root fetch - processPackages [absl-extra]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 11:25:19] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20230430/s/simc-support/9.2.5.2-9.2.5.3/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230430/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] INFO root fetch - processPackages [sqlite-database]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-30 11:25:19] INFO root fetch - processPackages [aligned-text-table]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-30 11:25:19] INFO root fetch - processPackages [tegda]: Downloading https://files.pythonhosted.org/packages/06/20/c7094fb8841f4a11d74f26b50aede00b75512ee7fcc81c76fba70bbea237/tegda-0.1.4.tar.gz
+[2023-04-30 11:25:19] INFO root fetch - processPackages [UzbekTagger]: Downloading https://files.pythonhosted.org/packages/4c/ba/6738db0055ad7326fc6dec03d302743eedcee12624d3b02afa824d60c260/UzbekTagger-0.0.4.tar.gz
+[2023-04-30 11:25:19] INFO root fetch - processPackages [dirigera]: Downloading https://files.pythonhosted.org/packages/08/f8/b3da15121a46ea6f63b18e6917430480b49c7b25a08c333e88f4648db330/dirigera-0.1.5.tar.gz
+[2023-04-30 11:25:19] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] INFO root fetch - processPackages [tegda]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [tegda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tegda-0.1.3.tar.gz tmp/tegda-0.1.4.tar.gz --markdown 20230430/t/tegda/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] INFO root fetch - processPackages [dirigera]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [absl-extra]: Downloading https://files.pythonhosted.org/packages/66/83/c728f0a3ee3944f1202dcc15c397cd66bab405c3909d9465cbfc5d0b4da9/absl_extra-0.0.6.tar.gz
+[2023-04-30 11:25:19] INFO root fetch - processPackages [dirigera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dirigera-0.1.4.tar.gz tmp/dirigera-0.1.5.tar.gz --markdown 20230430/d/dirigera/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] INFO root fetch - processPackages [sqlite-database]: Downloading https://files.pythonhosted.org/packages/0d/56/15a1cfe65d0171f063a51c4fb34eba79da8f081da199e899e2135cbd2921/sqlite_database-0.3.0.tar.gz
+[2023-04-30 11:25:19] INFO root fetch - processPackages [absl-extra]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [absl-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/absl_extra-0.0.5.tar.gz tmp/absl_extra-0.0.6.tar.gz --markdown 20230430/a/absl-extra/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] INFO root fetch - processPackages [aligned-text-table]: Downloading https://files.pythonhosted.org/packages/d2/59/fe8fb0b8b9a2157033cbcb2aed3720f9b9978f1c97b8af053c1938dee899/aligned_text_table-0.3.0.tar.gz
+[2023-04-30 11:25:19] INFO root fetch - processPackages [sqlite-database]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [sqlite-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_database-0.2.1.tar.gz tmp/sqlite_database-0.3.0.tar.gz --markdown 20230430/s/sqlite-database/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] INFO root fetch - processPackages [UzbekTagger]: Downloading https://files.pythonhosted.org/packages/9a/4f/01fc88864c94adcfffce03781f577a5d5e16f7d86cf864bbec8a0c34d45d/UzbekTagger-0.0.5.tar.gz
+[2023-04-30 11:25:19] INFO root fetch - processPackages [aligned-text-table]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [aligned-text-table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aligned_text_table-0.2.0.tar.gz tmp/aligned_text_table-0.3.0.tar.gz --markdown 20230430/a/aligned-text-table/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 11:25:19] INFO root fetch - processPackages [UzbekTagger]: executing diffoscope
+[2023-04-30 11:25:19] INFO root fetch - processPackages [UzbekTagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UzbekTagger-0.0.4.tar.gz tmp/UzbekTagger-0.0.5.tar.gz --markdown 20230430/U/UzbekTagger/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 11:25:20] INFO root fetch - main [MainThread]: End processing [overloaded-iterables]: success
+[2023-04-30 11:25:20] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 11:25:20] INFO root fetch - main [MainThread]: End processing [tegda]: success
+[2023-04-30 11:25:20] INFO root fetch - main [MainThread]: End processing [absl-extra]: success
+[2023-04-30 11:25:21] INFO root fetch - main [MainThread]: End processing [aligned-text-table]: success
+[2023-04-30 11:25:21] INFO root fetch - main [MainThread]: End processing [dirigera]: success
+[2023-04-30 11:25:21] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2023-04-30 11:25:22] INFO root fetch - main [MainThread]: End processing [sqlite-database]: success
+[2023-04-30 11:25:22] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-04-30 11:25:43] INFO root fetch - main [MainThread]: End processing [UzbekTagger]: success
+[2023-04-30 11:25:43] INFO root fetch - main [MainThread]: Store serial: [17915756]
