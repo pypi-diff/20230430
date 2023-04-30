@@ -4523,3 +4523,85 @@
 [2023-04-30 10:43:00] INFO root fetch - main [MainThread]: End processing [pylywsdxx]: success
 [2023-04-30 10:43:32] INFO root fetch - main [MainThread]: End processing [pyfaust]: success
 [2023-04-30 10:43:32] INFO root fetch - main [MainThread]: Store serial: [17915537]
+[2023-04-30 10:48:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915537]
+[2023-04-30 10:48:46] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylywsdxx
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfp-nightly
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pagemeta
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docbuild
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Bigsansar
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bridgecrew
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: luau
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: physicsLab
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-ffmpeg
+[2023-04-30 10:48:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dalalstreet-news-sentiment
+[2023-04-30 10:48:46] INFO root fetch - processPackages [pagemeta]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [docbuild]: New version: [0.1.104] Old Version: [0.1.103]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [pylywsdxx]: New version: [1.6.1] Old Version: [1.4.2]
+[2023-04-30 10:48:46] WARNING root fetch - processPackages [dalalstreet-news-sentiment]: Skipping, unable to determine old version
+[2023-04-30 10:48:46] INFO root fetch - processPackages [Bigsansar]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [dalalstreet-news-sentiment]: Start processing: yatracker-linker
+[2023-04-30 10:48:46] INFO root fetch - main [MainThread]: End processing [dalalstreet-news-sentiment] error
+[2023-04-30 10:48:46] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [django-ffmpeg]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [physicsLab]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [yatracker-linker]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-04-30 10:48:46] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230430/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-04-30 10:48:46] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [docbuild]: Downloading https://files.pythonhosted.org/packages/6e/9e/814f0cd796139bfb16c45af289e3b416709aed0efba6aa7383f74b82989a/docbuild-0.1.103.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [pylywsdxx]: executing diffoscope
+[2023-04-30 10:48:46] INFO root fetch - processPackages [pylywsdxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylywsdxx-1.4.2.tar.gz tmp/pylywsdxx-1.6.1.tar.gz --markdown 20230430/p/pylywsdxx/1.4.2-1.6.1/diff.md --exclude *.pyd
+[2023-04-30 10:48:46] INFO root fetch - processPackages [pagemeta]: Downloading https://files.pythonhosted.org/packages/9a/be/2a07e39e38c1498dd2eac6cada88d11c2e74b6c6a201d6b0d6cd665a1131/pagemeta-0.0.1.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [physicsLab]: Downloading https://files.pythonhosted.org/packages/86/57/8884602e21aaf1614621498e22f371ad1ff5b6842cf17e41afd16acedb82/physicsLab-1.2.1.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/27/e3/eb496d31b33161a7a0efac2ce54a4cb288640042de2ec32b5738c149b491/Bigsansar-1.1.9.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [django-ffmpeg]: Downloading https://files.pythonhosted.org/packages/f1/45/17437b8b33736419a88f69dd96ae79be99aaee205d63bd3ca91fa740a232/django-ffmpeg-0.1.6.tar.gz
+[2023-04-30 10:48:46] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 10:48:46] INFO root fetch - processPackages [luau]: Start processing: CVAugmentor
+[2023-04-30 10:48:46] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 10:48:46] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-30 10:48:46] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230430/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-30 10:48:46] INFO root fetch - processPackages [CVAugmentor]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-04-30 10:48:46] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/ba/b1/e3f8b9f8876ffcb0c99c6e71affad333d5692cbd7fccb0ccb21c99796bbe/yatracker_linker-0.3.6.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-04-30 10:48:46] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.1.8.tar.gz tmp/Bigsansar-1.1.9.tar.gz --markdown 20230430/B/Bigsansar/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-30 10:48:46] INFO root fetch - processPackages [yatracker-linker]: executing diffoscope
+[2023-04-30 10:48:46] INFO root fetch - processPackages [yatracker-linker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yatracker_linker-0.3.5.tar.gz tmp/yatracker_linker-0.3.6.tar.gz --markdown 20230430/y/yatracker-linker/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-30 10:48:46] INFO root fetch - processPackages [docbuild]: Downloading https://files.pythonhosted.org/packages/0e/c0/93e630485136a7d65c9e1bf99ef953497d822d8189ec50fefc1d233e23d5/docbuild-0.1.104.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [pagemeta]: Downloading https://files.pythonhosted.org/packages/7d/4b/a22fb9615f53506ff419811418f5ea5816a905d89fedce05060bbe1e7e7b/pagemeta-0.0.2.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [physicsLab]: Downloading https://files.pythonhosted.org/packages/96/f6/2c2229e13878bf379b2b7bef5e564072d52aa66f479311f6e690339204e2/physicsLab-1.2.2.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [django-ffmpeg]: Downloading https://files.pythonhosted.org/packages/29/f6/aceca24473ffccff654eab57259f7474c6418e404ca59c3662a75757fbe1/django-ffmpeg-0.1.7.zip
+[2023-04-30 10:48:46] INFO root fetch - processPackages [CVAugmentor]: Downloading https://files.pythonhosted.org/packages/db/bc/83aaf300b0c49312a1e2fe951103a60f455c83b1ac66cbb2e9d801ea60dc/CVAugmentor-0.0.1.tar.gz
+[2023-04-30 10:48:46] INFO root fetch - processPackages [docbuild]: executing diffoscope
+[2023-04-30 10:48:46] INFO root fetch - processPackages [docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docbuild-0.1.103.tar.gz tmp/docbuild-0.1.104.tar.gz --markdown 20230430/d/docbuild/0.1.103-0.1.104/diff.md --exclude *.pyd
+[2023-04-30 10:48:47] INFO root fetch - processPackages [pagemeta]: executing diffoscope
+[2023-04-30 10:48:47] INFO root fetch - processPackages [pagemeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pagemeta-0.0.1.tar.gz tmp/pagemeta-0.0.2.tar.gz --markdown 20230430/p/pagemeta/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 10:48:47] INFO root fetch - processPackages [django-ffmpeg]: executing diffoscope
+[2023-04-30 10:48:47] INFO root fetch - processPackages [django-ffmpeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ffmpeg-0.1.6.tar.gz tmp/django-ffmpeg-0.1.7.zip --markdown 20230430/d/django-ffmpeg/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-30 10:48:47] INFO root fetch - processPackages [physicsLab]: executing diffoscope
+[2023-04-30 10:48:47] INFO root fetch - processPackages [physicsLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/physicsLab-1.2.1.tar.gz tmp/physicsLab-1.2.2.tar.gz --markdown 20230430/p/physicsLab/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-30 10:48:47] INFO root fetch - processPackages [CVAugmentor]: Downloading https://files.pythonhosted.org/packages/7a/53/bbd1e52f6be2de728d26f03457323be09afffcebab07bc54a9132169996f/CVAugmentor-1.0.0.tar.gz
+[2023-04-30 10:48:47] INFO root fetch - processPackages [CVAugmentor]: executing diffoscope
+[2023-04-30 10:48:47] INFO root fetch - processPackages [CVAugmentor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CVAugmentor-0.0.1.tar.gz tmp/CVAugmentor-1.0.0.tar.gz --markdown 20230430/C/CVAugmentor/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 10:48:48] INFO root fetch - processPackages [pylywsdxx]: Start processing: srminfo
+[2023-04-30 10:48:48] INFO root fetch - main [MainThread]: End processing [pylywsdxx]: success
+[2023-04-30 10:48:48] INFO root fetch - processPackages [yatracker-linker]: Start processing: llama-index
+[2023-04-30 10:48:48] INFO root fetch - main [MainThread]: End processing [yatracker-linker]: success
+[2023-04-30 10:48:48] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-04-30 10:48:48] INFO root fetch - processPackages [llama-index]: New version: [0.6.0a2] Old Version: [0.6.0a1]
+[2023-04-30 10:48:48] WARNING root fetch - processPackages [srminfo]: Skipping, unable to determine old version
+[2023-04-30 10:48:48] INFO root fetch - main [MainThread]: End processing [srminfo] error
+[2023-04-30 10:48:48] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-04-30 10:48:48] INFO root fetch - main [MainThread]: End processing [django-ffmpeg]: success
+[2023-04-30 10:48:48] INFO root fetch - main [MainThread]: End processing [pagemeta]: success
+[2023-04-30 10:48:48] INFO root fetch - processPackages [llama-index]: Downloading https://files.pythonhosted.org/packages/d5/39/2efc8e0d73a0d1f19c20d9abb06dd2d656408ba73544fd9af4cc72b6d5bd/llama_index-0.6.0a2.tar.gz
+[2023-04-30 10:48:48] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-04-30 10:48:48] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.6.0a1.tar.gz tmp/llama_index-0.6.0a2.tar.gz --markdown 20230430/l/llama-index/0.6.0a1-0.6.0a2/diff.md --exclude *.pyd
+[2023-04-30 10:48:48] INFO root fetch - main [MainThread]: End processing [docbuild]: success
+[2023-04-30 10:48:49] INFO root fetch - main [MainThread]: End processing [CVAugmentor]: success
+[2023-04-30 10:48:49] INFO root fetch - main [MainThread]: End processing [physicsLab]: success
+[2023-04-30 10:48:51] INFO root fetch - main [MainThread]: End processing [llama-index]: success
+[2023-04-30 10:48:59] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-04-30 10:48:59] INFO root fetch - main [MainThread]: Store serial: [17915587]
