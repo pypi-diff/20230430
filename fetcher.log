@@ -10526,3 +10526,19 @@
 [2023-04-30 22:02:15] INFO root fetch - main [MainThread]: End processing [rbxflip]: success
 [2023-04-30 22:02:15] INFO root fetch - main [MainThread]: End processing [dkpro-cassis]: success
 [2023-04-30 22:02:15] INFO root fetch - main [MainThread]: Store serial: [17919709]
+[2023-04-30 22:07:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919709]
+[2023-04-30 22:07:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 22:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gitbetter
+[2023-04-30 22:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-shelly-CERT1958ErrorCodes
+[2023-04-30 22:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ytspider
+[2023-04-30 22:07:24] INFO root fetch - processPackages [gitbetter]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-30 22:07:24] WARNING root fetch - processPackages [ytspider]: Skipping, unable to determine old version
+[2023-04-30 22:07:24] WARNING root fetch - processPackages [certora-cli-alpha-shelly-CERT1958ErrorCodes]: Skipping, unable to determine old version
+[2023-04-30 22:07:24] INFO root fetch - main [MainThread]: End processing [ytspider] error
+[2023-04-30 22:07:24] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-CERT1958ErrorCodes] error
+[2023-04-30 22:07:24] INFO root fetch - processPackages [gitbetter]: Downloading https://files.pythonhosted.org/packages/fc/b7/13f2b810be3f2eb390c29e1143664959868b2c5429d2fbf510d9a2ba8b2d/gitbetter-0.1.0.tar.gz
+[2023-04-30 22:07:24] INFO root fetch - processPackages [gitbetter]: Downloading https://files.pythonhosted.org/packages/65/ce/76829485487de18f78c8746e7ddfd930a311b46c6b9a17f1455cf0e3552d/gitbetter-0.1.1.tar.gz
+[2023-04-30 22:07:25] INFO root fetch - processPackages [gitbetter]: executing diffoscope
+[2023-04-30 22:07:25] INFO root fetch - processPackages [gitbetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitbetter-0.1.0.tar.gz tmp/gitbetter-0.1.1.tar.gz --markdown 20230430/g/gitbetter/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 22:07:27] INFO root fetch - main [MainThread]: End processing [gitbetter]: success
+[2023-04-30 22:07:27] INFO root fetch - main [MainThread]: Store serial: [17919727]
