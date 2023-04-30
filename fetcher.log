@@ -2647,3 +2647,65 @@
 [2023-04-30 06:09:30] INFO root fetch - main [MainThread]: End processing [Awespykit]: success
 [2023-04-30 06:09:31] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2023-04-30 06:09:31] INFO root fetch - main [MainThread]: Store serial: [17914400]
+[2023-04-30 06:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914400]
+[2023-04-30 06:14:40] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: friendlyproxies
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mmif-python
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-helpdesk-mgmt-project
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-helpdesk-mgmt
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-helpdesk-mgmt-timesheet
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-helpdesk-motive
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hhoppe-tools
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: portage
+[2023-04-30 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: advent-of-code-hhoppe
+[2023-04-30 06:14:40] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-project]: New version: [14.0.1.1.1.dev1] Old Version: [14.0.1.1.0]
+[2023-04-30 06:14:40] WARNING root fetch - processPackages [friendlyproxies]: Skipping, unable to determine old version
+[2023-04-30 06:14:40] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: New version: [14.0.1.0.3.dev1] Old Version: [14.0.1.0.2.dev7]
+[2023-04-30 06:14:40] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-timesheet]: New version: [14.0.1.0.2.dev9] Old Version: [14.0.1.0.2.dev7]
+[2023-04-30 06:14:40] INFO root fetch - main [MainThread]: End processing [friendlyproxies] error
+[2023-04-30 06:14:40] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: New version: [14.0.2.8.1.dev1] Old Version: [14.0.2.8.0]
+[2023-04-30 06:14:40] INFO root fetch - processPackages [advent-of-code-hhoppe]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 06:14:40] INFO root fetch - processPackages [mmif-python]: New version: [0.5.0] Old Version: [0.4.8]
+[2023-04-30 06:14:40] INFO root fetch - processPackages [hhoppe-tools]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-30 06:14:40] INFO root fetch - processPackages [portage]: New version: [3.0.47] Old Version: [3.0.46]
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-project]: Downloading https://files.pythonhosted.org/packages/65/72/4838a43a49ea1774f7c5b6ed6f12ad88e8cb4258edc76bf54cd5be0a6ca9/odoo14_addon_helpdesk_mgmt_project-14.0.1.1.0-py3-none-any.whl
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/9b/11/7a6cf1fd58ea488abd0eb54f1cce7d64a6ebe6b5d33a624bcdffe95d996c/odoo14_addon_helpdesk_mgmt-14.0.2.8.0-py3-none-any.whl
+[2023-04-30 06:14:41] INFO root fetch - processPackages [hhoppe-tools]: Downloading https://files.pythonhosted.org/packages/bc/4f/ac06fc59219248febef96daef2f298b138dc3b6f77ffef98e2ea76f861bd/hhoppe-tools-1.2.9.tar.gz
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: Downloading https://files.pythonhosted.org/packages/5e/42/597ae2a568ff48155103b8ac950c4d540f17dbcca0011f8df62f0d04e836/odoo14_addon_helpdesk_motive-14.0.1.0.2.dev7-py3-none-any.whl
+[2023-04-30 06:14:41] INFO root fetch - processPackages [portage]: Downloading https://files.pythonhosted.org/packages/bd/98/6883a9b8c88881a172f01609a456f9096bcdb33af12698271118d07a1a61/portage-3.0.46.tar.gz
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-timesheet]: Downloading https://files.pythonhosted.org/packages/50/23/ab08429b1ea7b09c83798fa141a6a5ae55162cd2423fb3772c32e24d9c32/odoo14_addon_helpdesk_mgmt_timesheet-14.0.1.0.2.dev7-py3-none-any.whl
+[2023-04-30 06:14:41] INFO root fetch - processPackages [mmif-python]: Downloading https://files.pythonhosted.org/packages/8a/aa/a784b819a8f0d035f011fc262e853dd5b3104bd964e5647816440e9af8bc/mmif-python-0.4.8.tar.gz
+[2023-04-30 06:14:41] INFO root fetch - processPackages [advent-of-code-hhoppe]: Downloading https://files.pythonhosted.org/packages/13/9c/1a871b8d1c4d53dd27b14bafcae1d39374334a6dffd92d48d20c18d8f820/advent-of-code-hhoppe-1.0.2.tar.gz
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-project]: Downloading https://files.pythonhosted.org/packages/d8/4f/ff1e10df643500ea512364cab3f5df7b3bb5f2dff6aec1b0c648653f1e04/odoo14_addon_helpdesk_mgmt_project-14.0.1.1.1.dev1-py3-none-any.whl
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/d3/7b/1f98628ca74ed5d3816cf2524c1dcb82ed58741cc8431da3f0ef8152aee0/odoo14_addon_helpdesk_mgmt-14.0.2.8.1.dev1-py3-none-any.whl
+[2023-04-30 06:14:41] INFO root fetch - processPackages [hhoppe-tools]: Downloading https://files.pythonhosted.org/packages/3b/eb/93995bc9862a59c16a3fcf99c37b71c5176004457346dfe8c97dc71f1301/hhoppe-tools-1.3.0.tar.gz
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: Downloading https://files.pythonhosted.org/packages/c7/38/e83a50e4cff590bdd267bea1c746edb029e0354040083829df3ff506cc77/odoo14_addon_helpdesk_motive-14.0.1.0.3.dev1-py3-none-any.whl
+[2023-04-30 06:14:41] INFO root fetch - processPackages [mmif-python]: Downloading https://files.pythonhosted.org/packages/35/46/023c65ab91011fa49389a39f83c429c595f0772585fdfed1de34da601271/mmif-python-0.5.0.tar.gz
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-timesheet]: Downloading https://files.pythonhosted.org/packages/f8/60/9ffcfd641db13ccd0a9dfa16cbca048674d0b73fec51ce0444ddc1ea719f/odoo14_addon_helpdesk_mgmt_timesheet-14.0.1.0.2.dev9-py3-none-any.whl
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-project]: executing diffoscope
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_mgmt_project-14.0.1.1.0-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_mgmt_project-14.0.1.1.1.dev1-py3-none-any.whl.zip --markdown 20230430/o/odoo14-addon-helpdesk-mgmt-project/14.0.1.1.0-14.0.1.1.1.dev1/diff.md --exclude *.pyd
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: executing diffoscope
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_mgmt-14.0.2.8.0-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_mgmt-14.0.2.8.1.dev1-py3-none-any.whl.zip --markdown 20230430/o/odoo14-addon-helpdesk-mgmt/14.0.2.8.0-14.0.2.8.1.dev1/diff.md --exclude *.pyd
+[2023-04-30 06:14:41] INFO root fetch - processPackages [mmif-python]: executing diffoscope
+[2023-04-30 06:14:41] INFO root fetch - processPackages [mmif-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmif-python-0.4.8.tar.gz tmp/mmif-python-0.5.0.tar.gz --markdown 20230430/m/mmif-python/0.4.8-0.5.0/diff.md --exclude *.pyd
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: executing diffoscope
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_motive-14.0.1.0.2.dev7-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_motive-14.0.1.0.3.dev1-py3-none-any.whl.zip --markdown 20230430/o/odoo14-addon-helpdesk-motive/14.0.1.0.2.dev7-14.0.1.0.3.dev1/diff.md --exclude *.pyd
+[2023-04-30 06:14:41] INFO root fetch - processPackages [hhoppe-tools]: executing diffoscope
+[2023-04-30 06:14:41] INFO root fetch - processPackages [hhoppe-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hhoppe-tools-1.2.9.tar.gz tmp/hhoppe-tools-1.3.0.tar.gz --markdown 20230430/h/hhoppe-tools/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-timesheet]: executing diffoscope
+[2023-04-30 06:14:41] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-timesheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_mgmt_timesheet-14.0.1.0.2.dev7-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_mgmt_timesheet-14.0.1.0.2.dev9-py3-none-any.whl.zip --markdown 20230430/o/odoo14-addon-helpdesk-mgmt-timesheet/14.0.1.0.2.dev7-14.0.1.0.2.dev9/diff.md --exclude *.pyd
+[2023-04-30 06:14:41] INFO root fetch - processPackages [advent-of-code-hhoppe]: Downloading https://files.pythonhosted.org/packages/06/14/687c9577b22aa80528f22abd3b767363d5c219b891bc5220670f401085ef/advent-of-code-hhoppe-1.0.3.tar.gz
+[2023-04-30 06:14:41] INFO root fetch - processPackages [advent-of-code-hhoppe]: executing diffoscope
+[2023-04-30 06:14:41] INFO root fetch - processPackages [advent-of-code-hhoppe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advent-of-code-hhoppe-1.0.2.tar.gz tmp/advent-of-code-hhoppe-1.0.3.tar.gz --markdown 20230430/a/advent-of-code-hhoppe/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 06:14:42] INFO root fetch - processPackages [portage]: Downloading https://files.pythonhosted.org/packages/5c/e8/535c55b0554a564c99b9ac1e56726a423482791d91743eed03cfe0f8c25b/portage-3.0.47.tar.gz
+[2023-04-30 06:14:42] INFO root fetch - processPackages [portage]: executing diffoscope
+[2023-04-30 06:14:42] INFO root fetch - processPackages [portage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portage-3.0.46.tar.gz tmp/portage-3.0.47.tar.gz --markdown 20230430/p/portage/3.0.46-3.0.47/diff.md --exclude *.pyd
+[2023-04-30 06:14:42] INFO root fetch - main [MainThread]: End processing [hhoppe-tools]: success
+[2023-04-30 06:14:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-motive]: success
+[2023-04-30 06:14:43] INFO root fetch - main [MainThread]: End processing [mmif-python]: success
+[2023-04-30 06:14:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-mgmt-project]: success
+[2023-04-30 06:14:43] INFO root fetch - main [MainThread]: End processing [advent-of-code-hhoppe]: success
+[2023-04-30 06:14:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-mgmt-timesheet]: success
+[2023-04-30 06:14:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-mgmt]: success
+[2023-04-30 06:14:51] INFO root fetch - main [MainThread]: End processing [portage]: success
+[2023-04-30 06:14:51] INFO root fetch - main [MainThread]: Store serial: [17914424]
