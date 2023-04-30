@@ -7036,3 +7036,68 @@
 [2023-04-30 15:27:25] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-04-30 15:27:26] INFO root fetch - main [MainThread]: End processing [classy-imaginary]: success
 [2023-04-30 15:27:26] INFO root fetch - main [MainThread]: Store serial: [17917083]
+[2023-04-30 15:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917083]
+[2023-04-30 15:32:34] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-listing
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipytablewidgets
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-arn
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-desktop-tk
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fedml
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: micropython-stubber
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wwpdb.apps.editormodule
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: megadata
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aws-arn
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: polars-lts-cpu
+[2023-04-30 15:32:34] INFO root fetch - processPackages [ipytablewidgets]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-30 15:32:34] INFO root fetch - processPackages [aws-arn]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 15:32:34] INFO root fetch - processPackages [fastapi-listing]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 15:32:34] INFO root fetch - processPackages [nonebot-desktop-tk]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 15:32:34] INFO root fetch - processPackages [aws-arn]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 15:32:34] INFO root fetch - processPackages [fedml]: New version: [0.8.4a9] Old Version: [0.8.4a8]
+[2023-04-30 15:32:34] INFO root fetch - processPackages [micropython-stubber]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-30 15:32:35] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:32:35] INFO root fetch - processPackages [wwpdb.apps.editormodule]: New version: [0.17] Old Version: [0.16]
+[2023-04-30 15:32:35] INFO root fetch - processPackages [polars-lts-cpu]: New version: [0.17.9] Old Version: [0.17.8]
+[2023-04-30 15:32:35] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.4a8.tar.gz tmp/fedml-0.8.4a9.tar.gz --markdown 20230430/f/fedml/0.8.4a8-0.8.4a9/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230430/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/96/ea/cb15ea0afc707a68bed46ace3e36acc032b92102e8f433f4d053c45e80ed/aws-arn-0.0.4.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/96/ea/cb15ea0afc707a68bed46ace3e36acc032b92102e8f433f4d053c45e80ed/aws-arn-0.0.4.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [nonebot-desktop-tk]: Downloading https://files.pythonhosted.org/packages/1c/c1/ac5afa4b160f8524cfa7c74dc31d6a89ed3ced42999d6e15ec8da98ae1a2/nonebot-desktop-tk-1.0.4.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [ipytablewidgets]: Downloading https://files.pythonhosted.org/packages/55/7a/a9175934a82dd14003b55134a7c760c1e1d6b40031efbcb21a498b9f56cb/ipytablewidgets-0.3.0.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [micropython-stubber]: Downloading https://files.pythonhosted.org/packages/78/3f/36b65004d4ff3b3a983296b517281cbf6d52fa8a89ec3b97c060670cf600/micropython-stubber-1.9.8.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Downloading https://files.pythonhosted.org/packages/13/5b/b41d32aaa3fbc0390b39f1862ade44ecfe0b6b698dc8a939ae125c9f5cdc/wwpdb.apps.editormodule-0.16.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [nonebot-desktop-tk]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [nonebot-desktop-tk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-tk-1.0.3.tar.gz tmp/nonebot-desktop-tk-1.0.4.tar.gz --markdown 20230430/n/nonebot-desktop-tk/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [fastapi-listing]: Downloading https://files.pythonhosted.org/packages/35/d7/a6548c4ca58e318b54582ecb0e67e1987c73e47f3e45de654e26a0769e2b/fastapi-listing-0.0.4.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/b4/e8/77083a99a316a38195ae8372bc7ba500eb9bba1e8e746244d516ec9ada8a/aws-arn-0.0.5.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/b4/e8/77083a99a316a38195ae8372bc7ba500eb9bba1e8e746244d516ec9ada8a/aws-arn-0.0.5.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [polars-lts-cpu]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [polars-lts-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_lts_cpu-0.17.8.tar.gz tmp/polars_lts_cpu-0.17.9.tar.gz --markdown 20230430/p/polars-lts-cpu/0.17.8-0.17.9/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [fastapi-listing]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [fastapi-listing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-listing-0.0.3.tar.gz tmp/fastapi-listing-0.0.4.tar.gz --markdown 20230430/f/fastapi-listing/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [aws-arn]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [aws-arn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-arn-0.0.4.tar.gz tmp/aws-arn-0.0.5.tar.gz --markdown 20230430/a/aws-arn/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [aws-arn]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [aws-arn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-arn-0.0.4.tar.gz tmp/aws-arn-0.0.5.tar.gz --markdown 20230430/a/aws-arn/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [ipytablewidgets]: Downloading https://files.pythonhosted.org/packages/99/e3/a7e0e3369c541cb512919fbb6fd57733825091e3ab98687a909a76f21d32/ipytablewidgets-0.3.1.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Downloading https://files.pythonhosted.org/packages/a7/72/4cf51a5b665837c54d61a9ec0247043f5189ce8edfddbe8e5c4147609b09/wwpdb.apps.editormodule-0.17.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [micropython-stubber]: Downloading https://files.pythonhosted.org/packages/f2/43/e24fd55adda5672bfe5f6565a85bd6107e3d9a9339070e65d7a2e4fc652f/micropython-stubber-1.9.9.tar.gz
+[2023-04-30 15:32:35] INFO root fetch - processPackages [ipytablewidgets]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [ipytablewidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipytablewidgets-0.3.0.tar.gz tmp/ipytablewidgets-0.3.1.tar.gz --markdown 20230430/i/ipytablewidgets/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [wwpdb.apps.editormodule]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [wwpdb.apps.editormodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.apps.editormodule-0.16.tar.gz tmp/wwpdb.apps.editormodule-0.17.tar.gz --markdown 20230430/w/wwpdb.apps.editormodule/0.16-0.17/diff.md --exclude *.pyd
+[2023-04-30 15:32:35] INFO root fetch - processPackages [micropython-stubber]: executing diffoscope
+[2023-04-30 15:32:35] INFO root fetch - processPackages [micropython-stubber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micropython-stubber-1.9.8.tar.gz tmp/micropython-stubber-1.9.9.tar.gz --markdown 20230430/m/micropython-stubber/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-30 15:32:36] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-04-30 15:32:36] INFO root fetch - main [MainThread]: End processing [nonebot-desktop-tk]: success
+[2023-04-30 15:32:36] INFO root fetch - main [MainThread]: End processing [aws-arn]: success
+[2023-04-30 15:32:37] INFO root fetch - main [MainThread]: End processing [fastapi-listing]: success
+[2023-04-30 15:32:37] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.editormodule]: success
+[2023-04-30 15:32:37] INFO root fetch - main [MainThread]: End processing [micropython-stubber]: success
+[2023-04-30 15:32:37] INFO root fetch - main [MainThread]: End processing [aws-arn]: success
+[2023-04-30 15:32:41] INFO root fetch - main [MainThread]: End processing [ipytablewidgets]: success
+[2023-04-30 15:32:46] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-04-30 15:32:52] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
+[2023-04-30 15:32:52] INFO root fetch - main [MainThread]: Store serial: [17917112]
