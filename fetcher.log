@@ -10213,3 +10213,45 @@
 [2023-04-30 21:25:45] INFO root fetch - main [MainThread]: End processing [cloudsmith-cli]: success
 [2023-04-30 21:25:47] INFO root fetch - main [MainThread]: End processing [gpudb]: success
 [2023-04-30 21:25:47] INFO root fetch - main [MainThread]: Store serial: [17919402]
+[2023-04-30 21:30:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919402]
+[2023-04-30 21:30:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arc-cli
+[2023-04-30 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycryptokms
+[2023-04-30 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: custolint
+[2023-04-30 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlitemanager
+[2023-04-30 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: redisbench-admin
+[2023-04-30 21:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pspy
+[2023-04-30 21:30:55] INFO root fetch - processPackages [arc-cli]: New version: [8.1.2] Old Version: [8.1.1]
+[2023-04-30 21:30:55] INFO root fetch - processPackages [sqlitemanager]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-30 21:30:55] INFO root fetch - processPackages [pycryptokms]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:30:55] INFO root fetch - processPackages [custolint]: New version: [0.1.14] Old Version: [0.1.13]
+[2023-04-30 21:30:55] INFO root fetch - processPackages [redisbench-admin]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-30 21:30:55] INFO root fetch - processPackages [pspy]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-04-30 21:30:55] INFO root fetch - processPackages [pycryptokms]: Downloading https://files.pythonhosted.org/packages/24/b3/4f7c1c9a94b684b4ae83e5ef9be69c6b319bde209dc6aa4d60be20fc9c81/pycryptokms-0.0.8.tar.gz
+[2023-04-30 21:30:55] INFO root fetch - processPackages [arc-cli]: Downloading https://files.pythonhosted.org/packages/a0/8b/726c5f6074bdf211fba038268a08d62c8d2b805eaf4b1e1901d45aa65cb9/arc_cli-8.1.2.tar.gz
+[2023-04-30 21:30:55] INFO root fetch - processPackages [pspy]: Downloading https://files.pythonhosted.org/packages/0f/b6/dbfb422512ae120efc445b82cd8bce9993b5b81a03c55c75e32f45141cdc/pspy-1.5.8.tar.gz
+[2023-04-30 21:30:55] INFO root fetch - processPackages [redisbench-admin]: Downloading https://files.pythonhosted.org/packages/1b/bc/fbbca13a7e0fe02900bb0cd135f79a4c32ff5312414c75613c7417ba66b5/redisbench-admin-0.9.8.tar.gz
+[2023-04-30 21:30:55] INFO root fetch - processPackages [custolint]: Downloading https://files.pythonhosted.org/packages/f8/22/79961b82b0b1f036daaa4f6b9bf035557b02a6ef27335f778de06dab6c44/custolint-0.1.14-py3-none-any.whl
+[2023-04-30 21:30:55] INFO root fetch - processPackages [sqlitemanager]: Downloading https://files.pythonhosted.org/packages/4e/84/9e97a78adcf00a16fc44e50c24490fea24449de355a7dedcf36897908810/sqlitemanager-0.7.1.tar.gz
+[2023-04-30 21:30:55] INFO root fetch - processPackages [sqlitemanager]: executing diffoscope
+[2023-04-30 21:30:55] INFO root fetch - processPackages [sqlitemanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlitemanager-0.7.0.tar.gz tmp/sqlitemanager-0.7.1.tar.gz --markdown 20230430/s/sqlitemanager/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-30 21:30:55] INFO root fetch - processPackages [custolint]: executing diffoscope
+[2023-04-30 21:30:55] INFO root fetch - processPackages [custolint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custolint-0.1.13-py3-none-any.whl.zip tmp/custolint-0.1.14-py3-none-any.whl.zip --markdown 20230430/c/custolint/0.1.13-0.1.14/diff.md --exclude *.pyd
+[2023-04-30 21:30:56] INFO root fetch - processPackages [arc-cli]: executing diffoscope
+[2023-04-30 21:30:56] INFO root fetch - processPackages [arc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arc_cli-8.1.1.tar.gz tmp/arc_cli-8.1.2.tar.gz --markdown 20230430/a/arc-cli/8.1.1-8.1.2/diff.md --exclude *.pyd
+[2023-04-30 21:30:56] INFO root fetch - processPackages [pycryptokms]: Downloading https://files.pythonhosted.org/packages/fb/0a/be3285b77cff2688a21e11d55c0db0d323430be994d5afc51d93531f0676/pycryptokms-0.0.9.tar.gz
+[2023-04-30 21:30:56] INFO root fetch - processPackages [pycryptokms]: executing diffoscope
+[2023-04-30 21:30:56] INFO root fetch - processPackages [pycryptokms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycryptokms-0.0.8.tar.gz tmp/pycryptokms-0.0.9.tar.gz --markdown 20230430/p/pycryptokms/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:30:56] INFO root fetch - processPackages [pspy]: Downloading https://files.pythonhosted.org/packages/7e/4e/e96ad3db25176ca2c8ecff391cfaf1c24c7b999f0aa11339abddab9685c3/pspy-1.5.9.tar.gz
+[2023-04-30 21:30:56] INFO root fetch - processPackages [redisbench-admin]: Downloading https://files.pythonhosted.org/packages/d8/bf/a564f8e39b26d523bf3f26f6fa2c917fe47853f2319e577d43cd0dfc7c5a/redisbench-admin-0.9.9.tar.gz
+[2023-04-30 21:30:56] INFO root fetch - processPackages [pspy]: executing diffoscope
+[2023-04-30 21:30:56] INFO root fetch - processPackages [pspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pspy-1.5.8.tar.gz tmp/pspy-1.5.9.tar.gz --markdown 20230430/p/pspy/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-04-30 21:30:57] INFO root fetch - main [MainThread]: End processing [custolint]: success
+[2023-04-30 21:30:57] INFO root fetch - main [MainThread]: End processing [pycryptokms]: success
+[2023-04-30 21:30:57] INFO root fetch - main [MainThread]: End processing [sqlitemanager]: success
+[2023-04-30 21:30:57] INFO root fetch - processPackages [redisbench-admin]: executing diffoscope
+[2023-04-30 21:30:57] INFO root fetch - processPackages [redisbench-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redisbench-admin-0.9.8.tar.gz tmp/redisbench-admin-0.9.9.tar.gz --markdown 20230430/r/redisbench-admin/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-30 21:30:57] INFO root fetch - main [MainThread]: End processing [arc-cli]: success
+[2023-04-30 21:30:58] INFO root fetch - main [MainThread]: End processing [pspy]: success
+[2023-04-30 21:31:00] INFO root fetch - main [MainThread]: End processing [redisbench-admin]: success
+[2023-04-30 21:31:00] INFO root fetch - main [MainThread]: Store serial: [17919428]
