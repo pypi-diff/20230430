@@ -10542,3 +10542,46 @@
 [2023-04-30 22:07:25] INFO root fetch - processPackages [gitbetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitbetter-0.1.0.tar.gz tmp/gitbetter-0.1.1.tar.gz --markdown 20230430/g/gitbetter/0.1.0-0.1.1/diff.md --exclude *.pyd
 [2023-04-30 22:07:27] INFO root fetch - main [MainThread]: End processing [gitbetter]: success
 [2023-04-30 22:07:27] INFO root fetch - main [MainThread]: Store serial: [17919727]
+[2023-04-30 22:12:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919727]
+[2023-04-30 22:12:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 22:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: goxlrutilityapi
+[2023-04-30 22:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygnmi
+[2023-04-30 22:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim-ui
+[2023-04-30 22:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: suga
+[2023-04-30 22:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spPersist
+[2023-04-30 22:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tripper
+[2023-04-30 22:12:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aim
+[2023-04-30 22:12:35] INFO root fetch - processPackages [tripper]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-30 22:12:35] INFO root fetch - processPackages [pygnmi]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-30 22:12:35] WARNING root fetch - processPackages [suga]: Skipping, unable to determine old version
+[2023-04-30 22:12:35] INFO root fetch - main [MainThread]: End processing [suga] error
+[2023-04-30 22:12:35] INFO root fetch - processPackages [goxlrutilityapi]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-30 22:12:35] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev4] Old Version: [4.0.0.dev3]
+[2023-04-30 22:12:35] INFO root fetch - processPackages [spPersist]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-30 22:12:35] INFO root fetch - processPackages [aim]: New version: [4.0.0.dev4] Old Version: [4.0.0.dev3]
+[2023-04-30 22:12:36] INFO root fetch - processPackages [pygnmi]: Downloading https://files.pythonhosted.org/packages/cd/2e/d66bdd4adce18a181a45a9720ad6b8067c90c8acea5f01639600961e31f0/pygnmi-0.8.8.tar.gz
+[2023-04-30 22:12:36] INFO root fetch - processPackages [goxlrutilityapi]: Downloading https://files.pythonhosted.org/packages/be/86/38952b95980dcbfa3025b00b11ca087f98ffce65eaca3e991ada18ab34b9/goxlrutilityapi-1.1.1.tar.gz
+[2023-04-30 22:12:36] INFO root fetch - processPackages [tripper]: Downloading https://files.pythonhosted.org/packages/5a/eb/ddef55702da46c337944fc9d46a7956af813fb4dffabeb2decaac275976d/tripper-0.2.3.tar.gz
+[2023-04-30 22:12:36] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/25/11/4059bbf4cab503ac1931586071b233764a39bbc75396c91c8f382fe8f6c9/aim-ui-4.0.0.dev3.tar.gz
+[2023-04-30 22:12:36] INFO root fetch - processPackages [spPersist]: Downloading https://files.pythonhosted.org/packages/6b/6f/acd8fca4260bca5fc6e888b4cad1beaa2fe4d93f9a69905de8e3fbdbd2ba/spPersist-0.0.6.tar.gz
+[2023-04-30 22:12:36] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 27062620>=10485760
+[2023-04-30 22:12:36] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-04-30 22:12:36] INFO root fetch - processPackages [goxlrutilityapi]: Downloading https://files.pythonhosted.org/packages/d9/dc/f5e303d4149617c05d03be7482723fa9dcebabf833e1910ba1980f6972f5/goxlrutilityapi-1.1.2.tar.gz
+[2023-04-30 22:12:36] INFO root fetch - processPackages [spPersist]: executing diffoscope
+[2023-04-30 22:12:36] INFO root fetch - processPackages [spPersist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spPersist-0.0.5.tar.gz tmp/spPersist-0.0.6.tar.gz --markdown 20230430/s/spPersist/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-30 22:12:36] INFO root fetch - processPackages [pygnmi]: Downloading https://files.pythonhosted.org/packages/04/1e/2f01c6fa78d43f6ccddb38a151f82557641040eb6607ef5c23506b8f9974/pygnmi-0.8.9.tar.gz
+[2023-04-30 22:12:36] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-04-30 22:12:36] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0.dev3.tar.gz tmp/aim-4.0.0.dev4.tar.gz --markdown 20230430/a/aim/4.0.0.dev3-4.0.0.dev4/diff.md --exclude *.pyd
+[2023-04-30 22:12:36] INFO root fetch - processPackages [goxlrutilityapi]: executing diffoscope
+[2023-04-30 22:12:36] INFO root fetch - processPackages [goxlrutilityapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goxlrutilityapi-1.1.1.tar.gz tmp/goxlrutilityapi-1.1.2.tar.gz --markdown 20230430/g/goxlrutilityapi/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-30 22:12:36] INFO root fetch - processPackages [tripper]: Downloading https://files.pythonhosted.org/packages/48/dd/e35ce9f28adae1a7ce1e9c40b54e2d80de48632cd9e10b548e9065c5b25d/tripper-0.2.4.tar.gz
+[2023-04-30 22:12:36] INFO root fetch - processPackages [pygnmi]: executing diffoscope
+[2023-04-30 22:12:36] INFO root fetch - processPackages [pygnmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygnmi-0.8.8.tar.gz tmp/pygnmi-0.8.9.tar.gz --markdown 20230430/p/pygnmi/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-30 22:12:36] INFO root fetch - processPackages [tripper]: executing diffoscope
+[2023-04-30 22:12:36] INFO root fetch - processPackages [tripper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tripper-0.2.3.tar.gz tmp/tripper-0.2.4.tar.gz --markdown 20230430/t/tripper/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-30 22:12:37] INFO root fetch - main [MainThread]: End processing [spPersist]: success
+[2023-04-30 22:12:37] INFO root fetch - main [MainThread]: End processing [goxlrutilityapi]: success
+[2023-04-30 22:12:37] INFO root fetch - main [MainThread]: End processing [pygnmi]: success
+[2023-04-30 22:12:45] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-04-30 22:13:00] INFO root fetch - main [MainThread]: End processing [tripper]: success
+[2023-04-30 22:13:00] INFO root fetch - main [MainThread]: Store serial: [17919750]
