@@ -10946,3 +10946,38 @@
 [2023-04-30 23:00:20] INFO root fetch - main [MainThread]: End processing [chemotools]: success
 [2023-04-30 23:00:20] INFO root fetch - main [MainThread]: End processing [edge-tts]: success
 [2023-04-30 23:00:20] INFO root fetch - main [MainThread]: Store serial: [17920000]
+[2023-04-30 23:05:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920000]
+[2023-04-30 23:05:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 23:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: griptape
+[2023-04-30 23:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: extism-func-gen
+[2023-04-30 23:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bumble
+[2023-04-30 23:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cleancredits
+[2023-04-30 23:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: loopsso
+[2023-04-30 23:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: explainax
+[2023-04-30 23:05:28] INFO root fetch - processPackages [bumble]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-30 23:05:28] WARNING root fetch - processPackages [explainax]: Skipping, unable to determine old version
+[2023-04-30 23:05:28] INFO root fetch - main [MainThread]: End processing [explainax] error
+[2023-04-30 23:05:28] INFO root fetch - processPackages [extism-func-gen]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-30 23:05:28] INFO root fetch - processPackages [griptape]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-30 23:05:28] INFO root fetch - processPackages [cleancredits]: New version: [2.0.0] Old Version: [0.1.3]
+[2023-04-30 23:05:28] WARNING root fetch - processPackages [loopsso]: Skipping, unable to determine old version
+[2023-04-30 23:05:28] INFO root fetch - main [MainThread]: End processing [loopsso] error
+[2023-04-30 23:05:29] INFO root fetch - processPackages [cleancredits]: Downloading https://files.pythonhosted.org/packages/62/d6/bd52d6c442f38825ab5b30ad3ae841ce37ed3e0086495cf0975ba2e068ac/cleancredits-0.1.3.tar.gz
+[2023-04-30 23:05:29] INFO root fetch - processPackages [bumble]: Downloading https://files.pythonhosted.org/packages/5c/cc/2050aa113bf91c23119ba662d8833cb2442c86a9be578ea2ef801786e1bc/bumble-0.0.7.tar.gz
+[2023-04-30 23:05:29] INFO root fetch - processPackages [griptape]: Downloading https://files.pythonhosted.org/packages/63/5a/43af4674fc867c5b7ccbd595322c577d4849eab6cb89acb9eac53e373fd8/griptape-0.7.1.tar.gz
+[2023-04-30 23:05:29] INFO root fetch - processPackages [extism-func-gen]: Downloading https://files.pythonhosted.org/packages/fe/e7/69a1596ebb54f5a21bf45a87fa15a32864f8283323bbec059e4533eb148b/extism_func_gen-0.3.0.tar.gz
+[2023-04-30 23:05:29] INFO root fetch - processPackages [griptape]: executing diffoscope
+[2023-04-30 23:05:29] INFO root fetch - processPackages [griptape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape-0.7.0.tar.gz tmp/griptape-0.7.1.tar.gz --markdown 20230430/g/griptape/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-30 23:05:29] INFO root fetch - processPackages [cleancredits]: Downloading https://files.pythonhosted.org/packages/66/15/c0eba68cc5e82e84bad99faf4fe389d8a8fcd9b9e700fab22c944e3fa6ec/cleancredits-2.0.0.tar.gz
+[2023-04-30 23:05:29] INFO root fetch - processPackages [extism-func-gen]: executing diffoscope
+[2023-04-30 23:05:29] INFO root fetch - processPackages [extism-func-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extism_func_gen-0.2.0.tar.gz tmp/extism_func_gen-0.3.0.tar.gz --markdown 20230430/e/extism-func-gen/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 23:05:29] INFO root fetch - processPackages [cleancredits]: executing diffoscope
+[2023-04-30 23:05:29] INFO root fetch - processPackages [cleancredits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleancredits-0.1.3.tar.gz tmp/cleancredits-2.0.0.tar.gz --markdown 20230430/c/cleancredits/0.1.3-2.0.0/diff.md --exclude *.pyd
+[2023-04-30 23:05:30] INFO root fetch - processPackages [bumble]: Downloading https://files.pythonhosted.org/packages/68/35/9a248bc72c337b8ddaaa686a9f635b08670845ec0d96933f6e246cb6f7c2/bumble-0.0.8.tar.gz
+[2023-04-30 23:05:30] INFO root fetch - main [MainThread]: End processing [cleancredits]: success
+[2023-04-30 23:05:30] INFO root fetch - main [MainThread]: End processing [extism-func-gen]: success
+[2023-04-30 23:05:30] INFO root fetch - main [MainThread]: End processing [griptape]: success
+[2023-04-30 23:05:30] INFO root fetch - processPackages [bumble]: executing diffoscope
+[2023-04-30 23:05:30] INFO root fetch - processPackages [bumble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bumble-0.0.7.tar.gz tmp/bumble-0.0.8.tar.gz --markdown 20230430/b/bumble/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-30 23:05:33] INFO root fetch - main [MainThread]: End processing [bumble]: success
+[2023-04-30 23:05:33] INFO root fetch - main [MainThread]: Store serial: [17920023]
