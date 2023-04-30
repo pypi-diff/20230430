@@ -4348,3 +4348,54 @@
 [2023-04-30 10:26:31] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-04-30 10:27:05] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-04-30 10:27:05] INFO root fetch - main [MainThread]: Store serial: [17915465]
+[2023-04-30 10:32:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915465]
+[2023-04-30 10:32:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 10:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PySide1-Customized-Window
+[2023-04-30 10:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeonghun123
+[2023-04-30 10:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: badgie
+[2023-04-30 10:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: backtrader-binance
+[2023-04-30 10:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tinyfk
+[2023-04-30 10:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: whatsapp-python
+[2023-04-30 10:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: EVApy
+[2023-04-30 10:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yatracker-linker
+[2023-04-30 10:32:13] INFO root fetch - processPackages [PySide1-Customized-Window]: New version: [1.1] Old Version: [1.0]
+[2023-04-30 10:32:13] INFO root fetch - processPackages [badgie]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-30 10:32:14] INFO root fetch - processPackages [yeonghun123]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 10:32:14] INFO root fetch - processPackages [tinyfk]: New version: [0.6.1] Old Version: [0.6.0.dev8]
+[2023-04-30 10:32:14] INFO root fetch - processPackages [backtrader-binance]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 10:32:14] INFO root fetch - processPackages [whatsapp-python]: New version: [2.3.2] Old Version: [2.2.2]
+[2023-04-30 10:32:14] INFO root fetch - processPackages [yatracker-linker]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-30 10:32:14] WARNING root fetch - processPackages [EVApy]: Skipping, unable to determine old version
+[2023-04-30 10:32:14] INFO root fetch - main [MainThread]: End processing [EVApy] error
+[2023-04-30 10:32:14] INFO root fetch - processPackages [yatracker-linker]: executing diffoscope
+[2023-04-30 10:32:14] INFO root fetch - processPackages [yatracker-linker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yatracker_linker-0.3.1.tar.gz tmp/yatracker_linker-0.3.2.tar.gz --markdown 20230430/y/yatracker-linker/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-30 10:32:14] INFO root fetch - processPackages [PySide1-Customized-Window]: Downloading https://files.pythonhosted.org/packages/b9/3b/d4fa74ef4a1c9dd27d7d9d5b8a074af7abb4fd16a0edc01c198350567a39/PySide1_Customized_Window-1.0-py3-none-any.whl
+[2023-04-30 10:32:14] INFO root fetch - processPackages [yeonghun123]: Downloading https://files.pythonhosted.org/packages/db/3f/90b8663a2c81d731e5d744459524b7a1da6c6561861715c60373d7f917ee/yeonghun123-0.0.1-py3-none-any.whl
+[2023-04-30 10:32:14] INFO root fetch - processPackages [badgie]: Downloading https://files.pythonhosted.org/packages/02/36/3d4006cdf39fd0807fd440318356cd34824a337375496ccf744c400b1382/badgie-0.5.1.tar.gz
+[2023-04-30 10:32:14] INFO root fetch - processPackages [whatsapp-python]: Downloading https://files.pythonhosted.org/packages/ce/da/75f76e82d53b1b8a01ee6dab3c5484d8c122696c4f6fb5a4d58cd0adefb0/whatsapp-python-2.2.2.tar.gz
+[2023-04-30 10:32:14] INFO root fetch - processPackages [backtrader-binance]: Downloading https://files.pythonhosted.org/packages/88/a2/3fc9c807f6f3cd5e197e0f98204a0119ac63c3fb28375d943975e33d1717/backtrader_binance-1.0.4.tar.gz
+[2023-04-30 10:32:14] INFO root fetch - processPackages [tinyfk]: Downloading https://files.pythonhosted.org/packages/cd/33/d85c2f7700441c7e636cd25bec6e6c3ebe24cb410ee952dfc556cbdc624e/tinyfk-0.6.1.tar.gz
+[2023-04-30 10:32:14] INFO root fetch - processPackages [backtrader-binance]: executing diffoscope
+[2023-04-30 10:32:14] INFO root fetch - processPackages [backtrader-binance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backtrader_binance-1.0.3.tar.gz tmp/backtrader_binance-1.0.4.tar.gz --markdown 20230430/b/backtrader-binance/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 10:32:14] INFO root fetch - processPackages [PySide1-Customized-Window]: Downloading https://files.pythonhosted.org/packages/44/5d/c38fd60436410421c078152a1d8d79d6b68b04d1aea1ffd614bbadd67035/PySide1_Customized_Window-1.1-py3-none-any.whl
+[2023-04-30 10:32:14] INFO root fetch - processPackages [whatsapp-python]: Downloading https://files.pythonhosted.org/packages/70/0b/226cd5168f6cd53a007327f5bac5496c29c1811ad8d0347ae78a2d0ff035/whatsapp-python-2.3.2.tar.gz
+[2023-04-30 10:32:14] INFO root fetch - processPackages [tinyfk]: executing diffoscope
+[2023-04-30 10:32:14] INFO root fetch - processPackages [tinyfk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyfk-0.6.0.dev8.tar.gz tmp/tinyfk-0.6.1.tar.gz --markdown 20230430/t/tinyfk/0.6.0.dev8-0.6.1/diff.md --exclude *.pyd
+[2023-04-30 10:32:14] INFO root fetch - processPackages [badgie]: Downloading https://files.pythonhosted.org/packages/a5/71/a246e113b6efc6212c4cbbecef5e1d799a166b0729db3d3e919f1918ef22/badgie-0.6.0.tar.gz
+[2023-04-30 10:32:14] INFO root fetch - processPackages [yeonghun123]: Downloading https://files.pythonhosted.org/packages/53/ad/94e9ea5765ff6ebd627821e83395a6fb3b6ddf1e4095f4fc6022b41e92bd/yeonghun123-0.0.2-py3-none-any.whl
+[2023-04-30 10:32:14] INFO root fetch - processPackages [PySide1-Customized-Window]: executing diffoscope
+[2023-04-30 10:32:14] INFO root fetch - processPackages [PySide1-Customized-Window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide1_Customized_Window-1.0-py3-none-any.whl.zip tmp/PySide1_Customized_Window-1.1-py3-none-any.whl.zip --markdown 20230430/P/PySide1-Customized-Window/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-30 10:32:14] INFO root fetch - processPackages [whatsapp-python]: executing diffoscope
+[2023-04-30 10:32:14] INFO root fetch - processPackages [whatsapp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatsapp-python-2.2.2.tar.gz tmp/whatsapp-python-2.3.2.tar.gz --markdown 20230430/w/whatsapp-python/2.2.2-2.3.2/diff.md --exclude *.pyd
+[2023-04-30 10:32:14] INFO root fetch - processPackages [badgie]: executing diffoscope
+[2023-04-30 10:32:14] INFO root fetch - processPackages [badgie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgie-0.5.1.tar.gz tmp/badgie-0.6.0.tar.gz --markdown 20230430/b/badgie/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-30 10:32:14] INFO root fetch - processPackages [yeonghun123]: executing diffoscope
+[2023-04-30 10:32:14] INFO root fetch - processPackages [yeonghun123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeonghun123-0.0.1-py3-none-any.whl.zip tmp/yeonghun123-0.0.2-py3-none-any.whl.zip --markdown 20230430/y/yeonghun123/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 10:32:15] INFO root fetch - main [MainThread]: End processing [yatracker-linker]: success
+[2023-04-30 10:32:15] INFO root fetch - main [MainThread]: End processing [backtrader-binance]: success
+[2023-04-30 10:32:15] INFO root fetch - main [MainThread]: End processing [PySide1-Customized-Window]: success
+[2023-04-30 10:32:15] INFO root fetch - main [MainThread]: End processing [yeonghun123]: success
+[2023-04-30 10:32:15] INFO root fetch - main [MainThread]: End processing [whatsapp-python]: success
+[2023-04-30 10:32:15] INFO root fetch - main [MainThread]: End processing [badgie]: success
+[2023-04-30 10:32:29] INFO root fetch - main [MainThread]: End processing [tinyfk]: success
+[2023-04-30 10:32:29] INFO root fetch - main [MainThread]: Store serial: [17915488]
