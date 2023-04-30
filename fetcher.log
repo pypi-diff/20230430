@@ -3231,3 +3231,61 @@
 [2023-04-30 07:57:27] INFO root fetch - main [MainThread]: End processing [katalytic-checks]: success
 [2023-04-30 07:57:27] INFO root fetch - main [MainThread]: End processing [ml-toybox]: success
 [2023-04-30 07:57:27] INFO root fetch - main [MainThread]: Store serial: [17914833]
+[2023-04-30 08:02:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914833]
+[2023-04-30 08:02:36] INFO root fetch - main [MainThread]: No changed packages found
+[2023-04-30 08:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914833]
+[2023-04-30 08:07:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 08:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moethread
+[2023-04-30 08:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DeltaKG
+[2023-04-30 08:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dndfog
+[2023-04-30 08:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyopendota
+[2023-04-30 08:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyg-nightly
+[2023-04-30 08:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mtimageio
+[2023-04-30 08:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyPlumIO
+[2023-04-30 08:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nautilus-trader
+[2023-04-30 08:07:43] INFO root fetch - processPackages [dndfog]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-30 08:07:43] INFO root fetch - processPackages [moethread]: New version: [1.1.3] Old Version: [1.1.1]
+[2023-04-30 08:07:43] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230429] Old Version: [2.4.0.dev20230428]
+[2023-04-30 08:07:43] INFO root fetch - processPackages [pyopendota]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-30 08:07:43] INFO root fetch - processPackages [mtimageio]: New version: [0.3.202304300605] Old Version: [0.3.202304290650]
+[2023-04-30 08:07:43] INFO root fetch - processPackages [DeltaKG]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 08:07:43] INFO root fetch - processPackages [nautilus-trader]: New version: [1.172.0] Old Version: [1.171.0]
+[2023-04-30 08:07:43] INFO root fetch - processPackages [PyPlumIO]: New version: [0.4.1] Old Version: [0.4.0.post1]
+[2023-04-30 08:07:43] INFO root fetch - processPackages [moethread]: Downloading https://files.pythonhosted.org/packages/f0/6e/fda48f17cfe956c10bbc6374c8d9cdabe757cec7469e732713ded363a6e1/moethread-1.1.1.tar.gz
+[2023-04-30 08:07:43] INFO root fetch - processPackages [mtimageio]: Downloading https://files.pythonhosted.org/packages/76/44/a8c6374d9f2874956ebb3f781d4011164a6a0cb5b4e5a2108ae71eeb1abd/mtimageio-0.3.202304300605-py3-none-any.whl
+[2023-04-30 08:07:43] INFO root fetch - processPackages [dndfog]: Downloading https://files.pythonhosted.org/packages/5b/cc/39457b78a13b3c65634d6cdb6521519ab15880fd77883634c787548fc1d0/dndfog-0.6.1.tar.gz
+[2023-04-30 08:07:43] INFO root fetch - processPackages [PyPlumIO]: Downloading https://files.pythonhosted.org/packages/55/01/d3e850e836643521e7c057c67e9a9c1054c5aaced9530a775716f8e6fd5b/PyPlumIO-0.4.0.post1.tar.gz
+[2023-04-30 08:07:43] INFO root fetch - processPackages [nautilus-trader]: Downloading https://files.pythonhosted.org/packages/36/e9/2c632c754a267c8bfe095b2aac4a8db642b3e6b50f7854407e6438c01ca2/nautilus_trader-1.171.0.tar.gz
+[2023-04-30 08:07:43] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/3b/36/c44a9d95593639d084375145f2545439711db8383b83cbacefe504e32d71/pyg-nightly-2.4.0.dev20230429.tar.gz
+[2023-04-30 08:07:43] INFO root fetch - processPackages [pyopendota]: Downloading https://files.pythonhosted.org/packages/c3/29/d3af099f9c669ab46f558c4a25138bc23c020b80240d92dd5637d1df899a/pyopendota-0.2.8.tar.gz
+[2023-04-30 08:07:43] INFO root fetch - processPackages [DeltaKG]: Downloading https://files.pythonhosted.org/packages/d1/c1/6f1eaf9559f537bd82f6aa13b841f60df768b34265fef678618092eacf2d/DeltaKG-0.0.3.tar.gz
+[2023-04-30 08:07:43] INFO root fetch - processPackages [mtimageio]: executing diffoscope
+[2023-04-30 08:07:43] INFO root fetch - processPackages [mtimageio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtimageio-0.3.202304290650-py3-none-any.whl.zip tmp/mtimageio-0.3.202304300605-py3-none-any.whl.zip --markdown 20230430/m/mtimageio/0.3.202304290650-0.3.202304300605/diff.md --exclude *.pyd
+[2023-04-30 08:07:44] INFO root fetch - processPackages [DeltaKG]: executing diffoscope
+[2023-04-30 08:07:44] INFO root fetch - processPackages [DeltaKG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeltaKG-0.0.2.tar.gz tmp/DeltaKG-0.0.3.tar.gz --markdown 20230430/D/DeltaKG/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 08:07:44] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-04-30 08:07:44] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230428.tar.gz tmp/pyg-nightly-2.4.0.dev20230429.tar.gz --markdown 20230430/p/pyg-nightly/2.4.0.dev20230428-2.4.0.dev20230429/diff.md --exclude *.pyd
+[2023-04-30 08:07:44] INFO root fetch - processPackages [moethread]: Downloading https://files.pythonhosted.org/packages/09/e4/1b97f6d36869fdcfda0b430955bb93ab6fb35b0db3ef984e920a77717932/moethread-1.1.3.tar.gz
+[2023-04-30 08:07:44] INFO root fetch - processPackages [PyPlumIO]: Downloading https://files.pythonhosted.org/packages/9f/a9/819102b340bd7a3412b93272724d6eb14a10c145e9f46786498d613a987f/PyPlumIO-0.4.1.tar.gz
+[2023-04-30 08:07:44] INFO root fetch - processPackages [moethread]: executing diffoscope
+[2023-04-30 08:07:44] INFO root fetch - processPackages [moethread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moethread-1.1.1.tar.gz tmp/moethread-1.1.3.tar.gz --markdown 20230430/m/moethread/1.1.1-1.1.3/diff.md --exclude *.pyd
+[2023-04-30 08:07:44] INFO root fetch - processPackages [pyopendota]: Downloading https://files.pythonhosted.org/packages/6b/42/a40f8ef40b57fba82067ede14e9355358c690fb8559d0500925adcef2638/pyopendota-0.2.9.tar.gz
+[2023-04-30 08:07:44] INFO root fetch - processPackages [nautilus-trader]: Downloading https://files.pythonhosted.org/packages/a8/81/5917b57990c2995c46fceec1c3d8d4a5fa251268c4ca403bc30c7111627e/nautilus_trader-1.172.0.tar.gz
+[2023-04-30 08:07:44] INFO root fetch - processPackages [PyPlumIO]: executing diffoscope
+[2023-04-30 08:07:44] INFO root fetch - processPackages [PyPlumIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPlumIO-0.4.0.post1.tar.gz tmp/PyPlumIO-0.4.1.tar.gz --markdown 20230430/P/PyPlumIO/0.4.0.post1-0.4.1/diff.md --exclude *.pyd
+[2023-04-30 08:07:44] INFO root fetch - processPackages [pyopendota]: executing diffoscope
+[2023-04-30 08:07:44] INFO root fetch - processPackages [pyopendota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopendota-0.2.8.tar.gz tmp/pyopendota-0.2.9.tar.gz --markdown 20230430/p/pyopendota/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-30 08:07:44] INFO root fetch - processPackages [dndfog]: Downloading https://files.pythonhosted.org/packages/fb/27/a8a25900f20c391c705454991b47c7b93efb820f31af724ef4904d4cc586/dndfog-0.6.2.tar.gz
+[2023-04-30 08:07:44] INFO root fetch - processPackages [nautilus-trader]: executing diffoscope
+[2023-04-30 08:07:44] INFO root fetch - processPackages [nautilus-trader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautilus_trader-1.171.0.tar.gz tmp/nautilus_trader-1.172.0.tar.gz --markdown 20230430/n/nautilus-trader/1.171.0-1.172.0/diff.md --exclude *.pyd
+[2023-04-30 08:07:44] INFO root fetch - processPackages [dndfog]: executing diffoscope
+[2023-04-30 08:07:44] INFO root fetch - processPackages [dndfog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dndfog-0.6.1.tar.gz tmp/dndfog-0.6.2.tar.gz --markdown 20230430/d/dndfog/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-30 08:07:45] INFO root fetch - main [MainThread]: End processing [mtimageio]: success
+[2023-04-30 08:07:45] INFO root fetch - main [MainThread]: End processing [DeltaKG]: success
+[2023-04-30 08:07:45] INFO root fetch - main [MainThread]: End processing [moethread]: success
+[2023-04-30 08:07:45] INFO root fetch - main [MainThread]: End processing [pyopendota]: success
+[2023-04-30 08:07:46] INFO root fetch - main [MainThread]: End processing [PyPlumIO]: success
+[2023-04-30 08:07:46] INFO root fetch - main [MainThread]: End processing [dndfog]: success
+[2023-04-30 08:07:51] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-04-30 08:08:00] INFO root fetch - main [MainThread]: End processing [nautilus-trader]: success
+[2023-04-30 08:08:00] INFO root fetch - main [MainThread]: Store serial: [17914865]
