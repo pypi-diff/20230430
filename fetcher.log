@@ -2809,3 +2809,46 @@
 [2023-04-30 06:51:02] INFO root fetch - main [MainThread]: End processing [bbai] error
 [2023-04-30 06:51:04] INFO root fetch - main [MainThread]: End processing [opencv-stubs]: success
 [2023-04-30 06:51:04] INFO root fetch - main [MainThread]: Store serial: [17914518]
+[2023-04-30 06:56:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914518]
+[2023-04-30 06:56:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 06:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyascore
+[2023-04-30 06:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-comments-x
+[2023-04-30 06:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: safenote
+[2023-04-30 06:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymwp
+[2023-04-30 06:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rp
+[2023-04-30 06:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: katalytic-data
+[2023-04-30 06:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: safenote
+[2023-04-30 06:56:12] INFO root fetch - processPackages [pymwp]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-30 06:56:12] WARNING root fetch - processPackages [django-comments-x]: Skipping, unable to determine old version
+[2023-04-30 06:56:12] INFO root fetch - main [MainThread]: End processing [django-comments-x] error
+[2023-04-30 06:56:12] INFO root fetch - processPackages [katalytic-data]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-30 06:56:12] INFO root fetch - processPackages [safenote]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 06:56:12] INFO root fetch - processPackages [pyascore]: New version: [1.0.0] Old Version: [0.7.0b0]
+[2023-04-30 06:56:12] INFO root fetch - processPackages [safenote]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 06:56:12] INFO root fetch - processPackages [rp]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-30 06:56:13] INFO root fetch - processPackages [safenote]: Downloading https://files.pythonhosted.org/packages/8e/b6/e097f392d76d1c3889d82cb968e38b725fd7063716d0223f4b0ca08673b4/safenote-0.1.2.tar.gz
+[2023-04-30 06:56:13] INFO root fetch - processPackages [rp]: executing diffoscope
+[2023-04-30 06:56:13] INFO root fetch - processPackages [rp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rp-0.1.98.tar.gz tmp/rp-0.1.99.tar.gz --markdown 20230430/r/rp/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-30 06:56:13] INFO root fetch - processPackages [safenote]: Downloading https://files.pythonhosted.org/packages/8e/b6/e097f392d76d1c3889d82cb968e38b725fd7063716d0223f4b0ca08673b4/safenote-0.1.2.tar.gz
+[2023-04-30 06:56:13] INFO root fetch - processPackages [katalytic-data]: Downloading https://files.pythonhosted.org/packages/69/bd/80c8e3f89ddfb1024685f5ccefecaa5c33a82cb07c211a1a759be75cfe4b/katalytic-data-0.7.0.tar.gz
+[2023-04-30 06:56:13] INFO root fetch - processPackages [pymwp]: Downloading https://files.pythonhosted.org/packages/2b/28/84da11d7d47b2a44891bed53245b548bbe05acdcc19d07c3cd87be20c9dd/pymwp-0.4.1.tar.gz
+[2023-04-30 06:56:13] INFO root fetch - processPackages [katalytic-data]: executing diffoscope
+[2023-04-30 06:56:13] INFO root fetch - processPackages [katalytic-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-data-0.6.0.tar.gz tmp/katalytic-data-0.7.0.tar.gz --markdown 20230430/k/katalytic-data/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-30 06:56:13] INFO root fetch - processPackages [pymwp]: executing diffoscope
+[2023-04-30 06:56:13] INFO root fetch - processPackages [pymwp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymwp-0.4.0.tar.gz tmp/pymwp-0.4.1.tar.gz --markdown 20230430/p/pymwp/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-30 06:56:13] INFO root fetch - processPackages [safenote]: Downloading https://files.pythonhosted.org/packages/37/5b/fdc0d1864b4eacb8901ac2a01fca9b36d90f3bb3b5bbb31815f36bad2832/safenote-0.1.3.tar.gz
+[2023-04-30 06:56:13] INFO root fetch - processPackages [safenote]: Downloading https://files.pythonhosted.org/packages/37/5b/fdc0d1864b4eacb8901ac2a01fca9b36d90f3bb3b5bbb31815f36bad2832/safenote-0.1.3.tar.gz
+[2023-04-30 06:56:13] INFO root fetch - processPackages [pyascore]: Downloading https://files.pythonhosted.org/packages/ce/6a/eee84a9512160139b1bf37d85b0648830474818de714d34cba33dac124e8/pyascore-1.0.0.tar.gz
+[2023-04-30 06:56:13] INFO root fetch - processPackages [safenote]: executing diffoscope
+[2023-04-30 06:56:13] INFO root fetch - processPackages [safenote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safenote-0.1.2.tar.gz tmp/safenote-0.1.3.tar.gz --markdown 20230430/s/safenote/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 06:56:13] INFO root fetch - processPackages [safenote]: executing diffoscope
+[2023-04-30 06:56:13] INFO root fetch - processPackages [safenote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safenote-0.1.2.tar.gz tmp/safenote-0.1.3.tar.gz --markdown 20230430/s/safenote/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 06:56:13] INFO root fetch - processPackages [pyascore]: executing diffoscope
+[2023-04-30 06:56:13] INFO root fetch - processPackages [pyascore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyascore-0.7.0b0.tar.gz tmp/pyascore-1.0.0.tar.gz --markdown 20230430/p/pyascore/0.7.0b0-1.0.0/diff.md --exclude *.pyd
+[2023-04-30 06:56:14] INFO root fetch - main [MainThread]: End processing [safenote]: success
+[2023-04-30 06:56:14] INFO root fetch - main [MainThread]: End processing [safenote]: success
+[2023-04-30 06:56:14] INFO root fetch - main [MainThread]: End processing [katalytic-data]: success
+[2023-04-30 06:56:14] INFO root fetch - main [MainThread]: End processing [pymwp]: success
+[2023-04-30 06:56:15] INFO root fetch - main [MainThread]: End processing [pyascore]: success
+[2023-04-30 06:56:16] INFO root fetch - main [MainThread]: End processing [rp]: success
+[2023-04-30 06:56:16] INFO root fetch - main [MainThread]: Store serial: [17914557]
