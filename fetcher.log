@@ -5124,3 +5124,23 @@
 [2023-04-30 11:57:17] INFO root fetch - main [MainThread]: End processing [UzbekTagger]: success
 [2023-04-30 11:57:26] INFO root fetch - main [MainThread]: End processing [jupyter-manager]: success
 [2023-04-30 11:57:26] INFO root fetch - main [MainThread]: Store serial: [17915889]
+[2023-04-30 12:02:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915889]
+[2023-04-30 12:02:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 12:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zebrazoom
+[2023-04-30 12:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: analogainas
+[2023-04-30 12:02:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hiddifypanel
+[2023-04-30 12:02:36] WARNING root fetch - processPackages [analogainas]: Skipping, unable to determine old version
+[2023-04-30 12:02:36] INFO root fetch - main [MainThread]: End processing [analogainas] error
+[2023-04-30 12:02:36] INFO root fetch - processPackages [zebrazoom]: New version: [1.9] Old Version: [1.8]
+[2023-04-30 12:02:36] INFO root fetch - processPackages [hiddifypanel]: New version: [5.1.0.dev1] Old Version: [5.1.0.dev0]
+[2023-04-30 12:02:36] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/aa/ef/42a63f74327333c3e8716d20fe86c8f7ec498cfcae6a59bc08c03a437977/hiddifypanel-5.1.0.dev0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-30 12:02:36] INFO root fetch - processPackages [zebrazoom]: Downloading https://files.pythonhosted.org/packages/f8/26/fb333d50056298ab69d02c7c0e0fdaeae2e51fca825888178df88926b372/zebrazoom-1.8.tar.gz
+[2023-04-30 12:02:37] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/ec/1d/2099e0efb2b22133ea83405b7c193396064d9ef7434482d6cf269aefd713/hiddifypanel-5.1.0.dev1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-30 12:02:37] INFO root fetch - processPackages [zebrazoom]: Downloading https://files.pythonhosted.org/packages/29/37/9f2aaa64707bbcd24502e836857b6c572452e441dc5bb3229137d00bfa9b/zebrazoom-1.9.tar.gz
+[2023-04-30 12:02:38] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-30 12:02:38] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-5.1.0.dev0-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-5.1.0.dev1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230430/h/hiddifypanel/5.1.0.dev0-5.1.0.dev1/diff.md --exclude *.pyd
+[2023-04-30 12:02:38] INFO root fetch - processPackages [zebrazoom]: executing diffoscope
+[2023-04-30 12:02:38] INFO root fetch - processPackages [zebrazoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zebrazoom-1.8.tar.gz tmp/zebrazoom-1.9.tar.gz --markdown 20230430/z/zebrazoom/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-30 12:02:41] INFO root fetch - main [MainThread]: End processing [zebrazoom]: success
+[2023-04-30 12:02:58] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-04-30 12:02:58] INFO root fetch - main [MainThread]: Store serial: [17915903]
