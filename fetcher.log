@@ -11184,3 +11184,55 @@
 [2023-04-30 23:31:51] INFO root fetch - main [MainThread]: End processing [toml-tools]: success
 [2023-04-30 23:31:51] INFO root fetch - main [MainThread]: End processing [maestral]: success
 [2023-04-30 23:31:51] INFO root fetch - main [MainThread]: Store serial: [17920151]
+[2023-04-30 23:36:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920151]
+[2023-04-30 23:37:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: culturalconformity
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SQLAlchemy
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maestral-cocoa
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-workshop
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ssl-labs-screenshot
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reticuler
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uwuipy
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jupyter-rfb
+[2023-04-30 23:37:00] INFO root fetch - processPackages [jupyter-rfb]: New version: [0.4.1] Old Version: [0.3.3]
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ssl-labs-screenshot]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ovos-workshop]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-30 23:37:00] INFO root fetch - processPackages [culturalconformity]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 23:37:00] INFO root fetch - processPackages [reticuler]: New version: [1.0] Old Version: [0.4]
+[2023-04-30 23:37:00] INFO root fetch - processPackages [uwuipy]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 23:37:00] INFO root fetch - processPackages [maestral-cocoa]: New version: [1.7.2.dev2] Old Version: [1.7.2]
+[2023-04-30 23:37:00] INFO root fetch - processPackages [SQLAlchemy]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ovos-workshop]: executing diffoscope
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ovos-workshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_workshop-0.0.9-py3-none-any.whl.zip tmp/ovos_workshop-0.0.9a1-py3-none-any.whl.zip --markdown 20230430/o/ovos-workshop/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ssl-labs-screenshot]: Downloading https://files.pythonhosted.org/packages/7e/fa/e04fde7ad2e280e4c9ca96ff0f9d7aa87d83c5f0ee2a7bf38cee3c79d3a1/ssl-labs-screenshot-1.0.4.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [jupyter-rfb]: Downloading https://files.pythonhosted.org/packages/fb/b2/e5c352cf2def759ad1fbfc559ca9162f1672f6f4b7a461bffec300dd568e/jupyter_rfb-0.3.3.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/c2/b6/10544a6de88b0dda561b9fa2eac903bca6fe6f26db8322b912efaf9e0a55/maestral-cocoa-1.7.2.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [uwuipy]: Downloading https://files.pythonhosted.org/packages/18/db/7fb6f0729c5fdc43244a609fdc991584f5fb319c04e64146340bd512fb67/uwuipy-0.1.4.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [reticuler]: Downloading https://files.pythonhosted.org/packages/ff/20/e8b82ba5ba29423a7d748288c275f163a80773a621d3e78e80f9e505fe0e/reticuler-0.4.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [SQLAlchemy]: executing diffoscope
+[2023-04-30 23:37:00] INFO root fetch - processPackages [SQLAlchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLAlchemy-2.0.8.tar.gz tmp/SQLAlchemy-2.0.9.tar.gz --markdown 20230430/S/SQLAlchemy/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:37:00] INFO root fetch - processPackages [culturalconformity]: executing diffoscope
+[2023-04-30 23:37:00] INFO root fetch - processPackages [culturalconformity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culturalconformity-0.0.8.tar.gz tmp/culturalconformity-0.0.9.tar.gz --markdown 20230430/c/culturalconformity/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:37:00] INFO root fetch - processPackages [maestral-cocoa]: executing diffoscope
+[2023-04-30 23:37:00] INFO root fetch - processPackages [maestral-cocoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-cocoa-1.7.2.tar.gz tmp/maestral-cocoa-1.7.2.dev2.tar.gz --markdown 20230430/m/maestral-cocoa/1.7.2-1.7.2.dev2/diff.md --exclude *.pyd
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ssl-labs-screenshot]: Downloading https://files.pythonhosted.org/packages/91/ac/bd34c08f3bf36fc000d3d71472197f967dabcd05ff255345b5f99bbc2794/ssl-labs-screenshot-1.0.5.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [reticuler]: Downloading https://files.pythonhosted.org/packages/19/ac/b61fbb843e28870b39d8c08aa982278ba0e5a3ce14c37cc95beafa86f3fb/reticuler-1.0.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ssl-labs-screenshot]: executing diffoscope
+[2023-04-30 23:37:00] INFO root fetch - processPackages [ssl-labs-screenshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssl-labs-screenshot-1.0.4.tar.gz tmp/ssl-labs-screenshot-1.0.5.tar.gz --markdown 20230430/s/ssl-labs-screenshot/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-30 23:37:00] INFO root fetch - processPackages [jupyter-rfb]: Downloading https://files.pythonhosted.org/packages/9b/88/0f3976e0e5820a611dfad087e0e7c0eedd4d96fbbae7efaf8971e2613f5f/jupyter_rfb-0.4.1.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [uwuipy]: Downloading https://files.pythonhosted.org/packages/70/16/07ecc7bd3fe46ad2969576cad36ebfe78e74ff88d4702ea853b93a194c0d/uwuipy-0.1.5.tar.gz
+[2023-04-30 23:37:00] INFO root fetch - processPackages [reticuler]: executing diffoscope
+[2023-04-30 23:37:00] INFO root fetch - processPackages [reticuler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reticuler-0.4.tar.gz tmp/reticuler-1.0.tar.gz --markdown 20230430/r/reticuler/0.4-1.0/diff.md --exclude *.pyd
+[2023-04-30 23:37:00] INFO root fetch - processPackages [jupyter-rfb]: executing diffoscope
+[2023-04-30 23:37:00] INFO root fetch - processPackages [jupyter-rfb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_rfb-0.3.3.tar.gz tmp/jupyter_rfb-0.4.1.tar.gz --markdown 20230430/j/jupyter-rfb/0.3.3-0.4.1/diff.md --exclude *.pyd
+[2023-04-30 23:37:00] INFO root fetch - processPackages [uwuipy]: executing diffoscope
+[2023-04-30 23:37:00] INFO root fetch - processPackages [uwuipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwuipy-0.1.4.tar.gz tmp/uwuipy-0.1.5.tar.gz --markdown 20230430/u/uwuipy/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 23:37:01] INFO root fetch - main [MainThread]: End processing [culturalconformity]: success
+[2023-04-30 23:37:01] INFO root fetch - main [MainThread]: End processing [ovos-workshop]: success
+[2023-04-30 23:37:02] INFO root fetch - main [MainThread]: End processing [ssl-labs-screenshot]: success
+[2023-04-30 23:37:02] INFO root fetch - main [MainThread]: End processing [reticuler]: success
+[2023-04-30 23:37:02] INFO root fetch - main [MainThread]: End processing [uwuipy]: success
+[2023-04-30 23:37:04] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
+[2023-04-30 23:37:05] INFO root fetch - main [MainThread]: End processing [jupyter-rfb]: success
+[2023-04-30 23:38:08] INFO root fetch - main [MainThread]: End processing [SQLAlchemy]: success
+[2023-04-30 23:38:08] INFO root fetch - main [MainThread]: Store serial: [17920188]
