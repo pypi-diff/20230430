@@ -3196,3 +3196,38 @@
 [2023-04-30 07:52:06] INFO root fetch - processPackages [tmtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmtools-0.0.2-cp39-cp39-win_amd64.whl.zip tmp/tmtools-0.0.3-cp37-cp37m-musllinux_1_1_i686.whl.zip --markdown 20230430/t/tmtools/0.0.2-0.0.3/diff.md --exclude *.pyd
 [2023-04-30 07:52:11] INFO root fetch - main [MainThread]: End processing [tmtools]: success
 [2023-04-30 07:52:11] INFO root fetch - main [MainThread]: Store serial: [17914795]
+[2023-04-30 07:57:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914795]
+[2023-04-30 07:57:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 07:57:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moecolor
+[2023-04-30 07:57:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QPUIQ
+[2023-04-30 07:57:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: katalytic-checks
+[2023-04-30 07:57:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DeltaKG
+[2023-04-30 07:57:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ml-toybox
+[2023-04-30 07:57:26] INFO root fetch - processPackages [DeltaKG]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 07:57:26] INFO root fetch - processPackages [QPUIQ]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-30 07:57:26] INFO root fetch - processPackages [moecolor]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 07:57:26] INFO root fetch - processPackages [katalytic-checks]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-30 07:57:26] INFO root fetch - processPackages [ml-toybox]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-30 07:57:26] INFO root fetch - processPackages [QPUIQ]: Downloading https://files.pythonhosted.org/packages/cc/5f/4d22afaad6568a6614964a5120c7666cd427198aad235704bf5f851b6be0/QPUIQ-0.1.8.tar.gz
+[2023-04-30 07:57:26] INFO root fetch - processPackages [DeltaKG]: Downloading https://files.pythonhosted.org/packages/3a/c4/e73aa71440d86ac48e6d9e1c55a2cff1dcc5157530336788c85a1a5a427d/DeltaKG-0.0.1.tar.gz
+[2023-04-30 07:57:26] INFO root fetch - processPackages [ml-toybox]: Downloading https://files.pythonhosted.org/packages/77/bf/100989a6e1ef9ab1f19b60dd4154f1eb16aae4c4b9c629e1d3b649b9429c/ml-toybox-0.0.1.tar.gz
+[2023-04-30 07:57:26] INFO root fetch - processPackages [moecolor]: Downloading https://files.pythonhosted.org/packages/7e/44/e235186772ff5c84ef9b84d030ffb0c1057c8fb4843413c235c3ec4fb7cc/moecolor-1.0.2.tar.gz
+[2023-04-30 07:57:26] INFO root fetch - processPackages [QPUIQ]: executing diffoscope
+[2023-04-30 07:57:26] INFO root fetch - processPackages [QPUIQ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QPUIQ-0.1.7.tar.gz tmp/QPUIQ-0.1.8.tar.gz --markdown 20230430/Q/QPUIQ/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-30 07:57:26] INFO root fetch - processPackages [katalytic-checks]: Downloading https://files.pythonhosted.org/packages/fd/90/8fab9600a2c9f4882129372612b6954c30d9383394970eb9839d42d6eb5a/katalytic-checks-0.1.0.tar.gz
+[2023-04-30 07:57:26] INFO root fetch - processPackages [moecolor]: executing diffoscope
+[2023-04-30 07:57:26] INFO root fetch - processPackages [moecolor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moecolor-1.0.1.tar.gz tmp/moecolor-1.0.2.tar.gz --markdown 20230430/m/moecolor/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 07:57:26] INFO root fetch - processPackages [katalytic-checks]: executing diffoscope
+[2023-04-30 07:57:26] INFO root fetch - processPackages [katalytic-checks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-checks-0.0.1.tar.gz tmp/katalytic-checks-0.1.0.tar.gz --markdown 20230430/k/katalytic-checks/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-30 07:57:26] INFO root fetch - processPackages [DeltaKG]: Downloading https://files.pythonhosted.org/packages/d3/a3/9481bcff656db02e8b813e902101f8ea97c54ee08fcb68117389930c412c/DeltaKG-0.0.2.tar.gz
+[2023-04-30 07:57:26] INFO root fetch - processPackages [ml-toybox]: Downloading https://files.pythonhosted.org/packages/78/0d/ac08aeaa87a2a4d2e06876b12d7596d4faf9262929ba8c069a00b071adbf/ml-toybox-0.0.2.tar.gz
+[2023-04-30 07:57:26] INFO root fetch - processPackages [DeltaKG]: executing diffoscope
+[2023-04-30 07:57:26] INFO root fetch - processPackages [DeltaKG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeltaKG-0.0.1.tar.gz tmp/DeltaKG-0.0.2.tar.gz --markdown 20230430/D/DeltaKG/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 07:57:26] INFO root fetch - processPackages [ml-toybox]: executing diffoscope
+[2023-04-30 07:57:26] INFO root fetch - processPackages [ml-toybox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-toybox-0.0.1.tar.gz tmp/ml-toybox-0.0.2.tar.gz --markdown 20230430/m/ml-toybox/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-30 07:57:27] INFO root fetch - main [MainThread]: End processing [moecolor]: success
+[2023-04-30 07:57:27] INFO root fetch - main [MainThread]: End processing [QPUIQ]: success
+[2023-04-30 07:57:27] INFO root fetch - main [MainThread]: End processing [DeltaKG]: success
+[2023-04-30 07:57:27] INFO root fetch - main [MainThread]: End processing [katalytic-checks]: success
+[2023-04-30 07:57:27] INFO root fetch - main [MainThread]: End processing [ml-toybox]: success
+[2023-04-30 07:57:27] INFO root fetch - main [MainThread]: Store serial: [17914833]
