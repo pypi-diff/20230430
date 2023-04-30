@@ -6541,3 +6541,51 @@
 [2023-04-30 14:43:24] INFO root fetch - main [MainThread]: End processing [Netfoll-TL]: success
 [2023-04-30 14:43:24] INFO root fetch - main [MainThread]: End processing [mimesis]: success
 [2023-04-30 14:43:24] INFO root fetch - main [MainThread]: Store serial: [17916827]
+[2023-04-30 14:48:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916827]
+[2023-04-30 14:48:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 14:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylyzer
+[2023-04-30 14:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shipper-shippy
+[2023-04-30 14:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-desktop-tk
+[2023-04-30 14:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docchain
+[2023-04-30 14:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maestral
+[2023-04-30 14:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maestral
+[2023-04-30 14:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kolabpy
+[2023-04-30 14:48:34] INFO root fetch - processPackages [pylyzer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 14:48:34] INFO root fetch - processPackages [shipper-shippy]: New version: [1.9.0a5] Old Version: [1.9.0a4]
+[2023-04-30 14:48:34] INFO root fetch - processPackages [kolabpy]: New version: [1.0.2.7] Old Version: [1.0.2.6]
+[2023-04-30 14:48:34] INFO root fetch - processPackages [nonebot-desktop-tk]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 14:48:34] INFO root fetch - processPackages [docchain]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 14:48:34] INFO root fetch - processPackages [maestral]: New version: [1.7.2.dev2] Old Version: [1.7.2.dev1]
+[2023-04-30 14:48:34] INFO root fetch - processPackages [maestral]: New version: [1.7.2.dev2] Old Version: [1.7.2.dev1]
+[2023-04-30 14:48:34] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/eb/15/f65e8ec8781b1861b0f35174209e711bcee065c10e1746193404222d4188/shipper-shippy-1.9.0a4.tar.gz
+[2023-04-30 14:48:34] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/62/b2/466df7ab174c89737df73f054cb0bdf5c4f20ec867003f5a806f0781297b/maestral-1.7.2.dev1.tar.gz
+[2023-04-30 14:48:34] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/62/b2/466df7ab174c89737df73f054cb0bdf5c4f20ec867003f5a806f0781297b/maestral-1.7.2.dev1.tar.gz
+[2023-04-30 14:48:34] INFO root fetch - processPackages [docchain]: Downloading https://files.pythonhosted.org/packages/9b/f1/cae7a04e9b2da5e6cc698689d7bcd0d78fe9133b942427097e45f1d080cf/docchain-0.0.3.tar.gz
+[2023-04-30 14:48:34] INFO root fetch - processPackages [nonebot-desktop-tk]: Downloading https://files.pythonhosted.org/packages/60/8b/3f35a962f57a6b77797d2056c2a908dc736d5fdaadb00c56221e7bc0c110/nonebot-desktop-tk-1.0.2.tar.gz
+[2023-04-30 14:48:34] INFO root fetch - processPackages [kolabpy]: Downloading https://files.pythonhosted.org/packages/0f/a2/fc980194d59ca2bb9b4bb297eb0f9b42a84c65825f94beb71b67f2a8ee86/kolabpy-1.0.2.7-py3-none-any.whl
+[2023-04-30 14:48:34] INFO root fetch - processPackages [nonebot-desktop-tk]: executing diffoscope
+[2023-04-30 14:48:34] INFO root fetch - processPackages [nonebot-desktop-tk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-tk-1.0.1.tar.gz tmp/nonebot-desktop-tk-1.0.2.tar.gz --markdown 20230430/n/nonebot-desktop-tk/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 14:48:34] INFO root fetch - processPackages [kolabpy]: executing diffoscope
+[2023-04-30 14:48:34] INFO root fetch - processPackages [kolabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kolabpy-1.0.2.6-py3-none-any.whl.zip tmp/kolabpy-1.0.2.7-py3-none-any.whl.zip --markdown 20230430/k/kolabpy/1.0.2.6-1.0.2.7/diff.md --exclude *.pyd
+[2023-04-30 14:48:34] INFO root fetch - processPackages [docchain]: Downloading https://files.pythonhosted.org/packages/2b/3e/27069d8804076effd6621eb04764bc5c2767e5b590af7b5d3dd1e77b0e70/docchain-0.0.4.tar.gz
+[2023-04-30 14:48:34] INFO root fetch - processPackages [docchain]: executing diffoscope
+[2023-04-30 14:48:34] INFO root fetch - processPackages [docchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docchain-0.0.3.tar.gz tmp/docchain-0.0.4.tar.gz --markdown 20230430/d/docchain/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 14:48:34] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/44/9f/7329e3598b4169adaefa20b50c5655e10ee330058150cfeb6b0d7bdc09d4/shipper-shippy-1.9.0a5.tar.gz
+[2023-04-30 14:48:34] INFO root fetch - processPackages [pylyzer]: executing diffoscope
+[2023-04-30 14:48:34] INFO root fetch - processPackages [pylyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylyzer-0.0.8-py3-none-win_amd64.whl.zip tmp/pylyzer-0.0.9-py3-none-win_amd64.whl.zip --markdown 20230430/p/pylyzer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 14:48:34] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/6b/78/648bbfa96423accbfa8764d61583f4eaeed02379196942f1530cd8c52d14/maestral-1.7.2.dev2.tar.gz
+[2023-04-30 14:48:35] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/6b/78/648bbfa96423accbfa8764d61583f4eaeed02379196942f1530cd8c52d14/maestral-1.7.2.dev2.tar.gz
+[2023-04-30 14:48:35] INFO root fetch - processPackages [shipper-shippy]: executing diffoscope
+[2023-04-30 14:48:35] INFO root fetch - processPackages [shipper-shippy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipper-shippy-1.9.0a4.tar.gz tmp/shipper-shippy-1.9.0a5.tar.gz --markdown 20230430/s/shipper-shippy/1.9.0a4-1.9.0a5/diff.md --exclude *.pyd
+[2023-04-30 14:48:35] INFO root fetch - processPackages [maestral]: executing diffoscope
+[2023-04-30 14:48:35] INFO root fetch - processPackages [maestral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-1.7.2.dev1.tar.gz tmp/maestral-1.7.2.dev2.tar.gz --markdown 20230430/m/maestral/1.7.2.dev1-1.7.2.dev2/diff.md --exclude *.pyd
+[2023-04-30 14:48:35] INFO root fetch - processPackages [maestral]: executing diffoscope
+[2023-04-30 14:48:35] INFO root fetch - processPackages [maestral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-1.7.2.dev1.tar.gz tmp/maestral-1.7.2.dev2.tar.gz --markdown 20230430/m/maestral/1.7.2.dev1-1.7.2.dev2/diff.md --exclude *.pyd
+[2023-04-30 14:48:35] INFO root fetch - main [MainThread]: End processing [nonebot-desktop-tk]: success
+[2023-04-30 14:48:35] INFO root fetch - main [MainThread]: End processing [kolabpy]: success
+[2023-04-30 14:48:36] INFO root fetch - main [MainThread]: End processing [docchain]: success
+[2023-04-30 14:48:36] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
+[2023-04-30 14:48:36] INFO root fetch - main [MainThread]: End processing [maestral]: success
+[2023-04-30 14:48:36] INFO root fetch - main [MainThread]: End processing [maestral]: success
+[2023-04-30 14:49:36] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
+[2023-04-30 14:49:36] INFO root fetch - main [MainThread]: Store serial: [17916849]
