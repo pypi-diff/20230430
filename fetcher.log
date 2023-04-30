@@ -9028,3 +9028,39 @@
 [2023-04-30 19:22:32] INFO root fetch - main [MainThread]: End processing [Fortuna]: success
 [2023-04-30 19:22:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-04-30 19:22:51] INFO root fetch - main [MainThread]: Store serial: [17918483]
+[2023-04-30 19:27:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918483]
+[2023-04-30 19:28:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 19:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: goodmodslab-api
+[2023-04-30 19:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alignn
+[2023-04-30 19:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TelegramChatbotProject
+[2023-04-30 19:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: space-invaders
+[2023-04-30 19:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: napatrackmater
+[2023-04-30 19:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crazy-thursday
+[2023-04-30 19:28:00] INFO root fetch - processPackages [space-invaders]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-04-30 19:28:00] INFO root fetch - processPackages [napatrackmater]: New version: [3.4.3] Old Version: [3.4.2]
+[2023-04-30 19:28:00] WARNING root fetch - processPackages [goodmodslab-api]: Skipping, unable to determine old version
+[2023-04-30 19:28:00] INFO root fetch - main [MainThread]: End processing [goodmodslab-api] error
+[2023-04-30 19:28:00] INFO root fetch - processPackages [TelegramChatbotProject]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 19:28:00] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.1.0] Old Version: [2023.4.9.1]
+[2023-04-30 19:28:00] INFO root fetch - processPackages [alignn]: New version: [2023.4.27] Old Version: [2023.4.1]
+[2023-04-30 19:28:00] INFO root fetch - processPackages [TelegramChatbotProject]: Downloading https://files.pythonhosted.org/packages/89/3c/8b8b39ab51f6c89117610613acacc28854ccff0e710e569fbbbabfee9954/TelegramChatbotProject-1.0.0.tar.gz
+[2023-04-30 19:28:00] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/3c/ed/14dccb9ef335458bb99e82ac10c791164823f07da19567d5b4f44fd06ab0/napatrackmater-3.4.3.tar.gz
+[2023-04-30 19:28:00] INFO root fetch - processPackages [space-invaders]: Downloading https://files.pythonhosted.org/packages/9d/ac/a1255b57968d014d208d48948c497c57310de1a4ea87bc09ff96aba7822c/space-invaders-0.3.2.tar.gz
+[2023-04-30 19:28:00] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/c1/f3/2bf9e5c9b8ab19bec02fe7f28ecbcc9c9ff964dc453d89c034f47a996c83/crazy-thursday-2023.5.1.0.tar.gz
+[2023-04-30 19:28:00] INFO root fetch - processPackages [alignn]: Downloading https://files.pythonhosted.org/packages/2f/e3/baca2514daa1ac85e073920fcfe379eaf1b2b5a4c88279fbe2712fdc74fe/alignn-2023.4.1.tar.gz
+[2023-04-30 19:28:00] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2023-04-30 19:28:00] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-3.4.2.tar.gz tmp/napatrackmater-3.4.3.tar.gz --markdown 20230430/n/napatrackmater/3.4.2-3.4.3/diff.md --exclude *.pyd
+[2023-04-30 19:28:00] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-30 19:28:00] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.1.tar.gz tmp/crazy-thursday-2023.5.1.0.tar.gz --markdown 20230430/c/crazy-thursday/2023.4.9.1-2023.5.1.0/diff.md --exclude *.pyd
+[2023-04-30 19:28:00] WARNING root fetch - processPackages [alignn]: Skipping package: exceeds size limit 15075768>=10485760
+[2023-04-30 19:28:00] INFO root fetch - main [MainThread]: End processing [alignn] error
+[2023-04-30 19:28:00] INFO root fetch - processPackages [space-invaders]: executing diffoscope
+[2023-04-30 19:28:00] INFO root fetch - processPackages [space-invaders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/space-invaders-0.3.0.tar.gz tmp/space-invaders-0.3.2.tar.gz --markdown 20230430/s/space-invaders/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-04-30 19:28:00] INFO root fetch - processPackages [TelegramChatbotProject]: Downloading https://files.pythonhosted.org/packages/2e/42/168d8a5ae961bdf22c851cdc96d0ebeb495915f8281defc8557f31d71b3e/TelegramChatbotProject-1.0.1.tar.gz
+[2023-04-30 19:28:01] INFO root fetch - processPackages [TelegramChatbotProject]: executing diffoscope
+[2023-04-30 19:28:01] INFO root fetch - processPackages [TelegramChatbotProject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TelegramChatbotProject-1.0.0.tar.gz tmp/TelegramChatbotProject-1.0.1.tar.gz --markdown 20230430/T/TelegramChatbotProject/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 19:28:01] INFO root fetch - main [MainThread]: End processing [TelegramChatbotProject]: success
+[2023-04-30 19:28:02] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2023-04-30 19:28:02] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-30 19:28:02] INFO root fetch - main [MainThread]: End processing [space-invaders]: success
+[2023-04-30 19:28:02] INFO root fetch - main [MainThread]: Store serial: [17918502]
