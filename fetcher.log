@@ -7928,3 +7928,47 @@
 [2023-04-30 17:09:25] INFO root fetch - main [MainThread]: End processing [hikari-miru]: success
 [2023-04-30 17:09:26] INFO root fetch - main [MainThread]: End processing [pygpsclient]: success
 [2023-04-30 17:09:26] INFO root fetch - main [MainThread]: Store serial: [17917661]
+[2023-04-30 17:14:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917661]
+[2023-04-30 17:14:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 17:14:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: typeshed-client
+[2023-04-30 17:14:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sfkit
+[2023-04-30 17:14:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: starrail-toolkit
+[2023-04-30 17:14:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: leap-model-rebuilder
+[2023-04-30 17:14:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: littletable
+[2023-04-30 17:14:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: types-urllib3
+[2023-04-30 17:14:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: leap-model-rebuilder
+[2023-04-30 17:14:34] INFO root fetch - processPackages [typeshed-client]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-30 17:14:34] WARNING root fetch - processPackages [starrail-toolkit]: Skipping, unable to determine old version
+[2023-04-30 17:14:34] INFO root fetch - main [MainThread]: End processing [starrail-toolkit] error
+[2023-04-30 17:14:34] INFO root fetch - processPackages [types-urllib3]: New version: [1.26.9] Old Version: [1.26.8]
+[2023-04-30 17:14:34] INFO root fetch - processPackages [littletable]: New version: [2.2.0] Old Version: [2.1.2]
+[2023-04-30 17:14:34] INFO root fetch - processPackages [sfkit]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 17:14:34] INFO root fetch - processPackages [leap-model-rebuilder]: New version: [0.1.6.dev2] Old Version: [0.1.6.dev1]
+[2023-04-30 17:14:34] INFO root fetch - processPackages [leap-model-rebuilder]: New version: [0.1.6.dev2] Old Version: [0.1.6.dev1]
+[2023-04-30 17:14:34] INFO root fetch - processPackages [typeshed-client]: Downloading https://files.pythonhosted.org/packages/a7/be/19737227f40a5fdd7b52abbeca3653c09a83575c49d67f48fbb0b2b6afb4/typeshed_client-2.2.0.tar.gz
+[2023-04-30 17:14:34] INFO root fetch - processPackages [littletable]: Downloading https://files.pythonhosted.org/packages/b1/48/04ef2ed9bcfd33bd3048f19470ba85a87d05e72cb3f2943ee919f4b3c60c/littletable-2.1.2.tar.gz
+[2023-04-30 17:14:34] INFO root fetch - processPackages [leap-model-rebuilder]: Downloading https://files.pythonhosted.org/packages/22/3a/605717f98c809b6f4eee6e5e34a74e98a0197237d1ac167860b312d66514/leap_model_rebuilder-0.1.6.dev1.tar.gz
+[2023-04-30 17:14:34] INFO root fetch - processPackages [leap-model-rebuilder]: Downloading https://files.pythonhosted.org/packages/22/3a/605717f98c809b6f4eee6e5e34a74e98a0197237d1ac167860b312d66514/leap_model_rebuilder-0.1.6.dev1.tar.gz
+[2023-04-30 17:14:35] INFO root fetch - processPackages [sfkit]: executing diffoscope
+[2023-04-30 17:14:35] INFO root fetch - processPackages [sfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfkit-0.0.98-py3-none-any.whl.zip tmp/sfkit-0.0.99-py3-none-any.whl.zip --markdown 20230430/s/sfkit/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 17:14:35] INFO root fetch - processPackages [types-urllib3]: executing diffoscope
+[2023-04-30 17:14:35] INFO root fetch - processPackages [types-urllib3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-urllib3-1.26.8.tar.gz tmp/types-urllib3-1.26.9.tar.gz --markdown 20230430/t/types-urllib3/1.26.8-1.26.9/diff.md --exclude *.pyd
+[2023-04-30 17:14:35] INFO root fetch - processPackages [leap-model-rebuilder]: Downloading https://files.pythonhosted.org/packages/d1/aa/944992d128f199be0428a2908d6e4935f5d8d5bc0c79002a649d2c1e0c76/leap_model_rebuilder-0.1.6.dev2.tar.gz
+[2023-04-30 17:14:35] INFO root fetch - processPackages [leap-model-rebuilder]: Downloading https://files.pythonhosted.org/packages/d1/aa/944992d128f199be0428a2908d6e4935f5d8d5bc0c79002a649d2c1e0c76/leap_model_rebuilder-0.1.6.dev2.tar.gz
+[2023-04-30 17:14:35] INFO root fetch - processPackages [typeshed-client]: Downloading https://files.pythonhosted.org/packages/44/10/d2e496b716dc4e565f6fb4c4882f409f7cab1733e543a87192722aa75810/typeshed_client-2.3.0.tar.gz
+[2023-04-30 17:14:35] INFO root fetch - processPackages [littletable]: Downloading https://files.pythonhosted.org/packages/7d/ad/d23d01333f337fee71fd1fc7cbb1585b47015b7dddc199ced9333d1a2571/littletable-2.2.0.tar.gz
+[2023-04-30 17:14:35] INFO root fetch - processPackages [littletable]: executing diffoscope
+[2023-04-30 17:14:35] INFO root fetch - processPackages [littletable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/littletable-2.1.2.tar.gz tmp/littletable-2.2.0.tar.gz --markdown 20230430/l/littletable/2.1.2-2.2.0/diff.md --exclude *.pyd
+[2023-04-30 17:14:35] INFO root fetch - processPackages [typeshed-client]: executing diffoscope
+[2023-04-30 17:14:35] INFO root fetch - processPackages [typeshed-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typeshed_client-2.2.0.tar.gz tmp/typeshed_client-2.3.0.tar.gz --markdown 20230430/t/typeshed-client/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-30 17:14:35] INFO root fetch - processPackages [leap-model-rebuilder]: executing diffoscope
+[2023-04-30 17:14:35] INFO root fetch - processPackages [leap-model-rebuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_rebuilder-0.1.6.dev1.tar.gz tmp/leap_model_rebuilder-0.1.6.dev2.tar.gz --markdown 20230430/l/leap-model-rebuilder/0.1.6.dev1-0.1.6.dev2/diff.md --exclude *.pyd
+[2023-04-30 17:14:35] INFO root fetch - processPackages [leap-model-rebuilder]: executing diffoscope
+[2023-04-30 17:14:35] INFO root fetch - processPackages [leap-model-rebuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_rebuilder-0.1.6.dev1.tar.gz tmp/leap_model_rebuilder-0.1.6.dev2.tar.gz --markdown 20230430/l/leap-model-rebuilder/0.1.6.dev1-0.1.6.dev2/diff.md --exclude *.pyd
+[2023-04-30 17:14:36] INFO root fetch - main [MainThread]: End processing [types-urllib3]: success
+[2023-04-30 17:14:36] INFO root fetch - main [MainThread]: End processing [sfkit]: success
+[2023-04-30 17:14:36] INFO root fetch - main [MainThread]: End processing [leap-model-rebuilder]: success
+[2023-04-30 17:14:36] INFO root fetch - main [MainThread]: End processing [leap-model-rebuilder]: success
+[2023-04-30 17:14:36] INFO root fetch - main [MainThread]: End processing [littletable]: success
+[2023-04-30 17:14:45] INFO root fetch - main [MainThread]: End processing [typeshed-client]: success
+[2023-04-30 17:14:45] INFO root fetch - main [MainThread]: Store serial: [17917684]
