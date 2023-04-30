@@ -10053,3 +10053,44 @@
 [2023-04-30 21:09:48] INFO root fetch - main [MainThread]: End processing [stim]: success
 [2023-04-30 21:09:48] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
 [2023-04-30 21:09:48] INFO root fetch - main [MainThread]: Store serial: [17919225]
+[2023-04-30 21:14:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919225]
+[2023-04-30 21:14:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 21:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custolint
+[2023-04-30 21:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fedml
+[2023-04-30 21:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycryptokms
+[2023-04-30 21:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zood
+[2023-04-30 21:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hyperfast-python-template
+[2023-04-30 21:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cppcheck-junit
+[2023-04-30 21:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spimdisasm
+[2023-04-30 21:14:57] INFO root fetch - processPackages [cppcheck-junit]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-30 21:14:57] INFO root fetch - processPackages [custolint]: New version: [0.1.13] Old Version: [0.1.12]
+[2023-04-30 21:14:57] INFO root fetch - processPackages [zood]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-30 21:14:57] INFO root fetch - processPackages [fedml]: New version: [0.8.4a9] Old Version: [0.8.4a8]
+[2023-04-30 21:14:57] WARNING root fetch - processPackages [pycryptokms]: Skipping, unable to determine old version
+[2023-04-30 21:14:57] INFO root fetch - main [MainThread]: End processing [pycryptokms] error
+[2023-04-30 21:14:57] INFO root fetch - processPackages [hyperfast-python-template]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-30 21:14:57] INFO root fetch - processPackages [spimdisasm]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-30 21:14:57] INFO root fetch - processPackages [cppcheck-junit]: Downloading https://files.pythonhosted.org/packages/d5/10/9ce6a82c830875923eaa4c255ea25d3ca2c023edfee0c011005e5789ef85/cppcheck-junit-2.2.0.tar.gz
+[2023-04-30 21:14:57] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-04-30 21:14:57] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.4a8.tar.gz tmp/fedml-0.8.4a9.tar.gz --markdown 20230430/f/fedml/0.8.4a8-0.8.4a9/diff.md --exclude *.pyd
+[2023-04-30 21:14:58] INFO root fetch - processPackages [spimdisasm]: executing diffoscope
+[2023-04-30 21:14:58] INFO root fetch - processPackages [spimdisasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spimdisasm-1.9.1.tar.gz tmp/spimdisasm-1.9.2.tar.gz --markdown 20230430/s/spimdisasm/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-30 21:14:58] INFO root fetch - processPackages [custolint]: Downloading https://files.pythonhosted.org/packages/81/e9/c73ef6b25322e50c822e9bed9b07298ef918402bc9e70f0464386194d9e4/custolint-0.1.13-py3-none-any.whl
+[2023-04-30 21:14:58] INFO root fetch - processPackages [zood]: Downloading https://files.pythonhosted.org/packages/3f/62/1ecbca809975974cdf25d97d9edf8c0ead17e51d4f282db4e9ef882cf7bc/zood-0.7.1.tar.gz
+[2023-04-30 21:14:58] INFO root fetch - processPackages [hyperfast-python-template]: Downloading https://files.pythonhosted.org/packages/2b/55/3cc3936cd9fc1b3cdc6e7c3105ca02edab0fa4eb34843157614d1fd6836d/hyperfast_python_template-0.4.7.tar.gz
+[2023-04-30 21:14:58] INFO root fetch - processPackages [zood]: executing diffoscope
+[2023-04-30 21:14:58] INFO root fetch - processPackages [zood]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zood-0.7.0.tar.gz tmp/zood-0.7.1.tar.gz --markdown 20230430/z/zood/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-30 21:14:58] INFO root fetch - processPackages [custolint]: executing diffoscope
+[2023-04-30 21:14:58] INFO root fetch - processPackages [custolint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custolint-0.1.12-py3-none-any.whl.zip tmp/custolint-0.1.13-py3-none-any.whl.zip --markdown 20230430/c/custolint/0.1.12-0.1.13/diff.md --exclude *.pyd
+[2023-04-30 21:14:58] INFO root fetch - processPackages [cppcheck-junit]: Downloading https://files.pythonhosted.org/packages/da/6a/445991970abdcd0a383ff275c150fa120b3a6730d99f31843161def68150/cppcheck-junit-2.3.0.tar.gz
+[2023-04-30 21:14:58] INFO root fetch - processPackages [hyperfast-python-template]: executing diffoscope
+[2023-04-30 21:14:58] INFO root fetch - processPackages [hyperfast-python-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperfast_python_template-0.4.6.tar.gz tmp/hyperfast_python_template-0.4.7.tar.gz --markdown 20230430/h/hyperfast-python-template/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-30 21:14:58] INFO root fetch - processPackages [cppcheck-junit]: executing diffoscope
+[2023-04-30 21:14:58] INFO root fetch - processPackages [cppcheck-junit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cppcheck-junit-2.2.0.tar.gz tmp/cppcheck-junit-2.3.0.tar.gz --markdown 20230430/c/cppcheck-junit/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-30 21:14:59] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
+[2023-04-30 21:14:59] INFO root fetch - main [MainThread]: End processing [custolint]: success
+[2023-04-30 21:14:59] INFO root fetch - main [MainThread]: End processing [spimdisasm]: success
+[2023-04-30 21:14:59] INFO root fetch - main [MainThread]: End processing [cppcheck-junit]: success
+[2023-04-30 21:14:59] INFO root fetch - main [MainThread]: End processing [zood]: success
+[2023-04-30 21:15:06] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-04-30 21:15:06] INFO root fetch - main [MainThread]: Store serial: [17919249]
