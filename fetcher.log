@@ -3924,3 +3924,49 @@
 [2023-04-30 09:33:17] INFO root fetch - main [MainThread]: End processing [timelessnesses-typed-env]: success
 [2023-04-30 09:33:17] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
 [2023-04-30 09:33:17] INFO root fetch - main [MainThread]: Store serial: [17915224]
+[2023-04-30 09:38:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915224]
+[2023-04-30 09:38:25] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aws-lambda-mess
+[2023-04-30 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lalsuite
+[2023-04-30 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: luau
+[2023-04-30 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test-swagger-coverage
+[2023-04-30 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spotinst-agent-beta
+[2023-04-30 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bioregistry
+[2023-04-30 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfirebird
+[2023-04-30 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: HILO-MPC
+[2023-04-30 09:38:25] INFO root fetch - processPackages [luau]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-30 09:38:25] INFO root fetch - processPackages [aws-lambda-mess]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-30 09:38:25] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 09:38:25] INFO root fetch - processPackages [test-swagger-coverage]: New version: [2.1.54] Old Version: [0.1.54]
+[2023-04-30 09:38:25] INFO root fetch - processPackages [spotinst-agent-beta]: New version: [2.2.272] Old Version: [2.2.271]
+[2023-04-30 09:38:25] INFO root fetch - processPackages [bioregistry]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-30 09:38:25] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-04-30 09:38:25] INFO root fetch - processPackages [luau]: Downloading https://files.pythonhosted.org/packages/bf/a6/53629f4c39798477f9dac667fc2b401715ce709b59b767e3320f46472eb7/luau-0.4.9.tar.gz
+[2023-04-30 09:38:25] WARNING root fetch - processPackages [luau]: Skipping package: exceeds size limit 36993103>=10485760
+[2023-04-30 09:38:25] INFO root fetch - main [MainThread]: End processing [luau] error
+[2023-04-30 09:38:25] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-30 09:38:25] INFO root fetch - processPackages [aws-lambda-mess]: executing diffoscope
+[2023-04-30 09:38:25] INFO root fetch - processPackages [aws-lambda-mess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_mess-0.0.4.tar.gz tmp/aws_lambda_mess-0.0.5.tar.gz --markdown 20230430/a/aws-lambda-mess/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 09:38:25] INFO root fetch - processPackages [test-swagger-coverage]: executing diffoscope
+[2023-04-30 09:38:25] INFO root fetch - processPackages [test-swagger-coverage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_swagger_coverage-0.1.54.tar.gz tmp/test_swagger_coverage-2.1.54.tar.gz --markdown 20230430/t/test-swagger-coverage/0.1.54-2.1.54/diff.md --exclude *.pyd
+[2023-04-30 09:38:25] INFO root fetch - processPackages [HILO-MPC]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 09:38:25] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-04-30 09:38:25] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-04-30 09:38:25] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-04-30 09:38:25] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.2.tar.gz tmp/pyfirebird-0.0.3.tar.gz --markdown 20230430/p/pyfirebird/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 09:38:25] INFO root fetch - processPackages [spotinst-agent-beta]: Downloading https://files.pythonhosted.org/packages/c8/88/e969fec78a608d49f5869d3d2d6b7eca32cc111685a77ac4182cf0255cd5/spotinst-agent-beta-2.2.272.tar.gz
+[2023-04-30 09:38:25] INFO root fetch - processPackages [HILO-MPC]: Downloading https://files.pythonhosted.org/packages/ef/fc/37fa70803fe97e152cb05d025048fdbd037d731ce268a23c9bf2498ed46c/HILO-MPC-1.0.2.tar.gz
+[2023-04-30 09:38:25] INFO root fetch - processPackages [spotinst-agent-beta]: executing diffoscope
+[2023-04-30 09:38:25] INFO root fetch - processPackages [spotinst-agent-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-agent-beta-2.2.271.tar.gz tmp/spotinst-agent-beta-2.2.272.tar.gz --markdown 20230430/s/spotinst-agent-beta/2.2.271-2.2.272/diff.md --exclude *.pyd
+[2023-04-30 09:38:25] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-04-30 09:38:25] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.8.8.tar.gz tmp/bioregistry-0.8.9.tar.gz --markdown 20230430/b/bioregistry/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-30 09:38:26] INFO root fetch - processPackages [HILO-MPC]: Downloading https://files.pythonhosted.org/packages/3b/cf/9ce08e6963bd867a5127a5bc219c5f5dd119546d8f18742a8ab1101cf2a3/HILO-MPC-1.0.3.tar.gz
+[2023-04-30 09:38:26] INFO root fetch - processPackages [HILO-MPC]: executing diffoscope
+[2023-04-30 09:38:26] INFO root fetch - processPackages [HILO-MPC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HILO-MPC-1.0.2.tar.gz tmp/HILO-MPC-1.0.3.tar.gz --markdown 20230430/H/HILO-MPC/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 09:38:26] INFO root fetch - main [MainThread]: End processing [aws-lambda-mess]: success
+[2023-04-30 09:38:26] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-04-30 09:38:26] INFO root fetch - main [MainThread]: End processing [test-swagger-coverage]: success
+[2023-04-30 09:38:26] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
+[2023-04-30 09:38:28] INFO root fetch - main [MainThread]: End processing [HILO-MPC]: success
+[2023-04-30 09:39:36] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-04-30 09:39:36] INFO root fetch - main [MainThread]: Store serial: [17915260]
