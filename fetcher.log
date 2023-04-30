@@ -5845,3 +5845,60 @@
 [2023-04-30 13:39:44] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
 [2023-04-30 13:39:45] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-04-30 13:39:45] INFO root fetch - main [MainThread]: Store serial: [17916324]
+[2023-04-30 13:44:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916324]
+[2023-04-30 13:44:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyNINA
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt4all-j
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyre-check-nightly
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellmap
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyproject-generator
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Paste
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ykenan-file
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jprint
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pygmi-get
+[2023-04-30 13:44:54] INFO root fetch - processPackages [PyNINA]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-30 13:44:54] INFO root fetch - processPackages [pyproject-generator]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-30 13:44:54] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304301141] Old Version: [1.0.1.dev202304300747]
+[2023-04-30 13:44:54] WARNING root fetch - processPackages [pygmi-get]: Skipping, unable to determine old version
+[2023-04-30 13:44:54] INFO root fetch - main [MainThread]: End processing [pygmi-get] error
+[2023-04-30 13:44:54] INFO root fetch - processPackages [gpt4all-j]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-30 13:44:54] INFO root fetch - processPackages [Paste]: New version: [3.5.3] Old Version: [3.5.2]
+[2023-04-30 13:44:54] INFO root fetch - processPackages [jprint]: New version: [1.3] Old Version: [1.1]
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ykenan-file]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 13:44:54] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101682853102] Old Version: [0.0.101682766675]
+[2023-04-30 13:44:54] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/30/ff/ff1136173f097a8ee19fe375ce385fe3594e301f1ba44e001a513f702bb3/cellmap-1.0.1.dev202304300747-py3-none-any.whl
+[2023-04-30 13:44:54] INFO root fetch - processPackages [jprint]: Downloading https://files.pythonhosted.org/packages/2c/99/8dac5135500eaaa0f405f66e719b79f4bc3328d562580ae9fedc1471dfec/jprint-1.1.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [PyNINA]: Downloading https://files.pythonhosted.org/packages/b9/33/be49e0225571e1a62ebfebd8967bb07e53a78af27b0b9e8a5800d7f7fd39/PyNINA-0.2.0.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [Paste]: Downloading https://files.pythonhosted.org/packages/4c/2b/2e44afea5f8e397a5ce0f7ef78a79647f2c21e3fd7a463bf3be13aa6e819/Paste-3.5.2.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [pyproject-generator]: Downloading https://files.pythonhosted.org/packages/f1/60/308f7096e884a6f9cea353ec72a6a0299a86e5a32ef941b772ec376ef3c4/pyproject-generator-0.1.0.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [gpt4all-j]: Downloading https://files.pythonhosted.org/packages/d7/7a/98a0fddf05c5bfcccc9903e5ff305446cfadbcb0185dccd36d816db65b7e/gpt4all-j-0.2.3.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ykenan-file]: Downloading https://files.pythonhosted.org/packages/18/ce/2c6ef34d10ad3142e4d57ef74a07671249167af6cd8c42ad7ea303e0405b/ykenan_file-0.1.5.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/fb/ef/0ff9ce3149cc904fe81e06703d2964fedc774f4e46d0fec39242856a0e9a/pyre-check-nightly-0.0.101682766675.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [gpt4all-j]: executing diffoscope
+[2023-04-30 13:44:54] INFO root fetch - processPackages [gpt4all-j]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt4all-j-0.2.2.tar.gz tmp/gpt4all-j-0.2.3.tar.gz --markdown 20230430/g/gpt4all-j/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-30 13:44:54] INFO root fetch - processPackages [pyproject-generator]: executing diffoscope
+[2023-04-30 13:44:54] INFO root fetch - processPackages [pyproject-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-generator-0.0.9.tar.gz tmp/pyproject-generator-0.1.0.tar.gz --markdown 20230430/p/pyproject-generator/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ykenan-file]: executing diffoscope
+[2023-04-30 13:44:54] INFO root fetch - processPackages [ykenan-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_file-0.1.4.tar.gz tmp/ykenan_file-0.1.5.tar.gz --markdown 20230430/y/ykenan-file/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 13:44:54] INFO root fetch - processPackages [PyNINA]: Downloading https://files.pythonhosted.org/packages/24/d7/c670692e49818a3f6a13b724ae2058117d92497c1aa5de67878ff12c40fc/PyNINA-0.3.0.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [Paste]: Downloading https://files.pythonhosted.org/packages/42/8f/b8b76caf28d49b22b52b3ce3907966fff911551c54f20ae9cf263804d607/Paste-3.5.3.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/c0/71/92feaedc8b14712253945875be4f5ab5536c0319386d2baede82a3f9309d/cellmap-1.0.1.dev202304301141-py3-none-any.whl
+[2023-04-30 13:44:54] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23258565>=10485760
+[2023-04-30 13:44:54] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-04-30 13:44:54] INFO root fetch - processPackages [PyNINA]: executing diffoscope
+[2023-04-30 13:44:54] INFO root fetch - processPackages [PyNINA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyNINA-0.2.0.tar.gz tmp/PyNINA-0.3.0.tar.gz --markdown 20230430/P/PyNINA/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-30 13:44:54] INFO root fetch - processPackages [jprint]: Downloading https://files.pythonhosted.org/packages/4d/bb/a4748b3644b6c18e56dca7d3b824d490da4328ea4c103703d1a4b440998b/jprint-1.3.tar.gz
+[2023-04-30 13:44:54] INFO root fetch - processPackages [Paste]: executing diffoscope
+[2023-04-30 13:44:54] INFO root fetch - processPackages [Paste]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Paste-3.5.2.tar.gz tmp/Paste-3.5.3.tar.gz --markdown 20230430/P/Paste/3.5.2-3.5.3/diff.md --exclude *.pyd
+[2023-04-30 13:44:54] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-30 13:44:54] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304300747-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304301141-py3-none-any.whl.zip --markdown 20230430/c/cellmap/1.0.1.dev202304300747-1.0.1.dev202304301141/diff.md --exclude *.pyd
+[2023-04-30 13:44:54] INFO root fetch - processPackages [jprint]: executing diffoscope
+[2023-04-30 13:44:54] INFO root fetch - processPackages [jprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jprint-1.1.tar.gz tmp/jprint-1.3.tar.gz --markdown 20230430/j/jprint/1.1-1.3/diff.md --exclude *.pyd
+[2023-04-30 13:44:55] INFO root fetch - main [MainThread]: End processing [PyNINA]: success
+[2023-04-30 13:44:55] INFO root fetch - main [MainThread]: End processing [ykenan-file]: success
+[2023-04-30 13:44:55] INFO root fetch - main [MainThread]: End processing [pyproject-generator]: success
+[2023-04-30 13:44:55] INFO root fetch - main [MainThread]: End processing [jprint]: success
+[2023-04-30 13:44:56] INFO root fetch - main [MainThread]: End processing [cellmap]: success
+[2023-04-30 13:44:58] INFO root fetch - main [MainThread]: End processing [Paste]: success
+[2023-04-30 13:45:28] INFO root fetch - main [MainThread]: End processing [gpt4all-j]: success
+[2023-04-30 13:45:28] INFO root fetch - main [MainThread]: Store serial: [17916350]
