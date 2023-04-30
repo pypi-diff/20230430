@@ -4448,3 +4448,78 @@
 [2023-04-30 10:37:40] INFO root fetch - main [MainThread]: End processing [sparkit]: success
 [2023-04-30 10:37:47] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-30 10:37:47] INFO root fetch - main [MainThread]: Store serial: [17915508]
+[2023-04-30 10:42:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17915508]
+[2023-04-30 10:42:56] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeonghun123
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfaust
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ndpulsegen
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jellyash
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-estimator-nightly
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: srmist
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tegda
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bluepy3
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: badgie
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tff-nightly
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yeonghun123]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [jellyash]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ndpulsegen]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 10:42:56] WARNING root fetch - processPackages [srmist]: Skipping, unable to determine old version
+[2023-04-30 10:42:56] INFO root fetch - processPackages [srmist]: Start processing: yatracker-linker
+[2023-04-30 10:42:56] INFO root fetch - main [MainThread]: End processing [srmist] error
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tegda]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [bluepy3]: New version: [1.4.1] Old Version: [1.2.5]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [badgie]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230429] Old Version: [0.0.1.dev20230428]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [pyfaust]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yatracker-linker]: New version: [0.3.5] Old Version: [0.3.3]
+[2023-04-30 10:42:56] INFO root fetch - processPackages [jellyash]: Downloading https://files.pythonhosted.org/packages/8b/81/a90188b08e9dc8bb62db4b8859090464f291e942ce1110552d6a2a11a022/jellyash-0.3.3.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ndpulsegen]: Downloading https://files.pythonhosted.org/packages/b3/c0/f33339ba3f9c6a9ef92df0dbbe2fdca533df2f655ba059d1f27da63c3b75/ndpulsegen-1.0.0.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230430/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-04-30 10:42:56] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/66/7b/88b0e1cca627eb1b85e1a77991c1a9d583c38c5c89606c31f1b3b4766be6/bluepy3-1.2.5.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [badgie]: Downloading https://files.pythonhosted.org/packages/84/eb/1cbd87398efe3a9c5e0780b4493e5c92806709dc4daa2c14362f1446f9a1/badgie-0.6.1.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [badgie]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yeonghun123]: Downloading https://files.pythonhosted.org/packages/ff/d9/4c9852c61453d248728f1d749a4a9423de7c5725fd0b4a3f910be7f8a682/yeonghun123-0.0.3-py3-none-any.whl
+[2023-04-30 10:42:56] INFO root fetch - processPackages [badgie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgie-0.6.0.tar.gz tmp/badgie-0.6.1.tar.gz --markdown 20230430/b/badgie/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tegda]: Downloading https://files.pythonhosted.org/packages/ed/33/f416c8715c3ac37248486bc991e2c4488cf811d46aefb0c934b759e35f90/tegda-0.1.2.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/97/db/5356f2548cffb57166e290a08ee2f3e7843593e54881430a48977532e01d/yatracker_linker-0.3.3.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/ac/96/9369a0313f8ff0f287aac689d1dd499740d342d6249804b5eaba390c4c50/tff_nightly-0.0.1.dev20230429-py2.py3-none-any.whl
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tegda]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [tegda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tegda-0.1.1.tar.gz tmp/tegda-0.1.2.tar.gz --markdown 20230430/t/tegda/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 10:42:56] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/3c/56/47bbe34acffc77e2f8acfd980eec08f4a3c983f03dedb7a79603fa7d9cf5/bluepy3-1.4.1.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yeonghun123]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yeonghun123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeonghun123-0.0.2-py3-none-any.whl.zip tmp/yeonghun123-0.0.3-py3-none-any.whl.zip --markdown 20230430/y/yeonghun123/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 10:42:56] INFO root fetch - processPackages [bluepy3]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [bluepy3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluepy3-1.2.5.tar.gz tmp/bluepy3-1.4.1.tar.gz --markdown 20230430/b/bluepy3/1.2.5-1.4.1/diff.md --exclude *.pyd
+[2023-04-30 10:42:56] INFO root fetch - processPackages [jellyash]: Downloading https://files.pythonhosted.org/packages/09/a2/f31072d1b5f0e77d42c1c36b7140b9177868ecdfc53ef2efaf0b4ca6c9a6/jellyash-0.3.4.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ndpulsegen]: Downloading https://files.pythonhosted.org/packages/8d/03/11b8e657247d57dd062a09d44bf6505474bf0210658e80c524de9c9797ee/ndpulsegen-1.0.1.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [pyfaust]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [pyfaust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfaust-3.9.0-cp39-cp39-win_amd64.whl.zip tmp/pyfaust-3.9.1-cp39-cp39-win_amd64.whl.zip --markdown 20230430/p/pyfaust/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yatracker-linker]: Downloading https://files.pythonhosted.org/packages/a9/4a/b2b8cda373bb68312f9fa16781f0f58f14bcaf01a498aa67a95ef9125e22/yatracker_linker-0.3.5.tar.gz
+[2023-04-30 10:42:56] INFO root fetch - processPackages [jellyash]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [jellyash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jellyash-0.3.3.tar.gz tmp/jellyash-0.3.4.tar.gz --markdown 20230430/j/jellyash/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ndpulsegen]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [ndpulsegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndpulsegen-1.0.0.tar.gz tmp/ndpulsegen-1.0.1.tar.gz --markdown 20230430/n/ndpulsegen/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yatracker-linker]: executing diffoscope
+[2023-04-30 10:42:56] INFO root fetch - processPackages [yatracker-linker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yatracker_linker-0.3.3.tar.gz tmp/yatracker_linker-0.3.5.tar.gz --markdown 20230430/y/yatracker-linker/0.3.3-0.3.5/diff.md --exclude *.pyd
+[2023-04-30 10:42:57] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-04-30 10:42:57] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230428-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230429-py2.py3-none-any.whl.zip --markdown 20230430/t/tff-nightly/0.0.1.dev20230428-0.0.1.dev20230429/diff.md --exclude *.pyd
+[2023-04-30 10:42:58] INFO root fetch - processPackages [badgie]: Start processing: pylywsdxx
+[2023-04-30 10:42:58] INFO root fetch - main [MainThread]: End processing [badgie]: success
+[2023-04-30 10:42:58] INFO root fetch - main [MainThread]: End processing [tegda]: success
+[2023-04-30 10:42:58] INFO root fetch - main [MainThread]: End processing [yeonghun123]: success
+[2023-04-30 10:42:58] INFO root fetch - main [MainThread]: End processing [jellyash]: success
+[2023-04-30 10:42:58] INFO root fetch - processPackages [pylywsdxx]: New version: [1.6.1] Old Version: [1.4.2]
+[2023-04-30 10:42:58] INFO root fetch - main [MainThread]: End processing [bluepy3]: success
+[2023-04-30 10:42:58] INFO root fetch - main [MainThread]: End processing [yatracker-linker]: success
+[2023-04-30 10:42:58] INFO root fetch - processPackages [pylywsdxx]: Downloading https://files.pythonhosted.org/packages/76/8c/175f7d0e056b745f6847cfcbcf8d8e2369882fd98a8715e0ace297232bf3/pylywsdxx-1.4.2.tar.gz
+[2023-04-30 10:42:58] INFO root fetch - processPackages [pylywsdxx]: Downloading https://files.pythonhosted.org/packages/ec/9a/5c0706ec3e54db47e3ead9d7558cf1b1d66a20b0a79d2f01a21e5797ed0a/pylywsdxx-1.6.1.tar.gz
+[2023-04-30 10:42:58] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-04-30 10:42:59] INFO root fetch - main [MainThread]: End processing [ndpulsegen]: success
+[2023-04-30 10:42:59] INFO root fetch - processPackages [pylywsdxx]: executing diffoscope
+[2023-04-30 10:42:59] INFO root fetch - processPackages [pylywsdxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylywsdxx-1.4.2.tar.gz tmp/pylywsdxx-1.6.1.tar.gz --markdown 20230430/p/pylywsdxx/1.4.2-1.6.1/diff.md --exclude *.pyd
+[2023-04-30 10:43:00] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-04-30 10:43:00] INFO root fetch - main [MainThread]: End processing [pylywsdxx]: success
+[2023-04-30 10:43:32] INFO root fetch - main [MainThread]: End processing [pyfaust]: success
+[2023-04-30 10:43:32] INFO root fetch - main [MainThread]: Store serial: [17915537]
