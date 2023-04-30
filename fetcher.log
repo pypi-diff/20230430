@@ -5799,3 +5799,49 @@
 [2023-04-30 13:34:33] INFO root fetch - main [MainThread]: End processing [haloop]: success
 [2023-04-30 13:34:33] INFO root fetch - main [MainThread]: End processing [python-mylog]: success
 [2023-04-30 13:34:33] INFO root fetch - main [MainThread]: Store serial: [17916298]
+[2023-04-30 13:39:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916298]
+[2023-04-30 13:39:41] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 13:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: niaaml
+[2023-04-30 13:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyproject-generator
+[2023-04-30 13:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auto-pytabs
+[2023-04-30 13:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-nano
+[2023-04-30 13:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-chronos
+[2023-04-30 13:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: findmyorder
+[2023-04-30 13:39:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-serving
+[2023-04-30 13:39:41] INFO root fetch - processPackages [niaaml]: New version: [1.1.9] Old Version: [1.1.7]
+[2023-04-30 13:39:41] INFO root fetch - processPackages [pyproject-generator]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 13:39:41] INFO root fetch - processPackages [auto-pytabs]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-30 13:39:41] INFO root fetch - processPackages [findmyorder]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 13:39:41] INFO root fetch - processPackages [bigdl-serving]: New version: [2.4.0b20230430] Old Version: [2.4.0b20230429]
+[2023-04-30 13:39:41] INFO root fetch - processPackages [bigdl-nano]: New version: [2.4.0b20230430] Old Version: [2.4.0b20230429]
+[2023-04-30 13:39:41] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.4.0b20230430] Old Version: [2.4.0b20230429]
+[2023-04-30 13:39:41] INFO root fetch - processPackages [niaaml]: Downloading https://files.pythonhosted.org/packages/f7/93/f177e039581b5004429d0cf662a495329c50b9accd26ac291c9528ea3ebb/NiaAML-1.1.7.tar.gz
+[2023-04-30 13:39:42] INFO root fetch - processPackages [auto-pytabs]: Downloading https://files.pythonhosted.org/packages/d8/98/d578cc7bd15113beb156427dd8da6670a2b79f82b07e45c102cd4e2f2114/auto_pytabs-0.3.0.tar.gz
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/cd/e0/7c992c7cf1a6c95f9a7912cc4d5a677daf33aeaeb3256488a8184278602b/bigdl_serving-2.4.0b20230430-py2.py3-none-any.whl
+[2023-04-30 13:39:42] INFO root fetch - processPackages [pyproject-generator]: Downloading https://files.pythonhosted.org/packages/bb/ce/760b6fddabd52009e4b738cdf4657a4d3538c4cc24a0936ececdbcb3ae46/pyproject-generator-0.0.9.tar.gz
+[2023-04-30 13:39:42] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-04-30 13:39:42] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.0.8.tar.gz tmp/findmyorder-1.0.9.tar.gz --markdown 20230430/f/findmyorder/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 13:39:42] INFO root fetch - processPackages [pyproject-generator]: executing diffoscope
+[2023-04-30 13:39:42] INFO root fetch - processPackages [pyproject-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-generator-0.0.8.tar.gz tmp/pyproject-generator-0.0.9.tar.gz --markdown 20230430/p/pyproject-generator/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/ca/f1/a89ec916645e4ff9c568c55236c06c43cc4a9cb720b4cfac2ba794a71d4d/bigdl_chronos-2.4.0b20230430-py3-none-win_amd64.whl
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.4.0b20230429-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.4.0b20230430-py2.py3-none-any.whl.zip --markdown 20230430/b/bigdl-serving/2.4.0b20230429-2.4.0b20230430/diff.md --exclude *.pyd
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/1d/92/6d4dc996754f3a943cca70ef060bcfb77b50179ed901767d8382c7110359/bigdl_nano-2.4.0b20230430-py3-none-win_amd64.whl
+[2023-04-30 13:39:42] INFO root fetch - processPackages [auto-pytabs]: Downloading https://files.pythonhosted.org/packages/c3/90/23e4632abb5684463c9f4d94493f3319ca718be4965368ec8606de35d5ab/auto_pytabs-0.4.0.tar.gz
+[2023-04-30 13:39:42] INFO root fetch - processPackages [niaaml]: Downloading https://files.pythonhosted.org/packages/a4/e1/f8bc6b5d36f5467e21211654f9f6490ac663b02175f6a079cef833914f91/NiaAML-1.1.9.tar.gz
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.4.0b20230429-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.4.0b20230430-py3-none-win_amd64.whl.zip --markdown 20230430/b/bigdl-chronos/2.4.0b20230429-2.4.0b20230430/diff.md --exclude *.pyd
+[2023-04-30 13:39:42] INFO root fetch - processPackages [auto-pytabs]: executing diffoscope
+[2023-04-30 13:39:42] INFO root fetch - processPackages [auto-pytabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_pytabs-0.3.0.tar.gz tmp/auto_pytabs-0.4.0.tar.gz --markdown 20230430/a/auto-pytabs/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 13:39:42] INFO root fetch - processPackages [niaaml]: executing diffoscope
+[2023-04-30 13:39:42] INFO root fetch - processPackages [niaaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NiaAML-1.1.7.tar.gz tmp/NiaAML-1.1.9.tar.gz --markdown 20230430/n/niaaml/1.1.7-1.1.9/diff.md --exclude *.pyd
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-04-30 13:39:42] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.4.0b20230429-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.4.0b20230430-py3-none-win_amd64.whl.zip --markdown 20230430/b/bigdl-nano/2.4.0b20230429-2.4.0b20230430/diff.md --exclude *.pyd
+[2023-04-30 13:39:43] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-04-30 13:39:43] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-04-30 13:39:43] INFO root fetch - main [MainThread]: End processing [pyproject-generator]: success
+[2023-04-30 13:39:43] INFO root fetch - main [MainThread]: End processing [auto-pytabs]: success
+[2023-04-30 13:39:44] INFO root fetch - main [MainThread]: End processing [niaaml]: success
+[2023-04-30 13:39:44] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-04-30 13:39:45] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-04-30 13:39:45] INFO root fetch - main [MainThread]: Store serial: [17916324]
