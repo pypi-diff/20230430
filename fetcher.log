@@ -7972,3 +7972,37 @@
 [2023-04-30 17:14:36] INFO root fetch - main [MainThread]: End processing [littletable]: success
 [2023-04-30 17:14:45] INFO root fetch - main [MainThread]: End processing [typeshed-client]: success
 [2023-04-30 17:14:45] INFO root fetch - main [MainThread]: Store serial: [17917684]
+[2023-04-30 17:19:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917684]
+[2023-04-30 17:19:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 17:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram-ext
+[2023-04-30 17:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digitalguide
+[2023-04-30 17:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gsbg
+[2023-04-30 17:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FlipperNested
+[2023-04-30 17:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: policyengine-us
+[2023-04-30 17:19:54] INFO root fetch - processPackages [aiogram-ext]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-30 17:19:55] INFO root fetch - processPackages [digitalguide]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 17:19:55] INFO root fetch - processPackages [digitalguide]: executing diffoscope
+[2023-04-30 17:19:55] INFO root fetch - processPackages [digitalguide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalguide-0.0.98.tar.gz tmp/digitalguide-0.0.99.tar.gz --markdown 20230430/d/digitalguide/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 17:19:55] INFO root fetch - processPackages [FlipperNested]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-30 17:19:55] INFO root fetch - processPackages [gsbg]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-30 17:19:55] INFO root fetch - processPackages [policyengine-us]: New version: [0.310.0] Old Version: [0.309.0]
+[2023-04-30 17:19:55] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-30 17:19:55] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.3.0.tar.gz tmp/aiogram-ext-0.4.0.tar.gz --markdown 20230430/a/aiogram-ext/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 17:19:55] INFO root fetch - processPackages [gsbg]: Downloading https://files.pythonhosted.org/packages/7b/e9/52a205c58f86b418faa7dfebefebbc25987a6db6b090dfe0d162b897892f/gsbg-0.1.tar.gz
+[2023-04-30 17:19:55] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/88/1c/24479d144cd8a7e973f2621f35ae7addec0dff399738133a450dc48aa667/FlipperNested-2.1.1.tar.gz
+[2023-04-30 17:19:55] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/79/0c/7957940f0b4c72486892084d50455843e7edb7c60ff1a1aef81e406000de/policyengine-us-0.309.0.tar.gz
+[2023-04-30 17:19:55] INFO root fetch - processPackages [gsbg]: Downloading https://files.pythonhosted.org/packages/ec/96/c698a82da900bf67f3a69a8cbd4856564870936968042d66fa34e760f507/gsbg-0.1.1.tar.gz
+[2023-04-30 17:19:55] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/d3/96/30cbe2c3bbf94aa357a5af6b078a4e23ab5f9cad33c6da05cdd5563826f1/policyengine-us-0.310.0.tar.gz
+[2023-04-30 17:19:55] INFO root fetch - processPackages [gsbg]: executing diffoscope
+[2023-04-30 17:19:55] INFO root fetch - processPackages [gsbg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gsbg-0.1.tar.gz tmp/gsbg-0.1.1.tar.gz --markdown 20230430/g/gsbg/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-30 17:19:55] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/91/1e/c872b16f4ea74acabbe86986103810284b313e64fe224be9175428f17e96/FlipperNested-2.1.2.tar.gz
+[2023-04-30 17:19:55] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-30 17:19:55] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.309.0.tar.gz tmp/policyengine-us-0.310.0.tar.gz --markdown 20230430/p/policyengine-us/0.309.0-0.310.0/diff.md --exclude *.pyd
+[2023-04-30 17:19:56] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-30 17:19:56] INFO root fetch - main [MainThread]: End processing [digitalguide]: success
+[2023-04-30 17:19:56] INFO root fetch - processPackages [FlipperNested]: executing diffoscope
+[2023-04-30 17:19:56] INFO root fetch - processPackages [FlipperNested]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlipperNested-2.1.1.tar.gz tmp/FlipperNested-2.1.2.tar.gz --markdown 20230430/F/FlipperNested/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-30 17:19:56] INFO root fetch - main [MainThread]: End processing [gsbg]: success
+[2023-04-30 17:19:57] INFO root fetch - main [MainThread]: End processing [FlipperNested]: success
+[2023-04-30 17:21:06] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-04-30 17:21:06] INFO root fetch - main [MainThread]: Store serial: [17917726]
