@@ -2393,3 +2393,15 @@
 [2023-04-30 05:14:24] INFO root fetch - main [MainThread]: End processing [ms-api]: success
 [2023-04-30 05:14:46] INFO root fetch - main [MainThread]: End processing [autosrt]: success
 [2023-04-30 05:14:46] INFO root fetch - main [MainThread]: Store serial: [17914246]
+[2023-04-30 05:19:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914246]
+[2023-04-30 05:19:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 05:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lino
+[2023-04-30 05:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mbta-gtfs-sqlite
+[2023-04-30 05:19:55] WARNING root fetch - processPackages [mbta-gtfs-sqlite]: Skipping, unable to determine old version
+[2023-04-30 05:19:55] INFO root fetch - main [MainThread]: End processing [mbta-gtfs-sqlite] error
+[2023-04-30 05:19:55] INFO root fetch - processPackages [lino]: New version: [23.4.1] Old Version: [23.4.0]
+[2023-04-30 05:19:55] INFO root fetch - processPackages [lino]: Downloading https://files.pythonhosted.org/packages/6d/a8/22b35154b322e3cc6ece53f7dfccf38fd0184465fa0a7b1b12aa847cd581/lino-23.4.1.tar.gz
+[2023-04-30 05:19:55] INFO root fetch - processPackages [lino]: executing diffoscope
+[2023-04-30 05:19:55] INFO root fetch - processPackages [lino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lino-23.4.0.tar.gz tmp/lino-23.4.1.tar.gz --markdown 20230430/l/lino/23.4.0-23.4.1/diff.md --exclude *.pyd
+[2023-04-30 05:22:45] INFO root fetch - main [MainThread]: End processing [lino]: success
+[2023-04-30 05:22:45] INFO root fetch - main [MainThread]: Store serial: [17914251]
