@@ -6920,3 +6920,62 @@
 [2023-04-30 15:16:55] INFO root fetch - main [MainThread]: End processing [spotinst-agent-beta]: success
 [2023-04-30 15:16:55] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
 [2023-04-30 15:16:55] INFO root fetch - main [MainThread]: Store serial: [17917022]
+[2023-04-30 15:21:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17917022]
+[2023-04-30 15:22:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-account-invoice-overdue-reminder
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cellpy
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhrp
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GPTAgent
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wwpdb.utils.nmr
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fbgemm-gpu-nightly
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wwpdb.utils.db
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: so-vits-svc-fork
+[2023-04-30 15:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aws-arn
+[2023-04-30 15:22:03] INFO root fetch - processPackages [wwpdb.utils.nmr]: New version: [0.26] Old Version: [0.25]
+[2023-04-30 15:22:03] INFO root fetch - processPackages [cellpy]: New version: [0.4.3a3] Old Version: [0.4.3a2]
+[2023-04-30 15:22:04] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.4.29] Old Version: [2023.4.28]
+[2023-04-30 15:22:04] INFO root fetch - processPackages [GPTAgent]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 15:22:04] INFO root fetch - processPackages [aws-arn]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.db]: New version: [0.29.1] Old Version: [0.29]
+[2023-04-30 15:22:04] INFO root fetch - processPackages [odoo12-addon-account-invoice-overdue-reminder]: New version: [12.0.2.2.0] Old Version: [12.0.2.1.1.99.dev8]
+[2023-04-30 15:22:04] INFO root fetch - processPackages [pyhrp]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-30 15:22:04] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.9.5] Old Version: [3.9.4]
+[2023-04-30 15:22:04] INFO root fetch - processPackages [GPTAgent]: executing diffoscope
+[2023-04-30 15:22:04] INFO root fetch - processPackages [GPTAgent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptagent-0.0.8.tar.gz tmp/gptagent-0.0.9.tar.gz --markdown 20230430/G/GPTAgent/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.nmr]: Downloading https://files.pythonhosted.org/packages/ea/0e/d8a3331a1d4c7c0fc10edf07ab93937002e7633ac96530621b11b3ab3fc8/wwpdb.utils.nmr-0.25.tar.gz
+[2023-04-30 15:22:04] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/da/51/1e87e04e74170557612b0fdc0c5accd48a7b5f59a13fbcf29cdfcedd9609/aws-arn-0.0.2.tar.gz
+[2023-04-30 15:22:04] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/a1/75/69def11653d4f43ee64dd2a36b4c0bdade30c522e60ad47b058e84cf5b64/pyhrp-0.6.9.tar.gz
+[2023-04-30 15:22:04] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/e2/2b/0ca7c68c60ee7188fd25bfd77bc841c3d8063057b5c5f5992fc608f3ae3f/fbgemm_gpu_nightly-2023.4.28-cp39-cp39-manylinux1_x86_64.whl
+[2023-04-30 15:22:04] INFO root fetch - processPackages [odoo12-addon-account-invoice-overdue-reminder]: Downloading https://files.pythonhosted.org/packages/f3/52/81912048608894fd6d006f79f81066f7341314076c6b950df7fc74ee7596/odoo12_addon_account_invoice_overdue_reminder-12.0.2.1.1.99.dev8-py3-none-any.whl
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.db]: Downloading https://files.pythonhosted.org/packages/c2/fe/fb8930e8b170f2e7f35693584a84048714ba4c1f5d224f3657217cefde96/wwpdb.utils.db-0.29.tar.gz
+[2023-04-30 15:22:04] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 15:22:04] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.6.8.tar.gz tmp/pyhrp-0.6.9.tar.gz --markdown 20230430/p/pyhrp/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-30 15:22:04] INFO root fetch - processPackages [cellpy]: Downloading https://files.pythonhosted.org/packages/6b/8c/87bcf8eaa280dffb7f3eeeacafbca44681c25de5012ea1915cba42fcd76c/cellpy-0.4.3a2.tar.gz
+[2023-04-30 15:22:04] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-30 15:22:04] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.9.4.tar.gz tmp/so_vits_svc_fork-3.9.5.tar.gz --markdown 20230430/s/so-vits-svc-fork/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2023-04-30 15:22:04] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 265750654>=10485760
+[2023-04-30 15:22:04] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-04-30 15:22:04] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/59/03/556840e6dab27cab88ee28ef844d1469be3c932cfa64d3b81507065656e9/aws-arn-0.0.3.tar.gz
+[2023-04-30 15:22:04] INFO root fetch - processPackages [odoo12-addon-account-invoice-overdue-reminder]: Downloading https://files.pythonhosted.org/packages/62/02/a1ea804c608061b79d06cb9fbade56a3478523b251862312ec02ae8ce732/odoo12_addon_account_invoice_overdue_reminder-12.0.2.2.0-py3-none-any.whl
+[2023-04-30 15:22:04] INFO root fetch - processPackages [odoo12-addon-account-invoice-overdue-reminder]: executing diffoscope
+[2023-04-30 15:22:04] INFO root fetch - processPackages [odoo12-addon-account-invoice-overdue-reminder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_invoice_overdue_reminder-12.0.2.1.1.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_account_invoice_overdue_reminder-12.0.2.2.0-py3-none-any.whl.zip --markdown 20230430/o/odoo12-addon-account-invoice-overdue-reminder/12.0.2.1.1.99.dev8-12.0.2.2.0/diff.md --exclude *.pyd
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.db]: Downloading https://files.pythonhosted.org/packages/6a/d3/5ab518570cdb1bc62fdaf9d5a2d98bac06130f8ffe23d955c5116dc46fbb/wwpdb.utils.db-0.29.1.tar.gz
+[2023-04-30 15:22:04] INFO root fetch - processPackages [aws-arn]: executing diffoscope
+[2023-04-30 15:22:04] INFO root fetch - processPackages [aws-arn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-arn-0.0.2.tar.gz tmp/aws-arn-0.0.3.tar.gz --markdown 20230430/a/aws-arn/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.nmr]: Downloading https://files.pythonhosted.org/packages/38/0a/0cefa427345e783793e246f71db3ff6c789867cb4c7119c24b409b61b938/wwpdb.utils.nmr-0.26.tar.gz
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.nmr]: executing diffoscope
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.nmr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.nmr-0.25.tar.gz tmp/wwpdb.utils.nmr-0.26.tar.gz --markdown 20230430/w/wwpdb.utils.nmr/0.25-0.26/diff.md --exclude *.pyd
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.db]: executing diffoscope
+[2023-04-30 15:22:04] INFO root fetch - processPackages [wwpdb.utils.db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.db-0.29.tar.gz tmp/wwpdb.utils.db-0.29.1.tar.gz --markdown 20230430/w/wwpdb.utils.db/0.29-0.29.1/diff.md --exclude *.pyd
+[2023-04-30 15:22:05] INFO root fetch - processPackages [cellpy]: Downloading https://files.pythonhosted.org/packages/66/d2/393df69bea24cb8970351864d08571de629b67f4f402857651860dd26341/cellpy-0.4.3a3.tar.gz
+[2023-04-30 15:22:05] INFO root fetch - main [MainThread]: End processing [GPTAgent]: success
+[2023-04-30 15:22:05] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 15:22:05] INFO root fetch - processPackages [cellpy]: executing diffoscope
+[2023-04-30 15:22:05] INFO root fetch - processPackages [cellpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellpy-0.4.3a2.tar.gz tmp/cellpy-0.4.3a3.tar.gz --markdown 20230430/c/cellpy/0.4.3a2-0.4.3a3/diff.md --exclude *.pyd
+[2023-04-30 15:22:06] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-invoice-overdue-reminder]: success
+[2023-04-30 15:22:06] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.db]: success
+[2023-04-30 15:22:06] INFO root fetch - main [MainThread]: End processing [aws-arn]: success
+[2023-04-30 15:22:06] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2023-04-30 15:22:07] INFO root fetch - main [MainThread]: End processing [cellpy]: success
+[2023-04-30 15:22:13] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.nmr]: success
+[2023-04-30 15:22:13] INFO root fetch - main [MainThread]: Store serial: [17917049]
