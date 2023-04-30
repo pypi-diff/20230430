@@ -2267,3 +2267,47 @@
 [2023-04-30 04:53:38] INFO root fetch - main [MainThread]: End processing [bam-core]: success
 [2023-04-30 04:53:39] INFO root fetch - main [MainThread]: End processing [dox-search]: success
 [2023-04-30 04:53:39] INFO root fetch - main [MainThread]: Store serial: [17914185]
+[2023-04-30 04:58:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914185]
+[2023-04-30 04:58:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 04:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 04:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-04-30 04:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-zana
+[2023-04-30 04:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: my-find-files
+[2023-04-30 04:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polygone
+[2023-04-30 04:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EC521-malice-package1
+[2023-04-30 04:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dragonfile
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682823284] Old Version: [0.1.1682823275]
+[2023-04-30 04:58:48] WARNING root fetch - processPackages [EC521-malice-package1]: Skipping, unable to determine old version
+[2023-04-30 04:58:48] INFO root fetch - main [MainThread]: End processing [EC521-malice-package1] error
+[2023-04-30 04:58:48] WARNING root fetch - processPackages [my-find-files]: Skipping, unable to determine old version
+[2023-04-30 04:58:48] INFO root fetch - main [MainThread]: End processing [my-find-files] error
+[2023-04-30 04:58:48] INFO root fetch - processPackages [django-zana]: New version: [0.3.0a0] Old Version: [0.2.8]
+[2023-04-30 04:58:48] INFO root fetch - processPackages [polygone]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1682823284] Old Version: [0.1.1682823275]
+[2023-04-30 04:58:48] INFO root fetch - processPackages [dragonfile]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/c9/50/2bd926a66b7c370dfb6e63ac2a73a57cdd8c0aca5a9f53561862f07885e2/eia-odin-pkg-rioatmadja2018-0.1.1682823275.tar.gz
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/c9/50/2bd926a66b7c370dfb6e63ac2a73a57cdd8c0aca5a9f53561862f07885e2/eia-odin-pkg-rioatmadja2018-0.1.1682823275.tar.gz
+[2023-04-30 04:58:48] INFO root fetch - processPackages [django-zana]: Downloading https://files.pythonhosted.org/packages/fe/46/ba60d86935c93c3bd87a30b4f90b65376e90587fa3b1829d83d284f4e4a5/django_zana-0.2.8.tar.gz
+[2023-04-30 04:58:48] INFO root fetch - processPackages [polygone]: Downloading https://files.pythonhosted.org/packages/0b/0b/956da319db3b04e8384dc777df2e39c2c9cb1c5881cf5b6c3953ef9381c8/polygone-0.1.0.tar.gz
+[2023-04-30 04:58:48] INFO root fetch - processPackages [dragonfile]: Downloading https://files.pythonhosted.org/packages/ff/33/2c969ce027939628a8d2d6a477bdd855bde810354ef531ddcff284e7c917/dragonfile-1.0.3.tar.gz
+[2023-04-30 04:58:48] INFO root fetch - processPackages [django-zana]: Downloading https://files.pythonhosted.org/packages/fb/b5/dd16ff3f713b85109feb98bcface257aa17d8b641515814981bc871f1605/django_zana-0.3.0a0.tar.gz
+[2023-04-30 04:58:48] INFO root fetch - processPackages [polygone]: Downloading https://files.pythonhosted.org/packages/37/a0/0348370d22a67a05ea516c26d5539d6a3e8ef02b12760fd4091176bfb609/polygone-0.1.2.tar.gz
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/9b/b8/f2d87da7c11b75d8f383a2cce3fbc2b31261a12cdd5344236b42d7e63793/eia_odin_pkg_rioatmadja2018-0.1.1682823284-py3-none-any.whl
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/9b/b8/f2d87da7c11b75d8f383a2cce3fbc2b31261a12cdd5344236b42d7e63793/eia_odin_pkg_rioatmadja2018-0.1.1682823284-py3-none-any.whl
+[2023-04-30 04:58:48] INFO root fetch - processPackages [polygone]: executing diffoscope
+[2023-04-30 04:58:48] INFO root fetch - processPackages [polygone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polygone-0.1.0.tar.gz tmp/polygone-0.1.2.tar.gz --markdown 20230430/p/polygone/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682823275.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682823284-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682823275-0.1.1682823284/diff.md --exclude *.pyd
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-04-30 04:58:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1682823275.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1682823284-py3-none-any.whl.zip --markdown 20230430/e/eia-odin-pkg-rioatmadja2018/0.1.1682823275-0.1.1682823284/diff.md --exclude *.pyd
+[2023-04-30 04:58:48] INFO root fetch - processPackages [dragonfile]: Downloading https://files.pythonhosted.org/packages/75/78/a278f3d36b9de19a051f8c32cfe4c11e53784f79236960951f8755cba158/dragonfile-1.0.4.tar.gz
+[2023-04-30 04:58:48] INFO root fetch - processPackages [django-zana]: executing diffoscope
+[2023-04-30 04:58:48] INFO root fetch - processPackages [django-zana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_zana-0.2.8.tar.gz tmp/django_zana-0.3.0a0.tar.gz --markdown 20230430/d/django-zana/0.2.8-0.3.0a0/diff.md --exclude *.pyd
+[2023-04-30 04:58:48] INFO root fetch - processPackages [dragonfile]: executing diffoscope
+[2023-04-30 04:58:48] INFO root fetch - processPackages [dragonfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfile-1.0.3.tar.gz tmp/dragonfile-1.0.4.tar.gz --markdown 20230430/d/dragonfile/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 04:58:49] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 04:58:49] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-04-30 04:58:49] INFO root fetch - main [MainThread]: End processing [django-zana]: success
+[2023-04-30 04:58:49] INFO root fetch - main [MainThread]: End processing [polygone]: success
+[2023-04-30 04:58:49] INFO root fetch - main [MainThread]: End processing [dragonfile]: success
+[2023-04-30 04:58:49] INFO root fetch - main [MainThread]: Store serial: [17914207]
