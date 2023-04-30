@@ -9690,3 +9690,48 @@
 [2023-04-30 20:26:23] INFO root fetch - main [MainThread]: End processing [zebrazoom]: success
 [2023-04-30 20:26:24] INFO root fetch - main [MainThread]: End processing [Pyrogram]: success
 [2023-04-30 20:26:24] INFO root fetch - main [MainThread]: Store serial: [17918904]
+[2023-04-30 20:31:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918904]
+[2023-04-30 20:31:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GPTAgent
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ytspider
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SwanGPT
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycryptokms
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flask-encrypted-cookies-session
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SwanLab
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: regis
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SwanLake
+[2023-04-30 20:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: altair
+[2023-04-30 20:31:33] INFO root fetch - processPackages [GPTAgent]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 20:31:33] ERROR root fetch - processPackages [ytspider]: Unable to get metadata: No such project 'ytspider'
+[2023-04-30 20:31:33] INFO root fetch - main [MainThread]: End processing [ytspider] error
+[2023-04-30 20:31:33] INFO root fetch - processPackages [pycryptokms]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-30 20:31:33] WARNING root fetch - processPackages [SwanGPT]: Skipping, unable to determine old version
+[2023-04-30 20:31:33] INFO root fetch - main [MainThread]: End processing [SwanGPT] error
+[2023-04-30 20:31:33] INFO root fetch - processPackages [flask-encrypted-cookies-session]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-30 20:31:33] WARNING root fetch - processPackages [SwanLab]: Skipping, unable to determine old version
+[2023-04-30 20:31:33] INFO root fetch - processPackages [altair]: New version: [5.0.0rc2] Old Version: [5.0.0rc1]
+[2023-04-30 20:31:33] INFO root fetch - main [MainThread]: End processing [SwanLab] error
+[2023-04-30 20:31:33] WARNING root fetch - processPackages [SwanLake]: Skipping, unable to determine old version
+[2023-04-30 20:31:33] INFO root fetch - main [MainThread]: End processing [SwanLake] error
+[2023-04-30 20:31:33] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 20:31:33] INFO root fetch - processPackages [GPTAgent]: executing diffoscope
+[2023-04-30 20:31:33] INFO root fetch - processPackages [GPTAgent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptagent-0.0.8.tar.gz tmp/gptagent-0.0.9.tar.gz --markdown 20230430/G/GPTAgent/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 20:31:33] INFO root fetch - processPackages [flask-encrypted-cookies-session]: Downloading https://files.pythonhosted.org/packages/76/fd/4d9768cef5f85b88d46e88dd083bffc94f361008e2c3543f9a88edf35ce4/flask_encrypted_cookies_session-0.2.3.tar.gz
+[2023-04-30 20:31:33] INFO root fetch - processPackages [altair]: Downloading https://files.pythonhosted.org/packages/e7/e1/dd6b91e2eb12287cb6b793df3de1698ccfcea5b8d754683de51ffdeb2398/altair-5.0.0rc1.tar.gz
+[2023-04-30 20:31:33] INFO root fetch - processPackages [pycryptokms]: Downloading https://files.pythonhosted.org/packages/c5/22/df3b0df34d4bb9bfb3aae0627a62c3351221d3cd81ebc3dedbd06008bcef/pycryptokms-0.0.5.tar.gz
+[2023-04-30 20:31:33] INFO root fetch - processPackages [flask-encrypted-cookies-session]: Downloading https://files.pythonhosted.org/packages/53/66/f528a61353a80012e24ebdfe17e49242c9441c729bad442c8cc19bcec0dc/flask_encrypted_cookies_session-0.2.4.tar.gz
+[2023-04-30 20:31:33] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-04-30 20:31:33] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230430/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 20:31:33] INFO root fetch - processPackages [pycryptokms]: executing diffoscope
+[2023-04-30 20:31:33] INFO root fetch - processPackages [pycryptokms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycryptokms-0.0.3.tar.gz tmp/pycryptokms-0.0.5.tar.gz --markdown 20230430/p/pycryptokms/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-30 20:31:33] INFO root fetch - processPackages [flask-encrypted-cookies-session]: executing diffoscope
+[2023-04-30 20:31:33] INFO root fetch - processPackages [flask-encrypted-cookies-session]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_encrypted_cookies_session-0.2.3.tar.gz tmp/flask_encrypted_cookies_session-0.2.4.tar.gz --markdown 20230430/f/flask-encrypted-cookies-session/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-30 20:31:34] INFO root fetch - processPackages [altair]: Downloading https://files.pythonhosted.org/packages/1e/84/839da201198ddf68e6a628697a6042a6102e1e2c69dfc012c4b057650551/altair-5.0.0rc2.tar.gz
+[2023-04-30 20:31:34] INFO root fetch - processPackages [altair]: executing diffoscope
+[2023-04-30 20:31:34] INFO root fetch - processPackages [altair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altair-5.0.0rc1.tar.gz tmp/altair-5.0.0rc2.tar.gz --markdown 20230430/a/altair/5.0.0rc1-5.0.0rc2/diff.md --exclude *.pyd
+[2023-04-30 20:31:34] INFO root fetch - main [MainThread]: End processing [GPTAgent]: success
+[2023-04-30 20:31:34] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2023-04-30 20:31:34] INFO root fetch - main [MainThread]: End processing [pycryptokms]: success
+[2023-04-30 20:31:34] INFO root fetch - main [MainThread]: End processing [flask-encrypted-cookies-session]: success
+[2023-04-30 20:31:37] INFO root fetch - main [MainThread]: End processing [altair]: success
+[2023-04-30 20:31:37] INFO root fetch - main [MainThread]: Store serial: [17918940]
