@@ -2792,3 +2792,20 @@
 [2023-04-30 06:45:51] INFO root fetch - main [MainThread]: End processing [pyrew]: success
 [2023-04-30 06:45:52] INFO root fetch - main [MainThread]: End processing [pyascore]: success
 [2023-04-30 06:45:52] INFO root fetch - main [MainThread]: Store serial: [17914501]
+[2023-04-30 06:50:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914501]
+[2023-04-30 06:51:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-30 06:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opencv-stubs
+[2023-04-30 06:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: watchrss
+[2023-04-30 06:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bbai
+[2023-04-30 06:51:02] ERROR root fetch - processPackages [watchrss]: Unable to get metadata: No such project 'watchrss'
+[2023-04-30 06:51:02] INFO root fetch - main [MainThread]: End processing [watchrss] error
+[2023-04-30 06:51:02] INFO root fetch - processPackages [opencv-stubs]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-30 06:51:02] INFO root fetch - processPackages [bbai]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-30 06:51:02] INFO root fetch - processPackages [opencv-stubs]: Downloading https://files.pythonhosted.org/packages/40/5b/5ad65950d6851dc4c70e9719ce7acaadd0346bf775300366f484c95ead73/opencv_stubs-0.0.7.tar.gz
+[2023-04-30 06:51:02] INFO root fetch - processPackages [bbai]: Downloading https://files.pythonhosted.org/packages/44/61/7b47c54a5365ae7a88204e20683c26e773a53430b4fdc6004221ffff033e/bbai-1.3.3-py3-none-manylinux1_x86_64.whl
+[2023-04-30 06:51:02] INFO root fetch - processPackages [opencv-stubs]: executing diffoscope
+[2023-04-30 06:51:02] INFO root fetch - processPackages [opencv-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencv_stubs-0.0.6.tar.gz tmp/opencv_stubs-0.0.7.tar.gz --markdown 20230430/o/opencv-stubs/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-30 06:51:02] WARNING root fetch - processPackages [bbai]: Skipping package: exceeds size limit 18806299>=10485760
+[2023-04-30 06:51:02] INFO root fetch - main [MainThread]: End processing [bbai] error
+[2023-04-30 06:51:04] INFO root fetch - main [MainThread]: End processing [opencv-stubs]: success
+[2023-04-30 06:51:04] INFO root fetch - main [MainThread]: Store serial: [17914518]
