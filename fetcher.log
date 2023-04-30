@@ -11151,3 +11151,36 @@
 [2023-04-30 23:26:40] INFO root fetch - main [MainThread]: End processing [toml-tools]: success
 [2023-04-30 23:26:41] INFO root fetch - main [MainThread]: End processing [django-cast]: success
 [2023-04-30 23:26:41] INFO root fetch - main [MainThread]: Store serial: [17920115]
+[2023-04-30 23:31:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920115]
+[2023-04-30 23:31:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 23:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: culturalconformity
+[2023-04-30 23:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leptoninjector
+[2023-04-30 23:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toml-tools
+[2023-04-30 23:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maestral
+[2023-04-30 23:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ssl-labs-screenshot
+[2023-04-30 23:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: badgie
+[2023-04-30 23:31:49] INFO root fetch - processPackages [culturalconformity]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 23:31:50] INFO root fetch - processPackages [ssl-labs-screenshot]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 23:31:50] INFO root fetch - processPackages [toml-tools]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-30 23:31:50] WARNING root fetch - processPackages [leptoninjector]: Skipping, unable to determine old version
+[2023-04-30 23:31:50] INFO root fetch - processPackages [badgie]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-30 23:31:50] INFO root fetch - main [MainThread]: End processing [leptoninjector] error
+[2023-04-30 23:31:50] INFO root fetch - processPackages [maestral]: New version: [1.7.2.dev2] Old Version: [1.7.2.dev1]
+[2023-04-30 23:31:50] INFO root fetch - processPackages [culturalconformity]: executing diffoscope
+[2023-04-30 23:31:50] INFO root fetch - processPackages [culturalconformity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culturalconformity-0.0.8.tar.gz tmp/culturalconformity-0.0.9.tar.gz --markdown 20230430/c/culturalconformity/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:31:50] INFO root fetch - processPackages [maestral]: executing diffoscope
+[2023-04-30 23:31:50] INFO root fetch - processPackages [maestral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-1.7.2.dev1.tar.gz tmp/maestral-1.7.2.dev2.tar.gz --markdown 20230430/m/maestral/1.7.2.dev1-1.7.2.dev2/diff.md --exclude *.pyd
+[2023-04-30 23:31:50] INFO root fetch - processPackages [badgie]: executing diffoscope
+[2023-04-30 23:31:50] INFO root fetch - processPackages [badgie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgie-0.6.0.tar.gz tmp/badgie-0.6.1.tar.gz --markdown 20230430/b/badgie/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-30 23:31:50] INFO root fetch - processPackages [ssl-labs-screenshot]: Downloading https://files.pythonhosted.org/packages/62/a1/7414c76c4861ad279225f90627107127c9250756b9dc1953799b7b3222d0/ssl-labs-screenshot-1.0.3.tar.gz
+[2023-04-30 23:31:50] INFO root fetch - processPackages [toml-tools]: Downloading https://files.pythonhosted.org/packages/f8/10/262f91fe3793d7a5217ea7d049ac80ff4002c384256b1ba3abcb33a0ed91/toml_tools-1.1.1.tar.gz
+[2023-04-30 23:31:50] INFO root fetch - processPackages [ssl-labs-screenshot]: executing diffoscope
+[2023-04-30 23:31:50] INFO root fetch - processPackages [ssl-labs-screenshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssl-labs-screenshot-1.0.2.tar.gz tmp/ssl-labs-screenshot-1.0.3.tar.gz --markdown 20230430/s/ssl-labs-screenshot/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 23:31:50] INFO root fetch - processPackages [toml-tools]: executing diffoscope
+[2023-04-30 23:31:50] INFO root fetch - processPackages [toml-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toml_tools-1.1.0.tar.gz tmp/toml_tools-1.1.1.tar.gz --markdown 20230430/t/toml-tools/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-30 23:31:51] INFO root fetch - main [MainThread]: End processing [culturalconformity]: success
+[2023-04-30 23:31:51] INFO root fetch - main [MainThread]: End processing [badgie]: success
+[2023-04-30 23:31:51] INFO root fetch - main [MainThread]: End processing [ssl-labs-screenshot]: success
+[2023-04-30 23:31:51] INFO root fetch - main [MainThread]: End processing [toml-tools]: success
+[2023-04-30 23:31:51] INFO root fetch - main [MainThread]: End processing [maestral]: success
+[2023-04-30 23:31:51] INFO root fetch - main [MainThread]: Store serial: [17920151]
