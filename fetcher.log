@@ -10585,3 +10585,42 @@
 [2023-04-30 22:12:45] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-04-30 22:13:00] INFO root fetch - main [MainThread]: End processing [tripper]: success
 [2023-04-30 22:13:00] INFO root fetch - main [MainThread]: Store serial: [17919750]
+[2023-04-30 22:18:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919750]
+[2023-04-30 22:18:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DyGraph
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beksul
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ssl-labs-screenshot
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spPersist
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-shelly-deepSanity
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pynamer
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: httpq
+[2023-04-30 22:18:09] WARNING root fetch - processPackages [beksul]: Skipping, unable to determine old version
+[2023-04-30 22:18:09] INFO root fetch - main [MainThread]: End processing [beksul] error
+[2023-04-30 22:18:09] WARNING root fetch - processPackages [certora-cli-alpha-shelly-deepSanity]: Skipping, unable to determine old version
+[2023-04-30 22:18:09] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-deepSanity] error
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ssl-labs-screenshot]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-30 22:18:09] INFO root fetch - processPackages [spPersist]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-30 22:18:09] WARNING root fetch - processPackages [DyGraph]: Skipping, unable to determine old version
+[2023-04-30 22:18:09] INFO root fetch - main [MainThread]: End processing [DyGraph] error
+[2023-04-30 22:18:09] INFO root fetch - processPackages [pynamer]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-30 22:18:09] INFO root fetch - processPackages [httpq]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ssl-labs-screenshot]: Downloading https://files.pythonhosted.org/packages/80/f3/aff3dc77548f211c9b8b4ba2081b95ec1056b4aa20b5dbb5a70d90688cd4/ssl-labs-screenshot-1.0.1.tar.gz
+[2023-04-30 22:18:09] INFO root fetch - processPackages [spPersist]: Downloading https://files.pythonhosted.org/packages/94/bc/20404ffa9ed073608cd8289b243e57d550b6c4ba384d5f23e415fa0dcfa1/sppersist-0.0.7.tar.gz
+[2023-04-30 22:18:09] INFO root fetch - processPackages [pynamer]: Downloading https://files.pythonhosted.org/packages/c4/ee/1a7025aa8e152779e04d3d991243521bb35c2f61c048e53f341cb5bda24f/pynamer-0.4.0.tar.gz
+[2023-04-30 22:18:09] INFO root fetch - processPackages [httpq]: Downloading https://files.pythonhosted.org/packages/55/d2/35a696a4adf02023688e2412109e761caeac6c4b4f75c391ce63f15d2da8/httpq-1.1.2.tar.gz
+[2023-04-30 22:18:09] INFO root fetch - processPackages [spPersist]: executing diffoscope
+[2023-04-30 22:18:09] INFO root fetch - processPackages [spPersist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spPersist-0.0.6.tar.gz tmp/sppersist-0.0.7.tar.gz --markdown 20230430/s/spPersist/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ssl-labs-screenshot]: Downloading https://files.pythonhosted.org/packages/11/eb/0dc164198b5f153a7c1ae9d46392b28a5fbfff6dca89f0e5696b04fad356/ssl-labs-screenshot-1.0.2.tar.gz
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ssl-labs-screenshot]: executing diffoscope
+[2023-04-30 22:18:09] INFO root fetch - processPackages [ssl-labs-screenshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssl-labs-screenshot-1.0.1.tar.gz tmp/ssl-labs-screenshot-1.0.2.tar.gz --markdown 20230430/s/ssl-labs-screenshot/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-30 22:18:09] INFO root fetch - processPackages [pynamer]: Downloading https://files.pythonhosted.org/packages/b6/c6/9ae656a9e11df08dcd98a542b94be24a6e6d3596b3ba0061f8cbf7f18a67/pynamer-0.5.0.tar.gz
+[2023-04-30 22:18:10] INFO root fetch - processPackages [httpq]: Downloading https://files.pythonhosted.org/packages/70/2d/822023123808a6773a5ba3866e3eb605db9c9f1a372d4a147625e495bbc7/httpq-1.2.0.tar.gz
+[2023-04-30 22:18:10] INFO root fetch - processPackages [httpq]: executing diffoscope
+[2023-04-30 22:18:10] INFO root fetch - processPackages [httpq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpq-1.1.2.tar.gz tmp/httpq-1.2.0.tar.gz --markdown 20230430/h/httpq/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-04-30 22:18:10] INFO root fetch - processPackages [pynamer]: executing diffoscope
+[2023-04-30 22:18:10] INFO root fetch - processPackages [pynamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynamer-0.4.0.tar.gz tmp/pynamer-0.5.0.tar.gz --markdown 20230430/p/pynamer/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-30 22:18:10] INFO root fetch - main [MainThread]: End processing [spPersist]: success
+[2023-04-30 22:18:10] INFO root fetch - main [MainThread]: End processing [ssl-labs-screenshot]: success
+[2023-04-30 22:18:11] INFO root fetch - main [MainThread]: End processing [httpq]: success
+[2023-04-30 22:18:11] INFO root fetch - main [MainThread]: End processing [pynamer]: success
+[2023-04-30 22:18:11] INFO root fetch - main [MainThread]: Store serial: [17919785]
