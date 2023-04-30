@@ -9064,3 +9064,33 @@
 [2023-04-30 19:28:02] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2023-04-30 19:28:02] INFO root fetch - main [MainThread]: End processing [space-invaders]: success
 [2023-04-30 19:28:02] INFO root fetch - main [MainThread]: Store serial: [17918502]
+[2023-04-30 19:33:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918502]
+[2023-04-30 19:33:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geotoolkit
+[2023-04-30 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grai-cli
+[2023-04-30 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discloud
+[2023-04-30 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sfkit
+[2023-04-30 19:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Jlab
+[2023-04-30 19:33:11] INFO root fetch - processPackages [grai-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 19:33:11] INFO root fetch - processPackages [discloud]: New version: [1.0.3a0] Old Version: [1.0.1]
+[2023-04-30 19:33:11] WARNING root fetch - processPackages [geotoolkit]: Skipping, unable to determine old version
+[2023-04-30 19:33:11] INFO root fetch - main [MainThread]: End processing [geotoolkit] error
+[2023-04-30 19:33:11] INFO root fetch - processPackages [sfkit]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-30 19:33:12] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-30 19:33:12] INFO root fetch - processPackages [sfkit]: executing diffoscope
+[2023-04-30 19:33:12] INFO root fetch - processPackages [sfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfkit-0.0.98-py3-none-any.whl.zip tmp/sfkit-0.0.99-py3-none-any.whl.zip --markdown 20230430/s/sfkit/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-30 19:33:12] INFO root fetch - processPackages [discloud]: Downloading https://files.pythonhosted.org/packages/f2/16/f2dd8961de654104aaef2cf647c3bffaabd5d7eed17b16a2fb3ea6027711/discloud-1.0.1.tar.gz
+[2023-04-30 19:33:12] INFO root fetch - processPackages [grai-cli]: Downloading https://files.pythonhosted.org/packages/1f/c4/44b0f5b315c5131a31a69fb508de21ad49aece2a575a4e88e173a4de4736/grai_cli-0.1.8.tar.gz
+[2023-04-30 19:33:12] INFO root fetch - processPackages [discloud]: Downloading https://files.pythonhosted.org/packages/ae/00/b6cc10cfad15a563128f61d69a81dc04652c037da44c4880d8f8ae341b9d/discloud-1.0.3a0.tar.gz
+[2023-04-30 19:33:12] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-04-30 19:33:12] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230430/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-30 19:33:12] INFO root fetch - processPackages [grai-cli]: Downloading https://files.pythonhosted.org/packages/5d/e2/cba239cdbb4569d51bb7782d9a3d041015c0a083f65f001493849f06290c/grai_cli-0.1.9.tar.gz
+[2023-04-30 19:33:12] INFO root fetch - processPackages [discloud]: executing diffoscope
+[2023-04-30 19:33:12] INFO root fetch - processPackages [discloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discloud-1.0.1.tar.gz tmp/discloud-1.0.3a0.tar.gz --markdown 20230430/d/discloud/1.0.1-1.0.3a0/diff.md --exclude *.pyd
+[2023-04-30 19:33:12] INFO root fetch - processPackages [grai-cli]: executing diffoscope
+[2023-04-30 19:33:12] INFO root fetch - processPackages [grai-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_cli-0.1.8.tar.gz tmp/grai_cli-0.1.9.tar.gz --markdown 20230430/g/grai-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 19:33:13] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-04-30 19:33:13] INFO root fetch - main [MainThread]: End processing [discloud]: success
+[2023-04-30 19:33:13] INFO root fetch - main [MainThread]: End processing [grai-cli]: success
+[2023-04-30 19:33:13] INFO root fetch - main [MainThread]: End processing [sfkit]: success
+[2023-04-30 19:33:13] INFO root fetch - main [MainThread]: Store serial: [17918529]
