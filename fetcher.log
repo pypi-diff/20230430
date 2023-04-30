@@ -5294,3 +5294,12 @@
 [2023-04-30 12:29:45] INFO root fetch - main [MainThread]: End processing [tls-client]: success
 [2023-04-30 12:29:46] INFO root fetch - main [MainThread]: End processing [frouros]: success
 [2023-04-30 12:29:46] INFO root fetch - main [MainThread]: Store serial: [17916006]
+[2023-04-30 12:34:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916006]
+[2023-04-30 12:34:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-30 12:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-drf-cms
+[2023-04-30 12:34:54] INFO root fetch - processPackages [django-drf-cms]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-30 12:34:55] INFO root fetch - processPackages [django-drf-cms]: Downloading https://files.pythonhosted.org/packages/f5/a8/764b6c4e8fc811a4b262cfa5de084d228fb622d3f67c690b085715be75d9/django-drf-cms-0.1.5.tar.gz
+[2023-04-30 12:34:55] INFO root fetch - processPackages [django-drf-cms]: executing diffoscope
+[2023-04-30 12:34:55] INFO root fetch - processPackages [django-drf-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-drf-cms-0.1.4.tar.gz tmp/django-drf-cms-0.1.5.tar.gz --markdown 20230430/d/django-drf-cms/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-30 12:34:56] INFO root fetch - main [MainThread]: End processing [django-drf-cms]: success
+[2023-04-30 12:34:56] INFO root fetch - main [MainThread]: Store serial: [17916009]
