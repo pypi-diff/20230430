@@ -10981,3 +10981,32 @@
 [2023-04-30 23:05:30] INFO root fetch - processPackages [bumble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bumble-0.0.7.tar.gz tmp/bumble-0.0.8.tar.gz --markdown 20230430/b/bumble/0.0.7-0.0.8/diff.md --exclude *.pyd
 [2023-04-30 23:05:33] INFO root fetch - main [MainThread]: End processing [bumble]: success
 [2023-04-30 23:05:33] INFO root fetch - main [MainThread]: Store serial: [17920023]
+[2023-04-30 23:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17920023]
+[2023-04-30 23:10:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-30 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overloaded-iterables
+[2023-04-30 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: java-bytecode-disassembler
+[2023-04-30 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arkdata
+[2023-04-30 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: griptape-tools
+[2023-04-30 23:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: culturalconformity
+[2023-04-30 23:10:42] INFO root fetch - processPackages [overloaded-iterables]: New version: [0.6] Old Version: [0.5.47]
+[2023-04-30 23:10:42] WARNING root fetch - processPackages [java-bytecode-disassembler]: Skipping, unable to determine old version
+[2023-04-30 23:10:42] INFO root fetch - processPackages [griptape-tools]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-30 23:10:42] INFO root fetch - main [MainThread]: End processing [java-bytecode-disassembler] error
+[2023-04-30 23:10:42] INFO root fetch - processPackages [culturalconformity]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 23:10:42] INFO root fetch - processPackages [arkdata]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-30 23:10:42] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-30 23:10:42] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-1.0.8.tar.gz tmp/arkdata-1.0.9.tar.gz --markdown 20230430/a/arkdata/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:10:42] INFO root fetch - processPackages [overloaded-iterables]: Downloading https://files.pythonhosted.org/packages/3c/2b/eab4be255a91785526ea4217d336af2feb4d5d7aaf10d2000a70e6723f2f/overloaded-iterables-0.5.47.tar.gz
+[2023-04-30 23:10:42] INFO root fetch - processPackages [griptape-tools]: Downloading https://files.pythonhosted.org/packages/b9/c0/e625c4f8c260e2b2cf543d8a8e1dbc96d1769359364f1a336855a2262951/griptape_tools-0.9.0.tar.gz
+[2023-04-30 23:10:42] INFO root fetch - processPackages [culturalconformity]: executing diffoscope
+[2023-04-30 23:10:42] INFO root fetch - processPackages [culturalconformity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/culturalconformity-0.0.8.tar.gz tmp/culturalconformity-0.0.9.tar.gz --markdown 20230430/c/culturalconformity/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 23:10:42] INFO root fetch - processPackages [overloaded-iterables]: Downloading https://files.pythonhosted.org/packages/fd/9d/6c5f19aebecb362b690cd37d6f30cd384c1d7b0e2cab7abacc2f607dc326/overloaded-iterables-0.6.tar.gz
+[2023-04-30 23:10:42] INFO root fetch - processPackages [griptape-tools]: executing diffoscope
+[2023-04-30 23:10:42] INFO root fetch - processPackages [griptape-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_tools-0.8.0.tar.gz tmp/griptape_tools-0.9.0.tar.gz --markdown 20230430/g/griptape-tools/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-30 23:10:42] INFO root fetch - processPackages [overloaded-iterables]: executing diffoscope
+[2023-04-30 23:10:42] INFO root fetch - processPackages [overloaded-iterables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overloaded-iterables-0.5.47.tar.gz tmp/overloaded-iterables-0.6.tar.gz --markdown 20230430/o/overloaded-iterables/0.5.47-0.6/diff.md --exclude *.pyd
+[2023-04-30 23:10:43] INFO root fetch - main [MainThread]: End processing [culturalconformity]: success
+[2023-04-30 23:10:43] INFO root fetch - main [MainThread]: End processing [griptape-tools]: success
+[2023-04-30 23:10:43] INFO root fetch - main [MainThread]: End processing [overloaded-iterables]: success
+[2023-04-30 23:10:43] INFO root fetch - main [MainThread]: End processing [arkdata]: success
+[2023-04-30 23:10:43] INFO root fetch - main [MainThread]: Store serial: [17920040]
