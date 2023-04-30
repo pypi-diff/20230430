@@ -6272,3 +6272,64 @@
 [2023-04-30 14:27:36] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
 [2023-04-30 14:27:37] INFO root fetch - main [MainThread]: End processing [apsg]: success
 [2023-04-30 14:27:37] INFO root fetch - main [MainThread]: Store serial: [17916536]
+[2023-04-30 14:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916536]
+[2023-04-30 14:32:45] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-desktop-tk
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: checkpoint-tool
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pvbm
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dxsp
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: compoundwidgets
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yroom
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: i2cylib
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pillow-heif
+[2023-04-30 14:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pi-heif
+[2023-04-30 14:32:45] INFO root fetch - processPackages [dxsp]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-30 14:32:45] INFO root fetch - processPackages [nonebot-desktop-tk]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 14:32:45] INFO root fetch - processPackages [checkpoint-tool]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-30 14:32:45] INFO root fetch - processPackages [pvbm]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-30 14:32:45] INFO root fetch - processPackages [compoundwidgets]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-30 14:32:45] INFO root fetch - processPackages [i2cylib]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-04-30 14:32:45] INFO root fetch - processPackages [yroom]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-30 14:32:45] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-30 14:32:45] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-1.2.9.tar.gz tmp/dxsp-1.3.0.tar.gz --markdown 20230430/d/dxsp/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-30 14:32:46] INFO root fetch - processPackages [pillow-heif]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-30 14:32:46] INFO root fetch - processPackages [pi-heif]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-30 14:32:46] INFO root fetch - processPackages [pvbm]: Downloading https://files.pythonhosted.org/packages/70/1b/41e528d65c84523514c5587259b67169caba5594b8b9b3d3ccecad832ce8/pvbm-1.3.0.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [nonebot-desktop-tk]: Downloading https://files.pythonhosted.org/packages/71/a1/9aa39057da521eb7888acce145cf0b05a689b0aa0b9d04ef662980f1bcc4/nonebot-desktop-tk-1.0.0.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [checkpoint-tool]: Downloading https://files.pythonhosted.org/packages/05/28/be12fed86d0ea3fb8a552b76772c32d4d6b92d209416ab1edd465d5d2d7b/checkpoint_tool-0.4.0.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [yroom]: Downloading https://files.pythonhosted.org/packages/88/bb/3fb6d42cb42b7c8a3f223efe047ed99b20ee406c3567d21b120644e7d5cf/yroom-0.0.3.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [pi-heif]: Downloading https://files.pythonhosted.org/packages/18/72/4dab2604548ee1910d609dd2ce23fab4a9516a62038d67838b819c0714a3/pi_heif-0.9.2.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [compoundwidgets]: Downloading https://files.pythonhosted.org/packages/6e/e8/c8aba7c6bb14a02cea51131b35f41f9aa2c5be86fff3e532e4ad4cb5aa49/compoundwidgets-0.2.8.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [pillow-heif]: Downloading https://files.pythonhosted.org/packages/93/8f/3808d7e562d12b6b66aed6ea4bc12380bdc76556cde5c6d50141e7b43141/pillow_heif-0.9.2.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [pvbm]: Downloading https://files.pythonhosted.org/packages/c4/a4/a715d05d02a93aa80ad5007132ebcca207f12d5f2292055045e8fd1e4bc8/pvbm-1.4.0.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [compoundwidgets]: executing diffoscope
+[2023-04-30 14:32:46] INFO root fetch - processPackages [compoundwidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compoundwidgets-0.2.7.tar.gz tmp/compoundwidgets-0.2.8.tar.gz --markdown 20230430/c/compoundwidgets/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-30 14:32:46] INFO root fetch - processPackages [checkpoint-tool]: Downloading https://files.pythonhosted.org/packages/d9/ca/0ace669cfd62403901fe7934817aaeb8fe305436223dee0ae310ee4f4fff/checkpoint_tool-0.5.0.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [nonebot-desktop-tk]: Downloading https://files.pythonhosted.org/packages/6e/29/e168de40d1239fa650268207c61dd4f97f01079792e66370eaaec71096b6/nonebot-desktop-tk-1.0.1.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [pvbm]: executing diffoscope
+[2023-04-30 14:32:46] INFO root fetch - processPackages [pvbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvbm-1.3.0.tar.gz tmp/pvbm-1.4.0.tar.gz --markdown 20230430/p/pvbm/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-30 14:32:46] INFO root fetch - processPackages [checkpoint-tool]: executing diffoscope
+[2023-04-30 14:32:46] INFO root fetch - processPackages [checkpoint-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkpoint_tool-0.4.0.tar.gz tmp/checkpoint_tool-0.5.0.tar.gz --markdown 20230430/c/checkpoint-tool/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-30 14:32:46] INFO root fetch - processPackages [nonebot-desktop-tk]: executing diffoscope
+[2023-04-30 14:32:46] INFO root fetch - processPackages [nonebot-desktop-tk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-tk-1.0.0.tar.gz tmp/nonebot-desktop-tk-1.0.1.tar.gz --markdown 20230430/n/nonebot-desktop-tk/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 14:32:46] INFO root fetch - processPackages [yroom]: Downloading https://files.pythonhosted.org/packages/4b/94/0777c8a666086c909eae3a0792388646fcc966c76192f2c49da9f9d253cb/yroom-0.0.4.tar.gz
+[2023-04-30 14:32:46] INFO root fetch - processPackages [i2cylib]: executing diffoscope
+[2023-04-30 14:32:46] INFO root fetch - processPackages [i2cylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2cylib-1.9.4.tar.gz tmp/i2cylib-1.9.5.tar.gz --markdown 20230430/i/i2cylib/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-04-30 14:32:46] INFO root fetch - processPackages [yroom]: executing diffoscope
+[2023-04-30 14:32:46] INFO root fetch - processPackages [yroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yroom-0.0.3.tar.gz tmp/yroom-0.0.4.tar.gz --markdown 20230430/y/yroom/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-30 14:32:47] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-04-30 14:32:47] INFO root fetch - main [MainThread]: End processing [checkpoint-tool]: success
+[2023-04-30 14:32:47] INFO root fetch - main [MainThread]: End processing [pvbm]: success
+[2023-04-30 14:32:47] INFO root fetch - main [MainThread]: End processing [nonebot-desktop-tk]: success
+[2023-04-30 14:32:47] INFO root fetch - main [MainThread]: End processing [yroom]: success
+[2023-04-30 14:32:47] INFO root fetch - main [MainThread]: End processing [compoundwidgets]: success
+[2023-04-30 14:32:47] INFO root fetch - processPackages [pi-heif]: Downloading https://files.pythonhosted.org/packages/83/95/34106827a39fdc232e2500e354edff1540338cf263d5672108f02340e5ed/pi_heif-0.9.3.tar.gz
+[2023-04-30 14:32:48] INFO root fetch - processPackages [pillow-heif]: Downloading https://files.pythonhosted.org/packages/ec/a1/54a57a796adea5fd7272e94a4597acdd9fc03779f5efad58e291455784a8/pillow_heif-0.9.3.tar.gz
+[2023-04-30 14:32:48] INFO root fetch - main [MainThread]: End processing [i2cylib]: success
+[2023-04-30 14:32:50] INFO root fetch - processPackages [pi-heif]: executing diffoscope
+[2023-04-30 14:32:50] INFO root fetch - processPackages [pi-heif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pi_heif-0.9.2.tar.gz tmp/pi_heif-0.9.3.tar.gz --markdown 20230430/p/pi-heif/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-30 14:32:50] INFO root fetch - processPackages [pillow-heif]: executing diffoscope
+[2023-04-30 14:32:50] INFO root fetch - processPackages [pillow-heif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pillow_heif-0.9.2.tar.gz tmp/pillow_heif-0.9.3.tar.gz --markdown 20230430/p/pillow-heif/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-30 14:32:52] INFO root fetch - main [MainThread]: End processing [pi-heif]: success
+[2023-04-30 14:32:53] INFO root fetch - main [MainThread]: End processing [pillow-heif]: success
+[2023-04-30 14:32:53] INFO root fetch - main [MainThread]: Store serial: [17916676]
