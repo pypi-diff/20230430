@@ -2528,3 +2528,19 @@
 [2023-04-30 05:43:32] INFO root fetch - main [MainThread]: End processing [pycep-parser]: success
 [2023-04-30 05:43:33] INFO root fetch - main [MainThread]: End processing [dnadb]: success
 [2023-04-30 05:43:33] INFO root fetch - main [MainThread]: Store serial: [17914337]
+[2023-04-30 05:48:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914337]
+[2023-04-30 05:48:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-30 05:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geomapdemo
+[2023-04-30 05:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auroralibs
+[2023-04-30 05:48:41] INFO root fetch - processPackages [geomapdemo]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-30 05:48:41] INFO root fetch - processPackages [auroralibs]: New version: [8.0.1] Old Version: [8.0.0]
+[2023-04-30 05:48:42] INFO root fetch - processPackages [auroralibs]: Downloading https://files.pythonhosted.org/packages/32/c8/40975809d6727672ee7a9abe958876a9556ac6b675279654115e9eafb111/auroralibs-8.0.0.tar.gz
+[2023-04-30 05:48:42] INFO root fetch - processPackages [geomapdemo]: Downloading https://files.pythonhosted.org/packages/a1/d4/45c6d9355133f56d2b97d681ee2f650d70fb99a95b7816e8003f2e642b20/geomapdemo-0.3.1.tar.gz
+[2023-04-30 05:48:42] INFO root fetch - processPackages [auroralibs]: Downloading https://files.pythonhosted.org/packages/e3/ca/94ba829d10712fce7ecd0d223d361b5f68b69baa6f51f14baf8b1f3dba0b/auroralibs-8.0.1.tar.gz
+[2023-04-30 05:48:42] INFO root fetch - processPackages [geomapdemo]: executing diffoscope
+[2023-04-30 05:48:42] INFO root fetch - processPackages [geomapdemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geomapdemo-0.3.0.tar.gz tmp/geomapdemo-0.3.1.tar.gz --markdown 20230430/g/geomapdemo/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-30 05:48:42] INFO root fetch - processPackages [auroralibs]: executing diffoscope
+[2023-04-30 05:48:42] INFO root fetch - processPackages [auroralibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auroralibs-8.0.0.tar.gz tmp/auroralibs-8.0.1.tar.gz --markdown 20230430/a/auroralibs/8.0.0-8.0.1/diff.md --exclude *.pyd
+[2023-04-30 05:48:43] INFO root fetch - main [MainThread]: End processing [geomapdemo]: success
+[2023-04-30 05:48:43] INFO root fetch - main [MainThread]: End processing [auroralibs]: success
+[2023-04-30 05:48:43] INFO root fetch - main [MainThread]: Store serial: [17914344]
