@@ -6223,3 +6223,52 @@
 [2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [pyaussiebb]: success
 [2023-04-30 14:22:25] INFO root fetch - main [MainThread]: End processing [authomize-rest-api-client]: success
 [2023-04-30 14:22:25] INFO root fetch - main [MainThread]: Store serial: [17916511]
+[2023-04-30 14:27:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17916511]
+[2023-04-30 14:27:34] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 14:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AIOPools
+[2023-04-30 14:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscemu
+[2023-04-30 14:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xpypact
+[2023-04-30 14:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apsg
+[2023-04-30 14:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-dllib-spark2
+[2023-04-30 14:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphsignal
+[2023-04-30 14:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dhapi
+[2023-04-30 14:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: docstring-auditor
+[2023-04-30 14:27:34] WARNING root fetch - processPackages [AIOPools]: Skipping, unable to determine old version
+[2023-04-30 14:27:34] INFO root fetch - main [MainThread]: End processing [AIOPools] error
+[2023-04-30 14:27:34] INFO root fetch - processPackages [apsg]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-30 14:27:34] INFO root fetch - processPackages [pyscemu]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-30 14:27:34] INFO root fetch - processPackages [xpypact]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-30 14:27:34] INFO root fetch - processPackages [bigdl-dllib-spark2]: New version: [2.4.0b20230430] Old Version: [2.4.0b20230429]
+[2023-04-30 14:27:34] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-30 14:27:34] INFO root fetch - processPackages [dhapi]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-30 14:27:34] INFO root fetch - processPackages [docstring-auditor]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 14:27:34] INFO root fetch - processPackages [apsg]: Downloading https://files.pythonhosted.org/packages/1d/90/54dd81c39f8dd01fe29520cd9f4f1b0f37e077789c3b2dc570d919f84f70/apsg-1.0.3.tar.gz
+[2023-04-30 14:27:34] INFO root fetch - processPackages [xpypact]: Downloading https://files.pythonhosted.org/packages/f3/0e/e4254ab38e60faf8619ccf37dd4228955143e17c3ec17aa47a8b080d6088/xpypact-0.3.0.tar.gz
+[2023-04-30 14:27:34] INFO root fetch - processPackages [bigdl-dllib-spark2]: Downloading https://files.pythonhosted.org/packages/85/92/0844926ad0e74b8023aab8cdc9634190d9fecb904a9a5834dca35063c333/bigdl-dllib-spark2-2.4.0b20230429.tar.gz
+[2023-04-30 14:27:34] INFO root fetch - processPackages [pyscemu]: Downloading https://files.pythonhosted.org/packages/9e/44/51ff233557badbd8c901f10875996d7afa0f1660d57ea5827d0f87f9745a/pyscemu-0.1.3.tar.gz
+[2023-04-30 14:27:34] WARNING root fetch - processPackages [bigdl-dllib-spark2]: Skipping package: exceeds size limit 53560799>=10485760
+[2023-04-30 14:27:34] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark2] error
+[2023-04-30 14:27:34] INFO root fetch - processPackages [dhapi]: Downloading https://files.pythonhosted.org/packages/ba/5c/128967b122d1a429e4ac1d3875c930a9f51df4177783451e46359337cb1d/dhapi-1.3.1.tar.gz
+[2023-04-30 14:27:34] INFO root fetch - processPackages [graphsignal]: Downloading https://files.pythonhosted.org/packages/8a/ce/6c4ad532d461693620e6155f4cc8c8495b148d9bef62b7204619e41f19ec/graphsignal-0.9.4.tar.gz
+[2023-04-30 14:27:34] INFO root fetch - processPackages [apsg]: executing diffoscope
+[2023-04-30 14:27:34] INFO root fetch - processPackages [apsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apsg-1.0.2.tar.gz tmp/apsg-1.0.3.tar.gz --markdown 20230430/a/apsg/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-30 14:27:34] INFO root fetch - processPackages [pyscemu]: executing diffoscope
+[2023-04-30 14:27:34] INFO root fetch - processPackages [pyscemu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscemu-0.1.2.tar.gz tmp/pyscemu-0.1.3.tar.gz --markdown 20230430/p/pyscemu/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-30 14:27:34] INFO root fetch - processPackages [docstring-auditor]: executing diffoscope
+[2023-04-30 14:27:34] INFO root fetch - processPackages [docstring-auditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docstring_auditor-0.1.8.tar.gz tmp/docstring_auditor-0.1.9.tar.gz --markdown 20230430/d/docstring-auditor/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 14:27:34] INFO root fetch - processPackages [xpypact]: Downloading https://files.pythonhosted.org/packages/c4/4c/50defb69c79bc6d27f68c4bf0f082571fc496d22d9787ba0dcc5b2a53eb8/xpypact-0.4.0.tar.gz
+[2023-04-30 14:27:34] INFO root fetch - processPackages [dhapi]: Downloading https://files.pythonhosted.org/packages/6a/1c/697a0ff7652c326ec3ddd429e59575cecb8b0397bda25d0e061645a1b159/dhapi-1.3.2.tar.gz
+[2023-04-30 14:27:35] INFO root fetch - processPackages [xpypact]: executing diffoscope
+[2023-04-30 14:27:35] INFO root fetch - processPackages [xpypact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpypact-0.3.0.tar.gz tmp/xpypact-0.4.0.tar.gz --markdown 20230430/x/xpypact/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-30 14:27:35] INFO root fetch - processPackages [dhapi]: executing diffoscope
+[2023-04-30 14:27:35] INFO root fetch - processPackages [dhapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhapi-1.3.1.tar.gz tmp/dhapi-1.3.2.tar.gz --markdown 20230430/d/dhapi/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-30 14:27:35] INFO root fetch - processPackages [graphsignal]: Downloading https://files.pythonhosted.org/packages/63/9a/d9360e506d4b48251d07845d69b0a9facd3465a3c270adacda14a215a8a8/graphsignal-0.9.5.tar.gz
+[2023-04-30 14:27:35] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-04-30 14:27:35] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230430/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-30 14:27:35] INFO root fetch - main [MainThread]: End processing [pyscemu]: success
+[2023-04-30 14:27:36] INFO root fetch - main [MainThread]: End processing [docstring-auditor]: success
+[2023-04-30 14:27:36] INFO root fetch - main [MainThread]: End processing [dhapi]: success
+[2023-04-30 14:27:36] INFO root fetch - main [MainThread]: End processing [xpypact]: success
+[2023-04-30 14:27:36] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-04-30 14:27:37] INFO root fetch - main [MainThread]: End processing [apsg]: success
+[2023-04-30 14:27:37] INFO root fetch - main [MainThread]: Store serial: [17916536]
