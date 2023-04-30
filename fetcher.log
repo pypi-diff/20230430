@@ -10255,3 +10255,46 @@
 [2023-04-30 21:30:58] INFO root fetch - main [MainThread]: End processing [pspy]: success
 [2023-04-30 21:31:00] INFO root fetch - main [MainThread]: End processing [redisbench-admin]: success
 [2023-04-30 21:31:00] INFO root fetch - main [MainThread]: Store serial: [17919428]
+[2023-04-30 21:36:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919428]
+[2023-04-30 21:36:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 21:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arc-cli
+[2023-04-30 21:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anylabeling
+[2023-04-30 21:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QATLibrary
+[2023-04-30 21:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lumibot
+[2023-04-30 21:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OSFResearchClient
+[2023-04-30 21:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfed
+[2023-04-30 21:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfed-macos
+[2023-04-30 21:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pycryptokms
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pycryptokms]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:36:09] INFO root fetch - processPackages [anylabeling]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pyfed-macos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:36:09] INFO root fetch - processPackages [QATLibrary]: New version: [23.5.3] Old Version: [23.5.2]
+[2023-04-30 21:36:09] WARNING root fetch - processPackages [OSFResearchClient]: Skipping, unable to determine old version
+[2023-04-30 21:36:09] INFO root fetch - main [MainThread]: End processing [OSFResearchClient] error
+[2023-04-30 21:36:09] INFO root fetch - processPackages [arc-cli]: New version: [8.1.3] Old Version: [8.1.2]
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pyfed]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 21:36:09] INFO root fetch - processPackages [lumibot]: New version: [2.5.9] Old Version: [2.5.8]
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pycryptokms]: executing diffoscope
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pycryptokms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycryptokms-0.0.8.tar.gz tmp/pycryptokms-0.0.9.tar.gz --markdown 20230430/p/pycryptokms/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:36:09] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-30 21:36:09] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.2.8.tar.gz tmp/anylabeling-0.2.9.tar.gz --markdown 20230430/a/anylabeling/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pyfed]: executing diffoscope
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pyfed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed-0.0.8.tar.gz tmp/pyfed-0.0.9.tar.gz --markdown 20230430/p/pyfed/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pyfed-macos]: executing diffoscope
+[2023-04-30 21:36:09] INFO root fetch - processPackages [pyfed-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfed_macos-0.0.8.tar.gz tmp/pyfed_macos-0.0.9.tar.gz --markdown 20230430/p/pyfed-macos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 21:36:09] INFO root fetch - processPackages [lumibot]: Downloading https://files.pythonhosted.org/packages/3a/9e/832791be10e746c7884ef5d121d4b811ceaa6cd8d7e5aa2394d9588f0e12/lumibot-2.5.8.tar.gz
+[2023-04-30 21:36:09] INFO root fetch - processPackages [arc-cli]: Downloading https://files.pythonhosted.org/packages/30/97/ad6fda34215dbf29c01d805d6280a83019f63643175abb9fb96c86861774/arc_cli-8.1.3.tar.gz
+[2023-04-30 21:36:09] WARNING root fetch - processPackages [lumibot]: Skipping package: exceeds size limit 23647378>=10485760
+[2023-04-30 21:36:09] INFO root fetch - main [MainThread]: End processing [lumibot] error
+[2023-04-30 21:36:09] INFO root fetch - processPackages [QATLibrary]: Downloading https://files.pythonhosted.org/packages/cb/94/2842986b27c70c166a8c361bbe310107a110f4c3c4cd89636d4c8f0c2492/QATLibrary-23.5.3.tar.gz
+[2023-04-30 21:36:09] INFO root fetch - processPackages [arc-cli]: executing diffoscope
+[2023-04-30 21:36:09] INFO root fetch - processPackages [arc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arc_cli-8.1.2.tar.gz tmp/arc_cli-8.1.3.tar.gz --markdown 20230430/a/arc-cli/8.1.2-8.1.3/diff.md --exclude *.pyd
+[2023-04-30 21:36:09] INFO root fetch - processPackages [QATLibrary]: executing diffoscope
+[2023-04-30 21:36:09] INFO root fetch - processPackages [QATLibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QATLibrary-23.5.2.tar.gz tmp/QATLibrary-23.5.3.tar.gz --markdown 20230430/Q/QATLibrary/23.5.2-23.5.3/diff.md --exclude *.pyd
+[2023-04-30 21:36:10] INFO root fetch - main [MainThread]: End processing [pycryptokms]: success
+[2023-04-30 21:36:10] INFO root fetch - main [MainThread]: End processing [pyfed]: success
+[2023-04-30 21:36:10] INFO root fetch - main [MainThread]: End processing [pyfed-macos]: success
+[2023-04-30 21:36:11] INFO root fetch - main [MainThread]: End processing [QATLibrary]: success
+[2023-04-30 21:36:11] INFO root fetch - main [MainThread]: End processing [arc-cli]: success
+[2023-04-30 21:36:13] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-30 21:36:13] INFO root fetch - main [MainThread]: Store serial: [17919488]
