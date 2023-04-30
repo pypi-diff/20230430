@@ -10822,3 +10822,52 @@
 [2023-04-30 22:39:27] INFO root fetch - main [MainThread]: End processing [stim]: success
 [2023-04-30 22:39:27] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-04-30 22:39:27] INFO root fetch - main [MainThread]: Store serial: [17919940]
+[2023-04-30 22:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17919940]
+[2023-04-30 22:44:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-30 22:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygnmi
+[2023-04-30 22:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cbra
+[2023-04-30 22:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: search-hound-ai
+[2023-04-30 22:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: feedwarrior
+[2023-04-30 22:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: starlette-admin
+[2023-04-30 22:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-runit
+[2023-04-30 22:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flet-web-template
+[2023-04-30 22:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: voxx-cli
+[2023-04-30 22:44:36] INFO root fetch - processPackages [search-hound-ai]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-04-30 22:44:36] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a93]
+[2023-04-30 22:44:36] INFO root fetch - processPackages [flet-web-template]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-30 22:44:36] INFO root fetch - processPackages [feedwarrior]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-30 22:44:36] INFO root fetch - processPackages [pygnmi]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-30 22:44:36] INFO root fetch - processPackages [starlette-admin]: New version: [0.8.1] Old Version: [0.8.0.dev0]
+[2023-04-30 22:44:36] INFO root fetch - processPackages [python-runit]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-30 22:44:36] INFO root fetch - processPackages [voxx-cli]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-30 22:44:36] INFO root fetch - processPackages [search-hound-ai]: executing diffoscope
+[2023-04-30 22:44:36] INFO root fetch - processPackages [search-hound-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/search_hound_ai-0.1.6.tar.gz tmp/search_hound_ai-0.1.8.tar.gz --markdown 20230430/s/search-hound-ai/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-04-30 22:44:36] INFO root fetch - processPackages [pygnmi]: executing diffoscope
+[2023-04-30 22:44:36] INFO root fetch - processPackages [pygnmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygnmi-0.8.8.tar.gz tmp/pygnmi-0.8.9.tar.gz --markdown 20230430/p/pygnmi/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-30 22:44:36] INFO root fetch - processPackages [voxx-cli]: executing diffoscope
+[2023-04-30 22:44:36] INFO root fetch - processPackages [voxx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voxx-cli-1.0.3.tar.gz tmp/voxx-cli-1.0.4.tar.gz --markdown 20230430/v/voxx-cli/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-30 22:44:36] INFO root fetch - processPackages [cbra]: Downloading https://files.pythonhosted.org/packages/21/4e/36aa7289ee6064d513f4d096e973d16dfa2998c1399f4a40631873461aba/cbra-2.0.0a93.tar.gz
+[2023-04-30 22:44:36] INFO root fetch - processPackages [starlette-admin]: Downloading https://files.pythonhosted.org/packages/ed/27/a2d8b602235f95b5eb9724ae612d6b3e934b15c6f9fe7fe1c18950cb0b1c/starlette_admin-0.8.0.dev0.tar.gz
+[2023-04-30 22:44:36] INFO root fetch - processPackages [feedwarrior]: Downloading https://files.pythonhosted.org/packages/8d/c9/d3f284b649df609fc996c3e2b270553e04031e2b736d1abeb8367dc0cbb8/feedwarrior-0.5.6.tar.gz
+[2023-04-30 22:44:36] INFO root fetch - processPackages [python-runit]: Downloading https://files.pythonhosted.org/packages/83/f0/b7a79b85003e6e086596c457541d03ee829699416216819e3109de0b5f0e/python-runit-0.0.9.tar.gz
+[2023-04-30 22:44:36] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-30 22:44:36] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a93.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230430/c/cbra/2.0.0a93-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-30 22:44:36] INFO root fetch - processPackages [feedwarrior]: executing diffoscope
+[2023-04-30 22:44:36] INFO root fetch - processPackages [feedwarrior]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feedwarrior-0.5.5.tar.gz tmp/feedwarrior-0.5.6.tar.gz --markdown 20230430/f/feedwarrior/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-04-30 22:44:36] INFO root fetch - processPackages [flet-web-template]: executing diffoscope
+[2023-04-30 22:44:36] INFO root fetch - processPackages [flet-web-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-web-template-0.1.8.tar.gz tmp/flet-web-template-0.1.9.tar.gz --markdown 20230430/f/flet-web-template/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-30 22:44:36] INFO root fetch - processPackages [python-runit]: Downloading https://files.pythonhosted.org/packages/13/88/ab8d406d5be72f9220ef7286d6d40e5bd2339afaada471492387ec5f9e41/python-runit-0.1.0.tar.gz
+[2023-04-30 22:44:36] INFO root fetch - processPackages [python-runit]: executing diffoscope
+[2023-04-30 22:44:36] INFO root fetch - processPackages [python-runit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-runit-0.0.9.tar.gz tmp/python-runit-0.1.0.tar.gz --markdown 20230430/p/python-runit/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-30 22:44:37] INFO root fetch - processPackages [starlette-admin]: Downloading https://files.pythonhosted.org/packages/19/0c/8bca0046124076c43487201285128ddd8c8af2bac98ded0999f7e65927ef/starlette_admin-0.8.1.tar.gz
+[2023-04-30 22:44:37] INFO root fetch - processPackages [starlette-admin]: executing diffoscope
+[2023-04-30 22:44:37] INFO root fetch - processPackages [starlette-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starlette_admin-0.8.0.dev0.tar.gz tmp/starlette_admin-0.8.1.tar.gz --markdown 20230430/s/starlette-admin/0.8.0.dev0-0.8.1/diff.md --exclude *.pyd
+[2023-04-30 22:44:37] INFO root fetch - main [MainThread]: End processing [search-hound-ai]: success
+[2023-04-30 22:44:37] INFO root fetch - main [MainThread]: End processing [pygnmi]: success
+[2023-04-30 22:44:37] INFO root fetch - main [MainThread]: End processing [voxx-cli]: success
+[2023-04-30 22:44:38] INFO root fetch - main [MainThread]: End processing [flet-web-template]: success
+[2023-04-30 22:44:38] INFO root fetch - main [MainThread]: End processing [python-runit]: success
+[2023-04-30 22:44:38] INFO root fetch - main [MainThread]: End processing [feedwarrior]: success
+[2023-04-30 22:44:41] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-04-30 22:44:46] INFO root fetch - main [MainThread]: End processing [starlette-admin]: success
+[2023-04-30 22:44:46] INFO root fetch - main [MainThread]: Store serial: [17919963]
