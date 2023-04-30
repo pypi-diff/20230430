@@ -2852,3 +2852,49 @@
 [2023-04-30 06:56:15] INFO root fetch - main [MainThread]: End processing [pyascore]: success
 [2023-04-30 06:56:16] INFO root fetch - main [MainThread]: End processing [rp]: success
 [2023-04-30 06:56:16] INFO root fetch - main [MainThread]: Store serial: [17914557]
+[2023-04-30 07:01:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914557]
+[2023-04-30 07:01:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-30 07:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2023-04-30 07:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fedml
+[2023-04-30 07:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-server
+[2023-04-30 07:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: safenote
+[2023-04-30 07:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-bottle
+[2023-04-30 07:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyhrp
+[2023-04-30 07:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nodered.py
+[2023-04-30 07:01:26] INFO root fetch - processPackages [fedml]: New version: [0.8.4a8] Old Version: [0.8.4a7]
+[2023-04-30 07:01:26] INFO root fetch - processPackages [rp]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-30 07:01:26] INFO root fetch - processPackages [safenote]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-30 07:01:26] INFO root fetch - processPackages [llama-server]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-30 07:01:26] INFO root fetch - processPackages [nonebot-plugin-bottle]: New version: [1.0.0.3] Old Version: [1.0.0.2]
+[2023-04-30 07:01:26] INFO root fetch - processPackages [pyhrp]: New version: [0.6.4] Old Version: [0.4.8]
+[2023-04-30 07:01:26] INFO root fetch - processPackages [nodered.py]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-30 07:01:26] INFO root fetch - processPackages [rp]: executing diffoscope
+[2023-04-30 07:01:26] INFO root fetch - processPackages [rp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rp-0.1.98.tar.gz tmp/rp-0.1.99.tar.gz --markdown 20230430/r/rp/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-30 07:01:26] INFO root fetch - processPackages [llama-server]: Downloading https://files.pythonhosted.org/packages/42/e2/7b4639685461407cac6f5366344d7b3cacfae5b221718206c8657a13ab1f/llama-server-0.1.0.tar.gz
+[2023-04-30 07:01:26] INFO root fetch - processPackages [nonebot-plugin-bottle]: Downloading https://files.pythonhosted.org/packages/dc/e4/f2bcf44b2d4a2a2e8c8a085e32e5a567d8ef44cae160cb7d07c96e01ab03/nonebot_plugin_bottle-1.0.0.2-py3-none-any.whl
+[2023-04-30 07:01:26] INFO root fetch - processPackages [safenote]: Downloading https://files.pythonhosted.org/packages/34/b8/fded803c35dae4f9782c086e1e7ca21848845e5b99fee28367106b5588dd/safenote-0.1.4.tar.gz
+[2023-04-30 07:01:26] INFO root fetch - processPackages [fedml]: Downloading https://files.pythonhosted.org/packages/2d/89/5e240b8c4bde2ab2881929287116b110fb3b2f843b4e4943c85367ef9518/fedml-0.8.4a8.tar.gz
+[2023-04-30 07:01:26] INFO root fetch - processPackages [safenote]: executing diffoscope
+[2023-04-30 07:01:26] INFO root fetch - processPackages [safenote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safenote-0.1.3.tar.gz tmp/safenote-0.1.4.tar.gz --markdown 20230430/s/safenote/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-30 07:01:26] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-04-30 07:01:26] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.4a7.tar.gz tmp/fedml-0.8.4a8.tar.gz --markdown 20230430/f/fedml/0.8.4a7-0.8.4a8/diff.md --exclude *.pyd
+[2023-04-30 07:01:26] INFO root fetch - processPackages [nonebot-plugin-bottle]: Downloading https://files.pythonhosted.org/packages/35/ee/0703d65193b034ed21fde5b0e871284d0c3945820f612f8164a5abc141e9/nonebot_plugin_bottle-1.0.0.3-py3-none-any.whl
+[2023-04-30 07:01:27] INFO root fetch - processPackages [nodered.py]: Downloading https://files.pythonhosted.org/packages/49/eb/149e6a359d6434929e1419ede2425e98e4b8808062172358fb0fb207e023/nodered.py-0.1.2.tar.gz
+[2023-04-30 07:01:27] INFO root fetch - processPackages [pyhrp]: Downloading https://files.pythonhosted.org/packages/c9/d3/48e9ad657b7c6cce0a3cfbde21b6425cb410ae54371d9a0bb3b42fcd4879/pyhrp-0.6.4.tar.gz
+[2023-04-30 07:01:27] INFO root fetch - processPackages [llama-server]: Downloading https://files.pythonhosted.org/packages/e9/bd/54ce926b64467f7f6cfea2956aa026606b1293dbf41fc742754972ba7cca/llama-server-0.2.0.tar.gz
+[2023-04-30 07:01:27] INFO root fetch - processPackages [nonebot-plugin-bottle]: executing diffoscope
+[2023-04-30 07:01:27] INFO root fetch - processPackages [nonebot-plugin-bottle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bottle-1.0.0.2-py3-none-any.whl.zip tmp/nonebot_plugin_bottle-1.0.0.3-py3-none-any.whl.zip --markdown 20230430/n/nonebot-plugin-bottle/1.0.0.2-1.0.0.3/diff.md --exclude *.pyd
+[2023-04-30 07:01:27] INFO root fetch - processPackages [llama-server]: executing diffoscope
+[2023-04-30 07:01:27] INFO root fetch - processPackages [llama-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-server-0.1.0.tar.gz tmp/llama-server-0.2.0.tar.gz --markdown 20230430/l/llama-server/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-30 07:01:27] INFO root fetch - processPackages [pyhrp]: executing diffoscope
+[2023-04-30 07:01:27] INFO root fetch - processPackages [pyhrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrp-0.4.8.tar.gz tmp/pyhrp-0.6.4.tar.gz --markdown 20230430/p/pyhrp/0.4.8-0.6.4/diff.md --exclude *.pyd
+[2023-04-30 07:01:27] INFO root fetch - processPackages [nodered.py]: executing diffoscope
+[2023-04-30 07:01:27] INFO root fetch - processPackages [nodered.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodered.py-0.1.1.tar.gz tmp/nodered.py-0.1.2.tar.gz --markdown 20230430/n/nodered.py/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-30 07:01:27] INFO root fetch - main [MainThread]: End processing [safenote]: success
+[2023-04-30 07:01:28] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bottle]: success
+[2023-04-30 07:01:28] INFO root fetch - main [MainThread]: End processing [pyhrp]: success
+[2023-04-30 07:01:28] INFO root fetch - main [MainThread]: End processing [nodered.py]: success
+[2023-04-30 07:01:28] INFO root fetch - main [MainThread]: End processing [llama-server]: success
+[2023-04-30 07:01:28] INFO root fetch - main [MainThread]: End processing [rp]: success
+[2023-04-30 07:01:35] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-04-30 07:01:35] INFO root fetch - main [MainThread]: Store serial: [17914578]
