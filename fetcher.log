@@ -2351,3 +2351,13 @@
 [2023-04-30 05:04:02] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 12365512>=10485760
 [2023-04-30 05:04:02] INFO root fetch - main [MainThread]: End processing [duckdb] error
 [2023-04-30 05:04:02] INFO root fetch - main [MainThread]: Store serial: [17914226]
+[2023-04-30 05:09:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17914226]
+[2023-04-30 05:09:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-30 05:09:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hugchat
+[2023-04-30 05:09:10] INFO root fetch - processPackages [hugchat]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-30 05:09:11] INFO root fetch - processPackages [hugchat]: Downloading https://files.pythonhosted.org/packages/a9/54/5120c9fe80b7fc3d7e647cca6af18eda0f62706e789f08d3f22da2979380/hugchat-0.0.2.tar.gz
+[2023-04-30 05:09:11] INFO root fetch - processPackages [hugchat]: Downloading https://files.pythonhosted.org/packages/5a/6d/9a0c195cc0921246343dc9289b7c0e4f2b7737b1c70892e561968c48d318/hugchat-0.0.3.tar.gz
+[2023-04-30 05:09:11] INFO root fetch - processPackages [hugchat]: executing diffoscope
+[2023-04-30 05:09:11] INFO root fetch - processPackages [hugchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugchat-0.0.2.tar.gz tmp/hugchat-0.0.3.tar.gz --markdown 20230430/h/hugchat/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-30 05:09:12] INFO root fetch - main [MainThread]: End processing [hugchat]: success
+[2023-04-30 05:09:12] INFO root fetch - main [MainThread]: Store serial: [17914231]
