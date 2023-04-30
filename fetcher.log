@@ -8832,3 +8832,31 @@
 [2023-04-30 18:55:59] INFO root fetch - main [MainThread]: End processing [superpowered-sdk]: success
 [2023-04-30 18:55:59] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
 [2023-04-30 18:55:59] INFO root fetch - main [MainThread]: Store serial: [17918280]
+[2023-04-30 19:01:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17918280]
+[2023-04-30 19:01:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-30 19:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipcolorv6
+[2023-04-30 19:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscraping
+[2023-04-30 19:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CVAugmentor
+[2023-04-30 19:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pibble
+[2023-04-30 19:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: superpowered-sdk
+[2023-04-30 19:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qatrah
+[2023-04-30 19:01:07] WARNING root fetch - processPackages [pyscraping]: Skipping, unable to determine old version
+[2023-04-30 19:01:07] INFO root fetch - main [MainThread]: End processing [pyscraping] error
+[2023-04-30 19:01:07] INFO root fetch - processPackages [superpowered-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-30 19:01:07] WARNING root fetch - processPackages [qatrah]: Skipping, unable to determine old version
+[2023-04-30 19:01:07] INFO root fetch - main [MainThread]: End processing [qatrah] error
+[2023-04-30 19:01:07] INFO root fetch - processPackages [CVAugmentor]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-30 19:01:07] INFO root fetch - processPackages [pibble]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-30 19:01:07] ERROR root fetch - processPackages [pipcolorv6]: Unable to get metadata: No such project 'pipcolorv6'
+[2023-04-30 19:01:07] INFO root fetch - main [MainThread]: End processing [pipcolorv6] error
+[2023-04-30 19:01:07] INFO root fetch - processPackages [superpowered-sdk]: executing diffoscope
+[2023-04-30 19:01:07] INFO root fetch - processPackages [superpowered-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superpowered-sdk-0.0.8.tar.gz tmp/superpowered-sdk-0.0.9.tar.gz --markdown 20230430/s/superpowered-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-30 19:01:07] INFO root fetch - processPackages [CVAugmentor]: executing diffoscope
+[2023-04-30 19:01:07] INFO root fetch - processPackages [CVAugmentor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CVAugmentor-1.0.0.tar.gz tmp/CVAugmentor-1.0.1.tar.gz --markdown 20230430/C/CVAugmentor/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-30 19:01:08] INFO root fetch - processPackages [pibble]: Downloading https://files.pythonhosted.org/packages/0f/a1/78737705ec6aa7de82ec99a8e031ecfdeb2ee6e69c2cdd30535878ac0b47/pibble-0.4.6.tar.gz
+[2023-04-30 19:01:08] INFO root fetch - processPackages [pibble]: executing diffoscope
+[2023-04-30 19:01:08] INFO root fetch - processPackages [pibble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230430:/home/abi/fetcher/20230430:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pibble-0.4.5.tar.gz tmp/pibble-0.4.6.tar.gz --markdown 20230430/p/pibble/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-30 19:01:08] INFO root fetch - main [MainThread]: End processing [superpowered-sdk]: success
+[2023-04-30 19:01:08] INFO root fetch - main [MainThread]: End processing [CVAugmentor]: success
+[2023-04-30 19:01:09] INFO root fetch - main [MainThread]: End processing [pibble]: success
+[2023-04-30 19:01:09] INFO root fetch - main [MainThread]: Store serial: [17918304]
